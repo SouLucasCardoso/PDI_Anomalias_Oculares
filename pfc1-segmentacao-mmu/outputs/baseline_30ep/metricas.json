@@ -1,0 +1,81 @@
+{
+  "status": "prova_de_conceito",
+  "dataset": "MMU Iris Database + mascaras manuais associadas a Ganeeva e Myasnikov (2022)",
+  "image_count": 450,
+  "subject_count": 45,
+  "split": {
+    "train": 320,
+    "val": 60,
+    "test": 70
+  },
+  "split_subjects": {
+    "train": [
+      1,
+      5,
+      6,
+      11,
+      12,
+      13,
+      14,
+      15,
+      18,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      37,
+      38,
+      39,
+      40,
+      41,
+      43,
+      45,
+      46
+    ],
+    "val": [
+      3,
+      7,
+      8,
+      29,
+      36,
+      44
+    ],
+    "test": [
+      2,
+      9,
+      10,
+      16,
+      17,
+      19,
+      42
+    ]
+  },
+  "model": "Small U-Net",
+  "parameters": 121033,
+  "resolution": [
+    120,
+    160
+  ],
+  "seed": 42,
+  "best_epoch": 21,
+  "best_validation_dice": 0.5883470376332601,
+  "test": {
+    "loss": 0.8626037802015032,
+    "dice": 0.5267387049538749,
+    "iou": 0.36943090983799526
+  },
+  "device": "cpu",
+  "elapsed_seconds": 410.8820022929999,
+  "caveat": "Base biometrica sem rotulos de doencas; valida apenas a etapa de segmentacao. O repositorio de mascaras nao declara licenca explicita e a copia do Kaggle informa licenca Unknown."
+}

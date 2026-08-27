@@ -1,0 +1,16 @@
+# Dados e arquivos baixados
+**/data/
+*.zip
+
+# Ambientes e caches
+**/.venv/
+**/.vscode/
+**/__pycache__/
+*.pyc
+
+# Pesos e arquivos com caminhos locais
+*.pt
+**/manifesto.json
+
+# Treinamentos descartáveis
+**/outputs/teste_local_5ep/

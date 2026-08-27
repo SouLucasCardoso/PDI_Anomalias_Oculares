@@ -1,0 +1,81 @@
+{
+  "status": "prova_de_conceito",
+  "dataset": "MMU Iris Database + mascaras manuais de Kozlova",
+  "image_count": 450,
+  "subject_count": 45,
+  "split": {
+    "train": 320,
+    "val": 60,
+    "test": 70
+  },
+  "split_subjects": {
+    "train": [
+      1,
+      5,
+      6,
+      11,
+      12,
+      13,
+      14,
+      15,
+      18,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      37,
+      38,
+      39,
+      40,
+      41,
+      43,
+      45,
+      46
+    ],
+    "val": [
+      3,
+      7,
+      8,
+      29,
+      36,
+      44
+    ],
+    "test": [
+      2,
+      9,
+      10,
+      16,
+      17,
+      19,
+      42
+    ]
+  },
+  "model": "Small U-Net",
+  "parameters": 121033,
+  "resolution": [
+    120,
+    160
+  ],
+  "seed": 42,
+  "best_epoch": 9,
+  "best_validation_dice": 0.5591373284657796,
+  "test": {
+    "loss": 1.2054645572389875,
+    "dice": 0.5057247774941581,
+    "iou": 0.3501575878688267
+  },
+  "device": "cpu",
+  "elapsed_seconds": 148.81206793399997,
+  "caveat": "Base biometrica sem rotulos de doencas; valida apenas a etapa de segmentacao. O repositorio de mascaras nao declara licenca explicita."
+}
