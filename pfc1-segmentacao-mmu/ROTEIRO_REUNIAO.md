@@ -1,86 +1,110 @@
 # Roteiro para a reunião com o orientador
 
-## Resumo em 40 segundos
+## Resumo em 50 segundos
 
-> Eu separei o projeto em duas etapas. Enquanto aguardo uma base clínica com
-> rótulos de alterações oculares, implementei e executei uma prova de conceito
-> da segmentação usando o MMU e 450 máscaras manuais associadas a um trabalho de
-> 2022. A divisão foi feita por pessoa, para evitar vazamento entre treino e
-> teste. Uma U-Net pequena já localiza a região da íris, mas o Dice de teste foi
-> 0,527, mostrando que ainda erra principalmente o recorte da pupila e oclusões.
-> Portanto, não estou tratando isso como resultado clínico final, e sim como um
-> baseline reproduzível que define os próximos experimentos.
+> A auditoria visual mostrou que a numeração interna das imagens e máscaras do
+> MMU não representa a mesma pose. Corrigi os pares por atribuição geométrica,
+> e 350 das 450 correspondências mudaram. Com divisão por pessoa e seleção só
+> pela validação, a U-Net obteve Dice 0,655 na validação e 0,525 no teste
+> completo. O valor é moderado, mas o recorte passou a preservar melhor a pupila
+> e reduziu a área excedente. Um sujeito do teste ainda possui referências
+> incompatíveis; por transparência, ele permanece na métrica principal. Pesquisei
+> bases melhores: recomendo MOBIUS e UBIPr para segmentação, Warsaw
+> Disease-Iris para a etapa clínica e um modelo aberto da Notre Dame como
+> baseline externo. A infraestrutura está satisfatória; o segmentador ainda não
+> é resultado final.
 
-## O que foi realizado
+## O que foi corrigido
 
-- Download e auditoria das 450 imagens do MMU e das 450 máscaras manuais.
-- Identificação de uma inconsistência de numeração: as imagens usam 45 pastas
-  entre 1 e 46, pulando o número 4; as máscaras usam 1 a 45. O código corrige o
-  pareamento pela ordem numérica e valida todas as correspondências.
-- Separação sem pessoas repetidas: 32 pessoas no treino, 6 na validação e 7 no
-  teste.
-- Implementação de uma U-Net pequena, aumento de dados leve, perda BCE + Dice e
-  métricas Dice e IoU.
-- Duas execuções exploratórias: uma curta de 10 épocas e uma de 30 épocas.
-- Geração automática de pesos, manifesto da divisão, histórico, curvas e
-  exemplos visuais.
+- Pareamento em dois níveis: pastas de pessoas e, dentro de cada lado, atribuição
+  das cinco máscaras pelos centros estimados da íris.
+- Auditoria salva no manifesto: 350 pares reordenados, distância média de 22,8
+  pixels na resolução original e sujeitos suspeitos identificados.
+- Divisão sem vazamento: 32 pessoas no treino, 6 na validação e 7 no teste.
+- Limiar escolhido só na validação; opção `--no-test` para comparar configurações
+  sem consultar o teste.
+- Métricas por imagem e pessoa, análise da pupila, razão de área e exemplos do
+  pior ao melhor resultado.
+- Testes automatizados para pareamento, cavidade pupilar e função de perda.
 
-## Resultado medido da execução de 30 épocas
+## Resultado atual
 
 | Item | Resultado |
 |---|---:|
 | Imagens / pessoas | 450 / 45 |
-| Treino / validação / teste | 320 / 60 / 70 imagens |
+| Treino / validação / teste | 320 / 60 / 70 |
 | Parâmetros treináveis | 121.033 |
-| Resolução de entrada | 160 × 120 pixels |
-| Melhor época pela validação | 21 |
-| Dice de validação | 0,588 |
-| Dice de teste | 0,527 |
-| IoU de teste | 0,369 |
+| Resolução | 160 × 120 |
+| Melhor época | 35 |
+| Limiar escolhido na validação | 0,46 |
+| Dice de validação | 0,6549 |
+| Dice / IoU de teste | 0,5247 / 0,3739 |
+| Precisão / revocação | 0,4533 / 0,6372 |
+| Área prevista / real | 1,436 |
+| Pupila preenchida | 0,607 |
 
-O resultado indica que a rede aprendeu a localizar aproximadamente a íris, mas
-ainda tende a preencher parte da pupila e perde regiões ocluídas por pálpebras e
-cílios. Esse comportamento aparece nos exemplos salvos e justifica novos testes
-com maior resolução, mais capacidade e funções de perda voltadas ao contorno.
+O sujeito 10 tem a pior qualidade de referência entre as pessoas de teste. Sem
+ele, apenas como análise de sensibilidade, o Dice é 0,5547 em 60 imagens. O valor
+oficial continua sendo 0,5247 nas 70 imagens.
 
-## O que este resultado não demonstra
+## Interpretação honesta
 
-- Não classifica olhos saudáveis versus olhos com alterações.
-- Não permite concluir ainda se a segmentação melhora a classificação.
-- Não valida desempenho em imagens clínicas ou olhos doentes.
-- Não deve ser apresentado como resultado final do artigo.
+- **Satisfatório:** rastreabilidade, divisão por pessoa, ausência de ajuste pelo
+  teste, diagnóstico do erro de rótulo e geração de evidências.
+- **Parcialmente satisfatório:** localização e formato geral da íris; há bons
+  casos, com 12 imagens acima de Dice 0,70.
+- **Insatisfatório para conclusão final:** dispersão alta, 32 imagens abaixo de
+  Dice 0,50, dificuldade com oclusões e ausência de avaliação clínica.
 
-O MMU é biométrico e não possui rótulos de doenças. Ele foi usado somente para
-validar a infraestrutura e estudar a primeira etapa do pipeline.
+A pequena diferença em relação ao Dice do pipeline antigo não representa piora
+direta, pois a referência foi corrigida. Os sinais qualitativos mais úteis foram
+a redução da razão de área de aproximadamente 1,85 para 1,44 e da fração pupilar
+preenchida de aproximadamente 0,89 para 0,61.
 
-## Próximos experimentos propostos
+## Experimentos rejeitados pela validação
 
-1. Repetir o treino em 320 × 240 pixels com U-Net de maior capacidade.
-2. Comparar BCE + Dice com Focal/Tversky, mantendo exatamente a mesma divisão.
-3. Medir média, dispersão e exemplos de sucesso/falha; depois selecionar uma
-   configuração de segmentação sem usar o conjunto de teste para ajustes.
-4. Continuar a solicitação da Warsaw-BioBase-Disease-Iris para o experimento
-   clínico com e sem segmentação.
-5. Iniciar Materiais e Métodos com o protocolo já definido, deixando a base
-   clínica como item pendente de autorização.
+| Alteração | Dice de validação | Decisão |
+|---|---:|---|
+| Configuração compacta, BCE + Dice | **0,6549** | Manter |
+| Focal Tversky com peso de borda | 0,6454 | Rejeitar |
+| Exclusão rígida de sujeitos suspeitos | 0,6425 | Rejeitar como treino padrão |
+| Resolução 320 × 240 e rede maior | 0,6353 | Rejeitar nesta amostra |
 
-## Decisões para pedir ao orientador
+Uma restrição circular pós-processada melhorou a validação em apenas 0,0006 e
+também foi rejeitada por impor uma geometria rígida sem benefício material.
 
-1. O orientador aprova o MMU apenas como base provisória de desenvolvimento da
-   segmentação?
-2. A regra de referências dos últimos cinco anos permite uma base clássica como
-   material, desde que o método e as discussões sejam sustentados por artigos de
-   2022–2026?
-3. Caso a Warsaw não seja liberada, qual alternativa ele aprova: outra base
-   clínica, anotação de uma amostra ou ajuste do escopo?
-4. Devemos solicitar por escrito autorização para as máscaras, já que o
-   repositório não possui licença explícita e o Kaggle informa licença
-   `Unknown`?
+## Bases recomendadas
 
-## Referências recentes para citar na conversa
+1. **MOBIUS:** 3.559 imagens RGB com máscaras de íris, pupila, esclera e região
+   periocular. Melhor opção para formar o segmentador visível.
+2. **UBIPr segmentado:** máscaras para todas as amostras e licença
+   CC BY-NC-SA 4.0. Melhor opção para começar imediatamente.
+3. **Warsaw-BioBase-Disease-Iris:** 2.996 imagens de 230 íris e mais de 20
+   condições; base prioritária para responder à pergunta clínica.
+4. **MCIS/OpenEDS:** validação externa complementar; OpenEDS tem 12.759 máscaras,
+   mas domínio NIR de headset VR.
+5. **Notre Dame Open-Source Iris Recognition:** segmentador externo treinado em
+   várias bases, incluindo Warsaw, para comparação independente.
 
-- Ganeeva e Myasnikov (2022) descrevem CNNs nas etapas de segmentação e extração
-  de características no MMU e informam o compartilhamento das máscaras manuais.
-- Sumi et al. (2024) apresentam uma avaliação abrangente de métodos de
-  segmentação em diferentes bases e reforçam a necessidade de avaliação em
-  composições variadas de dados.
+## Decisões para o orientador
+
+1. Aprovar o MMU apenas como prova de conceito, sem usá-lo como evidência clínica.
+2. Autorizar a solicitação do MOBIUS e da Warsaw Disease-Iris em nome do projeto.
+3. Definir a tarefa clínica: binária, por grupos de impacto ou multirrótulo por
+   patologia.
+4. Aprovar o protocolo pareado: mesmo classificador e mesmas partições, mudando
+   apenas a entrada original versus a entrada segmentada.
+5. Decidir se o modelo da Notre Dame deve ser um terceiro braço experimental.
+6. Confirmar como documentar bases clássicas quando as referências metodológicas
+   principais precisam estar na janela 2022–2026.
+
+## Próxima execução recomendada
+
+1. Solicitar MOBIUS e Warsaw; registrar licenças e versões.
+2. Preparar o carregador multibase e a conversão de rótulos para íris visível.
+3. Pré-treinar em UBIPr/MOBIUS e medir generalização por pessoa.
+4. Congelar o segmentador e abrir somente então a partição clínica de teste.
+5. Comparar estatisticamente a classificação com e sem recorte.
+
+Detalhes e links estão em `DATASETS_RECOMENDADOS.md`; os resultados completos
+estão em `outputs/pareamento_corrigido_50ep/`.

@@ -14,3 +14,6 @@
 
 # Treinamentos descartáveis
 **/outputs/teste_local_5ep/
+
+# Exemplos que reproduzem imagens biométricas
+  **/outputs/**/exemplos_*.png
