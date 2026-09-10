@@ -49,6 +49,30 @@ apenas moderado como segmentador; insuficiente como resultado final ou clínico.
 O recorte preserva a abertura pupilar com mais frequência e reduz a área
 excedente, mas ainda falha em oclusões, reflexos e mudanças entre pessoas.
 
+## Benchmark com modelos modernos
+
+Os resultados da CNN foram separados em `outputs/cnn/`. Dois modelos públicos
+também foram avaliados na mesma partição de 60 imagens de validação e 70 de
+teste. A configuração foi escolhida somente na validação pelo índice auxiliar
+`Dice × (1 - preenchimento da pupila)`.
+
+| Método | Dice | IoU | Aproveitamento | Pureza | Pupila preenchida | Índice útil |
+|---|---:|---:|---:|---:|---:|---:|
+| Small U-Net | 0,5247 | 0,3739 | 63,72% | 45,33% | 60,66% | 0,2064 |
+| SAM 2.1 Tiny automático, zero-shot | 0,5141 | 0,3764 | 55,33% | 48,61% | 47,20% | 0,2715 |
+| OpenIRIS pré-treinado | 0,4944 | 0,3575 | 49,79% | 49,83% | 36,25% | 0,3152 |
+
+O SAM 2.1 e o OpenIRIS preservaram melhor a abertura pupilar, mas perderam área
+de íris e Dice. Portanto, nenhum deles substitui a CNN de forma inequívoca neste
+teste. O resultado sugere ajustar o SAM ao domínio da íris em vez de usar apenas
+o modelo zero-shot.
+
+O OpenIRIS declara o MMU entre as bases usadas no próprio treinamento. Como não
+é possível excluir sobreposição com estas imagens, seu resultado é apenas uma
+verificação técnica, não uma estimativa independente de generalização. O
+relatório completo está em
+`outputs/modelos_modernos/openiris/RELATORIO_COMPARATIVO_GERAL.md`.
+
 ## Como executar
 
 Requer Python 3.10 ou superior:
@@ -69,7 +93,7 @@ python treinar_segmentacao_mmu.py `
   --augmentation light `
   --patience 15 `
   --seed 42 `
-  --output-dir outputs/pareamento_corrigido_50ep
+  --output-dir outputs/cnn/pareamento_corrigido_50ep
 ```
 
 O programa baixa os arquivos quando eles ainda não existem. Use `--no-download`
@@ -86,6 +110,19 @@ Os testes são executados com:
 python -m unittest discover -p "test_*.py" -v
 ```
 
+Para reproduzir os benchmarks modernos, os modelos são baixados para o cache
+local na primeira execução:
+
+```powershell
+$env:HF_HOME = (Join-Path (Get-Location) "data/modelos/huggingface")
+python avaliar_sam2_mmu.py
+python avaliar_openiris_mmu.py
+```
+
+O SAM 2.1 testa um prompt automático e uma caixa obtida da máscara real. O
+resultado com caixa real é identificado como assistido e não deve ser usado
+como desempenho de um pipeline autônomo.
+
 ## Arquivos gerados
 
 - `metricas.json`: configuração, auditoria do pareamento e métricas agregadas;
@@ -95,6 +132,9 @@ python -m unittest discover -p "test_*.py" -v
 - `exemplos_teste.png`: referência, probabilidade, previsão e recorte aplicado;
 - `manifesto.json`: correspondências e partições por pessoa;
 - `melhor_modelo.pt`: estado escolhido exclusivamente pela validação.
+- `outputs/cnn/`: treinamentos e recortes produzidos pela Small U-Net;
+- `outputs/modelos_modernos/sam2_1_hiera_tiny/`: métricas e recortes do SAM;
+- `outputs/modelos_modernos/openiris/`: métricas e recortes do OpenIRIS.
 
 ## Datasets e próximos experimentos
 

@@ -1,0 +1,731 @@
+{
+  "status": "benchmark_completo",
+  "dataset": "MMU Iris Database + mascaras manuais",
+  "model": "facebook/sam2.1-hiera-tiny",
+  "model_revision": "de431c4043854a71d8101e17995dfe596bf101a5",
+  "model_parameters": 31440721,
+  "device": "cuda",
+  "protocol_notes": {
+    "automatic": "Sem uso da mascara da imagem avaliada; geometria calibrada apenas na validacao.",
+    "oracle_bbox": "Usa a caixa da mascara real; somente limite superior assistido."
+  },
+  "validation_image_count": 60,
+  "test_image_count": 70,
+  "automatic_geometry_calibration": {
+    "center_offset_x_ratio": -0.003803157713264227,
+    "center_offset_y_ratio": 0.04282466322183609,
+    "box_width_ratio": 0.353125,
+    "box_height_ratio": 0.39166666666666666
+  },
+  "selected_prompt_variant": {
+    "automatic": "box_negative",
+    "oracle_bbox": "box_negative"
+  },
+  "validation": {
+    "automatic": {
+      "box": {
+        "dice": {
+          "mean": 0.6278151090166294,
+          "standard_deviation": 0.14665655939129107,
+          "minimum": 0.13834329632792486,
+          "first_quartile": 0.5402695095948826,
+          "median": 0.6609709604603391,
+          "third_quartile": 0.7384577739459884,
+          "maximum": 0.8421351504826803
+        },
+        "iou": {
+          "mean": 0.47277381631735016,
+          "standard_deviation": 0.14630125527220722,
+          "minimum": 0.07431192660550459,
+          "first_quartile": 0.3701164735551965,
+          "median": 0.49362300904917955,
+          "third_quartile": 0.5853611526581081,
+          "maximum": 0.7273173124080432
+        },
+        "aproveitamento_percentual": {
+          "mean": 75.70888318049498,
+          "standard_deviation": 17.615978057923044,
+          "minimum": 18.096514745308312,
+          "first_quartile": 65.09832690673812,
+          "median": 79.17770575614219,
+          "third_quartile": 89.73260912328084,
+          "maximum": 99.98180494905385
+        },
+        "pureza_percentual": {
+          "mean": 54.65128121348053,
+          "standard_deviation": 14.506305044947297,
+          "minimum": 11.197124688968758,
+          "first_quartile": 46.44163707390211,
+          "median": 57.29173617316097,
+          "third_quartile": 64.90173607282544,
+          "maximum": 78.19589729656296
+        },
+        "contaminacao_percentual": {
+          "mean": 45.34871878651946,
+          "standard_deviation": 14.506305044947297,
+          "minimum": 21.804102703437035,
+          "first_quartile": 35.09826392717456,
+          "median": 42.70826382683903,
+          "third_quartile": 53.55836292609789,
+          "maximum": 88.80287531103124
+        },
+        "perda_iris_percentual": {
+          "mean": 24.29111681950503,
+          "standard_deviation": 17.615978057923044,
+          "minimum": 0.01819505094614593,
+          "first_quartile": 10.267390876719157,
+          "median": 20.822294243857804,
+          "third_quartile": 34.90167309326188,
+          "maximum": 81.90348525469169
+        },
+        "razao_area_prevista_referencia": {
+          "mean": 1.4393438711950606,
+          "standard_deviation": 0.3609209082055267,
+          "minimum": 0.8074056547971135,
+          "first_quartile": 1.1764445562246748,
+          "median": 1.355927085390132,
+          "third_quartile": 1.582009551454957,
+          "maximum": 2.9669167803547065
+        },
+        "preenchimento_pupila_percentual": {
+          "mean": 93.38556956452548,
+          "standard_deviation": 13.515635520323322,
+          "minimum": 48.15195071868583,
+          "first_quartile": 95.39194915254238,
+          "median": 98.74560963371802,
+          "third_quartile": 99.79423868312757,
+          "maximum": 100.0
+        },
+        "sam_predicted_iou": {
+          "mean": 0.9264811197916667,
+          "standard_deviation": 0.035129270001100055,
+          "minimum": 0.759765625,
+          "first_quartile": 0.9161376953125,
+          "median": 0.93310546875,
+          "third_quartile": 0.9498291015625,
+          "maximum": 0.970703125
+        },
+        "indice_selecao_util": 0.04152639364930345
+      },
+      "box_negative": {
+        "dice": {
+          "mean": 0.6156566897043517,
+          "standard_deviation": 0.186995662952913,
+          "minimum": 0.1553071520427342,
+          "first_quartile": 0.5036614513567,
+          "median": 0.6553479182305478,
+          "third_quartile": 0.7644503244530525,
+          "maximum": 0.9077222931648632
+        },
+        "iou": {
+          "mean": 0.4695093652127605,
+          "standard_deviation": 0.18838951080911484,
+          "minimum": 0.08419133419133419,
+          "first_quartile": 0.3365959221617665,
+          "median": 0.4873928655547885,
+          "third_quartile": 0.6187427219053043,
+          "maximum": 0.8310361801624415
+        },
+        "aproveitamento_percentual": {
+          "mean": 65.73225585138954,
+          "standard_deviation": 19.82365444688598,
+          "minimum": 17.53798033958892,
+          "first_quartile": 52.988830574050446,
+          "median": 71.1516689812665,
+          "third_quartile": 82.97799414764808,
+          "maximum": 96.80314960629921
+        },
+        "pureza_percentual": {
+          "mean": 59.108950525489014,
+          "standard_deviation": 19.53622561414778,
+          "minimum": 13.935735842357536,
+          "first_quartile": 46.83069943945364,
+          "median": 63.587420823926756,
+          "third_quartile": 73.41291052943367,
+          "maximum": 97.10819579630413
+        },
+        "contaminacao_percentual": {
+          "mean": 40.891049474510986,
+          "standard_deviation": 19.53622561414778,
+          "minimum": 2.891804203695869,
+          "first_quartile": 26.58708947056633,
+          "median": 36.412579176073244,
+          "third_quartile": 53.16930056054637,
+          "maximum": 86.06426415764247
+        },
+        "perda_iris_percentual": {
+          "mean": 34.267744148610454,
+          "standard_deviation": 19.823654446885975,
+          "minimum": 3.1968503937007897,
+          "first_quartile": 17.02200585235193,
+          "median": 28.848331018733504,
+          "third_quartile": 47.011169425949554,
+          "maximum": 82.46201966041107
+        },
+        "razao_area_prevista_referencia": {
+          "mean": 1.1583818421088228,
+          "standard_deviation": 0.2876069581859539,
+          "minimum": 0.6348042115225364,
+          "first_quartile": 0.973147014575747,
+          "median": 1.111318295590076,
+          "third_quartile": 1.2827551139693425,
+          "maximum": 2.366643929058663
+        },
+        "preenchimento_pupila_percentual": {
+          "mean": 47.495395112012,
+          "standard_deviation": 23.17159329357257,
+          "minimum": 3.562468640240843,
+          "first_quartile": 33.21167883211679,
+          "median": 47.33688415446072,
+          "third_quartile": 61.7078410311493,
+          "maximum": 96.9718817591925
+        },
+        "sam_predicted_iou": {
+          "mean": 0.89853515625,
+          "standard_deviation": 0.051109302755505924,
+          "minimum": 0.6357421875,
+          "first_quartile": 0.890869140625,
+          "median": 0.9111328125,
+          "third_quartile": 0.927734375,
+          "maximum": 0.951171875
+        },
+        "indice_selecao_util": 0.3232481123957362
+      },
+      "box_ring_points": {
+        "dice": {
+          "mean": 0.6213714579338263,
+          "standard_deviation": 0.1733968664925614,
+          "minimum": 0.15283483976992604,
+          "first_quartile": 0.5129628629961396,
+          "median": 0.6696204094521971,
+          "third_quartile": 0.7531856971723561,
+          "maximum": 0.8975603270624211
+        },
+        "iou": {
+          "mean": 0.47226238479483434,
+          "standard_deviation": 0.1758576805410868,
+          "minimum": 0.08274021352313167,
+          "first_quartile": 0.3451169677606313,
+          "median": 0.5033758912195446,
+          "third_quartile": 0.6040884768227908,
+          "maximum": 0.8141582247949831
+        },
+        "aproveitamento_percentual": {
+          "mean": 67.82540918014001,
+          "standard_deviation": 18.950235937963463,
+          "minimum": 16.621983914209114,
+          "first_quartile": 53.74424280266409,
+          "median": 72.8839063104258,
+          "third_quartile": 82.40709719627915,
+          "maximum": 98.05993084902036
+        },
+        "pureza_percentual": {
+          "mean": 58.55089460814817,
+          "standard_deviation": 18.0505028949772,
+          "minimum": 14.14448669201521,
+          "first_quartile": 46.89297497904741,
+          "median": 62.16160083688413,
+          "third_quartile": 70.84101382488478,
+          "maximum": 96.69222032935832
+        },
+        "contaminacao_percentual": {
+          "mean": 41.44910539185183,
+          "standard_deviation": 18.0505028949772,
+          "minimum": 3.307779670641686,
+          "first_quartile": 29.15898617511521,
+          "median": 37.83839916311587,
+          "third_quartile": 53.10702502095259,
+          "maximum": 85.8555133079848
+        },
+        "perda_iris_percentual": {
+          "mean": 32.17459081985998,
+          "standard_deviation": 18.950235937963463,
+          "minimum": 1.9400691509796397,
+          "first_quartile": 17.592902803720854,
+          "median": 27.1160936895742,
+          "third_quartile": 46.25575719733591,
+          "maximum": 83.37801608579089
+        },
+        "razao_area_prevista_referencia": {
+          "mean": 1.202775049134291,
+          "standard_deviation": 0.2974612047610387,
+          "minimum": 0.7171418431326156,
+          "first_quartile": 0.9718425037312531,
+          "median": 1.1763127627180352,
+          "third_quartile": 1.3557217977023301,
+          "maximum": 2.4662346521145975
+        },
+        "preenchimento_pupila_percentual": {
+          "mean": 61.32777699093938,
+          "standard_deviation": 25.59876513587815,
+          "minimum": 5.77019568489714,
+          "first_quartile": 43.01848049281315,
+          "median": 61.019567456230696,
+          "third_quartile": 76.90677966101694,
+          "maximum": 100.0
+        },
+        "sam_predicted_iou": {
+          "mean": 0.8706624348958333,
+          "standard_deviation": 0.03657124870354945,
+          "minimum": 0.73828125,
+          "first_quartile": 0.84521484375,
+          "median": 0.8759765625,
+          "third_quartile": 0.895751953125,
+          "maximum": 0.931640625
+        },
+        "indice_selecao_util": 0.24029815592682063
+      }
+    },
+    "oracle_bbox": {
+      "box": {
+        "dice": {
+          "mean": 0.6923482990804523,
+          "standard_deviation": 0.09210659297586665,
+          "minimum": 0.43376023514591644,
+          "first_quartile": 0.636521171671895,
+          "median": 0.7168278955965415,
+          "third_quartile": 0.7605354907167825,
+          "maximum": 0.8483629455805118
+        },
+        "iou": {
+          "mean": 0.5366897209235313,
+          "standard_deviation": 0.10474081814752988,
+          "minimum": 0.27694369973190347,
+          "first_quartile": 0.4668366598057101,
+          "median": 0.5586694014024339,
+          "third_quartile": 0.613605408125986,
+          "maximum": 0.7366582573258296
+        },
+        "aproveitamento_percentual": {
+          "mean": 80.97150288947815,
+          "standard_deviation": 13.614483430491095,
+          "minimum": 46.15728328865058,
+          "first_quartile": 72.12904444452815,
+          "median": 85.18532756276802,
+          "third_quartile": 90.98339501641887,
+          "maximum": 99.98180494905385
+        },
+        "pureza_percentual": {
+          "mean": 61.15053194934587,
+          "standard_deviation": 8.482716470555646,
+          "minimum": 40.91089108910891,
+          "first_quartile": 56.44616153712397,
+          "median": 61.19009346941327,
+          "third_quartile": 67.28595204857358,
+          "maximum": 78.48049837486457
+        },
+        "contaminacao_percentual": {
+          "mean": 38.84946805065413,
+          "standard_deviation": 8.482716470555646,
+          "minimum": 21.51950162513543,
+          "first_quartile": 32.71404795142643,
+          "median": 38.80990653058673,
+          "third_quartile": 43.55383846287603,
+          "maximum": 59.0891089108911
+        },
+        "perda_iris_percentual": {
+          "mean": 19.028497110521872,
+          "standard_deviation": 13.614483430491095,
+          "minimum": 0.01819505094614593,
+          "first_quartile": 9.016604983581129,
+          "median": 14.814672437231973,
+          "third_quartile": 27.87095555547186,
+          "maximum": 53.84271671134941
+        },
+        "razao_area_prevista_referencia": {
+          "mean": 1.3342835130012929,
+          "standard_deviation": 0.21954345371854123,
+          "minimum": 0.8548444339287827,
+          "first_quartile": 1.1942322679415225,
+          "median": 1.308655275298078,
+          "third_quartile": 1.4936741335765793,
+          "maximum": 1.8174458611617081
+        },
+        "preenchimento_pupila_percentual": {
+          "mean": 97.89068381982662,
+          "standard_deviation": 3.1458368367904153,
+          "minimum": 89.90627253064167,
+          "first_quartile": 98.2828739267962,
+          "median": 99.09056460780599,
+          "third_quartile": 100.0,
+          "maximum": 100.0
+        },
+        "sam_predicted_iou": {
+          "mean": 0.8784342447916667,
+          "standard_deviation": 0.07955538530753624,
+          "minimum": 0.57275390625,
+          "first_quartile": 0.8328857421875,
+          "median": 0.905517578125,
+          "third_quartile": 0.93603515625,
+          "maximum": 0.9658203125
+        },
+        "indice_selecao_util": 0.014603814695659176
+      },
+      "box_negative": {
+        "dice": {
+          "mean": 0.6839887160265546,
+          "standard_deviation": 0.12484669460366879,
+          "minimum": 0.4138351983723296,
+          "first_quartile": 0.6040093619255588,
+          "median": 0.6943803563397627,
+          "third_quartile": 0.7844494356623116,
+          "maximum": 0.9234855847100745
+        },
+        "iou": {
+          "mean": 0.5330649708876121,
+          "standard_deviation": 0.14362310226008315,
+          "minimum": 0.2609030271934325,
+          "first_quartile": 0.4326744906599428,
+          "median": 0.531877754238124,
+          "third_quartile": 0.6453570190125707,
+          "maximum": 0.8578478574867597
+        },
+        "aproveitamento_percentual": {
+          "mean": 71.24491536164537,
+          "standard_deviation": 15.215674886192236,
+          "minimum": 35.50151268326739,
+          "first_quartile": 60.94713330196631,
+          "median": 73.54475379790425,
+          "third_quartile": 84.0736190596728,
+          "maximum": 94.0684133915575
+        },
+        "pureza_percentual": {
+          "mean": 66.55716473164357,
+          "standard_deviation": 11.637933283397642,
+          "minimum": 42.05439424589795,
+          "first_quartile": 58.685424646936,
+          "median": 65.10341853117248,
+          "third_quartile": 74.4093728890617,
+          "maximum": 96.0570134541095
+        },
+        "contaminacao_percentual": {
+          "mean": 33.44283526835644,
+          "standard_deviation": 11.637933283397643,
+          "minimum": 3.9429865458905033,
+          "first_quartile": 25.5906271109383,
+          "median": 34.89658146882752,
+          "third_quartile": 41.314575353064,
+          "maximum": 57.94560575410205
+        },
+        "perda_iris_percentual": {
+          "mean": 28.755084638354635,
+          "standard_deviation": 15.215674886192236,
+          "minimum": 5.931586608442507,
+          "first_quartile": 15.926380940327206,
+          "median": 26.45524620209575,
+          "third_quartile": 39.05286669803369,
+          "maximum": 64.4984873167326
+        },
+        "razao_area_prevista_referencia": {
+          "mean": 1.0733666666592838,
+          "standard_deviation": 0.17283354560754216,
+          "minimum": 0.6790488583934697,
+          "first_quartile": 0.9651112392880685,
+          "median": 1.0595151866618688,
+          "third_quartile": 1.1926876360569647,
+          "maximum": 1.3932402347702895
+        },
+        "preenchimento_pupila_percentual": {
+          "mean": 51.188044721167365,
+          "standard_deviation": 25.744111042956007,
+          "minimum": 3.612644254892122,
+          "first_quartile": 33.33333333333333,
+          "median": 48.65479348237969,
+          "third_quartile": 68.94001643385373,
+          "maximum": 97.02258726899385
+        },
+        "sam_predicted_iou": {
+          "mean": 0.8350504557291667,
+          "standard_deviation": 0.12442954035254027,
+          "minimum": 0.281494140625,
+          "first_quartile": 0.7840576171875,
+          "median": 0.88232421875,
+          "third_quartile": 0.91259765625,
+          "maximum": 0.9521484375
+        },
+        "indice_selecao_util": 0.3338682661791434
+      },
+      "box_ring_points": {
+        "dice": {
+          "mean": 0.6997386935922344,
+          "standard_deviation": 0.10417220521910041,
+          "minimum": 0.39940730984524203,
+          "first_quartile": 0.6325474945324814,
+          "median": 0.7005999933423606,
+          "third_quartile": 0.771566359967989,
+          "maximum": 0.9240456513183786
+        },
+        "iou": {
+          "mean": 0.5478204040493876,
+          "standard_deviation": 0.12344914739625429,
+          "minimum": 0.2495371322773092,
+          "first_quartile": 0.46257368259760856,
+          "median": 0.5391719737107005,
+          "third_quartile": 0.6281195163666609,
+          "maximum": 0.858814923189466
+        },
+        "aproveitamento_percentual": {
+          "mean": 75.29008573768525,
+          "standard_deviation": 11.918587544997594,
+          "minimum": 39.98022412656559,
+          "first_quartile": 68.26157203918004,
+          "median": 76.21958145537164,
+          "third_quartile": 84.85437051710439,
+          "maximum": 97.1187091817134
+        },
+        "pureza_percentual": {
+          "mean": 66.04247603288074,
+          "standard_deviation": 11.403338038498367,
+          "minimum": 39.901315789473685,
+          "first_quartile": 58.954777282038656,
+          "median": 65.52231931811444,
+          "third_quartile": 73.64920421523105,
+          "maximum": 96.4515687080422
+        },
+        "contaminacao_percentual": {
+          "mean": 33.95752396711926,
+          "standard_deviation": 11.403338038498369,
+          "minimum": 3.5484312919577987,
+          "first_quartile": 26.35079578476894,
+          "median": 34.47768068188556,
+          "third_quartile": 41.045222717961344,
+          "maximum": 60.09868421052631
+        },
+        "perda_iris_percentual": {
+          "mean": 24.709914262314776,
+          "standard_deviation": 11.918587544997594,
+          "minimum": 2.881290818286597,
+          "first_quartile": 15.145629482895611,
+          "median": 23.780418544628354,
+          "third_quartile": 31.73842796081996,
+          "maximum": 60.01977587343441
+        },
+        "razao_area_prevista_referencia": {
+          "mean": 1.1547890865204664,
+          "standard_deviation": 0.1797475164326859,
+          "minimum": 0.7673015497456525,
+          "first_quartile": 1.0195421079807674,
+          "median": 1.13442345367193,
+          "third_quartile": 1.244506097356925,
+          "maximum": 1.6741912962532
+        },
+        "preenchimento_pupila_percentual": {
+          "mean": 70.32829772684443,
+          "standard_deviation": 28.089200792112454,
+          "minimum": 5.168088309081787,
+          "first_quartile": 53.810504634397525,
+          "median": 82.66228430566967,
+          "third_quartile": 91.74508126603935,
+          "maximum": 100.0
+        },
+        "sam_predicted_iou": {
+          "mean": 0.8208740234375,
+          "standard_deviation": 0.08615408643877354,
+          "minimum": 0.50341796875,
+          "first_quartile": 0.7625732421875,
+          "median": 0.85205078125,
+          "third_quartile": 0.8809814453125,
+          "maximum": 0.92431640625
+        },
+        "indice_selecao_util": 0.20762438185275614
+      }
+    }
+  },
+  "test": {
+    "automatic": {
+      "dice": {
+        "mean": 0.51410322764678,
+        "standard_deviation": 0.2199479306362483,
+        "minimum": 0.12622029385662165,
+        "first_quartile": 0.3310562991205443,
+        "median": 0.49178338480546646,
+        "third_quartile": 0.7095979104703332,
+        "maximum": 0.9143352510048073
+      },
+      "iou": {
+        "mean": 0.37641199218166893,
+        "standard_deviation": 0.2104415670302148,
+        "minimum": 0.06736133038627513,
+        "first_quartile": 0.19838890012035099,
+        "median": 0.32614836086408616,
+        "third_quartile": 0.5499281389372745,
+        "maximum": 0.8421893147502904
+      },
+      "aproveitamento_percentual": {
+        "mean": 55.32718074864419,
+        "standard_deviation": 22.91946824397899,
+        "minimum": 16.473616473616474,
+        "first_quartile": 37.4767139595585,
+        "median": 54.30120273994935,
+        "third_quartile": 74.91368484688253,
+        "maximum": 99.02534113060429
+      },
+      "pureza_percentual": {
+        "mean": 48.61163525931661,
+        "standard_deviation": 21.95775507897498,
+        "minimum": 10.230179028132993,
+        "first_quartile": 28.05038503318479,
+        "median": 47.41854585805079,
+        "third_quartile": 65.48320411253871,
+        "maximum": 90.69767441860465
+      },
+      "contaminacao_percentual": {
+        "mean": 51.38836474068339,
+        "standard_deviation": 21.957755078974976,
+        "minimum": 9.302325581395355,
+        "first_quartile": 34.516795887461285,
+        "median": 52.58145414194921,
+        "third_quartile": 71.9496149668152,
+        "maximum": 89.769820971867
+      },
+      "perda_iris_percentual": {
+        "mean": 44.67281925135581,
+        "standard_deviation": 22.91946824397899,
+        "minimum": 0.974658869395717,
+        "first_quartile": 25.08631515311746,
+        "median": 45.69879726005065,
+        "third_quartile": 62.5232860404415,
+        "maximum": 83.52638352638353
+      },
+      "razao_area_prevista_referencia": {
+        "mean": 1.1845324731596056,
+        "standard_deviation": 0.21515660412878532,
+        "minimum": 0.8553326293558606,
+        "first_quartile": 1.0299588422027943,
+        "median": 1.149887126321449,
+        "third_quartile": 1.3287349625899691,
+        "maximum": 1.698471121177803
+      },
+      "preenchimento_pupila_percentual": {
+        "mean": 47.198414389419504,
+        "standard_deviation": 22.520201425671402,
+        "minimum": 0.10803024846957147,
+        "first_quartile": 36.336032388663966,
+        "median": 51.19375573921029,
+        "third_quartile": 61.992263056092845,
+        "maximum": 100.0
+      },
+      "sam_predicted_iou": {
+        "mean": 0.8863909040178571,
+        "standard_deviation": 0.0696001922775116,
+        "minimum": 0.615234375,
+        "first_quartile": 0.88818359375,
+        "median": 0.905517578125,
+        "third_quartile": 0.9208984375,
+        "maximum": 0.95751953125
+      }
+    },
+    "oracle_bbox": {
+      "dice": {
+        "mean": 0.6122641906938712,
+        "standard_deviation": 0.15675263038176704,
+        "minimum": 0.1956521739130435,
+        "first_quartile": 0.5055532584877283,
+        "median": 0.6065654947120749,
+        "third_quartile": 0.7222678769156539,
+        "maximum": 0.9197784810126582
+      },
+      "iou": {
+        "mean": 0.45982384353813394,
+        "standard_deviation": 0.1688227324710558,
+        "minimum": 0.10843373493975904,
+        "first_quartile": 0.33829164833648184,
+        "median": 0.43532317124356307,
+        "third_quartile": 0.565276949615378,
+        "maximum": 0.8514720960890582
+      },
+      "aproveitamento_percentual": {
+        "mean": 63.624520097164975,
+        "standard_deviation": 17.513675107250826,
+        "minimum": 13.788910505836578,
+        "first_quartile": 51.71828596895129,
+        "median": 63.76695213518907,
+        "third_quartile": 76.15697460434302,
+        "maximum": 96.88109161793372
+      },
+      "pureza_percentual": {
+        "mean": 59.68383107203356,
+        "standard_deviation": 14.77049336941333,
+        "minimum": 33.66983372921615,
+        "first_quartile": 47.91086557970597,
+        "median": 58.756371407817475,
+        "third_quartile": 70.29039235483012,
+        "maximum": 90.55177626606198
+      },
+      "contaminacao_percentual": {
+        "mean": 40.31616892796643,
+        "standard_deviation": 14.770493369413332,
+        "minimum": 9.448223733938022,
+        "first_quartile": 29.709607645169882,
+        "median": 41.243628592182525,
+        "third_quartile": 52.08913442029403,
+        "maximum": 66.33016627078385
+      },
+      "perda_iris_percentual": {
+        "mean": 36.375479902835,
+        "standard_deviation": 17.513675107250826,
+        "minimum": 3.1189083820662766,
+        "first_quartile": 23.843025395656976,
+        "median": 36.233047864810935,
+        "third_quartile": 48.28171403104871,
+        "maximum": 86.21108949416343
+      },
+      "razao_area_prevista_referencia": {
+        "mean": 1.067030634853082,
+        "standard_deviation": 0.17970267167779214,
+        "minimum": 0.4095330739299611,
+        "first_quartile": 0.9534294503435353,
+        "median": 1.0610327108893562,
+        "third_quartile": 1.1646066533831105,
+        "maximum": 1.525553811268097
+      },
+      "preenchimento_pupila_percentual": {
+        "mean": 53.08683577682298,
+        "standard_deviation": 24.31693198002467,
+        "minimum": 11.781946072684644,
+        "first_quartile": 37.35056542810985,
+        "median": 50.320987654320994,
+        "third_quartile": 70.83199486026342,
+        "maximum": 100.0
+      },
+      "sam_predicted_iou": {
+        "mean": 0.797467041015625,
+        "standard_deviation": 0.14717976630230972,
+        "minimum": 0.02606201171875,
+        "first_quartile": 0.7589111328125,
+        "median": 0.826904296875,
+        "third_quartile": 0.8936767578125,
+        "maximum": 0.95703125
+      }
+    }
+  },
+  "comparison": {
+    "CNN Small U-Net": {
+      "model": "Small U-Net",
+      "dice_mean": 0.5247024366009465,
+      "iou_mean": 0.37391935787580993,
+      "aproveitamento_percentual_mean": 63.72334007550931,
+      "pureza_percentual_mean": 45.33278710611473,
+      "contaminacao_percentual_mean": 54.66721289388528,
+      "preenchimento_pupila_percentual_mean": 60.6587411881113,
+      "source": "outputs\\cnn\\pareamento_corrigido_50ep\\metricas.json"
+    },
+    "SAM 2.1 automático": {
+      "dice_mean": 0.51410322764678,
+      "iou_mean": 0.37641199218166893,
+      "aproveitamento_percentual_mean": 55.32718074864419,
+      "pureza_percentual_mean": 48.61163525931661,
+      "contaminacao_percentual_mean": 51.38836474068339,
+      "preenchimento_pupila_percentual_mean": 47.198414389419504
+    },
+    "SAM 2.1 caixa real (assistido)": {
+      "dice_mean": 0.6122641906938712,
+      "iou_mean": 0.45982384353813394,
+      "aproveitamento_percentual_mean": 63.624520097164975,
+      "pureza_percentual_mean": 59.68383107203356,
+      "contaminacao_percentual_mean": 40.31616892796643,
+      "preenchimento_pupila_percentual_mean": 53.08683577682298
+    }
+  },
+  "elapsed_seconds": 206.01870860000054
+}
