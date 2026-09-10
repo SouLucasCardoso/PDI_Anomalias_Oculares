@@ -13,7 +13,10 @@
 **/manifesto.json
 
 # Treinamentos descartáveis
-**/outputs/teste_local_5ep/
+**/outputs/**/teste_local_5ep/
+**/outputs/**/sam2_quick_smoke/
+**/outputs/**/openiris_quick_smoke/
 
 # Exemplos que reproduzem imagens biométricas
-  **/outputs/**/exemplos_*.png
+**/outputs/**/exemplos_*.png
+**/outputs/**/recortes_*/

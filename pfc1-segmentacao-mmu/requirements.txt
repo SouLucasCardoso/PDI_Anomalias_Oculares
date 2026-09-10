@@ -2,3 +2,6 @@ numpy>=1.26,<3
 Pillow>=10,<13
 matplotlib>=3.8,<4
 torch>=2.4,<3
+transformers>=5.17,<6
+safetensors>=0.8,<1
+onnxruntime>=1.29,<2
