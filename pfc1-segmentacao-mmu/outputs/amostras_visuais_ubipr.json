@@ -1,0 +1,47 @@
+[
+  {
+    "category": "pior resultado conjunto",
+    "subject": 111,
+    "session": 2,
+    "index": 15,
+    "side": "L",
+    "unet_dice": 0.0,
+    "sam_dice": 0.0
+  },
+  {
+    "category": "pior SAM",
+    "subject": 101,
+    "session": 2,
+    "index": 13,
+    "side": "L",
+    "unet_dice": 0.9612229679343773,
+    "sam_dice": 0.0
+  },
+  {
+    "category": "maior vantagem U-Net",
+    "subject": 303,
+    "session": 1,
+    "index": 1,
+    "side": "L",
+    "unet_dice": 0.98504729935917,
+    "sam_dice": 0.0
+  },
+  {
+    "category": "caso mediano",
+    "subject": 47,
+    "session": 1,
+    "index": 13,
+    "side": "L",
+    "unet_dice": 0.9218366631615843,
+    "sam_dice": 0.9032603559615687
+  },
+  {
+    "category": "melhor resultado conjunto",
+    "subject": 379,
+    "session": 1,
+    "index": 11,
+    "side": "L",
+    "unet_dice": 0.9782522736259391,
+    "sam_dice": 0.9486286460600784
+  }
+]

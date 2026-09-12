@@ -145,6 +145,77 @@ O levantamento com a estratégia de aquisição está em
 2. Warsaw-BioBase-Disease-Iris para a comparação clínica com e sem recorte;
 3. o segmentador aberto da Notre Dame como baseline externo congelado.
 
+### UBIPr multiclasse
+
+O UBIPr *Single Eyes Segmented Version* pode ser auditado e treinado pelo script
+`treinar_segmentacao_ubipr.py`. As imagens RGB (`.jpg`) e máscaras (`.png`) são
+pareadas pelo nome, e a divisão é feita pelo identificador de pessoa `C`.
+
+```powershell
+python treinar_segmentacao_ubipr.py --audit-only
+python treinar_segmentacao_ubipr.py --epochs 30 --batch-size 8
+```
+
+A máscara possui quatro níveis: `0=fundo ou pupila`, `85=íris`, `170=esclera` e
+`255=sobrancelha`. Como fundo e pupila compartilham o valor zero, o UBIPr não
+permite aprender a pupila como classe independente. Dados e pesos permanecem
+fora do Git; somente auditoria, manifesto e métricas agregadas são produzidos.
+
+O treinamento completo em 320 × 240, com batch 32, 8 canais iniciais e semente
+42, selecionou a época 25 exclusivamente pela validação. No teste independente
+de 1.650 imagens, os resultados foram:
+
+| Classe | Dice de teste |
+|---|---:|
+| Fundo ou pupila | 0,9884 |
+| Íris | **0,9332** |
+| Esclera | 0,8540 |
+| Sobrancelha | 0,8942 |
+| Média das classes de primeiro plano | **0,8938** |
+
+Essas métricas avaliam somente segmentação no UBIPr e não permitem concluir
+nada sobre classificação ou diagnóstico de alterações oculares.
+
+### Comparação UBIPr: U-Net treinada × SAM 2.1 zero-shot
+
+O SAM 2.1 Hiera Tiny foi avaliado no mesmo teste de 1.650 imagens. A geometria
+do prompt foi calibrada em 200 imagens de validação distribuídas entre pessoas,
+e a variante `box` foi escolhida sem consultar o teste. Para tornar os métodos
+comparáveis, a métrica principal abaixo é a média por imagem nas 1.642 amostras
+de teste que possuem referência de íris não vazia:
+
+| Método | Dice | IoU | Aproveitamento | Pureza |
+|---|---:|---:|---:|---:|
+| Small U-Net treinada no UBIPr | **0,9171** | **0,8676** | **92,10%** | **92,24%** |
+| SAM 2.1 Tiny zero-shot | 0,7026 | 0,6278 | 77,22% | 65,33% |
+
+O teste contém ainda oito imagens sem pixels de íris anotados. A U-Net produziu
+falsos positivos em quatro delas, enquanto o SAM produziu falsos positivos nas
+oito. A comparação demonstra maior adaptação da U-Net ao UBIPr, mas não prova
+superioridade geral da arquitetura: o SAM foi usado sem fine-tuning.
+
+### Amostras visuais do teste
+
+A prancha `outputs/amostras_visuais_ubipr.png` mostra imagens reais da partição
+de teste, a referência manual, as previsões da U-Net e do SAM e os respectivos
+recortes. Verde indica referência, azul indica U-Net e vermelho indica SAM. Os
+casos são selecionados deterministicamente para incluir resultado ruim, caso
+mediano, resultado bom e grande divergência entre os modelos; portanto, não são
+apenas exemplos favoráveis.
+
+Para regenerar a prancha e o arquivo JSON com a identificação e o Dice de cada
+amostra:
+
+```powershell
+python gerar_amostras_visuais_ubipr.py
+```
+
+Arquivos produzidos:
+
+- `outputs/amostras_visuais_ubipr.png`: comparação visual em cinco colunas;
+- `outputs/amostras_visuais_ubipr.json`: categoria, pessoa, sessão, imagem e
+  Dice de cada modelo para cada exemplo selecionado.
+
 ## Cuidados metodológicos
 
 1. O MMU valida somente segmentação; não permite inferência sobre doenças.

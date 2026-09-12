@@ -1,0 +1,49 @@
+{
+  "dataset": "UBIPr Single Eyes Segmented Version",
+  "test_images": 1650,
+  "images_with_iris": 1642,
+  "images_without_iris": 8,
+  "primary_metric": "macro mean over test images with non-empty iris reference",
+  "small_unet": {
+    "dice": {
+      "mean": 0.9171157948954816,
+      "std": 0.14693278019868383
+    },
+    "iou": {
+      "mean": 0.8676426531787067,
+      "std": 0.15484114763364012
+    },
+    "recall": {
+      "mean": 0.9209893903369962,
+      "std": 0.1365703499880963
+    },
+    "precision": {
+      "mean": 0.9224289823462176,
+      "std": 0.14825075319375505
+    }
+  },
+  "sam2_1_tiny_zero_shot": {
+    "dice": {
+      "mean": 0.7026051604367725,
+      "std": 0.3496433809448762
+    },
+    "iou": {
+      "mean": 0.6278386342069635,
+      "std": 0.32207333142746397
+    },
+    "recall": {
+      "mean": 0.7722110054528719,
+      "std": 0.37580923050694265
+    },
+    "precision": {
+      "mean": 0.653254734105604,
+      "std": 0.3327003190376589
+    }
+  },
+  "empty_reference_analysis": {
+    "small_unet_images_with_false_positive_iris": 4,
+    "sam_images_with_false_positive_iris": 8,
+    "note": "Amostras vazias sao relatadas separadamente e nao entram no Dice primario."
+  },
+  "interpretation_limit": "SAM e zero-shot; a U-Net foi treinada no UBIPr. Isto mede adaptacao ao dominio, nao superioridade geral de arquitetura."
+}
