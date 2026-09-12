@@ -1,0 +1,31 @@
+{
+  "dataset": "UBIPr Single Eyes Segmented Version",
+  "license": "CC BY-NC-SA 4.0",
+  "device": "cuda",
+  "configuration": {
+    "epochs_requested": 30,
+    "epochs_completed": 30,
+    "batch_size": 32,
+    "workers": 4,
+    "height": 240,
+    "width": 320,
+    "base_channels": 8,
+    "learning_rate": 0.001,
+    "patience": 10,
+    "seed": 42
+  },
+  "best_epoch": 25,
+  "validation_mean_foreground_dice": 0.8892671992251217,
+  "test": {
+    "loss": 0.19003693530192742,
+    "dice": {
+      "background_or_pupil": 0.9884365461225091,
+      "iris": 0.9332117272408367,
+      "sclera": 0.8540156204642063,
+      "eyebrow": 0.8942342634688074
+    },
+    "mean_foreground_dice": 0.8938205370579503
+  },
+  "elapsed_seconds": 2120.5978441238403,
+  "warning": "Resultados de segmentacao; a base nao fornece rotulos clinicos."
+}

@@ -1,0 +1,128 @@
+{
+  "status": "validacao_amostrada_teste_completo",
+  "dataset": "UBIPr Single Eyes Segmented Version",
+  "target": "iris (native value 85)",
+  "model": "facebook/sam2.1-hiera-tiny",
+  "revision": "de431c4043854a71d8101e17995dfe596bf101a5",
+  "mode": "zero-shot; no fine-tuning",
+  "device": "cuda",
+  "image_batch_size": 1,
+  "validation_sampling": "round-robin by subject",
+  "validation_images": 200,
+  "test_images": 1650,
+  "calibration": {
+    "dx": 0.005965637508779764,
+    "dy": 0.04406255483627319,
+    "width": 0.1567714506814447,
+    "height": 0.1404726529854211
+  },
+  "validation": {
+    "box": {
+      "dice": {
+        "mean": 0.6970363933282436,
+        "std": 0.3577850763020828
+      },
+      "iou": {
+        "mean": 0.6251234331387252,
+        "std": 0.3301303723820752
+      },
+      "aproveitamento_percentual": {
+        "mean": 76.02133462989727,
+        "std": 38.61839051216946
+      },
+      "pureza_percentual": {
+        "mean": 65.23071536358792,
+        "std": 34.2686145716052
+      },
+      "contaminacao_percentual": {
+        "mean": 34.76928463641209,
+        "std": 34.2686145716052
+      },
+      "razao_area_prevista_referencia": {
+        "mean": 329.85914672161584,
+        "std": 1989.8969340277436
+      }
+    },
+    "box_negative": {
+      "dice": {
+        "mean": 0.6746841632178457,
+        "std": 0.3552173402573211
+      },
+      "iou": {
+        "mean": 0.5952313773442601,
+        "std": 0.3233528807325212
+      },
+      "aproveitamento_percentual": {
+        "mean": 67.88402280789724,
+        "std": 36.064715976522855
+      },
+      "pureza_percentual": {
+        "mean": 68.60505737314647,
+        "std": 36.89929036215573
+      },
+      "contaminacao_percentual": {
+        "mean": 31.394942626853528,
+        "std": 36.89929036215574
+      },
+      "razao_area_prevista_referencia": {
+        "mean": 304.9883271401792,
+        "std": 1834.2031624795504
+      }
+    },
+    "box_ring_points": {
+      "dice": {
+        "mean": 0.671501974258762,
+        "std": 0.34745471066985467
+      },
+      "iou": {
+        "mean": 0.5879989339480282,
+        "std": 0.31810791149865364
+      },
+      "aproveitamento_percentual": {
+        "mean": 70.05924515991242,
+        "std": 36.28685974605499
+      },
+      "pureza_percentual": {
+        "mean": 66.82608392499125,
+        "std": 35.89847175297275
+      },
+      "contaminacao_percentual": {
+        "mean": 33.17391607500875,
+        "std": 35.89847175297275
+      },
+      "razao_area_prevista_referencia": {
+        "mean": 573.8575084559577,
+        "std": 3525.6683342983833
+      }
+    }
+  },
+  "selected_variant": "box",
+  "test": {
+    "dice": {
+      "mean": 0.6991985899619274,
+      "std": 0.3521926084461246
+    },
+    "iou": {
+      "mean": 0.6247945681017176,
+      "std": 0.32423788718062446
+    },
+    "aproveitamento_percentual": {
+      "mean": 76.84669520931003,
+      "std": 37.87149257618731
+    },
+    "pureza_percentual": {
+      "mean": 65.00874384250919,
+      "std": 33.49803651689311
+    },
+    "contaminacao_percentual": {
+      "mean": 34.99125615749081,
+      "std": 33.49803651689311
+    },
+    "razao_area_prevista_referencia": {
+      "mean": 62.61995817147966,
+      "std": 1066.4734689225547
+    }
+  },
+  "elapsed_seconds": 1974.9447417259216,
+  "comparison_warning": "Comparacao com a U-Net usa a mesma particao e alvo iris, mas o SAM permanece zero-shot."
+}
