@@ -43,7 +43,26 @@
   "empty_reference_analysis": {
     "small_unet_images_with_false_positive_iris": 4,
     "sam_images_with_false_positive_iris": 8,
-    "note": "Amostras vazias sao relatadas separadamente e nao entram no Dice primario."
+    "note": "Amostras vazias sao relatadas separadamente e nao entram no Dice primario.",
+    "sam3_1_images_with_false_positive_iris": 8
   },
-  "interpretation_limit": "SAM e zero-shot; a U-Net foi treinada no UBIPr. Isto mede adaptacao ao dominio, nao superioridade geral de arquitetura."
+  "interpretation_limit": "SAM e zero-shot; a U-Net foi treinada no UBIPr. Isto mede adaptacao ao dominio, nao superioridade geral de arquitetura.",
+  "sam3_1_zero_shot_text_prompt": {
+    "dice": {
+      "mean": 0.8833982987036028,
+      "std": 0.14355822940028132
+    },
+    "iou": {
+      "mean": 0.809491152396277,
+      "std": 0.1445639956490817
+    },
+    "recall": {
+      "mean": 0.958951822952672,
+      "std": 0.13168380905107718
+    },
+    "precision": {
+      "mean": 0.8251317793025557,
+      "std": 0.1446564718416537
+    }
+  }
 }

@@ -13,6 +13,7 @@ from treinar_segmentacao_ubipr import MulticlassUNet, Sample, UBIPrDataset
 
 CNN_DIR = Path("outputs/cnn/ubipr_multiclasse_30ep_batch32")
 SAM_DIR = Path("outputs/modelos_modernos/sam2_1_hiera_tiny_ubipr")
+SAM3_DIR = Path("outputs/modelos_modernos/sam3_1_ubipr")
 OUTPUT = Path("outputs/comparacao_ubipr.json")
 
 
@@ -55,6 +56,14 @@ def main():
         raise ValueError("CNN e SAM nao possuem o mesmo numero de imagens de teste")
     nonempty_cnn = [row for row, flag in zip(cnn_rows, nonempty_flags) if flag]
     nonempty_sam = [row for row, flag in zip(sam_rows, nonempty_flags) if flag]
+    sam3_rows = None
+    if (SAM3_DIR/"metricas_por_imagem.csv").exists():
+        with (SAM3_DIR/"metricas_por_imagem.csv").open(encoding="utf-8") as stream:
+            raw_sam3 = list(csv.DictReader(stream))
+        if len(raw_sam3) != len(cnn_rows):
+            raise ValueError("CNN e SAM 3.1 nao possuem o mesmo numero de imagens de teste")
+        sam3_rows = [{name: float(row[name]) for name in ("dice", "iou", "recall", "precision")} |
+                     {"predicted_nonempty": row["predicted_nonempty"].lower() == "true"} for row in raw_sam3]
     empty_positions = [index for index, flag in enumerate(nonempty_flags) if not flag]
     result = {
         "dataset": "UBIPr Single Eyes Segmented Version",
@@ -71,6 +80,13 @@ def main():
         },
         "interpretation_limit": "SAM e zero-shot; a U-Net foi treinada no UBIPr. Isto mede adaptacao ao dominio, nao superioridade geral de arquitetura.",
     }
+    if sam3_rows is not None:
+        result["sam3_1_zero_shot_text_prompt"] = describe(
+            [row for row, flag in zip(sam3_rows, nonempty_flags) if flag]
+        )
+        result["empty_reference_analysis"]["sam3_1_images_with_false_positive_iris"] = sum(
+            sam3_rows[i]["predicted_nonempty"] for i in empty_positions
+        )
     OUTPUT.write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")
     print(json.dumps(result, indent=2, ensure_ascii=False))
 

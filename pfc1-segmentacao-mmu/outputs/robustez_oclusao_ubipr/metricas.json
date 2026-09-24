@@ -1,0 +1,110 @@
+{
+  "dataset": "UBIPr Single Eyes Segmented Version",
+  "split": "test (frozen, subject-disjoint)",
+  "model": "Small U-Net multiclasse, checkpoint epoch 25",
+  "test_images_with_iris": 1642,
+  "directions": [
+    "top",
+    "bottom"
+  ],
+  "occluder": "black horizontal band",
+  "success_dice_threshold": 0.7,
+  "required_success_rate": 0.95,
+  "development_limit": null,
+  "operational_definition": "maior oclusao com pelo menos 95% dos casos-direcoes atingindo Dice visivel >= 0.70",
+  "limiting_occlusion_percent": 0,
+  "minimum_visible_iris_percent": 100,
+  "by_level": [
+    {
+      "target_occlusion_percent": 0,
+      "actual_occlusion_percent_mean": 0.0,
+      "images_directions": 3284,
+      "dice_visible_mean": 0.9171162770673295,
+      "dice_visible_median": 0.9522305577208128,
+      "success_rate_dice_ge_threshold": 0.9622411693057247,
+      "iris_original_preserved_mean": 0.9209901563915852
+    },
+    {
+      "target_occlusion_percent": 10,
+      "actual_occlusion_percent_mean": 11.596400123681793,
+      "images_directions": 3284,
+      "dice_visible_mean": 0.6649519358458069,
+      "dice_visible_median": 0.7348339666989783,
+      "success_rate_dice_ge_threshold": 0.5289281364190013,
+      "iris_original_preserved_mean": 0.6122021090186682
+    },
+    {
+      "target_occlusion_percent": 20,
+      "actual_occlusion_percent_mean": 21.79035429628024,
+      "images_directions": 3284,
+      "dice_visible_mean": 0.6061074466235824,
+      "dice_visible_median": 0.6623454910156372,
+      "success_rate_dice_ge_threshold": 0.46863580998781973,
+      "iris_original_preserved_mean": 0.4823003962678331
+    },
+    {
+      "target_occlusion_percent": 30,
+      "actual_occlusion_percent_mean": 31.79946969515698,
+      "images_directions": 3284,
+      "dice_visible_mean": 0.48849026713310695,
+      "dice_visible_median": 0.47725492470843855,
+      "success_rate_dice_ge_threshold": 0.33495736906211937,
+      "iris_original_preserved_mean": 0.3238460823828829
+    },
+    {
+      "target_occlusion_percent": 40,
+      "actual_occlusion_percent_mean": 41.83487577235504,
+      "images_directions": 3284,
+      "dice_visible_mean": 0.2757300954128427,
+      "dice_visible_median": 0.20047310406121632,
+      "success_rate_dice_ge_threshold": 0.1087088915956151,
+      "iris_original_preserved_mean": 0.14577025381817613
+    },
+    {
+      "target_occlusion_percent": 50,
+      "actual_occlusion_percent_mean": 51.79506359434718,
+      "images_directions": 3284,
+      "dice_visible_mean": 0.10021690460298842,
+      "dice_visible_median": 0.0,
+      "success_rate_dice_ge_threshold": 0.013093788063337393,
+      "iris_original_preserved_mean": 0.04216513340953722
+    },
+    {
+      "target_occlusion_percent": 60,
+      "actual_occlusion_percent_mean": 61.7817275784148,
+      "images_directions": 3284,
+      "dice_visible_mean": 0.018490201563002736,
+      "dice_visible_median": 0.0,
+      "success_rate_dice_ge_threshold": 0.0003045066991473812,
+      "iris_original_preserved_mean": 0.006184167030754138
+    },
+    {
+      "target_occlusion_percent": 70,
+      "actual_occlusion_percent_mean": 71.80227735639006,
+      "images_directions": 3284,
+      "dice_visible_mean": 0.001073204078718247,
+      "dice_visible_median": 0.0,
+      "success_rate_dice_ge_threshold": 0.0,
+      "iris_original_preserved_mean": 0.0003220381389942671
+    },
+    {
+      "target_occlusion_percent": 80,
+      "actual_occlusion_percent_mean": 81.76960184512932,
+      "images_directions": 3284,
+      "dice_visible_mean": 8.229910787767061e-06,
+      "dice_visible_median": 0.0,
+      "success_rate_dice_ge_threshold": 0.0,
+      "iris_original_preserved_mean": 3.443185290712438e-06
+    },
+    {
+      "target_occlusion_percent": 90,
+      "actual_occlusion_percent_mean": 91.54030849694128,
+      "images_directions": 3284,
+      "dice_visible_mean": 0.0,
+      "dice_visible_median": 0.0,
+      "success_rate_dice_ge_threshold": 0.0,
+      "iris_original_preserved_mean": 0.0
+    }
+  ],
+  "interpretation_limit": "Mede robustez da segmentacao a oclusao sintetica, nao desempenho de reconhecimento biometrico nem diagnostico clinico."
+}

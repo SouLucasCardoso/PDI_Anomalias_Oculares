@@ -1,0 +1,19 @@
+{
+  "dataset": "UBIPr Single Eyes Segmented Version",
+  "split": "test (frozen, subject-disjoint)",
+  "model": "facebook/sam3.1, detector de imagem extraído do checkpoint multiplex",
+  "prompt": "iris of the eye",
+  "confidence": 0.5,
+  "device": "cuda",
+  "development_limit": null,
+  "images": 1650,
+  "images_with_iris": 1642,
+  "metrics_macro_nonempty": {
+    "dice": 0.8833982987036028,
+    "iou": 0.809491152396277,
+    "recall": 0.958951822952672,
+    "precision": 0.8251317793025557
+  },
+  "empty_references_with_false_positive": 8,
+  "warning": "Zero-shot com prompt textual; comparar como adaptação ao domínio, não como superioridade geral de arquitetura."
+}
