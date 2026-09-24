@@ -216,6 +216,102 @@ Arquivos produzidos:
 - `outputs/amostras_visuais_ubipr.json`: categoria, pessoa, sessão, imagem e
   Dice de cada modelo para cada exemplo selecionado.
 
+### Limite sob oclusão controlada
+
+O script `avaliar_oclusao_ubipr.py` mede a robustez da U-Net congelada quando
+faixas opacas entram pelas margens superior e inferior da imagem. O percentual
+é calculado sobre os pixels de íris anotados, e a referência de avaliação é a
+parte que permanece visível. O critério foi declarado antes da leitura do
+resultado: Dice da região visível maior ou igual a 0,70 em pelo menos 95% dos
+casos-direções.
+
+No teste completo (1.642 imagens com íris), o baseline sem oclusão atingiu esse
+critério em 96,22% dos casos. A menor perturbação testada, alvo de 1% e cobertura
+real média de 1,92% devido à discretização em linhas, reduziu a taxa para
+58,25%. Assim, **nenhuma oclusão adicional testada preservou o critério**; o
+limite operacional conservador ficou em 0%. Esse valor não deve ser apresentado
+como limite fisiológico ou de reconhecimento: a faixa preta também remove
+contexto externo à íris e é uma perturbação fora da distribuição natural.
+
+```powershell
+python avaliar_oclusao_ubipr.py
+python avaliar_oclusao_ubipr.py --levels 0,1,2,3,4,5,6,7,8,9,10 `
+  --output-dir outputs/robustez_oclusao_ubipr_fino
+```
+
+Os resultados completos estão em `outputs/robustez_oclusao_ubipr/` (passos de
+10%) e `outputs/robustez_oclusao_ubipr_fino/` (passos de 1% até 10%). O próximo
+ensaio deve medir reconhecimento por identidade com embeddings; segmentação
+sozinha não permite afirmar quanto de íris é suficiente para “leitura”.
+
+### DINOv3 e SAM 3
+
+O backbone solicitado `facebook/dinov3-vitl16-pretrain-lvd1689m` foi verificado
+com Transformers 5.17, mas o repositório oficial é restrito e retornou HTTP 401
+sem autenticação e aceite da licença. O DINOv3 é um extrator de características,
+não um segmentador pronto: o uso proposto é comparar embeddings/identidades sob
+oclusão ou treinar uma cabeça de segmentação. O ViT-L/16 tem cerca de 300 milhões
+de parâmetros; nesta GPU de 6 GB, a opção realista é inferência congelada com
+lote pequeno, e não fine-tuning completo.
+
+O SAM 3/3.1 é o sucessor apropriado para uma nova comparação de segmentação,
+mas deve usar o mesmo manifesto por pessoa, calibrar prompts somente na
+validação e manter o teste congelado. “Embeddings 3” não foi tratado como nome
+de um terceiro modelo: no contexto da Meta, a interpretação tecnicamente
+coerente é avaliar os embeddings produzidos pelo DINOv3. Essa nomenclatura deve
+ser confirmada com o orientador antes de citá-la no texto acadêmico.
+
+O passo a passo de aceite das licenças, criação segura do token e autenticação
+está em `ACESSO_MODELOS_META.md`. O ambiente isolado do SAM 3.1 e o script
+`avaliar_sam3_1_ubipr.py` já estão preparados. A avaliação produz métricas por
+imagem e `amostras_visuais.png`, com original, referência manual, previsão e
+recorte real nos casos pior, mediano e melhor.
+
+O SAM 3.1 foi executado em regime zero-shot nas 1.650 imagens do teste, com o
+prompt predefinido `iris of the eye` e confiança oficial 0,5. Nas 1.642 imagens
+com referência não vazia, obteve Dice 0,8834, IoU 0,8095, aproveitamento 95,90%
+e pureza 82,51%. Ele superou claramente o SAM 2.1 Tiny zero-shot (Dice 0,7026),
+mas permaneceu abaixo da Small U-Net treinada no UBIPr (Dice 0,9171). Nas oito
+referências vazias, o SAM 3.1 produziu previsão positiva em todas.
+
+| Método | Dice | IoU | Aproveitamento | Pureza |
+|---|---:|---:|---:|---:|
+| Small U-Net treinada | **0,9171** | **0,8676** | 92,10% | **92,24%** |
+| SAM 3.1 zero-shot textual | 0,8834 | 0,8095 | **95,90%** | 82,51% |
+| SAM 2.1 Tiny zero-shot | 0,7026 | 0,6278 | 77,22% | 65,33% |
+
+O carregador oficial de imagem reportou quatro pesos ausentes em uma camada
+convolucional adicional do checkpoint multiplex. A execução usa o detector de
+imagem extraído do checkpoint SAM 3.1 e essa mensagem deve constar como
+limitação de reprodutibilidade. A prancha visual completa está em
+`outputs/modelos_modernos/sam3_1_ubipr/amostras_visuais.png`.
+
+### Reconhecimento com DINOv3 ViT-L/16
+
+O `avaliar_dinov3_ubipr.py` usa o DINOv3 ViT-L/16 oficial como extrator
+congelado. Somente pessoas presentes nas duas sessões entram no protocolo:
+sessão 1 forma o centroide da galeria e sessão 2 é usada como consulta. Os
+limiares para FAR de 1% e 0,1% são escolhidos nas 16 pessoas da validação e
+aplicados às 16 pessoas independentes do teste (486 consultas).
+
+| Entrada do DINOv3 | Top-1 | EER | TAR @ FAR 1% |
+|---|---:|---:|---:|
+| Imagem inteira | **74,28%** | **14,41%** | **47,33%** |
+| Recorte pela referência | 26,54% | 41,36% | 7,82% |
+| Recorte pela U-Net | 33,33% | 38,72% | 10,29% |
+
+O recorte da íris piorou muito o reconhecimento. Logo, os embeddings genéricos
+do DINOv3 estão explorando principalmente características perioculares ou
+faciais presentes na imagem inteira; o resultado não demonstra reconhecimento
+biométrico robusto pela textura da íris. O recorte da U-Net supera o recorte
+ideal neste protocolo, mas ambos permanecem fracos. Isso justifica treinar uma
+cabeça específica, fazer adaptação ao domínio ou empregar um reconhecedor de
+íris dedicado antes de definir um limite de leitura por oclusão.
+
+O gráfico está em
+`outputs/modelos_modernos/dinov3_vitl16_ubipr/comparacao_reconhecimento.png` e
+as métricas completas em `metricas.json` no mesmo diretório.
+
 ## Cuidados metodológicos
 
 1. O MMU valida somente segmentação; não permite inferência sobre doenças.

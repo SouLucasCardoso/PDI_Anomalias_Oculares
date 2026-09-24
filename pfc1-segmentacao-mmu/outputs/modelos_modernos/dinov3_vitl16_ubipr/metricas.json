@@ -1,0 +1,100 @@
+{
+  "dataset": "UBIPr Single Eyes Segmented Version",
+  "model": "facebook/dinov3-vitl16-pretrain-lvd1689m",
+  "protocol": "session 1 gallery centroid; session 2 queries; FAR thresholds selected only on validation subjects",
+  "eligible_subjects_with_both_sessions": {
+    "val": 16,
+    "test": 16
+  },
+  "original_split_images": {
+    "val": 1652,
+    "test": 1650
+  },
+  "device": "cuda",
+  "development_limit_subjects": null,
+  "validation": {
+    "imagem_inteira": {
+      "subjects": 16,
+      "queries": 482,
+      "top1_accuracy": 0.8858921161825726,
+      "eer": 0.08713692946058091,
+      "eer_threshold_descriptive": 0.8334064483642578,
+      "genuine_similarity_mean": 0.8907816410064697,
+      "impostor_similarity_mean": 0.6304067373275757,
+      "tar_at_far_1_percent": 0.495850622406639,
+      "tar_at_far_0_1_percent": 0.10995850622406639
+    },
+    "recorte_referencia": {
+      "subjects": 16,
+      "queries": 482,
+      "top1_accuracy": 0.3257261410788382,
+      "eer": 0.3796680497925311,
+      "eer_threshold_descriptive": 0.8558206558227539,
+      "genuine_similarity_mean": 0.8506852388381958,
+      "impostor_similarity_mean": 0.7802587151527405,
+      "tar_at_far_1_percent": 0.10580912863070539,
+      "tar_at_far_0_1_percent": 0.03941908713692946
+    },
+    "recorte_unet": {
+      "subjects": 16,
+      "queries": 482,
+      "top1_accuracy": 0.36099585062240663,
+      "eer": 0.3710926694329184,
+      "eer_threshold_descriptive": 0.8735013604164124,
+      "genuine_similarity_mean": 0.8742867112159729,
+      "impostor_similarity_mean": 0.8034181594848633,
+      "tar_at_far_1_percent": 0.10580912863070539,
+      "tar_at_far_0_1_percent": 0.03941908713692946
+    }
+  },
+  "selected_thresholds": {
+    "imagem_inteira": {
+      "far_1_percent": 0.8978915214538574,
+      "far_0_1_percent": 0.9357007145881653
+    },
+    "recorte_referencia": {
+      "far_1_percent": 0.9548333883285522,
+      "far_0_1_percent": 0.9649710655212402
+    },
+    "recorte_unet": {
+      "far_1_percent": 0.960191011428833,
+      "far_0_1_percent": 0.9691444635391235
+    }
+  },
+  "test": {
+    "imagem_inteira": {
+      "subjects": 16,
+      "queries": 486,
+      "top1_accuracy": 0.742798353909465,
+      "eer": 0.14410150891632373,
+      "eer_threshold_descriptive": 0.8363257646560669,
+      "genuine_similarity_mean": 0.8802197575569153,
+      "impostor_similarity_mean": 0.7008946537971497,
+      "tar_at_far_1_percent": 0.4732510288065844,
+      "tar_at_far_0_1_percent": 0.10082304526748971
+    },
+    "recorte_referencia": {
+      "subjects": 16,
+      "queries": 486,
+      "top1_accuracy": 0.2654320987654321,
+      "eer": 0.41358024691358025,
+      "eer_threshold_descriptive": 0.893743634223938,
+      "genuine_similarity_mean": 0.8665839433670044,
+      "impostor_similarity_mean": 0.8387362957000732,
+      "tar_at_far_1_percent": 0.07818930041152264,
+      "tar_at_far_0_1_percent": 0.026748971193415638
+    },
+    "recorte_unet": {
+      "subjects": 16,
+      "queries": 486,
+      "top1_accuracy": 0.3333333333333333,
+      "eer": 0.3872427983539095,
+      "eer_threshold_descriptive": 0.9128954410552979,
+      "genuine_similarity_mean": 0.892462432384491,
+      "impostor_similarity_mean": 0.8654584884643555,
+      "tar_at_far_1_percent": 0.102880658436214,
+      "tar_at_far_0_1_percent": 0.03292181069958848
+    }
+  },
+  "interpretation_limit": "Reconhecimento de identidade na base biométrica UBIPr; não mede diagnóstico de alterações oculares."
+}

@@ -1,0 +1,123 @@
+{
+  "dataset": "UBIPr Single Eyes Segmented Version",
+  "split": "test (frozen, subject-disjoint)",
+  "model": "Small U-Net multiclasse, checkpoint epoch 25",
+  "test_images_with_iris": 1642,
+  "directions": [
+    "top",
+    "bottom"
+  ],
+  "occluder": "black horizontal band",
+  "success_dice_threshold": 0.7,
+  "required_success_rate": 0.95,
+  "development_limit": null,
+  "operational_definition": "maior oclusao com pelo menos 95% dos casos-direcoes atingindo Dice visivel >= 0.70",
+  "limiting_occlusion_percent": 0,
+  "minimum_visible_iris_percent": 100,
+  "limiting_occlusion_percent_by_direction": {
+    "bottom": 0,
+    "top": 0
+  },
+  "by_level": [
+    {
+      "target_occlusion_percent": 0,
+      "actual_occlusion_percent_mean": 0.0,
+      "images_directions": 3284,
+      "dice_visible_mean": 0.9171162770673295,
+      "dice_visible_median": 0.9522305577208128,
+      "success_rate_dice_ge_threshold": 0.9622411693057247,
+      "iris_original_preserved_mean": 0.9209901563915852
+    },
+    {
+      "target_occlusion_percent": 1,
+      "actual_occlusion_percent_mean": 1.918237991577953,
+      "images_directions": 3284,
+      "dice_visible_mean": 0.7091430832446888,
+      "dice_visible_median": 0.8072059040559507,
+      "success_rate_dice_ge_threshold": 0.5825213154689404,
+      "iris_original_preserved_mean": 0.7397197619074231
+    },
+    {
+      "target_occlusion_percent": 2,
+      "actual_occlusion_percent_mean": 3.2337942809548186,
+      "images_directions": 3284,
+      "dice_visible_mean": 0.7033072957284717,
+      "dice_visible_median": 0.7947506731060732,
+      "success_rate_dice_ge_threshold": 0.5809987819732034,
+      "iris_original_preserved_mean": 0.7193841351251437
+    },
+    {
+      "target_occlusion_percent": 3,
+      "actual_occlusion_percent_mean": 4.257388816844136,
+      "images_directions": 3284,
+      "dice_visible_mean": 0.7002025535142709,
+      "dice_visible_median": 0.7920972766985338,
+      "success_rate_dice_ge_threshold": 0.5834348355663824,
+      "iris_original_preserved_mean": 0.7062140181325053
+    },
+    {
+      "target_occlusion_percent": 4,
+      "actual_occlusion_percent_mean": 5.31473098458014,
+      "images_directions": 3284,
+      "dice_visible_mean": 0.6984119000269442,
+      "dice_visible_median": 0.7904766402757025,
+      "success_rate_dice_ge_threshold": 0.5828258221680876,
+      "iris_original_preserved_mean": 0.69445929400156
+    },
+    {
+      "target_occlusion_percent": 5,
+      "actual_occlusion_percent_mean": 6.391380423127992,
+      "images_directions": 3284,
+      "dice_visible_mean": 0.6921275538422621,
+      "dice_visible_median": 0.78044587923318,
+      "success_rate_dice_ge_threshold": 0.5685140073081608,
+      "iris_original_preserved_mean": 0.6801929465424696
+    },
+    {
+      "target_occlusion_percent": 6,
+      "actual_occlusion_percent_mean": 7.452831227870562,
+      "images_directions": 3284,
+      "dice_visible_mean": 0.687772562989795,
+      "dice_visible_median": 0.7728197491419219,
+      "success_rate_dice_ge_threshold": 0.5596833130328868,
+      "iris_original_preserved_mean": 0.6667141927045328
+    },
+    {
+      "target_occlusion_percent": 7,
+      "actual_occlusion_percent_mean": 8.473768658269483,
+      "images_directions": 3284,
+      "dice_visible_mean": 0.6825561290498796,
+      "dice_visible_median": 0.7610642406156918,
+      "success_rate_dice_ge_threshold": 0.5502436053593179,
+      "iris_original_preserved_mean": 0.6522421768972639
+    },
+    {
+      "target_occlusion_percent": 8,
+      "actual_occlusion_percent_mean": 9.531239879285403,
+      "images_directions": 3284,
+      "dice_visible_mean": 0.6774105185003598,
+      "dice_visible_median": 0.7554951690821257,
+      "success_rate_dice_ge_threshold": 0.5429354445797807,
+      "iris_original_preserved_mean": 0.6384466967479501
+    },
+    {
+      "target_occlusion_percent": 9,
+      "actual_occlusion_percent_mean": 10.607355913820383,
+      "images_directions": 3284,
+      "dice_visible_mean": 0.6726196833668633,
+      "dice_visible_median": 0.7494412749967485,
+      "success_rate_dice_ge_threshold": 0.5389768574908648,
+      "iris_original_preserved_mean": 0.6253119352540853
+    },
+    {
+      "target_occlusion_percent": 10,
+      "actual_occlusion_percent_mean": 11.596400123681793,
+      "images_directions": 3284,
+      "dice_visible_mean": 0.6649519358458069,
+      "dice_visible_median": 0.7348339666989783,
+      "success_rate_dice_ge_threshold": 0.5289281364190013,
+      "iris_original_preserved_mean": 0.6122021090186682
+    }
+  ],
+  "interpretation_limit": "Mede robustez da segmentacao a oclusao sintetica, nao desempenho de reconhecimento biometrico nem diagnostico clinico."
+}
