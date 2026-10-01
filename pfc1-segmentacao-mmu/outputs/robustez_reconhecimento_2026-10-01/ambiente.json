@@ -1,0 +1,12 @@
+{
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "torch": "2.13.0+cu126",
+  "transformers": "5.17.0",
+  "numpy": "2.5.2",
+  "pillow": "12.3.0",
+  "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "cuda": "12.6",
+  "unet_checkpoint_sha256": "53e92638c1d3f320a77d360c2570446fbdda45fe591b977f8a77f82ababed38b",
+  "dinov3_cached_revision": "ea8dc2863c51be0a264bab82070e3e8836b02d51",
+  "threshold_fix": "Metrics compare float64 scores against float64 nextafter threshold; embeddings unaffected and reused."
+}
