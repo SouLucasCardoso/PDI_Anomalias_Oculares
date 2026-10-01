@@ -1,0 +1,14 @@
+{
+  "status": "aprovado",
+  "combinacoes": 39,
+  "decisoes": 18954,
+  "scores_shape_por_condicao": [
+    486,
+    32
+  ],
+  "calibracao_far_max": 0.009971891313077233,
+  "coorte_sensibilidade": 480,
+  "hash_script_confere": true,
+  "metricas_conferidas_com_decisoes_e_escores": true,
+  "testes_unitarios_aprovados": 5
+}

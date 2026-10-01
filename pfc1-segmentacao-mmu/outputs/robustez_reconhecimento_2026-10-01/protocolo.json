@@ -1,0 +1,88 @@
+{
+  "model": "facebook/dinov3-vitl16-pretrain-lvd1689m",
+  "conditions": [
+    [
+      "original",
+      0
+    ],
+    [
+      "oclusao_superior",
+      20
+    ],
+    [
+      "oclusao_superior",
+      40
+    ],
+    [
+      "oclusao_superior",
+      60
+    ],
+    [
+      "oclusao_inferior",
+      20
+    ],
+    [
+      "oclusao_inferior",
+      40
+    ],
+    [
+      "oclusao_inferior",
+      60
+    ],
+    [
+      "desfoque_iris",
+      1
+    ],
+    [
+      "desfoque_iris",
+      3
+    ],
+    [
+      "desfoque_iris",
+      5
+    ],
+    [
+      "contraste_iris",
+      25
+    ],
+    [
+      "contraste_iris",
+      50
+    ],
+    [
+      "contraste_iris",
+      75
+    ]
+  ],
+  "branches": [
+    "inteira",
+    "iris_referencia",
+    "iris_unet"
+  ],
+  "seed": 42,
+  "identity": "subject+side",
+  "gallery": "session1 centroid",
+  "probe": "session2",
+  "threshold": "validation original, empirical FAR <= 1%, ties rejected conservatively",
+  "bootstrap": "5000 query-person cluster replicates; fixed gallery; percentile 95% CI",
+  "manifest_sha256": "a22eb85eb5d705b24b54940aa36f8b3954c98b1c57a5b2c75988a33630eff43f",
+  "script_sha256": "75f41f9f1a52efb4a1110da795a71ba551ced117f240bd0697fff4498256258a",
+  "counts": {
+    "val": {
+      "images": 962,
+      "people": 16,
+      "eyes": 32,
+      "queries": 482
+    },
+    "test": {
+      "images": 960,
+      "people": 16,
+      "eyes": 32,
+      "queries": 486
+    }
+  },
+  "exact_duplicates": 0,
+  "torch": "2.13.0+cu126",
+  "clinical_labels": false,
+  "development_subsample": false
+}
