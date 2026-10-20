@@ -36,6 +36,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--confidence", type=float, default=0.5)
     parser.add_argument("--device", choices=("auto", "cuda", "cpu"), default="auto")
     parser.add_argument("--limit", type=int, default=None, help="Smoke test; não usar como resultado científico.")
+    parser.add_argument("--local-files-only", action="store_true", help="Usa somente pesos ja baixados.")
     return parser.parse_args()
 
 
@@ -100,7 +101,7 @@ def save_visual_board(records: list[dict[str, object]], destination: Path) -> No
 def main() -> None:
     args = parse_args()
     device = "cuda" if args.device == "auto" and torch.cuda.is_available() else ("cpu" if args.device == "auto" else args.device)
-    checkpoint = hf_hub_download("facebook/sam3.1", "sam3.1_multiplex.pt")
+    checkpoint = hf_hub_download("facebook/sam3.1", "sam3.1_multiplex.pt", local_files_only=args.local_files_only)
     from sam3.model_builder import build_sam3_image_model
     from sam3.model.sam3_image_processor import Sam3Processor
 
@@ -119,7 +120,7 @@ def main() -> None:
         native_mask = Image.open(sample.mask).convert("L")
         truth = decode_mask(native_mask) == 1
         amp = torch.autocast(device_type="cuda", dtype=torch.bfloat16) if device == "cuda" else nullcontext()
-        with amp:
+        with torch.inference_mode(), amp:
             state = processor.set_image(image)
             output = processor.set_text_prompt(prompt=args.prompt, state=state)
         prediction = collapse_masks(output["masks"], truth.shape)

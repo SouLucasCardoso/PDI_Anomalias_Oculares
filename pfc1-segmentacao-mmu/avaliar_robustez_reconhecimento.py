@@ -22,9 +22,11 @@ import torch
 
 from avaliar_dinov3_ubipr import MODEL_ID, masked_crop
 from transformers import AutoImageProcessor, AutoModel
+from huggingface_hub import hf_hub_download
 from treinar_segmentacao_ubipr import Sample, MulticlassUNet, decode_mask
 
 ROOT = Path(__file__).resolve().parent
+MODEL_REVISION = 'ea8dc2863c51be0a264bab82070e3e8836b02d51'
 BRANCHES = ('inteira', 'iris_referencia', 'iris_unet')
 CONDITIONS = [('original', 0)] + [(kind, level) for kind, levels in (
     ('oclusao_superior', (20, 40, 60)), ('oclusao_inferior', (20, 40, 60)),
@@ -148,13 +150,16 @@ def load_splits(manifest):
 
 
 class Extractor:
-    def __init__(self, cnn, batch):
-        self.device=torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    def __init__(self, cnn, batch, device=None):
+        self.device=torch.device(device or ('cuda' if torch.cuda.is_available() else 'cpu'))
         self.batch=batch
-        self.unet=MulticlassUNet(8).to(self.device).eval()
-        self.unet.load_state_dict(torch.load(cnn/'melhor_modelo.pt',map_location=self.device,weights_only=True)['model'])
-        self.processor=AutoImageProcessor.from_pretrained(MODEL_ID,local_files_only=True)
-        self.model=AutoModel.from_pretrained(MODEL_ID,local_files_only=True,
+        self.unet=None
+        if 'iris_unet' in BRANCHES:
+            self.unet=MulticlassUNet(8).to(self.device).eval()
+            self.unet.load_state_dict(torch.load(cnn/'melhor_modelo.pt',map_location=self.device,weights_only=True)['model'])
+        model_dir=Path(hf_hub_download(MODEL_ID,'config.json',revision=MODEL_REVISION,local_files_only=True)).parent
+        self.processor=AutoImageProcessor.from_pretrained(model_dir,local_files_only=True)
+        self.model=AutoModel.from_pretrained(model_dir,local_files_only=True,
             dtype=torch.bfloat16 if self.device.type=='cuda' else torch.float32).to(self.device).eval()
 
     def extract(self, rows, kind, level, dest):
@@ -180,10 +185,12 @@ class Extractor:
             altered,meta=perturb(original,ref,kind,level)
             small=np.asarray(altered.resize((320,240),Image.Resampling.BILINEAR),dtype=np.float32)/255
             tensor=torch.from_numpy(small.transpose(2,0,1).copy())[None].to(self.device)
-            with torch.inference_mode(): pred=self.unet(tensor).argmax(1)[0].cpu().numpy()==1
+            with torch.inference_mode():
+                pred=self.unet(tensor).argmax(1)[0].cpu().numpy()==1 if self.unet is not None else np.zeros((240,320),dtype=bool)
             pred=np.asarray(Image.fromarray(pred).resize(original.size,Image.Resampling.NEAREST),dtype=bool)
-            variants=(altered,masked_crop(altered,ref),masked_crop(altered,pred))
-            for b,im,valid in zip(BRANCHES,variants,(True,ref.any(),pred.any())):
+            variants={'inteira':(altered,True),'iris_referencia':(masked_crop(altered,ref),ref.any()),'iris_unet':(masked_crop(altered,pred),pred.any())}
+            for b in BRANCHES:
+                im,valid=variants[b]
                 pending.append(im); branches.append(b); validity[b].append(bool(valid))
                 if len(pending)>=self.batch: flush()
             metadata.append(meta)
@@ -209,14 +216,29 @@ def make_gallery(embeddings, valid, rows):
 
 
 def main():
+    global BRANCHES, CONDITIONS
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output-dir',type=Path,default=ROOT/'outputs/robustez_reconhecimento_2026-10-01')
     parser.add_argument('--batch-size',type=int,default=6)
+    parser.add_argument('--cnn-dir',type=Path,default=ROOT/'outputs/cnn/ubipr_multiclasse_30ep_batch32')
+    parser.add_argument('--device',choices=('cpu','cuda'))
+    parser.add_argument('--reference-only',action='store_true')
+    parser.add_argument('--pilot-eyes',type=int,default=0)
+    parser.add_argument('--area-grid',action='store_true')
     args=parser.parse_args(); out=args.output_dir; out.mkdir(parents=True,exist_ok=True)
     torch.set_num_threads(4); torch.manual_seed(42)
-    cnn=ROOT/'outputs/cnn/ubipr_multiclasse_30ep_batch32'
+    cnn=args.cnn_dir
+    if args.reference_only: BRANCHES=('iris_referencia',)
+    elif not (cnn/'metricas.json').is_file(): raise ValueError('Aguarde a conclusao do retreinamento; checkpoint parcial nao e resultado final.')
+    if args.area_grid:
+        CONDITIONS=[('original',0)]+[(kind,level) for kind in ('oclusao_superior','oclusao_inferior') for level in range(10,100,10)]
     manifest_bytes=(cnn/'manifesto.json').read_bytes()
     manifest=json.loads(manifest_bytes); splits=load_splits(manifest)
+    if args.pilot_eyes:
+        if args.pilot_eyes<2: raise ValueError('Piloto requer ao menos dois olhos')
+        for split,rows in splits.items():
+            selected=sorted({identity(r) for r in rows})[:args.pilot_eyes]
+            splits[split]=[next(r for r in rows if identity(r)==eye and r.session==session) for eye in selected for session in (1,2)]
     # Audit exact duplicates across sessions/splits prior to measurement.
     seen={}; duplicates=[]; records=[]
     for split,rows in splits.items():
@@ -228,7 +250,7 @@ def main():
             with Image.open(r.mask) as m: mask=decode_mask(m)==1
             records.append({'split':split,**asdict(r),'sha256':digest,**quality(im,mask)})
     if duplicates: raise ValueError(f'Exact duplicates require audit: {duplicates[:3]}')
-    config={'model':MODEL_ID,'conditions':CONDITIONS,'branches':BRANCHES,'seed':42,
+    config={'model':MODEL_ID,'model_revision':MODEL_REVISION,'conditions':CONDITIONS,'branches':BRANCHES,'seed':42,
        'identity':'subject+side','gallery':'session1 centroid','probe':'session2',
        'threshold':'validation original, empirical FAR <= 1%, ties rejected conservatively',
        'bootstrap':'5000 query-person cluster replicates; fixed gallery; percentile 95% CI',
@@ -237,15 +259,18 @@ def main():
        'counts':{k:{'images':len(v),'people':len({r.subject for r in v}),'eyes':len({identity(r) for r in v}),
           'queries':sum(r.session==2 for r in v)} for k,v in splits.items()},
        'exact_duplicates':len(duplicates),'torch':torch.__version__,
-       'clinical_labels':False,'development_subsample':False}
+       'clinical_labels':False,'development_subsample':bool(args.pilot_eyes),
+       'device_requested':args.device,'checkpoint_sha256':hashlib.sha256((cnn/'melhor_modelo.pt').read_bytes()).hexdigest() if 'iris_unet' in BRANCHES else None,
+       'area_interpretation':'Preserved annotated iris pixels; synthetic occlusion is not a clinical diagnosis.',
+       'minimum_area_rule':'Smallest tested preserved fraction with rank1 >= 0.90 and TAR >= 0.90 at validation FMR <= 0.01, requiring all larger fractions to pass; otherwise not determined. Exploratory DINO baseline.'}
     config_path=out/'protocolo.json'
     if config_path.exists():
         old=json.loads(config_path.read_text(encoding='utf-8'))
-        if old['script_sha256']!=config['script_sha256']: raise ValueError('Code changed: choose new output directory to avoid stale cache')
+        if old!=config: raise ValueError('Protocol changed: choose new output directory to avoid stale cache')
     config_path.write_text(json.dumps(config,ensure_ascii=False,indent=2),encoding='utf-8')
     write_csv(out/'manifesto_auditado.csv',records)
     print(json.dumps(config['counts']),flush=True)
-    extractor=Extractor(cnn,args.batch_size)
+    extractor=Extractor(cnn,args.batch_size,args.device)
     cache={k:extractor.extract(v,'original',0,out/f'embeddings_{k}_original.npz') for k,v in splits.items()}
     calibration={}; galleries={}; baseline={}; summaries=[]; per_query=[]; natural=[]
     queries=[r for r in splits['test'] if r.session==2]

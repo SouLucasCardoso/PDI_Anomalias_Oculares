@@ -1,0 +1,137 @@
+"""Prepara mascaras em CPU e avalia o encoder final em dominio registrado."""
+from datetime import datetime,timezone
+import hashlib
+import json
+from pathlib import Path
+import sys
+import time
+import numpy as np
+from PIL import Image,ImageOps
+import torch
+
+ROOT=Path(__file__).resolve().parent
+
+def digest(path): return hashlib.sha256(path.read_bytes()).hexdigest()
+
+def register(path,content):
+    signature=hashlib.sha256(json.dumps(content,sort_keys=True).encode()).hexdigest()
+    if path.exists():
+        if json.loads(path.read_text(encoding='utf-8'))['signature']!=signature:
+            raise ValueError('Protocol changed: choose new output folder')
+    else:
+        path.write_text(json.dumps(dict(content,signature=signature,
+            registered_utc=datetime.now(timezone.utc).isoformat()),indent=2),encoding='utf-8')
+
+def main():
+    torch.set_num_threads(2)
+    from avaliar_dinov3_ubipr import masked_crop
+    from avaliar_robustez_reconhecimento import metrics,operating_threshold
+    from treinar_identidade_iris import IdentityEncoder
+    source=ROOT/'data/modelos/cvrl_hdbif'; sys.path.insert(0,str(source))
+    from modules.irisRecognition import irisRecognition
+    original=ROOT/'outputs/nuclear_biometria_protocolo_2026-10-20'
+    splits=json.loads((original/'manifesto.json').read_text(encoding='utf-8'))
+    trial=json.loads((original/'protocolo.json').read_text(encoding='utf-8'))
+    if digest(original/'manifesto.json')!=trial['manifest_sha256']: raise ValueError('Registered manifest changed')
+    out=ROOT/'outputs/nuclear_identidade_arcface_2026-10-20'; out.mkdir(parents=True,exist_ok=True)
+    if (out/'INTERROMPIDO_QA.json').exists():
+        raise RuntimeError('Experimento interrompido por QA antes do reconhecimento. Requer nova revisao e novo protocolo para retomar.')
+    training=ROOT/'outputs/identidade_arcface_ubipr_2026-10-20'
+    pilot=json.loads((ROOT/'outputs/hdbif_slpvld_validacao_piloto_2026-10-20/protocolo.json').read_text(encoding='utf-8'))
+    cfg=dict(pilot['config'],cuda=False)
+    for item in pilot['weights']['files']:
+        if digest(source/item['path'])!=item['sha256']: raise ValueError('Mask model weights changed')
+    preprocessing={'source_protocol_sha256':digest(original/'protocolo.json'),
+        'manifest_sha256':digest(original/'manifesto.json'),'script_sha256':digest(Path(__file__)),
+        'encoder_source_sha256':digest(ROOT/'treinar_identidade_iris.py'),
+        'crop_source_sha256':digest(ROOT/'avaliar_dinov3_ubipr.py'),
+        'segmentation_weights':pilot['weights'],'segmentation_sources':pilot['sources'],
+        'preprocess':'RGB center letterbox640x480 bilinear gray127; CVRL segment on grayscale; black masked bbox25%, bilinear128x128',
+        'failure_handling':'Keep empty-mask samples, failed enrollments, and queries; explicit rejections',
+        'model_selection':'Only UBIPr validation; Nuclear calibration sets threshold only',
+        'conditions':'Original images only; no area or longitudinal claim from this baseline'}
+    register(out/'protocolo_preprocessamento.json',preprocessing)
+    for item in pilot['sources']['files']:
+        if digest(source/item['path'])!=item['sha256']: raise ValueError('Segmentation source changed')
+    segmenter=irisRecognition(cfg)
+    cache=ROOT/'data/cache/nuclear_identidade128'; cache.mkdir(parents=True,exist_ok=True)
+    all_rows=[dict(r,split=s) for s,rs in splits.items() for r in rs]
+    prepared=[]; started=time.monotonic()
+    for i,row in enumerate(all_rows):
+        key=f"{row['patient_id']:03d}_{row['side']}_{Path(row['filename']).stem}"
+        target=cache/(key+'.npz')
+        if digest(Path(row['image']))!=row['sha256']: raise ValueError('Clinical image changed')
+        if not target.exists():
+            with Image.open(row['image']) as im:
+                rgb=ImageOps.pad(im.convert('RGB'),(640,480),method=Image.Resampling.BILINEAR,color=(127,127,127),centering=(.5,.5))
+            mask=segmenter.segment(rgb.convert('L'))>127
+            crop=np.asarray(masked_crop(rgb,mask).resize((128,128),Image.Resampling.BILINEAR)).copy()
+            temporary=target.with_suffix('.part.npz')
+            np.savez_compressed(temporary,crop=crop,mask=mask,rgb=np.asarray(rgb),source_sha256=row['sha256'])
+            temporary.replace(target)
+        with np.load(target,allow_pickle=False) as saved:
+            if str(saved['source_sha256'])!=row['sha256']: raise ValueError('Cache identity mismatch')
+            valid=bool(saved['mask'].any())
+            prepared.append(dict(row,cache=str(target),valid=valid,mask_pixels=int(saved['mask'].sum())))
+        if (i+1)%50==0:
+            (out/'progresso.json').write_text(json.dumps({'prepared_images':i+1,'total':len(all_rows),'seconds':time.monotonic()-started}),encoding='utf-8')
+            print(f'Mascaras e recortes {i+1}/{len(all_rows)}; {time.monotonic()-started:.0f}s',flush=True)
+    del segmenter
+    (out/'auditoria.json').write_text(json.dumps([{'patient_id':r['patient_id'],'side':r['side'],'filename':r['filename'],
+        'split':r['split'],'role':r['role'],'valid':r['valid'],'predicted_mask_pixels':r['mask_pixels']} for r in prepared],indent=2),encoding='utf-8')
+    print('Preparo concluido; aguardando checkpoint final de identidade.',flush=True)
+    deadline=time.monotonic()+6*3600
+    while not (training/'CONCLUIDO.json').exists():
+        if time.monotonic()>deadline: raise TimeoutError('Identity training not complete')
+        time.sleep(30)
+    completion=json.loads((training/'CONCLUIDO.json').read_text(encoding='utf-8'))
+    checkpoint=training/'melhor_modelo.pt'
+    if digest(checkpoint)!=completion['checkpoint_sha256']: raise ValueError('Encoder checkpoint changed')
+    evaluation={'preprocessing_protocol_sha256':digest(out/'protocolo_preprocessamento.json'),
+        'encoder_checkpoint_sha256':completion['checkpoint_sha256'],'selection':completion,
+        'calibration':'Empirical FMR<=1% on Nuclear calibration only, fixed for test; no checkpoint selection on this dataset',
+        'identity':'published patient+side, first lexicographic filename gallery',
+        'metrics':'Rank1, pairwise TAR/FMR, failures; closed-set identification not interchangeable with verification',
+        'minimum_rule':'Not estimated in this original-image baseline; no universal minimum claim'}
+    register(out/'protocolo_avaliacao.json',evaluation)
+    device=torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    model=IdentityEncoder().to(device)
+    model.load_state_dict(torch.load(checkpoint,map_location=device,weights_only=True)['model']); model.eval()
+    vectors=[]; mean=torch.tensor([.485,.456,.406],device=device)[None,:,None,None]
+    std=torch.tensor([.229,.224,.225],device=device)[None,:,None,None]
+    with torch.inference_mode():
+        for start in range(0,len(prepared),128):
+            images=[]
+            for row in prepared[start:start+128]:
+                with np.load(row['cache'],allow_pickle=False) as saved: images.append(saved['crop'])
+            tensor=torch.from_numpy(np.stack(images).transpose(0,3,1,2).copy()).to(device).float()/255
+            with torch.autocast(device_type=device.type,dtype=torch.bfloat16,enabled=device.type=='cuda'):
+                vector=model((tensor-mean)/std)
+            vectors.append(torch.nn.functional.normalize(vector.float(),dim=1).cpu().numpy())
+    vectors=np.concatenate(vectors)
+    if not np.isfinite(vectors).all(): raise FloatingPointError('Nonfinite embeddings')
+    np.savez_compressed(out/'embeddings.npz',features=vectors,valid=np.array([r['valid'] for r in prepared]))
+    threshold=None; results={}
+    for split in ('calibration','test'):
+        indexes=[i for i,r in enumerate(prepared) if r['split']==split]
+        ids=sorted({(prepared[i]['patient_id'],prepared[i]['side']) for i in indexes})
+        gallery=[next(i for i in indexes if (prepared[i]['patient_id'],prepared[i]['side'])==eye and prepared[i]['role']=='gallery') for eye in ids]
+        queries=[i for i in indexes if prepared[i]['role']=='query']
+        labels=np.array([ids.index((prepared[i]['patient_id'],prepared[i]['side'])) for i in queries])
+        scores=(vectors[queries]@vectors[gallery].T).astype(np.float64)
+        for col,i in enumerate(gallery):
+            if not prepared[i]['valid']: scores[:,col]=-2.
+        valid=np.array([prepared[i]['valid'] for i in queries])
+        impostor=np.ones_like(scores,dtype=bool); impostor[np.arange(len(labels)),labels]=False
+        if split=='calibration': threshold=operating_threshold(scores[impostor & valid[:,None] & (scores>-2)])
+        measured,correct,accepted=metrics(scores,labels,threshold,valid)
+        results[split]={'metrics':measured,'eyes':len(ids),'patients':len({prepared[i]['patient_id'] for i in indexes}),
+            'threshold':threshold,'failed_enrollments':sum(not prepared[i]['valid'] for i in gallery),
+            'grade_labelled_queries':sum(prepared[i]['grade_nc_2025_selection'] is not None for i in queries)}
+        np.savez_compressed(out/f'scores_{split}.npz',scores=scores,labels=labels,valid=valid,
+                            correct=correct,accepted=accepted,query_people=np.array([prepared[i]['patient_id'] for i in queries]))
+    (out/'resultado.json').write_text(json.dumps(results,indent=2),encoding='utf-8')
+    (out/'CONCLUIDO.json').write_text(json.dumps({'status':'completed_original_images_only','encoder_sha256':completion['checkpoint_sha256']},indent=2),encoding='utf-8')
+    print(json.dumps(results,indent=2),flush=True)
+
+if __name__=='__main__': main()

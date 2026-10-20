@@ -3,6 +3,7 @@
 *.zip
 
 # Ambientes e caches
+/.runtime/
 **/.venv/
 **/.vscode/
 **/__pycache__/
@@ -10,6 +11,9 @@
 
 # Pesos e arquivos com caminhos locais
 *.pt
+*.pt.part
+# Arrays derivados e caches numericos; os relatorios CSV/JSON permanecem revisaveis.
+**/outputs/**/*.npz
 **/manifesto.json
 
 # Treinamentos descartáveis
