@@ -1,5 +1,25 @@
 # PFC I — prova de conceito de segmentação da íris
 
+> **Estado atual em 20/10/2026:** o objetivo ativo é investigar área preservada
+> e identidade ocular. Duas rodadas UBIPr e o teste clínico HDBIF foram concluídos.
+> O novo encoder obteve Rank-1 de 67,90% no benchmark exploratório; o mínimo
+> global não foi determinado pelo critério registrado. O texto ativo está em
+> [artigo/ARTIGO_AREA_IRIS_EM_PRODUCAO.md](artigo/ARTIGO_AREA_IRIS_EM_PRODUCAO.md).
+> Os planos de classificação e indicações de tarefas em execução abaixo são
+> históricos. Consulte [INSTALACAO_LOCAL.md](INSTALACAO_LOCAL.md) para o estado atual.
+
+> **Instalação neste computador, 20/10/2026:** consulte
+> [INSTALACAO_LOCAL.md](INSTALACAO_LOCAL.md) para os dados recuperados, ambiente
+> com CUDA, comandos de execução e pendências de acesso. As métricas abaixo
+> são resultados históricos; os checkpoints originais não estão nesta cópia.
+>
+> **Produção para 09/11:** base clínica pública SLP-VLD v3 adquirida e auditada,
+> protocolo em `outputs/clinico_slpvld_2026-10-20/`, retreinamento UBIPr em
+> andamento. Consulte [pesquisa de bases](PESQUISA_BASES_PUBLICAS_2026-10-20.md),
+> [plano de produção](PLANO_ARTIGO_2026-11-09.md) e
+> [rascunho do artigo](artigo/ARTIGO_EM_PRODUCAO.md). Para consultar o progresso,
+> execute `executar.ps1 status_producao.py`.
+
 Este pacote treina uma U-Net pequena para recortar a região visível da íris no
 **MMU Iris Database**. Ele valida a etapa de segmentação, mas ainda não constitui
 o experimento clínico do PFC, pois o MMU não contém rótulos de alterações

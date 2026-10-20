@@ -5,9 +5,12 @@ from __future__ import annotations
 
 import argparse
 import csv
+from datetime import datetime, timezone
 import hashlib
+from importlib.metadata import version
 import json
 import os
+import platform
 import random
 import re
 import tarfile
@@ -255,6 +258,16 @@ def main() -> None:
     report = audit(samples)
     report.update({"source_url": UBIPR_URL, "archive": archive.name, "archive_sha256": sha256(archive), "split": {name: {"samples": len(rows), "subjects": sorted({r.subject for r in rows})} for name, rows in splits.items()}})
     args.output_dir.mkdir(parents=True, exist_ok=True)
+    if not args.audit_only and (args.output_dir / "melhor_modelo.pt").exists():
+        raise FileExistsError("Diretorio ja possui checkpoint; use novo --output-dir para preservar o experimento.")
+    configuration = {k: str(v) if isinstance(v, Path) else v for k, v in vars(args).items()}
+    provenance = {"started_utc": datetime.now(timezone.utc).isoformat(), "configuration": configuration,
+                  "script_sha256": sha256(Path(__file__)), "python": platform.python_version(),
+                  "packages": {p: version(p) for p in ("torch", "numpy", "Pillow")},
+                  "gpu": torch.cuda.get_device_name(0) if torch.cuda.is_available() else None,
+                  "archive_sha256": report["archive_sha256"],
+                  "development_subsample": args.limit_per_split is not None}
+    (args.output_dir / "reproducibilidade.json").write_text(json.dumps(provenance, indent=2, ensure_ascii=False), encoding="utf-8")
     (args.output_dir/"auditoria.json").write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
     (args.output_dir/"manifesto.json").write_text(json.dumps({name: [asdict(r) for r in rows] for name, rows in splits.items()}, indent=2, ensure_ascii=False), encoding="utf-8")
     print(json.dumps(report, indent=2, ensure_ascii=False))
@@ -270,10 +283,18 @@ def main() -> None:
     for epoch in range(1, args.epochs+1):
         train = run_epoch(model, loaders["train"], device, optimizer); val = run_epoch(model, loaders["val"], device)
         row = {"epoch": epoch, "train_loss": train["loss"], "val_loss": val["loss"], "val_mean_foreground_dice": val["mean_foreground_dice"], **{f"val_dice_{k}": v for k, v in val["dice"].items()}}
-        history.append(row); print(f"epoca {epoch:02d}: perda={val['loss']:.4f}, Dice multiclasse={val['mean_foreground_dice']:.4f}")
+        history.append(row); print(f"epoca {epoch:02d}: perda={val['loss']:.4f}, Dice multiclasse={val['mean_foreground_dice']:.4f}", flush=True)
+        # Preserva o historico mesmo se a execucao for interrompida antes do fim.
+        temporary_history = args.output_dir / "historico.csv.part"
+        with temporary_history.open("w", newline="", encoding="utf-8") as stream:
+            writer = csv.DictWriter(stream, fieldnames=row.keys()); writer.writeheader(); writer.writerows(history)
+        temporary_history.replace(args.output_dir / "historico.csv")
         if val["mean_foreground_dice"] > best:
             best, best_epoch, stale = val["mean_foreground_dice"], epoch, 0
-            torch.save({"model": model.state_dict(), "classes": CLASS_NAMES, "native_to_class": NATIVE_TO_CLASS, "epoch": epoch}, args.output_dir/"melhor_modelo.pt")
+            temporary_checkpoint = args.output_dir / "melhor_modelo.pt.part"
+            torch.save({"model": model.state_dict(), "classes": CLASS_NAMES, "native_to_class": NATIVE_TO_CLASS,
+                        "epoch": epoch, "configuration": configuration}, temporary_checkpoint)
+            temporary_checkpoint.replace(args.output_dir / "melhor_modelo.pt")
         else:
             stale += 1
             if stale >= args.patience: break

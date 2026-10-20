@@ -29,7 +29,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--output-dir", type=Path, default=Path("outputs/modelos_modernos/sam2_1_hiera_tiny_ubipr"))
     parser.add_argument("--model-id", default=MODEL_ID)
     parser.add_argument("--revision", default=MODEL_REVISION)
-    parser.add_argument("--cache-dir", type=Path, default=Path("data/modelos/huggingface/hub"))
+    parser.add_argument("--cache-dir", type=Path, default=None, help="Cache explicito; por padrao respeita HF_HOME.")
     parser.add_argument("--validation-limit", type=int, default=None)
     parser.add_argument("--test-limit", type=int, default=None)
     parser.add_argument("--image-batch-size", type=int, default=8)

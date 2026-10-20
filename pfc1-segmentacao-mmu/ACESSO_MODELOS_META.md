@@ -33,8 +33,9 @@ O acesso é concedido ao usuário individual, não automaticamente à organizaç
 Abra PowerShell na pasta `pfc1-segmentacao-mmu` e execute:
 
 ```powershell
-$env:HF_HOME = (Resolve-Path "data/modelos/huggingface").Path
-& "C:\Users\Lucas\pfc-sam3-venv\Scripts\python.exe" -c "from huggingface_hub import login; login()"
+$env:HF_HOME = (Get-Content "data/hf-home.txt" -Raw).Trim()
+$pfcPython = (Get-Content "data/python-path.txt" -Raw).Trim()
+& $pfcPython -c "from huggingface_hub import login; login()"
 ```
 
 Cole o token quando o programa solicitar. A entrada não aparece na tela. Quando
@@ -44,31 +45,44 @@ modelos.
 ## 4. Confirmar a liberação sem baixar os pesos grandes
 
 ```powershell
-$env:HF_HOME = (Resolve-Path "data/modelos/huggingface").Path
-& "C:\Users\Lucas\pfc-sam3-venv\Scripts\python.exe" verificar_acesso_meta.py
+.\executar.ps1 verificar_acesso_meta.py
 ```
 
 O resultado esperado para os dois modelos é `ACESSO OK`. Um `401` significa que
 o login não foi feito nesse `HF_HOME` ou que o acesso ainda não foi concedido.
 Um `403` normalmente significa que a conta autenticada não aceitou a licença.
 
-## 5. Primeiro teste SAM 3.1 e imagem de resultados
+## 5. Baixar pesos completos e testar inferência
+
+Após `ACESSO OK`, baixe os checkpoints completos:
+
+```powershell
+.\executar.ps1 baixar_modelos.py
+.\executar.ps1 validar_dinov3.py
+```
+
+O primeiro comando baixa os pesos de vários GB, não apenas `config.json`.
+O segundo testa o DINOv3 offline em duas imagens reais e registra
+`outputs/instalacao_2026-10-20/dinov3_smoke/validacao.json`. Espere
+`status: inference_ok` e `finite: true`.
 
 Comece com quatro imagens para verificar memória e instalação:
 
 ```powershell
-$env:HF_HOME = (Resolve-Path "data/modelos/huggingface").Path
-& "C:\Users\Lucas\pfc-sam3-venv\Scripts\python.exe" avaliar_sam3_1_ubipr.py --limit 4
+.\executar.ps1 avaliar_sam3_1_ubipr.py --model-dir outputs/instalacao_2026-10-20/ubipr_smoke --local-files-only --limit 4 --output-dir outputs/novo_sam3_smoke
 ```
 
-O comando baixa o checkpoint oficial na primeira execução e gera:
+O comando usa os pesos já baixados e o manifesto local, sem precisar dos pesos
+U-Net. Gera no diretório `outputs/novo_sam3_smoke`:
 
-- `outputs/modelos_modernos/sam3_1_ubipr/metricas.json`;
-- `outputs/modelos_modernos/sam3_1_ubipr/metricas_por_imagem.csv`;
-- `outputs/modelos_modernos/sam3_1_ubipr/amostras_visuais.png`.
+- `metricas.json`;
+- `metricas_por_imagem.csv`;
+- `amostras_visuais.png`.
 
 Depois do smoke test, remova `--limit` para avaliar toda a partição de teste.
-O ambiente SAM foi colocado em `C:\Users\Lucas\pfc-sam3-venv` porque as DLLs
-CUDA não carregam a partir do caminho longo do projeto no OneDrive. Como o SAM
-3 tem 848 milhões de parâmetros e esta máquina possui GPU de 6 GB,
-o script tenta CUDA primeiro e informa claramente se for necessário usar CPU.
+Na instalação de 20/10/2026, o ambiente está em `C:\Users\lucaz\pfc-tcc-venv`,
+registrado em `data/python-path.txt`, para evitar os caminhos longos do OneDrive.
+O reconhecimento com recorte U-Net ainda requer o checkpoint científico original
+ou novo treinamento; consulte `INSTALACAO_LOCAL.md`. Como o SAM 3 tem cerca de
+848 milhões de parâmetros e esta máquina possui GPU de 6 GB, comece com lote
+unitário. Se ocorrer falta de memória, execute com `--device cpu`.

@@ -1,0 +1,3 @@
+# Complemento ao ambiente SAM3 ja instalado, sem trocar NumPy 1.26.
+opencv-python-headless==4.11.0.86
+gdown
