@@ -1,0 +1,26 @@
+{
+  "selection": "First four distinct people in validation session2 with nonempty reference, manifest order; no score filtering",
+  "checkpoint": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\cnn\\ubipr_retreino_2026-10-20\\melhor_modelo.pt",
+  "examples": [
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C149_S2_I10_L.jpg",
+      "reference_mask": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C149_S2_I10_L.png",
+      "example_dice": 0.836139896373057
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C151_S2_I10_L.jpg",
+      "reference_mask": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C151_S2_I10_L.png",
+      "example_dice": 0.9564769266807215
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C173_S2_I10_L.jpg",
+      "reference_mask": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C173_S2_I10_L.png",
+      "example_dice": 0.9613368035909623
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C177_S2_I10_L.jpg",
+      "reference_mask": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C177_S2_I10_L.png",
+      "example_dice": 0.9093852720404259
+    }
+  ]
+}

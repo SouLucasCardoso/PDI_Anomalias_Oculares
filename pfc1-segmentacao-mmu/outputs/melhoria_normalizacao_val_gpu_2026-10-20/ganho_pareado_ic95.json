@@ -1,0 +1,13 @@
+{
+  "note": "ROI minus full, percentage points; pointwise 5000 person cluster resamples, fixed gallery, validation-calibrated thresholds; development only",
+  "intervals": {
+    "correct": [
+      6.875,
+      19.71159664591975
+    ],
+    "accepted": [
+      5.601659751037344,
+      21.25
+    ]
+  }
+}

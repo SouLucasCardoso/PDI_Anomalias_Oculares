@@ -1,0 +1,10 @@
+{
+  "registered_utc": "2026-10-21T02:40:24.359676+00:00",
+  "scope": "UBIPr primary, single query; development validation only; no test or occlusion",
+  "method": "Invert logistic fixed-three-way fusion; per-query mean/std across all available enrolled eyes; logistic mapping. Query identity is not used to normalize. No parameter search.",
+  "selection": "One fixed variant; all482 queries retained; original rank order must be unchanged for valid rows",
+  "calibration": "Threshold calibrated empirical validation FMR<=1%; repeatedly used validation, no independent confirmation",
+  "source_sha256": "947adec423ec6972662bdbccb74ceedc217022f8f51e852cd8a1214c5dcc0644",
+  "script_sha256": "c3a5d1f832139bc42570b811f39ba9dc73f0e37d163ba197012b616c742b3de1",
+  "module_sha256": "8e105dbdb11ba547420fdb171403bc4cebb07fd9358a1e59c22e37b0f0a8e3a6"
+}

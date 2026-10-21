@@ -1,0 +1,37 @@
+{
+  "images": 666,
+  "dhash_candidate_pairs": 4,
+  "candidate_cross_split_pairs": 1,
+  "candidate_cross_eye_pairs": 3,
+  "rule": "64-bit difference hash distance <=2; screening only, not proof of duplication; no automatic exclusions",
+  "pairs": [
+    {
+      "a": "P0281_OS20250611.JPG",
+      "b": "P0281_OS20250302.JPG",
+      "hamming_dhash": 2,
+      "same_eye": true,
+      "same_split": true
+    },
+    {
+      "a": "P0845_OS20250331.JPG",
+      "b": "P0597_OS20250113.JPG",
+      "hamming_dhash": 2,
+      "same_eye": false,
+      "same_split": true
+    },
+    {
+      "a": "P0897_OS20250315.JPG",
+      "b": "P0265_OS20250320.JPG",
+      "hamming_dhash": 2,
+      "same_eye": false,
+      "same_split": true
+    },
+    {
+      "a": "P0984_OD20250328.JPG",
+      "b": "P0225_OD20241219.JPG",
+      "hamming_dhash": 2,
+      "same_eye": false,
+      "same_split": false
+    }
+  ]
+}

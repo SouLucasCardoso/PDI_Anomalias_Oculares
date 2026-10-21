@@ -1,0 +1,18 @@
+{
+  "registered_utc": "2026-10-21T02:42:23.648543+00:00",
+  "scope": "UBIPr, single original photo per query; no cross-query or temporal fusion; validation development only",
+  "method": "Frozen previous encoders. RGB same-photo rotations -10,0,+10 degrees bilinear black fill; polar same-photo angular rolls -32,-16,0,+16,+32 columns. Mean normalized vectors then L2 per original photo. Apply to all gallery and query images.",
+  "variants": "RGB TTA top3, polar TTA top3, fixed thirds RGB-TTA/polar-TTA/previous spatial; same fusion with predefined per-query normalization",
+  "calibration": "Per-variant validation empirical FMR<=1%; fusion validation impostor z-score, no weight search; validation repeatedly used",
+  "failures": "All482 queries retained; require all fusion components valid",
+  "checkpoint_sha256": {
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\identidade_automatica_2026-10-20\\melhor_modelo.pt": "7c03b4c7ef4c54e5f86e58eb550ffc124fa11384fe5c3f5b947d1041178e706d",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\encoder_polar_2026-10-20\\melhor_modelo.pt": "db93dfcca33b8a77cd3bfbaa66f07d1efae2e976414d67748ccf5eff4a5ebe5c"
+  },
+  "script_sha256": "3855a158435823e659aa73de0b8299a2b333eac09c90e8629d1fb11eaa19dea7",
+  "dependencies_sha256": {
+    "validar_metrica_intra_classe.py": "711209909da5c594846ac28b6e59e2829e670a3966244cd8c920309864cdf441",
+    "normalizar_consulta.py": "8e105dbdb11ba547420fdb171403bc4cebb07fd9358a1e59c22e37b0f0a8e3a6",
+    "treinar_identidade_iris.py": "a8f6dc53ace011c968774f9f3f494a085f0c14af2a9ab04853952553c580b0a5"
+  }
+}

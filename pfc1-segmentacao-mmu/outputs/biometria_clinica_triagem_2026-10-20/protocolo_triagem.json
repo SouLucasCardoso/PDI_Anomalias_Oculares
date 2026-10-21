@@ -1,0 +1,45 @@
+{
+  "status": "eligibility_only_not_recognition_results",
+  "seed": 42,
+  "counts": {
+    "val": {
+      "images": 171,
+      "people": 36,
+      "eyes": 60,
+      "gallery": 60,
+      "queries": 111
+    },
+    "test": {
+      "images": 495,
+      "people": 107,
+      "eyes": 176,
+      "gallery": 176,
+      "queries": 319
+    }
+  },
+  "source_sha256": "aca35e237bd8954046787813e4c0db4f5ebbec3a09fb70e80338c94e8b72648a",
+  "manifest_sha256": "b793ea8fc596a34fac8b588e87afc645ab58d7d10b3855b0b7dbeeb09e5bf720",
+  "script_sha256": "e356004e753124de85705a367d99e5685973bd1383981611cdf00d559f793e22",
+  "ambiguous_prefixes_excluded": 12,
+  "excluded_images": {
+    "external_not_in_development_protocol": 99,
+    "ambiguous_identity_metadata": 58,
+    "date_not_unambiguously_parsed": 2,
+    "duplicate_across_eye_identities": 2
+  },
+  "dated_eyes_without_distinct_dates": 1401,
+  "query_binary_transitions": {
+    "gallery_binary_1_query_binary_1": 364,
+    "gallery_binary_0_query_binary_0": 61,
+    "gallery_binary_0_query_binary_1": 5
+  },
+  "date_rule": "Strict filename YYYYMMDD, earliest date gallery; strictly later dates queries",
+  "split_rule": "Subject-disjoint 25% validation, remaining test, seed42; no clinical training",
+  "pending": [
+    "Near-duplicate inspection",
+    "Visual verification of eye side and mask quality",
+    "Confirm filename dates represent acquisition dates",
+    "Freeze clinical protocol before inference; diagnostic transitions are observational"
+  ],
+  "nuclear_limitation": "Multiple captures per eye, but no unambiguous dates established; not longitudinal evidence."
+}

@@ -1,0 +1,17 @@
+{
+  "registered_utc": "2026-10-20T21:45:53.075838+00:00",
+  "purpose": "Development-only frozen encoder resolution ablation; no new test scores",
+  "input_sizes": [
+    128,
+    256
+  ],
+  "gallery": "First lexicographic session1 image per eye, same as HDBIF normalization experiment",
+  "queries": 482,
+  "eyes": 32,
+  "people": 16,
+  "preprocessing": "Reference iris mask, black outside, bbox margin25%, bilinear, ImageNet normalization",
+  "calibration": "Each resolution on validation original; empirical impostor FMR<=1%; failures retained",
+  "limitation": "Trained input128; inference256 is distribution shift and cannot restore absent texture; validation already used to select training checkpoint",
+  "checkpoint_sha256": "6060c164eada674712127830b2d188a9e6b4ed210f7b8d595e58fdfeb10387fc",
+  "script_sha256": "dba8b85f310fbab3e00be78a0a031926220654af14d5b613cd1bf1418e846624"
+}

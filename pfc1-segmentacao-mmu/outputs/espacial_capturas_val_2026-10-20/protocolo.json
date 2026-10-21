@@ -1,0 +1,16 @@
+{
+  "registered_utc": "2026-10-21T02:44:39.663300+00:00",
+  "scope": "UBIPr, single query image, validation development only; no test or occlusion inference",
+  "representation": "Frozen previous polar ResNet18 through layer2,128x8x64; subtract constant127 response; L2 channels per location",
+  "matching": "Every valid session1 capture, mean local cosine best angular shifts -2..2, top3 mean per eye; no radial shifts, no query fusion",
+  "variants": "Spatial top3; equal thirds previous RGB/previous polar/new spatial; same fusion with predefined per-query normalization",
+  "failure_handling": "All482 queries retained, all32 eyes retained, missing galleries floor-2",
+  "calibration": "Each threshold empirical validation FMR<=1%; fixed fusion weights, validation impostor z-score; repeated development not independent",
+  "checkpoint_sha256": "db93dfcca33b8a77cd3bfbaa66f07d1efae2e976414d67748ccf5eff4a5ebe5c",
+  "script_sha256": "d5211d38208712f7304770ca3b9e68600731ad92ca8220d1881a0d57ef8458b9",
+  "dependencies_sha256": {
+    "validar_correspondencia_espacial.py": "4b15e6e6a2fb67b6b7116314d6ab6bbc5827f711e3ddfc9ce1bbabb30ef6ad49",
+    "comparador_hdbif_lote.py": "0c6c086a348a17d900e17b4031dc0a2f06ab3721f9f7a53df26c382585882464",
+    "normalizar_consulta.py": "8e105dbdb11ba547420fdb171403bc4cebb07fd9358a1e59c22e37b0f0a8e3a6"
+  }
+}

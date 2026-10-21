@@ -1,0 +1,118 @@
+{
+  "registered_utc": "2026-10-20T19:49:56.076133+00:00",
+  "round": "Exploratory follow-up; UBIPr test used in prior DINO analysis, not a newly untouched test",
+  "selection": "Encoder checkpoint and threshold fixed from UBIPr validation before this evaluation",
+  "checkpoint_sha256": "6060c164eada674712127830b2d188a9e6b4ed210f7b8d595e58fdfeb10387fc",
+  "best_epoch": 15,
+  "threshold": 0.4026836454868317,
+  "script_sha256": "c7cd48b8e679b7977411a488b0eb5e0512aa693c1090ec87188f2cfe6bbe7e03",
+  "dependencies_sha256": {
+    "treinar_identidade_iris.py": "a8f6dc53ace011c968774f9f3f494a085f0c14af2a9ab04853952553c580b0a5",
+    "avaliar_robustez_reconhecimento.py": "e6d0b8d8eb78dc2e86ed3f73084cd9fb5d83d1afee27f73ca0ffbee1a5947f95",
+    "avaliar_dinov3_ubipr.py": "781d5903f7bccd515cb0d450b05331709cf88460d497d61f2cf95083ea546ac8",
+    "treinar_segmentacao_ubipr.py": "a427b82c9879a2320a5d6544c89f96806ab74b12566cd3237650c62c54123431",
+    "relatar_area_preservada.py": "b5bf3418d1c92e7c4062e3da42dbd20a7542c7e846e9e4b10f45fc94432d4967"
+  },
+  "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+  "conditions": [
+    [
+      "original",
+      0
+    ],
+    [
+      "oclusao_superior",
+      10
+    ],
+    [
+      "oclusao_superior",
+      20
+    ],
+    [
+      "oclusao_superior",
+      30
+    ],
+    [
+      "oclusao_superior",
+      40
+    ],
+    [
+      "oclusao_superior",
+      50
+    ],
+    [
+      "oclusao_superior",
+      60
+    ],
+    [
+      "oclusao_superior",
+      70
+    ],
+    [
+      "oclusao_superior",
+      80
+    ],
+    [
+      "oclusao_superior",
+      90
+    ],
+    [
+      "oclusao_inferior",
+      10
+    ],
+    [
+      "oclusao_inferior",
+      20
+    ],
+    [
+      "oclusao_inferior",
+      30
+    ],
+    [
+      "oclusao_inferior",
+      40
+    ],
+    [
+      "oclusao_inferior",
+      50
+    ],
+    [
+      "oclusao_inferior",
+      60
+    ],
+    [
+      "oclusao_inferior",
+      70
+    ],
+    [
+      "oclusao_inferior",
+      80
+    ],
+    [
+      "oclusao_inferior",
+      90
+    ]
+  ],
+  "identity": "subject+side",
+  "gallery": "Original session1 centroid; fixed",
+  "queries": "session2",
+  "preprocessing": "Reference iris mask fixed, black exterior, bbox25%, bilinear128x128, ImageNet normalization",
+  "occlusion": "Exact annotated iris fraction replaced with gray128; outside iris unchanged",
+  "failures": "Retain all queries; empty references reject; area undefined for empty masks",
+  "minimum_rule": "Rank1>=90% and TAR>=90% at original validation-calibrated threshold, all larger fractions must pass; otherwise not determined",
+  "uncertainty": "5000 paired person-cluster bootstrap replicates, fixed gallery and threshold",
+  "clinical_labels": false,
+  "counts": {
+    "val": {
+      "images": 962,
+      "people": 16,
+      "eyes": 32,
+      "queries": 482
+    },
+    "test": {
+      "images": 960,
+      "people": 16,
+      "eyes": 32,
+      "queries": 486
+    }
+  }
+}

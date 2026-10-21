@@ -1,0 +1,82 @@
+{
+  "status": "exploratory_external_arciris_completed",
+  "results": [
+    {
+      "rank1": 0.4107883817427386,
+      "tar": 0.24066390041493776,
+      "fnmr": 0.7593360995850622,
+      "far": 0.009820193637621023,
+      "eer_descriptive": 0.2653526970954357,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.5698311325674241,
+      "margin_mean_valid": 0.0018043834769188457,
+      "threshold": 0.5775830432945732,
+      "variant": "arciris_own_red_geometry"
+    },
+    {
+      "rank1": 0.8962655601659751,
+      "tar": 0.7489626556016598,
+      "fnmr": 0.25103734439834025,
+      "far": 0.009820193637621023,
+      "eer_descriptive": 0.06224066390041494,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.9024767753377573,
+      "margin_mean_valid": 0.1200433371285227,
+      "threshold": 0.865587429803189,
+      "variant": "fusion8"
+    },
+    {
+      "rank1": 0.8962655601659751,
+      "tar": 0.9004149377593361,
+      "fnmr": 0.09958506224066388,
+      "far": 0.009820193637621023,
+      "eer_descriptive": 0.04771784232365145,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.9190532986968942,
+      "margin_mean_valid": 0.1360026556321923,
+      "threshold": 0.85802855286133,
+      "variant": "fusion8_normalized"
+    }
+  ],
+  "normalization": [
+    {
+      "mean": 0.13122799080806388,
+      "std": 0.10420303589640487
+    },
+    {
+      "mean": 0.123085520293729,
+      "std": 0.07507690295608112
+    },
+    {
+      "mean": 0.6224773753886442,
+      "std": 0.04882472859612996
+    },
+    {
+      "mean": 0.11163836653933283,
+      "std": 0.08259312418878491
+    },
+    {
+      "mean": 0.12028174920227375,
+      "std": 0.09432536817462622
+    },
+    {
+      "mean": 0.11934254742218295,
+      "std": 0.08647527110228072
+    },
+    {
+      "mean": 0.129551823712925,
+      "std": 0.10089495964456476
+    },
+    {
+      "mean": 0.5483656686206722,
+      "std": 0.012939933953774223
+    }
+  ],
+  "test_inference": false,
+  "minimum_area": null,
+  "external_pretraining_overlap_unknown": true,
+  "development_90_reached": false
+}

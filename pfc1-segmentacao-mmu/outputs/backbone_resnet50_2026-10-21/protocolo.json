@@ -1,0 +1,21 @@
+{
+  "registered_utc": "2026-10-21T03:03:29.462696+00:00",
+  "scope": "Authorized side-informed UBIPr, single query; repeated development validation only",
+  "representation": "Frozen trained backbone before projection:2048 GeM ResNet50 or768 LayerNorm ConvNeXt. Raw vectors centered by mean valid session1 enrollment only, then L2. No query in center estimation. Same preprocessing as training.",
+  "variants": "Backbone top3 conditional on side; equal-weight old RGB/polar/spatial plus ResNet50 backbone, plus ConvNeXt backbone when available; with/without predefined per-query normalization",
+  "calibration": "Component normalization only same-side validation impostors,15 per query; FMR<=1% each variant; no weight or center parameter search",
+  "failures": "All482 queries retained; every component must be valid",
+  "checkpoint_sha256": "699b8236211da2fd43b104f157b6cc3835bd5d89a01a74a5b75ce4261bf35e24",
+  "sources_sha256": {
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\identidade_automatica_2026-10-20\\scores_baseline.npz": "3bc928fce0e6c8c28a4ca1c7c08451d9f300f9d86aca90bc2ab2a3365dd05f7e",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\encoder_polar_2026-10-20\\scores_melhor.npz": "879522fcdb93d6af62c5442a77f5709fc60aadfb57303ba1d8cf9014d8c92226",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\espacial_polar_val_2026-10-20\\scores_shift0.npz": "e0ebbe59a5cb2c289fb6fd0259f3ee108a82d1543b35c4218ed49df6d67120fa"
+  },
+  "script_sha256": "780c7216eb35d581b2ed8b13b95904add3b7d3e3a3e8d3bc72a6ffe4d8e7929a",
+  "dependencies_sha256": {
+    "reconhecedor_resnet50.py": "2416940a33a01b0d745a9bb6609f7f2e5ebbb16a77dfaab6635abab3eefe6b2f",
+    "reconhecedor_convnext.py": "7e121f99323b2c4c9d988621969fc4cd37d207a796a43994a949f95841554230",
+    "normalizar_consulta.py": "8e105dbdb11ba547420fdb171403bc4cebb07fd9358a1e59c22e37b0f0a8e3a6",
+    "validar_lateralidade_informada.py": "438c67e9f50e4a0bbcaf666e0ffaff59119f1b183b61442e698ede274bfb1247"
+  }
+}

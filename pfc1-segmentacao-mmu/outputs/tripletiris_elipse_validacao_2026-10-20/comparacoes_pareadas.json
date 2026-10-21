@@ -1,0 +1,53 @@
+{
+  "comparisons": [
+    {
+      "variant": "reference",
+      "ellipse_minus_circular_gain_pp": {
+        "rank1": -10.165975103734437,
+        "tar": -4.564315352697094
+      },
+      "gain_ci95_pp": {
+        "rank1": [
+          -16.458333333333332,
+          -4.356396385583491
+        ],
+        "tar": [
+          -10.833333333333334,
+          1.875
+        ]
+      }
+    },
+    {
+      "variant": "automatic",
+      "ellipse_minus_circular_gain_pp": {
+        "rank1": -10.165975103734443,
+        "tar": -3.319502074688796
+      },
+      "gain_ci95_pp": {
+        "rank1": [
+          -16.11737423270807,
+          -4.149377593360996
+        ],
+        "tar": [
+          -11.11111111111111,
+          3.4983037445158605
+        ]
+      }
+    }
+  ],
+  "geometry_audit": {
+    "roi_reference_ellipse": {
+      "images": 962,
+      "failed_images": 19,
+      "hole_pupil": 850,
+      "regressor_pupil_fallback": 93
+    },
+    "roi_automatic_ellipse": {
+      "images": 962,
+      "failed_images": 7,
+      "hole_pupil": 885,
+      "regressor_pupil_fallback": 70
+    }
+  },
+  "note": "Development only; pointwise5000 person-cluster bootstrap, fixed gallery and validation-calibrated thresholds; no selection bias correction"
+}

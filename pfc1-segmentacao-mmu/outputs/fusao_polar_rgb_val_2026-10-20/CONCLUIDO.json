@@ -1,0 +1,27 @@
+{
+  "status": "fixed_fusion_development_completed",
+  "metrics": {
+    "rank1": 0.7634854771784232,
+    "tar": 0.6763485477178424,
+    "fnmr": 0.32365145228215764,
+    "far": 0.009904965868023023,
+    "eer_descriptive": 0.08315486547985544,
+    "extraction_failures": 4,
+    "queries": 482,
+    "genuine_mean_valid": 0.9208306429800671,
+    "margin_mean_valid": 0.048186096177945864,
+    "threshold": 0.9170159535990575,
+    "joint_success": 0.6244813278008299,
+    "normalization": [
+      {
+        "impostor_mean": 0.1240406410073161,
+        "impostor_std": 0.10133575699108374
+      },
+      {
+        "impostor_mean": 0.11512956587331158,
+        "impostor_std": 0.07565111886509615
+      }
+    ]
+  },
+  "test_inference": false
+}

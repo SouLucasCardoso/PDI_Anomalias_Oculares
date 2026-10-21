@@ -1,0 +1,137 @@
+{
+  "conditional_fixed_model_ci95": {
+    "rank1": [
+      0.6104166666666667,
+      0.7479925725183174
+    ],
+    "tar": [
+      0.4036144578313253,
+      0.6875
+    ],
+    "fmr": [
+      0.004645995121465551,
+      0.014867914509491568
+    ],
+    "joint_identification": [
+      0.35742254733218587,
+      0.5979166666666667
+    ]
+  },
+  "casewise_histograms": [
+    {
+      "model": "DINO_UNet",
+      "orientation": "oclusao_superior",
+      "all_queries": 486,
+      "eligible_queries": 23,
+      "people_with_eligible_queries": 11,
+      "smallest_tested_fraction_histogram": {
+        "10": 0,
+        "20": 0,
+        "30": 0,
+        "40": 0,
+        "50": 0,
+        "60": 0,
+        "70": 0,
+        "80": 1,
+        "90": 2,
+        "100": 20
+      }
+    },
+    {
+      "model": "DINO_UNet",
+      "orientation": "oclusao_inferior",
+      "all_queries": 486,
+      "eligible_queries": 23,
+      "people_with_eligible_queries": 11,
+      "smallest_tested_fraction_histogram": {
+        "10": 0,
+        "20": 0,
+        "30": 0,
+        "40": 0,
+        "50": 0,
+        "60": 0,
+        "70": 0,
+        "80": 1,
+        "90": 3,
+        "100": 19
+      }
+    },
+    {
+      "model": "DINO_referencia",
+      "orientation": "oclusao_superior",
+      "all_queries": 486,
+      "eligible_queries": 16,
+      "people_with_eligible_queries": 7,
+      "smallest_tested_fraction_histogram": {
+        "10": 0,
+        "20": 0,
+        "30": 0,
+        "40": 0,
+        "50": 0,
+        "60": 0,
+        "70": 0,
+        "80": 1,
+        "90": 3,
+        "100": 12
+      }
+    },
+    {
+      "model": "DINO_referencia",
+      "orientation": "oclusao_inferior",
+      "all_queries": 486,
+      "eligible_queries": 16,
+      "people_with_eligible_queries": 7,
+      "smallest_tested_fraction_histogram": {
+        "10": 0,
+        "20": 0,
+        "30": 0,
+        "40": 0,
+        "50": 0,
+        "60": 0,
+        "70": 0,
+        "80": 1,
+        "90": 3,
+        "100": 12
+      }
+    },
+    {
+      "model": "Encoder_treinado",
+      "orientation": "oclusao_superior",
+      "all_queries": 486,
+      "eligible_queries": 234,
+      "people_with_eligible_queries": 15,
+      "smallest_tested_fraction_histogram": {
+        "10": 0,
+        "20": 0,
+        "30": 0,
+        "40": 0,
+        "50": 11,
+        "60": 18,
+        "70": 19,
+        "80": 24,
+        "90": 45,
+        "100": 117
+      }
+    },
+    {
+      "model": "Encoder_treinado",
+      "orientation": "oclusao_inferior",
+      "all_queries": 486,
+      "eligible_queries": 234,
+      "people_with_eligible_queries": 15,
+      "smallest_tested_fraction_histogram": {
+        "10": 0,
+        "20": 0,
+        "30": 0,
+        "40": 1,
+        "50": 4,
+        "60": 12,
+        "70": 15,
+        "80": 26,
+        "90": 57,
+        "100": 119
+      }
+    }
+  ],
+  "note": "Interpolated medians such as95% are not tested levels; global minimum remains undefined"
+}

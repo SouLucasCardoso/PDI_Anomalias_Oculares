@@ -1,0 +1,125 @@
+{
+  "comparisons": [
+    {
+      "new": "neural_reference_centroid",
+      "baseline": "neural_reference_first",
+      "rank1": {
+        "gain_pp": 17.012448132780083,
+        "ci95_pp": [
+          10.58091286307054,
+          24.273858921161825
+        ]
+      },
+      "tar": {
+        "gain_pp": 17.63485477178423,
+        "ci95_pp": [
+          8.920240218099517,
+          26.458333333333332
+        ]
+      }
+    },
+    {
+      "new": "neural_automatic_top3",
+      "baseline": "neural_automatic_first",
+      "rank1": {
+        "gain_pp": 16.182572614107883,
+        "ci95_pp": [
+          9.54356846473029,
+          23.333333333333332
+        ]
+      },
+      "tar": {
+        "gain_pp": 19.91701244813278,
+        "ci95_pp": [
+          12.5,
+          27.800829875518673
+        ]
+      }
+    },
+    {
+      "new": "neural_automatic_top3",
+      "baseline": "neural_reference_top3",
+      "rank1": {
+        "gain_pp": 2.9045643153526868,
+        "ci95_pp": [
+          -1.859504132231405,
+          7.291666666666667
+        ]
+      },
+      "tar": {
+        "gain_pp": 5.394190871369298,
+        "ci95_pp": [
+          0.8298755186721992,
+          9.959543568464715
+        ]
+      }
+    },
+    {
+      "new": "neural_automatic_centroid",
+      "baseline": "neural_reference_centroid",
+      "rank1": {
+        "gain_pp": -0.4149377593360981,
+        "ci95_pp": [
+          -5.1440329218107,
+          3.9419087136929463
+        ]
+      },
+      "tar": {
+        "gain_pp": 0.4149377593360981,
+        "ci95_pp": [
+          -4.771784232365145,
+          5.785123966942149
+        ]
+      }
+    },
+    {
+      "new": "hdbif_reference_max",
+      "baseline": "hdbif_reference_first",
+      "rank1": {
+        "gain_pp": -35.684647302904565,
+        "ci95_pp": [
+          -50.829875518672196,
+          -20.831172199170155
+        ]
+      },
+      "tar": {
+        "gain_pp": -23.236514522821576,
+        "ci95_pp": [
+          -38.126231846473026,
+          -9.874421296296326
+        ]
+      }
+    },
+    {
+      "new": "hdbif_reference_top3",
+      "baseline": "hdbif_reference_first",
+      "rank1": {
+        "gain_pp": -19.502074688796682,
+        "ci95_pp": [
+          -30.208333333333332,
+          -9.336099585062241
+        ]
+      },
+      "tar": {
+        "gain_pp": -21.991701244813278,
+        "ci95_pp": [
+          -35.686126161654265,
+          -9.709744753936688
+        ]
+      }
+    }
+  ],
+  "common_valid_secondary": {
+    "queries": 472,
+    "note": "Secondary shared-valid subset only; all482 retained in primary metrics",
+    "automatic": {
+      "correct": 0.6800847457627118,
+      "accepted": 0.6016949152542372
+    },
+    "reference": {
+      "correct": 0.6546610169491526,
+      "accepted": 0.5508474576271186
+    }
+  },
+  "note": "Pointwise 5000 person-cluster bootstrap, fixed gallery and development-calibrated thresholds; no multiple-comparison correction or independent confirmation"
+}

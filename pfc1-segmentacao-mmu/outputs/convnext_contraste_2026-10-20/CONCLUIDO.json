@@ -1,0 +1,10 @@
+{
+  "status": "convnext_contrast_training_completed",
+  "best_epoch": 18,
+  "epochs_completed": 28,
+  "best_validation_tar": 0.533195020746888,
+  "best_validation_rank1": 0.6721991701244814,
+  "test_inference": false,
+  "checkpoint_sha256": "a03400e62df6282e4532dce75fabd6e12d06678a8de7dc3e55a2a274c60f1529",
+  "elapsed_training_seconds": 588.1880000000237
+}

@@ -1,0 +1,48 @@
+{
+  "status": "enrollment_only_ridge_classifier_completed",
+  "results": [
+    {
+      "rank1": 0.7697095435684648,
+      "tar": 0.7178423236514523,
+      "fnmr": 0.2821576763485477,
+      "far": 0.009904965868023023,
+      "eer_descriptive": 0.06224066390041494,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.38180404341699914,
+      "margin_mean_valid": 0.11321152072190295,
+      "threshold": 0.306851203287872,
+      "variant": "concatenated_centroid_control"
+    },
+    {
+      "rank1": 0.7676348547717843,
+      "tar": 0.7655601659751037,
+      "fnmr": 0.23443983402489632,
+      "far": 0.009904965868023023,
+      "eer_descriptive": 0.06625619060366751,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.593788462770442,
+      "margin_mean_valid": 0.03708039978257934,
+      "threshold": 0.5644636903641447,
+      "variant": "enrollment_ridge_alpha1"
+    },
+    {
+      "rank1": 0.7676348547717843,
+      "tar": 0.7842323651452282,
+      "fnmr": 0.2157676348547718,
+      "far": 0.009904965868023023,
+      "eer_descriptive": 0.059965198768571815,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.939679026871488,
+      "margin_mean_valid": 0.08216297655923871,
+      "threshold": 0.9191286240485627,
+      "variant": "ridge_query_normalized"
+    }
+  ],
+  "test_inference": false,
+  "minimum_area": null,
+  "gallery_images_used": 478,
+  "query_images_used_for_fitting": 0
+}

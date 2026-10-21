@@ -1,0 +1,19 @@
+{
+  "registered_utc": "2026-10-21T02:18:10.666355+00:00",
+  "scope": "UBIPr development validation only, one query image; no test or occlusion scores",
+  "method": "Fixed frozen embeddings; training-only global mean and within-eye covariance, shrinkage0.1 towards trace/dimension identity; inverse-square-root transform then L2",
+  "variants": "RGB top3, polar top3, equal thirds fusion of transformed RGB/polar and previous spatial scores",
+  "calibration": "Validation impostor z-score for fixed fusion; threshold validation empirical FMR<=1%; repeated validation not independent",
+  "failure_handling": "Exclude empty training extractions only, retain all482 validation queries",
+  "script_sha256": "711209909da5c594846ac28b6e59e2829e670a3966244cd8c920309864cdf441",
+  "dependencies_sha256": {
+    "metrica_intra_classe.py": "a4b36050c48167405beeba1522395ab5f59a46a2ab8e70216e53f5a96da47399",
+    "comparador_hdbif_lote.py": "0c6c086a348a17d900e17b4031dc0a2f06ab3721f9f7a53df26c382585882464",
+    "treinar_identidade_iris.py": "a8f6dc53ace011c968774f9f3f494a085f0c14af2a9ab04853952553c580b0a5"
+  },
+  "inputs_sha256": {
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\identidade_automatica_2026-10-20\\melhor_modelo.pt": "7c03b4c7ef4c54e5f86e58eb550ffc124fa11384fe5c3f5b947d1041178e706d",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\encoder_polar_2026-10-20\\melhor_modelo.pt": "db93dfcca33b8a77cd3bfbaa66f07d1efae2e976414d67748ccf5eff4a5ebe5c",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\cnn\\ubipr_retreino_2026-10-20\\manifesto.json": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de"
+  }
+}

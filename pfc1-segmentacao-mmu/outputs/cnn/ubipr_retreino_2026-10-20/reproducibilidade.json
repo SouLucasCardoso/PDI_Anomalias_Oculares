@@ -1,0 +1,30 @@
+{
+  "started_utc": "2026-10-20T15:08:27.658640+00:00",
+  "configuration": {
+    "data_dir": "data",
+    "output_dir": "outputs\\cnn\\ubipr_retreino_2026-10-20",
+    "epochs": 30,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "height": 240,
+    "width": 320,
+    "base_channels": 8,
+    "seed": 42,
+    "workers": 0,
+    "threads": 8,
+    "patience": 10,
+    "limit_per_split": null,
+    "audit_only": false,
+    "no_download": true
+  },
+  "script_sha256": "a427b82c9879a2320a5d6544c89f96806ab74b12566cd3237650c62c54123431",
+  "python": "3.12.10",
+  "packages": {
+    "torch": "2.14.1+cu126",
+    "numpy": "1.26.4",
+    "Pillow": "12.3.0"
+  },
+  "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "archive_sha256": "b71a593dc03e04808a6ff11a1e12698cbc9151deb04575dcf8e648dabaf3de34",
+  "development_subsample": false
+}

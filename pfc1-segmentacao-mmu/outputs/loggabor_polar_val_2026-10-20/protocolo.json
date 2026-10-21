@@ -1,0 +1,19 @@
+{
+  "registered_utc": "2026-10-20T23:05:14.846908+00:00",
+  "scope": "Development validation-only phase baseline, no training or test/occlusion inference; not official OSIRIS",
+  "filter": "One-sided angular Log-Gabor wavelength18pixels sigmaOnf0.5, two phase bits, row mean removed, low amplitude<1e-6 invalid",
+  "mask": "Conservative reconstruction from neutral sentinel: grayscale!=127; genuine127pixels also rejected; erode3radial x5angular with angular wrap",
+  "matching": "Masked Hamming FFT +/-16columns, minimum pair overlap10% of full bit canvas; normalized D=.5-(.5-raw)*sqrt(overlap/(.5*fullbits)); first/max/top3 enrollment",
+  "calibration": "Separate validation empirical FMR<=1%, all eyes/queries retained; not independent confirmation",
+  "critical_distinction": "Overlap10% is code-quality gate, NOT minimum anatomical iris area",
+  "cache_sha256": {
+    "val_polar.npy": "0865928ce611f052c23a3d7e4b4730e2d4cd17cc751dc8a03f3e48ead232d1c3",
+    "val_valid.npy": "abc8f69c227b1095a3fe34fa2be0d9fc4750fdf58fc135562a008a74a1ff70f5"
+  },
+  "script_sha256": "493edb69465a46fb2079fb19a9bb16077a9bd38f1671f3435dacf708bb899c3d",
+  "dependencies_sha256": {
+    "loggabor_iris.py": "9a97f51a748760be8c04d191d62649c0ccb7f2d87c3996dc05faf3e100e70df6",
+    "matcher_hdbif_fft.py": "a360c8330f53c3d02a5e9f913105a908bea0d2ad9ffbd7a52734226bafd6008a",
+    "comparador_hdbif_lote.py": "0c6c086a348a17d900e17b4031dc0a2f06ab3721f9f7a53df26c382585882464"
+  }
+}

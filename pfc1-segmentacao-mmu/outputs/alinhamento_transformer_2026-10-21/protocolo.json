@@ -1,0 +1,16 @@
+{
+  "registered_utc": "2026-10-21T04:03:04.535009+00:00",
+  "scope": "Authorized side-informed UBIPr, one original query photo; repeated development validation only",
+  "method": "Frozen trained polar Transformer, enrollment original orientation only. Query circular rolls fixed -32,-16,0,+16,+32, same already used augmentation range. For each eye aggregate top3 enrollment similarities per query view, then max across5views, without true identity to select view.",
+  "variants": "Own-extraction unshifted control and angular-max Transformer scores; each fused with6previous components equal1/7, with/without predefined query normalization. No angle/weight search.",
+  "calibration": "15same-side impostors/query; separate component z-score and threshold empirical validation FMR<=1%; all482 queries retained",
+  "limitations": "Several computational views of same image, not multiple query photos; validation repeatedly used, no independent confirmation",
+  "checkpoint_sha256": "0ad83d9f9c78e434bda11e99e01c90cc197e7e5127c3aed75e5da6df38808b87",
+  "script_sha256": "18177d4d89e6f739be93e0a5f1777f901527a4e053cb4661124c320da380d35b",
+  "dependencies_sha256": {
+    "reconhecedor_transformer_polar.py": "967ca7a7a8b35fe267cd8aff7374e38d04727b00676f644b139e96dd36798e1c",
+    "normalizar_consulta.py": "8e105dbdb11ba547420fdb171403bc4cebb07fd9358a1e59c22e37b0f0a8e3a6",
+    "comparador_hdbif_lote.py": "0c6c086a348a17d900e17b4031dc0a2f06ab3721f9f7a53df26c382585882464",
+    "validar_lateralidade_informada.py": "438c67e9f50e4a0bbcaf666e0ffaff59119f1b183b61442e698ede274bfb1247"
+  }
+}

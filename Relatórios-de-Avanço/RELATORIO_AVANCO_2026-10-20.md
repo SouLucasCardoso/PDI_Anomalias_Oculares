@@ -122,3 +122,40 @@ Permanecem a revisão científica da interpretação, a normalização das refer
 - [Síntese e intervalos da segunda rodada](../pfc1-segmentacao-mmu/outputs/consolidacao_biometria_2026-10-20/SEGUNDA_RODADA.md).
 - [Exemplos reais de máscaras, recortes e oclusões](EXEMPLOS_REAIS_RECORTES_IRIS_2026-10-20.png).
 - [Artigo em produção](../pfc1-segmentacao-mmu/artigo/ARTIGO_AREA_IRIS_EM_PRODUCAO.md).
+
+## 9. Atualizações posteriores: desenvolvimento do reconhecedor no mesmo dia
+
+Após os experimentos de teste descritos acima, foram realizadas novas rodadas **somente na validação**, com 482 consultas de 16 pessoas e 32 olhos. Esses números não substituem as 486 consultas de teste das seções anteriores nem constituem confirmação independente.
+
+O cadastro múltiplo com máscaras automáticas melhorou o encoder RGB. Duas adaptações de treinamento não superaram a TAR inicial e mantiveram os parâmetros anteriores. O TripletIris público e a aproximação elíptica foram avaliados, sem justificar a substituição do encoder. Foi então treinado um novo encoder em textura polar própria, com 28 épocas e seleção na época 20; suas representações complementaram as do encoder RGB.
+
+| Candidato de desenvolvimento na validação | Rank-1 | TAR | FMR |
+|---|---:|---:|---:|
+| RGB automático top-3, linha de base pareada | 66,80% | 59,34% | 0,99% |
+| Novo encoder polar top-3 | 58,71% | 49,59% | 0,99% |
+| Fusão RGB + polar, pesos iguais | 76,35% | 67,63% | 0,99% |
+| Fusão RGB + polar + espacial, pesos iguais | **79,88%** | **68,05%** | **0,99%** |
+
+O ganho da fusão de três vias em relação à linha de base foi de 13,07 pp em Rank-1 e 8,71 pp em TAR. Os pesos são fixos, mas a padronização por impostores e os limiares foram calculados na própria validação. Houve várias hipóteses de desenvolvimento no mesmo conjunto, portanto esses ganhos precisam de confirmação independente.
+
+O critério de 90% nas duas métricas permanece inalterado. Na fusão de três vias, faltam **10,12 pp de Rank-1 e 21,95 pp de TAR**. Em 482 consultas, há 385 identificações corretas e 328 aceitações genuínas; o alvo de pelo menos 90% exige 434 em cada medida. Ainda não existe mínimo global de área aprovado e nenhuma nova curva de oclusão foi calculada para esses candidatos.
+
+Os **37 testes automatizados passaram**. O checkpoint polar, fontes, escores, históricos e backups foram preservados. O aluno confirmou o **UBIPr como base principal e uma única foto de consulta por identificação**. Várias fotos de cadastro continuam permitidas conforme o protocolo; não há agregação de fotos de consulta.
+
+[Relatório da rodada polar, fusões, intervalos e exemplos reais](../pfc1-segmentacao-mmu/outputs/fusao_espacial_val_2026-10-20/RELATORIO_AVANCO_POLAR_FUSAO.md).
+
+## 10. Continuação: controles de resolução interna e métrica
+
+Foi concluído novo treino polar sem o max-pooling inicial: 29 épocas, seleção na 21. A arquitetura mantém mais posições espaciais e utiliza lote 32 por memória; essa mudança simultânea impede isolar o efeito da arquitetura. O encoder isolado obteve 61,62% de Rank-1 e 46,68% de TAR. O modelo recarregado reproduziu exatamente os escores salvos.
+
+| Controle adicional, mesmas 482 consultas de validação | Rank-1 | TAR | FMR |
+|---|---:|---:|---:|
+| Fusão anterior, referência mantida | 79,88% | 68,05% | 0,99% |
+| Fusão fixa com o novo encoder denso | 78,84% | 68,26% | 0,99% |
+| Fusão após transformação linear ajustada só no treino | 78,22% | 65,98% | 0,99% |
+
+A fusão densa perdeu cinco identificações corretas e acrescentou uma aceitação genuína. Os intervalos pareados das duas diferenças incluem zero; não há ganho consistente demonstrado. A transformação linear também não superou a referência. Os resultados negativos foram mantidos, sem substituir os pesos anteriores. Os **39 testes passaram**, e novos pesos, escores e protocolos foram copiados para o projeto com hashes conferidos.
+
+O mínimo de área continua **não determinado**, tanto sem oclusão artificial adicional quanto sob oclusões, pelo critério registrado. A referência mantida está a 10,12 pp de Rank-1 e 21,95 pp de TAR dos 90%. A nova fusão tem TAR pontualmente maior, mas Rank-1 menor: não se combinam métricas de configurações diferentes para declarar aprovação. Nenhum novo teste independente ou ensaio de oclusão foi executado nesta continuação.
+
+[Relatório detalhado da continuação](../pfc1-segmentacao-mmu/outputs/fusao_densa_val_2026-10-20/RELATORIO_CONTINUACAO.md).

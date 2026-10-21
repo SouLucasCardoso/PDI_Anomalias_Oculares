@@ -1,0 +1,76 @@
+{
+  "status": "side_enrollment_classifiers_completed",
+  "results": [
+    {
+      "rank1": 0.8360995850622407,
+      "tar": 0.8029045643153527,
+      "fnmr": 0.19709543568464727,
+      "far": 0.009820193637621023,
+      "eer_descriptive": 0.05394190871369295,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.6103050242575033,
+      "margin_mean_valid": 0.05436352692045655,
+      "threshold": 0.5766112835877776,
+      "variant": "linear_alpha1"
+    },
+    {
+      "rank1": 0.8360995850622407,
+      "tar": 0.8402489626556017,
+      "fnmr": 0.15975103734439833,
+      "far": 0.009820193637621023,
+      "eer_descriptive": 0.04612724757952974,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.9257600488262184,
+      "margin_mean_valid": 0.16406533642984514,
+      "threshold": 0.8859134925300448,
+      "variant": "linear_alpha1_query_normalized"
+    },
+    {
+      "rank1": 0.8381742738589212,
+      "tar": 0.7800829875518672,
+      "fnmr": 0.21991701244813278,
+      "far": 0.009820193637621023,
+      "eer_descriptive": 0.05186721991701245,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.6161662397288521,
+      "margin_mean_valid": 0.061526163636219086,
+      "threshold": 0.579625288643915,
+      "variant": "rbf_alpha001"
+    },
+    {
+      "rank1": 0.8381742738589212,
+      "tar": 0.8319502074688797,
+      "fnmr": 0.1680497925311203,
+      "far": 0.009820193637621023,
+      "eer_descriptive": 0.04557399723374827,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.9304782636137333,
+      "margin_mean_valid": 0.17909801229666383,
+      "threshold": 0.8932863417571912,
+      "variant": "rbf_alpha001_query_normalized"
+    }
+  ],
+  "audit": [
+    {
+      "side": "L",
+      "gallery_count": 239,
+      "queries": 241,
+      "gamma": 0.5083444681665498,
+      "queries_used_for_fitting": 0
+    },
+    {
+      "side": "R",
+      "gallery_count": 239,
+      "queries": 241,
+      "gamma": 0.5064685361290296,
+      "queries_used_for_fitting": 0
+    }
+  ],
+  "test_inference": false,
+  "minimum_area": null,
+  "development_90_reached": false
+}

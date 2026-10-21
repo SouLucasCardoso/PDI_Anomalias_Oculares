@@ -1,0 +1,37 @@
+{
+  "technical_pilot": true,
+  "generated_utc": "2026-10-20T15:57:22.915115+00:00",
+  "protocol_sha256": "57518271c0d255fd255fb7f135309fd13203ca510acbae6a81c47cbd3c63c438",
+  "summary_sha256": "db5d8a6d6c668f6b55b203ce7e6c5b011233bc4a5cfc00f25fccf2f7301b8c98",
+  "criterion": "Smallest tested preserved fraction with rank1 >= 0.90 and TAR >= 0.90 at validation FMR <= 0.01, requiring all larger fractions to pass; otherwise not determined. Exploratory DINO baseline.",
+  "findings": [
+    {
+      "branch": "iris_referencia",
+      "orientation": "oclusao_superior",
+      "minimum_tested_preserved_percent": null,
+      "status": "not_determined_baseline_below_criterion",
+      "original_rank1": 0.5,
+      "original_tar": 0.75,
+      "original_test_fmr": 0.5,
+      "test_fmr_above_validation_target": true,
+      "interpretation": "iris crop; model-specific estimate"
+    },
+    {
+      "branch": "iris_referencia",
+      "orientation": "oclusao_inferior",
+      "minimum_tested_preserved_percent": null,
+      "status": "not_determined_baseline_below_criterion",
+      "original_rank1": 0.5,
+      "original_tar": 0.75,
+      "original_test_fmr": 0.5,
+      "test_fmr_above_validation_target": true,
+      "interpretation": "iris crop; model-specific estimate"
+    }
+  ],
+  "limitations": [
+    "Point estimate criterion; not a confidence-bound guarantee",
+    "Validation FMR <=1% does not guarantee test FMR <=1%",
+    "10 percentage point grid; no universal or clinical minimum",
+    "Synthetic loss of annotated pixels does not measure disease extent"
+  ]
+}

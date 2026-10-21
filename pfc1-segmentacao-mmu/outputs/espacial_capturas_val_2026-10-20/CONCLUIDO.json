@@ -1,0 +1,60 @@
+{
+  "status": "spatial_layer2_all_enrollment_completed",
+  "results": [
+    {
+      "rank1": 0.5663900414937759,
+      "tar": 0.33402489626556015,
+      "fnmr": 0.6659751037344399,
+      "far": 0.009904965868023023,
+      "eer_descriptive": 0.2863070539419087,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.5492457672849692,
+      "margin_mean_valid": 0.009164731414414517,
+      "threshold": 0.5744243661562602,
+      "variant": "layer2_spatial_top3"
+    },
+    {
+      "rank1": 0.7800829875518672,
+      "tar": 0.6825726141078838,
+      "fnmr": 0.31742738589211617,
+      "far": 0.009904965868023023,
+      "eer_descriptive": 0.1037344398340249,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.8781986846999801,
+      "margin_mean_valid": 0.058108606262883715,
+      "threshold": 0.8700171153802815,
+      "variant": "fixed_three_way",
+      "normalization": [
+        {
+          "mean": 0.1240406410073161,
+          "std": 0.10133575699108374
+        },
+        {
+          "mean": 0.11512956587331158,
+          "std": 0.07565111886509615
+        },
+        {
+          "mean": 0.5002814347476924,
+          "std": 0.03861320240995379
+        }
+      ]
+    },
+    {
+      "rank1": 0.7800829875518672,
+      "tar": 0.7946058091286307,
+      "fnmr": 0.20539419087136934,
+      "far": 0.009904965868023023,
+      "eer_descriptive": 0.07053941908713693,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.9301313355595282,
+      "margin_mean_valid": 0.055253131978769805,
+      "threshold": 0.9046745789979289,
+      "variant": "fixed_three_way_query_normalized"
+    }
+  ],
+  "test_inference": false,
+  "minimum_area": null
+}

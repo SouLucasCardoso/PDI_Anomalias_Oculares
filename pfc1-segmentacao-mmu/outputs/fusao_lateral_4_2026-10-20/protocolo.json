@@ -1,0 +1,20 @@
+{
+  "registered_utc": "2026-10-21T02:58:49.531019+00:00",
+  "scope": "Explicitly authorized side-informed capture; UBIPr primary and one query; repeated development validation only",
+  "method": "Restrict each component to16 candidate eyes of informed side BEFORE computing component impostor means/stds. Equal component weights, logistic, optional predefined per-query normalization over16 candidates.",
+  "calibration": "Each variant threshold empirical validation FMR<=1%,15 admissible impostor comparisons per query; removed opposite-side eyes NOT counted as rejections",
+  "variants": "One fixed equal-weight fusion and its predefined per-query normalization; no weights or parameter search",
+  "failure_handling": "All482 queries and4 extraction failures retained, require every component valid",
+  "source_sha256": {
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\identidade_automatica_2026-10-20\\scores_baseline.npz": "3bc928fce0e6c8c28a4ca1c7c08451d9f300f9d86aca90bc2ab2a3365dd05f7e",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\encoder_polar_2026-10-20\\scores_melhor.npz": "879522fcdb93d6af62c5442a77f5709fc60aadfb57303ba1d8cf9014d8c92226",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\espacial_polar_val_2026-10-20\\scores_shift0.npz": "e0ebbe59a5cb2c289fb6fd0259f3ee108a82d1543b35c4218ed49df6d67120fa",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\resnet50_sessoes_2026-10-20\\scores_melhor.npz": "df82e998a7dfffd043bc8334adc336908758b6a0e2c72ec583f1c68bfd05ff00"
+  },
+  "script_sha256": "a9337234ceadea9190f01bd7d32eb3449bd16b1e7d1fb4cf37fe542ce8a70142",
+  "dependencies_sha256": {
+    "validar_lateralidade_informada.py": "438c67e9f50e4a0bbcaf666e0ffaff59119f1b183b61442e698ede274bfb1247",
+    "normalizar_consulta.py": "8e105dbdb11ba547420fdb171403bc4cebb07fd9358a1e59c22e37b0f0a8e3a6",
+    "validar_metrica_intra_classe.py": "711209909da5c594846ac28b6e59e2829e670a3966244cd8c920309864cdf441"
+  }
+}

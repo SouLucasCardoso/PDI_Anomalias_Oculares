@@ -1,0 +1,121 @@
+{
+  "registered_utc": "2026-10-20T16:01:32.602308+00:00",
+  "purpose": "CPU compatibility and validation-only pilot, not final recognition estimates",
+  "config": {
+    "cuda": false,
+    "polar_height": 64,
+    "polar_width": 512,
+    "recog_filter_size": "17",
+    "recog_num_filters": "5",
+    "recog_max_shift": 16,
+    "recog_bsif_dir": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\modelos\\cvrl_hdbif\\filters_pt\\finetuned_bsif_eyetracker_data/",
+    "threshold_frac_avg_bits": 0,
+    "score_norm": false,
+    "mask_model_path": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\modelos\\cvrl_hdbif\\models\\nestedsharedatrousresunet-006-0.028214-maskIoU-0.938446.pth",
+    "circle_model_path": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\modelos\\cvrl_hdbif\\models\\resnet18-027-0.008222-maskIoU-0.967159.pth"
+  },
+  "sources": {
+    "revision": "4a535e4a9a0728e4428c25f743f6d59098ae397f",
+    "files": [
+      {
+        "path": "cfg.yaml",
+        "url": "https://raw.githubusercontent.com/CVRL/OpenSourceIrisRecognition/4a535e4a9a0728e4428c25f743f6d59098ae397f/methods/HDBIF/Python/cfg.yaml",
+        "sha256": "bf5d96d4f16af29c829cc0dd0d887332e4f3d7bbcbe826e4fb7a8d29bcfcadf6"
+      },
+      {
+        "path": "data/readme.txt",
+        "url": "https://raw.githubusercontent.com/CVRL/OpenSourceIrisRecognition/4a535e4a9a0728e4428c25f743f6d59098ae397f/methods/HDBIF/Python/data/readme.txt",
+        "sha256": "e53550cfaab6f9ca836646a42a9ce1ef0bccf8bfc9b86c7859890e8be142f786"
+      },
+      {
+        "path": "dataProcessed/readme.txt",
+        "url": "https://raw.githubusercontent.com/CVRL/OpenSourceIrisRecognition/4a535e4a9a0728e4428c25f743f6d59098ae397f/methods/HDBIF/Python/dataProcessed/readme.txt",
+        "sha256": "85273190132652dfed7b6b44a8811727fdad3de8cb06f698132ef1d1550e2069"
+      },
+      {
+        "path": "filters_pt/readme.txt",
+        "url": "https://raw.githubusercontent.com/CVRL/OpenSourceIrisRecognition/4a535e4a9a0728e4428c25f743f6d59098ae397f/methods/HDBIF/Python/filters_pt/readme.txt",
+        "sha256": "1aa4e1f575b3c2b1b976982d56a41542d78344d2e114974d4ac2ed939021d0ab"
+      },
+      {
+        "path": "hdbif.py",
+        "url": "https://raw.githubusercontent.com/CVRL/OpenSourceIrisRecognition/4a535e4a9a0728e4428c25f743f6d59098ae397f/methods/HDBIF/Python/hdbif.py",
+        "sha256": "0620a8a72cfc7cf0ba5dd5a7d3bef7e7b0d8d268c220c6af9cfa686ca1b7e086"
+      },
+      {
+        "path": "macos_environment.yml",
+        "url": "https://raw.githubusercontent.com/CVRL/OpenSourceIrisRecognition/4a535e4a9a0728e4428c25f743f6d59098ae397f/methods/HDBIF/Python/macos_environment.yml",
+        "sha256": "08e80e744857b1e565749b943250c0d3a56a5e3102a2fc2b0380c9493bd9d95d"
+      },
+      {
+        "path": "minimal_environment.yml",
+        "url": "https://raw.githubusercontent.com/CVRL/OpenSourceIrisRecognition/4a535e4a9a0728e4428c25f743f6d59098ae397f/methods/HDBIF/Python/minimal_environment.yml",
+        "sha256": "508940fd48fbb658165444aa6c37d6d6017cf5517e87fed7559e0a458903e2f5"
+      },
+      {
+        "path": "models/readme.txt",
+        "url": "https://raw.githubusercontent.com/CVRL/OpenSourceIrisRecognition/4a535e4a9a0728e4428c25f743f6d59098ae397f/methods/HDBIF/Python/models/readme.txt",
+        "sha256": "9ee715e67b5be389162d02fb6818511821f4dbf67265a6035f77e271b20a27c9"
+      },
+      {
+        "path": "modules/irisRecognition.py",
+        "url": "https://raw.githubusercontent.com/CVRL/OpenSourceIrisRecognition/4a535e4a9a0728e4428c25f743f6d59098ae397f/methods/HDBIF/Python/modules/irisRecognition.py",
+        "sha256": "15f2165dbf5771d59db506a5c4fceea00bfa1cd6dc29bf6dcb51101de6d6e72b"
+      },
+      {
+        "path": "modules/network.py",
+        "url": "https://raw.githubusercontent.com/CVRL/OpenSourceIrisRecognition/4a535e4a9a0728e4428c25f743f6d59098ae397f/methods/HDBIF/Python/modules/network.py",
+        "sha256": "a33214692785253db31be1aa9b4963715a1069532f2c3df08b89f3c3d58a2293"
+      },
+      {
+        "path": "modules/transform.py",
+        "url": "https://raw.githubusercontent.com/CVRL/OpenSourceIrisRecognition/4a535e4a9a0728e4428c25f743f6d59098ae397f/methods/HDBIF/Python/modules/transform.py",
+        "sha256": "3cedb1d5f62f9f918f97c4ef4ec6f048865bc92040067050e5ffa9cc100417a7"
+      },
+      {
+        "path": "modules/utils.py",
+        "url": "https://raw.githubusercontent.com/CVRL/OpenSourceIrisRecognition/4a535e4a9a0728e4428c25f743f6d59098ae397f/methods/HDBIF/Python/modules/utils.py",
+        "sha256": "e04bb28e3f657131b7e25804438587785cda086a71533e9fa738bb1a387a84e4"
+      },
+      {
+        "path": "readme.md",
+        "url": "https://raw.githubusercontent.com/CVRL/OpenSourceIrisRecognition/4a535e4a9a0728e4428c25f743f6d59098ae397f/methods/HDBIF/Python/readme.md",
+        "sha256": "3d0763c62b1e60c80115333bd0cf0a84729fa496ce3ecf6d6948ce170c6f5247"
+      },
+      {
+        "path": "templates/readme.txt",
+        "url": "https://raw.githubusercontent.com/CVRL/OpenSourceIrisRecognition/4a535e4a9a0728e4428c25f743f6d59098ae397f/methods/HDBIF/Python/templates/readme.txt",
+        "sha256": "9c01f8df416edabf96683549105737836b0550dc1ea4cd6bd3c48c7d953ef605"
+      }
+    ]
+  },
+  "weights": {
+    "files": [
+      {
+        "path": "filters_pt/finetuned_bsif_eyetracker_data/ICAtextureFilters_17x17_5bit.pt",
+        "drive_id": "1oqajM9kc_jUril2Y4OCuIB1xook-QAeM",
+        "bytes": 13380,
+        "sha256": "1d61b594905e38bacb6d2a1a104d256e2ac4222144bea022d470ee3574ea2a80"
+      },
+      {
+        "path": "models/nestedsharedatrousresunet-006-0.028214-maskIoU-0.938446.pth",
+        "drive_id": "1InBg6kI2VF8tljg6k4of0sF1_uBnuOXN",
+        "bytes": 20693985,
+        "sha256": "76b0fb5f70390c70b72d30e90ecf5711f2d6624db4e885d15b142cdf98470965"
+      },
+      {
+        "path": "models/resnet18-027-0.008222-maskIoU-0.967159.pth",
+        "drive_id": "19ZI9QehiGsEjLabN7KTe2WQmf6qFI6hO",
+        "bytes": 44818646,
+        "sha256": "89fcd3879d78b44e3a6bb3baec40bf7ec902b249e6b794a88e3af8aa229e2815"
+      }
+    ],
+    "note": "Circle checkpoint 027 is supplied in author Drive; source cfg names 1543, which was absent. Explicit override required; not an exact reproduction of cfg."
+  },
+  "script_sha256": "23d563ab42b8467aee19633da277aacec37b6de3b64a33204f30bf632713f930",
+  "selection": "First four eligible validation eye IDs, first sample per session; test untouched",
+  "mask": "UBIPr reference iris; CVRL pretrained circle regressor; grayscale ISO640x480",
+  "matcher": "Official exhaustive matchCodes, +/-16 polar columns, no score normalization",
+  "training_overlap": "Public pretrained sources may overlap populations; independence not established",
+  "checkpoint_difference": "Drive circle027 overrides absent source cfg circle1543"
+}

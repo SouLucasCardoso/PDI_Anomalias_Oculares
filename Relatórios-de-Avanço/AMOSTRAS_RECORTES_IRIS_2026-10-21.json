@@ -1,0 +1,151 @@
+{
+  "selection": "First valid session2 image of first4 distinct subjects in validation manifest; no recognition scores used",
+  "segmentation_checkpoint_sha256": "2bcfc269ffc9562ca8cf0956998faf1e22641587cd60f7059b3cec3dd0f4093d",
+  "samples": [
+    {
+      "manifest_index": 30,
+      "image": "C149_S2_I10_L.jpg",
+      "subject": 149,
+      "session": 2,
+      "source_sha256": "6ae3fa71b933fa64cfe50b7f00417628592e3745c23a188189dedee19a32ec02",
+      "geometry": {
+        "iris_ellipse": [
+          [
+            88.34799194335938,
+            73.0711441040039
+          ],
+          [
+            69.35301971435547,
+            91.30154418945312
+          ],
+          69.72871398925781
+        ],
+        "pupil_ellipse": [
+          [
+            85.5,
+            71.0
+          ],
+          [
+            17.75,
+            17.75
+          ],
+          0.0
+        ],
+        "pupil_source": "circle_regressor_fallback",
+        "polar_mask_fraction": 0.967010498046875,
+        "native_iris_width": 86,
+        "native_iris_height": 71,
+        "fallback_definition": "concentric mask-bbox center, radius min(mask width,height)/8; not anatomical reference"
+      }
+    },
+    {
+      "manifest_index": 92,
+      "image": "C151_S2_I10_L.jpg",
+      "subject": 151,
+      "session": 2,
+      "source_sha256": "7cbb6939f83e48aa3bd117ed5d7f95b2a337755d20b908c2278c4e47900c2e80",
+      "geometry": {
+        "iris_ellipse": [
+          [
+            168.06448364257812,
+            79.02710723876953
+          ],
+          [
+            82.36165618896484,
+            180.4324188232422
+          ],
+          88.43042755126953
+        ],
+        "pupil_ellipse": [
+          [
+            169.89735412597656,
+            70.8713150024414
+          ],
+          [
+            24.60007667541504,
+            40.35017013549805
+          ],
+          83.22923278808594
+        ],
+        "pupil_source": "largest_enclosed_mask_hole",
+        "polar_mask_fraction": 0.954345703125,
+        "native_iris_width": 169,
+        "native_iris_height": 80,
+        "fallback_definition": "concentric mask-bbox center, radius min(mask width,height)/8; not anatomical reference"
+      }
+    },
+    {
+      "manifest_index": 152,
+      "image": "C173_S2_I10_L.jpg",
+      "subject": 173,
+      "session": 2,
+      "source_sha256": "cabbf34b6bb9069fc558b45749d881cf0c5982b6239de6d16af5c77a63f80476",
+      "geometry": {
+        "iris_ellipse": [
+          [
+            159.57366943359375,
+            99.04106140136719
+          ],
+          [
+            105.47748565673828,
+            167.68675231933594
+          ],
+          90.49291229248047
+        ],
+        "pupil_ellipse": [
+          [
+            162.91371154785156,
+            91.38900756835938
+          ],
+          [
+            29.002607345581055,
+            30.93724250793457
+          ],
+          83.06019592285156
+        ],
+        "pupil_source": "largest_enclosed_mask_hole",
+        "polar_mask_fraction": 0.96051025390625,
+        "native_iris_width": 161,
+        "native_iris_height": 102,
+        "fallback_definition": "concentric mask-bbox center, radius min(mask width,height)/8; not anatomical reference"
+      }
+    },
+    {
+      "manifest_index": 212,
+      "image": "C177_S2_I10_L.jpg",
+      "subject": 177,
+      "session": 2,
+      "source_sha256": "2a86f961e7aaf26aa969ae71e7aeeffcdb96f02b89c78f3e898051e4622d851c",
+      "geometry": {
+        "iris_ellipse": [
+          [
+            139.62582397460938,
+            93.10993957519531
+          ],
+          [
+            99.37254333496094,
+            145.4683074951172
+          ],
+          86.71638488769531
+        ],
+        "pupil_ellipse": [
+          [
+            142.57518005371094,
+            83.97740936279297
+          ],
+          [
+            26.089109420776367,
+            30.19977378845215
+          ],
+          43.82691955566406
+        ],
+        "pupil_source": "largest_enclosed_mask_hole",
+        "polar_mask_fraction": 0.96063232421875,
+        "native_iris_width": 141,
+        "native_iris_height": 96,
+        "fallback_definition": "concentric mask-bbox center, radius min(mask width,height)/8; not anatomical reference"
+      }
+    }
+  ],
+  "display": "RGB inputs128 and224 displayed at same panel size, polar resized only for layout; no synthetic texture, no reference masks"
+}

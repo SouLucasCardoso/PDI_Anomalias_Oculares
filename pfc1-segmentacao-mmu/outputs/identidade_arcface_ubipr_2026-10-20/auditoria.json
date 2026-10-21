@@ -1,0 +1,4 @@
+{
+  "train_empty_masks_excluded": 114,
+  "validation_empty_masks_retained": 18
+}

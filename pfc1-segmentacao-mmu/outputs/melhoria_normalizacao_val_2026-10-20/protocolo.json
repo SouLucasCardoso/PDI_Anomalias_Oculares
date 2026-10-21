@@ -1,0 +1,34 @@
+{
+  "registered_utc": "2026-10-20T21:43:27.256063+00:00",
+  "purpose": "Development validation only; no test scores or minimum-area claim",
+  "variants": [
+    "full_reference",
+    "roi_reference"
+  ],
+  "crop": "Reference bbox with 50% margin per axis, grayscale, aspect preserving ISO640x480; reference mask geometry identical with zero padding",
+  "gallery": "One first lexicographic session1 image per eye; all eligible session2 queries; no score selection",
+  "matcher": "HDBIF 17x17 five filters, +/-16 columns, raw masked Hamming; no score normalization",
+  "calibration": "Each variant validation FMR<=1%; development estimates, not independent evaluation",
+  "failures": "Keep every eye and query; invalid templates/pairs reject; no post-score exclusions",
+  "limitations": "Reference mask assisted ROI, pretrained circle027 differs source config; training population independence unknown; gallery differs neural centroid protocol",
+  "config": {
+    "cuda": false,
+    "polar_height": 64,
+    "polar_width": 512,
+    "recog_filter_size": "17",
+    "recog_num_filters": "5",
+    "recog_max_shift": 16,
+    "recog_bsif_dir": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\modelos\\cvrl_hdbif\\filters_pt\\finetuned_bsif_eyetracker_data/",
+    "threshold_frac_avg_bits": 0,
+    "score_norm": false,
+    "mask_model_path": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\modelos\\cvrl_hdbif\\models\\nestedsharedatrousresunet-006-0.028214-maskIoU-0.938446.pth",
+    "circle_model_path": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\modelos\\cvrl_hdbif\\models\\resnet18-027-0.008222-maskIoU-0.967159.pth"
+  },
+  "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+  "script_sha256": "8439792cd5f184ed12e470685c8922abeb59c820830b03e43fbc20ec57531859",
+  "people": 16,
+  "eyes": 32,
+  "queries": 482,
+  "images": 514,
+  "signature": "15f5525444c7f6cffe3d6c4172f04cb21f8ec52faa9162f6ee9bc8ab730bb0f0"
+}

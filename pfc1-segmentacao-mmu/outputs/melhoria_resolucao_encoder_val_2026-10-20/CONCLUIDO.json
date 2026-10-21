@@ -1,0 +1,36 @@
+{
+  "status": "development_validation_completed",
+  "scientific_final_result": false,
+  "results": [
+    {
+      "input_size": 128,
+      "threshold": 0.3451353013515473,
+      "rank1": 0.487551867219917,
+      "tar": 0.38381742738589214,
+      "fnmr": 0.6161825726141079,
+      "far": 0.009436487752643555,
+      "eer_descriptive": 0.19682773390443048,
+      "extraction_failures": 10,
+      "queries": 482,
+      "genuine_mean_valid": 0.2295147587655712,
+      "margin_mean_valid": -0.06362662647487753,
+      "joint_success": 0.34232365145228216,
+      "failed_gallery": 1
+    },
+    {
+      "input_size": 256,
+      "threshold": 0.7321959733963014,
+      "rank1": 0.2966804979253112,
+      "tar": 0.15145228215767634,
+      "fnmr": 0.8485477178423236,
+      "far": 0.009436487752643555,
+      "eer_descriptive": 0.2843327533128095,
+      "extraction_failures": 10,
+      "queries": 482,
+      "genuine_mean_valid": 0.5278552387036004,
+      "margin_mean_valid": -0.1438479671349465,
+      "joint_success": 0.13070539419087138,
+      "failed_gallery": 1
+    }
+  ]
+}

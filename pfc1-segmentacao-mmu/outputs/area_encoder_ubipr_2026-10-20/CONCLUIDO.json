@@ -1,0 +1,20 @@
+{
+  "status": "exploratory_follow_up_completed",
+  "conditions": 19,
+  "baseline": {
+    "rank1": 0.6790123456790124,
+    "tar": 0.551440329218107,
+    "fnmr": 0.44855967078189296,
+    "far": 0.009557945041816009,
+    "eer_descriptive": 0.10470596044072747,
+    "extraction_failures": 6,
+    "queries": 486,
+    "genuine_mean_valid": 0.4111911692462551,
+    "margin_mean_valid": 0.08563351900860046
+  },
+  "minimum_reference_area_percent": {
+    "oclusao_superior": null,
+    "oclusao_inferior": null
+  },
+  "note": "Same operational criterion; tests previously examined under DINO, no fresh clinical or disease-causality claim"
+}

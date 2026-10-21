@@ -1,0 +1,39 @@
+{
+  "registered_utc": "2026-10-20T23:02:25.910570+00:00",
+  "technical_smoke": false,
+  "scope": "New polar-domain identity training; train people only, repeated development validation; no test or occlusion inference",
+  "model": "ImageNet ResNet18 + Linear512to256 + BatchNorm + L2, angular classification head; input3x64x512",
+  "preprocessing": "Frozen U-Net320x240 FP32, iris class1 nearest to original; bbox50% ROI native resolution; grayscale CLAHEclip2 grid8x8; ellipse approximation of predicted mask, largest enclosed pupil hole or concentric fallback; polar64x512; invalid pixels127; grayscale repeated3 channels; ImageNet normalization",
+  "fallback": "When no pupil hole: mask-bbox center and radius min(mask-bbox width,height)/8, geometric approximation only; no reference-mask correction",
+  "augmentation": "Train only cyclic horizontal roll +/-32 columns, brightness/contrast +/-15%; no synthetic occlusion or arbitrary spatial rotation",
+  "optimizer": "AdamW lr3e-4 wd1e-4, cosine30epochs, clip5, BF16 encoder/FP32 angular head",
+  "margin": 0.3,
+  "scale": 30,
+  "seed": 45,
+  "max_epochs": 30,
+  "patience": 8,
+  "batch_size": 64,
+  "selection": "Maximum validation TAR at separately calibrated empirical FMR<=1%, tie Rank1; all session1 enrollment, top3 similarities per eye, session2 queries; no automatic replacement of existing model",
+  "failures": "Empty predicted masks or unusable geometry excluded only in training; all validation eyes/queries retained as failures",
+  "counts": {
+    "train_images": 7716,
+    "train_people": 183,
+    "classes": 366,
+    "val_images": 962,
+    "val_queries": 482,
+    "val_people": 16
+  },
+  "inputs_sha256": {
+    "data\\modelos\\torch\\hub\\checkpoints\\resnet18-f37072fd.pth": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+    "outputs\\cnn\\ubipr_retreino_2026-10-20\\melhor_modelo.pt": "2bcfc269ffc9562ca8cf0956998faf1e22641587cd60f7059b3cec3dd0f4093d",
+    "outputs\\cnn\\ubipr_retreino_2026-10-20\\manifesto.json": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de"
+  },
+  "script_sha256": "b120f792fe58a000747142acbcae7fad6be165d5a5991b8d959c3ddb4e5069a7",
+  "dependencies_sha256": {
+    "textura_polar.py": "f977efb2101f2b23338041513908d4deb6eea51a2a730c8f71f0d20c19bcdadc",
+    "normalizacao_eliptica.py": "370f61686ce7209b3e705b1dc9b2ffa55bb0eac0cf54911f1edc3d92d7aca72a",
+    "treinar_identidade_iris.py": "a8f6dc53ace011c968774f9f3f494a085f0c14af2a9ab04853952553c580b0a5",
+    "treinar_identidade_automatica.py": "53657d5ea79cf63e0c992c4b230bddeb840dafed3b102bcb36f9a08f409902cf",
+    "comparador_hdbif_lote.py": "0c6c086a348a17d900e17b4031dc0a2f06ab3721f9f7a53df26c382585882464"
+  }
+}

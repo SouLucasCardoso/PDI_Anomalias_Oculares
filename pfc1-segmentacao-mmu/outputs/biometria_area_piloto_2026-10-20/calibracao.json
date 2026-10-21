@@ -1,0 +1,17 @@
+{
+  "iris_referencia": {
+    "threshold": 0.8883154392242433,
+    "validation": {
+      "rank1": 0.5,
+      "tar": 0.25,
+      "fnmr": 0.75,
+      "far": 0.0,
+      "eer_descriptive": 0.45833333333333337,
+      "extraction_failures": 0,
+      "queries": 4,
+      "genuine_mean_valid": 0.7558495476841927,
+      "margin_mean_valid": -0.017385490238666534
+    },
+    "failed_enrollments": []
+  }
+}

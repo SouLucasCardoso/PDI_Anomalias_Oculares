@@ -1,0 +1,10 @@
+{
+  "registered_utc": "2026-10-20T19:53:23.013982+00:00",
+  "status": "Exploratory secondary analysis after initial primary results; not a fresh preregistered confirmatory test",
+  "eligibility": "Query correctly identified Rank1 AND genuine above frozen validation threshold in original image",
+  "quantity": "Per-query smallest tested preserved reference fraction with success at all larger fractions; original failures undefined",
+  "retention": "Fraction of eligible original successes still identified; denominator reported separately from all queries",
+  "scope": "Iris-input branches only; exclude whole-image context from iris-area inference",
+  "primary_criterion": "Unchanged global Rank1/TAR>=90%; this analysis cannot replace it or establish a population minimum",
+  "script_sha256": "26a7dac8fe091f624b9165f2a55e4a2fdd25c4c0a0228113df4eec23ad8b5508"
+}

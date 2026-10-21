@@ -1,0 +1,23 @@
+{
+  "registered_utc": "2026-10-21T04:09:07.759268+00:00",
+  "scope": "Authorized side-informed UBIPr, one original query photo, exploratory validation only",
+  "method": "Freeze four RGB encoders. Original gallery preprocessing, no gallery gamma augmentation. Each individual query receives fixed gamma0.75,1,1.33 AFTER its fixed base preprocessing, BEFORE ImageNet normalization. Per candidate eye: top3 gallery similarity per gamma, then max across3query views, no query label used to select view.",
+  "variants": "Own-extraction gamma1 control versus gamma-max, each fused with unchanged polar/spatial/Transformer, equal1/7, with/without predefined query normalization. No gamma/weight search.",
+  "calibration": "All15same-side impostors receive same gamma maximization; threshold recalibrated empirical validation FMR<=1%; all482 queries and failures retained",
+  "limitations": "Computational photometric alignment, not multiple query photos or generative restoration; repeated validation not independent confirmation",
+  "checkpoint_sha256": {
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\identidade_automatica_2026-10-20\\melhor_modelo.pt": "7c03b4c7ef4c54e5f86e58eb550ffc124fa11384fe5c3f5b947d1041178e706d",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\resnet50_sessoes_2026-10-20\\melhor_modelo.pt": "699b8236211da2fd43b104f157b6cc3835bd5d89a01a74a5b75ce4261bf35e24",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\convnext_contraste_2026-10-20\\melhor_modelo.pt": "a03400e62df6282e4532dce75fabd6e12d06678a8de7dc3e55a2a274c60f1529",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\resnet50_nativo224_2026-10-21\\melhor_modelo.pt": "6530b1227f271789ca7ad8a7d9011d2a9e9ee6fe71a7ce4079d2ed8a75b3388f"
+  },
+  "transformer_scores_sha256": "e3ed8686a0f4eb3f786f958d9d617fc1b9079b3cb96bbe42c344a76519936476",
+  "script_sha256": "ccabb18a99b3f69ce623deff2dbdefd4fba8367676c7505b8a28c720566632ce",
+  "dependencies_sha256": {
+    "reconhecedor_resnet50.py": "2416940a33a01b0d745a9bb6609f7f2e5ebbb16a77dfaab6635abab3eefe6b2f",
+    "reconhecedor_convnext.py": "7e121f99323b2c4c9d988621969fc4cd37d207a796a43994a949f95841554230",
+    "comparador_hdbif_lote.py": "0c6c086a348a17d900e17b4031dc0a2f06ab3721f9f7a53df26c382585882464",
+    "normalizar_consulta.py": "8e105dbdb11ba547420fdb171403bc4cebb07fd9358a1e59c22e37b0f0a8e3a6",
+    "validar_lateralidade_informada.py": "438c67e9f50e4a0bbcaf666e0ffaff59119f1b183b61442e698ede274bfb1247"
+  }
+}

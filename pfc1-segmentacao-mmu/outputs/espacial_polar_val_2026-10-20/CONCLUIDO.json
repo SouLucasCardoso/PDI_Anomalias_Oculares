@@ -1,0 +1,34 @@
+{
+  "status": "spatial_development_validation_completed",
+  "results": [
+    {
+      "rank1": 0.6991701244813278,
+      "tar": 0.4024896265560166,
+      "fnmr": 0.5975103734439834,
+      "far": 0.009904965868023023,
+      "eer_descriptive": 0.20937625485209477,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.6980432261358245,
+      "margin_mean_valid": 0.01588226505652631,
+      "angular_shift": 0,
+      "threshold": 0.7130020856857301,
+      "joint_success": 0.3879668049792531
+    },
+    {
+      "rank1": 0.6991701244813278,
+      "tar": 0.4024896265560166,
+      "fnmr": 0.5975103734439834,
+      "far": 0.009904965868023023,
+      "eer_descriptive": 0.20937625485209477,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.6980432261358245,
+      "margin_mean_valid": 0.01588226505652631,
+      "angular_shift": 2,
+      "threshold": 0.7130020856857301,
+      "joint_success": 0.3879668049792531
+    }
+  ],
+  "test_inference": false
+}

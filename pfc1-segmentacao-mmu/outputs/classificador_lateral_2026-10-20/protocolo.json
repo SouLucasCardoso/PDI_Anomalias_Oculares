@@ -1,0 +1,16 @@
+{
+  "registered_utc": "2026-10-21T03:01:13.387758+00:00",
+  "scope": "Authorized side-informed single query, UBIPr development validation only",
+  "features": "Previous frozen RGB256/polar256/ResNet50RGB256 concatenation, same as previous enrollment classifier",
+  "fitting": "Separate L/R enrollment-only classifiers, same16 subject candidates per query; query images/labels excluded from fitting",
+  "variants": "Linear ridge alpha1 fixed; RBF kernel ridge alpha0.01 fixed, gamma reciprocal median admissible enrollment different-eye squared distance; both with/without predefined query normalization",
+  "calibration": "Threshold validation empirical FMR<=1% using15 same-side impostors per query; no hyperparameter search or query filtering",
+  "limitations": "Repeated development; side supplied correctly; enrollment-trained classifier, not an independently frozen metric",
+  "source_sha256": "7f8875a06e5af2280ace46a15f6fa6d316bd35f8763a0c538a9173f6f3fb05b2",
+  "script_sha256": "c419c772af2f43b7f0d9e1264833b5fe7b3e34e6e9050f8cd7cdb9a90c1f280e",
+  "dependencies_sha256": {
+    "classificador_cadastro.py": "ffb7d4ba517a5fbd522fbe601d32c8bcd3adfb289f380e98f646121036c77c48",
+    "normalizar_consulta.py": "8e105dbdb11ba547420fdb171403bc4cebb07fd9358a1e59c22e37b0f0a8e3a6",
+    "validar_metrica_intra_classe.py": "711209909da5c594846ac28b6e59e2829e670a3966244cd8c920309864cdf441"
+  }
+}

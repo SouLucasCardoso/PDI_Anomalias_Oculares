@@ -1,0 +1,7 @@
+{
+  "status": "technical_interruption_before_first_optimizer_step",
+  "reason": "Windows numpy int32 labels passed to torch cross_entropy; explicit torch.long cast fixed in v2",
+  "completed_optimizer_steps": 0,
+  "query_inference": false,
+  "scientific_negative_result": false
+}

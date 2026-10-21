@@ -1,0 +1,39 @@
+{
+  "registered_utc": "2026-10-21T02:54:30.069362+00:00",
+  "scope": "UBIPr primary; one query photo; development validation only, no test or occlusion inference",
+  "architecture": "convnext_tiny_contrast_256",
+  "initialization": "Official torchvision ImageNet backbone, fresh projection and training head; no UBIRIS weights",
+  "preprocessing": "Frozen automatic U-Net crops from previous audited cache;128x128, ImageNet normalization; train-only rotation10 degrees brightness/contrast15%; LAB-L CLAHE clip2 grid8x8; exact-black outside original crop restored, no generated pixels",
+  "sampling": "16 eyes x4 captures, 4 shuffled rounds per epoch;2session1+2session2 if both present, otherwise4same-eye captures; replacement only if needed",
+  "loss": "Angular CE +0.2 supervised contrastive temperature0.1; margin warmup0 epochs1-2,0.1 epochs3-4,0.2 epochs5-6,0.3 thereafter; scale30",
+  "optimizer": "AdamW backbone1e-4, projection/head5e-4, wd1e-4, cosine40epochs, clip5; BF16 encoder FP32 losses",
+  "seed": 47,
+  "max_epochs": 40,
+  "patience": 10,
+  "batch_size": 64,
+  "selection": "Max validation TAR at empirical FMR<=1%, tie Rank1; all session1 enrollment top3, every session2 query retained; stop patience only after epoch10",
+  "counts": {
+    "train_images": 7716,
+    "valid_train_images": 7645,
+    "train_people": 183,
+    "train_eye_classes": 366,
+    "val_queries": 482
+  },
+  "caveat": "Repeated development validation; cannot certify target90 or minimum area without independent confirmation",
+  "weights_sha256": "983f1562536e84ff750a1576fb08e54de751dbf2e17c0d8a4a13704341fdcd3d",
+  "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+  "cache_sha256": {
+    "train_crops.npy": "8142231fcda1d4ea4a5b327422322f0eff19567113b85dce72cd5222f2b7308f",
+    "train_valid.npy": "1e0b1e4a32cacc8d5b391165da8e75152d96a7cbeef23158e181c67a7d7781b1",
+    "val_crops.npy": "029689dcd50077ee7dbc02d5f92f67cdddeda1ec3b7541f831fbd5cc5cf56792",
+    "val_valid.npy": "abc8f69c227b1095a3fe34fa2be0d9fc4750fdf58fc135562a008a74a1ff70f5"
+  },
+  "script_sha256": "80ea492ec78734f0c02c3b6e2c336f7c65a676baa24dbd64742360d66093cfba",
+  "dependencies_sha256": {
+    "reconhecedor_resnet50.py": "2416940a33a01b0d745a9bb6609f7f2e5ebbb16a77dfaab6635abab3eefe6b2f",
+    "reconhecedor_convnext.py": "7e121f99323b2c4c9d988621969fc4cd37d207a796a43994a949f95841554230",
+    "treinar_identidade_automatica.py": "53657d5ea79cf63e0c992c4b230bddeb840dafed3b102bcb36f9a08f409902cf",
+    "treinar_identidade_iris.py": "a8f6dc53ace011c968774f9f3f494a085f0c14af2a9ab04853952553c580b0a5",
+    "comparador_hdbif_lote.py": "0c6c086a348a17d900e17b4031dc0a2f06ab3721f9f7a53df26c382585882464"
+  }
+}

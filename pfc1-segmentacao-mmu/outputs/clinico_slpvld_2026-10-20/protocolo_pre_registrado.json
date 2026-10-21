@@ -1,0 +1,95 @@
+{
+  "registered_utc": "2026-10-20T15:33:12.485749+00:00",
+  "status": "prepared_not_executed",
+  "dataset": "SLP-VLD public v3",
+  "source": "https://doi.org/10.6084/m9.figshare.32576697.v3",
+  "license": "CC BY 4.0",
+  "manifest_sha256": "ed5a2a9c16b963fc79fb240419dd992f754129ba8bb161b3294e38a2bd54d2e2",
+  "task": "Exact source label Normal eye vs other annotated ocular conditions; not autonomous clinical diagnosis",
+  "label_source": "Diagnosis column in released XLSX, not VLM assistant responses",
+  "grouping": "Connected components of P#### filename prefixes sharing any metadata ID; all eyes/dates stay together",
+  "original_prefixes": 916,
+  "conservative_development_groups": 911,
+  "grouping_limitation": "Original patient mapping excluded from release; independence beyond released identifiers not established",
+  "exact_duplicate_rows_removed": 1,
+  "conflicting_duplicate_rows_excluded": 0,
+  "split_rule": "StratifiedGroupKFold(7, shuffle=True, random_state=42): fold0 test, fold1 validation, folds2-6 train; Bijie untouched external",
+  "counts": {
+    "train": {
+      "images": 1520,
+      "groups": 651,
+      "classes": {
+        "1": 1384,
+        "0": 136
+      }
+    },
+    "val": {
+      "images": 304,
+      "groups": 131,
+      "classes": {
+        "1": 277,
+        "0": 27
+      }
+    },
+    "test": {
+      "images": 304,
+      "groups": 129,
+      "classes": {
+        "1": 277,
+        "0": 27
+      }
+    },
+    "external_bijie": {
+      "images": 99,
+      "groups": 68,
+      "classes": {
+        "1": 92,
+        "0": 7
+      }
+    }
+  },
+  "segmentation": "Frozen UBIPr U-Net selected only on UBIPr validation; record final checkpoint SHA before clinical extraction",
+  "classifier": "ResNet18 ImageNet IMAGENET1K_V1 frozen eval CNN and trained Linear(512,1) head",
+  "branches": [
+    "original",
+    "unet_iris_bbox_context",
+    "unet_iris_masked_same_bbox"
+  ],
+  "preprocessing": "bbox margin 25% of bbox width/height; masked and context branches share bbox; resize224 bilinear; ImageNet normalization",
+  "empty_masks": "Full-frame context bbox; masked image all black; count failure and retain sample",
+  "head_training": {
+    "seeds": [
+      42,
+      123,
+      2026
+    ],
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "max_epochs": 100,
+    "patience": 15,
+    "batch": "full training feature matrix",
+    "loss": "BCEWithLogitsLoss(pos_weight=n_normal_train/n_altered_train)",
+    "selection": "highest validation AUROC; ties keep earliest epoch",
+    "feature_standardization": "no fitted standardization; frozen CNN ImageNet features"
+  },
+  "primary_prediction": "Mean probability of the three seed heads, per branch; also report each seed",
+  "primary_metric": "Paired internal-test AUROC difference, masked minus original",
+  "secondary_metrics": [
+    "balanced_accuracy",
+    "sensitivity",
+    "specificity",
+    "macro_f1",
+    "confusion_matrix",
+    "mask_failure_rate"
+  ],
+  "threshold": 0.5,
+  "uncertainty": "5000 paired bootstrap replicates of conservative subject groups, fixed predictions; report discarded single-class replicates",
+  "external": "Bijie99 plus CatScreen Clean as separately labeled secondary domain; no fitting thresholds or preprocessing on external scores",
+  "excluded_from_primary": [
+    "SLID due to absent patient linkage and separate data-license uncertainty",
+    "Nuclear Cataract severity-only selected subset",
+    "SLP VLM reports as predictive input"
+  ],
+  "replacement_rationale": "Larger public labeled cohort with normal controls and grouping, selected before any clinical test scores. Earlier CatScreen protocol not executed."
+}

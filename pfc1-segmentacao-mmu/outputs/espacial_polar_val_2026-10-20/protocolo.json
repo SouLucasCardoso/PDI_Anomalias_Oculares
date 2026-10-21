@@ -1,0 +1,10 @@
+{
+  "registered_utc": "2026-10-20T23:12:28.580992+00:00",
+  "scope": "Exploratory validation only after polar training; no test/occlusion inference",
+  "representation": "Frozen trained polar ResNet18 through layer3; subtract response to constant127 canvas; L2-normalize channels per spatial location",
+  "gallery": "Mean local descriptors per eye across all valid session1 captures, renormalized per location; all session2 queries retained",
+  "matching": "Mean spatial cosine, best angular shift0 or +/-2 feature columns; no radial shift",
+  "calibration": "Separate validation empirical FMR<=1%; repeated development data, not independent confirmation",
+  "checkpoint_sha256": "db93dfcca33b8a77cd3bfbaa66f07d1efae2e976414d67748ccf5eff4a5ebe5c",
+  "script_sha256": "4b15e6e6a2fb67b6b7116314d6ab6bbc5827f711e3ddfc9ce1bbabb30ef6ad49"
+}

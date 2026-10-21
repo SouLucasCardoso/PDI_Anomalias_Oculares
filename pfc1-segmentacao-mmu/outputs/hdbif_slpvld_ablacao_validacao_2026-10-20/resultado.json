@@ -1,0 +1,77 @@
+{
+  "status": "validation_ablation_completed_test_untouched",
+  "scientific_final_result": false,
+  "official_fft_equivalence_checked_all_pairs": true,
+  "selected_on_validation": "default_raw",
+  "variants": [
+    {
+      "variant": "default_raw",
+      "max_shift_columns": 16,
+      "score_normalized": false,
+      "threshold": 0.6546885168313318,
+      "metrics": {
+        "rank1": 0.4594594594594595,
+        "tar": 0.43243243243243246,
+        "fnmr": 0.5675675675675675,
+        "far": 0.009772484348755535,
+        "eer_descriptive": 0.2702702702702703,
+        "extraction_failures": 2,
+        "queries": 111,
+        "genuine_mean_valid": 0.6472797000957733,
+        "margin_mean_valid": 0.0011995194926189875
+      }
+    },
+    {
+      "variant": "default_normalized",
+      "max_shift_columns": 16,
+      "score_normalized": true,
+      "threshold": 0.6459321890320665,
+      "metrics": {
+        "rank1": 0.46846846846846846,
+        "tar": 0.4144144144144144,
+        "fnmr": 0.5855855855855856,
+        "far": 0.009772484348755535,
+        "eer_descriptive": 0.27927927927927926,
+        "extraction_failures": 2,
+        "queries": 111,
+        "genuine_mean_valid": 0.635292784124052,
+        "margin_mean_valid": 0.008040914528699785
+      }
+    },
+    {
+      "variant": "full_rotation_raw",
+      "max_shift_columns": null,
+      "score_normalized": false,
+      "threshold": 0.6869779507133594,
+      "metrics": {
+        "rank1": 0.32432432432432434,
+        "tar": 0.3063063063063063,
+        "fnmr": 0.6936936936936937,
+        "far": 0.009772484348755535,
+        "eer_descriptive": 0.3153153153153153,
+        "extraction_failures": 2,
+        "queries": 111,
+        "genuine_mean_valid": 0.6563660455611927,
+        "margin_mean_valid": -0.03212661657137595
+      }
+    },
+    {
+      "variant": "full_rotation_normalized",
+      "max_shift_columns": null,
+      "score_normalized": true,
+      "threshold": 0.6498293401530623,
+      "metrics": {
+        "rank1": 0.44144144144144143,
+        "tar": 0.38738738738738737,
+        "fnmr": 0.6126126126126126,
+        "far": 0.009772484348755535,
+        "eer_descriptive": 0.27927927927927926,
+        "extraction_failures": 2,
+        "queries": 111,
+        "genuine_mean_valid": 0.6421677091064781,
+        "margin_mean_valid": 0.008813028954220923
+      }
+    }
+  ],
+  "note": "Development selection; requires frozen independent clinical test and no minimum-area inference."
+}

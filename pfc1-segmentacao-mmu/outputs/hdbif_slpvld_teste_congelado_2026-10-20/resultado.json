@@ -1,0 +1,34 @@
+{
+  "status": "held_out_test_completed_frozen_protocol",
+  "held_out_test_result": true,
+  "minimum_area_estimated": false,
+  "metrics": {
+    "rank1": 0.15987460815047022,
+    "tar": 0.5078369905956113,
+    "fnmr": 0.49216300940438873,
+    "far": 0.024487236901030003,
+    "eer_descriptive": 0.23824451410658307,
+    "extraction_failures": 8,
+    "queries": 319,
+    "genuine_mean_valid": 0.6190802232945609,
+    "margin_mean_valid": -0.1577193052346345
+  },
+  "threshold": 0.6546885168313318,
+  "groups_observational": {
+    "source_normal_eye": {
+      "queries": 42,
+      "rank1": 0.3333333333333333,
+      "tar": 0.7380952380952381
+    },
+    "source_other_conditions": {
+      "queries": 277,
+      "rank1": 0.13357400722021662,
+      "tar": 0.4729241877256318
+    }
+  },
+  "failed_images": 10,
+  "failed_enrollments": 3,
+  "unavailable_pair_comparisons": 2582,
+  "test_impostor_pairs_with_available_comparison": 53256,
+  "note": "Frozen validation-selected recognizer and threshold; no post-test exclusions or tuning. No clinical causal claim or minimum-area estimate."
+}

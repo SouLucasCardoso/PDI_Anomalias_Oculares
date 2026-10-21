@@ -1,0 +1,5 @@
+{
+  "status": "interrupted_before_final_results",
+  "reason": "Corrected top3 aggregation to retain valid negative cosine similarities; use separate v2 protocol and results",
+  "replacement": "cadastro_multicaptura_val_v2_2026-10-20"
+}

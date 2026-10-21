@@ -1,0 +1,37 @@
+{
+  "generated_utc": "2026-10-20T16:42:51.756797+00:00",
+  "status": "held_out_test_frozen_protocol",
+  "metrics": {
+    "rank1": 0.15987460815047022,
+    "tar": 0.5078369905956113,
+    "fnmr": 0.49216300940438873,
+    "far": 0.024487236901030003,
+    "eer_descriptive": 0.23824451410658307,
+    "extraction_failures": 8,
+    "queries": 319,
+    "genuine_mean_valid": 0.6190802232945609,
+    "margin_mean_valid": -0.1577193052346345
+  },
+  "conditional_cluster_ci95": {
+    "rank1": [
+      0.11006132075471699,
+      0.21453318653664674
+    ],
+    "tar": [
+      0.430033276450512,
+      0.5895121082621081
+    ],
+    "fmr": [
+      0.01950738916256158,
+      0.03021444375172173
+    ]
+  },
+  "people": 107,
+  "bootstrap": "5000 resamples of people, seed42, percentile95%, fixed gallery, fixed validation-calibrated threshold",
+  "limitations": [
+    "Recognizer and threshold frozen from validation; no test recalibration",
+    "Intervals do not propagate uncertainty in threshold estimation or enrollment gallery",
+    "Clinical labels co-occur; normal vs other groups are observational",
+    "No minimum-area estimate from this unperturbed validation evaluation"
+  ]
+}

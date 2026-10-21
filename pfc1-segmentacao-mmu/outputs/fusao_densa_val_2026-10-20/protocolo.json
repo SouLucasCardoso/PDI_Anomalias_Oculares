@@ -1,0 +1,14 @@
+{
+  "registered_utc": "2026-10-21T02:31:36.277212+00:00",
+  "scope": "UBIPr development validation, one query photo, multiple enrollment images; no test or occlusion scoring",
+  "fusion": "Four components equal 1/4 weight; per-component validation impostor z-score then logistic",
+  "failure_handling": "Require every query and pair valid; all482 queries retained",
+  "calibration": "Empirical validation FMR<=1%; repeatedly examined development set, not independent confirmation",
+  "script_sha256": "7dc895db7b2be1142f1a1a719247c8961d80ac5a27dc38ce4d273a09f0c3507e",
+  "inputs_sha256": {
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\identidade_automatica_2026-10-20\\scores_baseline.npz": "3bc928fce0e6c8c28a4ca1c7c08451d9f300f9d86aca90bc2ab2a3365dd05f7e",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\encoder_polar_2026-10-20\\scores_melhor.npz": "879522fcdb93d6af62c5442a77f5709fc60aadfb57303ba1d8cf9014d8c92226",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\espacial_polar_val_2026-10-20\\scores_shift0.npz": "e0ebbe59a5cb2c289fb6fd0259f3ee108a82d1543b35c4218ed49df6d67120fa",
+    "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\encoder_polar_denso_2026-10-20\\scores_melhor.npz": "bc1054b8284a8a1a8757a0622e3988660ee7a9144fb70d7491d3c57d2ebfba37"
+  }
+}

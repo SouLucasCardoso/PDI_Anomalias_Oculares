@@ -1,0 +1,37 @@
+{
+  "generated_utc": "2026-10-20T16:22:49.054307+00:00",
+  "status": "development_validation_only_test_untouched",
+  "metrics": {
+    "rank1": 0.4594594594594595,
+    "tar": 0.43243243243243246,
+    "fnmr": 0.5675675675675675,
+    "far": 0.009772484348755535,
+    "eer_descriptive": 0.2702702702702703,
+    "extraction_failures": 2,
+    "queries": 111,
+    "genuine_mean_valid": 0.6472797000957733,
+    "margin_mean_valid": 0.0011995194926189875
+  },
+  "conditional_cluster_ci95": {
+    "rank1": [
+      0.3181818181818182,
+      0.6095357142857142
+    ],
+    "tar": [
+      0.2907801418439716,
+      0.5784333981526495
+    ],
+    "fmr": [
+      0.005750417725571807,
+      0.015367363027197475
+    ]
+  },
+  "people": 36,
+  "bootstrap": "5000 resamples of people, seed42, percentile95%, fixed gallery, fixed validation-calibrated threshold",
+  "limitations": [
+    "Validation used both for calibration and development assessment; not held-out test performance",
+    "Intervals do not propagate uncertainty in threshold estimation or enrollment gallery",
+    "Clinical labels co-occur; normal vs other groups are observational",
+    "No minimum-area estimate from this unperturbed validation evaluation"
+  ]
+}

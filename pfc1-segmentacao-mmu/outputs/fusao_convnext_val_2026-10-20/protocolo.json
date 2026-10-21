@@ -1,0 +1,16 @@
+{
+  "registered_utc": "2026-10-21T03:05:12.564760+00:00",
+  "scope": "UBIPr primary, single query photo; repeated development validation only; no test or occlusion",
+  "fusion": "5 fixed equal-weight components RGB/polar/spatial/ResNet50 and optionally ConvNeXt; validation impostor z-score then logistic",
+  "variants": "Fixed fusion; same fusion with previously defined per-query normalization; no weights or temperature search",
+  "calibration": "Per-variant empirical validation FMR<=1%; all482 queries retained, require all components valid",
+  "inputs_sha256": {
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\identidade_automatica_2026-10-20\\scores_baseline.npz": "3bc928fce0e6c8c28a4ca1c7c08451d9f300f9d86aca90bc2ab2a3365dd05f7e",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\encoder_polar_2026-10-20\\scores_melhor.npz": "879522fcdb93d6af62c5442a77f5709fc60aadfb57303ba1d8cf9014d8c92226",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\espacial_polar_val_2026-10-20\\scores_shift0.npz": "e0ebbe59a5cb2c289fb6fd0259f3ee108a82d1543b35c4218ed49df6d67120fa",
+    "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\resnet50_sessoes_2026-10-20\\scores_melhor.npz": "df82e998a7dfffd043bc8334adc336908758b6a0e2c72ec583f1c68bfd05ff00",
+    "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\convnext_contraste_2026-10-20\\scores_melhor.npz": "d425b604040aa0a59d8c2971585219cf2264c9e54cac15b49c6deec01fcafd26"
+  },
+  "script_sha256": "79a3233c83fe5cdc4616b1f664e0c8319ced0085019f1031ffc82c7127e485b5",
+  "normalization_module_sha256": "8e105dbdb11ba547420fdb171403bc4cebb07fd9358a1e59c22e37b0f0a8e3a6"
+}

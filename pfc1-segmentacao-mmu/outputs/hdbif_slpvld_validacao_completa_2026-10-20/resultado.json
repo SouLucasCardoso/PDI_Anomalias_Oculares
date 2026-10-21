@@ -1,0 +1,33 @@
+{
+  "status": "validation_completed_test_untouched",
+  "scientific_final_result": false,
+  "metrics": {
+    "rank1": 0.4594594594594595,
+    "tar": 0.43243243243243246,
+    "fnmr": 0.5675675675675675,
+    "far": 0.009772484348755535,
+    "eer_descriptive": 0.2702702702702703,
+    "extraction_failures": 2,
+    "queries": 111,
+    "genuine_mean_valid": 0.6472797000957733,
+    "margin_mean_valid": 0.0011995194926189875
+  },
+  "threshold": 0.6546885168313318,
+  "groups_observational": {
+    "source_normal_eye": {
+      "queries": 19,
+      "rank1": 0.8947368421052632,
+      "tar": 0.8421052631578947
+    },
+    "source_other_conditions": {
+      "queries": 92,
+      "rank1": 0.3695652173913043,
+      "tar": 0.34782608695652173
+    }
+  },
+  "failed_images": 2,
+  "failed_enrollments": 0,
+  "unavailable_pair_comparisons": 120,
+  "calibration_impostor_pairs": 6431,
+  "note": "Development metrics use same validation set as threshold calibration; no clinical causal claim or minimum-area estimate."
+}

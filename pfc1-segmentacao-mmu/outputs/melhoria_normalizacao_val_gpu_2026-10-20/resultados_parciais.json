@@ -1,0 +1,34 @@
+[
+  {
+    "variant": "full_reference",
+    "threshold": 0.6610687022900764,
+    "rank1": 0.2883817427385892,
+    "tar": 0.11618257261410789,
+    "fnmr": 0.8838174273858921,
+    "far": 0.008901084192209878,
+    "eer_descriptive": 0.37344398340248963,
+    "extraction_failures": 22,
+    "queries": 482,
+    "genuine_mean_valid": 0.4591502188298753,
+    "margin_mean_valid": -0.16145132857997924,
+    "joint_success": 0.10580912863070539,
+    "failed_gallery": 2,
+    "failed_images": 24
+  },
+  {
+    "variant": "roi_reference",
+    "threshold": 0.6318464730290457,
+    "rank1": 0.4211618257261411,
+    "tar": 0.24688796680497926,
+    "fnmr": 0.7531120331950207,
+    "far": 0.009436487752643555,
+    "eer_descriptive": 0.33195020746887965,
+    "extraction_failures": 12,
+    "queries": 482,
+    "genuine_mean_valid": 0.5149559835990474,
+    "margin_mean_valid": -0.08922215101840844,
+    "joint_success": 0.23858921161825727,
+    "failed_gallery": 1,
+    "failed_images": 13
+  }
+]

@@ -1,0 +1,866 @@
+[
+  {
+    "eye": "149_L",
+    "selected": [
+      {
+        "image": "C149_S1_I9_L.jpg",
+        "score": 0.4647518515537188,
+        "normalized_sharpness": 0.9444956983188479,
+        "usable_pixels": 5309,
+        "native_width": 124.0
+      },
+      {
+        "image": "C149_S1_I13_L.jpg",
+        "score": 0.4313766138393809,
+        "normalized_sharpness": 0.6735529584509632,
+        "usable_pixels": 5196,
+        "native_width": 228.0
+      },
+      {
+        "image": "C149_S1_I15_L.jpg",
+        "score": 0.35814759105406846,
+        "normalized_sharpness": 0.5566016674822968,
+        "usable_pixels": 5408,
+        "native_width": 231.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "149_R",
+    "selected": [
+      {
+        "image": "C149_S1_I11_R.jpg",
+        "score": 0.45830649266061985,
+        "normalized_sharpness": 0.8013663234241248,
+        "usable_pixels": 5647,
+        "native_width": 171.0
+      },
+      {
+        "image": "C149_S1_I5_R.jpg",
+        "score": 0.41244207428596996,
+        "normalized_sharpness": 0.9623648400005966,
+        "usable_pixels": 5619,
+        "native_width": 96.0
+      },
+      {
+        "image": "C149_S1_I7_R.jpg",
+        "score": 0.3865702768034412,
+        "normalized_sharpness": 0.7400059584523018,
+        "usable_pixels": 5781,
+        "native_width": 140.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "151_L",
+    "selected": [
+      {
+        "image": "C151_S1_I15_L.jpg",
+        "score": 0.5214185793700312,
+        "normalized_sharpness": 0.8220563188266259,
+        "usable_pixels": 5428,
+        "native_width": 222.0
+      },
+      {
+        "image": "C151_S1_I6_L.jpg",
+        "score": 0.44043609490308383,
+        "normalized_sharpness": 0.9437916319351797,
+        "usable_pixels": 5796,
+        "native_width": 112.0
+      },
+      {
+        "image": "C151_S1_I12_L.jpg",
+        "score": 0.3637193914346272,
+        "normalized_sharpness": 0.6870255171542958,
+        "usable_pixels": 5590,
+        "native_width": 144.0
+      }
+    ],
+    "available_valid": 14
+  },
+  {
+    "eye": "151_R",
+    "selected": [
+      {
+        "image": "C151_S1_I11_R.jpg",
+        "score": 0.6128827464404761,
+        "normalized_sharpness": 1.0716487788637565,
+        "usable_pixels": 5507,
+        "native_width": 171.0
+      },
+      {
+        "image": "C151_S1_I5_R.jpg",
+        "score": 0.396294140539071,
+        "normalized_sharpness": 0.913902813896225,
+        "usable_pixels": 5505,
+        "native_width": 98.0
+      },
+      {
+        "image": "C151_S1_I10_R.jpg",
+        "score": 0.34228372750599223,
+        "normalized_sharpness": 0.5926398253389465,
+        "usable_pixels": 5434,
+        "native_width": 175.0
+      }
+    ],
+    "available_valid": 14
+  },
+  {
+    "eye": "173_L",
+    "selected": [
+      {
+        "image": "C173_S1_I15_L.jpg",
+        "score": 0.41241691744487957,
+        "normalized_sharpness": 0.6947129892788079,
+        "usable_pixels": 5691,
+        "native_width": 187.0
+      },
+      {
+        "image": "C173_S1_I12_L.jpg",
+        "score": 0.39735139162414757,
+        "normalized_sharpness": 0.7319630898339561,
+        "usable_pixels": 5652,
+        "native_width": 152.0
+      },
+      {
+        "image": "C173_S1_I4_L.jpg",
+        "score": 0.2953311831888279,
+        "normalized_sharpness": 0.6328525354046312,
+        "usable_pixels": 5520,
+        "native_width": 112.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "173_R",
+    "selected": [
+      {
+        "image": "C173_S1_I11_R.jpg",
+        "score": 0.3876003772846796,
+        "normalized_sharpness": 0.7161622865061299,
+        "usable_pixels": 5672,
+        "native_width": 151.0
+      },
+      {
+        "image": "C173_S1_I8_R.jpg",
+        "score": 0.3674855286483954,
+        "normalized_sharpness": 0.7321223322685086,
+        "usable_pixels": 5612,
+        "native_width": 129.0
+      },
+      {
+        "image": "C173_S1_I5_R.jpg",
+        "score": 0.34653300375695506,
+        "normalized_sharpness": 0.764987951689882,
+        "usable_pixels": 5573,
+        "native_width": 106.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "177_L",
+    "selected": [
+      {
+        "image": "C177_S1_I15_L.jpg",
+        "score": 0.9177759928860298,
+        "normalized_sharpness": 1.499337018081138,
+        "usable_pixels": 5340,
+        "native_width": 202.0
+      },
+      {
+        "image": "C177_S1_I13_L.jpg",
+        "score": 0.6521232438734528,
+        "normalized_sharpness": 1.026436137217856,
+        "usable_pixels": 5322,
+        "native_width": 223.0
+      },
+      {
+        "image": "C177_S1_I4_L.jpg",
+        "score": 0.4529609477814948,
+        "normalized_sharpness": 0.9401794462355396,
+        "usable_pixels": 5343,
+        "native_width": 119.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "177_R",
+    "selected": [
+      {
+        "image": "C177_S1_I15_R.jpg",
+        "score": 0.6454746670107058,
+        "normalized_sharpness": 1.109636225310539,
+        "usable_pixels": 5383,
+        "native_width": 178.0
+      },
+      {
+        "image": "C177_S1_I13_R.jpg",
+        "score": 0.4856493483417539,
+        "normalized_sharpness": 0.7802612752978889,
+        "usable_pixels": 5321,
+        "native_width": 211.0
+      },
+      {
+        "image": "C177_S1_I9_R.jpg",
+        "score": 0.4839165441104427,
+        "normalized_sharpness": 1.0178934203702417,
+        "usable_pixels": 5328,
+        "native_width": 116.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "185_L",
+    "selected": [
+      {
+        "image": "C185_S1_I15_L.jpg",
+        "score": 0.5393986232881853,
+        "normalized_sharpness": 0.8620295755353242,
+        "usable_pixels": 5579,
+        "native_width": 214.0
+      },
+      {
+        "image": "C185_S1_I8_L.jpg",
+        "score": 0.45598899282814515,
+        "normalized_sharpness": 0.9155684501667481,
+        "usable_pixels": 5684,
+        "native_width": 127.0
+      },
+      {
+        "image": "C185_S1_I4_L.jpg",
+        "score": 0.3335756748363241,
+        "normalized_sharpness": 0.6864491159854934,
+        "usable_pixels": 5604,
+        "native_width": 121.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "185_R",
+    "selected": [
+      {
+        "image": "C185_S1_I4_R.jpg",
+        "score": 0.3934247043063301,
+        "normalized_sharpness": 0.809609515473357,
+        "usable_pixels": 5586,
+        "native_width": 121.0
+      },
+      {
+        "image": "C185_S1_I10_R.jpg",
+        "score": 0.3873742512719897,
+        "normalized_sharpness": 0.6953488112894722,
+        "usable_pixels": 5367,
+        "native_width": 161.0
+      },
+      {
+        "image": "C185_S1_I5_R.jpg",
+        "score": 0.3825937474638692,
+        "normalized_sharpness": 0.7976106938653544,
+        "usable_pixels": 5711,
+        "native_width": 118.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "235_L",
+    "selected": [
+      {
+        "image": "C235_S1_I15_L.jpg",
+        "score": 0.8685329393928956,
+        "normalized_sharpness": 1.4415856004356307,
+        "usable_pixels": 5625,
+        "native_width": 194.0
+      },
+      {
+        "image": "C235_S1_I11_L.jpg",
+        "score": 0.5567854016456576,
+        "normalized_sharpness": 0.7943471730144716,
+        "usable_pixels": 1970,
+        "native_width": 300.0
+      },
+      {
+        "image": "C235_S1_I13_L.jpg",
+        "score": 0.5499732222080396,
+        "normalized_sharpness": 0.883606266959836,
+        "usable_pixels": 5929,
+        "native_width": 211.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "235_R",
+    "selected": [
+      {
+        "image": "C235_S1_I6_R.jpg",
+        "score": 0.6186974582921998,
+        "normalized_sharpness": 2.0852395816514884,
+        "usable_pixels": 4339,
+        "native_width": 54.0
+      },
+      {
+        "image": "C235_S1_I7_R.jpg",
+        "score": 0.5695491943712894,
+        "normalized_sharpness": 1.1260552774210988,
+        "usable_pixels": 5554,
+        "native_width": 131.0
+      },
+      {
+        "image": "C235_S1_I4_R.jpg",
+        "score": 0.4898432197299528,
+        "normalized_sharpness": 1.0927271824745102,
+        "usable_pixels": 5504,
+        "native_width": 104.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "317_L",
+    "selected": [
+      {
+        "image": "C317_S1_I13_L.jpg",
+        "score": 0.7329268862516674,
+        "normalized_sharpness": 1.190559283521001,
+        "usable_pixels": 5465,
+        "native_width": 205.0
+      },
+      {
+        "image": "C317_S1_I12_L.jpg",
+        "score": 0.6915316162543241,
+        "normalized_sharpness": 1.461236371737398,
+        "usable_pixels": 4853,
+        "native_width": 115.0
+      },
+      {
+        "image": "C317_S1_I10_L.jpg",
+        "score": 0.6149166522852509,
+        "normalized_sharpness": 1.132741201578094,
+        "usable_pixels": 5319,
+        "native_width": 152.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "317_R",
+    "selected": [
+      {
+        "image": "C317_S1_I13_R.jpg",
+        "score": 0.43383119603713477,
+        "normalized_sharpness": 0.7101018084388923,
+        "usable_pixels": 5401,
+        "native_width": 201.0
+      },
+      {
+        "image": "C317_S1_I14_R.jpg",
+        "score": 0.34903384170654744,
+        "normalized_sharpness": 0.5892291736336339,
+        "usable_pixels": 5648,
+        "native_width": 186.0
+      },
+      {
+        "image": "C317_S1_I4_R.jpg",
+        "score": 0.31572351073967386,
+        "normalized_sharpness": 0.689914338282991,
+        "usable_pixels": 5632,
+        "native_width": 108.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "321_L",
+    "selected": [
+      {
+        "image": "C321_S1_I15_L.jpg",
+        "score": 0.5073311746130328,
+        "normalized_sharpness": 0.7801815542368489,
+        "usable_pixels": 5328,
+        "native_width": 238.0
+      },
+      {
+        "image": "C321_S1_I13_L.jpg",
+        "score": 0.5059346050488746,
+        "normalized_sharpness": 0.7639410968666274,
+        "usable_pixels": 5605,
+        "native_width": 251.0
+      },
+      {
+        "image": "C321_S1_I12_L.jpg",
+        "score": 0.5058671633193133,
+        "normalized_sharpness": 0.8758728599185823,
+        "usable_pixels": 5474,
+        "native_width": 175.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "321_R",
+    "selected": [
+      {
+        "image": "C321_S1_I13_R.jpg",
+        "score": 0.44463174515498716,
+        "normalized_sharpness": 0.6920789772412408,
+        "usable_pixels": 5603,
+        "native_width": 230.0
+      },
+      {
+        "image": "C321_S1_I14_R.jpg",
+        "score": 0.36831944223465823,
+        "normalized_sharpness": 0.5760061761819545,
+        "usable_pixels": 5454,
+        "native_width": 227.0
+      },
+      {
+        "image": "C321_S1_I15_R.jpg",
+        "score": 0.34188797300174073,
+        "normalized_sharpness": 0.5663067450233962,
+        "usable_pixels": 5231,
+        "native_width": 195.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "339_L",
+    "selected": [
+      {
+        "image": "C339_S1_I13_L.jpg",
+        "score": 0.4396802908951592,
+        "normalized_sharpness": 0.6812213949062337,
+        "usable_pixels": 5146,
+        "native_width": 233.0
+      },
+      {
+        "image": "C339_S1_I9_L.jpg",
+        "score": 0.4196748495721491,
+        "normalized_sharpness": 0.8006562732972207,
+        "usable_pixels": 5487,
+        "native_width": 141.0
+      },
+      {
+        "image": "C339_S1_I4_L.jpg",
+        "score": 0.3689867110872401,
+        "normalized_sharpness": 0.7726644804818276,
+        "usable_pixels": 5256,
+        "native_width": 117.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "339_R",
+    "selected": [
+      {
+        "image": "C339_S1_I7_R.jpg",
+        "score": 0.4441655745927953,
+        "normalized_sharpness": 0.8133421560725212,
+        "usable_pixels": 5073,
+        "native_width": 154.0
+      },
+      {
+        "image": "C339_S1_I8_R.jpg",
+        "score": 0.33300883865943637,
+        "normalized_sharpness": 0.6249617931005861,
+        "usable_pixels": 5588,
+        "native_width": 146.0
+      },
+      {
+        "image": "C339_S1_I14_R.jpg",
+        "score": 0.3135309884874667,
+        "normalized_sharpness": 0.5028327173855598,
+        "usable_pixels": 5411,
+        "native_width": 212.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "361_L",
+    "selected": [
+      {
+        "image": "C361_S1_I13_L.jpg",
+        "score": 0.8620079554058384,
+        "normalized_sharpness": 1.3612704816137449,
+        "usable_pixels": 5592,
+        "native_width": 221.0
+      },
+      {
+        "image": "C361_S1_I15_L.jpg",
+        "score": 0.6517526602886017,
+        "normalized_sharpness": 1.0258528419789201,
+        "usable_pixels": 5454,
+        "native_width": 223.0
+      },
+      {
+        "image": "C361_S1_I14_L.jpg",
+        "score": 0.44553976332075995,
+        "normalized_sharpness": 0.7365045067139093,
+        "usable_pixels": 5682,
+        "native_width": 196.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "361_R",
+    "selected": [
+      {
+        "image": "C361_S1_I13_R.jpg",
+        "score": 0.5393970391284066,
+        "normalized_sharpness": 0.8462540213881224,
+        "usable_pixels": 5809,
+        "native_width": 225.0
+      },
+      {
+        "image": "C361_S1_I14_R.jpg",
+        "score": 0.5348495862462126,
+        "normalized_sharpness": 0.8503368997923657,
+        "usable_pixels": 5732,
+        "native_width": 217.0
+      },
+      {
+        "image": "C361_S1_I12_R.jpg",
+        "score": 0.37558514540460997,
+        "normalized_sharpness": 0.7117732475849602,
+        "usable_pixels": 5521,
+        "native_width": 143.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "391_L",
+    "selected": [
+      {
+        "image": "C391_S1_I13_L.jpg",
+        "score": 0.4197465963173839,
+        "normalized_sharpness": 0.6650779402837088,
+        "usable_pixels": 5604,
+        "native_width": 219.0
+      },
+      {
+        "image": "C391_S1_I9_L.jpg",
+        "score": 0.3863626235203142,
+        "normalized_sharpness": 0.7788579870965063,
+        "usable_pixels": 5490,
+        "native_width": 126.0
+      },
+      {
+        "image": "C391_S1_I15_L.jpg",
+        "score": 0.37658553332963746,
+        "normalized_sharpness": 0.6140384804537439,
+        "usable_pixels": 5436,
+        "native_width": 203.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "391_R",
+    "selected": [
+      {
+        "image": "C391_S1_I13_R.jpg",
+        "score": 0.5754570266717032,
+        "normalized_sharpness": 0.9180546983646242,
+        "usable_pixels": 5604,
+        "native_width": 215.0
+      },
+      {
+        "image": "C391_S1_I11_R.jpg",
+        "score": 0.449524134598159,
+        "normalized_sharpness": 0.8207440651050257,
+        "usable_pixels": 5634,
+        "native_width": 155.0
+      },
+      {
+        "image": "C391_S1_I12_R.jpg",
+        "score": 0.4284390039633204,
+        "normalized_sharpness": 0.8931863980930239,
+        "usable_pixels": 5481,
+        "native_width": 118.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "483_L",
+    "selected": [
+      {
+        "image": "C483_S1_I10_L.jpg",
+        "score": 0.5536965497094588,
+        "normalized_sharpness": 0.9409815680854737,
+        "usable_pixels": 5487,
+        "native_width": 183.0
+      },
+      {
+        "image": "C483_S1_I7_L.jpg",
+        "score": 0.40515162488267475,
+        "normalized_sharpness": 0.7441020038694875,
+        "usable_pixels": 5461,
+        "native_width": 153.0
+      },
+      {
+        "image": "C483_S1_I13_L.jpg",
+        "score": 0.3574571273740383,
+        "normalized_sharpness": 0.5375930025861521,
+        "usable_pixels": 5518,
+        "native_width": 254.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "483_R",
+    "selected": [
+      {
+        "image": "C483_S1_I10_R.jpg",
+        "score": 0.598693155788358,
+        "normalized_sharpness": 1.0268089319945581,
+        "usable_pixels": 5479,
+        "native_width": 179.0
+      },
+      {
+        "image": "C483_S1_I13_R.jpg",
+        "score": 0.5817616946020137,
+        "normalized_sharpness": 0.8749329422754694,
+        "usable_pixels": 5572,
+        "native_width": 254.0
+      },
+      {
+        "image": "C483_S1_I7_R.jpg",
+        "score": 0.5639943383293313,
+        "normalized_sharpness": 1.0180275163554597,
+        "usable_pixels": 5518,
+        "native_width": 159.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "485_L",
+    "selected": [
+      {
+        "image": "C485_S1_I4_L.jpg",
+        "score": 0.43185575953675,
+        "normalized_sharpness": 0.9633705405050577,
+        "usable_pixels": 5537,
+        "native_width": 104.0
+      },
+      {
+        "image": "C485_S1_I10_L.jpg",
+        "score": 0.41543379448471357,
+        "normalized_sharpness": 0.7699372991116692,
+        "usable_pixels": 5611,
+        "native_width": 150.0
+      },
+      {
+        "image": "C485_S1_I13_L.jpg",
+        "score": 0.4151028282584484,
+        "normalized_sharpness": 0.6544413959029592,
+        "usable_pixels": 5610,
+        "native_width": 222.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "485_R",
+    "selected": [
+      {
+        "image": "C485_S1_I13_R.jpg",
+        "score": 0.45178106467667883,
+        "normalized_sharpness": 0.7170470109088573,
+        "usable_pixels": 5478,
+        "native_width": 218.0
+      },
+      {
+        "image": "C485_S1_I4_R.jpg",
+        "score": 0.3660877093873819,
+        "normalized_sharpness": 0.8210316589173322,
+        "usable_pixels": 5547,
+        "native_width": 103.0
+      },
+      {
+        "image": "C485_S1_I7_R.jpg",
+        "score": 0.3406562691290236,
+        "normalized_sharpness": 0.6685059115990614,
+        "usable_pixels": 5617,
+        "native_width": 133.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "49_L",
+    "selected": [
+      {
+        "image": "C49_S1_I15_L.jpg",
+        "score": 0.5063392146725512,
+        "normalized_sharpness": 0.8320247396880615,
+        "usable_pixels": 5671,
+        "native_width": 199.0
+      },
+      {
+        "image": "C49_S1_I4_L.jpg",
+        "score": 0.30038519326128976,
+        "normalized_sharpness": 0.6563972741635591,
+        "usable_pixels": 5554,
+        "native_width": 108.0
+      },
+      {
+        "image": "C49_S1_I13_L.jpg",
+        "score": 0.2958962207705735,
+        "normalized_sharpness": 0.4627451910729233,
+        "usable_pixels": 5247,
+        "native_width": 227.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "49_R",
+    "selected": [
+      {
+        "image": "C49_S1_I7_R.jpg",
+        "score": 0.3239373096837346,
+        "normalized_sharpness": 0.6556491147998789,
+        "usable_pixels": 5708,
+        "native_width": 125.0
+      },
+      {
+        "image": "C49_S1_I9_R.jpg",
+        "score": 0.2805176369898292,
+        "normalized_sharpness": 0.5748312233398138,
+        "usable_pixels": 5713,
+        "native_width": 122.0
+      },
+      {
+        "image": "C49_S1_I5_R.jpg",
+        "score": 0.2695627495774361,
+        "normalized_sharpness": 0.6180883247886666,
+        "usable_pixels": 5720,
+        "native_width": 99.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "507_L",
+    "selected": [
+      {
+        "image": "C507_S1_I13_L.jpg",
+        "score": 0.6875732372796164,
+        "normalized_sharpness": 1.118991739102121,
+        "usable_pixels": 5641,
+        "native_width": 204.0
+      },
+      {
+        "image": "C507_S1_I7_L.jpg",
+        "score": 0.505043764399723,
+        "normalized_sharpness": 1.0061724608583629,
+        "usable_pixels": 5728,
+        "native_width": 129.0
+      },
+      {
+        "image": "C507_S1_I4_L.jpg",
+        "score": 0.35708483171197397,
+        "normalized_sharpness": 0.7545357748348667,
+        "usable_pixels": 5555,
+        "native_width": 115.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "507_R",
+    "selected": [
+      {
+        "image": "C507_S1_I2_R.jpg",
+        "score": 2.125377118442455,
+        "normalized_sharpness": 2.930253660337822,
+        "usable_pixels": 343,
+        "native_width": 338.0
+      },
+      {
+        "image": "C507_S1_I3_R.jpg",
+        "score": 1.4437878345606663,
+        "normalized_sharpness": 1.937918430346135,
+        "usable_pixels": 1109,
+        "native_width": 374.0
+      },
+      {
+        "image": "C507_S1_I15_R.jpg",
+        "score": 1.016344508526873,
+        "normalized_sharpness": 1.3126818595324303,
+        "usable_pixels": 198,
+        "native_width": 439.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "79_L",
+    "selected": [
+      {
+        "image": "C79_S1_I15_L.jpg",
+        "score": 0.6980267317749115,
+        "normalized_sharpness": 1.0899013882099495,
+        "usable_pixels": 5464,
+        "native_width": 228.0
+      },
+      {
+        "image": "C79_S1_I12_L.jpg",
+        "score": 0.5115593400681614,
+        "normalized_sharpness": 0.8617176049276516,
+        "usable_pixels": 5394,
+        "native_width": 187.0
+      },
+      {
+        "image": "C79_S1_I13_L.jpg",
+        "score": 0.47701868618471976,
+        "normalized_sharpness": 0.7183562033058428,
+        "usable_pixels": 5507,
+        "native_width": 253.0
+      }
+    ],
+    "available_valid": 15
+  },
+  {
+    "eye": "79_R",
+    "selected": [
+      {
+        "image": "C79_S1_I13_R.jpg",
+        "score": 0.8109623275934108,
+        "normalized_sharpness": 1.2295235289319455,
+        "usable_pixels": 5512,
+        "native_width": 248.0
+      },
+      {
+        "image": "C79_S1_I8_R.jpg",
+        "score": 0.592394170967318,
+        "normalized_sharpness": 1.1499416259953819,
+        "usable_pixels": 5407,
+        "native_width": 136.0
+      },
+      {
+        "image": "C79_S1_I14_R.jpg",
+        "score": 0.4681833040243964,
+        "normalized_sharpness": 0.7178810661707411,
+        "usable_pixels": 5566,
+        "native_width": 240.0
+      }
+    ],
+    "available_valid": 15
+  }
+]

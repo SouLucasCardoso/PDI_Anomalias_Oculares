@@ -1,0 +1,27 @@
+{
+  "selection": "First valid train image per first4 different subjects; no query or performance selection",
+  "examples": [
+    {
+      "index": 0,
+      "image": "C103_S1_I10_L.jpg",
+      "subject": 103
+    },
+    {
+      "index": 60,
+      "image": "C105_S1_I10_L.jpg",
+      "subject": 105
+    },
+    {
+      "index": 120,
+      "image": "C107_S1_I10_L.jpg",
+      "subject": 107
+    },
+    {
+      "index": 180,
+      "image": "C109_S1_I10_L.jpg",
+      "subject": 109
+    }
+  ],
+  "display_only": "128px inputs bicubic enlarged to224 for equal display size; model128 inputs unchanged",
+  "native224": "Direct original RGB masked crop, no super-resolution"
+}

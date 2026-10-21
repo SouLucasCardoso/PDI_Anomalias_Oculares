@@ -1,0 +1,12 @@
+{
+  "registered_utc": "2026-10-20T23:12:43.955240+00:00",
+  "scope": "Fixed equal-weight RGB/polar fusion on repeated development validation; no test or occlusion inference",
+  "rule": "Each score standardized by its own usable validation impostor mean/std; average with fixed0.5+0.5 weights, then logistic mapping; no learned weights or weight search",
+  "failure_handling": "Require both query extractions and both pair scores available; all queries/eyes retained, invalid pair floor-2",
+  "calibration": "Standardization and FMR<=1% threshold on same validation, development only; not independent confirmation",
+  "inputs_sha256": {
+    "outputs\\identidade_automatica_2026-10-20\\scores_baseline.npz": "3bc928fce0e6c8c28a4ca1c7c08451d9f300f9d86aca90bc2ab2a3365dd05f7e",
+    "outputs\\encoder_polar_2026-10-20\\scores_melhor.npz": "879522fcdb93d6af62c5442a77f5709fc60aadfb57303ba1d8cf9014d8c92226"
+  },
+  "script_sha256": "e728fd253d3a784f6130ee04f4c0677ac0c89f81f508e3fbeb8790b6f1a4ff23"
+}

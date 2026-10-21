@@ -1,4 +1,51 @@
+
+
+## Atualização de desenvolvimento — 21/10/2026
+
+O candidato congelado atingiu **Rank-1 de90,04% e TAR de90,66%, com FMR de0,98%**, na validação UBIPr de482 consultas, com uma foto original e lado do olho informado (16 candidatos). São434 identificações corretas e437 aceitações genuínas; o resultado conjunto de identificação correta e aceitação é88,38%. A validação foi reutilizada para seleção de estratégias e o componente externo ArcIris tem população de pré-treinamento desconhecida: estes números são exploratórios, sem confirmação independente. O mínimo de área permanece não determinado, com e sem oclusão. Consulte [o relatório atualizado](AVANCO_RECONHECIMENTO_2026-10-21.md) e `outputs/candidato_congelado_2026-10-21/CONGELADO.json`.
+
 # PFC I — prova de conceito de segmentação da íris
+
+> **Continuação concluída:** o encoder polar com mais resolução terminou 29
+> épocas (seleção na 21). Sua fusão obteve 78,84% de Rank-1 e 68,26% de TAR;
+> a transformação linear ficou em 78,22% e 65,98%. Nenhuma melhorou ambas
+> as métricas da fusão anterior, mantida como referência. UBIPr principal,
+> uma foto por consulta e 39 testes aprovados. [Relatório da continuação](outputs/fusao_densa_val_2026-10-20/RELATORIO_CONTINUACAO.md).
+
+> **Treino polar e fusões concluídos em 20/10:** o novo encoder polar terminou
+> 28 épocas (seleção na 20). Uma fusão fixa RGB/polar/espacial atingiu Rank-1
+> de 79,88%, TAR de 68,05% e FMR de 0,99% nas 482 consultas de validação.
+> É um candidato de desenvolvimento, sem confirmação independente ou mínimo
+> aprovado. Os 37 testes passaram. [Relatório e distância até o critério](outputs/fusao_espacial_val_2026-10-20/RELATORIO_AVANCO_POLAR_FUSAO.md).
+
+> **Reconhecedor polar avaliado em 20/10:** fontes e pesos oficiais TripletIris
+> foram instalados, e 15 variantes de normalização/cadastro terminaram na
+> validação. Nenhuma superou o encoder atual; ele permanece preservado. A
+> aproximação elíptica não melhorou a identificação nessa configuração. Os
+> 32 testes passaram. [Relatório e imagens reais](outputs/tripletiris_elipse_validacao_2026-10-20/RELATORIO_RECONHECEDOR_POLAR.md).
+
+> **Duas adaptações de treinamento concluídas em 20/10:** ajuste em máscaras
+> automáticas e ajuste angular com triplet balanceado executaram seis épocas
+> cada, sem superar a TAR da época zero. O critério preservou os parâmetros
+> anteriores: 66,80% de Rank-1, 59,34% de TAR e 0,99% de FMR nesta execução de
+> validação. Não há novo modelo adotado, teste independente ou mínimo aprovado.
+> [Relatório dos treinamentos](outputs/identidade_metrica_automatica_2026-10-20/RELATORIO_TREINAMENTOS.md).
+
+> **Cadastro multicaptura e fluxo automático, validação concluída:** em 482
+> consultas, a máscara automática da U-Net com média das três melhores
+> correspondências atingiu Rank-1 de 67,01%, TAR de 59,34% e FMR de 0,99%.
+> São estimativas de desenvolvimento, não novo teste ou mínimo aprovado.
+> O HDBIF máximo multicaptura piorou; um controle posterior de suporte polar foi
+> registrado separadamente. [Resultados e exemplos reais](outputs/cadastro_multicaptura_val_v2_2026-10-20/RELATORIO_CADASTRO.md)
+> e [controle exploratório de qualidade](outputs/suporte_polar_val_2026-10-20/RELATORIO_SUPORTE.md).
+
+> **Melhoria do reconhecedor, validação concluída em 20/10:** o recorte antes da
+> normalização HDBIF elevou Rank-1 de 28,84% para 42,12% em 482 consultas de
+> validação com uma captura de cadastro por olho. Ampliar a entrada do encoder
+> congelado de 128 para 256 pixels piorou o controle. Essas taxas são de
+> desenvolvimento e não substituem o teste anterior com galeria por centróide.
+> [Protocolo](MELHORIA_RECONHECEDOR_2026-10-20.md) e
+> [relatório completo](outputs/melhoria_normalizacao_val_gpu_2026-10-20/RELATORIO_MELHORIA.md).
 
 > **Estado atual em 20/10/2026:** o objetivo ativo é investigar área preservada
 > e identidade ocular. Duas rodadas UBIPr e o teste clínico HDBIF foram concluídos.

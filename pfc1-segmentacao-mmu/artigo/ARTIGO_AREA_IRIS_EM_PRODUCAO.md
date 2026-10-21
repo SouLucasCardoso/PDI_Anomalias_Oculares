@@ -180,6 +180,26 @@ Oclusões com cinza são intervenções digitais restritas à máscara. Elas nã
 
 As tabelas e figuras apresentam a condição original, as curvas por área, a incerteza das perdas, a FMR observada e as falhas. As configurações que não atendem ao critério no original não recebem um percentual mínimo. Recuperações isoladas de acerto em curvas não monotônicas não substituem a exigência de sucesso em todos os níveis maiores.
 
+### 3.7 Desenvolvimento posterior com representação polar e fusão
+
+Após os ensaios anteriores, foram conduzidos experimentos adicionais exclusivamente na validação UBIPr, com 482 consultas, 16 pessoas e 32 olhos. Um novo encoder ResNet18, inicializado em ImageNet, foi treinado em faixas de textura de 64 × 512 pixels produzidas pela U-Net congelada, com contraste local e aproximação elíptica da região prevista. Foram executadas 28 épocas, com seleção da época 20 pela TAR de validação, com desempate por Rank-1. As ampliações de treino incluíram deslocamentos circulares horizontais e variações de intensidade. O encoder polar isolado obteve 58,71% de Rank-1 e 49,59% de TAR.
+
+Foi registrada uma fusão fixa de escores RGB e polar, padronizados por média e desvio de impostores válidos da validação, com pesos iguais e transformação logística. Posteriormente, outro controle de pesos iguais incluiu descritores espaciais intermediários do encoder polar. Cada candidato recebeu limiar de validação no alvo empírico de FMR de até 1%. As falhas permaneceram no denominador, exigindo extrações disponíveis nos componentes combinados.
+
+| Candidato na validação | Rank-1 | TAR | FMR |
+|---|---:|---:|---:|
+| RGB automático top-3, linha de base pareada | 66,80% | 59,34% | 0,99% |
+| Fusão RGB e polar | 76,35% | 67,63% | 0,99% |
+| Fusão RGB, polar e espacial | 79,88% | 68,05% | 0,99% |
+
+A fusão de três vias aumentou as estimativas em 13,07 pp de Rank-1 e 8,71 pp de TAR frente à linha de base, mas permaneceu abaixo de 90% nas duas medidas. Esses resultados são de desenvolvimento em validação já utilizada para várias escolhas; não corrigem o viés da seleção de métodos e checkpoints e não constituem confirmação independente. A diferença de duas aceitações genuínas entre as fusões de duas e três vias tampouco estabelece superioridade generalizável. Não foi produzida nova curva de oclusão para esses candidatos, e o mínimo global continua não determinado. Os resultados desta seção não substituem os ensaios de teste das seções anteriores.
+
+### 3.8 Controles adicionais de resolução e métrica
+
+Mantendo UBIPr como base principal e uma foto por consulta, treinou-se outra variante polar sem o max-pooling inicial, com lote 32 em vez de 64. Foram concluídas 29 épocas, selecionando a época 21: Rank-1 de 61,62% e TAR de 46,68%. A mudança do lote impede atribuir exclusivamente à resolução qualquer diferença. A fusão fixa dos três componentes anteriores com esse encoder, pesos de um quarto, atingiu Rank-1 de 78,84%, TAR de 68,26% e FMR de 0,99%. Em relação à fusão anterior, houve cinco identificações corretas a menos e uma aceitação genuína a mais. Os intervalos pontuais pareados de ganho incluíram zero: −3,50 a 1,45 pp em Rank-1 e −1,88 a 2,27 pp em TAR. Não se demonstra superioridade consistente.
+
+Outro controle estimou uma transformação linear pela covariância intraolho dos vetores de treino, com regularização fixa de 0,1 e encoders congelados. Sua fusão RGB/polar/espacial obteve 78,22% de Rank-1 e 65,98% de TAR. Nenhuma dessas rodadas alcançou o critério registrado; os resultados negativos e os pesos anteriores foram preservados. Todas as comparações permanecem na validação repetidamente utilizada, com 482 consultas e falhas mantidas no denominador. Não houve novo teste independente ou curva de oclusão. [Protocolo e artefatos](../CONTINUACAO_ENCODER_DENSO_2026-10-20.md).
+
 ## 4 CONSIDERAÇÕES FINAIS
 
 O estudo reproduziu a segmentação UBIPr com novos pesos e reconstruiu a avaliação de identidade ocular com separação por pessoa e lateralidade. O Dice de 0,9342 para a íris não se traduziu automaticamente em reconhecimento elevado, mostrando que localizar a região e distinguir identidades são tarefas diferentes.
@@ -219,3 +239,10 @@ TROKIELEWICZ, Mateusz; CZAJKA, Adam; MACIEJEWICZ, Piotr. Assessment of iris reco
 UNIVERSITY OF NOTRE DAME. Computer Vision Research Laboratory. Open Source Iris Recognition. Software de pesquisa. Revisão 4a535e4a9a0728e4428c25f743f6d59098ae397f. Disponível em: https://github.com/CVRL/OpenSourceIrisRecognition. Acesso em: 20 out. 2026.
 
 Conferir a normalização final das referências no modelo institucional. Os links iniciais de datasets e software são registros de rastreabilidade e deverão ser integrados à lista normalizada da versão diagramada.
+
+
+### Atualização exploratória de21/10/2026
+
+A fusão de oito componentes, incluindo Transformer polar treinado no conjunto de treinamento e ArcIris público com duas transformações determinísticas da mesma foto, atingiu90,04% de Rank-1 (434/482) e90,66% de TAR (437/482), com FMR de0,98% (71/7.230). O lado do olho é fornecido na captura, restringindo a comparação a16 candidatos. Foram mantidas todas as482 consultas e quatro falhas. A identificação correta simultaneamente aceita foi88,38% (426/482), critério distinto das duas métricas anteriores. O limiar de0,8581747485460748 e a configuração foram congelados após reconstrução exata dos escores.
+
+Este resultado provém de validação reutilizada em múltiplas hipóteses e não constitui confirmação independente. A população de pré-treinamento dos pesos ArcIris não foi identificada nas fontes publicadas consultadas, portanto não é possível excluir sobreposição. Usamos geometria própria, sem reproduzir integralmente o pipeline original. Não foi estabelecido percentual mínimo de área e não houve nova curva de oclusão nesta rodada. O teste original já foi examinado por estratégias anteriores; qualquer avaliação posterior deverá declarar essa exposição. A fonte do componente externo é o repositório CVRL/OpenSourceIrisRecognition, revisão4a535e4a9a0728e4428c25f743f6d59098ae397f.
