@@ -1,0 +1,10 @@
+{
+  "status": "polar_transformer_training_completed",
+  "best_epoch": 16,
+  "epochs_completed": 24,
+  "best_validation_tar": 0.529045643153527,
+  "best_validation_rank1": 0.7634854771784232,
+  "test_inference": false,
+  "checkpoint_sha256": "0ad83d9f9c78e434bda11e99e01c90cc197e7e5127c3aed75e5da6df38808b87",
+  "elapsed_training_seconds": 1203.0620000000345
+}

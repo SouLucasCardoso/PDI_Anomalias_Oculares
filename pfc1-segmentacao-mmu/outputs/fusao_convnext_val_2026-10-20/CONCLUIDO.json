@@ -1,0 +1,55 @@
+{
+  "status": "fixed_resnet50_fusion_completed",
+  "results": [
+    {
+      "rank1": 0.8153526970954357,
+      "tar": 0.7365145228215768,
+      "fnmr": 0.2634854771784232,
+      "far": 0.009904965868023023,
+      "eer_descriptive": 0.06856511845803775,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.9153583058563383,
+      "margin_mean_valid": 0.06341819030574843,
+      "threshold": 0.8921405144581845,
+      "variant": "fixed_four_way",
+      "normalization": [
+        {
+          "mean": 0.1240406410073161,
+          "std": 0.10133575699108374
+        },
+        {
+          "mean": 0.11512956587331158,
+          "std": 0.07565111886509615
+        },
+        {
+          "mean": 0.6217880028935157,
+          "std": 0.048889510591868704
+        },
+        {
+          "mean": 0.10007046174220456,
+          "std": 0.08421785183252152
+        },
+        {
+          "mean": 0.10735954075987462,
+          "std": 0.09581126121413053
+        }
+      ]
+    },
+    {
+      "rank1": 0.8153526970954357,
+      "tar": 0.8360995850622407,
+      "fnmr": 0.1639004149377593,
+      "far": 0.009904965868023023,
+      "eer_descriptive": 0.04979253112033195,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.9423237489423938,
+      "margin_mean_valid": 0.06116579840056193,
+      "threshold": 0.9051782975973467,
+      "variant": "fixed_four_way_query_normalized"
+    }
+  ],
+  "test_inference": false,
+  "minimum_area": null
+}

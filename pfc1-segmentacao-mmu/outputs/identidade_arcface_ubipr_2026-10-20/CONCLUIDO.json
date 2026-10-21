@@ -1,0 +1,10 @@
+{
+  "status": "training_completed_validation_selected_no_test_inference",
+  "best_epoch": 15,
+  "best_validation_tar": 0.5622406639004149,
+  "best_validation_rank1": 0.6576763485477178,
+  "epochs_completed": 23,
+  "checkpoint_sha256": "6060c164eada674712127830b2d188a9e6b4ed210f7b8d595e58fdfeb10387fc",
+  "elapsed_seconds": 371.655999999959,
+  "technical_smoke": false
+}

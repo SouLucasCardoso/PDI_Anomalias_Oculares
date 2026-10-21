@@ -1,0 +1,7 @@
+{
+  "cache": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\cache_resnet50_nativo224",
+  "empty_train": 71,
+  "empty_validation": 6,
+  "same_validity_as128": true,
+  "from_originals": true
+}

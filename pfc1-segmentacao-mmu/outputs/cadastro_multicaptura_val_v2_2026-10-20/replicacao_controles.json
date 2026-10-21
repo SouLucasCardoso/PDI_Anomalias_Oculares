@@ -1,0 +1,14 @@
+[
+  {
+    "variant": "neural_reference_first",
+    "maximum_absolute_score_difference": 2.980232238769531e-07,
+    "absolute_tolerance": 1e-06,
+    "decisions_and_validity_identical": true
+  },
+  {
+    "variant": "hdbif_reference_first",
+    "maximum_absolute_score_difference": 0.0,
+    "absolute_tolerance": 1e-12,
+    "decisions_and_validity_identical": true
+  }
+]

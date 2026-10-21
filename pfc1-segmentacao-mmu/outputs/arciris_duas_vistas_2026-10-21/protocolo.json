@@ -1,0 +1,10 @@
+{
+  "registered_utc": "2026-10-21T04:18:56.036305+00:00",
+  "method": "Mean of two pre-normalization fusion logits: identical seven components retained at1/8 each, ArcIris red/CLAHE score z-values averaged into remaining1/8. Fixed equal views of one original photo; no query label selection or weight search.",
+  "scope": "Repeated development validation, supplied side16 candidates, all482queries and4 failures; same-side15impostors, FMR<=1%; external pretraining population unknown",
+  "source_sha256": {
+    "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\arciris_polar_2026-10-21\\scores_fusion8.npz": "351d139a2690db18dde7b9b3447287809ceeb76eca7ba1be86e7a45125d69f13",
+    "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\arciris_red_2026-10-21\\scores_fusion8.npz": "87b826f98699570c2c44506a9eb9be4905a8d0d822f8cda6cc333ebc72bf1b0b"
+  },
+  "script_sha256": "7b386933c890cd4be36cd01949a5ad596f2113174106dde9df4fcc20efc375a3"
+}

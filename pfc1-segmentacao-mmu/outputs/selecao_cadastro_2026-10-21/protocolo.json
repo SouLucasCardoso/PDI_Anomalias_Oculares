@@ -1,0 +1,22 @@
+{
+  "registered_utc": "2026-10-21T03:46:32.805157+00:00",
+  "scope": "Authorized side-informed UBIPr, single query; development validation only",
+  "features": "Frozen oldRGB/polar/ResNet50 features from existing concatenated cache, split and L2 per component; ConvNeXt independently re-extracted with same preprocessing; previous spatial scores unchanged",
+  "quality": "Enrollment only: variance of grayscale Laplacian divided by grayscale variance+1, excluding black exterior, saturated>=245 and dark<5, eroded3x3; multiply native-width/(native-width+128). Own heuristic, not ISO iris quality.",
+  "selection": "Per eye choose3 highest-score valid S1 photos, deterministic filename tie; use fewer if fewer valid, retain eye. No query image used to select references or tune quality parameters.",
+  "variants": "Own-extraction all-enrollment top3 fusion control; quality-selected3 mean fusion; both with/without predefined per-query normalization. Equal5 components; no weights/quality parameter search.",
+  "calibration": "Only15same-side impostors per query, empirical validation FMR<=1%; all482 queries retained, no quality filtering of queries",
+  "source_sha256": {
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\classificador_cadastro_2026-10-20\\features.npz": "7f8875a06e5af2280ace46a15f6fa6d316bd35f8763a0c538a9173f6f3fb05b2",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\convnext_contraste_2026-10-20\\melhor_modelo.pt": "a03400e62df6282e4532dce75fabd6e12d06678a8de7dc3e55a2a274c60f1529",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\cache_encoder_polar_2026-10-20\\val_auditoria.json": "8716ed77a49b9dfc678f43fa0833c428307cd63b06087ea25c466abdb97a3c56"
+  },
+  "script_sha256": "6a89b7a9b640800276fc3d03cdd86f3ca625f62130e87a241d0ee0734a60e2f9",
+  "dependencies_sha256": {
+    "qualidade_cadastro.py": "7bbc490aa034d4e04487116749a496117fccdf975d7f09f4ccc4022b7bef098b",
+    "reconhecedor_convnext.py": "7e121f99323b2c4c9d988621969fc4cd37d207a796a43994a949f95841554230",
+    "normalizar_consulta.py": "8e105dbdb11ba547420fdb171403bc4cebb07fd9358a1e59c22e37b0f0a8e3a6",
+    "validar_metrica_intra_classe.py": "711209909da5c594846ac28b6e59e2829e670a3966244cd8c920309864cdf441",
+    "comparador_hdbif_lote.py": "0c6c086a348a17d900e17b4031dc0a2f06ab3721f9f7a53df26c382585882464"
+  }
+}

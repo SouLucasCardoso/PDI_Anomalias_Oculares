@@ -1,0 +1,40 @@
+{
+  "registered_utc": "2026-10-20T22:35:39.691465+00:00",
+  "scope": "Training identities only, automatic validation top3 selection; no test or occlusion inference; exploratory after repeated validation development",
+  "technical_smoke": false,
+  "seed": 43,
+  "initialization": "Previous identity checkpoint, including classification head; train class ordering unchanged",
+  "masks": "Frozen U-Net original RGB320x240/255; iris class1 nearest resize original; no reference mask in crop preparation",
+  "crop": "Predicted iris black exterior, bbox margin25%, bilinear128x128, ImageNet normalization",
+  "augmentation": "Train-only rotation +/-10 degrees, brightness/contrast +/-15%; no synthetic occlusion",
+  "optimizer": "AdamW encoder lr3e-5, angular head lr1e-4, weight_decay1e-4; cosine schedule20epochs; clip5",
+  "max_epochs": 20,
+  "patience": 6,
+  "batch_size": 64,
+  "margin": 0.3,
+  "scale": 30,
+  "validation": "All eligible session1 captures; mean top3 valid similarities per eye; all session2 queries; validation empirical FMR<=1% recalibrated every checkpoint",
+  "selection": "Baseline epoch0 included; maximum validation TAR, ties Rank1; keep baseline if adaptation never improves; no fresh independent confirmation",
+  "failure_handling": "Exclude empty predicted crops in train only; retain every validation query/eye",
+  "counts": {
+    "train_images": 7716,
+    "train_classes": 366,
+    "train_people": 183,
+    "val_images": 962,
+    "val_queries": 482,
+    "val_people": 16
+  },
+  "inputs_sha256": {
+    "outputs\\identidade_arcface_ubipr_2026-10-20\\melhor_modelo.pt": "6060c164eada674712127830b2d188a9e6b4ed210f7b8d595e58fdfeb10387fc",
+    "outputs\\cnn\\ubipr_retreino_2026-10-20\\melhor_modelo.pt": "2bcfc269ffc9562ca8cf0956998faf1e22641587cd60f7059b3cec3dd0f4093d",
+    "outputs\\cnn\\ubipr_retreino_2026-10-20\\manifesto.json": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de"
+  },
+  "script_sha256": "53657d5ea79cf63e0c992c4b230bddeb840dafed3b102bcb36f9a08f409902cf",
+  "dependencies_sha256": {
+    "treinar_identidade_iris.py": "a8f6dc53ace011c968774f9f3f494a085f0c14af2a9ab04853952553c580b0a5",
+    "treinar_segmentacao_ubipr.py": "a427b82c9879a2320a5d6544c89f96806ab74b12566cd3237650c62c54123431",
+    "avaliar_robustez_reconhecimento.py": "e6d0b8d8eb78dc2e86ed3f73084cd9fb5d83d1afee27f73ca0ffbee1a5947f95",
+    "avaliar_dinov3_ubipr.py": "781d5903f7bccd515cb0d450b05331709cf88460d497d61f2cf95083ea546ac8",
+    "comparador_hdbif_lote.py": "0c6c086a348a17d900e17b4031dc0a2f06ab3721f9f7a53df26c382585882464"
+  }
+}

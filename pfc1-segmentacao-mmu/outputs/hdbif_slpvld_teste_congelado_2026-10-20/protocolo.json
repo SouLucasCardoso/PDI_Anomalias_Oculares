@@ -1,0 +1,61 @@
+{
+  "task": "Held-out clinical test, original captures; no minimum-area estimate",
+  "manifest_sha256": "b793ea8fc596a34fac8b588e87afc645ab58d7d10b3855b0b7dbeeb09e5bf720",
+  "script_sha256": "d3d0483cf9113d6f331c89fa71585883329e944031d50f49742301cc4a72d98e",
+  "config": {
+    "cuda": false,
+    "polar_height": 64,
+    "polar_width": 512,
+    "recog_filter_size": "17",
+    "recog_num_filters": "5",
+    "recog_max_shift": 16,
+    "recog_bsif_dir": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\modelos\\cvrl_hdbif\\filters_pt\\finetuned_bsif_eyetracker_data/",
+    "threshold_frac_avg_bits": 0,
+    "score_norm": false,
+    "mask_model_path": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\modelos\\cvrl_hdbif\\models\\nestedsharedatrousresunet-006-0.028214-maskIoU-0.938446.pth",
+    "circle_model_path": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\modelos\\cvrl_hdbif\\models\\resnet18-027-0.008222-maskIoU-0.967159.pth"
+  },
+  "weights": {
+    "files": [
+      {
+        "path": "filters_pt/finetuned_bsif_eyetracker_data/ICAtextureFilters_17x17_5bit.pt",
+        "drive_id": "1oqajM9kc_jUril2Y4OCuIB1xook-QAeM",
+        "bytes": 13380,
+        "sha256": "1d61b594905e38bacb6d2a1a104d256e2ac4222144bea022d470ee3574ea2a80"
+      },
+      {
+        "path": "models/nestedsharedatrousresunet-006-0.028214-maskIoU-0.938446.pth",
+        "drive_id": "1InBg6kI2VF8tljg6k4of0sF1_uBnuOXN",
+        "bytes": 20693985,
+        "sha256": "76b0fb5f70390c70b72d30e90ecf5711f2d6624db4e885d15b142cdf98470965"
+      },
+      {
+        "path": "models/resnet18-027-0.008222-maskIoU-0.967159.pth",
+        "drive_id": "19ZI9QehiGsEjLabN7KTe2WQmf6qFI6hO",
+        "bytes": 44818646,
+        "sha256": "89fcd3879d78b44e3a6bb3baec40bf7ec902b249e6b794a88e3af8aa229e2815"
+      }
+    ],
+    "note": "Circle checkpoint 027 is supplied in author Drive; source cfg names 1543, which was absent. Explicit override required; not an exact reproduction of cfg."
+  },
+  "source_revision": "4a535e4a9a0728e4428c25f743f6d59098ae397f",
+  "gallery": "First image on earliest date per eye; queries all strictly later dates",
+  "identity": "anonymous subject + side; metadata ambiguities excluded upstream",
+  "matcher": "FFT masked Hamming, +/-16 columns, no score normalization; equivalence verified against official matcher on all validation pairs",
+  "matcher_sha256": "a360c8330f53c3d02a5e9f913105a908bea0d2ad9ffbd7a52734226bafd6008a",
+  "selected_variant": "default_raw",
+  "selection_result_sha256": "248238314324bbd8674bdb0523ba0afb3cb9cf98fa20dfc7e3aacf6d6483cd43",
+  "validation_result_sha256": "519cbf8bab03768723c3c8702e989f53981f0e7afe3b163153b5df18b396c998",
+  "frozen_threshold": 0.6546885168313318,
+  "failure_handling": "Retain all eye identities and queries; invalid enrollment or comparison score -2; failed queries reject",
+  "quality_checks": "Finite circles, positive pupil radius smaller than iris radius; nonempty normalized mask",
+  "calibration": "Frozen validation threshold, no recalibration or hyperparameter selection on test",
+  "mask": "CVRL predicted mask, not clinical ground truth",
+  "counts": {
+    "images": 495,
+    "people": 107,
+    "eyes": 176
+  },
+  "signature": "0b4e3fabe8e2ca85a2976558d620b21f2269377271ca86ff22c78cf3600e611f",
+  "registered_utc": "2026-10-20T16:27:32.391589+00:00"
+}

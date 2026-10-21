@@ -1,0 +1,38 @@
+{
+  "registered_utc": "2026-10-20T19:24:47.324986+00:00",
+  "status": "registered_before_recognition_no_features_or_scores_examined",
+  "source": "https://data.mendeley.com/datasets/6wv33nbcvv/2",
+  "license": "CC BY 4.0",
+  "source_manifest_sha256": "8a7a4b93c0eeb9cc94e53e197fe5ac2d3f9e554a7f46ec7c24ed5ed5b45820c5",
+  "manifest_sha256": "1985d48e16700ce144ef81b00e30c5c9dee43601fda291e4c49de881f6d88c83",
+  "script_sha256": "5c8ed488d86985aacfcd8d9cc208cbd8c1e69d3ed90473afca16f8ea88cd3d21",
+  "identity": "published patient folder + DER/IZQ eye side",
+  "split": "25% patients calibration, remaining test, shuffled seed42; both eyes same group",
+  "gallery": "First lexicographic filename per eye; remaining distinct photographs queries",
+  "threshold": "Frozen model; empirical FMR<=1% on calibration only, then fixed for test",
+  "model_selection": "New ResNet18 angular-margin encoder selected on UBIPr validation only; no Nuclear model selection",
+  "segmentation": "Frozen pretrained CVRL mask inference; predicted masks not reference annotations",
+  "missing_masks": "Keep failed images and enrollments in denominators, explicit rejection",
+  "area_follow_up": "Only after baseline; preserved predicted-mask pixels must be labeled estimated area, not true disease extent",
+  "clinical_limitations": [
+    "Acquisition dates/sessions unestablished; no longitudinal or disease-progression claims",
+    "No established healthy controls; no diagnosis from missing NC grade",
+    "Published identities assumed; independence beyond released identifiers unverified",
+    "Reference segmentation absent; masks require quality audit",
+    "Supplementary grades apply only to matched selected images, not all captures of that eye"
+  ],
+  "counts": {
+    "calibration": {
+      "images": 342,
+      "patients": 29,
+      "eyes": 56,
+      "queries": 286
+    },
+    "test": {
+      "images": 978,
+      "patients": 86,
+      "eyes": 167,
+      "queries": 811
+    }
+  }
+}

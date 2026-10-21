@@ -1,0 +1,74 @@
+{
+  "registered_utc": "2026-10-21T03:38:31.916526+00:00",
+  "architecture": "dino6_polar_spatial256",
+  "backbone_config": {
+    "architectures": [
+      "DINOv3ViTModel"
+    ],
+    "attention_dropout": 0.0,
+    "drop_path_rate": 0.0,
+    "hidden_act": "gelu",
+    "hidden_size": 1024,
+    "image_size": 224,
+    "initializer_range": 0.02,
+    "intermediate_size": 4096,
+    "key_bias": false,
+    "layer_norm_eps": 1e-05,
+    "layerscale_value": 1.0,
+    "mlp_bias": true,
+    "model_type": "dinov3_vit",
+    "num_attention_heads": 16,
+    "num_channels": 3,
+    "num_hidden_layers": 6,
+    "num_register_tokens": 4,
+    "patch_size": 16,
+    "pos_embed_jitter": null,
+    "pos_embed_rescale": 2.0,
+    "pos_embed_shift": null,
+    "proj_bias": true,
+    "query_bias": true,
+    "rope_theta": 100.0,
+    "torch_dtype": "float32",
+    "transformers_version": "4.56.0.dev0",
+    "use_gated_mlp": false,
+    "value_bias": true
+  },
+  "scope": "UBIPr primary, single query photo, authorized correct side input. Train identities only; repeated development validation, no test or occlusion inference",
+  "initialization": "First6 layers of cachedfacebook/dinov3-vitl16-pretrain-lvd1689m@ea8dc2863c51be0a264bab82070e3e8836b02d51; original final norm Identity; fresh tokenLayerNorm1024/Linear64/GELU and spatial flatten8192/Dropout0.2/Linear256/BN/L2. CLS and4registers excluded from output.",
+  "preprocessing": "Previously audited automatic polar cache64x512, ImageNet normalization; train-only cyclic angular roll +/-32 and brightness/contrast15%; no square resize or generated texture",
+  "sampling": "16 training eyes x4 captures,4rounds/epoch;2S1+2S2 if possible; all valid training eyes, no validation identity during fitting",
+  "loss": "Angular CE+0.2 supervised contrastive temperature0.1; margin warmup0,0.1,0.2 per2epochs then0.3, scale30",
+  "optimizer": "AdamW backbone2e-5, new token/projection2e-4, angularhead5e-4, wd1e-4, cosine30, clip5, BF16 forward FP32 losses and parameters",
+  "seed": 49,
+  "max_epochs": 30,
+  "patience": 8,
+  "batch_size": 64,
+  "selection": "Side-informed16-eye TAR at validation empirical FMR<=1% over15same-side impostors, tie Rank1; keep full32 scores as control",
+  "counts": {
+    "train_images": 7716,
+    "valid_train": 7645,
+    "train_people": 183,
+    "train_classes": 366,
+    "val_queries": 482
+  },
+  "limitations": "Custom6-layer prefix, not official final DINOv3; pretraining web identities not individually audited. Repeated development not independent confirmation.",
+  "model_files_sha256": {
+    "config.json": "135ecd23e34a70b6fbed8b083fdecb319b7e3a54e3d849258bbe4ddcf1783bb5",
+    "model.safetensors": "dcb2e45127cccbf1601e5f42fef165eea275c8e5213197e8dcf3f48822718179",
+    "preprocessor_config.json": "960c41d1f3a7778b936365769a2d90550b318a6c0a53a0296957adacfe5e0dd7"
+  },
+  "cache_sha256": {
+    "train_polar.npy": "32117bc51e2038cc767c8923ca3071befeec4dec26a1967a3c287ca3ff6e502d",
+    "train_valid.npy": "1e0b1e4a32cacc8d5b391165da8e75152d96a7cbeef23158e181c67a7d7781b1",
+    "val_polar.npy": "0865928ce611f052c23a3d7e4b4730e2d4cd17cc751dc8a03f3e48ead232d1c3",
+    "val_valid.npy": "abc8f69c227b1095a3fe34fa2be0d9fc4750fdf58fc135562a008a74a1ff70f5"
+  },
+  "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+  "script_sha256": "cefe34fabc85cca798d16bb6cde7c674a55d5bdb5fa09f010177c344e5c46810",
+  "dependencies_sha256": {
+    "reconhecedor_transformer_polar.py": "967ca7a7a8b35fe267cd8aff7374e38d04727b00676f644b139e96dd36798e1c",
+    "reconhecedor_resnet50.py": "2416940a33a01b0d745a9bb6609f7f2e5ebbb16a77dfaab6635abab3eefe6b2f",
+    "treinar_encoder_polar.py": "343c03694620e12c8cc005916bb17b6a94ba8650d92086f50c414e4b1d377b13",
+    "validar_lateralidade_informada.py": "438c67e9f50e4a0bbcaf666e0ffaff59119f1b183b61442e698ede274bfb1247"
+  }
+}

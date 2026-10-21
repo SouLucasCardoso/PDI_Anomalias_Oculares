@@ -1,0 +1,21 @@
+{
+  "registered_utc": "2026-10-21T03:32:58.810672+00:00",
+  "scope": "Authorized side-informed UBIPr, one query; development validation only",
+  "method": "Per-component same-side validation impostor z-score; softmax over16 enrolled eyes for that single query, fixed temperature1; arithmetic mean of probabilities with equal model weights; no weight/temperature search",
+  "variants": "Equal probability fusion, same with predefined per-query logit normalization; five components, six when native224 completed",
+  "failure_handling": "All482 queries retained, common available candidate comparisons only; require every component query valid",
+  "calibration": "Each threshold empirical validation FMR<=1%,15 admissible same-side impostors per query; repeated development not independent confirmation",
+  "source_sha256": {
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\identidade_automatica_2026-10-20\\scores_baseline.npz": "3bc928fce0e6c8c28a4ca1c7c08451d9f300f9d86aca90bc2ab2a3365dd05f7e",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\encoder_polar_2026-10-20\\scores_melhor.npz": "879522fcdb93d6af62c5442a77f5709fc60aadfb57303ba1d8cf9014d8c92226",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\espacial_polar_val_2026-10-20\\scores_shift0.npz": "e0ebbe59a5cb2c289fb6fd0259f3ee108a82d1543b35c4218ed49df6d67120fa",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\resnet50_sessoes_2026-10-20\\scores_melhor.npz": "df82e998a7dfffd043bc8334adc336908758b6a0e2c72ec583f1c68bfd05ff00",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\convnext_contraste_2026-10-20\\scores_melhor.npz": "d425b604040aa0a59d8c2971585219cf2264c9e54cac15b49c6deec01fcafd26"
+  },
+  "script_sha256": "f17a73433d5cb77578bea7e9ae3a3146bb000ce902e1d01524d3357ec1abd062",
+  "dependencies_sha256": {
+    "normalizar_consulta.py": "8e105dbdb11ba547420fdb171403bc4cebb07fd9358a1e59c22e37b0f0a8e3a6",
+    "validar_lateralidade_informada.py": "438c67e9f50e4a0bbcaf666e0ffaff59119f1b183b61442e698ede274bfb1247",
+    "validar_metrica_intra_classe.py": "711209909da5c594846ac28b6e59e2829e670a3966244cd8c920309864cdf441"
+  }
+}

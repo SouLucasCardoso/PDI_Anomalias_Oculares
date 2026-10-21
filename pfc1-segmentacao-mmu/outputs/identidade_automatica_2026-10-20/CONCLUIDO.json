@@ -1,0 +1,26 @@
+{
+  "status": "automatic_finetuning_completed_validation_selected",
+  "technical_smoke": false,
+  "best_epoch": 0,
+  "best_validation_tar": 0.5933609958506224,
+  "best_validation_rank1": 0.6680497925311203,
+  "epochs_completed": 6,
+  "baseline": {
+    "epoch": 0,
+    "train_loss": null,
+    "rank1": 0.6680497925311203,
+    "tar": 0.5933609958506224,
+    "fnmr": 0.4066390041493776,
+    "far": 0.009904965868023023,
+    "eer_descriptive": 0.09386293668852898,
+    "extraction_failures": 4,
+    "queries": 482,
+    "genuine_mean_valid": 0.46177166018951976,
+    "margin_mean_valid": 0.07822813739742944,
+    "threshold": 0.42831171552340197,
+    "joint_success": 0.5477178423236515
+  },
+  "checkpoint_sha256": "7c03b4c7ef4c54e5f86e58eb550ffc124fa11384fe5c3f5b947d1041178e706d",
+  "elapsed_training_seconds": 86.51600000000326,
+  "test_inference": false
+}

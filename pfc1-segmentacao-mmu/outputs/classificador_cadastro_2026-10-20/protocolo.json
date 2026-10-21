@@ -1,0 +1,21 @@
+{
+  "registered_utc": "2026-10-21T02:50:38.180359+00:00",
+  "scope": "UBIPr, one photo per query, learned enrollment classifier; repeated validation only",
+  "features": "Frozen old RGB256 + old polar256 + new ResNet50RGB256, concatenated and L2; no query label used to learn features or classifier",
+  "fitting": "Valid session1 enrollment captures only; centered features/one-hot targets, ridge alpha1 fixed, dual solution; session2 queries never fit the classifier",
+  "variants": "Concatenated normalized class centroid cosine control; ridge classifier; ridge with predefined per-query normalization",
+  "calibration": "Per-variant validation empirical FMR<=1%; validation repeatedly used, no independent confirmation",
+  "failure_handling": "Require all image components valid, retain all482 queries and32eyes; no valid eye enrollment floor-2",
+  "checkpoint_sha256": {
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\identidade_automatica_2026-10-20\\melhor_modelo.pt": "7c03b4c7ef4c54e5f86e58eb550ffc124fa11384fe5c3f5b947d1041178e706d",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\encoder_polar_2026-10-20\\melhor_modelo.pt": "db93dfcca33b8a77cd3bfbaa66f07d1efae2e976414d67748ccf5eff4a5ebe5c",
+    "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\resnet50_sessoes_2026-10-20\\melhor_modelo.pt": "699b8236211da2fd43b104f157b6cc3835bd5d89a01a74a5b75ce4261bf35e24"
+  },
+  "script_sha256": "6d8db0aee348651c2bd0bb592f35998c62eb69af41d473782760890250222b55",
+  "dependencies_sha256": {
+    "classificador_cadastro.py": "ffb7d4ba517a5fbd522fbe601d32c8bcd3adfb289f380e98f646121036c77c48",
+    "reconhecedor_resnet50.py": "2416940a33a01b0d745a9bb6609f7f2e5ebbb16a77dfaab6635abab3eefe6b2f",
+    "normalizar_consulta.py": "8e105dbdb11ba547420fdb171403bc4cebb07fd9358a1e59c22e37b0f0a8e3a6",
+    "validar_metrica_intra_classe.py": "711209909da5c594846ac28b6e59e2829e670a3966244cd8c920309864cdf441"
+  }
+}

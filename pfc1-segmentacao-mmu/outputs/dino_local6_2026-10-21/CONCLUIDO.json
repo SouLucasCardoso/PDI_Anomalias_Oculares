@@ -1,0 +1,69 @@
+{
+  "status": "DINO6_custom_local_validation_completed",
+  "results": [
+    {
+      "rank1": 0.4087136929460581,
+      "tar": 0.11410788381742738,
+      "fnmr": 0.8858921161825726,
+      "far": 0.009820193637621023,
+      "eer_descriptive": 0.33195020746887965,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.8255390489949342,
+      "margin_mean_valid": -0.0030270454940104254,
+      "threshold": 0.8577711582183839,
+      "variant": "DINO6_local_side"
+    },
+    {
+      "rank1": 0.8526970954356846,
+      "tar": 0.7302904564315352,
+      "fnmr": 0.26970954356846477,
+      "far": 0.009820193637621023,
+      "eer_descriptive": 0.08091286307053942,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.8952609699989575,
+      "margin_mean_valid": 0.11451904115240778,
+      "threshold": 0.8707118764336349,
+      "variant": "DINO6_equal_fusion",
+      "normalization": [
+        {
+          "mean": 0.13122799080806388,
+          "std": 0.10420303589640487
+        },
+        {
+          "mean": 0.123085520293729,
+          "std": 0.07507690295608112
+        },
+        {
+          "mean": 0.11163836653933283,
+          "std": 0.08259312418878491
+        },
+        {
+          "mean": 0.12028174920227375,
+          "std": 0.09432536817462622
+        },
+        {
+          "mean": 0.8067359526993673,
+          "std": 0.039213887325420686
+        }
+      ]
+    },
+    {
+      "rank1": 0.8526970954356846,
+      "tar": 0.8360995850622407,
+      "fnmr": 0.1639004149377593,
+      "far": 0.009820193637621023,
+      "eer_descriptive": 0.04515905947441217,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.9175741891855644,
+      "margin_mean_valid": 0.12730136784074342,
+      "threshold": 0.870884372602208,
+      "variant": "DINO6_fusion_query_normalized"
+    }
+  ],
+  "test_inference": false,
+  "minimum_area": null,
+  "development_90_reached": false
+}

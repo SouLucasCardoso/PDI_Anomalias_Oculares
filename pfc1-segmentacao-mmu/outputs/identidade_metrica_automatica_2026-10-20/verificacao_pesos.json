@@ -1,0 +1,10 @@
+{
+  "identidade_automatica_2026-10-20": {
+    "selected_epoch": 0,
+    "model_tensors_identical_to_original": true
+  },
+  "identidade_metrica_automatica_2026-10-20": {
+    "selected_epoch": 0,
+    "model_tensors_identical_to_original": true
+  }
+}

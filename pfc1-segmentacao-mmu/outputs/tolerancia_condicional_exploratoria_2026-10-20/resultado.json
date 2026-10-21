@@ -1,0 +1,84 @@
+{
+  "status": "exploratory_conditional_analysis_completed",
+  "summaries": [
+    {
+      "model": "DINO_referencia",
+      "orientation": "oclusao_superior",
+      "total_queries": 486,
+      "original_identifiable_queries": 16,
+      "original_joint_identification": 0.03292181069958848,
+      "conditional_median_required_percent": 100.0,
+      "conditional_p25_p75_required_percent": [
+        97.5,
+        100.0
+      ],
+      "warning": "Conditional selected cases, not a global minimum or clinically validated anatomical area"
+    },
+    {
+      "model": "DINO_referencia",
+      "orientation": "oclusao_inferior",
+      "total_queries": 486,
+      "original_identifiable_queries": 16,
+      "original_joint_identification": 0.03292181069958848,
+      "conditional_median_required_percent": 100.0,
+      "conditional_p25_p75_required_percent": [
+        97.5,
+        100.0
+      ],
+      "warning": "Conditional selected cases, not a global minimum or clinically validated anatomical area"
+    },
+    {
+      "model": "DINO_UNet",
+      "orientation": "oclusao_superior",
+      "total_queries": 486,
+      "original_identifiable_queries": 23,
+      "original_joint_identification": 0.047325102880658436,
+      "conditional_median_required_percent": 100.0,
+      "conditional_p25_p75_required_percent": [
+        100.0,
+        100.0
+      ],
+      "warning": "Conditional selected cases, not a global minimum or clinically validated anatomical area"
+    },
+    {
+      "model": "DINO_UNet",
+      "orientation": "oclusao_inferior",
+      "total_queries": 486,
+      "original_identifiable_queries": 23,
+      "original_joint_identification": 0.047325102880658436,
+      "conditional_median_required_percent": 100.0,
+      "conditional_p25_p75_required_percent": [
+        100.0,
+        100.0
+      ],
+      "warning": "Conditional selected cases, not a global minimum or clinically validated anatomical area"
+    },
+    {
+      "model": "Encoder_treinado",
+      "orientation": "oclusao_superior",
+      "total_queries": 486,
+      "original_identifiable_queries": 234,
+      "original_joint_identification": 0.48148148148148145,
+      "conditional_median_required_percent": 95.0,
+      "conditional_p25_p75_required_percent": [
+        80.0,
+        100.0
+      ],
+      "warning": "Conditional selected cases, not a global minimum or clinically validated anatomical area"
+    },
+    {
+      "model": "Encoder_treinado",
+      "orientation": "oclusao_inferior",
+      "total_queries": 486,
+      "original_identifiable_queries": 234,
+      "original_joint_identification": 0.48148148148148145,
+      "conditional_median_required_percent": 100.0,
+      "conditional_p25_p75_required_percent": [
+        90.0,
+        100.0
+      ],
+      "warning": "Conditional selected cases, not a global minimum or clinically validated anatomical area"
+    }
+  ],
+  "interpretation": "Distribution only among queries identifiable in original; other queries remain in exported table as undefined. Primary global minimum remains unchanged."
+}

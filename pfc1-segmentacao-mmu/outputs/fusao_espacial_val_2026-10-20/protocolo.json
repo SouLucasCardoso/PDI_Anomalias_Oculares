@@ -1,0 +1,14 @@
+{
+  "registered_utc": "2026-10-20T23:14:28.662903+00:00",
+  "scope": "Development-only fixed equal three-way fusion; no weight search, test or occlusion scoring",
+  "components": "RGB128 top3, polar64x512 top3, polar layer3 spatial prototype with zero angular shift",
+  "normalization": "Per-component usable validation impostor mean/std, equal1/3 weights then logistic mapping; threshold empirical validation FMR<=1%",
+  "failures": "Require every component query and pair valid, retain all482 queries/32eyes; invalid pairs floor-2",
+  "caveat": "Components correlated; validation already examined, not independent confirmation",
+  "inputs_sha256": {
+    "outputs\\identidade_automatica_2026-10-20\\scores_baseline.npz": "3bc928fce0e6c8c28a4ca1c7c08451d9f300f9d86aca90bc2ab2a3365dd05f7e",
+    "outputs\\encoder_polar_2026-10-20\\scores_melhor.npz": "879522fcdb93d6af62c5442a77f5709fc60aadfb57303ba1d8cf9014d8c92226",
+    "outputs\\espacial_polar_val_2026-10-20\\scores_shift0.npz": "e0ebbe59a5cb2c289fb6fd0259f3ee108a82d1543b35c4218ed49df6d67120fa"
+  },
+  "script_sha256": "9090a534ca421e53cf062c7739263a8bc0b7ff9b91830ddc594ec1daa5326c5c"
+}

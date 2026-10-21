@@ -1,0 +1,33 @@
+{
+  "registered_utc": "2026-10-20T21:51:55.848446+00:00",
+  "scope": "Development validation only; no new test or occlusion scores",
+  "variants": "Neural128 reference/automatic masks x first/max/top3/centroid; HDBIF reference ROI x first/max/top3",
+  "selection": "All session1 images in each eye, sorted lexicographically; all session2 queries; no query-based enrollment selection",
+  "aggregates": "First includes failed first enrollment; max uses best valid comparison; top3 mean up to3 valid comparisons; neural centroid normalizes mean of valid vectors",
+  "mask_automatic": "Frozen retrained U-Net 320x240 RGB/255, nearest resize original, iris class1; reference never replaces predicted mask",
+  "calibration": "Separate validation threshold each variant; empirical impostor FMR<=1%; repeated development comparisons, no independent evidence",
+  "failures": "Retain all eye identities/queries; no-overlap and empty masks reject; no valid gallery for an eye gets score -2",
+  "counts": {
+    "images": 962,
+    "gallery_images": 480,
+    "queries": 482,
+    "eyes": 32,
+    "people": 16
+  },
+  "checkpoint_sha256": {
+    "outputs\\identidade_arcface_ubipr_2026-10-20\\melhor_modelo.pt": "6060c164eada674712127830b2d188a9e6b4ed210f7b8d595e58fdfeb10387fc",
+    "outputs\\cnn\\ubipr_retreino_2026-10-20\\melhor_modelo.pt": "2bcfc269ffc9562ca8cf0956998faf1e22641587cd60f7059b3cec3dd0f4093d"
+  },
+  "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+  "script_sha256": "1c3dd07d4256b3d81a662dd29bf4d1f9c59cff53aefb5f2320511fa5e097fde6",
+  "dependencies_sha256": {
+    "comparador_hdbif_lote.py": "8310285a4724ba7f68c537f46c9b8b0c7f3127842341d7b9dae4edaff1b099e3",
+    "matcher_hdbif_fft.py": "a360c8330f53c3d02a5e9f913105a908bea0d2ad9ffbd7a52734226bafd6008a",
+    "validar_melhoria_normalizacao.py": "65775edd0c7adc7c98392fe35b2734b3b0bf45f947e9a8985e7a11e08b352395",
+    "avaliar_robustez_reconhecimento.py": "e6d0b8d8eb78dc2e86ed3f73084cd9fb5d83d1afee27f73ca0ffbee1a5947f95",
+    "avaliar_dinov3_ubipr.py": "781d5903f7bccd515cb0d450b05331709cf88460d497d61f2cf95083ea546ac8",
+    "treinar_segmentacao_ubipr.py": "a427b82c9879a2320a5d6544c89f96806ab74b12566cd3237650c62c54123431",
+    "treinar_identidade_iris.py": "a8f6dc53ace011c968774f9f3f494a085f0c14af2a9ab04853952553c580b0a5"
+  },
+  "limitations": "Same validation used for checkpoint selection and development; HDBIF reference assisted; public pretraining overlap unknown; full test still required"
+}

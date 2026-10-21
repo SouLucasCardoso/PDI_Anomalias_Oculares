@@ -1,0 +1,11 @@
+{
+  "status": "polar_training_completed_validation_selected",
+  "technical_smoke": false,
+  "best_epoch": 20,
+  "epochs_completed": 28,
+  "best_validation_tar": 0.495850622406639,
+  "best_validation_rank1": 0.5871369294605809,
+  "test_inference": false,
+  "checkpoint_sha256": "db93dfcca33b8a77cd3bfbaa66f07d1efae2e976414d67748ccf5eff4a5ebe5c",
+  "elapsed_training_seconds": 471.7029999999795
+}

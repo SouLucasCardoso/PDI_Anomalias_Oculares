@@ -1,0 +1,20 @@
+{
+  "registered_utc": "2026-10-21T02:47:15.059246+00:00",
+  "scope": "UBIPr, single query, development validation only",
+  "method": "Frozen previous RGB/polar features. For each enrolled eye, mean/std of all other valid-eye enrollment captures scored against its top3 enrollment templates. No genuine cohort pairs and no query labels in normalization fitting.",
+  "variants": "RGB enrollment-cohort normalization, polar enrollment-cohort normalization; equal thirds fusion with previous spatial, with/without predefined per-query normalization",
+  "fusion": "Invert logistic cohort mapping; standardize each component by validation impostor mean/std; equal weights then logistic. No weight/parameter search.",
+  "calibration": "Each threshold validation empirical FMR<=1%; repeatedly examined validation, no independent confirmation",
+  "failure_handling": "All482 queries retained; no valid enrollment cohort raises error instead of removing eye",
+  "checkpoint_sha256": {
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\identidade_automatica_2026-10-20\\melhor_modelo.pt": "7c03b4c7ef4c54e5f86e58eb550ffc124fa11384fe5c3f5b947d1041178e706d",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\encoder_polar_2026-10-20\\melhor_modelo.pt": "db93dfcca33b8a77cd3bfbaa66f07d1efae2e976414d67748ccf5eff4a5ebe5c"
+  },
+  "script_sha256": "eed822cdd23a485a0567278b5421a0c63f54f4fb19c461b0e7f8f609c20777ed",
+  "dependencies_sha256": {
+    "normalizacao_cadastro.py": "f2343b9aa006e93a097d46e5a4e1f2ba27f1223f97528e7dd52b680d378e3e49",
+    "normalizar_consulta.py": "8e105dbdb11ba547420fdb171403bc4cebb07fd9358a1e59c22e37b0f0a8e3a6",
+    "validar_metrica_intra_classe.py": "711209909da5c594846ac28b6e59e2829e670a3966244cd8c920309864cdf441",
+    "comparador_hdbif_lote.py": "0c6c086a348a17d900e17b4031dc0a2f06ab3721f9f7a53df26c382585882464"
+  }
+}

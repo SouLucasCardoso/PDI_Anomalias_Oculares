@@ -1,0 +1,104 @@
+{
+  "purpose": "Conditional area experiment registered before original Nuclear recognition results",
+  "original_protocol_sha256": "035f3c62770f7f961155b705285535ba324eadb6ffc21221dfc976555d210ae5",
+  "manifest_sha256": "1985d48e16700ce144ef81b00e30c5c9dee43601fda291e4c49de881f6d88c83",
+  "script_sha256": "2a94c5933dae7bf358887b18cf6c995f46befa7ca2c0ee8047460eb6356e0e23",
+  "dependencies_sha256": {
+    "avaliar_identidade_nuclear.py": "0adc6fddf698372e0caea1a89bde039bdfd154c6a34383014ad3166d5ef36abe",
+    "treinar_identidade_iris.py": "a8f6dc53ace011c968774f9f3f494a085f0c14af2a9ab04853952553c580b0a5",
+    "avaliar_robustez_reconhecimento.py": "e6d0b8d8eb78dc2e86ed3f73084cd9fb5d83d1afee27f73ca0ffbee1a5947f95",
+    "avaliar_dinov3_ubipr.py": "781d5903f7bccd515cb0d450b05331709cf88460d497d61f2cf95083ea546ac8",
+    "relatar_area_preservada.py": "b5bf3418d1c92e7c4062e3da42dbd20a7542c7e846e9e4b10f45fc94432d4967"
+  },
+  "gate": "Proceed with 18 perturbations only if original held-out test Rank1>=0.90 and TAR>=0.90; otherwise minimum not determined",
+  "conditions": [
+    [
+      "oclusao_superior",
+      10
+    ],
+    [
+      "oclusao_superior",
+      20
+    ],
+    [
+      "oclusao_superior",
+      30
+    ],
+    [
+      "oclusao_superior",
+      40
+    ],
+    [
+      "oclusao_superior",
+      50
+    ],
+    [
+      "oclusao_superior",
+      60
+    ],
+    [
+      "oclusao_superior",
+      70
+    ],
+    [
+      "oclusao_superior",
+      80
+    ],
+    [
+      "oclusao_superior",
+      90
+    ],
+    [
+      "oclusao_inferior",
+      10
+    ],
+    [
+      "oclusao_inferior",
+      20
+    ],
+    [
+      "oclusao_inferior",
+      30
+    ],
+    [
+      "oclusao_inferior",
+      40
+    ],
+    [
+      "oclusao_inferior",
+      50
+    ],
+    [
+      "oclusao_inferior",
+      60
+    ],
+    [
+      "oclusao_inferior",
+      70
+    ],
+    [
+      "oclusao_inferior",
+      80
+    ],
+    [
+      "oclusao_inferior",
+      90
+    ]
+  ],
+  "model": "Final UBIPr-validation-selected encoder, no Nuclear model selection",
+  "segmentation": "Frozen original predicted CVRL mask and bbox; do not resegment occluded images",
+  "area_definition": "Fraction of predicted-mask pixels preserved; estimated region, not anatomical ground truth or disease extent",
+  "occlusion": "Replace exact top/bottom fraction of predicted-mask pixels by gray128 in original640x480 space",
+  "gallery": "Original fixed gallery, same as frozen Nuclear baseline",
+  "threshold": "Frozen Nuclear calibration threshold; report test FMR without recalibration",
+  "minimum_rule": "Smallest tested fraction with both Rank1 and TAR>=90%, requiring all larger fractions to pass, separately by orientation",
+  "uncertainty": "5000 paired query-patient bootstrap replicates, fixed gallery and threshold",
+  "limitations": [
+    "No clinical ground-truth masks",
+    "Dates and independent acquisition sessions not established",
+    "Point-estimate operational criterion, not universal iris minimum",
+    "Synthetic occlusion is not a diagnosis"
+  ],
+  "signature": "27bab345daa4c1a2129af2341abe3c496090ec2ab4342035e64859d576651b4f",
+  "registered_utc": "2026-10-20T19:40:15.902024+00:00"
+}

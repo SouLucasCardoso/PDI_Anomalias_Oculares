@@ -1,0 +1,33 @@
+{
+  "purpose": "Validation-only development ablation; no clinical test evaluation",
+  "variants": [
+    [
+      "default_raw",
+      16,
+      false
+    ],
+    [
+      "default_normalized",
+      16,
+      true
+    ],
+    [
+      "full_rotation_raw",
+      null,
+      false
+    ],
+    [
+      "full_rotation_normalized",
+      null,
+      true
+    ]
+  ],
+  "selection": "Max validation TAR at validation FMR<=1%; ties Rank1, then listed variant order",
+  "script_sha256": "d825c7eca5a8cd44eb785f8fcf2bb8c02c66875f8c3bfab1e732e70d7cbe05eb",
+  "matcher_sha256": "a360c8330f53c3d02a5e9f913105a908bea0d2ad9ffbd7a52734226bafd6008a",
+  "manifest_sha256": "b793ea8fc596a34fac8b588e87afc645ab58d7d10b3855b0b7dbeeb09e5bf720",
+  "baseline_protocol_sha256": "6b20a06e2a8fc6737cafd897becbeca62d690282506d3a692fcd577ad019d5da",
+  "rationale": "Broad capture rotations and variable usable mask area observed on validation; encoding and masks unchanged",
+  "minimum_area_criterion": "Unchanged; this study measures original-image recognition only",
+  "registered_utc": "2026-10-20T16:25:12.014815+00:00"
+}

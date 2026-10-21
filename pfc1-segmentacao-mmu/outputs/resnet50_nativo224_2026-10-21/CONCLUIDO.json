@@ -1,0 +1,10 @@
+{
+  "status": "native224_resnet50_training_completed",
+  "best_epoch": 11,
+  "epochs_completed": 21,
+  "best_validation_tar": 0.5892116182572614,
+  "best_validation_rank1": 0.7717842323651453,
+  "test_inference": false,
+  "checkpoint_sha256": "6530b1227f271789ca7ad8a7d9011d2a9e9ee6fe71a7ce4079d2ed8a75b3388f",
+  "elapsed_training_seconds": 978.5149999999558
+}

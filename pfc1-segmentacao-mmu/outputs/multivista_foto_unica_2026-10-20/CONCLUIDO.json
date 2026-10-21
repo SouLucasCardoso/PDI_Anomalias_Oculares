@@ -1,0 +1,73 @@
+{
+  "status": "single_photo_multiview_validation_completed",
+  "results": [
+    {
+      "rank1": 0.6742738589211619,
+      "tar": 0.6016597510373444,
+      "fnmr": 0.39834024896265563,
+      "far": 0.009904965868023023,
+      "eer_descriptive": 0.09764422433409183,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.48207181511314345,
+      "margin_mean_valid": 0.08309320382243919,
+      "threshold": 0.44808713595072436,
+      "variant": "rgb_tta_top3"
+    },
+    {
+      "rank1": 0.5954356846473029,
+      "tar": 0.4730290456431535,
+      "fnmr": 0.5269709543568465,
+      "far": 0.009904965868023023,
+      "eer_descriptive": 0.13465399544906975,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.3206501979967956,
+      "margin_mean_valid": 0.029431669018133915,
+      "threshold": 0.3268964489301046,
+      "variant": "polar_tta_top3"
+    },
+    {
+      "rank1": 0.7759336099585062,
+      "tar": 0.6701244813278008,
+      "fnmr": 0.3298755186721992,
+      "far": 0.009904965868023023,
+      "eer_descriptive": 0.09336099585062241,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.8904964341510836,
+      "margin_mean_valid": 0.05703512395661462,
+      "threshold": 0.8813555485412692,
+      "variant": "fixed_three_way",
+      "normalization": [
+        {
+          "mean": 0.1302792544174753,
+          "std": 0.10602641747334483
+        },
+        {
+          "mean": 0.11624739606951462,
+          "std": 0.07726912486104907
+        },
+        {
+          "mean": 0.6217880028935157,
+          "std": 0.048889510591868704
+        }
+      ]
+    },
+    {
+      "rank1": 0.7759336099585062,
+      "tar": 0.7904564315352697,
+      "fnmr": 0.20954356846473032,
+      "far": 0.009904965868023023,
+      "eer_descriptive": 0.06431535269709543,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.9281308470279456,
+      "margin_mean_valid": 0.05540666547558634,
+      "threshold": 0.8984807352353581,
+      "variant": "fixed_three_way_query_normalized"
+    }
+  ],
+  "test_inference": false,
+  "minimum_area": null
+}

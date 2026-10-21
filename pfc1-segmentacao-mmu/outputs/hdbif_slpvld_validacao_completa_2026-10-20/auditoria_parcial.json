@@ -1,0 +1,3232 @@
+[
+  {
+    "image": "P0005_OD20241206.JPG",
+    "subject": "P0005",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.841094970703125,
+    "pupil_circle": [
+      270.20606994628906,
+      259.2148017883301,
+      48.396620750427246
+    ],
+    "iris_circle": [
+      266.1268997192383,
+      265.1521110534668,
+      147.70606756210327
+    ]
+  },
+  {
+    "image": "P0005_OD20250117.JPG",
+    "subject": "P0005",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.887451171875,
+    "pupil_circle": [
+      296.2006187438965,
+      187.76793479919434,
+      37.020230293273926
+    ],
+    "iris_circle": [
+      291.4021110534668,
+      196.38562202453613,
+      145.45674324035645
+    ]
+  },
+  {
+    "image": "P0005_OS20241206.JPG",
+    "subject": "P0005",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.91162109375,
+    "pupil_circle": [
+      365.20240783691406,
+      211.90521240234375,
+      56.33676528930665
+    ],
+    "iris_circle": [
+      372.34424591064453,
+      220.31521797180176,
+      143.99282932281494
+    ]
+  },
+  {
+    "image": "P0005_OS20250117.JPG",
+    "subject": "P0005",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.8597412109375,
+    "pupil_circle": [
+      380.97164154052734,
+      156.4210081100464,
+      39.80713367462159
+    ],
+    "iris_circle": [
+      389.17430877685547,
+      165.43270111083984,
+      144.56255435943604
+    ]
+  },
+  {
+    "image": "P0109_OD20250411.JPG",
+    "subject": "P0109",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.943328857421875,
+    "pupil_circle": [
+      251.8041229248047,
+      232.9574203491211,
+      29.67660427093506
+    ],
+    "iris_circle": [
+      254.47385787963867,
+      243.65469932556152,
+      127.33210325241089
+    ]
+  },
+  {
+    "image": "P0109_OD20250425.JPG",
+    "subject": "P0109",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.81353759765625,
+    "pupil_circle": [
+      324.9466323852539,
+      275.28050422668457,
+      32.8516960144043
+    ],
+    "iris_circle": [
+      322.01587677001953,
+      287.0895767211914,
+      139.85191583633423
+    ]
+  },
+  {
+    "image": "P0109_OS20250411.JPG",
+    "subject": "P0109",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.934173583984375,
+    "pupil_circle": [
+      372.4759292602539,
+      231.01887702941895,
+      29.133963584899902
+    ],
+    "iris_circle": [
+      374.4860076904297,
+      239.75958824157715,
+      134.6916913986206
+    ]
+  },
+  {
+    "image": "P0109_OS20250425.JPG",
+    "subject": "P0109",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.908843994140625,
+    "pupil_circle": [
+      329.9263381958008,
+      278.6177444458008,
+      30.023274421691898
+    ],
+    "iris_circle": [
+      330.44578552246094,
+      285.55978775024414,
+      135.87188720703125
+    ]
+  },
+  {
+    "image": "P0127_OD20241216.JPG",
+    "subject": "P0127",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.890716552734375,
+    "pupil_circle": [
+      370.4127502441406,
+      262.92720794677734,
+      55.98096370697022
+    ],
+    "iris_circle": [
+      361.6365432739258,
+      265.65032958984375,
+      146.05718851089478
+    ]
+  },
+  {
+    "image": "P0127_OD20250123.JPG",
+    "subject": "P0127",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.90533447265625,
+    "pupil_circle": [
+      297.87378311157227,
+      202.93593406677246,
+      38.73944282531738
+    ],
+    "iris_circle": [
+      287.1215629577637,
+      207.09677696228027,
+      141.1955714225769
+    ]
+  },
+  {
+    "image": "P0127_OS20241216.JPG",
+    "subject": "P0127",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.8880615234375,
+    "pupil_circle": [
+      313.8009452819824,
+      232.07018852233887,
+      53.23463439941406
+    ],
+    "iris_circle": [
+      321.67816162109375,
+      239.25713539123535,
+      143.00944805145264
+    ]
+  },
+  {
+    "image": "P0127_OS20250123.JPG",
+    "subject": "P0127",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.845367431640625,
+    "pupil_circle": [
+      301.9217300415039,
+      189.21435356140137,
+      38.9762544631958
+    ],
+    "iris_circle": [
+      313.696231842041,
+      196.03928089141846,
+      144.92675065994263
+    ]
+  },
+  {
+    "image": "P0207_OS20250522.JPG",
+    "subject": "P0207",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.758453369140625,
+    "pupil_circle": [
+      208.04508209228516,
+      219.89665031433105,
+      62.54902839660645
+    ],
+    "iris_circle": [
+      205.40184020996094,
+      213.8482904434204,
+      115.04150629043579
+    ]
+  },
+  {
+    "image": "P0207_OS20250607.JPG",
+    "subject": "P0207",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.32574462890625,
+    "pupil_circle": [
+      405.50037384033203,
+      302.89469718933105,
+      61.93902015686036
+    ],
+    "iris_circle": [
+      394.07238006591797,
+      300.2058792114258,
+      115.04331827163696
+    ]
+  },
+  {
+    "image": "P0225_OD20241219.JPG",
+    "subject": "P0225",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.68072509765625,
+    "pupil_circle": [
+      319.3308448791504,
+      239.03197288513184,
+      83.30981254577637
+    ],
+    "iris_circle": [
+      319.03295516967773,
+      243.81834983825684,
+      130.57235479354858
+    ]
+  },
+  {
+    "image": "P0225_OD20250102.JPG",
+    "subject": "P0225",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.6512451171875,
+    "pupil_circle": [
+      361.52740478515625,
+      230.0361156463623,
+      84.01865005493164
+    ],
+    "iris_circle": [
+      352.5039291381836,
+      234.00710105895996,
+      124.69375133514404
+    ]
+  },
+  {
+    "image": "P0225_OD20250116.JPG",
+    "subject": "P0225",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.479217529296875,
+    "pupil_circle": [
+      296.53186798095703,
+      200.2107810974121,
+      84.89751815795898
+    ],
+    "iris_circle": [
+      293.9033317565918,
+      203.31250190734863,
+      139.04333114624023
+    ]
+  },
+  {
+    "image": "P0270_OD20250102.JPG",
+    "subject": "P0270",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.82891845703125,
+    "pupil_circle": [
+      283.75635147094727,
+      232.05368041992188,
+      93.42310905456543
+    ],
+    "iris_circle": [
+      275.1034164428711,
+      228.26239585876465,
+      151.4699101448059
+    ]
+  },
+  {
+    "image": "P0270_OD20250320.JPG",
+    "subject": "P0270",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.78411865234375,
+    "pupil_circle": [
+      413.69823455810547,
+      193.37226390838623,
+      58.776817321777344
+    ],
+    "iris_circle": [
+      411.93023681640625,
+      195.57337760925293,
+      147.12496995925903
+    ]
+  },
+  {
+    "image": "P0270_OS20250102.JPG",
+    "subject": "P0270",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.9322509765625,
+    "pupil_circle": [
+      243.25035095214844,
+      205.0116491317749,
+      34.92426872253418
+    ],
+    "iris_circle": [
+      250.93170166015625,
+      212.7915859222412,
+      143.41672658920288
+    ]
+  },
+  {
+    "image": "P0270_OS20250320.JPG",
+    "subject": "P0270",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.854583740234375,
+    "pupil_circle": [
+      312.28187561035156,
+      228.50186347961426,
+      41.93780899047852
+    ],
+    "iris_circle": [
+      320.03292083740234,
+      235.80004692077637,
+      152.0775556564331
+    ]
+  },
+  {
+    "image": "P0271_OD20250419.JPG",
+    "subject": "P0271",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.857696533203125,
+    "pupil_circle": [
+      313.20547103881836,
+      262.17432975769043,
+      52.692441940307624
+    ],
+    "iris_circle": [
+      305.858211517334,
+      256.42547607421875,
+      144.62231397628784
+    ]
+  },
+  {
+    "image": "P0271_OD20250503.JPG",
+    "subject": "P0271",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.867340087890625,
+    "pupil_circle": [
+      237.70097732543945,
+      213.72154712677002,
+      37.01363563537598
+    ],
+    "iris_circle": [
+      221.6956901550293,
+      214.51326370239258,
+      144.33362483978271
+    ]
+  },
+  {
+    "image": "P0281_OS20241222.JPG",
+    "subject": "P0281",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.83184814453125,
+    "pupil_circle": [
+      291.84667587280273,
+      225.38826942443848,
+      31.944007873535156
+    ],
+    "iris_circle": [
+      293.62804412841797,
+      223.28953742980957,
+      92.759108543396
+    ]
+  },
+  {
+    "image": "P0281_OS20241229.JPG",
+    "subject": "P0281",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.8353271484375,
+    "pupil_circle": [
+      325.4169464111328,
+      208.24195861816406,
+      42.60251998901368
+    ],
+    "iris_circle": [
+      331.01524353027344,
+      205.54625988006592,
+      147.01625108718872
+    ]
+  },
+  {
+    "image": "P0281_OS20250302.JPG",
+    "subject": "P0281",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.8504638671875,
+    "pupil_circle": [
+      323.84273529052734,
+      229.77423191070557,
+      58.54254722595215
+    ],
+    "iris_circle": [
+      330.83946228027344,
+      228.4394645690918,
+      142.5144076347351
+    ]
+  },
+  {
+    "image": "P0281_OS20250611.JPG",
+    "subject": "P0281",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.83953857421875,
+    "pupil_circle": [
+      326.39671325683594,
+      211.3157844543457,
+      58.83310317993165
+    ],
+    "iris_circle": [
+      328.4834671020508,
+      203.4748935699463,
+      145.8712935447693
+    ]
+  },
+  {
+    "image": "P0281_OS20250613.JPG",
+    "subject": "P0281",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.80682373046875,
+    "pupil_circle": [
+      306.15591049194336,
+      237.07119941711426,
+      53.511152267456055
+    ],
+    "iris_circle": [
+      310.33254623413086,
+      245.70585250854492,
+      139.66991901397705
+    ]
+  },
+  {
+    "image": "P0295_OD20241223.JPG",
+    "subject": "P0295",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.50616455078125,
+    "pupil_circle": [
+      328.310546875,
+      197.1167278289795,
+      64.56303596496582
+    ],
+    "iris_circle": [
+      323.5531234741211,
+      189.5617961883545,
+      148.20245504379272
+    ]
+  },
+  {
+    "image": "P0295_OD20250217.JPG",
+    "subject": "P0295",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.28466796875,
+    "pupil_circle": [
+      340.4339599609375,
+      205.88228702545166,
+      89.91744041442871
+    ],
+    "iris_circle": [
+      347.7743148803711,
+      201.0816478729248,
+      138.3177399635315
+    ]
+  },
+  {
+    "image": "P0295_OS20241223.JPG",
+    "subject": "P0295",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.821533203125,
+    "pupil_circle": [
+      364.13692474365234,
+      186.6648530960083,
+      34.66602802276611
+    ],
+    "iris_circle": [
+      370.65799713134766,
+      186.52318954467773,
+      139.86512422561646
+    ]
+  },
+  {
+    "image": "P0295_OS20250217.JPG",
+    "subject": "P0295",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.822998046875,
+    "pupil_circle": [
+      376.32286071777344,
+      168.39580535888672,
+      32.447175979614265
+    ],
+    "iris_circle": [
+      383.24031829833984,
+      171.41319751739502,
+      133.97080898284912
+    ]
+  },
+  {
+    "image": "P0343_OD20250315.JPG",
+    "subject": "P0343",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.71856689453125,
+    "pupil_circle": [
+      290.8807563781738,
+      205.7592487335205,
+      36.98078155517578
+    ],
+    "iris_circle": [
+      285.19420623779297,
+      204.596529006958,
+      144.56671476364136
+    ]
+  },
+  {
+    "image": "P0343_OD20250322.JPG",
+    "subject": "P0343",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.885772705078125,
+    "pupil_circle": [
+      250.2199363708496,
+      197.18533515930176,
+      32.061777114868164
+    ],
+    "iris_circle": [
+      245.87995529174805,
+      201.6075897216797,
+      141.0255789756775
+    ]
+  },
+  {
+    "image": "P0343_OS20250315.JPG",
+    "subject": "P0343",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.859405517578125,
+    "pupil_circle": [
+      341.31458282470703,
+      247.84747123718262,
+      37.83050537109375
+    ],
+    "iris_circle": [
+      349.73304748535156,
+      244.44391250610352,
+      147.88652658462524
+    ]
+  },
+  {
+    "image": "P0343_OS20250322.JPG",
+    "subject": "P0343",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.88006591796875,
+    "pupil_circle": [
+      321.3672637939453,
+      273.8207244873047,
+      36.21881484985352
+    ],
+    "iris_circle": [
+      325.5442810058594,
+      275.1588821411133,
+      142.6091432571411
+    ]
+  },
+  {
+    "image": "P0382_OS20241210.JPG",
+    "subject": "P0382",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.794525146484375,
+    "pupil_circle": [
+      300.6194305419922,
+      249.16757583618164,
+      33.40110778808594
+    ],
+    "iris_circle": [
+      310.5251693725586,
+      248.72995376586914,
+      137.40514516830444
+    ]
+  },
+  {
+    "image": "P0382_OS20241213.JPG",
+    "subject": "P0382",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.46051025390625,
+    "pupil_circle": [
+      317.10351943969727,
+      223.7523078918457,
+      63.8561773300171
+    ],
+    "iris_circle": [
+      319.51770782470703,
+      229.09709930419922,
+      135.2908968925476
+    ]
+  },
+  {
+    "image": "P0411_OD20241214.JPG",
+    "subject": "P0411",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.897186279296875,
+    "pupil_circle": [
+      261.9922065734863,
+      177.29907989501953,
+      43.09746742248535
+    ],
+    "iris_circle": [
+      252.48676300048828,
+      179.76070404052734,
+      146.03101015090942
+    ]
+  },
+  {
+    "image": "P0411_OD20241221.JPG",
+    "subject": "P0411",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.8406982421875,
+    "pupil_circle": [
+      299.9954414367676,
+      229.19597625732422,
+      50.64189434051514
+    ],
+    "iris_circle": [
+      288.87617111206055,
+      236.57946109771729,
+      145.96203565597534
+    ]
+  },
+  {
+    "image": "P0411_OS20241214.JPG",
+    "subject": "P0411",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.864898681640625,
+    "pupil_circle": [
+      250.1200294494629,
+      270.0856018066406,
+      42.90481090545655
+    ],
+    "iris_circle": [
+      260.4684066772461,
+      271.50856018066406,
+      148.80791902542114
+    ]
+  },
+  {
+    "image": "P0411_OS20241221.JPG",
+    "subject": "P0411",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.912841796875,
+    "pupil_circle": [
+      276.4838981628418,
+      214.77264404296875,
+      43.60074043273926
+    ],
+    "iris_circle": [
+      286.18337631225586,
+      224.0474796295166,
+      144.34490203857422
+    ]
+  },
+  {
+    "image": "P0432_OS20250111.JPG",
+    "subject": "P0432",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.44805908203125,
+    "pupil_circle": [
+      347.1405029296875,
+      264.04226303100586,
+      61.443915367126465
+    ],
+    "iris_circle": [
+      352.1561813354492,
+      266.1884307861328,
+      138.85267972946167
+    ]
+  },
+  {
+    "image": "P0432_OS20250213.JPG",
+    "subject": "P0432",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.45587158203125,
+    "pupil_circle": [
+      335.44700622558594,
+      214.0030860900879,
+      113.57027053833009
+    ],
+    "iris_circle": [
+      318.9138603210449,
+      222.86224365234375,
+      220.16398906707764
+    ]
+  },
+  {
+    "image": "P0455_OD20241205.JPG",
+    "subject": "P0455",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.716552734375,
+    "pupil_circle": [
+      286.7672920227051,
+      224.89939212799072,
+      37.07618713378906
+    ],
+    "iris_circle": [
+      277.58012771606445,
+      229.77401733398438,
+      143.96013021469116
+    ]
+  },
+  {
+    "image": "P0455_OD20250220.JPG",
+    "subject": "P0455",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.862396240234375,
+    "pupil_circle": [
+      357.3195266723633,
+      260.44567108154297,
+      93.90556335449219
+    ],
+    "iris_circle": [
+      352.5714874267578,
+      267.44439125061035,
+      146.7076301574707
+    ]
+  },
+  {
+    "image": "P0455_OS20241205.JPG",
+    "subject": "P0455",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.757720947265625,
+    "pupil_circle": [
+      280.1860237121582,
+      235.35152435302734,
+      54.57265853881837
+    ],
+    "iris_circle": [
+      288.94811630249023,
+      233.04811477661133,
+      140.46423435211182
+    ]
+  },
+  {
+    "image": "P0455_OS20250220.JPG",
+    "subject": "P0455",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.35919189453125,
+    "pupil_circle": [
+      314.0262985229492,
+      191.5206241607666,
+      76.43008232116699
+    ],
+    "iris_circle": [
+      303.4052276611328,
+      202.37905025482178,
+      150.76500177383423
+    ]
+  },
+  {
+    "image": "P0464_OD20241219.JPG",
+    "subject": "P0464",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.763946533203125,
+    "pupil_circle": [
+      315.8182716369629,
+      235.78119277954102,
+      36.43238544464111
+    ],
+    "iris_circle": [
+      308.85046005249023,
+      241.9650650024414,
+      132.65554904937744
+    ]
+  },
+  {
+    "image": "P0464_OD20250102.JPG",
+    "subject": "P0464",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.892364501953125,
+    "pupil_circle": [
+      337.97264099121094,
+      236.93381309509277,
+      31.63322448730469
+    ],
+    "iris_circle": [
+      329.4050598144531,
+      239.41234588623047,
+      123.09685945510864
+    ]
+  },
+  {
+    "image": "P0464_OS20241219.JPG",
+    "subject": "P0464",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.739593505859375,
+    "pupil_circle": [
+      320.9610366821289,
+      231.87323570251465,
+      37.19785690307618
+    ],
+    "iris_circle": [
+      314.6474266052246,
+      239.33773040771484,
+      135.95553636550903
+    ]
+  },
+  {
+    "image": "P0464_OS20250102.JPG",
+    "subject": "P0464",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.89239501953125,
+    "pupil_circle": [
+      249.17608261108398,
+      259.64561462402344,
+      30.920629501342777
+    ],
+    "iris_circle": [
+      248.81818771362305,
+      259.72034454345703,
+      133.09462070465088
+    ]
+  },
+  {
+    "image": "P0496_OD20241212.JPG",
+    "subject": "P0496",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.8111572265625,
+    "pupil_circle": [
+      320.48328399658203,
+      181.89714431762695,
+      34.68645095825196
+    ],
+    "iris_circle": [
+      316.91293716430664,
+      183.2061767578125,
+      142.69949197769165
+    ]
+  },
+  {
+    "image": "P0496_OD20241226.JPG",
+    "subject": "P0496",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.853179931640625,
+    "pupil_circle": [
+      344.2637634277344,
+      161.7528247833252,
+      41.0999059677124
+    ],
+    "iris_circle": [
+      343.03611755371094,
+      158.81120681762695,
+      143.5064673423767
+    ]
+  },
+  {
+    "image": "P0496_OD20250110.JPG",
+    "subject": "P0496",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.876800537109375,
+    "pupil_circle": [
+      368.63826751708984,
+      183.70030403137207,
+      43.5883903503418
+    ],
+    "iris_circle": [
+      368.86402130126953,
+      184.9841022491455,
+      139.95130062103271
+    ]
+  },
+  {
+    "image": "P0496_OD20250205.JPG",
+    "subject": "P0496",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.7755126953125,
+    "pupil_circle": [
+      299.97596740722656,
+      185.0551414489746,
+      42.97598838806152
+    ],
+    "iris_circle": [
+      302.11517333984375,
+      184.8127555847168,
+      142.97478199005127
+    ]
+  },
+  {
+    "image": "P0496_OD20250317.JPG",
+    "subject": "P0496",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.8057861328125,
+    "pupil_circle": [
+      330.50792694091797,
+      176.9003391265869,
+      47.237653732299805
+    ],
+    "iris_circle": [
+      326.9514465332031,
+      174.0934181213379,
+      141.41899347305298
+    ]
+  },
+  {
+    "image": "P0496_OS20241212.JPG",
+    "subject": "P0496",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.6434326171875,
+    "pupil_circle": [
+      374.85355377197266,
+      189.96246814727783,
+      38.573412895202644
+    ],
+    "iris_circle": [
+      382.2620391845703,
+      190.00242233276367,
+      144.61077451705933
+    ]
+  },
+  {
+    "image": "P0496_OS20241226.JPG",
+    "subject": "P0496",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.901702880859375,
+    "pupil_circle": [
+      281.48155212402344,
+      206.8114185333252,
+      42.20767021179199
+    ],
+    "iris_circle": [
+      286.18871688842773,
+      210.71152210235596,
+      138.96641731262207
+    ]
+  },
+  {
+    "image": "P0496_OS20250110.JPG",
+    "subject": "P0496",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.880615234375,
+    "pupil_circle": [
+      232.83456802368164,
+      188.08472156524658,
+      41.05728149414063
+    ],
+    "iris_circle": [
+      236.78850173950195,
+      189.58552837371826,
+      139.9813175201416
+    ]
+  },
+  {
+    "image": "P0496_OS20250205.JPG",
+    "subject": "P0496",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.749847412109375,
+    "pupil_circle": [
+      288.20058822631836,
+      192.5892162322998,
+      41.26274108886719
+    ],
+    "iris_circle": [
+      293.5639762878418,
+      196.03235721588135,
+      143.40485334396362
+    ]
+  },
+  {
+    "image": "P0496_OS20250317.JPG",
+    "subject": "P0496",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.842041015625,
+    "pupil_circle": [
+      302.58642196655273,
+      188.43412399291992,
+      41.5568733215332
+    ],
+    "iris_circle": [
+      307.09753036499023,
+      189.53787803649902,
+      140.87778329849243
+    ]
+  },
+  {
+    "image": "P0498_OS20250308.JPG",
+    "subject": "P0498",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.856781005859375,
+    "pupil_circle": [
+      334.3467330932617,
+      233.5257911682129,
+      47.40943431854248
+    ],
+    "iris_circle": [
+      331.812744140625,
+      238.01229000091553,
+      148.3274221420288
+    ]
+  },
+  {
+    "image": "P0498_OS20250312.JPG",
+    "subject": "P0498",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.864044189453125,
+    "pupil_circle": [
+      356.3079071044922,
+      219.8415756225586,
+      34.54186201095582
+    ],
+    "iris_circle": [
+      361.98646545410156,
+      222.5912618637085,
+      150.82927942276
+    ]
+  },
+  {
+    "image": "P0562_OD20241212.JPG",
+    "subject": "P0562",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.8531494140625,
+    "pupil_circle": [
+      332.57511138916016,
+      231.33936882019043,
+      33.90204429626465
+    ],
+    "iris_circle": [
+      331.1146545410156,
+      232.82365322113037,
+      151.6642689704895
+    ]
+  },
+  {
+    "image": "P0562_OD20241224.JPG",
+    "subject": "P0562",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.79693603515625,
+    "pupil_circle": [
+      315.3859519958496,
+      217.62285232543945,
+      35.49427032470703
+    ],
+    "iris_circle": [
+      315.91745376586914,
+      218.01146507263184,
+      156.74313306808472
+    ]
+  },
+  {
+    "image": "P0562_OD20250121.JPG",
+    "subject": "P0562",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.93194580078125,
+    "pupil_circle": [
+      290.22891998291016,
+      266.28862380981445,
+      32.86793231964111
+    ],
+    "iris_circle": [
+      288.5503959655762,
+      269.1441535949707,
+      150.16182661056519
+    ]
+  },
+  {
+    "image": "P0562_OD20250206.JPG",
+    "subject": "P0562",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.806396484375,
+    "pupil_circle": [
+      195.72076797485352,
+      346.84736251831055,
+      33.95562171936035
+    ],
+    "iris_circle": [
+      198.4317970275879,
+      348.59679222106934,
+      151.24406814575195
+    ]
+  },
+  {
+    "image": "P0562_OD20250429.JPG",
+    "subject": "P0562",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.897491455078125,
+    "pupil_circle": [
+      310.253849029541,
+      205.92980861663818,
+      37.510409355163574
+    ],
+    "iris_circle": [
+      308.837947845459,
+      208.74506950378418,
+      153.69679927825928
+    ]
+  },
+  {
+    "image": "P0562_OS20241212.JPG",
+    "subject": "P0562",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.786468505859375,
+    "pupil_circle": [
+      293.3415985107422,
+      243.77480506896973,
+      35.470170974731445
+    ],
+    "iris_circle": [
+      300.0984191894531,
+      240.49741744995117,
+      155.0597071647644
+    ]
+  },
+  {
+    "image": "P0562_OS20241224.JPG",
+    "subject": "P0562",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.6859130859375,
+    "pupil_circle": [
+      335.2421569824219,
+      200.0678586959839,
+      40.18634796142578
+    ],
+    "iris_circle": [
+      340.63167572021484,
+      202.73303031921387,
+      155.88523149490356
+    ]
+  },
+  {
+    "image": "P0562_OS20250121.JPG",
+    "subject": "P0562",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.92645263671875,
+    "pupil_circle": [
+      368.70079040527344,
+      260.5340766906738,
+      35.27233600616455
+    ],
+    "iris_circle": [
+      375.18192291259766,
+      262.19552993774414,
+      152.63596773147583
+    ]
+  },
+  {
+    "image": "P0562_OS20250206.JPG",
+    "subject": "P0562",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.870086669921875,
+    "pupil_circle": [
+      234.60641860961914,
+      267.1186065673828,
+      35.51310062408447
+    ],
+    "iris_circle": [
+      238.68959426879883,
+      270.673828125,
+      151.9890546798706
+    ]
+  },
+  {
+    "image": "P0562_OS20250429.JPG",
+    "subject": "P0562",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.85137939453125,
+    "pupil_circle": [
+      305.64313888549805,
+      254.7612190246582,
+      34.63390827178955
+    ],
+    "iris_circle": [
+      314.6644401550293,
+      260.2389335632324,
+      148.88635873794556
+    ]
+  },
+  {
+    "image": "P0575_OD20250113.JPG",
+    "subject": "P0575",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.7086181640625,
+    "pupil_circle": [
+      332.6160430908203,
+      197.41127014160156,
+      34.93584632873535
+    ],
+    "iris_circle": [
+      324.26578521728516,
+      203.34674835205078,
+      145.32458782196045
+    ]
+  },
+  {
+    "image": "P0575_OD20250331.JPG",
+    "subject": "P0575",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.75543212890625,
+    "pupil_circle": [
+      334.4696044921875,
+      220.39134979248047,
+      93.4571647644043
+    ],
+    "iris_circle": [
+      335.8322525024414,
+      220.8497714996338,
+      143.79810094833374
+    ]
+  },
+  {
+    "image": "P0575_OS20250113.JPG",
+    "subject": "P0575",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.17218017578125,
+    "pupil_circle": [
+      327.45555877685547,
+      227.4876308441162,
+      102.42992401123048
+    ],
+    "iris_circle": [
+      332.66265869140625,
+      223.45903873443604,
+      146.20771408081055
+    ]
+  },
+  {
+    "image": "P0575_OS20250331.JPG",
+    "subject": "P0575",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.799407958984375,
+    "pupil_circle": [
+      320.5751037597656,
+      192.20043182373047,
+      72.24062919616699
+    ],
+    "iris_circle": [
+      326.70806884765625,
+      187.5194263458252,
+      142.08505153656006
+    ]
+  },
+  {
+    "image": "P0609_OS20250121.JPG",
+    "subject": "P0609",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.81488037109375,
+    "pupil_circle": [
+      354.0409851074219,
+      236.37170791625977,
+      40.29604911804199
+    ],
+    "iris_circle": [
+      346.3527297973633,
+      245.37071228027344,
+      139.6589756011963
+    ]
+  },
+  {
+    "image": "P0609_OS20250126.JPG",
+    "subject": "P0609",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.729644775390625,
+    "pupil_circle": [
+      259.61509704589844,
+      165.5203628540039,
+      63.50328445434571
+    ],
+    "iris_circle": [
+      252.78261184692383,
+      176.4070987701416,
+      137.98840045928955
+    ]
+  },
+  {
+    "image": "P0609_OS20250209.JPG",
+    "subject": "P0609",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.8092041015625,
+    "pupil_circle": [
+      374.39796447753906,
+      228.877272605896,
+      43.673462867736816
+    ],
+    "iris_circle": [
+      369.08092498779297,
+      251.226167678833,
+      138.48005533218384
+    ]
+  },
+  {
+    "image": "P0661_OD20241227.JPG",
+    "subject": "P0661",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.66668701171875,
+    "pupil_circle": [
+      309.6518898010254,
+      241.82579040527344,
+      37.47870445251465
+    ],
+    "iris_circle": [
+      305.55919647216797,
+      242.0672607421875,
+      144.86253261566162
+    ]
+  },
+  {
+    "image": "P0661_OD20250110.JPG",
+    "subject": "P0661",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.71441650390625,
+    "pupil_circle": [
+      279.8881721496582,
+      156.5621280670166,
+      41.08376502990723
+    ],
+    "iris_circle": [
+      272.37146377563477,
+      161.58857345581055,
+      134.92915630340576
+    ]
+  },
+  {
+    "image": "P0661_OD20250124.JPG",
+    "subject": "P0661",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.793426513671875,
+    "pupil_circle": [
+      328.48339080810547,
+      196.46138191223145,
+      37.96215534210206
+    ],
+    "iris_circle": [
+      321.8798065185547,
+      202.0942497253418,
+      141.35485887527466
+    ]
+  },
+  {
+    "image": "P0661_OD20250207.JPG",
+    "subject": "P0661",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.792236328125,
+    "pupil_circle": [
+      296.33249282836914,
+      188.8996410369873,
+      42.118172645568855
+    ],
+    "iris_circle": [
+      285.6047248840332,
+      194.08020973205566,
+      141.2633180618286
+    ]
+  },
+  {
+    "image": "P0661_OD20250307.JPG",
+    "subject": "P0661",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.81268310546875,
+    "pupil_circle": [
+      301.37792587280273,
+      208.75130653381348,
+      33.47744941711426
+    ],
+    "iris_circle": [
+      299.2510795593262,
+      211.83972358703613,
+      132.393479347229
+    ]
+  },
+  {
+    "image": "P0661_OD20250403.JPG",
+    "subject": "P0661",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.609100341796875,
+    "pupil_circle": [
+      302.9926109313965,
+      223.67960929870605,
+      37.38926410675049
+    ],
+    "iris_circle": [
+      289.8188591003418,
+      229.22391414642334,
+      117.40349531173706
+    ]
+  },
+  {
+    "image": "P0661_OD20250526.JPG",
+    "subject": "P0661",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.942108154296875,
+    "pupil_circle": [
+      271.7723274230957,
+      171.81681632995605,
+      44.15171623229981
+    ],
+    "iris_circle": [
+      257.90719985961914,
+      174.55381393432617,
+      129.23957109451294
+    ]
+  },
+  {
+    "image": "P0661_OS20241227.JPG",
+    "subject": "P0661",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.78375244140625,
+    "pupil_circle": [
+      299.0552520751953,
+      244.0714931488037,
+      36.48855447769165
+    ],
+    "iris_circle": [
+      313.6519432067871,
+      242.17523574829102,
+      142.83422231674194
+    ]
+  },
+  {
+    "image": "P0661_OS20250110.JPG",
+    "subject": "P0661",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.864990234375,
+    "pupil_circle": [
+      349.5817565917969,
+      202.8784418106079,
+      39.685678482055664
+    ],
+    "iris_circle": [
+      361.04408264160156,
+      200.83444118499756,
+      142.54721403121948
+    ]
+  },
+  {
+    "image": "P0661_OS20250124.JPG",
+    "subject": "P0661",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.839935302734375,
+    "pupil_circle": [
+      323.71524810791016,
+      221.28819465637207,
+      37.8248929977417
+    ],
+    "iris_circle": [
+      332.3527526855469,
+      223.4368658065796,
+      141.3463592529297
+    ]
+  },
+  {
+    "image": "P0661_OS20250207.JPG",
+    "subject": "P0661",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.821563720703125,
+    "pupil_circle": [
+      314.0456199645996,
+      241.468505859375,
+      41.043076515197754
+    ],
+    "iris_circle": [
+      325.24662017822266,
+      237.2394847869873,
+      143.35914850234985
+    ]
+  },
+  {
+    "image": "P0661_OS20250307.JPG",
+    "subject": "P0661",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.820526123046875,
+    "pupil_circle": [
+      332.3407745361328,
+      212.4352741241455,
+      31.330690383911136
+    ],
+    "iris_circle": [
+      339.19769287109375,
+      214.693021774292,
+      139.28381204605103
+    ]
+  },
+  {
+    "image": "P0661_OS20250403.JPG",
+    "subject": "P0661",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.832183837890625,
+    "pupil_circle": [
+      339.7671890258789,
+      246.90879821777344,
+      34.175899028778076
+    ],
+    "iris_circle": [
+      347.1083068847656,
+      246.1860179901123,
+      133.75109434127808
+    ]
+  },
+  {
+    "image": "P0661_OS20250526.JPG",
+    "subject": "P0661",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.78485107421875,
+    "pupil_circle": [
+      294.75208282470703,
+      177.93780326843262,
+      39.448137283325195
+    ],
+    "iris_circle": [
+      303.2975959777832,
+      182.0025873184204,
+      140.396249294281
+    ]
+  },
+  {
+    "image": "P0686_OD20250210.JPG",
+    "subject": "P0686",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.762420654296875,
+    "pupil_circle": [
+      246.1960792541504,
+      188.54930877685547,
+      37.37288475036621
+    ],
+    "iris_circle": [
+      254.1855239868164,
+      178.9542531967163,
+      139.2878293991089
+    ]
+  },
+  {
+    "image": "P0686_OD20250301.JPG",
+    "subject": "P0686",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.804962158203125,
+    "pupil_circle": [
+      329.9626159667969,
+      240.3739356994629,
+      38.4820556640625
+    ],
+    "iris_circle": [
+      330.46531677246094,
+      242.03893661499023,
+      140.06601572036743
+    ]
+  },
+  {
+    "image": "P0686_OS20250210.JPG",
+    "subject": "P0686",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.493377685546875,
+    "pupil_circle": [
+      332.6875686645508,
+      216.23778820037842,
+      38.40607166290283
+    ],
+    "iris_circle": [
+      340.2724075317383,
+      218.47819805145264,
+      141.5027379989624
+    ]
+  },
+  {
+    "image": "P0686_OS20250301.JPG",
+    "subject": "P0686",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.8592529296875,
+    "pupil_circle": [
+      307.01250076293945,
+      242.69076347351074,
+      28.508629798889164
+    ],
+    "iris_circle": [
+      303.659725189209,
+      251.11550331115723,
+      136.08667850494385
+    ]
+  },
+  {
+    "image": "P0721_OD20250429.JPG",
+    "subject": "P0721",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.798431396484375,
+    "pupil_circle": [
+      366.62940979003906,
+      228.25970649719238,
+      61.59393787384033
+    ],
+    "iris_circle": [
+      348.71692657470703,
+      232.64199256896973,
+      235.29775142669678
+    ]
+  },
+  {
+    "image": "P0721_OD20250515.JPG",
+    "subject": "P0721",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.8779296875,
+    "pupil_circle": [
+      377.0027542114258,
+      238.23646545410156,
+      38.71714115142822
+    ],
+    "iris_circle": [
+      368.21556091308594,
+      240.1490592956543,
+      145.1642394065857
+    ]
+  },
+  {
+    "image": "P0721_OD20250527.JPG",
+    "subject": "P0721",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.888214111328125,
+    "pupil_circle": [
+      294.7140693664551,
+      237.9624366760254,
+      38.458170890808105
+    ],
+    "iris_circle": [
+      285.85567474365234,
+      239.56649780273438,
+      144.82616186141968
+    ]
+  },
+  {
+    "image": "P0721_OD20250610.JPG",
+    "subject": "P0721",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.918853759765625,
+    "pupil_circle": [
+      287.01486587524414,
+      236.34135246276855,
+      35.54199695587158
+    ],
+    "iris_circle": [
+      278.4731864929199,
+      240.1021385192871,
+      143.94420385360718
+    ]
+  },
+  {
+    "image": "P0721_OS20250429.JPG",
+    "subject": "P0721",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.794189453125,
+    "pupil_circle": [
+      340.38318634033203,
+      236.68932437896729,
+      59.136905670166016
+    ],
+    "iris_circle": [
+      348.2350158691406,
+      250.4362678527832,
+      226.81372165679932
+    ]
+  },
+  {
+    "image": "P0721_OS20250515.JPG",
+    "subject": "P0721",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.923095703125,
+    "pupil_circle": [
+      348.8925552368164,
+      233.73740673065186,
+      39.819092750549316
+    ],
+    "iris_circle": [
+      359.5003890991211,
+      241.1062717437744,
+      142.29257106781006
+    ]
+  },
+  {
+    "image": "P0721_OS20250527.JPG",
+    "subject": "P0721",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.90997314453125,
+    "pupil_circle": [
+      261.07948303222656,
+      203.91386032104492,
+      38.9841890335083
+    ],
+    "iris_circle": [
+      269.9788475036621,
+      208.76423835754395,
+      144.77025270462036
+    ]
+  },
+  {
+    "image": "P0721_OS20250610.JPG",
+    "subject": "P0721",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.94427490234375,
+    "pupil_circle": [
+      328.9523696899414,
+      229.9646759033203,
+      35.55680513381958
+    ],
+    "iris_circle": [
+      338.06941986083984,
+      238.74835968017578,
+      141.25961065292358
+    ]
+  },
+  {
+    "image": "P0758_OD20250327.JPG",
+    "subject": "P0758",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.8143310546875,
+    "pupil_circle": [
+      291.0102844238281,
+      255.59592247009277,
+      38.25032711029053
+    ],
+    "iris_circle": [
+      290.67155838012695,
+      249.66436386108398,
+      152.9529094696045
+    ]
+  },
+  {
+    "image": "P0758_OD20250508.JPG",
+    "subject": "P0758",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.768280029296875,
+    "pupil_circle": [
+      300.7680320739746,
+      231.00040912628174,
+      89.08492088317873
+    ],
+    "iris_circle": [
+      308.60273361206055,
+      229.04859066009521,
+      146.82024717330933
+    ]
+  },
+  {
+    "image": "P0759_OD20250211.JPG",
+    "subject": "P0759",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.681427001953125,
+    "pupil_circle": [
+      337.5925064086914,
+      196.8121576309204,
+      43.28738212585449
+    ],
+    "iris_circle": [
+      304.8201560974121,
+      207.73279666900635,
+      142.81452894210815
+    ]
+  },
+  {
+    "image": "P0759_OD20250215.JPG",
+    "subject": "P0759",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.7501220703125,
+    "pupil_circle": [
+      314.1969108581543,
+      197.59323120117188,
+      49.22019958496094
+    ],
+    "iris_circle": [
+      285.38434982299805,
+      208.5984706878662,
+      145.92171907424927
+    ]
+  },
+  {
+    "image": "P0759_OS20250211.JPG",
+    "subject": "P0759",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.492889404296875,
+    "pupil_circle": [
+      399.5985412597656,
+      186.9609832763672,
+      35.982680320739746
+    ],
+    "iris_circle": [
+      365.5044937133789,
+      203.67927074432373,
+      136.78884506225586
+    ]
+  },
+  {
+    "image": "P0759_OS20250215.JPG",
+    "subject": "P0759",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.725067138671875,
+    "pupil_circle": [
+      322.22991943359375,
+      204.44615364074707,
+      47.23743438720703
+    ],
+    "iris_circle": [
+      327.0143508911133,
+      188.18907737731934,
+      153.07716131210327
+    ]
+  },
+  {
+    "image": "P0807_OD20250314.JPG",
+    "subject": "P0807",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.8829345703125,
+    "pupil_circle": [
+      268.37745666503906,
+      220.1727819442749,
+      31.486260890960693
+    ],
+    "iris_circle": [
+      268.1762886047363,
+      227.45158195495605,
+      146.5917706489563
+    ]
+  },
+  {
+    "image": "P0807_OD20250328.JPG",
+    "subject": "P0807",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.920745849609375,
+    "pupil_circle": [
+      329.9466323852539,
+      244.5212173461914,
+      35.75138568878174
+    ],
+    "iris_circle": [
+      324.84046936035156,
+      253.1920051574707,
+      143.64572763442993
+    ]
+  },
+  {
+    "image": "P0807_OD20250411.JPG",
+    "subject": "P0807",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.855316162109375,
+    "pupil_circle": [
+      328.8725280761719,
+      176.38961791992188,
+      41.7333459854126
+    ],
+    "iris_circle": [
+      321.72069549560547,
+      185.60308456420898,
+      144.5635437965393
+    ]
+  },
+  {
+    "image": "P0807_OD20250425.JPG",
+    "subject": "P0807",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.85272216796875,
+    "pupil_circle": [
+      343.3802795410156,
+      213.56183052062988,
+      38.21217060089111
+    ],
+    "iris_circle": [
+      337.60364532470703,
+      220.70119857788086,
+      144.3280816078186
+    ]
+  },
+  {
+    "image": "P0807_OD20250523.JPG",
+    "subject": "P0807",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.817169189453125,
+    "pupil_circle": [
+      333.70800018310547,
+      220.5762004852295,
+      36.77178382873535
+    ],
+    "iris_circle": [
+      327.8766632080078,
+      223.38915824890137,
+      145.0659990310669
+    ]
+  },
+  {
+    "image": "P0807_OS20250314.JPG",
+    "subject": "P0807",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.879669189453125,
+    "pupil_circle": [
+      351.8532943725586,
+      237.78903007507324,
+      34.52528715133667
+    ],
+    "iris_circle": [
+      361.7648696899414,
+      238.35988998413086,
+      148.77853393554688
+    ]
+  },
+  {
+    "image": "P0807_OS20250328.JPG",
+    "subject": "P0807",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.844390869140625,
+    "pupil_circle": [
+      345.6446838378906,
+      243.97327423095703,
+      30.158081054687504
+    ],
+    "iris_circle": [
+      355.6856155395508,
+      248.89586448669434,
+      149.18051958084106
+    ]
+  },
+  {
+    "image": "P0807_OS20250411.JPG",
+    "subject": "P0807",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.870330810546875,
+    "pupil_circle": [
+      349.00928497314453,
+      219.44297790527344,
+      37.207186222076416
+    ],
+    "iris_circle": [
+      357.63553619384766,
+      221.12555980682373,
+      149.31975603103638
+    ]
+  },
+  {
+    "image": "P0807_OS20250425.JPG",
+    "subject": "P0807",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.907989501953125,
+    "pupil_circle": [
+      300.9173011779785,
+      208.26736450195312,
+      35.2211856842041
+    ],
+    "iris_circle": [
+      311.22833251953125,
+      209.75672721862793,
+      146.25602960586548
+    ]
+  },
+  {
+    "image": "P0807_OS20250523.JPG",
+    "subject": "P0807",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.915771484375,
+    "pupil_circle": [
+      304.572696685791,
+      216.1750888824463,
+      35.78057765960694
+    ],
+    "iris_circle": [
+      312.7897834777832,
+      212.3470687866211,
+      147.88565635681152
+    ]
+  },
+  {
+    "image": "P0821_OD20250102.JPG",
+    "subject": "P0821",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.848541259765625,
+    "pupil_circle": [
+      357.5857162475586,
+      222.40798473358154,
+      44.92234230041504
+    ],
+    "iris_circle": [
+      348.68988037109375,
+      224.22060012817383,
+      133.6931586265564
+    ]
+  },
+  {
+    "image": "P0821_OD20250223.JPG",
+    "subject": "P0821",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.595550537109375,
+    "pupil_circle": [
+      309.9981117248535,
+      210.20459175109863,
+      84.37100410461427
+    ],
+    "iris_circle": [
+      309.61130142211914,
+      209.4876194000244,
+      132.12721347808838
+    ]
+  },
+  {
+    "image": "P0830_OD20250510.JPG",
+    "subject": "P0830",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.737152099609375,
+    "pupil_circle": [
+      358.4197998046875,
+      240.90557098388672,
+      37.495765686035156
+    ],
+    "iris_circle": [
+      344.6476364135742,
+      242.8164768218994,
+      132.98568725585938
+    ]
+  },
+  {
+    "image": "P0830_OD20250524.JPG",
+    "subject": "P0830",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.733795166015625,
+    "pupil_circle": [
+      330.61885833740234,
+      224.26365852355957,
+      31.9296145439148
+    ],
+    "iris_circle": [
+      315.65725326538086,
+      226.9251251220703,
+      122.95794486999512
+    ]
+  },
+  {
+    "image": "P0830_OS20250510.JPG",
+    "subject": "P0830",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.7880859375,
+    "pupil_circle": [
+      333.0182647705078,
+      239.61354732513428,
+      30.970396995544437
+    ],
+    "iris_circle": [
+      345.1240921020508,
+      240.71273803710938,
+      134.5338225364685
+    ]
+  },
+  {
+    "image": "P0830_OS20250524.JPG",
+    "subject": "P0830",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.777923583984375,
+    "pupil_circle": [
+      275.14684677124023,
+      220.79780101776123,
+      34.17307376861572
+    ],
+    "iris_circle": [
+      285.95603942871094,
+      218.8033390045166,
+      133.9718222618103
+    ]
+  },
+  {
+    "image": "P0831_OD20241227.JPG",
+    "subject": "P0831",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.82366943359375,
+    "pupil_circle": [
+      385.14835357666016,
+      139.9447774887085,
+      34.635677337646484
+    ],
+    "iris_circle": [
+      381.26686096191406,
+      138.8859987258911,
+      141.87711477279663
+    ]
+  },
+  {
+    "image": "P0831_OD20250109.JPG",
+    "subject": "P0831",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.59710693359375,
+    "pupil_circle": [
+      279.4999885559082,
+      226.60022735595703,
+      30.910391807556152
+    ],
+    "iris_circle": [
+      273.18687438964844,
+      224.88183975219727,
+      141.86139106750488
+    ]
+  },
+  {
+    "image": "P0831_OD20250206.JPG",
+    "subject": "P0831",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.860382080078125,
+    "pupil_circle": [
+      364.6295928955078,
+      220.79655647277832,
+      32.759995460510254
+    ],
+    "iris_circle": [
+      360.4645538330078,
+      222.20086097717285,
+      135.355806350708
+    ]
+  },
+  {
+    "image": "P0831_OD20250307.JPG",
+    "subject": "P0831",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.58648681640625,
+    "pupil_circle": [
+      325.7608413696289,
+      233.33450317382812,
+      31.40063524246216
+    ],
+    "iris_circle": [
+      325.0656509399414,
+      228.86785984039307,
+      144.97227668762207
+    ]
+  },
+  {
+    "image": "P0831_OD20250403.JPG",
+    "subject": "P0831",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.712982177734375,
+    "pupil_circle": [
+      326.65904998779297,
+      222.2151803970337,
+      22.241005897521973
+    ],
+    "iris_circle": [
+      328.0963134765625,
+      221.88839435577393,
+      86.43293380737305
+    ]
+  },
+  {
+    "image": "P0831_OD20250529.JPG",
+    "subject": "P0831",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.792236328125,
+    "pupil_circle": [
+      320.14820098876953,
+      238.49950790405273,
+      33.61513137817383
+    ],
+    "iris_circle": [
+      316.6584014892578,
+      238.68887901306152,
+      142.26571321487427
+    ]
+  },
+  {
+    "image": "P0831_OS20241227.JPG",
+    "subject": "P0831",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.496490478515625,
+    "pupil_circle": [
+      342.1516418457031,
+      179.71489906311035,
+      34.27571773529053
+    ],
+    "iris_circle": [
+      344.13280487060547,
+      177.4445343017578,
+      140.76169729232788
+    ]
+  },
+  {
+    "image": "P0831_OS20250109.JPG",
+    "subject": "P0831",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.774017333984375,
+    "pupil_circle": [
+      337.03948974609375,
+      230.86037635803223,
+      33.62382411956787
+    ],
+    "iris_circle": [
+      338.12320709228516,
+      231.2047290802002,
+      141.28789901733398
+    ]
+  },
+  {
+    "image": "P0831_OS20250206.JPG",
+    "subject": "P0831",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.83642578125,
+    "pupil_circle": [
+      385.2803421020508,
+      237.04673767089844,
+      30.583539009094242
+    ],
+    "iris_circle": [
+      387.6927185058594,
+      240.3739070892334,
+      141.44436120986938
+    ]
+  },
+  {
+    "image": "P0831_OS20250307.JPG",
+    "subject": "P0831",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.815155029296875,
+    "pupil_circle": [
+      284.5453453063965,
+      234.11717891693115,
+      31.094765663146973
+    ],
+    "iris_circle": [
+      284.3093490600586,
+      238.98309230804443,
+      135.5257272720337
+    ]
+  },
+  {
+    "image": "P0831_OS20250403.JPG",
+    "subject": "P0831",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.844451904296875,
+    "pupil_circle": [
+      331.8354797363281,
+      240.77390670776367,
+      23.213887214660645
+    ],
+    "iris_circle": [
+      332.7986526489258,
+      241.08570098876953,
+      86.11658811569214
+    ]
+  },
+  {
+    "image": "P0831_OS20250529.JPG",
+    "subject": "P0831",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.781463623046875,
+    "pupil_circle": [
+      288.8978385925293,
+      247.71881103515625,
+      36.00179195404053
+    ],
+    "iris_circle": [
+      291.5966796875,
+      244.7464370727539,
+      142.652428150177
+    ]
+  },
+  {
+    "image": "P0876_OD20250129.JPG",
+    "subject": "P0876",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.307708740234375,
+    "pupil_circle": [
+      280.8071517944336,
+      213.25295448303223,
+      45.70289611816406
+    ],
+    "iris_circle": [
+      282.2038459777832,
+      200.52440643310547,
+      163.24559450149536
+    ]
+  },
+  {
+    "image": "P0876_OD20250205.JPG",
+    "subject": "P0876",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.78387451171875,
+    "pupil_circle": [
+      320.16300201416016,
+      187.64355182647705,
+      67.72323608398439
+    ],
+    "iris_circle": [
+      313.565731048584,
+      192.61184692382812,
+      147.084641456604
+    ]
+  },
+  {
+    "image": "P0876_OD20250212.JPG",
+    "subject": "P0876",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.5166015625,
+    "pupil_circle": [
+      279.2647933959961,
+      206.44403457641602,
+      70.16339778900146
+    ],
+    "iris_circle": [
+      283.7484931945801,
+      208.82238864898682,
+      153.16485166549683
+    ]
+  },
+  {
+    "image": "P0876_OD20250226.JPG",
+    "subject": "P0876",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.80950927734375,
+    "pupil_circle": [
+      305.97421646118164,
+      278.9406108856201,
+      73.84762763977051
+    ],
+    "iris_circle": [
+      312.1351623535156,
+      271.23072624206543,
+      149.70680475234985
+    ]
+  },
+  {
+    "image": "P0882_OD20250206.JPG",
+    "subject": "P0882",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.615081787109375,
+    "pupil_circle": [
+      384.1058349609375,
+      208.5908031463623,
+      48.92575740814209
+    ],
+    "iris_circle": [
+      401.7897033691406,
+      195.70630073547363,
+      139.21585083007812
+    ]
+  },
+  {
+    "image": "P0882_OD20250210.JPG",
+    "subject": "P0882",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.530181884765625,
+    "pupil_circle": [
+      337.24498748779297,
+      184.14496421813965,
+      50.26661396026611
+    ],
+    "iris_circle": [
+      342.0589065551758,
+      203.6392307281494,
+      146.6566562652588
+    ]
+  },
+  {
+    "image": "P0882_OD20250217.JPG",
+    "subject": "P0882",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.58734130859375,
+    "pupil_circle": [
+      274.189510345459,
+      205.7710361480713,
+      53.69618892669678
+    ],
+    "iris_circle": [
+      282.7713394165039,
+      202.13459014892578,
+      137.28947639465332
+    ]
+  },
+  {
+    "image": "P0882_OS20250206.JPG",
+    "subject": "P0882",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.60992431640625,
+    "pupil_circle": [
+      334.1866683959961,
+      208.24543476104736,
+      51.71056270599366
+    ],
+    "iris_circle": [
+      336.9622039794922,
+      200.4290771484375,
+      150.53786039352417
+    ]
+  },
+  {
+    "image": "P0882_OS20250217.JPG",
+    "subject": "P0882",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.535369873046875,
+    "pupil_circle": [
+      276.84648513793945,
+      222.6414442062378,
+      47.62493133544922
+    ],
+    "iris_circle": [
+      281.5054702758789,
+      226.91030502319336,
+      146.47992849349976
+    ]
+  },
+  {
+    "image": "P0885_OD20250415.JPG",
+    "subject": "P0885",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.842864990234375,
+    "pupil_circle": [
+      241.9803810119629,
+      192.5493049621582,
+      40.770578384399414
+    ],
+    "iris_circle": [
+      237.12406158447266,
+      201.10018730163574,
+      137.1060013771057
+    ]
+  },
+  {
+    "image": "P0885_OD20250505.JPG",
+    "subject": "P0885",
+    "side": "OD",
+    "role": "query",
+    "valid": false,
+    "failure_reason": "empty_normalized_mask",
+    "valid_polar_fraction": 0.0,
+    "pupil_circle": [
+      448.67137908935547,
+      212.98274517059326,
+      19.026106595993042
+    ],
+    "iris_circle": [
+      452.7524948120117,
+      216.33872509002686,
+      72.97088503837585
+    ]
+  },
+  {
+    "image": "P0885_OD20250519.JPG",
+    "subject": "P0885",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.683746337890625,
+    "pupil_circle": [
+      372.0381546020508,
+      187.24905967712402,
+      42.45046138763428
+    ],
+    "iris_circle": [
+      363.9413070678711,
+      201.967134475708,
+      140.2822494506836
+    ]
+  },
+  {
+    "image": "P0885_OD20250602.JPG",
+    "subject": "P0885",
+    "side": "OD",
+    "role": "query",
+    "valid": false,
+    "failure_reason": "empty_normalized_mask",
+    "valid_polar_fraction": 0.0,
+    "pupil_circle": [
+      466.0744094848633,
+      268.6897659301758,
+      44.97528076171875
+    ],
+    "iris_circle": [
+      457.8227996826172,
+      257.2299385070801,
+      100.83587169647217
+    ]
+  },
+  {
+    "image": "P0885_OS20250415.JPG",
+    "subject": "P0885",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.886688232421875,
+    "pupil_circle": [
+      214.3120574951172,
+      220.6108045578003,
+      46.212286949157715
+    ],
+    "iris_circle": [
+      220.4708480834961,
+      228.50011825561523,
+      138.37443590164185
+    ]
+  },
+  {
+    "image": "P0885_OS20250505.JPG",
+    "subject": "P0885",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.302001953125,
+    "pupil_circle": [
+      153.11878204345703,
+      56.82687520980835,
+      40.5354642868042
+    ],
+    "iris_circle": [
+      154.01803970336914,
+      68.30146551132202,
+      122.6046085357666
+    ]
+  },
+  {
+    "image": "P0885_OS20250519.JPG",
+    "subject": "P0885",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.518707275390625,
+    "pupil_circle": [
+      339.35791015625,
+      215.47511100769043,
+      43.49295616149902
+    ],
+    "iris_circle": [
+      348.18458557128906,
+      211.96011543273926,
+      151.46209001541138
+    ]
+  },
+  {
+    "image": "P0910_OD20250106.JPG",
+    "subject": "P0910",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.79248046875,
+    "pupil_circle": [
+      305.77978134155273,
+      257.21056938171387,
+      38.11309337615967
+    ],
+    "iris_circle": [
+      300.786190032959,
+      264.667911529541,
+      135.58382987976074
+    ]
+  },
+  {
+    "image": "P0910_OD20250120.JPG",
+    "subject": "P0910",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.799407958984375,
+    "pupil_circle": [
+      376.1703872680664,
+      216.2627363204956,
+      49.15127754211426
+    ],
+    "iris_circle": [
+      362.3048400878906,
+      225.1161289215088,
+      143.1681513786316
+    ]
+  },
+  {
+    "image": "P0910_OS20250106.JPG",
+    "subject": "P0910",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.7095947265625,
+    "pupil_circle": [
+      341.00257873535156,
+      261.4705467224121,
+      43.508920669555664
+    ],
+    "iris_circle": [
+      346.04698181152344,
+      260.7393264770508,
+      146.87398672103882
+    ]
+  },
+  {
+    "image": "P0910_OS20250120.JPG",
+    "subject": "P0910",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.8392333984375,
+    "pupil_circle": [
+      331.46289825439453,
+      216.7524003982544,
+      38.42010498046875
+    ],
+    "iris_circle": [
+      340.3779983520508,
+      218.48010063171387,
+      142.90281534194946
+    ]
+  },
+  {
+    "image": "P0917_OD20250320.JPG",
+    "subject": "P0917",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.35931396484375,
+    "pupil_circle": [
+      287.7235984802246,
+      210.3678560256958,
+      39.33183193206787
+    ],
+    "iris_circle": [
+      273.6928176879883,
+      218.88779640197754,
+      129.87139225006104
+    ]
+  },
+  {
+    "image": "P0917_OD20250403.JPG",
+    "subject": "P0917",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.18487548828125,
+    "pupil_circle": [
+      318.9949607849121,
+      220.00880241394043,
+      54.29115772247315
+    ],
+    "iris_circle": [
+      316.21721267700195,
+      225.32893180847168,
+      149.9422311782837
+    ]
+  },
+  {
+    "image": "P0943_OD20250212.JPG",
+    "subject": "P0943",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.245147705078125,
+    "pupil_circle": [
+      302.1831512451172,
+      241.29069328308105,
+      35.336289405822754
+    ],
+    "iris_circle": [
+      301.5276527404785,
+      245.9315586090088,
+      138.3908987045288
+    ]
+  },
+  {
+    "image": "P0943_OD20250317.JPG",
+    "subject": "P0943",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.785614013671875,
+    "pupil_circle": [
+      286.33867263793945,
+      223.1547975540161,
+      84.5452404022217
+    ],
+    "iris_circle": [
+      288.51816177368164,
+      220.44705390930176,
+      134.68385934829712
+    ]
+  },
+  {
+    "image": "P0943_OS20250212.JPG",
+    "subject": "P0943",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.478240966796875,
+    "pupil_circle": [
+      329.04876708984375,
+      199.31267738342285,
+      28.5836672782898
+    ],
+    "iris_circle": [
+      330.6661605834961,
+      196.7189884185791,
+      135.32960414886475
+    ]
+  },
+  {
+    "image": "P0943_OS20250317.JPG",
+    "subject": "P0943",
+    "side": "OS",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.626129150390625,
+    "pupil_circle": [
+      393.3571243286133,
+      232.15518951416016,
+      58.947820663452156
+    ],
+    "iris_circle": [
+      385.98777770996094,
+      222.5467872619629,
+      132.59167671203613
+    ]
+  },
+  {
+    "image": "P0970_OD20250125.JPG",
+    "subject": "P0970",
+    "side": "OD",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.773529052734375,
+    "pupil_circle": [
+      298.0571937561035,
+      246.6460418701172,
+      36.43470764160156
+    ],
+    "iris_circle": [
+      299.2630958557129,
+      247.88097381591797,
+      143.58631372451782
+    ]
+  },
+  {
+    "image": "P0970_OD20250222.JPG",
+    "subject": "P0970",
+    "side": "OD",
+    "role": "query",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.915802001953125,
+    "pupil_circle": [
+      292.8902244567871,
+      222.5566864013672,
+      44.4196081161499
+    ],
+    "iris_circle": [
+      283.3642768859863,
+      224.6390676498413,
+      145.46469449996948
+    ]
+  },
+  {
+    "image": "P0970_OS20250125.JPG",
+    "subject": "P0970",
+    "side": "OS",
+    "role": "gallery",
+    "valid": true,
+    "failure_reason": null,
+    "valid_polar_fraction": 0.842864990234375,
+    "pupil_circle": [
+      367.7680206298828,
+      253.06632041931152,
+      37.629218101501465
+    ],
+    "iris_circle": [
+      376.00109100341797,
+      258.19241523742676,
+      150.56248903274536
+    ]
+  }
+]

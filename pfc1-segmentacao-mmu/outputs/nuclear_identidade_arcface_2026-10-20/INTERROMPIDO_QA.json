@@ -1,0 +1,19 @@
+{
+  "status": "interrupted_after_calibration_image_quality_review_before_recognition",
+  "utc": "2026-10-20T19:47:18.614101+00:00",
+  "terminated_processes": [
+    {
+      "pid": 10784,
+      "script": "avaliar_identidade_nuclear.py"
+    },
+    {
+      "pid": 17084,
+      "script": "avaliar_area_nuclear_condicional.py"
+    }
+  ],
+  "reason": "Initial calibration masks on slit-illumination Nuclear images often fragment into nonrepresentative patches; original-image identity and minimum-area inference not justified with current pipeline",
+  "qa_image": "data/qa_biometria/nuclear/calibracao_inicial.png",
+  "recognition_results_examined": false,
+  "dataset_files_preserved": true,
+  "next_step": "Audit segmentation suitability before enrolling a clinical dataset; do not impute missing or unreliable iris area"
+}

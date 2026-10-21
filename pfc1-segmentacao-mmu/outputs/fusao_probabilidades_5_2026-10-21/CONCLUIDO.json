@@ -1,0 +1,57 @@
+{
+  "status": "fixed_mean_probability_fusion_completed",
+  "components": 5,
+  "results": [
+    {
+      "rank1": 0.8692946058091287,
+      "tar": 0.8319502074688797,
+      "fnmr": 0.1680497925311203,
+      "far": 0.009820193637621023,
+      "eer_descriptive": 0.04564315352697095,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.407207126742597,
+      "margin_mean_valid": 0.27445143096269314,
+      "threshold": 0.19989629461774802,
+      "variant": "mean_model_probabilities",
+      "normalization": [
+        {
+          "mean": 0.13122799080806388,
+          "std": 0.10420303589640487
+        },
+        {
+          "mean": 0.123085520293729,
+          "std": 0.07507690295608112
+        },
+        {
+          "mean": 0.6224773753886442,
+          "std": 0.04882472859612996
+        },
+        {
+          "mean": 0.11163836653933283,
+          "std": 0.08259312418878491
+        },
+        {
+          "mean": 0.12028174920227375,
+          "std": 0.09432536817462622
+        }
+      ]
+    },
+    {
+      "rank1": 0.8692946058091287,
+      "tar": 0.8402489626556017,
+      "fnmr": 0.15975103734439833,
+      "far": 0.009820193637621023,
+      "eer_descriptive": 0.04564315352697095,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.9215626020390818,
+      "margin_mean_valid": 0.1474082049503502,
+      "threshold": 0.8683702086358782,
+      "variant": "mean_probabilities_query_normalized"
+    }
+  ],
+  "test_inference": false,
+  "minimum_area": null,
+  "development_90_reached": false
+}

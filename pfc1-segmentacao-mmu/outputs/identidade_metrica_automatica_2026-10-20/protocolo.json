@@ -1,0 +1,30 @@
+{
+  "registered_utc": "2026-10-20T22:42:10.318731+00:00",
+  "scope": "Exploratory development after simple adaptation failed; train identities only; no test/occlusion inference",
+  "initialization": "Original identity checkpoint including training head, not failed fine-tuning epoch",
+  "loss": "Angular cross entropy + 0.5*batch-hard triplet, cosine distance, triplet margin0.2",
+  "batch": "16 distinct eye classes x4 captures, five shuffled rounds per epoch, sampling replacement only when fewer than4 valid captures",
+  "optimizer": "AdamW encoder1e-5 head5e-5, wd1e-4, clipping5, cosine20epochs",
+  "max_epochs": 20,
+  "patience": 6,
+  "seed": 44,
+  "preprocessing": "Reuse frozen U-Net automatic128 crops; rotation10 degrees, brightness/contrast15% train only",
+  "selection": "Baseline epoch0 included; max validation TAR, ties Rank1; validation top3 gallery with empirical FMR<=1% each epoch",
+  "caveat": "Repeated validation development; no independent confirmation or minimum-area claim",
+  "checkpoint_sha256": "6060c164eada674712127830b2d188a9e6b4ed210f7b8d595e58fdfeb10387fc",
+  "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+  "cache_sha256": {
+    "train_crops.npy": "8142231fcda1d4ea4a5b327422322f0eff19567113b85dce72cd5222f2b7308f",
+    "train_valid.npy": "1e0b1e4a32cacc8d5b391165da8e75152d96a7cbeef23158e181c67a7d7781b1",
+    "val_crops.npy": "029689dcd50077ee7dbc02d5f92f67cdddeda1ec3b7541f831fbd5cc5cf56792",
+    "val_valid.npy": "abc8f69c227b1095a3fe34fa2be0d9fc4750fdf58fc135562a008a74a1ff70f5"
+  },
+  "source_preparation_protocol_sha256": "fd0a9871e7ab44e550f4a04e9f05135d0bc41078cf6b1110d0678d7a981ddd31",
+  "script_sha256": "eb01937e53a43b381df23929373a06e6b5b05a3491278bd0e3bd280fb904a980",
+  "dependencies_sha256": {
+    "treinar_identidade_automatica.py": "53657d5ea79cf63e0c992c4b230bddeb840dafed3b102bcb36f9a08f409902cf",
+    "treinar_identidade_iris.py": "a8f6dc53ace011c968774f9f3f494a085f0c14af2a9ab04853952553c580b0a5",
+    "comparador_hdbif_lote.py": "0c6c086a348a17d900e17b4031dc0a2f06ab3721f9f7a53df26c382585882464",
+    "avaliar_robustez_reconhecimento.py": "e6d0b8d8eb78dc2e86ed3f73084cd9fb5d83d1afee27f73ca0ffbee1a5947f95"
+  }
+}

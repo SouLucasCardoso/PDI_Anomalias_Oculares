@@ -1,0 +1,56 @@
+{
+  "status": "fixed_four_way_fusion_development_completed",
+  "metrics": {
+    "rank1": 0.7883817427385892,
+    "tar": 0.6825726141078838,
+    "fnmr": 0.31742738589211617,
+    "far": 0.009904965868023023,
+    "eer_descriptive": 0.08921161825726141,
+    "extraction_failures": 4,
+    "queries": 482,
+    "genuine_mean_valid": 0.8924358911363633,
+    "margin_mean_valid": 0.059876682281571975,
+    "threshold": 0.8790276382846862,
+    "joint_success": 0.6493775933609959,
+    "normalization": [
+      {
+        "mean": 0.1240406410073161,
+        "std": 0.10133575699108374
+      },
+      {
+        "mean": 0.11512956587331158,
+        "std": 0.07565111886509615
+      },
+      {
+        "mean": 0.6217880028935157,
+        "std": 0.048889510591868704
+      },
+      {
+        "mean": 0.11885162167987831,
+        "std": 0.08455863176744434
+      }
+    ]
+  },
+  "test_inference": false,
+  "previous_three_way_comparison": {
+    "correct": {
+      "gain_pp": -1.0373443983402564,
+      "paired_person_ci95_pp": [
+        -3.4979423868312756,
+        1.4522821576763485
+      ]
+    },
+    "accepted": {
+      "gain_pp": 0.20746887966804906,
+      "paired_person_ci95_pp": [
+        -1.875,
+        2.272727272727273
+      ]
+    }
+  },
+  "interval_caveat": "Pointwise, fixed gallery/thresholds; not corrected for checkpoint selection or repeated development",
+  "minimum_area": null,
+  "required_count_90": 434,
+  "correct_count": 380,
+  "genuine_accept_count": 329
+}

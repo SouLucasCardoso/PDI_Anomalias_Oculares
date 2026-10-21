@@ -1,0 +1,18 @@
+{
+  "status": "single_query_score_normalization_completed",
+  "metrics": {
+    "rank1": 0.7987551867219918,
+    "tar": 0.7883817427385892,
+    "fnmr": 0.2116182572614108,
+    "far": 0.009904965868023023,
+    "eer_descriptive": 0.06478383081247491,
+    "extraction_failures": 4,
+    "queries": 482,
+    "genuine_mean_valid": 0.9285038489111158,
+    "margin_mean_valid": 0.056743284711814605,
+    "threshold": 0.8990862121054771,
+    "joint_success": 0.7448132780082988
+  },
+  "test_inference": false,
+  "minimum_area": null
+}

@@ -1,0 +1,87 @@
+{
+  "registered_utc": "2026-10-20T15:18:21.035083+00:00",
+  "status": "prepared_not_executed",
+  "dataset": "CatScreen public sample Clean",
+  "source": "https://www.iab-rubric.org/resources/healthcare-datasets/catscreen",
+  "source_manifest_sha256": "999a1c5b8234bd2e6006aa363823ba7bce702a8742732672517e3a0c6393e4e5",
+  "manifest_sha256": "1207d41666fdca3495f433c593405d114751ee531b45e9102ed46d98fdc44193",
+  "primary_task": "Normal vs (Cataract or Other), using source labels; not specific diagnosis",
+  "counts": {
+    "train": {
+      "images": 140,
+      "subjects": 129,
+      "classes": {
+        "0": 45,
+        "1": 95
+      },
+      "diagnoses": {
+        "Normal": 45,
+        "Cataract": 65,
+        "Other": 30
+      }
+    },
+    "val": {
+      "images": 20,
+      "subjects": 19,
+      "classes": {
+        "0": 5,
+        "1": 15
+      },
+      "diagnoses": {
+        "Normal": 5,
+        "Cataract": 10,
+        "Other": 5
+      }
+    },
+    "test": {
+      "images": 40,
+      "subjects": 37,
+      "classes": {
+        "1": 32,
+        "0": 8
+      },
+      "diagnoses": {
+        "Cataract": 27,
+        "Normal": 8,
+        "Other": 5
+      }
+    }
+  },
+  "split": "official split, metadata subject disjoint, no exact image duplicates",
+  "primary_classifier": "ResNet18 ImageNet frozen CNN + trained binary linear head",
+  "branches": [
+    "original",
+    "unet_iris_bbox_context",
+    "unet_iris_masked_same_bbox"
+  ],
+  "segmentation": "UBIPr U-Net selected on UBIPr validation, frozen before clinical extraction",
+  "paired_control": "same padded bbox for context and iris-mask branches; original is full image",
+  "empty_masks": "black masked image and full-frame bbox, no sample exclusion; report failures",
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "size": [
+    224,
+    224
+  ],
+  "selection": "clinical validation only; no test-driven architecture, thresholds or preprocessing",
+  "primary_metric": "paired difference in test AUROC, masked minus original",
+  "secondary_metrics": [
+    "balanced_accuracy_at_0.5",
+    "sensitivity_at_0.5",
+    "specificity_at_0.5",
+    "macro_f1_at_0.5",
+    "confusion_matrix",
+    "mask_failure_rate"
+  ],
+  "uncertainty": "5000 paired subject bootstrap replicates on fixed test predictions; exploratory sample",
+  "external_candidate": "SLID frozen test only, after label/terms/overlap audit; no patient ID available for cluster CI",
+  "restrictions": [
+    "no Noisy/Unlabelled in supervised main experiment",
+    "no mixing healthy controls across sensors to construct disease labels",
+    "no claim of clinical diagnosis or biometric identity performance",
+    "SLP-VLD eligibility may lead to a separately registered replacement before test scoring"
+  ]
+}

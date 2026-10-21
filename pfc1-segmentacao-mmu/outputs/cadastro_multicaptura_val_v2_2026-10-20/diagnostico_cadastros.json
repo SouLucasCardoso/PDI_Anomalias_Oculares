@@ -1,0 +1,55 @@
+{
+  "note": "Post-hoc diagnostic, no exclusions or recalibration; polar valid fraction is not pairwise overlap",
+  "frequent_wrong_winners": [
+    {
+      "image": "C235_S1_I12_L.jpg",
+      "wrong_wins": 138,
+      "polar_valid_fraction": 0.00152587890625
+    },
+    {
+      "image": "C507_S1_I11_L.jpg",
+      "wrong_wins": 95,
+      "polar_valid_fraction": 0.012725830078125
+    },
+    {
+      "image": "C317_S1_I1_R.jpg",
+      "wrong_wins": 78,
+      "polar_valid_fraction": 0.142181396484375
+    },
+    {
+      "image": "C391_S1_I12_R.jpg",
+      "wrong_wins": 42,
+      "polar_valid_fraction": 0.028228759765625
+    },
+    {
+      "image": "C361_S1_I15_R.jpg",
+      "wrong_wins": 28,
+      "polar_valid_fraction": 0.0128173828125
+    },
+    {
+      "image": "C235_S1_I8_R.jpg",
+      "wrong_wins": 22,
+      "polar_valid_fraction": 0.039947509765625
+    },
+    {
+      "image": "C317_S1_I7_L.jpg",
+      "wrong_wins": 9,
+      "polar_valid_fraction": 0.191558837890625
+    },
+    {
+      "image": "C507_S1_I6_L.jpg",
+      "wrong_wins": 4,
+      "polar_valid_fraction": 0.243499755859375
+    },
+    {
+      "image": "C79_S1_I14_L.jpg",
+      "wrong_wins": 4,
+      "polar_valid_fraction": 0.129974365234375
+    },
+    {
+      "image": "C507_S1_I2_R.jpg",
+      "wrong_wins": 3,
+      "polar_valid_fraction": 0.163909912109375
+    }
+  ]
+}

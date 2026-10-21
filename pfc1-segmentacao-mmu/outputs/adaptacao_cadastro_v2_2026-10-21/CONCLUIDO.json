@@ -1,0 +1,85 @@
+{
+  "status": "enrollment_adaptation_fixed12_completed",
+  "results": [
+    {
+      "rank1": 0.7697095435684648,
+      "tar": 0.5871369294605809,
+      "fnmr": 0.41286307053941906,
+      "far": 0.009820193637621023,
+      "eer_descriptive": 0.0826417704011065,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.44750147081153,
+      "margin_mean_valid": 0.11854391363209094,
+      "threshold": 0.4154198567072551,
+      "variant": "adapted_top3_side"
+    },
+    {
+      "rank1": 0.7448132780082988,
+      "tar": 0.5871369294605809,
+      "fnmr": 0.41286307053941906,
+      "far": 0.009820193637621023,
+      "eer_descriptive": 0.09930843706777316,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.312137265335067,
+      "margin_mean_valid": 0.10371227404998935,
+      "threshold": 0.2820818424224854,
+      "variant": "adapted_head_cosine_side"
+    },
+    {
+      "rank1": 0.8734439834024896,
+      "tar": 0.7531120331950207,
+      "fnmr": 0.24688796680497926,
+      "far": 0.009820193637621023,
+      "eer_descriptive": 0.07247579529737207,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.9101986045094109,
+      "margin_mean_valid": 0.11052000047903919,
+      "threshold": 0.883968082705338,
+      "variant": "adapted_equal_fusion",
+      "normalization": [
+        {
+          "mean": 0.13122799080806388,
+          "std": 0.10420303589640487
+        },
+        {
+          "mean": 0.123085520293729,
+          "std": 0.07507690295608112
+        },
+        {
+          "mean": 0.6224773753886442,
+          "std": 0.04882472859612996
+        },
+        {
+          "mean": 0.12028174920227375,
+          "std": 0.09432536817462622
+        },
+        {
+          "mean": 0.09625837449830846,
+          "std": 0.11469152300836169
+        }
+      ]
+    },
+    {
+      "rank1": 0.8734439834024896,
+      "tar": 0.8568464730290456,
+      "fnmr": 0.1431535269709544,
+      "far": 0.009820193637621023,
+      "eer_descriptive": 0.04564315352697095,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.9175472631241294,
+      "margin_mean_valid": 0.12820362514266292,
+      "threshold": 0.8658853157228349,
+      "variant": "adapted_fusion_query_normalized"
+    }
+  ],
+  "query_images_used_for_fitting": 0,
+  "epochs": 12,
+  "test_inference": false,
+  "minimum_area": null,
+  "checkpoint_sha256": "0e03f15c31f7320dccec7d85aa48792d6762efe0a0da15bb9d2e75ac54ea89cf",
+  "development_90_reached": false
+}

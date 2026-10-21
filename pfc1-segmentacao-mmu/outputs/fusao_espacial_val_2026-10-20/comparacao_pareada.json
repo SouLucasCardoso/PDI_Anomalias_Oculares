@@ -1,0 +1,46 @@
+{
+  "scope": "Development only; fixed weights, standardization/threshold on repeatedly used validation; pointwise paired person-cluster CI not selection-corrected",
+  "comparisons": [
+    {
+      "variant": "fusion2",
+      "gain_pp": {
+        "rank1": 9.54356846473029,
+        "tar": 8.298755186721996
+      },
+      "gain_ci95_pp": {
+        "rank1": [
+          4.564315352697095,
+          14.937759336099585
+        ],
+        "tar": [
+          2.0661157024793386,
+          14.107883817427386
+        ]
+      }
+    },
+    {
+      "variant": "fusion3",
+      "gain_pp": {
+        "rank1": 13.070539419087146,
+        "tar": 8.713692946058094
+      },
+      "gain_ci95_pp": {
+        "rank1": [
+          7.053941908713693,
+          19.166666666666668
+        ],
+        "tar": [
+          1.037344398340249,
+          16.25
+        ]
+      }
+    }
+  ],
+  "remaining_to90_pp": {
+    "rank1": 10.124481327800822,
+    "tar": 21.95020746887967
+  },
+  "required_count_at90_of482": 434,
+  "current_correct_count": 385,
+  "current_genuine_accept_count": 328
+}

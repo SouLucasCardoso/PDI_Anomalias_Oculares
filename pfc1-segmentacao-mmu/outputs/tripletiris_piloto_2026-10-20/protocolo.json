@@ -1,0 +1,122 @@
+{
+  "registered_utc": "2026-10-20T22:51:16.276539+00:00",
+  "technical_smoke": true,
+  "scope": "Development validation only; public pretrained TripletIris, no identity retraining or test/occlusion inference",
+  "variants": [
+    "full_author",
+    "roi_reference",
+    "roi_automatic"
+  ],
+  "config": {
+    "cuda": true,
+    "polar_height": 64,
+    "polar_width": 512,
+    "circle_model_path": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\modelos\\cvrl_tripletiris\\models\\resnet18-1543-0.047488-maskIoU-0.934494.pth",
+    "nn_model_path": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\modelos\\cvrl_tripletiris\\models\\convnext_tiny-znorm-best.pth"
+  },
+  "provenance": {
+    "fontes.json": {
+      "method": "TripletIris",
+      "revision": "4a535e4a9a0728e4428c25f743f6d59098ae397f",
+      "files": [
+        {
+          "path": "cfg_baseline.yaml",
+          "url": "https://raw.githubusercontent.com/CVRL/OpenSourceIrisRecognition/4a535e4a9a0728e4428c25f743f6d59098ae397f/methods/TripletIris/Python/cfg_baseline.yaml",
+          "sha256": "c93a2c115ed54316b5c2664eb12ef910ade9bc5b0ed3b1464d5c34ff02258e62"
+        },
+        {
+          "path": "data/readme.txt",
+          "url": "https://raw.githubusercontent.com/CVRL/OpenSourceIrisRecognition/4a535e4a9a0728e4428c25f743f6d59098ae397f/methods/TripletIris/Python/data/readme.txt",
+          "sha256": "e53550cfaab6f9ca836646a42a9ce1ef0bccf8bfc9b86c7859890e8be142f786"
+        },
+        {
+          "path": "macos_environment.yml",
+          "url": "https://raw.githubusercontent.com/CVRL/OpenSourceIrisRecognition/4a535e4a9a0728e4428c25f743f6d59098ae397f/methods/TripletIris/Python/macos_environment.yml",
+          "sha256": "08e80e744857b1e565749b943250c0d3a56a5e3102a2fc2b0380c9493bd9d95d"
+        },
+        {
+          "path": "minimal_environment.yml",
+          "url": "https://raw.githubusercontent.com/CVRL/OpenSourceIrisRecognition/4a535e4a9a0728e4428c25f743f6d59098ae397f/methods/TripletIris/Python/minimal_environment.yml",
+          "sha256": "508940fd48fbb658165444aa6c37d6d6017cf5517e87fed7559e0a458903e2f5"
+        },
+        {
+          "path": "models/readme.txt",
+          "url": "https://raw.githubusercontent.com/CVRL/OpenSourceIrisRecognition/4a535e4a9a0728e4428c25f743f6d59098ae397f/methods/TripletIris/Python/models/readme.txt",
+          "sha256": "d86c14fc06cc48c4466cb7672eb6534d89a404a158d4718c4d8824c27f4bb71c"
+        },
+        {
+          "path": "modules/irisRecognition.py",
+          "url": "https://raw.githubusercontent.com/CVRL/OpenSourceIrisRecognition/4a535e4a9a0728e4428c25f743f6d59098ae397f/methods/TripletIris/Python/modules/irisRecognition.py",
+          "sha256": "02553f95fbfd44c97cc2de3826376238fae05b73b05a861ae7e45eb6222fdbbe"
+        },
+        {
+          "path": "modules/network.py",
+          "url": "https://raw.githubusercontent.com/CVRL/OpenSourceIrisRecognition/4a535e4a9a0728e4428c25f743f6d59098ae397f/methods/TripletIris/Python/modules/network.py",
+          "sha256": "d6568ae3dfa4e5ce6cdbf7430f6d6c9236b2d8070bcf8c919991ba32a3fbf3a8"
+        },
+        {
+          "path": "modules/transform.py",
+          "url": "https://raw.githubusercontent.com/CVRL/OpenSourceIrisRecognition/4a535e4a9a0728e4428c25f743f6d59098ae397f/methods/TripletIris/Python/modules/transform.py",
+          "sha256": "d74d397e0db308d9d5a6d6a0b272f8746e0197ddbdf55ca638c0efd50f89bbb8"
+        },
+        {
+          "path": "modules/utils.py",
+          "url": "https://raw.githubusercontent.com/CVRL/OpenSourceIrisRecognition/4a535e4a9a0728e4428c25f743f6d59098ae397f/methods/TripletIris/Python/modules/utils.py",
+          "sha256": "67b25b178be359a8e14915bbf46642ba444b84d151baa1d60f6bcb3bc5477115"
+        },
+        {
+          "path": "readme.md",
+          "url": "https://raw.githubusercontent.com/CVRL/OpenSourceIrisRecognition/4a535e4a9a0728e4428c25f743f6d59098ae397f/methods/TripletIris/Python/readme.md",
+          "sha256": "eb5d9d20ddaea7e02850cc30af3967cec7ee2c73f0ef5d357661d62c7eba04c2"
+        },
+        {
+          "path": "templates/readme.txt",
+          "url": "https://raw.githubusercontent.com/CVRL/OpenSourceIrisRecognition/4a535e4a9a0728e4428c25f743f6d59098ae397f/methods/TripletIris/Python/templates/readme.txt",
+          "sha256": "9c01f8df416edabf96683549105737836b0550dc1ea4cd6bd3c48c7d953ef605"
+        },
+        {
+          "path": "tripletiris.py",
+          "url": "https://raw.githubusercontent.com/CVRL/OpenSourceIrisRecognition/4a535e4a9a0728e4428c25f743f6d59098ae397f/methods/TripletIris/Python/tripletiris.py",
+          "sha256": "c19ea0ba94e07b17c746737d34e4688be2ba6fe582cc22cd8b532b643cd5da0a"
+        }
+      ]
+    },
+    "pesos.json": {
+      "files": [
+        {
+          "path": "models/convnext_tiny-znorm-best.pth",
+          "drive_id": "1fKC-cIqfaOcEo-_AcxVvLLlrk1hDwOoL",
+          "bytes": 117642514,
+          "sha256": "99b33c4efb6b32aa4f38c8eb77cc0bce99c71d987a8256daef155a4c4eb218ae"
+        },
+        {
+          "path": "models/resnet18-1543-0.047488-maskIoU-0.934494.pth",
+          "drive_id": "16xsIlXJ6urljtk03kdMbl05Fa468TJup",
+          "bytes": 44813361,
+          "sha256": "aa333cbdd321785b10feedf41d9608d14d73fcf900b627b0611f08e69a1cad64"
+        }
+      ]
+    }
+  },
+  "preprocessing": "Red channel as authors demo; full uses author fix_image; ROI reference/automatic bbox50% margin then our aspect-preserving bilinear ISO640x480; no iris mask applied to polar texture",
+  "encoder": "Official extractVector, per-image z-normalization clipped[-4,4], ConvNeXt-tiny2048, no embedding L2 normalization",
+  "comparison": "Official Euclidean distance mapped monotonically to1/(1+distance), then first/max/top3 gallery aggregation; these gallery rules are our extension",
+  "failure_handling": "Retain all eyes/queries; empty ROI masks or nonfinite/nonpositive circles with pupil>=iris reject; zero/nonfinite polar variance rejects; invalid comparisons score-2",
+  "calibration": "Each variant validation empirical FMR<=1%; rates are development not independent confirmation",
+  "caveats": "Different pretrained model/normalizer/input, no isolated architecture effect; source training population overlap unknown; reference ROI assisted; automatic ROI may include context; no universal minimum claim",
+  "counts": {
+    "people": 2,
+    "eyes": 4,
+    "gallery_images": 4,
+    "queries": 4,
+    "images": 8
+  },
+  "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+  "script_sha256": "7fccdb1fdd5f57c87622a1d05d961983febffbf882e47e248245b022a48bf116",
+  "unet_sha256": "2bcfc269ffc9562ca8cf0956998faf1e22641587cd60f7059b3cec3dd0f4093d",
+  "dependencies_sha256": {
+    "validar_melhoria_normalizacao.py": "65775edd0c7adc7c98392fe35b2734b3b0bf45f947e9a8985e7a11e08b352395",
+    "comparador_hdbif_lote.py": "0c6c086a348a17d900e17b4031dc0a2f06ab3721f9f7a53df26c382585882464",
+    "avaliar_robustez_reconhecimento.py": "e6d0b8d8eb78dc2e86ed3f73084cd9fb5d83d1afee27f73ca0ffbee1a5947f95"
+  }
+}

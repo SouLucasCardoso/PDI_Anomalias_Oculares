@@ -1,0 +1,58 @@
+{
+  "status": "post_hoc_descriptive_only_no_test_tuning",
+  "joint_correct_rank1_and_genuine_accepted": 0.1536050156739812,
+  "queries_with_any_impostor_above_threshold": 0.8996865203761756,
+  "note": "TAR is pairwise genuine acceptance; not thresholded identification accuracy. This is not open-set FPIR.",
+  "most_frequent_wrong_gallery_winners": [
+    {
+      "image": "P0489_OS20250401.JPG",
+      "wrong_rank1_queries": 134,
+      "predicted_valid_polar_fraction": 0.06182861328125
+    },
+    {
+      "image": "P0819_OD20250308.JPG",
+      "wrong_rank1_queries": 34,
+      "predicted_valid_polar_fraction": 0.009979248046875
+    },
+    {
+      "image": "P0324_OS20250106.JPG",
+      "wrong_rank1_queries": 33,
+      "predicted_valid_polar_fraction": 0.05218505859375
+    },
+    {
+      "image": "P0301_OD20250427.JPG",
+      "wrong_rank1_queries": 23,
+      "predicted_valid_polar_fraction": 0.039031982421875
+    },
+    {
+      "image": "P0167_OD20250210.JPG",
+      "wrong_rank1_queries": 13,
+      "predicted_valid_polar_fraction": 0.0482177734375
+    },
+    {
+      "image": "P0096_OD20250610.JPG",
+      "wrong_rank1_queries": 2,
+      "predicted_valid_polar_fraction": 0.381927490234375
+    },
+    {
+      "image": "P0480_OD20250317.JPG",
+      "wrong_rank1_queries": 2,
+      "predicted_valid_polar_fraction": 0.15350341796875
+    },
+    {
+      "image": "P0645_OD20250113.JPG",
+      "wrong_rank1_queries": 2,
+      "predicted_valid_polar_fraction": 0.203155517578125
+    },
+    {
+      "image": "P0138_OD20250216.JPG",
+      "wrong_rank1_queries": 1,
+      "predicted_valid_polar_fraction": 0.5322265625
+    },
+    {
+      "image": "P0169_OS20250205.JPG",
+      "wrong_rank1_queries": 1,
+      "predicted_valid_polar_fraction": 0.646240234375
+    }
+  ]
+}

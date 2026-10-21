@@ -1,0 +1,47 @@
+{
+  "inteira": {
+    "threshold": 0.9134387373924256,
+    "validation": {
+      "rank1": 0.6058091286307054,
+      "tar": 0.34647302904564314,
+      "fnmr": 0.6535269709543569,
+      "far": 0.009971891313077233,
+      "eer_descriptive": 0.0995850622406639,
+      "extraction_failures": 0,
+      "queries": 482,
+      "genuine_mean_valid": 0.8903982586138476,
+      "margin_mean_valid": 0.013052667077646216
+    },
+    "failed_enrollments": []
+  },
+  "iris_referencia": {
+    "threshold": 0.9548022150993348,
+    "validation": {
+      "rank1": 0.2053941908713693,
+      "tar": 0.0995850622406639,
+      "fnmr": 0.9004149377593361,
+      "far": 0.009771114977914603,
+      "eer_descriptive": 0.3775933609958506,
+      "extraction_failures": 10,
+      "queries": 482,
+      "genuine_mean_valid": 0.8614926818695109,
+      "margin_mean_valid": -0.03407500330674446
+    },
+    "failed_enrollments": []
+  },
+  "iris_unet": {
+    "threshold": 0.9601196050643922,
+    "validation": {
+      "rank1": 0.21784232365145229,
+      "tar": 0.1016597510373444,
+      "fnmr": 0.8983402489626556,
+      "far": 0.009904965868023023,
+      "eer_descriptive": 0.36721991701244816,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.8869705036843671,
+      "margin_mean_valid": -0.025960989577002106
+    },
+    "failed_enrollments": []
+  }
+}

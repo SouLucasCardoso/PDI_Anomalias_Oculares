@@ -1,0 +1,124 @@
+"""Curva condicional de area estimada, registrada antes do teste original."""
+from pathlib import Path
+import csv
+import hashlib
+import json
+import time
+import numpy as np
+from PIL import Image
+import torch
+
+ROOT=Path(__file__).resolve().parent
+CONDITIONS=[('oclusao_superior',level) for level in range(10,100,10)]+[('oclusao_inferior',level) for level in range(10,100,10)]
+
+def main():
+    torch.set_num_threads(2)
+    from avaliar_identidade_nuclear import register,digest
+    from treinar_identidade_iris import IdentityEncoder
+    from avaliar_dinov3_ubipr import masked_crop
+    from avaliar_robustez_reconhecimento import perturb,metrics,paired_ci
+    from relatar_area_preservada import minimum_fraction
+    source=ROOT/'outputs/nuclear_identidade_arcface_2026-10-20'
+    original=ROOT/'outputs/nuclear_biometria_protocolo_2026-10-20'
+    out=ROOT/'outputs/nuclear_area_condicional_2026-10-20'; out.mkdir(parents=True,exist_ok=True)
+    protocol={'purpose':'Conditional area experiment registered before original Nuclear recognition results',
+        'original_protocol_sha256':digest(original/'protocolo.json'),
+        'manifest_sha256':digest(original/'manifesto.json'),
+        'script_sha256':digest(Path(__file__)),
+        'dependencies_sha256':{name:digest(ROOT/name) for name in ['avaliar_identidade_nuclear.py','treinar_identidade_iris.py',
+            'avaliar_robustez_reconhecimento.py','avaliar_dinov3_ubipr.py','relatar_area_preservada.py']},
+        'gate':'Proceed with 18 perturbations only if original held-out test Rank1>=0.90 and TAR>=0.90; otherwise minimum not determined',
+        'conditions':CONDITIONS,'model':'Final UBIPr-validation-selected encoder, no Nuclear model selection',
+        'segmentation':'Frozen original predicted CVRL mask and bbox; do not resegment occluded images',
+        'area_definition':'Fraction of predicted-mask pixels preserved; estimated region, not anatomical ground truth or disease extent',
+        'occlusion':'Replace exact top/bottom fraction of predicted-mask pixels by gray128 in original640x480 space',
+        'gallery':'Original fixed gallery, same as frozen Nuclear baseline',
+        'threshold':'Frozen Nuclear calibration threshold; report test FMR without recalibration',
+        'minimum_rule':'Smallest tested fraction with both Rank1 and TAR>=90%, requiring all larger fractions to pass, separately by orientation',
+        'uncertainty':'5000 paired query-patient bootstrap replicates, fixed gallery and threshold',
+        'limitations':['No clinical ground-truth masks','Dates and independent acquisition sessions not established',
+                       'Point-estimate operational criterion, not universal iris minimum','Synthetic occlusion is not a diagnosis']}
+    register(out/'protocolo.json',protocol)
+    print('Protocolo registrado; aguardando avaliacao original Nuclear.',flush=True)
+    deadline=time.monotonic()+6*3600
+    while not (source/'CONCLUIDO.json').exists():
+        if time.monotonic()>deadline: raise TimeoutError('Original Nuclear recognition incomplete')
+        time.sleep(30)
+    baseline=json.loads((source/'resultado.json').read_text(encoding='utf-8'))['test']
+    model_record=json.loads((source/'CONCLUIDO.json').read_text(encoding='utf-8'))
+    checkpoint=ROOT/'outputs/identidade_arcface_ubipr_2026-10-20/melhor_modelo.pt'
+    if digest(checkpoint)!=model_record['encoder_sha256']: raise ValueError('Encoder changed')
+    origin={'original_result_sha256':digest(source/'resultado.json'),
+            'model_sha256':model_record['encoder_sha256'],'threshold':baseline['threshold']}
+    (out/'origem_resultados.json').write_text(json.dumps(origin,indent=2),encoding='utf-8')
+    if baseline['metrics']['rank1']<.9 or baseline['metrics']['tar']<.9:
+        result={'status':'minimum_not_determined_original_below_criterion','perturbed_conditions_executed':0,
+            'baseline':baseline,'minimum_estimated_area_percent':None,
+            'reason':'Original fails the necessary operational criterion; perturbation cannot establish a minimum requiring all larger areas to pass.'}
+        (out/'area_minima.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
+        (out/'CONCLUIDO.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
+        print(json.dumps(result,indent=2),flush=True); return
+    splits=json.loads((original/'manifesto.json').read_text(encoding='utf-8'))
+    rows=[dict(r,split=s) for s,rs in splits.items() for r in rs]
+    indexes=[i for i,r in enumerate(rows) if r['split']=='test']
+    ids=sorted({(rows[i]['patient_id'],rows[i]['side']) for i in indexes})
+    gi=[next(i for i in indexes if (rows[i]['patient_id'],rows[i]['side'])==eye and rows[i]['role']=='gallery') for eye in ids]
+    qi=[i for i in indexes if rows[i]['role']=='query']
+    labels=np.array([ids.index((rows[i]['patient_id'],rows[i]['side'])) for i in qi])
+    with np.load(source/'embeddings.npz') as saved: features=saved['features']; sample_valid=saved['valid']
+    gallery=features[gi]; valid=sample_valid[qi]
+    with np.load(source/'scores_test.npz') as saved:
+        base_scores=saved['scores']; base_correct=saved['correct']; base_accepted=saved['accepted']
+        if not np.array_equal(labels,saved['labels']): raise ValueError('Query ordering mismatch')
+    reconstructed=(features[qi]@gallery.T).astype(np.float64)
+    reconstructed[:,~sample_valid[gi]]=-2.
+    if not np.allclose(reconstructed,base_scores,atol=1e-6,rtol=0): raise ValueError('Original gallery mismatch')
+    subjects=np.array([rows[i]['patient_id'] for i in qi]); threshold=baseline['threshold']
+    device=torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    model=IdentityEncoder().to(device); model.load_state_dict(torch.load(checkpoint,map_location=device,weights_only=True)['model']); model.eval()
+    mean=torch.tensor([.485,.456,.406],device=device)[None,:,None,None]
+    std=torch.tensor([.229,.224,.225],device=device)[None,:,None,None]
+    summaries=[{'condition':'original','level':0,**baseline['metrics'],
+                'loss_rank1_pp':0.,'ci_low_pp':0.,'ci_high_pp':0.,'loss_tar_pp':0.,'tar_ci_low_pp':0.,'tar_ci_high_pp':0.}]
+    for kind,level in CONDITIONS:
+        path=out/f'embeddings_{kind}_{level}.npz'
+        if path.exists():
+            with np.load(path) as saved: altered=saved['features']
+        else:
+            vectors=[]
+            for start in range(0,len(qi),128):
+                images=[]
+                for index in qi[start:start+128]:
+                    row=rows[index]; key=f"{row['patient_id']:03d}_{row['side']}_{Path(row['filename']).stem}"
+                    with np.load(ROOT/'data/cache/nuclear_identidade128'/(key+'.npz'),allow_pickle=False) as saved:
+                        image=Image.fromarray(saved['rgb']); mask=saved['mask']
+                    perturbed,_=perturb(image,mask,kind,level)
+                    images.append(np.asarray(masked_crop(perturbed,mask).resize((128,128),Image.Resampling.BILINEAR)))
+                tensor=torch.from_numpy(np.stack(images).transpose(0,3,1,2).copy()).to(device).float()/255
+                with torch.inference_mode(),torch.autocast(device_type=device.type,dtype=torch.bfloat16,enabled=device.type=='cuda'):
+                    vector=model((tensor-mean)/std)
+                vectors.append(torch.nn.functional.normalize(vector.float(),dim=1).cpu().numpy())
+            altered=np.concatenate(vectors)
+            if not np.isfinite(altered).all(): raise FloatingPointError('Nonfinite embeddings')
+            np.savez_compressed(path,features=altered)
+        scores=(altered@gallery.T).astype(np.float64); scores[:,~sample_valid[gi]]=-2.
+        measured,correct,accepted=metrics(scores,labels,threshold,valid)
+        ci=paired_ci(base_correct,correct,subjects); tci=paired_ci(base_accepted,accepted,subjects)
+        summaries.append({'condition':kind,'level':level,**measured,
+                          'loss_rank1_pp':100*(baseline['metrics']['rank1']-measured['rank1']),
+                          'ci_low_pp':ci[0],'ci_high_pp':ci[1],
+                          'loss_tar_pp':100*(baseline['metrics']['tar']-measured['tar']),
+                          'tar_ci_low_pp':tci[0],'tar_ci_high_pp':tci[1]})
+        np.savez_compressed(out/f'scores_{kind}_{level}.npz',scores=scores,labels=labels,valid=valid)
+        with (out/'resumo.csv').open('w',encoding='utf-8',newline='') as stream:
+            writer=csv.DictWriter(stream,fieldnames=list(summaries[0])); writer.writeheader(); writer.writerows(summaries)
+        print(json.dumps(summaries[-1]),flush=True)
+    result={'status':'conditional_area_experiment_completed','area_definition':protocol['area_definition'],
+        'minimum_estimated_area_percent':{kind:minimum_fraction(baseline['metrics'],[r for r in summaries if r['condition']==kind])
+                                          for kind in ('oclusao_superior','oclusao_inferior')},
+        'conditions':len(summaries),'threshold':threshold,'limitations':protocol['limitations']}
+    (out/'area_minima.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
+    (out/'CONCLUIDO.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
+    print(json.dumps(result,indent=2),flush=True)
+
+if __name__=='__main__': main()

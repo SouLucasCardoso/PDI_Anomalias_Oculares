@@ -1,0 +1,56 @@
+{
+  "task": "development validation only, original clinical captures; no test recognition",
+  "manifest_sha256": "b793ea8fc596a34fac8b588e87afc645ab58d7d10b3855b0b7dbeeb09e5bf720",
+  "script_sha256": "2595065dff379787ed0285c7c5ae78b62371ab98237ebe55aa63b96d5b54420c",
+  "config": {
+    "cuda": false,
+    "polar_height": 64,
+    "polar_width": 512,
+    "recog_filter_size": "17",
+    "recog_num_filters": "5",
+    "recog_max_shift": 16,
+    "recog_bsif_dir": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\modelos\\cvrl_hdbif\\filters_pt\\finetuned_bsif_eyetracker_data/",
+    "threshold_frac_avg_bits": 0,
+    "score_norm": false,
+    "mask_model_path": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\modelos\\cvrl_hdbif\\models\\nestedsharedatrousresunet-006-0.028214-maskIoU-0.938446.pth",
+    "circle_model_path": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\modelos\\cvrl_hdbif\\models\\resnet18-027-0.008222-maskIoU-0.967159.pth"
+  },
+  "weights": {
+    "files": [
+      {
+        "path": "filters_pt/finetuned_bsif_eyetracker_data/ICAtextureFilters_17x17_5bit.pt",
+        "drive_id": "1oqajM9kc_jUril2Y4OCuIB1xook-QAeM",
+        "bytes": 13380,
+        "sha256": "1d61b594905e38bacb6d2a1a104d256e2ac4222144bea022d470ee3574ea2a80"
+      },
+      {
+        "path": "models/nestedsharedatrousresunet-006-0.028214-maskIoU-0.938446.pth",
+        "drive_id": "1InBg6kI2VF8tljg6k4of0sF1_uBnuOXN",
+        "bytes": 20693985,
+        "sha256": "76b0fb5f70390c70b72d30e90ecf5711f2d6624db4e885d15b142cdf98470965"
+      },
+      {
+        "path": "models/resnet18-027-0.008222-maskIoU-0.967159.pth",
+        "drive_id": "19ZI9QehiGsEjLabN7KTe2WQmf6qFI6hO",
+        "bytes": 44818646,
+        "sha256": "89fcd3879d78b44e3a6bb3baec40bf7ec902b249e6b794a88e3af8aa229e2815"
+      }
+    ],
+    "note": "Circle checkpoint 027 is supplied in author Drive; source cfg names 1543, which was absent. Explicit override required; not an exact reproduction of cfg."
+  },
+  "source_revision": "4a535e4a9a0728e4428c25f743f6d59098ae397f",
+  "gallery": "First image on earliest date per eye; queries all strictly later dates",
+  "identity": "anonymous subject + side; metadata ambiguities excluded upstream",
+  "matcher": "Official exhaustive matchCodes, +/-16 columns, no score normalization",
+  "failure_handling": "Retain all eye identities and queries; invalid enrollment or comparison score -2; failed queries reject",
+  "quality_checks": "Finite circles, positive pupil radius smaller than iris radius; nonempty normalized mask",
+  "calibration": "Empirical validation impostor FMR <=1%, conservative ties; reported metrics are development estimates",
+  "mask": "CVRL predicted mask, not clinical ground truth",
+  "counts": {
+    "images": 171,
+    "people": 36,
+    "eyes": 60
+  },
+  "signature": "3d1a8ac77a8668c7e869d957dfe261a5b67628ccfed7adec55303f0715ffff88",
+  "registered_utc": "2026-10-20T16:18:42.809174+00:00"
+}

@@ -2,6 +2,7 @@
 import csv
 import argparse
 import json
+import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -23,10 +24,72 @@ def main():
                            'last_validation': history[-1] if history else None,
                            'warning': 'not_completed may mean running or interrupted; inspect log/process.'},
               'objective': 'iris preserved area and ocular identity recognition',
+              'confirmed_scope': {'primary_dataset':'UBIPr','query_images_per_identification':1,'multiple_enrollment_images_allowed':True,'query_side_may_be_required':True,'side_informed_candidate_eyes_per_query':16,'previous32_eye_protocol_preserved':True},
               'active_protocol': 'PROTOCOLO_AREA_IRIS_2026-10-20.md',
               'clinical_protocol': 'outputs/biometria_clinica_triagem_2026-10-20/protocolo_triagem.json',
               'clinical_status': 'inspect clinical_validation and clinical_test below', 'datasets': {}}
     report['recognition']={}
+    report['recognizer_development']={}
+    for name,folder_name in [('normalization','melhoria_normalizacao_val_gpu_2026-10-20'),
+                             ('resolution','melhoria_resolucao_encoder_val_2026-10-20'),
+                             ('multicapture','cadastro_multicaptura_val_v2_2026-10-20'),
+                             ('polar_support','suporte_polar_val_2026-10-20'),
+                             ('automatic_finetuning','identidade_automatica_2026-10-20'),
+                             ('automatic_metric_learning','identidade_metrica_automatica_2026-10-20'),
+                             ('tripletiris_pretrained','tripletiris_validacao_2026-10-20'),
+                             ('tripletiris_ellipse','tripletiris_elipse_validacao_2026-10-20'),
+                             ('polar_encoder','encoder_polar_2026-10-20'),
+                             ('loggabor_phase','loggabor_polar_val_2026-10-20'),
+                             ('spatial_matching','espacial_polar_val_2026-10-20'),
+                             ('fixed_rgb_polar_fusion','fusao_polar_rgb_val_2026-10-20'),
+                             ('fixed_three_way_fusion','fusao_espacial_val_2026-10-20'),
+                             ('dense_polar_encoder','encoder_polar_denso_2026-10-20'),
+                             ('fixed_four_way_fusion','fusao_densa_val_2026-10-20'),
+                             ('training_only_linear_metric','metrica_intra_val_2026-10-20'),
+                             ('resnet50_session_training','resnet50_sessoes_2026-10-20'),
+                             ('single_query_normalization','normalizacao_consulta_2026-10-20'),
+                             ('single_photo_multiview','multivista_foto_unica_2026-10-20'),
+                             ('spatial_layer2_enrollment','espacial_capturas_val_2026-10-20'),
+                             ('enrollment_cohort_normalization','normalizacao_cadastro_2026-10-20'),
+                             ('resnet50_fixed_fusion','fusao_resnet50_val_2026-10-20'),
+                             ('enrollment_classifier','classificador_cadastro_2026-10-20'),
+                             ('convnext_contrast_training','convnext_contraste_2026-10-20'),
+                             ('side_informed_resnet50','lateralidade_resnet50_2026-10-20'),
+                             ('side_conditioned_fusion4','fusao_lateral_4_2026-10-20'),
+                             ('side_conditioned_fusion5','fusao_lateral_5_2026-10-20'),
+                             ('side_enrollment_classifiers','classificador_lateral_2026-10-20'),
+                             ('convnext_full32_fusion','fusao_convnext_val_2026-10-20'),
+                             ('wide_resnet50','backbone_resnet50_2026-10-21'),
+                             ('wide_convnext','backbone_convnext_2026-10-21'),
+                             ('native224_training','resnet50_nativo224_2026-10-21'),
+                             ('side_conditioned_fusion6','fusao_lateral_6_2026-10-21'),
+                             ('polar_transformer','transformer_polar_2026-10-21'),
+                             ('side_conditioned_fusion7','fusao_lateral_7_2026-10-21'),
+                             ('angular_alignment','alinhamento_transformer_2026-10-21'),
+                             ('photometric_alignment','alinhamento_fotometrico_2026-10-21'),
+                             ('enrollment_quality','selecao_cadastro_2026-10-21'),
+                             ('scale_prototypes','prototipos_escala_2026-10-21'),
+                             ('external_arciris_clahe','arciris_polar_2026-10-21'),
+                             ('external_arciris_red','arciris_red_2026-10-21'),
+                             ('external_arciris_equal_views','arciris_duas_vistas_2026-10-21'),
+                             ('enrollment_adaptation_failed','adaptacao_cadastro_2026-10-21'),
+                             ('enrollment_adaptation','adaptacao_cadastro_v2_2026-10-21')]:
+        folder=ROOT/'outputs'/folder_name
+        temporary=Path(tempfile.gettempdir())/'pfc-tcc-resultados'/folder_name
+        if not (folder/'protocolo.json').exists() and (temporary/'protocolo.json').exists():folder=temporary
+        entry={'protocol_registered':(folder/'protocolo.json').exists(),
+               'completed':(folder/'CONCLUIDO.json').exists(),
+               'artifact_directory':str(folder),
+               'note':'Development only; absent completion may mean running or interrupted; no independent confirmation'}
+        if (folder/'CONCLUIDO.json').exists():entry['result']=json.loads((folder/'CONCLUIDO.json').read_text(encoding='utf-8'))
+        if (folder/'INTERROMPIDO_TECNICO.json').exists():
+            entry['interrupted_technical']=True
+            entry['interruption']=json.loads((folder/'INTERROMPIDO_TECNICO.json').read_text(encoding='utf-8'))
+        if (folder/'historico.csv').exists():
+            with (folder/'historico.csv').open(encoding='utf-8',newline='') as stream:recorded=list(csv.DictReader(stream))
+            entry['epochs_after_baseline']=sum(int(r['epoch'])>0 for r in recorded)
+            entry['last_validation']=recorded[-1] if recorded else None
+        report['recognizer_development'][name]=entry
     identity_run=ROOT/'outputs/identidade_arcface_ubipr_2026-10-20'
     identity_history=[]
     if (identity_run/'historico.csv').exists():

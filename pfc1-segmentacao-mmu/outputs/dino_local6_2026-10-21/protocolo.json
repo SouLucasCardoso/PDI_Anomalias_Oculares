@@ -1,0 +1,24 @@
+{
+  "registered_utc": "2026-10-21T03:19:32.513556+00:00",
+  "scope": "Authorized side-informed UBIPr, one query; exploratory validation only",
+  "model": "facebook/dinov3-vitl16-pretrain-lvd1689m",
+  "revision": "ea8dc2863c51be0a264bab82070e3e8836b02d51",
+  "representation": "Custom frozen FIRST6 of24 ViT-L layers, final LayerNorm replaced Identity; not official final DINOv3 output. Exclude CLS and4registers. Input native polar cache64x512, ImageNet normalization without square resize. Subtract constant127 response; L2 channels per patch.",
+  "matching": "All valid enrollment captures, mean aligned local cosine best angular shifts -2..2 patch columns, top3 mean per eye",
+  "variants": "Local patches alone with side restriction; equal5 fusion oldRGB/polar/newDINOlocal/ResNet50/ConvNeXt with/without predefined query normalization",
+  "calibration": "Only15 same-side impostors/query; component z-score on those validation impostors, equal weights; per-variant FMR<=1%; no weight/layer search",
+  "failures": "All482 queries retained; no valid gallery floor-2",
+  "limitations": "Intermediate layer and polar preprocessing are own hypothesis; large web pretraining population not individually audited; repeated development not independent confirmation",
+  "model_files_sha256": {
+    "config.json": "135ecd23e34a70b6fbed8b083fdecb319b7e3a54e3d849258bbe4ddcf1783bb5",
+    "model.safetensors": "dcb2e45127cccbf1601e5f42fef165eea275c8e5213197e8dcf3f48822718179",
+    "preprocessor_config.json": "960c41d1f3a7778b936365769a2d90550b318a6c0a53a0296957adacfe5e0dd7"
+  },
+  "script_sha256": "ef26eb603b62faf9be49e3eaf19a3ae84e6277ed6235a42c098c9eeb0605c353",
+  "dependencies_sha256": {
+    "validar_correspondencia_espacial.py": "4b15e6e6a2fb67b6b7116314d6ab6bbc5827f711e3ddfc9ce1bbabb30ef6ad49",
+    "normalizar_consulta.py": "8e105dbdb11ba547420fdb171403bc4cebb07fd9358a1e59c22e37b0f0a8e3a6",
+    "validar_lateralidade_informada.py": "438c67e9f50e4a0bbcaf666e0ffaff59119f1b183b61442e698ede274bfb1247",
+    "comparador_hdbif_lote.py": "0c6c086a348a17d900e17b4031dc0a2f06ab3721f9f7a53df26c382585882464"
+  }
+}

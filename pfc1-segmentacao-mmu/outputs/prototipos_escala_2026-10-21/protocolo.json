@@ -1,0 +1,16 @@
+{
+  "registered_utc": "2026-10-21T03:53:06.537733+00:00",
+  "scope": "Authorized side-informed UBIPr, single query, development validation only",
+  "method": "For each eye sort valid S1 enrollment captures by native predicted iris width, split into3equal-size groups, no reference discarded. For each CNN score use max of the3 group mean cosine scores. This changes aggregation only; previous raw capture scores reused exactly.",
+  "fusion": "Same5 frozen components RGB/polar/ResNet50/ConvNeXt and previous spatial, equal weights, same-side impostor z-score, logistic; with/without predefined query normalization",
+  "calibration": "15same-side impostors/query, empirical validation FMR<=1%; all482 queries and extraction failures retained; no query-dependent group fitting or parameter search",
+  "limitations": "Native width is a scale proxy, not controlled physical distance; repeated validation not independent confirmation",
+  "source_sha256": {
+    "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\selecao_cadastro_2026-10-21\\scores_capturas_0.npz": "9895cdc0c669fe41572bcdd8c04c26dbcc2c07cdc40cc6e0364a462b3e90caae",
+    "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\selecao_cadastro_2026-10-21\\scores_capturas_1.npz": "667ecf779644805849b7b6795eab30afd091a11503f8f30aa6f6db78ab4f970b",
+    "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\selecao_cadastro_2026-10-21\\scores_capturas_2.npz": "3276058c3946b6d344cd434b53f12a33471a6e37d69fef730fb423200aad4be4",
+    "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\selecao_cadastro_2026-10-21\\scores_capturas_3.npz": "00952c8cc870186e10571c706278acf9e8131beb25d0be4d28805803141a35ce",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\cache_encoder_polar_2026-10-20\\val_auditoria.json": "8716ed77a49b9dfc678f43fa0833c428307cd63b06087ea25c466abdb97a3c56"
+  },
+  "script_sha256": "33b775d129709a5ed5a874a16d53adb3635e71cab0f695ec64670a3b56afbd0e"
+}

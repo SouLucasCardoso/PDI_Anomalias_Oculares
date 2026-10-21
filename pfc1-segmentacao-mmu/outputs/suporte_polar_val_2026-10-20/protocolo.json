@@ -1,0 +1,21 @@
+{
+  "registered_utc": "2026-10-20T22:02:27.962160+00:00",
+  "scope": "Post-hoc exploratory development follow-up after multicapture failure; validation only; not independent evidence",
+  "purpose": "Reject HDBIF templates with tiny predicted polar support while retaining every query and eye",
+  "primary_support_fraction": 0.1,
+  "sensitivity_support_fraction": 0.2,
+  "modes": [
+    "first",
+    "max",
+    "top3"
+  ],
+  "gate": "Total nonzero polar-mask fraction must meet threshold in both query and enrollment; insufficient support score -2; no replacement of failed first photo",
+  "calibration": "Each variant recalibrated validation original at empirical FMR<=1%; fixed people/queries; no test scoring",
+  "critical_distinction": "10/20% here is a template quality gate after normalization, NOT minimum anatomical iris area or an occlusion result",
+  "inputs_sha256": {
+    "CONCLUIDO.json": "0913a8ed4fbae11798a4190a5becdb0477fd9efaca3efddec53e6e28bd52de69",
+    "scores_hdbif_capturas.npz": "abf670b33adf590f16f0b7f3258331fbbca262ae4deb663e81f14bbd73f85fad",
+    "auditoria_hdbif.json": "48bea81b8b5375a8208e1a48cfe2e57c716271873e3adb764344de9769724cdc"
+  },
+  "script_sha256": "f7eef686fb0931bb47689e1a7f52049423bdab0e23237276921987fb48023377"
+}

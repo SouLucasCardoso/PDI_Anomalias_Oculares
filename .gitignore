@@ -28,5 +28,6 @@
 
 # Exemplos que reproduzem imagens biométricas
 **/outputs/**/exemplos_*.png
+**/outputs/**/qa_*.png
 **/outputs/**/recortes_*/
 **/outputs/amostras_visuais_ubipr.png

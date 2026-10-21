@@ -1,0 +1,15 @@
+{
+  "registered_utc": "2026-10-21T02:57:29.986563+00:00",
+  "authorization": "User explicitly permits requiring left/right side at capture; UBIPr primary and one query photo unchanged",
+  "scope": "Development validation, side-informed capture condition; separate from previous32-eye gallery protocol",
+  "method": "Keep source fixed fusion scores, restrict each query to enrolled eyes of informed side; genuine physical eye unchanged. Candidates16 per query; all482 queries retained.",
+  "variants": "Side-conditioned fixed fusion; same with predefined per-query score normalization over16 candidates",
+  "calibration": "Recalibrate each threshold using only same-side impostor comparisons:15 per query, NOT31 with masked comparisons counted as rejections. Empirical validation FMR<=1%.",
+  "limitations": "Side must be supplied correctly; no automatic side prediction assumed. Repeated development validation, not independent confirmation or anatomical minimum.",
+  "source_sha256": "f099e048b5e28a45e946a92ca3782d5346eb9965b9a6c5929e17216e4f68089c",
+  "script_sha256": "438c67e9f50e4a0bbcaf666e0ffaff59119f1b183b61442e698ede274bfb1247",
+  "dependencies_sha256": {
+    "normalizar_consulta.py": "8e105dbdb11ba547420fdb171403bc4cebb07fd9358a1e59c22e37b0f0a8e3a6",
+    "validar_metrica_intra_classe.py": "711209909da5c594846ac28b6e59e2829e670a3966244cd8c920309864cdf441"
+  }
+}

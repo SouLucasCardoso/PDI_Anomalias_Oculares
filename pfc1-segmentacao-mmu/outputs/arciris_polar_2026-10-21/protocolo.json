@@ -1,0 +1,11 @@
+{
+  "registered_utc": "2026-10-21T04:16:16.551274+00:00",
+  "scope": "Exploratory UBIPr validation, supplied side, one query photo, all482 queries",
+  "method": "Pinned ArcIris iresnet100, FP32, author range[-1,1],512D unit vectors, angular similarity1-acos(cosine)/pi, top3 S1 mean. Existing automatic grayscale CLAHE polar64x512 with invalid support127; own geometry/preprocessing, NOT full original IREX pipeline.",
+  "variants": "Standalone, and fixed equal1/8 fusion with previous7 components, with/without predefined per-query normalization. No weight search.",
+  "limitations": "External pretraining population undocumented; overlap cannot be excluded; repeatedly reused development validation; no independent confirmation or minimum area claim",
+  "calibration": "Validation same-side15 impostors/query, empirical FMR<=1%; failed queries retained",
+  "weights_sha256": "466014be7723eb0b1a741dcff5a0c8ae51d1918818a6b021952f9c4ccd443f8f",
+  "network_sha256": "de7f0cb796ebf4be02818c704d7e3afa0047dc09719b131b37cb8c26c42dd327",
+  "script_sha256": "d9ee692075def9bf38e1410130b21c95e6e523bada1fd5bad13a839416464060"
+}

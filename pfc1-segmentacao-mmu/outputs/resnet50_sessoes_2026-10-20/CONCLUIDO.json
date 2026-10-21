@@ -1,0 +1,10 @@
+{
+  "status": "resnet50_session_training_completed",
+  "best_epoch": 21,
+  "epochs_completed": 31,
+  "best_validation_tar": 0.5560165975103735,
+  "best_validation_rank1": 0.7074688796680498,
+  "test_inference": false,
+  "checkpoint_sha256": "699b8236211da2fd43b104f157b6cc3835bd5d89a01a74a5b75ce4261bf35e24",
+  "elapsed_training_seconds": 618.3439999999828
+}

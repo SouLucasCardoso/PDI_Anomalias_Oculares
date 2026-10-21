@@ -1,0 +1,12 @@
+{
+  "nuclear": {
+    "images": 1320,
+    "eyes_with_multiple_images": 223,
+    "status": "eligibility audit only; dates, near duplicates, identity and mask quality require review"
+  },
+  "slpvld": {
+    "images": 2228,
+    "eyes_with_multiple_images": 251,
+    "status": "eligibility audit only; dates, near duplicates, identity and mask quality require review"
+  }
+}

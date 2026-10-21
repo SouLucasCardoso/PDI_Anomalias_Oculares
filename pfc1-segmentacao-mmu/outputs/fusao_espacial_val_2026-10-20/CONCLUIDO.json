@@ -1,0 +1,31 @@
+{
+  "status": "fixed_three_way_fusion_development_completed",
+  "metrics": {
+    "rank1": 0.7987551867219918,
+    "tar": 0.6804979253112033,
+    "fnmr": 0.31950207468879666,
+    "far": 0.009904965868023023,
+    "eer_descriptive": 0.09707535805113104,
+    "extraction_failures": 4,
+    "queries": 482,
+    "genuine_mean_valid": 0.8907019698670525,
+    "margin_mean_valid": 0.05825794459543849,
+    "threshold": 0.8809388752100359,
+    "joint_success": 0.6369294605809128,
+    "normalization": [
+      {
+        "mean": 0.1240406410073161,
+        "std": 0.10133575699108374
+      },
+      {
+        "mean": 0.11512956587331158,
+        "std": 0.07565111886509615
+      },
+      {
+        "mean": 0.6217880028935157,
+        "std": 0.048889510591868704
+      }
+    ]
+  },
+  "test_inference": false
+}

@@ -1,0 +1,115 @@
+{
+  "model": "facebook/dinov3-vitl16-pretrain-lvd1689m",
+  "model_revision": "ea8dc2863c51be0a264bab82070e3e8836b02d51",
+  "conditions": [
+    [
+      "original",
+      0
+    ],
+    [
+      "oclusao_superior",
+      10
+    ],
+    [
+      "oclusao_superior",
+      20
+    ],
+    [
+      "oclusao_superior",
+      30
+    ],
+    [
+      "oclusao_superior",
+      40
+    ],
+    [
+      "oclusao_superior",
+      50
+    ],
+    [
+      "oclusao_superior",
+      60
+    ],
+    [
+      "oclusao_superior",
+      70
+    ],
+    [
+      "oclusao_superior",
+      80
+    ],
+    [
+      "oclusao_superior",
+      90
+    ],
+    [
+      "oclusao_inferior",
+      10
+    ],
+    [
+      "oclusao_inferior",
+      20
+    ],
+    [
+      "oclusao_inferior",
+      30
+    ],
+    [
+      "oclusao_inferior",
+      40
+    ],
+    [
+      "oclusao_inferior",
+      50
+    ],
+    [
+      "oclusao_inferior",
+      60
+    ],
+    [
+      "oclusao_inferior",
+      70
+    ],
+    [
+      "oclusao_inferior",
+      80
+    ],
+    [
+      "oclusao_inferior",
+      90
+    ]
+  ],
+  "branches": [
+    "iris_referencia"
+  ],
+  "seed": 42,
+  "identity": "subject+side",
+  "gallery": "session1 centroid",
+  "probe": "session2",
+  "threshold": "validation original, empirical FAR <= 1%, ties rejected conservatively",
+  "bootstrap": "5000 query-person cluster replicates; fixed gallery; percentile 95% CI",
+  "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+  "script_sha256": "e6d0b8d8eb78dc2e86ed3f73084cd9fb5d83d1afee27f73ca0ffbee1a5947f95",
+  "counts": {
+    "val": {
+      "images": 8,
+      "people": 2,
+      "eyes": 4,
+      "queries": 4
+    },
+    "test": {
+      "images": 8,
+      "people": 2,
+      "eyes": 4,
+      "queries": 4
+    }
+  },
+  "exact_duplicates": 0,
+  "torch": "2.14.1+cu126",
+  "clinical_labels": false,
+  "development_subsample": true,
+  "device_requested": "cpu",
+  "checkpoint_sha256": null,
+  "area_interpretation": "Preserved annotated iris pixels; synthetic occlusion is not a clinical diagnosis.",
+  "minimum_area_rule": "Smallest tested preserved fraction with rank1 >= 0.90 and TAR >= 0.90 at validation FMR <= 0.01, requiring all larger fractions to pass; otherwise not determined. Exploratory DINO baseline."
+}

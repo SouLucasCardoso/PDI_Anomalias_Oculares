@@ -1,6 +1,55 @@
+
+
+## Atualização de desenvolvimento — 21/10/2026
+
+O candidato congelado atingiu **Rank-1 de90,04% e TAR de90,66%, com FMR de0,98%**, na validação UBIPr de482 consultas, com uma foto original e lado do olho informado (16 candidatos). São434 identificações corretas e437 aceitações genuínas; o resultado conjunto de identificação correta e aceitação é88,38%. A validação foi reutilizada para seleção de estratégias e o componente externo ArcIris tem população de pré-treinamento desconhecida: estes números são exploratórios, sem confirmação independente. O mínimo de área permanece não determinado, com e sem oclusão. Consulte [o relatório atualizado](AVANCO_RECONHECIMENTO_2026-10-21.md) e `outputs/candidato_congelado_2026-10-21/CONGELADO.json`.
+
 # Instalação local — 20/10/2026
 
 ## Estado atual das execuções
+
+Rodada complementar concluída: encoder polar denso com 29 épocas, seleção na
+21, e métrica linear ajustada só no treino. A fusão densa chegou a 78,84% de
+Rank-1 e 68,26% de TAR, sem ganho consistente sobre a referência. O checkpoint
+recarregado reproduziu os escores exatamente; 39 testes passaram. As saídas
+foram copiadas para `outputs/encoder_polar_denso_2026-10-20`,
+`outputs/fusao_densa_val_2026-10-20` e `outputs/metrica_intra_val_2026-10-20`,
+com hashes conferidos. Não é preciso usar a cópia temporária para consultá-las.
+Use `carregar_encoder_polar.load` para reconstruir a arquitetura densa ao carregar
+os pesos. [Relatório](outputs/fusao_densa_val_2026-10-20/RELATORIO_CONTINUACAO.md).
+
+Concluídos o treinamento polar (28 épocas, seleção na 20), o controle de fase,
+a correspondência espacial e as fusões fixas de duas/três vias. O melhor
+resultado pontual desta validação foi 79,88% de Rank-1, 68,05% de TAR e 0,99%
+de FMR. Não é resultado de teste independente nem mínimo de área aprovado.
+Os 37 testes passaram. Ver [relatório da rodada](outputs/fusao_espacial_val_2026-10-20/RELATORIO_AVANCO_POLAR_FUSAO.md).
+
+O TripletIris público foi instalado com seus dois pesos oficiais e fontes
+verificadas. Terminaram nove variantes circulares e seis elípticas na validação.
+Não houve substituição do encoder atual, novo treinamento nessa etapa, novo
+teste independente ou curva de oclusão. Os 32 testes passaram. Ver
+[relatório do reconhecedor polar](outputs/tripletiris_elipse_validacao_2026-10-20/RELATORIO_RECONHECEDOR_POLAR.md)
+e [protocolo de reprodução](PROTOCOLO_RECONHECEDOR_POLAR_2026-10-20.md).
+
+As adaptações de treinamento em máscaras automáticas também terminaram: seis
+épocas de ajuste angular simples e seis com triplet balanceado. Nenhuma superou
+a TAR da época zero, e os parâmetros anteriores foram mantidos. A referência
+pareada desta execução foi 66,80% de Rank-1 e 59,34% de TAR na validação.
+Os 29 testes passaram. Ver
+[relatório dos treinamentos](outputs/identidade_metrica_automatica_2026-10-20/RELATORIO_TREINAMENTOS.md).
+
+Concluídas também as onze variantes de cadastro multicaptura e recorte automático,
+mais seis controles exploratórios de suporte polar. O encoder automático top-3
+obteve Rank-1 de 67,01%, TAR de 59,34% e FMR de 0,99%, somente na validação.
+Os 24 testes passaram. Não foi executado novo treinamento, teste independente ou
+curva de oclusão nesta atualização. Ver
+[relatório multicaptura](outputs/cadastro_multicaptura_val_v2_2026-10-20/RELATORIO_CADASTRO.md).
+
+Também terminaram quatro controles novos, somente na validação: HDBIF com imagem
+inteira e com recorte prévio, mais encoder congelado em 128 e 256 pixels. O recorte
+melhorou o HDBIF; a ampliação simples piorou o encoder. Vinte testes automatizados
+passaram. Ver [relatório de melhoria](outputs/melhoria_normalizacao_val_gpu_2026-10-20/RELATORIO_MELHORIA.md).
+Não há novo teste independente, nova curva de oclusão ou mínimo aprovado nessa rodada.
 
 As execuções desta rodada terminaram: U-Net de segmentação, 19 condições DINOv3,
 teste clínico HDBIF, treinamento de identidade e 19 condições com o novo encoder.

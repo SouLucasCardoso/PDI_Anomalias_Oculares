@@ -1,0 +1,8 @@
+{
+  "note": "Pipeline uses batched segmentation32 and encoder128 vs previous single segmentation and encoder64; cannot attribute differences uniquely to either change",
+  "same_query_labels": true,
+  "validity_disagreements": 0,
+  "rank1_decision_disagreements": 1,
+  "acceptance_disagreements_with_own_thresholds": 2,
+  "max_absolute_score_difference": 0.024429400761922238
+}
