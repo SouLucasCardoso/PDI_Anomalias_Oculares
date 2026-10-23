@@ -1,8 +1,11 @@
 
+> Atualização posterior de 21/10: teste com configuração congelada =91,36% de Rank-1, 92,39% de TAR e 0,88% de FMR. A busca de área em passos nominais de 1% foi concluída:99% aprovados na oclusão inferior; na superior, apenas a condição original passou. Consulte [os resultados e limitações](RESULTADOS_CONGELADOS_E_OCLUSAO_2026-10-21.md).
+
+
 
 ## Atualização de desenvolvimento — 21/10/2026
 
-O candidato congelado atingiu **Rank-1 de90,04% e TAR de90,66%, com FMR de0,98%**, na validação UBIPr de482 consultas, com uma foto original e lado do olho informado (16 candidatos). São434 identificações corretas e437 aceitações genuínas; o resultado conjunto de identificação correta e aceitação é88,38%. A validação foi reutilizada para seleção de estratégias e o componente externo ArcIris tem população de pré-treinamento desconhecida: estes números são exploratórios, sem confirmação independente. O mínimo de área permanece não determinado, com e sem oclusão. Consulte [o relatório atualizado](AVANCO_RECONHECIMENTO_2026-10-21.md) e `outputs/candidato_congelado_2026-10-21/CONGELADO.json`.
+O candidato congelado atingiu **Rank-1 de 90,04% e TAR de 90,66%, com FMR de 0,98%**, na validação UBIPr de 482 consultas, com uma foto original e lado do olho informado (16 candidatos). São 434 identificações corretas e 437 aceitações genuínas; o resultado conjunto de identificação correta e aceitação é88,38%. A validação foi reutilizada para seleção de estratégias e o componente externo ArcIris tem população de pré-treinamento desconhecida: estes números são exploratórios, sem confirmação independente. O mínimo de área permanece não determinado, com e sem oclusão. Consulte [o relatório atualizado](AVANCO_RECONHECIMENTO_2026-10-21.md) e `outputs/candidato_congelado_2026-10-21/CONGELADO.json`.
 
 # PFC I — prova de conceito de segmentação da íris
 
@@ -396,3 +399,25 @@ as métricas completas em `metricas.json` no mesmo diretório.
 - Imagens: https://www.kaggle.com/datasets/naureenmohammad/mmu-iris-dataset
 - Máscaras: https://github.com/jkozlova/Masks-for-MMU-Iris-dataset
 - Artigo associado: https://doi.org/10.1007/978-3-031-16500-9_15
+
+
+### Desenvolvimento posterior: segmentação sob oclusão
+
+O diagnóstico e o novo ajuste foram concluídos. O novo segmentador melhorou Dice e identificação sob oclusão inferior, mas regrediu em outras condições; não substituiu o candidato aprovado. [Resultados e máscaras reais](DIAGNOSTICO_E_SEGMENTACAO_ROBUSTA_2026-10-21.md).
+
+
+### Piloto de fusão com pessoas separadas
+
+Foram retreinados três encoders a partir do ImageNet, com 147 pessoas para ajuste, 16 para seleção e 20 para aprendizagem da fusão. O piloto não substituiu o candidato aprovado: obteve 79,25% de Rank-1 limpo na validação, contra 78,84% do controle uniforme de três modelos. A U-Net congelada já havia visto os grupos internos; a separação refere-se aos encoders de identidade. Checkpoints e resultados completos estão preservados em backup local fora do OneDrive. [Resultados, limites e localização do backup](FUSAO_PESSOAS_SEPARADAS_2026-10-21.md).
+
+
+### Diagnóstico de resolução e geometria — 22/10/2026
+
+Uma análise descritiva das 482 consultas de validação reproduziu exatamente as entradas RGB e polares do candidato congelado. Entre as 198 consultas com Dice de íris de pelo menos 0,95, houve 193 identificações corretas (97,47%). Nos 39 casos em que a geometria da pupila usou o círculo concêntrico alternativo, houve 28 acertos (71,79%); nos 439 casos com contorno interno da máscara, houve 406 (92,48%). A relação entre tamanho nativo da caixa segmentada e identificação limpa não foi monotônica nos intervalos fixados antes da análise. As medidas se referem ao suporte visível segmentado, não ao diâmetro anatômico completo.
+
+Esses subgrupos não alteram o resultado global de 434/482 acertos (90,04%) nem permitem filtrar consultas: o Dice depende de anotação, há confundimento por pessoa e aquisição, e não foi demonstrada causalidade ou aprovação conjunta dos critérios por grupo. As dez referências vazias e quatro falhas de extração foram mantidas. Nenhum modelo, limiar ou resultado de teste foi alterado. Foram aprovados 84 testes. A investigação seguinte deve separar localização da pupila, geometria e descritor, sem prometer recuperação de todos os erros. [Relatório e amostras reais dos recortes](../Relatórios-de-Avanço/RELATORIO_AVANCO_2026-10-22.md).
+
+
+### Localização aprendida da pupila — 22/10/2026
+
+Um localizador auxiliar foi treinado exclusivamente no treino original, com alvos geométricos aproximados obtidos de buracos nas máscaras. Na validação com 482 consultas, o Rank-1 limpo permaneceu em 90,0415%. A calibração fixa produziu TAR de 90,2490% e FMR de 1,0235%; a recalibração limpa produziu TAR de 89,8340% e FMR de 0,9820%. Nenhuma cumpriu os critérios simultâneos e o candidato anterior foi preservado. O ganho de Rank-1 sob oclusão inferior de 10% teve intervalo por participante incluindo zero. Não houve nova inferência no teste. Alvos aproximados e reutilização da validação limitam as conclusões. A suíte completa passou em 87 testes. Ver [protocolo, resultados e imagem](PUPILA_APRENDIDA_2026-10-22.md).

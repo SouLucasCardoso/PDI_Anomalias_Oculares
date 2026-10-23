@@ -1,0 +1,11 @@
+{
+  "registered_utc": "2026-10-23T02:14:49.955482+00:00",
+  "scope": "Exploratory validation ONLY after locator selected on internal TRAIN monitor; no test inference or automatic promotion",
+  "intervention": "Replace ONLY legacy concentric pupil fallback by selected circular CNN when fixed geometric plausibility checks pass; ordinary pupil holes, outer ellipse, iris support, RGB/native crops, all identity weights and fusion weights unchanged. New geometry applied to S1 enrollment and S2 queries. Reference masks only define artificial query occlusion.",
+  "controls": "Three fixed strategies: original control; new pupil with original frozen component statistics/threshold; new pupil with CLEAN validation component statistics and CLEAN empirical FMR<=1% threshold. Each strategy parameters unchanged upper/lower10%. No choice of strategy/weights/threshold using occlusion results.",
+  "gate": "If selected locator does not beat concentric baseline on monitor proxy loss, record gate failure and do NOT extract validation identity scores.",
+  "precision": "Same original extraction: CNN/Transformer BF16batch128,spatialFP32batch32,ArcIrisFP32batch8. One original query photo, informed side,16 candidates,ALL482 queries/failures retained.",
+  "limits": "Pupil target is annotation-hole-derived circle proxy, not anatomical pupil ground truth; internal monitor seen by frozen U-Net. Reused development validation and external ArcIris pretraining overlap unknown. No minimum-area claim.",
+  "script_sha256": "de729c45cf347f1bc737b54665ebd945ffce4df1cd4da0dcc433782e8e4b5841",
+  "locator_source_sha256": "d58e601038c8e6ac374921ef75585a2d8924b2f3cac32e345d0beb9ba9befc2e"
+}

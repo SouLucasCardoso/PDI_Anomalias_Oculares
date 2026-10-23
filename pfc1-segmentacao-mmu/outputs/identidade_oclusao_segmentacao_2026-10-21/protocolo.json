@@ -1,0 +1,32 @@
+{
+  "registered_utc": "2026-10-21T20:31:04.184806+00:00",
+  "scope": "Train/validation ONLY, no test images or identity labels used; new model never automatically replaces frozen candidate",
+  "architecture": "ResNet18 identity256 initialized from frozen original, reuse original366-class angular head; all BatchNorm running statistics frozen, affine parameters learnable",
+  "preprocessing": "New fixed robust U-Net predicts native-image iris masks; masked bbox25% resized128. Validation caches clean/native upper/lower10% have same robust segmenter and all482 queries.",
+  "augmentation": "50% clean,50% gray128 loss uniform1..40% upper/lower equal within eroded3x3 nonblack predicted crop support; resized-grid training proxy, no anatomical percentage claim. Rotation+/-10degrees,color brightness/contrast10%. No generated/restored texture.",
+  "teacher": "Frozen original encoder, original automatic segmentation clean training crops, paired same image. Teacher is used only for training, not validation/inference. Exclude invalid teacher/student training pairs only.",
+  "loss": "Angular CE margin0.3 scale30 +0.2 supervised contrastive temperature0.1 +0.5 mean(1-cosine(student,clean teacher))",
+  "optimizer": "AdamW backbone2e-5 projection/head1e-4 wd1e-4,cosine6epochs,clip5,BF16 student/FP32 head,seed52,16eyesx4images balanced sessions,4rounds/epoch",
+  "selection": "Include epoch0; maximize worst-condition TAR then worst Rank1 then mean TAR across clean/upper10/lower10 validation. Each checkpoint threshold calibrated once on CLEAN validation empirical FMR<=1%, used unchanged for both occlusions. Clean Rank1/TAR each must remain >= epoch0 minus0.02. Report occluded FMR; this optimization is NOT release acceptance.",
+  "limits": "Repeated development validation, single-encoder metrics not full fusion. No minimum area, no test inference, no weight/augmentation search.",
+  "max_epochs": 6,
+  "patience": 3,
+  "counts": {
+    "train": 7716,
+    "train_people": 183,
+    "train_eyes": 366,
+    "val_images": 962,
+    "val_queries": 482
+  },
+  "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+  "original_encoder_sha256": "6060c164eada674712127830b2d188a9e6b4ed210f7b8d595e58fdfeb10387fc",
+  "segmenter_sha256": "8f126141f4dd7fc31352e9135b69e901454449dc5e4493ab5e973d4c8643035c",
+  "script_sha256": "7f8bd93bb7a662f2c6763f10b8b1e5ff2f0fc8bc601e4a1a130da2423f991d1c",
+  "dependencies_sha256": {
+    "treinar_identidade_automatica.py": "53657d5ea79cf63e0c992c4b230bddeb840dafed3b102bcb36f9a08f409902cf",
+    "treinar_identidade_iris.py": "a8f6dc53ace011c968774f9f3f494a085f0c14af2a9ab04853952553c580b0a5",
+    "reconhecedor_resnet50.py": "2416940a33a01b0d745a9bb6609f7f2e5ebbb16a77dfaab6635abab3eefe6b2f",
+    "avaliar_candidato_congelado.py": "9f727ef17eb0e87c51ea2ee3d6527f950717ddd80e6ef9ec9c7a33611c947586",
+    "validar_lateralidade_informada.py": "438c67e9f50e4a0bbcaf666e0ffaff59119f1b183b61442e698ede274bfb1247"
+  }
+}

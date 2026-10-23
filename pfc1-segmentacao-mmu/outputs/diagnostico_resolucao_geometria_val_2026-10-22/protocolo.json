@@ -1,0 +1,32 @@
+{
+  "registered_utc": "2026-10-23T01:58:30.505858+00:00",
+  "scope": "Descriptive reused validation only, frozen recognition decisions and threshold. No new test inference, filtering, model selection or threshold fitting.",
+  "measures": "Original-resolution predicted/reference visible-iris bbox short side; original-resolution iris Dice versus annotation, undefined for empty annotation; polar support fraction and pupil hole/fallback source. These are proxies, NOT anatomical iris diameter, clinical extent or quality standards.",
+  "bins": {
+    "native_shortside": [
+      0,
+      64,
+      96,
+      128,
+      "infinity"
+    ],
+    "dice": [
+      0,
+      0.8,
+      0.9,
+      0.95,
+      1.000001
+    ],
+    "polar_support": [
+      0,
+      0.5,
+      0.75,
+      0.9,
+      1.000001
+    ]
+  },
+  "analysis": "Partition ALL482 queries by each registered diagnostic, retain undefined/failures. Report clean Rank1/TAR, upper/lower10% Rank1, and clean-to-occluded transitions. No optimal cutoff search, causal inference, population guarantees or minimum-area claim.",
+  "illustration": "First2 clean errors and first2 clean successes by filename, distinct subjects within each group; no score/Dice/quality selection. Original photo, actual masked RGB crop, actual polar texture. Examples not prevalence estimates.",
+  "script_sha256": "8eb47955fb40244b3ef96f88f2bff13f473fc0ca06956ac990924ad794ff5e22",
+  "segmenter_sha256": "2bcfc269ffc9562ca8cf0956998faf1e22641587cd60f7059b3cec3dd0f4093d"
+}

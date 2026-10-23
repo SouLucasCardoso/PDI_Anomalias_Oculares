@@ -1,0 +1,10 @@
+{
+  "registered_utc": "2026-10-21T20:02:59.825419+00:00",
+  "scope": "Exploratory development validation only; hypothesis after observing clean-recognition drop under robust segmenter; not independent confirmation",
+  "method": "Same single original query photo through original and robust predicted masks. Each branch uses frozen identity fusion and predefined query normalization. Equal mean branch logits, then same per-query normalization. No identity/gray/quality flag selects branch, no weight search.",
+  "conditions": "Clean and upper/lower10% native reference iris occlusion, all482 queries; require both branches valid, failures retained",
+  "threshold": 0.8581747485460748,
+  "calibration": "Original frozen threshold unchanged for comparison; no per-condition recalibration",
+  "limitations": "Both enrollment and query templates use respective segmentation branch. Extra compute, not extra photos. No test inference or automatic replacement; overlap and repeated validation limitations remain.",
+  "script_sha256": "213d102d00b04eead5e75d283a8e2ea9a993e2689e28ff9b0626d747745520c7"
+}

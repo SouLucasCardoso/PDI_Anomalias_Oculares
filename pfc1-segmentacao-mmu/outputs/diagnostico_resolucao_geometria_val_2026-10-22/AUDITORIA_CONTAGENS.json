@@ -1,0 +1,10 @@
+{
+  "errors_total": 48,
+  "errors_dice_under095": 37,
+  "errors_dice_atleast095": 5,
+  "errors_reference_undefined": 6,
+  "fallback_defined_reference": [
+    34,
+    24
+  ]
+}

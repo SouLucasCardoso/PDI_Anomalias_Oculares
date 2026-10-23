@@ -1,0 +1,11 @@
+{
+  "registered_utc": "2026-10-21T19:31:36.597554+00:00",
+  "scope": "Exploratory follow-up refining tested loss boundary after10pp scan, NOT independent confirmation; no changes to recognizer, calibration, threshold or criteria",
+  "grid": "Each orientation, test loss1,2,... until first failing condition at frozen Rank1>=90%,TAR>=90%,FMR<=1%. Reuse already completed coarse conditions, no reevaluation or selection of better runs.",
+  "stopping": "All larger retained fractions on1pp grid must pass; stop at first failure. Untested smaller fractions cannot satisfy this rule. No monotonicity assumed beyond this prefix criterion.",
+  "population": "All486 queries retained,6 empty reference annotations unchanged and area undefined;480 queries have defined controlled pixel loss. One query image, supplied side, unchanged original enrollment.",
+  "limitations": "Retained annotated visible iris pixel fraction, not anatomical iris or disease extent; artificial gray occlusion with resegmentation; point-estimate criterion, prior test exposure, unknown external-pretraining identities. Refinement chosen after coarse data; report as exploratory.",
+  "coarse_sha256": "058b59c369fa466e910fb1d589b5b38018355bd13cd04bc502c658fcfff4dff9",
+  "script_sha256": "1f1fba9e386ca829d23453cf4e8ff901bc8866e331387ed15c4a4bcc90f1ab80",
+  "evaluator_sha256": "0d1c04e909a0a2c0a382456c3be22e94be9024c58014e4ccf881c79994824b66"
+}

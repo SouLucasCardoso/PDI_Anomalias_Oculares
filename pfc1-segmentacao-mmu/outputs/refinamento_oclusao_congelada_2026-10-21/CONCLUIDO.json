@@ -1,0 +1,84 @@
+{
+  "status": "exploratory1pp_boundary_search_completed",
+  "findings": [
+    {
+      "orientation": "oclusao_superior",
+      "smallest_passing_retained_percent_on1pp_grid": 100,
+      "first_failing_retained_percent": 99,
+      "evaluated_loss_levels": [
+        1
+      ],
+      "all_larger_grid_fractions_pass": true
+    },
+    {
+      "orientation": "oclusao_inferior",
+      "smallest_passing_retained_percent_on1pp_grid": 99,
+      "first_failing_retained_percent": 98,
+      "evaluated_loss_levels": [
+        1,
+        2
+      ],
+      "all_larger_grid_fractions_pass": true
+    }
+  ],
+  "records": [
+    {
+      "orientation": "oclusao_superior",
+      "occluded_percent": 1,
+      "preserved_percent": 99,
+      "passed": false,
+      "rank1": 0.8991769547325102,
+      "tar": 0.9238683127572016,
+      "fnmr": 0.0761316872427984,
+      "far": 0.008779149519890261,
+      "eer_descriptive": 0.03909465020576132,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.9252125876096987,
+      "margin_mean_valid": 0.1428141454802351,
+      "threshold": 0.8581747485460748,
+      "joint_success": 0.8868312757201646
+    },
+    {
+      "orientation": "oclusao_inferior",
+      "occluded_percent": 1,
+      "preserved_percent": 99,
+      "passed": true,
+      "rank1": 0.9094650205761317,
+      "tar": 0.9135802469135802,
+      "fnmr": 0.0864197530864198,
+      "far": 0.009327846364883402,
+      "eer_descriptive": 0.047325102880658436,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.9187564158059315,
+      "margin_mean_valid": 0.13737213842967513,
+      "threshold": 0.8581747485460748,
+      "joint_success": 0.8930041152263375
+    },
+    {
+      "orientation": "oclusao_inferior",
+      "occluded_percent": 2,
+      "preserved_percent": 98,
+      "passed": false,
+      "rank1": 0.8744855967078189,
+      "tar": 0.8786008230452675,
+      "fnmr": 0.12139917695473246,
+      "far": 0.012345679012345678,
+      "eer_descriptive": 0.061385459533607675,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.9091022422407029,
+      "margin_mean_valid": 0.11840737302307897,
+      "threshold": 0.8581747485460748,
+      "joint_success": 0.8539094650205762
+    }
+  ],
+  "threshold_recalibrated": false,
+  "all_queries_retained": 486,
+  "defined_area_queries": 480,
+  "undefined_area_queries_retained_unchanged": 6,
+  "minimum_scope": "Retained annotated visible iris pixel fraction, not anatomical iris or disease extent; artificial gray occlusion with resegmentation; point-estimate criterion, prior test exposure, unknown external-pretraining identities. Refinement chosen after coarse data; report as exploratory.",
+  "clinical_minimum": null,
+  "anatomical_minimum": null
+}

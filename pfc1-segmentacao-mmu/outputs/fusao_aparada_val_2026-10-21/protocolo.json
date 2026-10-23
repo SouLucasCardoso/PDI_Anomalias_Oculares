@@ -1,0 +1,8 @@
+{
+  "registered_utc": "2026-10-22T00:41:47.679539+00:00",
+  "scope": "Exploratory validation ONLY, no test inference or automatic promotion",
+  "hypothesis": "A few extreme component scores can dominate the arithmetic fusion. One fixed alternative: drop smallest/largest of eight standardized recognizer group scores for EACH candidate, mean remaining six; preserve ArcIris CLAHE/red as one mean group. Logistic then unchanged query normalization.",
+  "controls": "Original and robust segmenter branches, arithmetic original control versus trimmed candidate. Identical clean-only component normalization for both; separate thresholds calibrated once CLEAN FMR<=1%, applied unchanged upper/lower10%. No trim-count/weight search.",
+  "acceptance": "All482 queries retained; single query photo, supplied side,16 candidates. Descriptive development results only. No query ground truth in fusion; identity labels used solely for clean calibration and evaluation.",
+  "source_sha256": "e3c902cf20b659ca6c30b4fea209595931b00b9d3e7f9ba370b127f162ae6419"
+}

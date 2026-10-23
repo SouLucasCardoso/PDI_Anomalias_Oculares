@@ -1,0 +1,10 @@
+{
+  "registered_utc": "2026-10-22T00:25:21.328426+00:00",
+  "scope": "Exploratory validation ONLY; no test inference, no candidate replacement",
+  "method": "Frozen polar R18 layer3, constant127 feature subtraction, channel L2, shift0. Unchanged uniform S1 prototype. Local reliability=normalized16-bin entropy squared in16x16 input blocks. Pair weight=sqrt(query reliability * mean S1 reliability); weighted local cosine. No fill-value detector or ground truth mask.",
+  "controls": "Uniform matching must reproduce cached spatial scores within2e-6. Two segmentation branches original/robust, each uniform/weighted. Standalone and same-branch fusion replacing spatial component only; fixed original fusion weights.",
+  "calibration": "Each strategy calibrated once on CLEAN validation, impostor mean/std and empirical FMR<=1% threshold; same parameters for upper/lower10%. No parameter sweep.",
+  "counts": "482 single-photo S2 queries,16 supplied-side candidates,15 impostors/query; all failures retained",
+  "limitations": "Entropy is a texture proxy, not visible anatomical area. Repeated development validation, no independent confirmation or clinical minimum.",
+  "script_sha256": "6d62f03b6f4808938768c5cdd035512b534021885de6d2ec0e38740ebbc09207"
+}

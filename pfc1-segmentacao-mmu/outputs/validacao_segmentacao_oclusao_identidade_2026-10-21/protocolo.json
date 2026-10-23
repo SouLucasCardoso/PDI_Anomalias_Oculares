@@ -1,0 +1,10 @@
+{
+  "registered_utc": "2026-10-21T19:56:56.525756+00:00",
+  "scope": "Recognition validation ONLY, paired preprocessing comparison; all482 queries including failures; checkpoint selected solely on segmentation Dice, never these identity results",
+  "variants": "Original and robust segmenters, clean and upper/lower10% native reference iris gray occlusion. Reuse original clean completed validation. No weight/threshold or parameter search; all other identity components/frozen calibration unchanged.",
+  "limitations": "Repeated development validation; new segmenter may change score distribution. Do not infer new test performance, minimum area, disease extent or automatic replacement. Future calibration/release must be separately frozen using validation only.",
+  "checkpoint_sha256": "8f126141f4dd7fc31352e9135b69e901454449dc5e4493ab5e973d4c8643035c",
+  "best_epoch": 3,
+  "script_sha256": "945f592a39013226a5149f788bfdf0bf1829e1c6a5b5139be3d096eade45b61c",
+  "evaluator_sha256": "9f727ef17eb0e87c51ea2ee3d6527f950717ddd80e6ef9ec9c7a33611c947586"
+}

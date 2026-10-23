@@ -1,6 +1,8 @@
 # Dados e arquivos baixados
 **/data/
 *.zip
+# Pacotes locais de recuperacao em texto; contêm escores derivados, como os NPZ.
+**/backups/**/*.b64
 
 # Ambientes e caches
 /.runtime/
@@ -31,3 +33,6 @@
 **/outputs/**/qa_*.png
 **/outputs/**/recortes_*/
 **/outputs/amostras_visuais_ubipr.png
+**/outputs/**/amostras_recortes_diagnostico.png
+**/outputs/**/comparacao_mascaras.png
+**/outputs/**/recortes_sob_oclusao.png

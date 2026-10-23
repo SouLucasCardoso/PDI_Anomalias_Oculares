@@ -1,0 +1,10 @@
+{
+  "registered_utc": "2026-10-21T20:34:17.313864+00:00",
+  "scope": "Exploratory train/validation development ONLY; fixed strategies registered before adapted model results, no test inference or automatic replacement",
+  "strategies": "Five controls/candidates: original frozen preprocessing+original RGB; original preprocessing others+unadapted RGB/new segmenter; original preprocessing others+adapted RGB/new segmenter; robust segmenter all+unadapted RGB; robust segmenter all+adapted RGB. Shared7components each1/8, ArcIris CLAHE/red half each of1/8, unchanged fixed fusion rule.",
+  "calibration": "For EACH strategy compute component impostor mean/std once on CLEAN validation only, per-query normalization, threshold CLEAN empirical FMR<=1%. Apply exactly same parameters/threshold to upper/lower10%. No per-occlusion calibration, weight search or threshold search to hit target.",
+  "selection": "Adapted checkpoint already selected solely by single-encoder clean/occluded validation rule; this fusion comparison never selects another epoch",
+  "counts": "All482 queries,16 supplied-side candidates,15 impostors/query. Failures retained; no quality filter.",
+  "limits": "Repeated validation, new distribution calibration control required; unknown external-pretraining identities. Single-photo inference even hybrid preprocessing. No minimum-area or independent-test claim.",
+  "script_sha256": "f3c010d37df90f77ea6e5c09e19aede31abf491c9d4d47ea6ec79db9b82c96ce"
+}
