@@ -1,0 +1,111 @@
+{
+  "status": "paired_original_geometry_diagnostic_completed",
+  "records": [
+    {
+      "orientation": "oclusao_superior",
+      "loss_percent": 10,
+      "dynamic": {
+        "rank1": 0.823045267489712,
+        "tar": 0.8497942386831275,
+        "fnmr": 0.15020576131687247,
+        "far": 0.016872427983539096,
+        "eer_descriptive": 0.06378600823045268,
+        "extraction_failures": 2,
+        "queries": 486,
+        "genuine_mean_valid": 0.9017927893158049,
+        "margin_mean_valid": 0.09667941384041835,
+        "threshold": 0.8581747485460748,
+        "joint_success": 0.8024691358024691
+      },
+      "fixed_original_geometry": {
+        "rank1": 0.897119341563786,
+        "tar": 0.8930041152263375,
+        "fnmr": 0.10699588477366251,
+        "far": 0.011248285322359396,
+        "eer_descriptive": 0.043209876543209874,
+        "extraction_failures": 2,
+        "queries": 486,
+        "genuine_mean_valid": 0.9187469494747553,
+        "margin_mean_valid": 0.13074650642051666,
+        "threshold": 0.8581747485460748,
+        "joint_success": 0.8806584362139918
+      },
+      "rank1_gain_pp": 7.4074074074074066,
+      "tar_gain_pp": 4.320987654320996,
+      "rank1_gain_pp_ci95": [
+        1.02880658436214,
+        15.637860082304528
+      ],
+      "tar_gain_pp_ci95": [
+        -1.8518518518518519,
+        11.318503462812382
+      ],
+      "additional_correct": 36,
+      "additional_genuine_accepts": 21,
+      "fixed_validity_matches_baseline": true,
+      "gallery_and_undefined_area_inputs_unchanged": true,
+      "all_queries_retained": 486,
+      "defined_area_queries": 480,
+      "source_scores_sha256": {
+        "confirmacao_congelada_test_oclusao_superior_10_2026-10-21": "bec4b8e28a42400097572a65666e75d11a5a96bc105fc901b9fabc01ac8e79a3",
+        "confirmacao_congelada_test_oclusao_superior_10_geometria_fixa_2026-10-21": "532220ddd52d53e68b8c58d6e14da96e92bf2f9713b0dfae0ee8873c7889b384"
+      }
+    },
+    {
+      "orientation": "oclusao_inferior",
+      "loss_percent": 10,
+      "dynamic": {
+        "rank1": 0.5823045267489712,
+        "tar": 0.602880658436214,
+        "fnmr": 0.39711934156378603,
+        "far": 0.02606310013717421,
+        "eer_descriptive": 0.1522633744855967,
+        "extraction_failures": 2,
+        "queries": 486,
+        "genuine_mean_valid": 0.82829437036305,
+        "margin_mean_valid": -0.0008543666341419537,
+        "threshold": 0.8581747485460748,
+        "joint_success": 0.551440329218107
+      },
+      "fixed_original_geometry": {
+        "rank1": 0.8477366255144033,
+        "tar": 0.8353909465020576,
+        "fnmr": 0.16460905349794241,
+        "far": 0.013854595336076818,
+        "eer_descriptive": 0.059670781893004114,
+        "extraction_failures": 2,
+        "queries": 486,
+        "genuine_mean_valid": 0.9015014714649656,
+        "margin_mean_valid": 0.10293341660953809,
+        "threshold": 0.8581747485460748,
+        "joint_success": 0.8148148148148148
+      },
+      "rank1_gain_pp": 26.543209876543216,
+      "tar_gain_pp": 23.25102880658436,
+      "rank1_gain_pp_ci95": [
+        17.083333333333332,
+        36.78968433202849
+      ],
+      "tar_gain_pp_ci95": [
+        14.609053497942387,
+        32.92689043209869
+      ],
+      "additional_correct": 129,
+      "additional_genuine_accepts": 113,
+      "fixed_validity_matches_baseline": true,
+      "gallery_and_undefined_area_inputs_unchanged": true,
+      "all_queries_retained": 486,
+      "defined_area_queries": 480,
+      "source_scores_sha256": {
+        "confirmacao_congelada_test_oclusao_inferior_10_2026-10-21": "aea2d0267caa118d199c082501a26e09f629e5a576fe7506028a192f9353c790",
+        "confirmacao_congelada_test_oclusao_inferior_10_geometria_fixa_2026-10-21": "d3ba2fa3a44d9f3060ee1ccdc488fc774b51a12631f34099cb82b694211175e8"
+      }
+    }
+  ],
+  "threshold_recalibrated": false,
+  "operational_minimum_changed": false,
+  "scope": "Posthoc test diagnostic only; fixed support,bbox,ellipses require original unoccluded counterpart, not deployable one-photo improvement. Pixel texture and CLAHE still altered. No selection of model/threshold on these scores.",
+  "uncertainty": "5000 person-cluster paired bootstrap, fixed gallery/threshold, pointwise; no multiple-comparison correction or population guarantee",
+  "next": "Develop segmentation/normalization stability and occlusion-aware descriptors only on train/validation; preserve operational benchmark and limits",
+  "script_sha256": "7e68b7c454058e9843fd54cf95a408e6167181b052110bb6c4b61a4f523d4218"
+}

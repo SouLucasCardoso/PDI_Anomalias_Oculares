@@ -1,0 +1,13 @@
+{
+  "registered_utc": "2026-10-21T20:37:26.760652+00:00",
+  "scope": "Train-only fixed residual regression, evaluated on development validation ONLY; follows rejected gradient adaptation, no test inference",
+  "method": "Frozen original ResNet18 backbone/projection. Learn512D standardized raw-feature to256D residual(clean teacher embedding minus student embedding). Ridge lambda1, unpenalized residual offset. Return L2(base embedding+predicted residual). No backbone/BN/projection changes.",
+  "pairs": "Same valid training pairs/crop cache as gradient attempt; teacher original segmentation clean crop. Three student views: clean weight2, upper and lower occlusions uniform1..40% each weight1. Seed53, no rotation/color changes. Cropped predicted support, not native/anatomical fraction.",
+  "statistics": "Weighted centering/std, offsets and covariance from TRAIN only. No regularization/weight search, no validation checkpoint selection.",
+  "evaluation": "Clean/native upper/lower10% robust-segmenter validation caches, all482 queries,16 same-side candidates. One threshold calibrated on CLEAN validation FMR<=1%, reused unchanged for occlusions. Release criteria unchanged; no automatic replacement.",
+  "original_encoder_sha256": "6060c164eada674712127830b2d188a9e6b4ed210f7b8d595e58fdfeb10387fc",
+  "segmenter_sha256": "8f126141f4dd7fc31352e9135b69e901454449dc5e4493ab5e973d4c8643035c",
+  "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+  "teacher_cache_sha256": "113283756e14cc795ce64a56aa5a497e200179badbbb1a48feaed6e317032c81",
+  "script_sha256": "6562769d5f835e5077865edbcbe1351624be8357a7ad50ab150ab50ede03a61f"
+}

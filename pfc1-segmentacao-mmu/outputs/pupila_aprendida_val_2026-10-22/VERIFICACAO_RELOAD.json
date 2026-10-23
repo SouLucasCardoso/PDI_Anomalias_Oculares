@@ -1,0 +1,134 @@
+{
+  "status": "pupil_locator_and_fusion_reload_verified",
+  "monitor_loss": 0.00016635084466543049,
+  "baseline_loss": 0.000826590636279434,
+  "locator_person_split_verified": true,
+  "original_identity_checkpoint_hashes_unchanged": true,
+  "maximum_fusion_score_difference": 0.0,
+  "comparisons": [
+    {
+      "strategy": "new_fixed",
+      "condition": "clean",
+      "rank1_gain_pp": 0.0,
+      "rank1_gain_ci95_pp": [
+        0.0,
+        0.0
+      ],
+      "tar_gain_pp": -0.4149377593360996,
+      "tar_gain_ci95_pp": [
+        -1.25,
+        0.411522633744856
+      ],
+      "transitions": {
+        "both_correct": 433,
+        "lost_correct": 1,
+        "recovered": 1,
+        "both_wrong": 47
+      }
+    },
+    {
+      "strategy": "new_fixed",
+      "condition": "upper10",
+      "rank1_gain_pp": -0.2074688796680498,
+      "rank1_gain_ci95_pp": [
+        -1.6599239280774551,
+        1.4583333333333333
+      ],
+      "tar_gain_pp": 0.8298755186721992,
+      "tar_gain_ci95_pp": [
+        -0.625,
+        2.2821576763485476
+      ],
+      "transitions": {
+        "both_correct": 383,
+        "lost_correct": 6,
+        "recovered": 5,
+        "both_wrong": 88
+      }
+    },
+    {
+      "strategy": "new_fixed",
+      "condition": "lower10",
+      "rank1_gain_pp": 1.0373443983402488,
+      "rank1_gain_ci95_pp": [
+        -0.4166666666666667,
+        2.7083333333333335
+      ],
+      "tar_gain_pp": -0.6224066390041494,
+      "tar_gain_ci95_pp": [
+        -2.0833333333333335,
+        0.823045267489712
+      ],
+      "transitions": {
+        "both_correct": 284,
+        "lost_correct": 5,
+        "recovered": 10,
+        "both_wrong": 183
+      }
+    },
+    {
+      "strategy": "new_clean_calibrated",
+      "condition": "clean",
+      "rank1_gain_pp": 0.0,
+      "rank1_gain_ci95_pp": [
+        0.0,
+        0.0
+      ],
+      "tar_gain_pp": -0.8298755186721992,
+      "tar_gain_ci95_pp": [
+        -1.4583333333333333,
+        -0.2066115702479339
+      ],
+      "transitions": {
+        "both_correct": 433,
+        "lost_correct": 1,
+        "recovered": 1,
+        "both_wrong": 47
+      }
+    },
+    {
+      "strategy": "new_clean_calibrated",
+      "condition": "upper10",
+      "rank1_gain_pp": 0.0,
+      "rank1_gain_ci95_pp": [
+        -1.646090534979424,
+        1.8672199170124482
+      ],
+      "tar_gain_pp": 0.4149377593360996,
+      "tar_gain_ci95_pp": [
+        -1.0416666666666667,
+        1.875
+      ],
+      "transitions": {
+        "both_correct": 383,
+        "lost_correct": 6,
+        "recovered": 6,
+        "both_wrong": 87
+      }
+    },
+    {
+      "strategy": "new_clean_calibrated",
+      "condition": "lower10",
+      "rank1_gain_pp": 1.2448132780082988,
+      "rank1_gain_ci95_pp": [
+        -0.4149377593360996,
+        3.112033195020747
+      ],
+      "tar_gain_pp": -0.6224066390041494,
+      "tar_gain_ci95_pp": [
+        -2.0833333333333335,
+        0.823045267489712
+      ],
+      "transitions": {
+        "both_correct": 284,
+        "lost_correct": 5,
+        "recovered": 11,
+        "both_wrong": 182
+      }
+    }
+  ],
+  "test_inference": false,
+  "frozen_candidate_replaced": false,
+  "minimum_area": null,
+  "limits": "Proxy pupil labels; repeated development validation;5000 person-cluster pointwise bootstrap with fixed gallery/threshold, no model-selection correction."
+}

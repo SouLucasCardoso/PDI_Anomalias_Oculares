@@ -1,0 +1,8 @@
+{
+  "registered_utc": "2026-10-22T00:40:40.479999+00:00",
+  "scope": "Descriptive development-validation audit only; no new test inference, model selection, threshold fitting or deployment change",
+  "analysis": "All482 queries, clean and upper/lower10%, original/robust segmenter branches. Per-person/eye errors, component rank1, correct-component coverage, clean-to-occluded transitions and cross-segmenter transitions.",
+  "oracle_warning": "Any-component-correct is a label-informed diagnostic coverage, NOT an achievable recognizer, not TAR, not reported system performance. No query-specific component/segmenter selection.",
+  "privacy": "Query filenames and dataset subject IDs only; no new personal captures.",
+  "script_sha256": "54cc9c6a67b2deed87da8fd56e3c37732f3fb65899b8d24f47c293dcc397ee25"
+}

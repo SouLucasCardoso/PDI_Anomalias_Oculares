@@ -1,0 +1,15 @@
+{
+  "status": "residual_reload_verified",
+  "max_score_difference": {
+    "clean": 0.0,
+    "upper10": 0.0,
+    "lower10": 0.0
+  },
+  "residual_parameters_identical_npz_and_checkpoint": true,
+  "residual_backbone_changed_tensors": 0,
+  "gradient_selected_epoch": 0,
+  "gradient_selected_encoder_changed_tensors": 0,
+  "test_inference": false,
+  "checkpoint_sha256": "f6c4b48e5c1db0d5e049147a816a75b88683b965cecfa93f0f13ded5fa82a2b0",
+  "script_sha256": "43337ce357da7af331b27e1651654f0acf8e0e8cd6c716585973d5ffb2ccfd82"
+}

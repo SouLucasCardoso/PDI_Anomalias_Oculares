@@ -1,0 +1,84 @@
+{
+  "selection": "First nonempty-reference session2 image per first4 different validation subjects; no Dice/recognition selection",
+  "samples": [
+    {
+      "image": "C149_S2_I10_L.jpg",
+      "subject": 149,
+      "native_case_dice_original_and_robust": [
+        0.6563235905726107,
+        0.8554888039480624
+      ],
+      "display_box": [
+        432,
+        278,
+        666,
+        460
+      ],
+      "intervention": {
+        "affected_fraction": 0.10007030700726506,
+        "sigma_pixels": 0.0
+      }
+    },
+    {
+      "image": "C151_S2_I10_L.jpg",
+      "subject": 151,
+      "native_case_dice_original_and_robust": [
+        0.8029058396310195,
+        0.9575996619262056
+      ],
+      "display_box": [
+        243,
+        253,
+        685,
+        451
+      ],
+      "intervention": {
+        "affected_fraction": 0.10003818251240931,
+        "sigma_pixels": 0.0
+      }
+    },
+    {
+      "image": "C173_S2_I10_L.jpg",
+      "subject": 173,
+      "native_case_dice_original_and_robust": [
+        0.9328520416110522,
+        0.9600757575772698
+      ],
+      "display_box": [
+        287,
+        201,
+        703,
+        461
+      ],
+      "intervention": {
+        "affected_fraction": 0.09999249305607687,
+        "sigma_pixels": 0.0
+      }
+    },
+    {
+      "image": "C177_S2_I10_L.jpg",
+      "subject": 177,
+      "native_case_dice_original_and_robust": [
+        0.8362277655069873,
+        0.9113266020238265
+      ],
+      "display_box": [
+        278,
+        163,
+        596,
+        407
+      ],
+      "intervention": {
+        "affected_fraction": 0.10001039609106976,
+        "sigma_pixels": 0.0
+      }
+    }
+  ],
+  "checkpoint_sha256": [
+    "2bcfc269ffc9562ca8cf0956998faf1e22641587cd60f7059b3cec3dd0f4093d",
+    "8f126141f4dd7fc31352e9135b69e901454449dc5e4493ab5e973d4c8643035c"
+  ],
+  "display_only": "Annotation bbox used only for visualization zoom; not inference",
+  "device": "CPU FP32, not population metric",
+  "script_sha256": "797c5b8d113f2842b0016549fec817058aa70e0b9b4ec83f2dfae838321a2ddd"
+}

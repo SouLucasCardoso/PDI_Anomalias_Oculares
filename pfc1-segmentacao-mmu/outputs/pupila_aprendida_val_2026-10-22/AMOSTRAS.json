@@ -1,0 +1,10 @@
+{
+  "images": [
+    "C149_S2_I10_L.jpg",
+    "C151_S2_I1_R.jpg",
+    "C177_S2_I12_R.jpg",
+    "C235_S2_I3_L.jpg"
+  ],
+  "selection": "First4distinct subjects among clean changed queries sorted by filename; no correctness/score selection",
+  "figure": "qa_pupila_comparacao.png"
+}

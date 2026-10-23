@@ -28,6 +28,24 @@ def main():
               'active_protocol': 'PROTOCOLO_AREA_IRIS_2026-10-20.md',
               'clinical_protocol': 'outputs/biometria_clinica_triagem_2026-10-20/protocolo_triagem.json',
               'clinical_status': 'inspect clinical_validation and clinical_test below', 'datasets': {}}
+    report['frozen_candidate_evaluation']={}
+    for split in ['val','test']:
+        name=f'confirmacao_congelada_{split}_2026-10-21'
+        folder=ROOT/'outputs'/name
+        temporary=Path(tempfile.gettempdir())/'pfc-tcc-resultados'/name
+        if not (folder/'protocolo.json').exists() and (temporary/'protocolo.json').exists():folder=temporary
+        entry={'protocol_registered':(folder/'protocolo.json').exists(),'completed':(folder/'CONCLUIDO.json').exists(),'artifact_directory':str(folder),'note':'Frozen calibration/threshold; test previously exposed to other strategies, external pretraining overlap unknown'}
+        if (folder/'CONCLUIDO.json').exists():entry['result']=json.loads((folder/'CONCLUIDO.json').read_text(encoding='utf-8'))
+        report['frozen_candidate_evaluation'][split]=entry
+    report['frozen_occlusion']={}
+    for kind,name in [('coarse','curva_oclusao_congelada_2026-10-21'),('refinement','refinamento_oclusao_congelada_2026-10-21')]:
+        folder=ROOT/'outputs'/name
+        temporary=Path(tempfile.gettempdir())/'pfc-tcc-resultados'/name
+        if not (folder/'protocolo.json').exists() and (temporary/'protocolo.json').exists():folder=temporary
+        entry={'protocol_registered':(folder/'protocolo.json').exists(),'completed':(folder/'CONCLUIDO.json').exists(),'artifact_directory':str(folder),'note':'Frozen threshold, all queries retained; visible annotated pixel loss, not clinical/anatomical minimum'}
+        if (folder/'CONCLUIDO.json').exists():entry['result']=json.loads((folder/'CONCLUIDO.json').read_text(encoding='utf-8'))
+        elif (folder/'progresso.json').exists():entry['progress']=json.loads((folder/'progresso.json').read_text(encoding='utf-8'))
+        report['frozen_occlusion'][kind]=entry
     report['recognition']={}
     report['recognizer_development']={}
     for name,folder_name in [('normalization','melhoria_normalizacao_val_gpu_2026-10-20'),
@@ -72,16 +90,40 @@ def main():
                              ('external_arciris_clahe','arciris_polar_2026-10-21'),
                              ('external_arciris_red','arciris_red_2026-10-21'),
                              ('external_arciris_equal_views','arciris_duas_vistas_2026-10-21'),
+                             ('occlusion_segmenter_training','segmentacao_oclusao_2026-10-21'),
+                             ('occlusion_segmenter_recognition_validation','validacao_segmentacao_oclusao_identidade_2026-10-21'),
+                             ('dual_segmentation_validation','dupla_segmentacao_val_2026-10-21'),
+                             ('identity_occlusion_adaptation','identidade_oclusao_segmentacao_2026-10-21'),
+                             ('identity_occlusion_fusion','fusao_identidade_adaptada_val_2026-10-21'),
+                             ('identity_residual_mapping','identidade_residual_oclusao_2026-10-21'),
+                             ('identity_residual_fusion','fusao_identidade_residual_val_2026-10-21'),
+                             ('local_texture_matching','textura_local_val_2026-10-21'),
+                             ('validation_error_audit','diagnostico_erros_val_2026-10-21'),
+                             ('trimmed_fusion','fusao_aparada_val_2026-10-21'),
+                             ('training_only_regularized_fusion','fusao_regularizada_treino_2026-10-21'),
+                             ('person_disjoint_identity_fusion','fusao_pessoas_separadas_2026-10-21'),
+                             ('resolution_geometry_diagnostic','diagnostico_resolucao_geometria_val_2026-10-22'),
+                             ('pupil_locator_training','localizador_pupila_2026-10-22'),
+                             ('pupil_locator_identity_validation','pupila_aprendida_val_2026-10-22'),
+                             ('original_geometry_diagnostic','diagnostico_geometria_fixa_2026-10-21'),
                              ('enrollment_adaptation_failed','adaptacao_cadastro_2026-10-21'),
                              ('enrollment_adaptation','adaptacao_cadastro_v2_2026-10-21')]:
         folder=ROOT/'outputs'/folder_name
         temporary=Path(tempfile.gettempdir())/'pfc-tcc-resultados'/folder_name
         if not (folder/'protocolo.json').exists() and (temporary/'protocolo.json').exists():folder=temporary
+        if name in ['training_only_regularized_fusion','person_disjoint_identity_fusion'] and not (folder/'CONCLUIDO.json').exists() and (temporary/'protocolo.json').exists():folder=temporary
         entry={'protocol_registered':(folder/'protocolo.json').exists(),
                'completed':(folder/'CONCLUIDO.json').exists(),
                'artifact_directory':str(folder),
                'note':'Development only; absent completion may mean running or interrupted; no independent confirmation'}
+        if name=='training_only_regularized_fusion':
+            score_folder=temporary if (temporary/'clean').exists() else folder
+            entry['score_component_directory']=str(score_folder)
+            entry['score_components_saved']=sum(len(list((score_folder/condition).glob('scores_*.npz'))) for condition in ['clean','upper10','lower10'])
+            entry['score_components_expected']=27
+            entry['fusion_weights_fitted']=(folder/'MODELO_FUSAO.json').exists()
         if (folder/'CONCLUIDO.json').exists():entry['result']=json.loads((folder/'CONCLUIDO.json').read_text(encoding='utf-8'))
+        if name=='person_disjoint_identity_fusion' and (folder/'progresso.json').exists():entry['progress']=json.loads((folder/'progresso.json').read_text(encoding='utf-8'))
         if (folder/'INTERROMPIDO_TECNICO.json').exists():
             entry['interrupted_technical']=True
             entry['interruption']=json.loads((folder/'INTERROMPIDO_TECNICO.json').read_text(encoding='utf-8'))

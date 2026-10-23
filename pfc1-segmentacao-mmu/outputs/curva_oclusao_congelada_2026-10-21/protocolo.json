@@ -1,0 +1,15 @@
+{
+  "registered_utc": "2026-10-21T19:28:06.936751+00:00",
+  "scope": "Exploratory frozen candidate, previously exposed UBIPr test; external pretraining overlap unknown",
+  "conditions": "Original and upper/lower exact annotated iris pixel occlusion, levels10,20,...90%; one original query photo; all486 queries",
+  "extraction": "Rerun frozen U-Net, geometry and all recognition components on each altered query; enrollment original. Annotation used ONLY to define intervention, never extraction; gray128 within reference iris, exterior unchanged; empty references unchanged and marked undefined area, retained in metrics.",
+  "criterion": "Rank1>=90%,TAR>=90%,FMR<=1% at frozen validation threshold0.8581747485460748; minimum must pass all larger tested retained fractions",
+  "stopping": "Evaluate increasing loss sequentially for each orientation; stop at FIRST failing condition. Lower retained fractions cannot satisfy all-larger-pass criterion after that failure, even if accuracy recovers. Unevaluated conditions are not plotted or imputed.",
+  "interpretation": "Smallest approved retained fraction on10percentage-point grid, NOT precise anatomical, universal or clinical minimum; partial curve with justified early stopping, not complete19-condition curve",
+  "source_sha256": {
+    "avaliar_oclusao_congelada.py": "3e6b4f8451a294be123232d6dfaa652979d2c2367edd7d861f888ee79aa5135f",
+    "avaliar_candidato_congelado.py": "0d1c04e909a0a2c0a382456c3be22e94be9024c58014e4ccf881c79994824b66",
+    "avaliar_robustez_reconhecimento.py": "e6d0b8d8eb78dc2e86ed3f73084cd9fb5d83d1afee27f73ca0ffbee1a5947f95"
+  },
+  "baseline_sha256": "92d4530c7fd168244406c0766fc55f1778944d84075d3e07e7521ef6105cfa72"
+}

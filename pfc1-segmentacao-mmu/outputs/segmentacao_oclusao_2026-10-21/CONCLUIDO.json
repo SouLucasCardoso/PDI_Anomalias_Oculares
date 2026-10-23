@@ -1,0 +1,68 @@
+{
+  "status": "occlusion_segmentation_training_completed",
+  "best_epoch": 3,
+  "epochs_trained": 6,
+  "best_minimum_iris_dice": 0.9142348581475498,
+  "history": [
+    {
+      "epoch": 0,
+      "train_loss": null,
+      "clean_iris_dice": 0.9151888611434674,
+      "upper10_iris_dice": 0.8506576753720277,
+      "lower10_iris_dice": 0.776454118265306,
+      "eligible_clean_guard": true
+    },
+    {
+      "epoch": 1,
+      "train_loss": 0.16173760999332776,
+      "clean_iris_dice": 0.9143558458508404,
+      "upper10_iris_dice": 0.915729451164606,
+      "lower10_iris_dice": 0.9110154632937059,
+      "eligible_clean_guard": true
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.15663379406140857,
+      "clean_iris_dice": 0.9138283193101537,
+      "upper10_iris_dice": 0.9198856638370894,
+      "lower10_iris_dice": 0.9136947350638245,
+      "eligible_clean_guard": true
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.15506656406339536,
+      "clean_iris_dice": 0.9142348581475498,
+      "upper10_iris_dice": 0.9219293186932762,
+      "lower10_iris_dice": 0.9147677014799938,
+      "eligible_clean_guard": true
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.1542446884241971,
+      "clean_iris_dice": 0.913307668472391,
+      "upper10_iris_dice": 0.9230740082912187,
+      "lower10_iris_dice": 0.9159493460652391,
+      "eligible_clean_guard": true
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.15358837207486806,
+      "clean_iris_dice": 0.9134371323129599,
+      "upper10_iris_dice": 0.9238993326871981,
+      "lower10_iris_dice": 0.9164712044050509,
+      "eligible_clean_guard": true
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.15281830149248612,
+      "clean_iris_dice": 0.9131912856803903,
+      "upper10_iris_dice": 0.924302597425165,
+      "lower10_iris_dice": 0.9165498364058857,
+      "eligible_clean_guard": true
+    }
+  ],
+  "checkpoint_sha256": "8f126141f4dd7fc31352e9135b69e901454449dc5e4493ab5e973d4c8643035c",
+  "test_inference": false,
+  "identity_recognition_evaluated": false,
+  "minimum_area": null
+}

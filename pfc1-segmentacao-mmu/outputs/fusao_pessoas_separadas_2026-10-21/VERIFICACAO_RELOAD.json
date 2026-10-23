@@ -1,0 +1,190 @@
+{
+  "status": "person_split_and_reload_verified",
+  "identity_fit_monitor_meta_disjoint": true,
+  "development_validation_disjoint": true,
+  "segmentation_seen_meta_people": true,
+  "batchnorm_counters_fit_only": true,
+  "selected_epochs": {
+    "r18": 7,
+    "r50": 15,
+    "convnext": 13
+  },
+  "checkpoint_sha256": {
+    "r18": "8725521a24850bd643bec51c672a41e7a4e2ac7d14f338a36ca067ece3ca23fc",
+    "r50": "9f6f6074f506c1ddc6cee3ecce4e315c7d7ae1f03ac5d5be5d97250904f1b628",
+    "convnext": "2cbac061f1b45af614f0507ec57926506594cb817f425ee7495605e24768b8fa"
+  },
+  "replay": [
+    {
+      "model": "r18",
+      "condition": "clean",
+      "max_abs_score_difference": 0.0
+    },
+    {
+      "model": "r18",
+      "condition": "upper10",
+      "max_abs_score_difference": 0.0
+    },
+    {
+      "model": "r18",
+      "condition": "lower10",
+      "max_abs_score_difference": 0.0
+    },
+    {
+      "model": "r50",
+      "condition": "clean",
+      "max_abs_score_difference": 0.0
+    },
+    {
+      "model": "r50",
+      "condition": "upper10",
+      "max_abs_score_difference": 0.0
+    },
+    {
+      "model": "r50",
+      "condition": "lower10",
+      "max_abs_score_difference": 0.0
+    },
+    {
+      "model": "convnext",
+      "condition": "clean",
+      "max_abs_score_difference": 0.0
+    },
+    {
+      "model": "convnext",
+      "condition": "upper10",
+      "max_abs_score_difference": 0.0
+    },
+    {
+      "model": "convnext",
+      "condition": "lower10",
+      "max_abs_score_difference": 0.0
+    }
+  ],
+  "records": [
+    {
+      "condition": "clean",
+      "control": "uniform_same_three",
+      "rank1_gain_pp": 0.4149377593360996,
+      "rank1_gain_ci95_pp": [
+        -1.8672199170124482,
+        2.5
+      ],
+      "tar_gain_pp": -1.6597510373443984,
+      "tar_gain_ci95_pp": [
+        -3.673845767815323,
+        0.6224066390041494
+      ],
+      "transitions": {
+        "both_correct": 369,
+        "lost_correct": 11,
+        "recovered": 13,
+        "both_wrong": 89
+      }
+    },
+    {
+      "condition": "clean",
+      "control": "original_eight_group_reference",
+      "rank1_gain_pp": -10.78838174273859,
+      "rank1_gain_ci95_pp": [
+        -17.14876033057851,
+        -4.791666666666667
+      ],
+      "tar_gain_pp": -18.672199170124482,
+      "tar_gain_ci95_pp": [
+        -26.556016597510375,
+        -10.833333333333334
+      ],
+      "transitions": {
+        "both_correct": 374,
+        "lost_correct": 60,
+        "recovered": 8,
+        "both_wrong": 40
+      }
+    },
+    {
+      "condition": "upper10",
+      "control": "uniform_same_three",
+      "rank1_gain_pp": 1.6597510373443984,
+      "rank1_gain_ci95_pp": [
+        -0.2066115702479339,
+        3.5269709543568464
+      ],
+      "tar_gain_pp": 2.0746887966804977,
+      "tar_gain_ci95_pp": [
+        -0.6224066390041494,
+        5.0
+      ],
+      "transitions": {
+        "both_correct": 325,
+        "lost_correct": 11,
+        "recovered": 19,
+        "both_wrong": 127
+      }
+    },
+    {
+      "condition": "upper10",
+      "control": "original_eight_group_reference",
+      "rank1_gain_pp": -9.336099585062241,
+      "rank1_gain_ci95_pp": [
+        -15.767911196517245,
+        -3.7145747245179708
+      ],
+      "tar_gain_pp": -14.937759336099585,
+      "tar_gain_ci95_pp": [
+        -21.25,
+        -8.921161825726141
+      ],
+      "transitions": {
+        "both_correct": 327,
+        "lost_correct": 62,
+        "recovered": 17,
+        "both_wrong": 76
+      }
+    },
+    {
+      "condition": "lower10",
+      "control": "uniform_same_three",
+      "rank1_gain_pp": 2.4896265560165975,
+      "rank1_gain_ci95_pp": [
+        -0.8382201646090519,
+        5.991735537190083
+      ],
+      "tar_gain_pp": -0.4149377593360996,
+      "tar_gain_ci95_pp": [
+        -3.5269709543568464,
+        2.5
+      ],
+      "transitions": {
+        "both_correct": 268,
+        "lost_correct": 14,
+        "recovered": 26,
+        "both_wrong": 174
+      }
+    },
+    {
+      "condition": "lower10",
+      "control": "original_eight_group_reference",
+      "rank1_gain_pp": 1.0373443983402488,
+      "rank1_gain_ci95_pp": [
+        -5.187262275242047,
+        8.091286307053942
+      ],
+      "tar_gain_pp": -7.883817427385892,
+      "tar_gain_ci95_pp": [
+        -16.041666666666668,
+        0.0
+      ],
+      "transitions": {
+        "both_correct": 248,
+        "lost_correct": 41,
+        "recovered": 46,
+        "both_wrong": 147
+      }
+    }
+  ],
+  "test_inference": false,
+  "frozen_candidate_replaced": false,
+  "limitations": "Only identity encoders have disjoint fit/monitor/meta people. Frozen segmentation saw these people. Three-model pilot differs from original8-group reference. Reused development validation. Bootstrap5000 person clusters, fixed gallery and thresholds, pointwise, no selection correction.",
+  "script_sha256": "6c7958edc63ae710738a1e35d323a524ff8039993882bb09ab4fcc3a60659fae"
+}

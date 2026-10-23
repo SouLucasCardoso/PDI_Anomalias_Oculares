@@ -1,0 +1,67 @@
+{
+  "status": "identity_occlusion_adaptation_completed",
+  "best_epoch": 0,
+  "epochs_trained": 3,
+  "history": [
+    {
+      "epoch": 0,
+      "train_loss": null,
+      "clean_guard": true,
+      "clean_rank1": 0.7448132780082988,
+      "clean_tar": 0.6058091286307054,
+      "clean_far": 0.009820193637621023,
+      "upper10_rank1": 0.5954356846473029,
+      "upper10_tar": 0.41286307053941906,
+      "upper10_far": 0.01037344398340249,
+      "lower10_rank1": 0.6390041493775933,
+      "lower10_tar": 0.45228215767634855,
+      "lower10_far": 0.01037344398340249
+    },
+    {
+      "epoch": 1,
+      "train_loss": 3.119598915631121,
+      "clean_guard": false,
+      "clean_rank1": 0.6929460580912863,
+      "clean_tar": 0.5103734439834025,
+      "clean_far": 0.009820193637621023,
+      "upper10_rank1": 0.6867219917012448,
+      "upper10_tar": 0.4605809128630705,
+      "upper10_far": 0.009681881051175657,
+      "lower10_rank1": 0.6556016597510373,
+      "lower10_tar": 0.4107883817427386,
+      "lower10_far": 0.007192254495159059
+    },
+    {
+      "epoch": 2,
+      "train_loss": 2.088300343264233,
+      "clean_guard": false,
+      "clean_rank1": 0.6970954356846473,
+      "clean_tar": 0.5311203319502075,
+      "clean_far": 0.009820193637621023,
+      "upper10_rank1": 0.7261410788381742,
+      "upper10_tar": 0.483402489626556,
+      "upper10_far": 0.009128630705394191,
+      "lower10_rank1": 0.6825726141078838,
+      "lower10_tar": 0.46680497925311204,
+      "lower10_far": 0.010235131396957123
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.8280189071189274,
+      "clean_guard": false,
+      "clean_rank1": 0.7012448132780082,
+      "clean_tar": 0.5228215767634855,
+      "clean_far": 0.009820193637621023,
+      "upper10_rank1": 0.7240663900414938,
+      "upper10_tar": 0.47925311203319504,
+      "upper10_far": 0.011341632088520055,
+      "lower10_rank1": 0.6784232365145229,
+      "lower10_tar": 0.46887966804979253,
+      "lower10_far": 0.008990318118948824
+    }
+  ],
+  "checkpoint_sha256": "a0b6e4c1983de40e0dc256a4bbd7f0f9b2bd9eceb0fe59cdc797144ba6d0c45d",
+  "test_inference": false,
+  "frozen_candidate_replaced": false,
+  "minimum_area": null
+}

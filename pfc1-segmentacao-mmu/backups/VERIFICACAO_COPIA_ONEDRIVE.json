@@ -1,0 +1,23 @@
+{
+  "verified_utc": "2026-10-22T02:05:17.341650+00:00",
+  "local_copy_verified": true,
+  "cloud_upload_verified": false,
+  "original_backups_retained": true,
+  "files": [
+    {
+      "name": "pf_1021T204326.zip",
+      "bytes": 98940387,
+      "sha256": "8176241fa48bd621714ac92eca41ba7b4c2b7e6efffc64c5ed6823028636b40c"
+    },
+    {
+      "name": "fusao_regularizada_2026-10-21.zip",
+      "bytes": 366677,
+      "sha256": "fe3b8e59491c6898cbd9b1e3f11d82a4be03435bd9b55281e763b772703c403f"
+    },
+    {
+      "name": "fusao_pessoas_separadas_2026-10-21.zip",
+      "bytes": 237715590,
+      "sha256": "846004597db8803a601ebd32cf47451791473008ea980cdb3a5da62fb110507f"
+    }
+  ]
+}

@@ -56,6 +56,246 @@
       "images": 2228
     }
   },
+  "frozen_candidate_evaluation": {
+    "val": {
+      "protocol_registered": true,
+      "completed": true,
+      "artifact_directory": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_2026-10-21",
+      "note": "Frozen calibration/threshold; test previously exposed to other strategies, external pretraining overlap unknown",
+      "result": {
+        "status": "frozen_candidate_evaluation_completed",
+        "split": "val",
+        "result": {
+          "rank1": 0.9004149377593361,
+          "tar": 0.9066390041493776,
+          "fnmr": 0.09336099585062241,
+          "far": 0.009820193637621023,
+          "eer_descriptive": 0.04329183955739972,
+          "extraction_failures": 4,
+          "queries": 482,
+          "genuine_mean_valid": 0.9198967805247797,
+          "margin_mean_valid": 0.13741244408667197,
+          "threshold": 0.8581747485460748,
+          "joint_success": 0.8838174273858921,
+          "replay_max_abs_score_difference": 9.992007221626409e-16,
+          "replay_rank1_decisions_changed": 0,
+          "replay_acceptance_decisions_changed": 0
+        },
+        "minimum_area": null,
+        "target_reached": true,
+        "independent_blind_test": false,
+        "external_pretraining_overlap_unknown": true
+      }
+    },
+    "test": {
+      "protocol_registered": true,
+      "completed": true,
+      "artifact_directory": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_test_2026-10-21",
+      "note": "Frozen calibration/threshold; test previously exposed to other strategies, external pretraining overlap unknown",
+      "result": {
+        "status": "frozen_candidate_evaluation_completed",
+        "split": "test",
+        "result": {
+          "rank1": 0.9135802469135802,
+          "tar": 0.9238683127572016,
+          "fnmr": 0.0761316872427984,
+          "far": 0.008779149519890261,
+          "eer_descriptive": 0.03909465020576132,
+          "extraction_failures": 2,
+          "queries": 486,
+          "genuine_mean_valid": 0.9265081131664159,
+          "margin_mean_valid": 0.14995738579716775,
+          "threshold": 0.8581747485460748,
+          "joint_success": 0.897119341563786
+        },
+        "minimum_area": null,
+        "target_reached": true,
+        "independent_blind_test": false,
+        "external_pretraining_overlap_unknown": true
+      }
+    }
+  },
+  "frozen_occlusion": {
+    "coarse": {
+      "protocol_registered": true,
+      "completed": true,
+      "artifact_directory": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\curva_oclusao_congelada_2026-10-21",
+      "note": "Frozen threshold, all queries retained; visible annotated pixel loss, not clinical/anatomical minimum",
+      "result": {
+        "status": "coarse_grid_minimum_search_completed",
+        "findings": [
+          {
+            "orientation": "oclusao_superior",
+            "smallest_passing_retained_percent_on10pp_grid": 100,
+            "first_failing_retained_percent": 90,
+            "evaluated_occluded_percent": [
+              10
+            ],
+            "stopped_at_first_failure": true
+          },
+          {
+            "orientation": "oclusao_inferior",
+            "smallest_passing_retained_percent_on10pp_grid": 100,
+            "first_failing_retained_percent": 90,
+            "evaluated_occluded_percent": [
+              10
+            ],
+            "stopped_at_first_failure": true
+          }
+        ],
+        "records": [
+          {
+            "orientation": "original",
+            "occluded_percent": 0,
+            "preserved_percent": 100,
+            "passed": true,
+            "rank1": 0.9135802469135802,
+            "tar": 0.9238683127572016,
+            "fnmr": 0.0761316872427984,
+            "far": 0.008779149519890261,
+            "eer_descriptive": 0.03909465020576132,
+            "extraction_failures": 2,
+            "queries": 486,
+            "genuine_mean_valid": 0.9265081131664159,
+            "margin_mean_valid": 0.14995738579716775,
+            "threshold": 0.8581747485460748,
+            "joint_success": 0.897119341563786
+          },
+          {
+            "orientation": "oclusao_superior",
+            "occluded_percent": 10,
+            "preserved_percent": 90,
+            "passed": false,
+            "rank1": 0.823045267489712,
+            "tar": 0.8497942386831275,
+            "fnmr": 0.15020576131687247,
+            "far": 0.016872427983539096,
+            "eer_descriptive": 0.06378600823045268,
+            "extraction_failures": 2,
+            "queries": 486,
+            "genuine_mean_valid": 0.9017927893158049,
+            "margin_mean_valid": 0.09667941384041835,
+            "threshold": 0.8581747485460748,
+            "joint_success": 0.8024691358024691
+          },
+          {
+            "orientation": "oclusao_inferior",
+            "occluded_percent": 10,
+            "preserved_percent": 90,
+            "passed": false,
+            "rank1": 0.5823045267489712,
+            "tar": 0.602880658436214,
+            "fnmr": 0.39711934156378603,
+            "far": 0.02606310013717421,
+            "eer_descriptive": 0.1522633744855967,
+            "extraction_failures": 2,
+            "queries": 486,
+            "genuine_mean_valid": 0.82829437036305,
+            "margin_mean_valid": -0.0008543666341419537,
+            "threshold": 0.8581747485460748,
+            "joint_success": 0.551440329218107
+          }
+        ],
+        "threshold_recalibrated": false,
+        "all_queries_retained": 486,
+        "independent_blind_test": false,
+        "external_pretraining_overlap_unknown": true,
+        "clinical_minimum": null,
+        "anatomical_minimum": null,
+        "limitations": "Smallest approved retained fraction on10percentage-point grid, NOT precise anatomical, universal or clinical minimum; partial curve with justified early stopping, not complete19-condition curve"
+      }
+    },
+    "refinement": {
+      "protocol_registered": true,
+      "completed": true,
+      "artifact_directory": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\refinamento_oclusao_congelada_2026-10-21",
+      "note": "Frozen threshold, all queries retained; visible annotated pixel loss, not clinical/anatomical minimum",
+      "result": {
+        "status": "exploratory1pp_boundary_search_completed",
+        "findings": [
+          {
+            "orientation": "oclusao_superior",
+            "smallest_passing_retained_percent_on1pp_grid": 100,
+            "first_failing_retained_percent": 99,
+            "evaluated_loss_levels": [
+              1
+            ],
+            "all_larger_grid_fractions_pass": true
+          },
+          {
+            "orientation": "oclusao_inferior",
+            "smallest_passing_retained_percent_on1pp_grid": 99,
+            "first_failing_retained_percent": 98,
+            "evaluated_loss_levels": [
+              1,
+              2
+            ],
+            "all_larger_grid_fractions_pass": true
+          }
+        ],
+        "records": [
+          {
+            "orientation": "oclusao_superior",
+            "occluded_percent": 1,
+            "preserved_percent": 99,
+            "passed": false,
+            "rank1": 0.8991769547325102,
+            "tar": 0.9238683127572016,
+            "fnmr": 0.0761316872427984,
+            "far": 0.008779149519890261,
+            "eer_descriptive": 0.03909465020576132,
+            "extraction_failures": 2,
+            "queries": 486,
+            "genuine_mean_valid": 0.9252125876096987,
+            "margin_mean_valid": 0.1428141454802351,
+            "threshold": 0.8581747485460748,
+            "joint_success": 0.8868312757201646
+          },
+          {
+            "orientation": "oclusao_inferior",
+            "occluded_percent": 1,
+            "preserved_percent": 99,
+            "passed": true,
+            "rank1": 0.9094650205761317,
+            "tar": 0.9135802469135802,
+            "fnmr": 0.0864197530864198,
+            "far": 0.009327846364883402,
+            "eer_descriptive": 0.047325102880658436,
+            "extraction_failures": 2,
+            "queries": 486,
+            "genuine_mean_valid": 0.9187564158059315,
+            "margin_mean_valid": 0.13737213842967513,
+            "threshold": 0.8581747485460748,
+            "joint_success": 0.8930041152263375
+          },
+          {
+            "orientation": "oclusao_inferior",
+            "occluded_percent": 2,
+            "preserved_percent": 98,
+            "passed": false,
+            "rank1": 0.8744855967078189,
+            "tar": 0.8786008230452675,
+            "fnmr": 0.12139917695473246,
+            "far": 0.012345679012345678,
+            "eer_descriptive": 0.061385459533607675,
+            "extraction_failures": 2,
+            "queries": 486,
+            "genuine_mean_valid": 0.9091022422407029,
+            "margin_mean_valid": 0.11840737302307897,
+            "threshold": 0.8581747485460748,
+            "joint_success": 0.8539094650205762
+          }
+        ],
+        "threshold_recalibrated": false,
+        "all_queries_retained": 486,
+        "defined_area_queries": 480,
+        "undefined_area_queries_retained_unchanged": 6,
+        "minimum_scope": "Retained annotated visible iris pixel fraction, not anatomical iris or disease extent; artificial gray occlusion with resegmentation; point-estimate criterion, prior test exposure, unknown external-pretraining identities. Refinement chosen after coarse data; report as exploratory.",
+        "clinical_minimum": null,
+        "anatomical_minimum": null
+      }
+    }
+  },
   "recognition": {
     "pilot": {
       "completed": true,
@@ -2953,6 +3193,406 @@
         "minimum_area": null,
         "external_pretraining_overlap_unknown": true,
         "development_90_reached": true
+      }
+    },
+    "occlusion_segmenter_training": {
+      "protocol_registered": true,
+      "completed": true,
+      "artifact_directory": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\segmentacao_oclusao_2026-10-21",
+      "note": "Development only; absent completion may mean running or interrupted; no independent confirmation",
+      "result": {
+        "status": "occlusion_segmentation_training_completed",
+        "best_epoch": 3,
+        "epochs_trained": 6,
+        "best_minimum_iris_dice": 0.9142348581475498,
+        "history": [
+          {
+            "epoch": 0,
+            "train_loss": null,
+            "clean_iris_dice": 0.9151888611434674,
+            "upper10_iris_dice": 0.8506576753720277,
+            "lower10_iris_dice": 0.776454118265306,
+            "eligible_clean_guard": true
+          },
+          {
+            "epoch": 1,
+            "train_loss": 0.16173760999332776,
+            "clean_iris_dice": 0.9143558458508404,
+            "upper10_iris_dice": 0.915729451164606,
+            "lower10_iris_dice": 0.9110154632937059,
+            "eligible_clean_guard": true
+          },
+          {
+            "epoch": 2,
+            "train_loss": 0.15663379406140857,
+            "clean_iris_dice": 0.9138283193101537,
+            "upper10_iris_dice": 0.9198856638370894,
+            "lower10_iris_dice": 0.9136947350638245,
+            "eligible_clean_guard": true
+          },
+          {
+            "epoch": 3,
+            "train_loss": 0.15506656406339536,
+            "clean_iris_dice": 0.9142348581475498,
+            "upper10_iris_dice": 0.9219293186932762,
+            "lower10_iris_dice": 0.9147677014799938,
+            "eligible_clean_guard": true
+          },
+          {
+            "epoch": 4,
+            "train_loss": 0.1542446884241971,
+            "clean_iris_dice": 0.913307668472391,
+            "upper10_iris_dice": 0.9230740082912187,
+            "lower10_iris_dice": 0.9159493460652391,
+            "eligible_clean_guard": true
+          },
+          {
+            "epoch": 5,
+            "train_loss": 0.15358837207486806,
+            "clean_iris_dice": 0.9134371323129599,
+            "upper10_iris_dice": 0.9238993326871981,
+            "lower10_iris_dice": 0.9164712044050509,
+            "eligible_clean_guard": true
+          },
+          {
+            "epoch": 6,
+            "train_loss": 0.15281830149248612,
+            "clean_iris_dice": 0.9131912856803903,
+            "upper10_iris_dice": 0.924302597425165,
+            "lower10_iris_dice": 0.9165498364058857,
+            "eligible_clean_guard": true
+          }
+        ],
+        "checkpoint_sha256": "8f126141f4dd7fc31352e9135b69e901454449dc5e4493ab5e973d4c8643035c",
+        "test_inference": false,
+        "identity_recognition_evaluated": false,
+        "minimum_area": null
+      },
+      "epochs_after_baseline": 6,
+      "last_validation": {
+        "epoch": "6",
+        "train_loss": "0.15281830149248612",
+        "clean_iris_dice": "0.9131912856803903",
+        "upper10_iris_dice": "0.924302597425165",
+        "lower10_iris_dice": "0.9165498364058857",
+        "eligible_clean_guard": "True"
+      }
+    },
+    "occlusion_segmenter_recognition_validation": {
+      "protocol_registered": true,
+      "completed": true,
+      "artifact_directory": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\validacao_segmentacao_oclusao_identidade_2026-10-21",
+      "note": "Development only; absent completion may mean running or interrupted; no independent confirmation",
+      "result": {
+        "status": "segmentation_recognition_validation_completed",
+        "records": [
+          {
+            "segmenter": "original",
+            "condition": "original",
+            "occluded_percent": 0,
+            "result": {
+              "rank1": 0.9004149377593361,
+              "tar": 0.9066390041493776,
+              "fnmr": 0.09336099585062241,
+              "far": 0.009820193637621023,
+              "eer_descriptive": 0.04329183955739972,
+              "extraction_failures": 4,
+              "queries": 482,
+              "genuine_mean_valid": 0.9198967805247797,
+              "margin_mean_valid": 0.13741244408667197,
+              "threshold": 0.8581747485460748,
+              "joint_success": 0.8838174273858921,
+              "replay_max_abs_score_difference": 9.992007221626409e-16,
+              "replay_rank1_decisions_changed": 0,
+              "replay_acceptance_decisions_changed": 0
+            },
+            "source": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\confirmacao_congelada_val_2026-10-21"
+          },
+          {
+            "segmenter": "original",
+            "condition": "oclusao_superior",
+            "occluded_percent": 10,
+            "result": {
+              "rank1": 0.8070539419087137,
+              "tar": 0.7800829875518672,
+              "fnmr": 0.21991701244813278,
+              "far": 0.013001383125864454,
+              "eer_descriptive": 0.07053941908713693,
+              "extraction_failures": 4,
+              "queries": 482,
+              "genuine_mean_valid": 0.8943935362022664,
+              "margin_mean_valid": 0.0947425222581766,
+              "threshold": 0.8581747485460748,
+              "joint_success": 0.7614107883817427
+            },
+            "source": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\confirmacao_congelada_val_oclusao_superior_10_2026-10-21"
+          },
+          {
+            "segmenter": "original",
+            "condition": "oclusao_inferior",
+            "occluded_percent": 10,
+            "result": {
+              "rank1": 0.5995850622406639,
+              "tar": 0.578838174273859,
+              "fnmr": 0.421161825726141,
+              "far": 0.024066390041493777,
+              "eer_descriptive": 0.13900414937759337,
+              "extraction_failures": 7,
+              "queries": 482,
+              "genuine_mean_valid": 0.8409128074113923,
+              "margin_mean_valid": 0.016845094238804117,
+              "threshold": 0.8581747485460748,
+              "joint_success": 0.558091286307054
+            },
+            "source": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\confirmacao_congelada_val_oclusao_inferior_10_2026-10-21"
+          },
+          {
+            "segmenter": "robust",
+            "condition": "original",
+            "occluded_percent": 0,
+            "result": {
+              "rank1": 0.8858921161825726,
+              "tar": 0.8921161825726142,
+              "fnmr": 0.10788381742738584,
+              "far": 0.009820193637621023,
+              "eer_descriptive": 0.04771784232365145,
+              "extraction_failures": 4,
+              "queries": 482,
+              "genuine_mean_valid": 0.9160612138695691,
+              "margin_mean_valid": 0.13338076412387473,
+              "threshold": 0.8581747485460748,
+              "joint_success": 0.8713692946058091
+            },
+            "source": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\confirmacao_congelada_val_segmentador_8f126141f4dd_2026-10-21"
+          },
+          {
+            "segmenter": "robust",
+            "condition": "oclusao_superior",
+            "occluded_percent": 10,
+            "result": {
+              "rank1": 0.7697095435684648,
+              "tar": 0.7136929460580913,
+              "fnmr": 0.2863070539419087,
+              "far": 0.012863070539419087,
+              "eer_descriptive": 0.07468879668049792,
+              "extraction_failures": 4,
+              "queries": 482,
+              "genuine_mean_valid": 0.8887656905330267,
+              "margin_mean_valid": 0.08927363594952531,
+              "threshold": 0.8581747485460748,
+              "joint_success": 0.7033195020746889
+            },
+            "source": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\confirmacao_congelada_val_oclusao_superior_10_segmentador_8f126141f4dd_2026-10-21"
+          },
+          {
+            "segmenter": "robust",
+            "condition": "oclusao_inferior",
+            "occluded_percent": 10,
+            "result": {
+              "rank1": 0.8195020746887967,
+              "tar": 0.7925311203319502,
+              "fnmr": 0.20746887966804983,
+              "far": 0.011479944674965423,
+              "eer_descriptive": 0.06224066390041494,
+              "extraction_failures": 4,
+              "queries": 482,
+              "genuine_mean_valid": 0.8976565612892118,
+              "margin_mean_valid": 0.09942947260784471,
+              "threshold": 0.8581747485460748,
+              "joint_success": 0.7780082987551867
+            },
+            "source": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\confirmacao_congelada_val_oclusao_inferior_10_segmentador_8f126141f4dd_2026-10-21"
+          }
+        ],
+        "test_inference": false,
+        "minimum_area": null,
+        "frozen_candidate_replaced": false,
+        "threshold_recalibrated": false
+      }
+    },
+    "dual_segmentation_validation": {
+      "protocol_registered": true,
+      "completed": true,
+      "artifact_directory": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\dupla_segmentacao_val_2026-10-21",
+      "note": "Development only; absent completion may mean running or interrupted; no independent confirmation",
+      "result": {
+        "status": "equal_dual_segmentation_validation_completed",
+        "results": [
+          {
+            "rank1": 0.8900414937759336,
+            "tar": 0.9045643153526971,
+            "fnmr": 0.0954356846473029,
+            "far": 0.010926694329183955,
+            "eer_descriptive": 0.0437759336099585,
+            "extraction_failures": 4,
+            "queries": 482,
+            "genuine_mean_valid": 0.9192180816500788,
+            "margin_mean_valid": 0.13720360078957575,
+            "condition": "original",
+            "threshold": 0.8581747485460748,
+            "joint_success": 0.8775933609958506,
+            "source_sha256": {
+              "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\confirmacao_congelada_val_2026-10-21\\scores_finais.npz": "7f590308cfb5ecefa628da8bd2a52fd613ea5eeb0d2fdca3021247a0695408d0",
+              "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\confirmacao_congelada_val_segmentador_8f126141f4dd_2026-10-21\\scores_finais.npz": "23ea49f48723144177a89ddea79d79c895eb7a4a60943d903206e64d29ac9104"
+            }
+          },
+          {
+            "rank1": 0.8070539419087137,
+            "tar": 0.7800829875518672,
+            "fnmr": 0.21991701244813278,
+            "far": 0.011618257261410789,
+            "eer_descriptive": 0.07053941908713693,
+            "extraction_failures": 4,
+            "queries": 482,
+            "genuine_mean_valid": 0.8975614976660571,
+            "margin_mean_valid": 0.10223326730715228,
+            "condition": "oclusao_superior",
+            "threshold": 0.8581747485460748,
+            "joint_success": 0.7572614107883817,
+            "source_sha256": {
+              "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\confirmacao_congelada_val_oclusao_superior_10_2026-10-21\\scores_finais.npz": "c6f3576048601e0c3dabfb62999dd6a43fe8eb357e60889e09d365a0d3fbc943",
+              "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\confirmacao_congelada_val_oclusao_superior_10_segmentador_8f126141f4dd_2026-10-21\\scores_finais.npz": "8833dbd313d49f987df6c9709b8cc2075f3804d7700512ecb9930a37b720b1f7"
+            }
+          },
+          {
+            "rank1": 0.7448132780082988,
+            "tar": 0.7199170124481328,
+            "fnmr": 0.2800829875518672,
+            "far": 0.014384508990318118,
+            "eer_descriptive": 0.0912863070539419,
+            "extraction_failures": 7,
+            "queries": 482,
+            "genuine_mean_valid": 0.8831853099090482,
+            "margin_mean_valid": 0.07578142960956749,
+            "condition": "oclusao_inferior",
+            "threshold": 0.8581747485460748,
+            "joint_success": 0.7033195020746889,
+            "source_sha256": {
+              "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\confirmacao_congelada_val_oclusao_inferior_10_2026-10-21\\scores_finais.npz": "c133a26bef0567a120e8ca8f2c650c408816c2dfb64c8d9ac38e59834672a30d",
+              "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\confirmacao_congelada_val_oclusao_inferior_10_segmentador_8f126141f4dd_2026-10-21\\scores_finais.npz": "56d85df4f44b5809fbdca7377be0683d221973659a6d5b371912b753592bde06"
+            }
+          }
+        ],
+        "test_inference": false,
+        "frozen_candidate_replaced": false,
+        "minimum_area": null
+      }
+    },
+    "original_geometry_diagnostic": {
+      "protocol_registered": false,
+      "completed": true,
+      "artifact_directory": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\diagnostico_geometria_fixa_2026-10-21",
+      "note": "Development only; absent completion may mean running or interrupted; no independent confirmation",
+      "result": {
+        "status": "paired_original_geometry_diagnostic_completed",
+        "records": [
+          {
+            "orientation": "oclusao_superior",
+            "loss_percent": 10,
+            "dynamic": {
+              "rank1": 0.823045267489712,
+              "tar": 0.8497942386831275,
+              "fnmr": 0.15020576131687247,
+              "far": 0.016872427983539096,
+              "eer_descriptive": 0.06378600823045268,
+              "extraction_failures": 2,
+              "queries": 486,
+              "genuine_mean_valid": 0.9017927893158049,
+              "margin_mean_valid": 0.09667941384041835,
+              "threshold": 0.8581747485460748,
+              "joint_success": 0.8024691358024691
+            },
+            "fixed_original_geometry": {
+              "rank1": 0.897119341563786,
+              "tar": 0.8930041152263375,
+              "fnmr": 0.10699588477366251,
+              "far": 0.011248285322359396,
+              "eer_descriptive": 0.043209876543209874,
+              "extraction_failures": 2,
+              "queries": 486,
+              "genuine_mean_valid": 0.9187469494747553,
+              "margin_mean_valid": 0.13074650642051666,
+              "threshold": 0.8581747485460748,
+              "joint_success": 0.8806584362139918
+            },
+            "rank1_gain_pp": 7.4074074074074066,
+            "tar_gain_pp": 4.320987654320996,
+            "rank1_gain_pp_ci95": [
+              1.02880658436214,
+              15.637860082304528
+            ],
+            "tar_gain_pp_ci95": [
+              -1.8518518518518519,
+              11.318503462812382
+            ],
+            "additional_correct": 36,
+            "additional_genuine_accepts": 21,
+            "fixed_validity_matches_baseline": true,
+            "gallery_and_undefined_area_inputs_unchanged": true,
+            "all_queries_retained": 486,
+            "defined_area_queries": 480,
+            "source_scores_sha256": {
+              "confirmacao_congelada_test_oclusao_superior_10_2026-10-21": "bec4b8e28a42400097572a65666e75d11a5a96bc105fc901b9fabc01ac8e79a3",
+              "confirmacao_congelada_test_oclusao_superior_10_geometria_fixa_2026-10-21": "532220ddd52d53e68b8c58d6e14da96e92bf2f9713b0dfae0ee8873c7889b384"
+            }
+          },
+          {
+            "orientation": "oclusao_inferior",
+            "loss_percent": 10,
+            "dynamic": {
+              "rank1": 0.5823045267489712,
+              "tar": 0.602880658436214,
+              "fnmr": 0.39711934156378603,
+              "far": 0.02606310013717421,
+              "eer_descriptive": 0.1522633744855967,
+              "extraction_failures": 2,
+              "queries": 486,
+              "genuine_mean_valid": 0.82829437036305,
+              "margin_mean_valid": -0.0008543666341419537,
+              "threshold": 0.8581747485460748,
+              "joint_success": 0.551440329218107
+            },
+            "fixed_original_geometry": {
+              "rank1": 0.8477366255144033,
+              "tar": 0.8353909465020576,
+              "fnmr": 0.16460905349794241,
+              "far": 0.013854595336076818,
+              "eer_descriptive": 0.059670781893004114,
+              "extraction_failures": 2,
+              "queries": 486,
+              "genuine_mean_valid": 0.9015014714649656,
+              "margin_mean_valid": 0.10293341660953809,
+              "threshold": 0.8581747485460748,
+              "joint_success": 0.8148148148148148
+            },
+            "rank1_gain_pp": 26.543209876543216,
+            "tar_gain_pp": 23.25102880658436,
+            "rank1_gain_pp_ci95": [
+              17.083333333333332,
+              36.78968433202849
+            ],
+            "tar_gain_pp_ci95": [
+              14.609053497942387,
+              32.92689043209869
+            ],
+            "additional_correct": 129,
+            "additional_genuine_accepts": 113,
+            "fixed_validity_matches_baseline": true,
+            "gallery_and_undefined_area_inputs_unchanged": true,
+            "all_queries_retained": 486,
+            "defined_area_queries": 480,
+            "source_scores_sha256": {
+              "confirmacao_congelada_test_oclusao_inferior_10_2026-10-21": "aea2d0267caa118d199c082501a26e09f629e5a576fe7506028a192f9353c790",
+              "confirmacao_congelada_test_oclusao_inferior_10_geometria_fixa_2026-10-21": "d3ba2fa3a44d9f3060ee1ccdc488fc774b51a12631f34099cb82b694211175e8"
+            }
+          }
+        ],
+        "threshold_recalibrated": false,
+        "operational_minimum_changed": false,
+        "scope": "Posthoc test diagnostic only; fixed support,bbox,ellipses require original unoccluded counterpart, not deployable one-photo improvement. Pixel texture and CLAHE still altered. No selection of model/threshold on these scores.",
+        "uncertainty": "5000 person-cluster paired bootstrap, fixed gallery/threshold, pointwise; no multiple-comparison correction or population guarantee",
+        "next": "Develop segmentation/normalization stability and occlusion-aware descriptors only on train/validation; preserve operational benchmark and limits",
+        "script_sha256": "7e68b7c454058e9843fd54cf95a408e6167181b052110bb6c4b61a4f523d4218"
       }
     },
     "enrollment_adaptation_failed": {

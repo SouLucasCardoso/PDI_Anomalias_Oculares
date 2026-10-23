@@ -1,0 +1,21 @@
+{
+  "registered_utc": "2026-10-21T19:49:30.386091+00:00",
+  "scope": "Segmentation development ONLY train/validation; test was used in prior diagnostic but is not opened, inferred or used for checkpoint/parameter selection here",
+  "model": "MulticlassUNet8 initialized from frozen original; FP32,320x240,B32,AdamW lr1e-4 wd1e-4,6epochs maximum,patience3,seed51",
+  "augmentation": "50% unchanged,50% gray128 exact annotated iris pixels on resized320x240 input,random loss uniform1..40%,equal upper/lower; horizontal flip50%. Original class labels unchanged including gray occluded iris; no generated/restored RGB texture.",
+  "evaluation": "Full1652 segmentation validation images, clean and fixed upper/lower10% input-grid occlusion. No recognition/test scores used for selection.",
+  "selection": "Maximum minimum iris Dice across clean/upper10/lower10, tie mean3; clean Dice must stay >= original baseline clean Dice minus0.01. Include epoch0, save immutable best; no test-time choice.",
+  "limitations": "Input-grid synthetic augmentation differs from native-pixel evaluation. Target covers originally annotated visible iris including synthetically hidden pixels, NOT full anatomical iris. Generalization to disease or natural occlusions not established.",
+  "counts": {
+    "train": 7716,
+    "train_people": 183,
+    "val": 1652,
+    "val_people": 39
+  },
+  "checkpoint_sha256": "2bcfc269ffc9562ca8cf0956998faf1e22641587cd60f7059b3cec3dd0f4093d",
+  "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+  "script_sha256": "f2ab8f3f956cdcd5373740747469548268dab32b41b03962d9775a2703967d1f",
+  "dependencies_sha256": {
+    "treinar_segmentacao_ubipr.py": "a427b82c9879a2320a5d6544c89f96806ab74b12566cd3237650c62c54123431"
+  }
+}

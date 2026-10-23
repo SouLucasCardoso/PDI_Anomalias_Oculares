@@ -1,0 +1,52 @@
+{
+  "analyzed_utc": "2026-10-21T19:26:17.867880+00:00",
+  "counts": {
+    "queries": 486,
+    "people": 16,
+    "candidate_eyes_per_query": 16,
+    "impostor_comparisons": 7290,
+    "false_accepts": 64,
+    "rank1_correct": 444,
+    "genuine_accepted": 449,
+    "correct_and_accepted": 436,
+    "failed_queries": 2
+  },
+  "metrics": {
+    "rank1": 0.9135802469135802,
+    "tar": 0.9238683127572016,
+    "fnmr": 0.0761316872427984,
+    "far": 0.008779149519890261,
+    "eer_descriptive": 0.03909465020576132,
+    "extraction_failures": 2,
+    "queries": 486,
+    "genuine_mean_valid": 0.9265081131664159,
+    "margin_mean_valid": 0.14995738579716775
+  },
+  "threshold_unchanged": 0.8581747485460748,
+  "cluster_bootstrap_95_percent": {
+    "rank1": [
+      0.8541666666666666,
+      0.9567901234567902
+    ],
+    "tar": [
+      0.864573688271605,
+      0.9666666666666667
+    ],
+    "joint": [
+      0.8354166666666667,
+      0.94375
+    ],
+    "fmr": [
+      0.005212620027434842,
+      0.012757201646090533
+    ]
+  },
+  "uncertainty_scope": "5000 person-cluster bootstrap replicates, fixed gallery/threshold, pointwise descriptive intervals; excludes selection bias and unknown external-pretraining overlap",
+  "minimum_area": null,
+  "original_condition_passed": true,
+  "minimum_reason": "Occlusion curves not yet evaluated",
+  "fresh_blind_test": false,
+  "external_pretraining_overlap_unknown": true,
+  "scores_sha256": "d9cd459d2bd7705ecdd57a9dddcabc95300bbcea11364e2d672635289d51539d",
+  "script_sha256": "0f1e1832e72a90328c45085d46a66d05a66c609a0c3df037e93f5a59aea05c5f"
+}

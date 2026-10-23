@@ -1,0 +1,2918 @@
+[
+  {
+    "image": "C101_S2_I10_L.jpg",
+    "reference_pixels": 15642,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998721391126454
+  },
+  {
+    "image": "C101_S2_I10_R.jpg",
+    "reference_pixels": 15269,
+    "fraction_defined": true,
+    "affected_fraction": 0.10000654921736853
+  },
+  {
+    "image": "C101_S2_I11_L.jpg",
+    "reference_pixels": 15914,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997486489883121
+  },
+  {
+    "image": "C101_S2_I11_R.jpg",
+    "reference_pixels": 16576,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002413127413128
+  },
+  {
+    "image": "C101_S2_I12_L.jpg",
+    "reference_pixels": 12087,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002482005460411
+  },
+  {
+    "image": "C101_S2_I12_R.jpg",
+    "reference_pixels": 9695,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000515729757607
+  },
+  {
+    "image": "C101_S2_I13_L.jpg",
+    "reference_pixels": 21169,
+    "fraction_defined": true,
+    "affected_fraction": 0.10000472388870518
+  },
+  {
+    "image": "C101_S2_I13_R.jpg",
+    "reference_pixels": 20097,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001492760113449
+  },
+  {
+    "image": "C101_S2_I14_L.jpg",
+    "reference_pixels": 14085,
+    "fraction_defined": true,
+    "affected_fraction": 0.09996450124245651
+  },
+  {
+    "image": "C101_S2_I14_R.jpg",
+    "reference_pixels": 6786,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000589448865311
+  },
+  {
+    "image": "C101_S2_I15_L.jpg",
+    "reference_pixels": 0,
+    "fraction_defined": false,
+    "affected_fraction": 0.0
+  },
+  {
+    "image": "C101_S2_I15_R.jpg",
+    "reference_pixels": 14924,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997319753417315
+  },
+  {
+    "image": "C101_S2_I1_L.jpg",
+    "reference_pixels": 5059,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001976675232259
+  },
+  {
+    "image": "C101_S2_I1_R.jpg",
+    "reference_pixels": 4632,
+    "fraction_defined": true,
+    "affected_fraction": 0.09995682210708118
+  },
+  {
+    "image": "C101_S2_I2_L.jpg",
+    "reference_pixels": 4574,
+    "fraction_defined": true,
+    "affected_fraction": 0.09991254919108002
+  },
+  {
+    "image": "C101_S2_I2_R.jpg",
+    "reference_pixels": 3470,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C101_S2_I3_L.jpg",
+    "reference_pixels": 4234,
+    "fraction_defined": true,
+    "affected_fraction": 0.09990552668871044
+  },
+  {
+    "image": "C101_S2_I3_R.jpg",
+    "reference_pixels": 4147,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000723414516518
+  },
+  {
+    "image": "C101_S2_I4_L.jpg",
+    "reference_pixels": 6571,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998478161619236
+  },
+  {
+    "image": "C101_S2_I4_R.jpg",
+    "reference_pixels": 6041,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998344644926337
+  },
+  {
+    "image": "C101_S2_I5_L.jpg",
+    "reference_pixels": 6378,
+    "fraction_defined": true,
+    "affected_fraction": 0.10003135779241142
+  },
+  {
+    "image": "C101_S2_I5_R.jpg",
+    "reference_pixels": 5840,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C101_S2_I6_L.jpg",
+    "reference_pixels": 4259,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002347969006808
+  },
+  {
+    "image": "C101_S2_I6_R.jpg",
+    "reference_pixels": 5138,
+    "fraction_defined": true,
+    "affected_fraction": 0.10003892565200467
+  },
+  {
+    "image": "C101_S2_I7_L.jpg",
+    "reference_pixels": 4841,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997934311092749
+  },
+  {
+    "image": "C101_S2_I7_R.jpg",
+    "reference_pixels": 4602,
+    "fraction_defined": true,
+    "affected_fraction": 0.09995654063450674
+  },
+  {
+    "image": "C101_S2_I8_L.jpg",
+    "reference_pixels": 7368,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000271444082519
+  },
+  {
+    "image": "C101_S2_I8_R.jpg",
+    "reference_pixels": 8542,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997658627955983
+  },
+  {
+    "image": "C101_S2_I9_L.jpg",
+    "reference_pixels": 10413,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997118985883031
+  },
+  {
+    "image": "C101_S2_I9_R.jpg",
+    "reference_pixels": 9988,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000200240288346
+  },
+  {
+    "image": "C111_S2_I10_L.jpg",
+    "reference_pixels": 12963,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999768572089794
+  },
+  {
+    "image": "C111_S2_I10_R.jpg",
+    "reference_pixels": 13708,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001459002042602
+  },
+  {
+    "image": "C111_S2_I11_L.jpg",
+    "reference_pixels": 12106,
+    "fraction_defined": true,
+    "affected_fraction": 0.10003304146704113
+  },
+  {
+    "image": "C111_S2_I11_R.jpg",
+    "reference_pixels": 10334,
+    "fraction_defined": true,
+    "affected_fraction": 0.09996129281981808
+  },
+  {
+    "image": "C111_S2_I12_L.jpg",
+    "reference_pixels": 9681,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999896704885859
+  },
+  {
+    "image": "C111_S2_I12_R.jpg",
+    "reference_pixels": 11425,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999562363238512
+  },
+  {
+    "image": "C111_S2_I13_L.jpg",
+    "reference_pixels": 16749,
+    "fraction_defined": true,
+    "affected_fraction": 0.10000597050570183
+  },
+  {
+    "image": "C111_S2_I13_R.jpg",
+    "reference_pixels": 18934,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997887398331044
+  },
+  {
+    "image": "C111_S2_I14_L.jpg",
+    "reference_pixels": 19859,
+    "fraction_defined": true,
+    "affected_fraction": 0.10000503550027695
+  },
+  {
+    "image": "C111_S2_I14_R.jpg",
+    "reference_pixels": 16779,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000059598307408
+  },
+  {
+    "image": "C111_S2_I15_L.jpg",
+    "reference_pixels": 3159,
+    "fraction_defined": true,
+    "affected_fraction": 0.10003165558721114
+  },
+  {
+    "image": "C111_S2_I15_R.jpg",
+    "reference_pixels": 18289,
+    "fraction_defined": true,
+    "affected_fraction": 0.10000546776751053
+  },
+  {
+    "image": "C111_S2_I1_L.jpg",
+    "reference_pixels": 3890,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C111_S2_I1_R.jpg",
+    "reference_pixels": 4167,
+    "fraction_defined": true,
+    "affected_fraction": 0.10007199424046076
+  },
+  {
+    "image": "C111_S2_I2_L.jpg",
+    "reference_pixels": 4102,
+    "fraction_defined": true,
+    "affected_fraction": 0.09995124329595319
+  },
+  {
+    "image": "C111_S2_I2_R.jpg",
+    "reference_pixels": 3625,
+    "fraction_defined": true,
+    "affected_fraction": 0.09986206896551725
+  },
+  {
+    "image": "C111_S2_I3_L.jpg",
+    "reference_pixels": 4094,
+    "fraction_defined": true,
+    "affected_fraction": 0.09990229604298974
+  },
+  {
+    "image": "C111_S2_I3_R.jpg",
+    "reference_pixels": 5257,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000570667681187
+  },
+  {
+    "image": "C111_S2_I4_L.jpg",
+    "reference_pixels": 5653,
+    "fraction_defined": true,
+    "affected_fraction": 0.09994693083318591
+  },
+  {
+    "image": "C111_S2_I4_R.jpg",
+    "reference_pixels": 6098,
+    "fraction_defined": true,
+    "affected_fraction": 0.10003279763857002
+  },
+  {
+    "image": "C111_S2_I5_L.jpg",
+    "reference_pixels": 4786,
+    "fraction_defined": true,
+    "affected_fraction": 0.10008357709987463
+  },
+  {
+    "image": "C111_S2_I5_R.jpg",
+    "reference_pixels": 4028,
+    "fraction_defined": true,
+    "affected_fraction": 0.10004965243296922
+  },
+  {
+    "image": "C111_S2_I6_L.jpg",
+    "reference_pixels": 5839,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000171262202432
+  },
+  {
+    "image": "C111_S2_I6_R.jpg",
+    "reference_pixels": 6289,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001590077913818
+  },
+  {
+    "image": "C111_S2_I7_L.jpg",
+    "reference_pixels": 7925,
+    "fraction_defined": true,
+    "affected_fraction": 0.09993690851735015
+  },
+  {
+    "image": "C111_S2_I7_R.jpg",
+    "reference_pixels": 7999,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001250156269534
+  },
+  {
+    "image": "C111_S2_I8_L.jpg",
+    "reference_pixels": 7833,
+    "fraction_defined": true,
+    "affected_fraction": 0.09996170049789353
+  },
+  {
+    "image": "C111_S2_I8_R.jpg",
+    "reference_pixels": 6687,
+    "fraction_defined": true,
+    "affected_fraction": 0.10004486316733961
+  },
+  {
+    "image": "C111_S2_I9_L.jpg",
+    "reference_pixels": 7838,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002551671344731
+  },
+  {
+    "image": "C111_S2_I9_R.jpg",
+    "reference_pixels": 8802,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997727789138833
+  },
+  {
+    "image": "C113_S2_I10_L.jpg",
+    "reference_pixels": 10692,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998129442573887
+  },
+  {
+    "image": "C113_S2_I10_R.jpg",
+    "reference_pixels": 11272,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998225691980128
+  },
+  {
+    "image": "C113_S2_I11_L.jpg",
+    "reference_pixels": 9410,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C113_S2_I11_R.jpg",
+    "reference_pixels": 8795,
+    "fraction_defined": true,
+    "affected_fraction": 0.10005685048322911
+  },
+  {
+    "image": "C113_S2_I12_L.jpg",
+    "reference_pixels": 7650,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C113_S2_I12_R.jpg",
+    "reference_pixels": 10718,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001866019779809
+  },
+  {
+    "image": "C113_S2_I13_L.jpg",
+    "reference_pixels": 17253,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998261171970092
+  },
+  {
+    "image": "C113_S2_I13_R.jpg",
+    "reference_pixels": 18724,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999786370433668
+  },
+  {
+    "image": "C113_S2_I14_L.jpg",
+    "reference_pixels": 16194,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997529949363962
+  },
+  {
+    "image": "C113_S2_I14_R.jpg",
+    "reference_pixels": 12549,
+    "fraction_defined": true,
+    "affected_fraction": 0.10000796876245119
+  },
+  {
+    "image": "C113_S2_I15_L.jpg",
+    "reference_pixels": 12858,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001555451858765
+  },
+  {
+    "image": "C113_S2_I15_R.jpg",
+    "reference_pixels": 16431,
+    "fraction_defined": true,
+    "affected_fraction": 0.09999391394315622
+  },
+  {
+    "image": "C113_S2_I1_L.jpg",
+    "reference_pixels": 3785,
+    "fraction_defined": true,
+    "affected_fraction": 0.09986789960369881
+  },
+  {
+    "image": "C113_S2_I1_R.jpg",
+    "reference_pixels": 3969,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000251952632905
+  },
+  {
+    "image": "C113_S2_I2_L.jpg",
+    "reference_pixels": 3952,
+    "fraction_defined": true,
+    "affected_fraction": 0.09994939271255061
+  },
+  {
+    "image": "C113_S2_I2_R.jpg",
+    "reference_pixels": 3335,
+    "fraction_defined": true,
+    "affected_fraction": 0.10014992503748125
+  },
+  {
+    "image": "C113_S2_I3_L.jpg",
+    "reference_pixels": 3159,
+    "fraction_defined": true,
+    "affected_fraction": 0.10003165558721114
+  },
+  {
+    "image": "C113_S2_I3_R.jpg",
+    "reference_pixels": 3943,
+    "fraction_defined": true,
+    "affected_fraction": 0.09992391580015217
+  },
+  {
+    "image": "C113_S2_I4_L.jpg",
+    "reference_pixels": 4699,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002128112364334
+  },
+  {
+    "image": "C113_S2_I4_R.jpg",
+    "reference_pixels": 4774,
+    "fraction_defined": true,
+    "affected_fraction": 0.09991621281943863
+  },
+  {
+    "image": "C113_S2_I5_L.jpg",
+    "reference_pixels": 4722,
+    "fraction_defined": true,
+    "affected_fraction": 0.09995764506565015
+  },
+  {
+    "image": "C113_S2_I5_R.jpg",
+    "reference_pixels": 4000,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C113_S2_I6_L.jpg",
+    "reference_pixels": 3631,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997245937758194
+  },
+  {
+    "image": "C113_S2_I6_R.jpg",
+    "reference_pixels": 4995,
+    "fraction_defined": true,
+    "affected_fraction": 0.1001001001001001
+  },
+  {
+    "image": "C113_S2_I7_L.jpg",
+    "reference_pixels": 6302,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999682640431609
+  },
+  {
+    "image": "C113_S2_I7_R.jpg",
+    "reference_pixels": 6713,
+    "fraction_defined": true,
+    "affected_fraction": 0.09995531059138985
+  },
+  {
+    "image": "C113_S2_I8_L.jpg",
+    "reference_pixels": 6821,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998533939305088
+  },
+  {
+    "image": "C113_S2_I8_R.jpg",
+    "reference_pixels": 6254,
+    "fraction_defined": true,
+    "affected_fraction": 0.09993604093380237
+  },
+  {
+    "image": "C113_S2_I9_L.jpg",
+    "reference_pixels": 5578,
+    "fraction_defined": true,
+    "affected_fraction": 0.10003585514521333
+  },
+  {
+    "image": "C113_S2_I9_R.jpg",
+    "reference_pixels": 6765,
+    "fraction_defined": true,
+    "affected_fraction": 0.09992609016999261
+  },
+  {
+    "image": "C17_S2_I10_L.jpg",
+    "reference_pixels": 18407,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001629814744391
+  },
+  {
+    "image": "C17_S2_I10_R.jpg",
+    "reference_pixels": 18558,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001077702338614
+  },
+  {
+    "image": "C17_S2_I11_L.jpg",
+    "reference_pixels": 16520,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C17_S2_I11_R.jpg",
+    "reference_pixels": 14689,
+    "fraction_defined": true,
+    "affected_fraction": 0.10000680781537205
+  },
+  {
+    "image": "C17_S2_I12_L.jpg",
+    "reference_pixels": 12561,
+    "fraction_defined": true,
+    "affected_fraction": 0.09999203885041
+  },
+  {
+    "image": "C17_S2_I12_R.jpg",
+    "reference_pixels": 16316,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000245158126992
+  },
+  {
+    "image": "C17_S2_I13_L.jpg",
+    "reference_pixels": 27857,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001076928599634
+  },
+  {
+    "image": "C17_S2_I13_R.jpg",
+    "reference_pixels": 28123,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998933257476088
+  },
+  {
+    "image": "C17_S2_I14_L.jpg",
+    "reference_pixels": 239,
+    "fraction_defined": true,
+    "affected_fraction": 0.100418410041841
+  },
+  {
+    "image": "C17_S2_I14_R.jpg",
+    "reference_pixels": 22400,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C17_S2_I15_L.jpg",
+    "reference_pixels": 14680,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C17_S2_I15_R.jpg",
+    "reference_pixels": 24941,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999959905376689
+  },
+  {
+    "image": "C17_S2_I1_L.jpg",
+    "reference_pixels": 6162,
+    "fraction_defined": true,
+    "affected_fraction": 0.09996754300551769
+  },
+  {
+    "image": "C17_S2_I1_R.jpg",
+    "reference_pixels": 5880,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C17_S2_I2_L.jpg",
+    "reference_pixels": 5895,
+    "fraction_defined": true,
+    "affected_fraction": 0.10008481764206956
+  },
+  {
+    "image": "C17_S2_I2_R.jpg",
+    "reference_pixels": 5376,
+    "fraction_defined": true,
+    "affected_fraction": 0.10007440476190477
+  },
+  {
+    "image": "C17_S2_I3_L.jpg",
+    "reference_pixels": 3879,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002577984016499
+  },
+  {
+    "image": "C17_S2_I3_R.jpg",
+    "reference_pixels": 5660,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C17_S2_I4_L.jpg",
+    "reference_pixels": 8254,
+    "fraction_defined": true,
+    "affected_fraction": 0.09995153864792827
+  },
+  {
+    "image": "C17_S2_I4_R.jpg",
+    "reference_pixels": 8286,
+    "fraction_defined": true,
+    "affected_fraction": 0.10004827419744147
+  },
+  {
+    "image": "C17_S2_I5_L.jpg",
+    "reference_pixels": 8057,
+    "fraction_defined": true,
+    "affected_fraction": 0.10003723470274295
+  },
+  {
+    "image": "C17_S2_I5_R.jpg",
+    "reference_pixels": 7387,
+    "fraction_defined": true,
+    "affected_fraction": 0.10004061188574523
+  },
+  {
+    "image": "C17_S2_I6_L.jpg",
+    "reference_pixels": 4598,
+    "fraction_defined": true,
+    "affected_fraction": 0.10004349717268378
+  },
+  {
+    "image": "C17_S2_I6_R.jpg",
+    "reference_pixels": 6466,
+    "fraction_defined": true,
+    "affected_fraction": 0.10006186204763377
+  },
+  {
+    "image": "C17_S2_I7_L.jpg",
+    "reference_pixels": 10893,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997245937758194
+  },
+  {
+    "image": "C17_S2_I7_R.jpg",
+    "reference_pixels": 11404,
+    "fraction_defined": true,
+    "affected_fraction": 0.09996492458786391
+  },
+  {
+    "image": "C17_S2_I8_L.jpg",
+    "reference_pixels": 11519,
+    "fraction_defined": true,
+    "affected_fraction": 0.10000868130914142
+  },
+  {
+    "image": "C17_S2_I8_R.jpg",
+    "reference_pixels": 10224,
+    "fraction_defined": true,
+    "affected_fraction": 0.09996087636932707
+  },
+  {
+    "image": "C17_S2_I9_L.jpg",
+    "reference_pixels": 7631,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998689555759402
+  },
+  {
+    "image": "C17_S2_I9_R.jpg",
+    "reference_pixels": 10454,
+    "fraction_defined": true,
+    "affected_fraction": 0.09996173713411134
+  },
+  {
+    "image": "C251_S2_I10_L.jpg",
+    "reference_pixels": 10215,
+    "fraction_defined": true,
+    "affected_fraction": 0.10004894762604014
+  },
+  {
+    "image": "C251_S2_I10_R.jpg",
+    "reference_pixels": 10524,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999619916381604
+  },
+  {
+    "image": "C251_S2_I11_L.jpg",
+    "reference_pixels": 11487,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002611647949856
+  },
+  {
+    "image": "C251_S2_I11_R.jpg",
+    "reference_pixels": 9246,
+    "fraction_defined": true,
+    "affected_fraction": 0.100043261951114
+  },
+  {
+    "image": "C251_S2_I12_L.jpg",
+    "reference_pixels": 9050,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C251_S2_I12_R.jpg",
+    "reference_pixels": 11435,
+    "fraction_defined": true,
+    "affected_fraction": 0.10004372540446
+  },
+  {
+    "image": "C251_S2_I13_L.jpg",
+    "reference_pixels": 17977,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001668799020971
+  },
+  {
+    "image": "C251_S2_I13_R.jpg",
+    "reference_pixels": 17898,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001117443289753
+  },
+  {
+    "image": "C251_S2_I14_L.jpg",
+    "reference_pixels": 18319,
+    "fraction_defined": true,
+    "affected_fraction": 0.100005458813254
+  },
+  {
+    "image": "C251_S2_I14_R.jpg",
+    "reference_pixels": 13316,
+    "fraction_defined": true,
+    "affected_fraction": 0.10003003905076599
+  },
+  {
+    "image": "C251_S2_I15_L.jpg",
+    "reference_pixels": 17327,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001731401858371
+  },
+  {
+    "image": "C251_S2_I15_R.jpg",
+    "reference_pixels": 20063,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998504710162986
+  },
+  {
+    "image": "C251_S2_I16_L.jpg",
+    "reference_pixels": 38784,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998968646864687
+  },
+  {
+    "image": "C251_S2_I16_R.jpg",
+    "reference_pixels": 37887,
+    "fraction_defined": true,
+    "affected_fraction": 0.10000791828331618
+  },
+  {
+    "image": "C251_S2_I17_L.jpg",
+    "reference_pixels": 36399,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000027473282233
+  },
+  {
+    "image": "C251_S2_I17_R.jpg",
+    "reference_pixels": 679,
+    "fraction_defined": true,
+    "affected_fraction": 0.10014727540500737
+  },
+  {
+    "image": "C251_S2_I18_L.jpg",
+    "reference_pixels": 30094,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998670831394962
+  },
+  {
+    "image": "C251_S2_I18_R.jpg",
+    "reference_pixels": 35343,
+    "fraction_defined": true,
+    "affected_fraction": 0.09999151175621764
+  },
+  {
+    "image": "C251_S2_I1_L.jpg",
+    "reference_pixels": 4097,
+    "fraction_defined": true,
+    "affected_fraction": 0.10007322431047108
+  },
+  {
+    "image": "C251_S2_I1_R.jpg",
+    "reference_pixels": 4149,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002410219329959
+  },
+  {
+    "image": "C251_S2_I2_L.jpg",
+    "reference_pixels": 4121,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997573404513467
+  },
+  {
+    "image": "C251_S2_I2_R.jpg",
+    "reference_pixels": 3936,
+    "fraction_defined": true,
+    "affected_fraction": 0.10010162601626016
+  },
+  {
+    "image": "C251_S2_I3_L.jpg",
+    "reference_pixels": 4010,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C251_S2_I3_R.jpg",
+    "reference_pixels": 4167,
+    "fraction_defined": true,
+    "affected_fraction": 0.10007199424046076
+  },
+  {
+    "image": "C251_S2_I4_L.jpg",
+    "reference_pixels": 5404,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999259807549963
+  },
+  {
+    "image": "C251_S2_I4_R.jpg",
+    "reference_pixels": 5014,
+    "fraction_defined": true,
+    "affected_fraction": 0.09992022337455125
+  },
+  {
+    "image": "C251_S2_I5_L.jpg",
+    "reference_pixels": 5889,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000169808116828
+  },
+  {
+    "image": "C251_S2_I5_R.jpg",
+    "reference_pixels": 5298,
+    "fraction_defined": true,
+    "affected_fraction": 0.10003775009437524
+  },
+  {
+    "image": "C251_S2_I6_L.jpg",
+    "reference_pixels": 5326,
+    "fraction_defined": true,
+    "affected_fraction": 0.10007510326699211
+  },
+  {
+    "image": "C251_S2_I6_R.jpg",
+    "reference_pixels": 5800,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C251_S2_I7_L.jpg",
+    "reference_pixels": 7745,
+    "fraction_defined": true,
+    "affected_fraction": 0.09993544222078761
+  },
+  {
+    "image": "C251_S2_I7_R.jpg",
+    "reference_pixels": 7552,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997351694915255
+  },
+  {
+    "image": "C251_S2_I8_L.jpg",
+    "reference_pixels": 8529,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001172470395123
+  },
+  {
+    "image": "C251_S2_I8_R.jpg",
+    "reference_pixels": 7157,
+    "fraction_defined": true,
+    "affected_fraction": 0.10004191700433142
+  },
+  {
+    "image": "C251_S2_I9_L.jpg",
+    "reference_pixels": 6919,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001445295562943
+  },
+  {
+    "image": "C251_S2_I9_R.jpg",
+    "reference_pixels": 8059,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001240848740539
+  },
+  {
+    "image": "C259_S2_I10_L.jpg",
+    "reference_pixels": 13577,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002209619208956
+  },
+  {
+    "image": "C259_S2_I10_R.jpg",
+    "reference_pixels": 14580,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C259_S2_I11_L.jpg",
+    "reference_pixels": 13608,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001469723691946
+  },
+  {
+    "image": "C259_S2_I11_R.jpg",
+    "reference_pixels": 11634,
+    "fraction_defined": true,
+    "affected_fraction": 0.09996561801615954
+  },
+  {
+    "image": "C259_S2_I12_L.jpg",
+    "reference_pixels": 1538,
+    "fraction_defined": true,
+    "affected_fraction": 0.10013003901170352
+  },
+  {
+    "image": "C259_S2_I12_R.jpg",
+    "reference_pixels": 13230,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C259_S2_I13_L.jpg",
+    "reference_pixels": 23695,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002110149820637
+  },
+  {
+    "image": "C259_S2_I13_R.jpg",
+    "reference_pixels": 23735,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002106593638087
+  },
+  {
+    "image": "C259_S2_I14_L.jpg",
+    "reference_pixels": 22594,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998229618482783
+  },
+  {
+    "image": "C259_S2_I14_R.jpg",
+    "reference_pixels": 18496,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002162629757785
+  },
+  {
+    "image": "C259_S2_I15_L.jpg",
+    "reference_pixels": 0,
+    "fraction_defined": false,
+    "affected_fraction": 0.0
+  },
+  {
+    "image": "C259_S2_I15_R.jpg",
+    "reference_pixels": 20733,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998553031399218
+  },
+  {
+    "image": "C259_S2_I1_L.jpg",
+    "reference_pixels": 4915,
+    "fraction_defined": true,
+    "affected_fraction": 0.10010172939979654
+  },
+  {
+    "image": "C259_S2_I1_R.jpg",
+    "reference_pixels": 5548,
+    "fraction_defined": true,
+    "affected_fraction": 0.10003604902667627
+  },
+  {
+    "image": "C259_S2_I2_L.jpg",
+    "reference_pixels": 4682,
+    "fraction_defined": true,
+    "affected_fraction": 0.09995728321230243
+  },
+  {
+    "image": "C259_S2_I2_R.jpg",
+    "reference_pixels": 4292,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999534016775396
+  },
+  {
+    "image": "C259_S2_I3_L.jpg",
+    "reference_pixels": 59,
+    "fraction_defined": true,
+    "affected_fraction": 0.1016949152542373
+  },
+  {
+    "image": "C259_S2_I3_R.jpg",
+    "reference_pixels": 4733,
+    "fraction_defined": true,
+    "affected_fraction": 0.09993661525459539
+  },
+  {
+    "image": "C259_S2_I4_L.jpg",
+    "reference_pixels": 6144,
+    "fraction_defined": true,
+    "affected_fraction": 0.09993489583333333
+  },
+  {
+    "image": "C259_S2_I4_R.jpg",
+    "reference_pixels": 6458,
+    "fraction_defined": true,
+    "affected_fraction": 0.10003096934035305
+  },
+  {
+    "image": "C259_S2_I5_L.jpg",
+    "reference_pixels": 6096,
+    "fraction_defined": true,
+    "affected_fraction": 0.10006561679790026
+  },
+  {
+    "image": "C259_S2_I5_R.jpg",
+    "reference_pixels": 5198,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000384763370527
+  },
+  {
+    "image": "C259_S2_I6_L.jpg",
+    "reference_pixels": 3558,
+    "fraction_defined": true,
+    "affected_fraction": 0.10005621135469364
+  },
+  {
+    "image": "C259_S2_I6_R.jpg",
+    "reference_pixels": 5770,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C259_S2_I7_L.jpg",
+    "reference_pixels": 8478,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002359046945034
+  },
+  {
+    "image": "C259_S2_I7_R.jpg",
+    "reference_pixels": 8236,
+    "fraction_defined": true,
+    "affected_fraction": 0.10004856726566294
+  },
+  {
+    "image": "C259_S2_I8_L.jpg",
+    "reference_pixels": 9203,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999674019341519
+  },
+  {
+    "image": "C259_S2_I8_R.jpg",
+    "reference_pixels": 7739,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001292156609382
+  },
+  {
+    "image": "C259_S2_I9_L.jpg",
+    "reference_pixels": 6755,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000740192450037
+  },
+  {
+    "image": "C259_S2_I9_R.jpg",
+    "reference_pixels": 8423,
+    "fraction_defined": true,
+    "affected_fraction": 0.09996438323637659
+  },
+  {
+    "image": "C25_S2_I10_L.jpg",
+    "reference_pixels": 12662,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998420470699731
+  },
+  {
+    "image": "C25_S2_I10_R.jpg",
+    "reference_pixels": 13104,
+    "fraction_defined": true,
+    "affected_fraction": 0.09996947496947498
+  },
+  {
+    "image": "C25_S2_I11_L.jpg",
+    "reference_pixels": 13309,
+    "fraction_defined": true,
+    "affected_fraction": 0.10000751371252536
+  },
+  {
+    "image": "C25_S2_I11_R.jpg",
+    "reference_pixels": 10725,
+    "fraction_defined": true,
+    "affected_fraction": 0.09995337995337995
+  },
+  {
+    "image": "C25_S2_I12_L.jpg",
+    "reference_pixels": 10876,
+    "fraction_defined": true,
+    "affected_fraction": 0.10003677822728944
+  },
+  {
+    "image": "C25_S2_I12_R.jpg",
+    "reference_pixels": 14386,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002780481023217
+  },
+  {
+    "image": "C25_S2_I13_L.jpg",
+    "reference_pixels": 19469,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000051363706405
+  },
+  {
+    "image": "C25_S2_I13_R.jpg",
+    "reference_pixels": 19564,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997955428337764
+  },
+  {
+    "image": "C25_S2_I14_L.jpg",
+    "reference_pixels": 22173,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998647003111893
+  },
+  {
+    "image": "C25_S2_I14_R.jpg",
+    "reference_pixels": 17798,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000112372176649
+  },
+  {
+    "image": "C25_S2_I15_L.jpg",
+    "reference_pixels": 17697,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001695202576708
+  },
+  {
+    "image": "C25_S2_I15_R.jpg",
+    "reference_pixels": 23343,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998714818146767
+  },
+  {
+    "image": "C25_S2_I1_L.jpg",
+    "reference_pixels": 0,
+    "fraction_defined": false,
+    "affected_fraction": 0.0
+  },
+  {
+    "image": "C25_S2_I1_R.jpg",
+    "reference_pixels": 0,
+    "fraction_defined": false,
+    "affected_fraction": 0.0
+  },
+  {
+    "image": "C25_S2_I2_L.jpg",
+    "reference_pixels": 5038,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000396982929734
+  },
+  {
+    "image": "C25_S2_I2_R.jpg",
+    "reference_pixels": 4385,
+    "fraction_defined": true,
+    "affected_fraction": 0.09988597491448119
+  },
+  {
+    "image": "C25_S2_I3_L.jpg",
+    "reference_pixels": 3460,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C25_S2_I3_R.jpg",
+    "reference_pixels": 4674,
+    "fraction_defined": true,
+    "affected_fraction": 0.09991442019683355
+  },
+  {
+    "image": "C25_S2_I4_L.jpg",
+    "reference_pixels": 6106,
+    "fraction_defined": true,
+    "affected_fraction": 0.10006550933508025
+  },
+  {
+    "image": "C25_S2_I4_R.jpg",
+    "reference_pixels": 5938,
+    "fraction_defined": true,
+    "affected_fraction": 0.10003368137420007
+  },
+  {
+    "image": "C25_S2_I5_L.jpg",
+    "reference_pixels": 5821,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998282082116475
+  },
+  {
+    "image": "C25_S2_I5_R.jpg",
+    "reference_pixels": 5164,
+    "fraction_defined": true,
+    "affected_fraction": 0.09992254066615028
+  },
+  {
+    "image": "C25_S2_I6_L.jpg",
+    "reference_pixels": 5075,
+    "fraction_defined": true,
+    "affected_fraction": 0.10009852216748769
+  },
+  {
+    "image": "C25_S2_I6_R.jpg",
+    "reference_pixels": 6380,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C25_S2_I7_L.jpg",
+    "reference_pixels": 8454,
+    "fraction_defined": true,
+    "affected_fraction": 0.09995268511947007
+  },
+  {
+    "image": "C25_S2_I7_R.jpg",
+    "reference_pixels": 8128,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000246062992126
+  },
+  {
+    "image": "C25_S2_I8_L.jpg",
+    "reference_pixels": 9058,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002207992934423
+  },
+  {
+    "image": "C25_S2_I8_R.jpg",
+    "reference_pixels": 7904,
+    "fraction_defined": true,
+    "affected_fraction": 0.09994939271255061
+  },
+  {
+    "image": "C25_S2_I9_L.jpg",
+    "reference_pixels": 7792,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997433264887064
+  },
+  {
+    "image": "C25_S2_I9_R.jpg",
+    "reference_pixels": 9154,
+    "fraction_defined": true,
+    "affected_fraction": 0.09995630325540747
+  },
+  {
+    "image": "C309_S2_I10_L.jpg",
+    "reference_pixels": 11573,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997407759440076
+  },
+  {
+    "image": "C309_S2_I10_R.jpg",
+    "reference_pixels": 10484,
+    "fraction_defined": true,
+    "affected_fraction": 0.09996184662342618
+  },
+  {
+    "image": "C309_S2_I11_L.jpg",
+    "reference_pixels": 11225,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999554565701559
+  },
+  {
+    "image": "C309_S2_I11_R.jpg",
+    "reference_pixels": 9047,
+    "fraction_defined": true,
+    "affected_fraction": 0.10003316016359014
+  },
+  {
+    "image": "C309_S2_I12_L.jpg",
+    "reference_pixels": 9682,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997934311092749
+  },
+  {
+    "image": "C309_S2_I12_R.jpg",
+    "reference_pixels": 10412,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998079139454476
+  },
+  {
+    "image": "C309_S2_I13_L.jpg",
+    "reference_pixels": 19816,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002018570851837
+  },
+  {
+    "image": "C309_S2_I13_R.jpg",
+    "reference_pixels": 19442,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998971299249049
+  },
+  {
+    "image": "C309_S2_I14_L.jpg",
+    "reference_pixels": 19638,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001018433649048
+  },
+  {
+    "image": "C309_S2_I14_R.jpg",
+    "reference_pixels": 3092,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999353169469599
+  },
+  {
+    "image": "C309_S2_I15_L.jpg",
+    "reference_pixels": 18221,
+    "fraction_defined": true,
+    "affected_fraction": 0.09999451182701279
+  },
+  {
+    "image": "C309_S2_I15_R.jpg",
+    "reference_pixels": 20683,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998549533433254
+  },
+  {
+    "image": "C309_S2_I1_L.jpg",
+    "reference_pixels": 3696,
+    "fraction_defined": true,
+    "affected_fraction": 0.1001082251082251
+  },
+  {
+    "image": "C309_S2_I1_R.jpg",
+    "reference_pixels": 3661,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997268505872713
+  },
+  {
+    "image": "C309_S2_I2_L.jpg",
+    "reference_pixels": 4118,
+    "fraction_defined": true,
+    "affected_fraction": 0.10004856726566294
+  },
+  {
+    "image": "C309_S2_I2_R.jpg",
+    "reference_pixels": 3413,
+    "fraction_defined": true,
+    "affected_fraction": 0.09991210079109288
+  },
+  {
+    "image": "C309_S2_I3_L.jpg",
+    "reference_pixels": 3093,
+    "fraction_defined": true,
+    "affected_fraction": 0.09990300678952474
+  },
+  {
+    "image": "C309_S2_I3_R.jpg",
+    "reference_pixels": 3351,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997015816174276
+  },
+  {
+    "image": "C309_S2_I4_L.jpg",
+    "reference_pixels": 4780,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C309_S2_I4_R.jpg",
+    "reference_pixels": 4641,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999784529196294
+  },
+  {
+    "image": "C309_S2_I5_L.jpg",
+    "reference_pixels": 4649,
+    "fraction_defined": true,
+    "affected_fraction": 0.100021510002151
+  },
+  {
+    "image": "C309_S2_I5_R.jpg",
+    "reference_pixels": 4258,
+    "fraction_defined": true,
+    "affected_fraction": 0.10004697040864255
+  },
+  {
+    "image": "C309_S2_I6_L.jpg",
+    "reference_pixels": 5342,
+    "fraction_defined": true,
+    "affected_fraction": 0.09996256083863722
+  },
+  {
+    "image": "C309_S2_I6_R.jpg",
+    "reference_pixels": 4965,
+    "fraction_defined": true,
+    "affected_fraction": 0.09989929506545821
+  },
+  {
+    "image": "C309_S2_I7_L.jpg",
+    "reference_pixels": 7425,
+    "fraction_defined": true,
+    "affected_fraction": 0.09993265993265993
+  },
+  {
+    "image": "C309_S2_I7_R.jpg",
+    "reference_pixels": 7395,
+    "fraction_defined": true,
+    "affected_fraction": 0.10006761325219743
+  },
+  {
+    "image": "C309_S2_I8_L.jpg",
+    "reference_pixels": 7086,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000564493367203
+  },
+  {
+    "image": "C309_S2_I8_R.jpg",
+    "reference_pixels": 5865,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999147485080989
+  },
+  {
+    "image": "C309_S2_I9_L.jpg",
+    "reference_pixels": 6504,
+    "fraction_defined": true,
+    "affected_fraction": 0.09993849938499386
+  },
+  {
+    "image": "C309_S2_I9_R.jpg",
+    "reference_pixels": 7328,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002729257641921
+  },
+  {
+    "image": "C333_S2_I10_L.jpg",
+    "reference_pixels": 13614,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997061848097546
+  },
+  {
+    "image": "C333_S2_I10_R.jpg",
+    "reference_pixels": 13874,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997116909326799
+  },
+  {
+    "image": "C333_S2_I11_L.jpg",
+    "reference_pixels": 12049,
+    "fraction_defined": true,
+    "affected_fraction": 0.10000829944393726
+  },
+  {
+    "image": "C333_S2_I11_R.jpg",
+    "reference_pixels": 10820,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C333_S2_I12_L.jpg",
+    "reference_pixels": 12554,
+    "fraction_defined": true,
+    "affected_fraction": 0.09996813764537199
+  },
+  {
+    "image": "C333_S2_I12_R.jpg",
+    "reference_pixels": 15730,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C333_S2_I13_L.jpg",
+    "reference_pixels": 21018,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000095156532496
+  },
+  {
+    "image": "C333_S2_I13_R.jpg",
+    "reference_pixels": 21158,
+    "fraction_defined": true,
+    "affected_fraction": 0.10000945268929011
+  },
+  {
+    "image": "C333_S2_I14_L.jpg",
+    "reference_pixels": 20478,
+    "fraction_defined": true,
+    "affected_fraction": 0.10000976657876746
+  },
+  {
+    "image": "C333_S2_I14_R.jpg",
+    "reference_pixels": 18151,
+    "fraction_defined": true,
+    "affected_fraction": 0.09999449066167153
+  },
+  {
+    "image": "C333_S2_I15_L.jpg",
+    "reference_pixels": 14144,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997171945701358
+  },
+  {
+    "image": "C333_S2_I15_R.jpg",
+    "reference_pixels": 13606,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002939879464942
+  },
+  {
+    "image": "C333_S2_I1_L.jpg",
+    "reference_pixels": 4715,
+    "fraction_defined": true,
+    "affected_fraction": 0.10010604453870625
+  },
+  {
+    "image": "C333_S2_I1_R.jpg",
+    "reference_pixels": 4466,
+    "fraction_defined": true,
+    "affected_fraction": 0.10008956560680698
+  },
+  {
+    "image": "C333_S2_I2_L.jpg",
+    "reference_pixels": 5380,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C333_S2_I2_R.jpg",
+    "reference_pixels": 4828,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000414250207125
+  },
+  {
+    "image": "C333_S2_I3_L.jpg",
+    "reference_pixels": 5110,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C333_S2_I3_R.jpg",
+    "reference_pixels": 5469,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001828487840556
+  },
+  {
+    "image": "C333_S2_I4_L.jpg",
+    "reference_pixels": 6409,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001560305819941
+  },
+  {
+    "image": "C333_S2_I4_R.jpg",
+    "reference_pixels": 6600,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C333_S2_I5_L.jpg",
+    "reference_pixels": 6854,
+    "fraction_defined": true,
+    "affected_fraction": 0.09994163991829588
+  },
+  {
+    "image": "C333_S2_I5_R.jpg",
+    "reference_pixels": 6283,
+    "fraction_defined": true,
+    "affected_fraction": 0.09995225210886519
+  },
+  {
+    "image": "C333_S2_I6_L.jpg",
+    "reference_pixels": 6008,
+    "fraction_defined": true,
+    "affected_fraction": 0.10003328894806925
+  },
+  {
+    "image": "C333_S2_I6_R.jpg",
+    "reference_pixels": 7023,
+    "fraction_defined": true,
+    "affected_fraction": 0.09995728321230243
+  },
+  {
+    "image": "C333_S2_I7_L.jpg",
+    "reference_pixels": 9108,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000219587176109
+  },
+  {
+    "image": "C333_S2_I7_R.jpg",
+    "reference_pixels": 9197,
+    "fraction_defined": true,
+    "affected_fraction": 0.10003261933239099
+  },
+  {
+    "image": "C333_S2_I8_L.jpg",
+    "reference_pixels": 9303,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999677523379555
+  },
+  {
+    "image": "C333_S2_I8_R.jpg",
+    "reference_pixels": 8256,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000484496124031
+  },
+  {
+    "image": "C333_S2_I9_L.jpg",
+    "reference_pixels": 7937,
+    "fraction_defined": true,
+    "affected_fraction": 0.10003779765654529
+  },
+  {
+    "image": "C333_S2_I9_R.jpg",
+    "reference_pixels": 9286,
+    "fraction_defined": true,
+    "affected_fraction": 0.10004307559767392
+  },
+  {
+    "image": "C347_S2_I10_L.jpg",
+    "reference_pixels": 10081,
+    "fraction_defined": true,
+    "affected_fraction": 0.09999008034917171
+  },
+  {
+    "image": "C347_S2_I10_R.jpg",
+    "reference_pixels": 10140,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C347_S2_I11_L.jpg",
+    "reference_pixels": 10941,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999908600676355
+  },
+  {
+    "image": "C347_S2_I11_R.jpg",
+    "reference_pixels": 9331,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998928303504448
+  },
+  {
+    "image": "C347_S2_I12_L.jpg",
+    "reference_pixels": 7189,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001391014049242
+  },
+  {
+    "image": "C347_S2_I12_R.jpg",
+    "reference_pixels": 9974,
+    "fraction_defined": true,
+    "affected_fraction": 0.09995989572889513
+  },
+  {
+    "image": "C347_S2_I13_L.jpg",
+    "reference_pixels": 20563,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998541068910179
+  },
+  {
+    "image": "C347_S2_I13_R.jpg",
+    "reference_pixels": 20704,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999806800618238
+  },
+  {
+    "image": "C347_S2_I14_L.jpg",
+    "reference_pixels": 18499,
+    "fraction_defined": true,
+    "affected_fraction": 0.10000540569760527
+  },
+  {
+    "image": "C347_S2_I14_R.jpg",
+    "reference_pixels": 15114,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997353447135107
+  },
+  {
+    "image": "C347_S2_I15_L.jpg",
+    "reference_pixels": 15237,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001968891514078
+  },
+  {
+    "image": "C347_S2_I15_R.jpg",
+    "reference_pixels": 17325,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997113997113997
+  },
+  {
+    "image": "C347_S2_I1_L.jpg",
+    "reference_pixels": 4028,
+    "fraction_defined": true,
+    "affected_fraction": 0.10004965243296922
+  },
+  {
+    "image": "C347_S2_I1_R.jpg",
+    "reference_pixels": 3939,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002538715410003
+  },
+  {
+    "image": "C347_S2_I2_L.jpg",
+    "reference_pixels": 4658,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000429368827823
+  },
+  {
+    "image": "C347_S2_I2_R.jpg",
+    "reference_pixels": 4001,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997500624843789
+  },
+  {
+    "image": "C347_S2_I3_L.jpg",
+    "reference_pixels": 2833,
+    "fraction_defined": true,
+    "affected_fraction": 0.09989410518884574
+  },
+  {
+    "image": "C347_S2_I3_R.jpg",
+    "reference_pixels": 4119,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002427773731488
+  },
+  {
+    "image": "C347_S2_I4_L.jpg",
+    "reference_pixels": 5562,
+    "fraction_defined": true,
+    "affected_fraction": 0.09996404171161452
+  },
+  {
+    "image": "C347_S2_I4_R.jpg",
+    "reference_pixels": 5365,
+    "fraction_defined": true,
+    "affected_fraction": 0.09990680335507922
+  },
+  {
+    "image": "C347_S2_I5_L.jpg",
+    "reference_pixels": 5366,
+    "fraction_defined": true,
+    "affected_fraction": 0.10007454342154305
+  },
+  {
+    "image": "C347_S2_I5_R.jpg",
+    "reference_pixels": 4736,
+    "fraction_defined": true,
+    "affected_fraction": 0.10008445945945946
+  },
+  {
+    "image": "C347_S2_I6_L.jpg",
+    "reference_pixels": 2698,
+    "fraction_defined": true,
+    "affected_fraction": 0.10007412898443291
+  },
+  {
+    "image": "C347_S2_I6_R.jpg",
+    "reference_pixels": 4701,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999787279302276
+  },
+  {
+    "image": "C347_S2_I7_L.jpg",
+    "reference_pixels": 7319,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001366306872524
+  },
+  {
+    "image": "C347_S2_I7_R.jpg",
+    "reference_pixels": 7543,
+    "fraction_defined": true,
+    "affected_fraction": 0.09996022802598435
+  },
+  {
+    "image": "C347_S2_I8_L.jpg",
+    "reference_pixels": 7451,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998657898268688
+  },
+  {
+    "image": "C347_S2_I8_R.jpg",
+    "reference_pixels": 6543,
+    "fraction_defined": true,
+    "affected_fraction": 0.09995414947271894
+  },
+  {
+    "image": "C347_S2_I9_L.jpg",
+    "reference_pixels": 0,
+    "fraction_defined": false,
+    "affected_fraction": 0.0
+  },
+  {
+    "image": "C347_S2_I9_R.jpg",
+    "reference_pixels": 0,
+    "fraction_defined": false,
+    "affected_fraction": 0.0
+  },
+  {
+    "image": "C359_S2_I10_L.jpg",
+    "reference_pixels": 13226,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000302434598518
+  },
+  {
+    "image": "C359_S2_I10_R.jpg",
+    "reference_pixels": 13207,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002271522677368
+  },
+  {
+    "image": "C359_S2_I11_L.jpg",
+    "reference_pixels": 12942,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998454643795394
+  },
+  {
+    "image": "C359_S2_I11_R.jpg",
+    "reference_pixels": 10519,
+    "fraction_defined": true,
+    "affected_fraction": 0.10000950660709193
+  },
+  {
+    "image": "C359_S2_I12_L.jpg",
+    "reference_pixels": 9305,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999462654486835
+  },
+  {
+    "image": "C359_S2_I12_R.jpg",
+    "reference_pixels": 11734,
+    "fraction_defined": true,
+    "affected_fraction": 0.09996591102778252
+  },
+  {
+    "image": "C359_S2_I13_L.jpg",
+    "reference_pixels": 21483,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998603546990643
+  },
+  {
+    "image": "C359_S2_I13_R.jpg",
+    "reference_pixels": 21944,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998177178271965
+  },
+  {
+    "image": "C359_S2_I14_L.jpg",
+    "reference_pixels": 20577,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001457938474996
+  },
+  {
+    "image": "C359_S2_I14_R.jpg",
+    "reference_pixels": 16337,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001836322458224
+  },
+  {
+    "image": "C359_S2_I15_L.jpg",
+    "reference_pixels": 15127,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000198320883189
+  },
+  {
+    "image": "C359_S2_I15_R.jpg",
+    "reference_pixels": 17568,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001138433515483
+  },
+  {
+    "image": "C359_S2_I1_L.jpg",
+    "reference_pixels": 4209,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002375861249703
+  },
+  {
+    "image": "C359_S2_I1_R.jpg",
+    "reference_pixels": 4757,
+    "fraction_defined": true,
+    "affected_fraction": 0.10006306495690562
+  },
+  {
+    "image": "C359_S2_I2_L.jpg",
+    "reference_pixels": 5181,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998069870681335
+  },
+  {
+    "image": "C359_S2_I2_R.jpg",
+    "reference_pixels": 4620,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C359_S2_I3_L.jpg",
+    "reference_pixels": 3190,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C359_S2_I3_R.jpg",
+    "reference_pixels": 4151,
+    "fraction_defined": true,
+    "affected_fraction": 0.099975909419417
+  },
+  {
+    "image": "C359_S2_I4_L.jpg",
+    "reference_pixels": 5731,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998255103821323
+  },
+  {
+    "image": "C359_S2_I4_R.jpg",
+    "reference_pixels": 5902,
+    "fraction_defined": true,
+    "affected_fraction": 0.09996611318197221
+  },
+  {
+    "image": "C359_S2_I5_L.jpg",
+    "reference_pixels": 6301,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998412950325346
+  },
+  {
+    "image": "C359_S2_I5_R.jpg",
+    "reference_pixels": 5224,
+    "fraction_defined": true,
+    "affected_fraction": 0.09992343032159265
+  },
+  {
+    "image": "C359_S2_I6_L.jpg",
+    "reference_pixels": 4827,
+    "fraction_defined": true,
+    "affected_fraction": 0.10006215040397763
+  },
+  {
+    "image": "C359_S2_I6_R.jpg",
+    "reference_pixels": 5711,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998248993171073
+  },
+  {
+    "image": "C359_S2_I7_L.jpg",
+    "reference_pixels": 8070,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C359_S2_I7_R.jpg",
+    "reference_pixels": 9217,
+    "fraction_defined": true,
+    "affected_fraction": 0.10003254855158945
+  },
+  {
+    "image": "C359_S2_I8_L.jpg",
+    "reference_pixels": 8370,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C359_S2_I8_R.jpg",
+    "reference_pixels": 6567,
+    "fraction_defined": true,
+    "affected_fraction": 0.10004568296025583
+  },
+  {
+    "image": "C359_S2_I9_L.jpg",
+    "reference_pixels": 5577,
+    "fraction_defined": true,
+    "affected_fraction": 0.10005379236148466
+  },
+  {
+    "image": "C359_S2_I9_R.jpg",
+    "reference_pixels": 1163,
+    "fraction_defined": true,
+    "affected_fraction": 0.0997420464316423
+  },
+  {
+    "image": "C367_S2_I10_L.jpg",
+    "reference_pixels": 9360,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C367_S2_I10_R.jpg",
+    "reference_pixels": 10334,
+    "fraction_defined": true,
+    "affected_fraction": 0.09996129281981808
+  },
+  {
+    "image": "C367_S2_I11_L.jpg",
+    "reference_pixels": 9034,
+    "fraction_defined": true,
+    "affected_fraction": 0.09995572282488377
+  },
+  {
+    "image": "C367_S2_I11_R.jpg",
+    "reference_pixels": 7546,
+    "fraction_defined": true,
+    "affected_fraction": 0.10005300821627353
+  },
+  {
+    "image": "C367_S2_I12_L.jpg",
+    "reference_pixels": 7435,
+    "fraction_defined": true,
+    "affected_fraction": 0.10006724949562879
+  },
+  {
+    "image": "C367_S2_I12_R.jpg",
+    "reference_pixels": 9513,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999684642068748
+  },
+  {
+    "image": "C367_S2_I13_L.jpg",
+    "reference_pixels": 17515,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002854695974879
+  },
+  {
+    "image": "C367_S2_I13_R.jpg",
+    "reference_pixels": 18082,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998893927662869
+  },
+  {
+    "image": "C367_S2_I14_L.jpg",
+    "reference_pixels": 16100,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C367_S2_I14_R.jpg",
+    "reference_pixels": 15167,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001977978505967
+  },
+  {
+    "image": "C367_S2_I15_L.jpg",
+    "reference_pixels": 15631,
+    "fraction_defined": true,
+    "affected_fraction": 0.09999360245665664
+  },
+  {
+    "image": "C367_S2_I15_R.jpg",
+    "reference_pixels": 19241,
+    "fraction_defined": true,
+    "affected_fraction": 0.09999480276492906
+  },
+  {
+    "image": "C367_S2_I1_L.jpg",
+    "reference_pixels": 4295,
+    "fraction_defined": true,
+    "affected_fraction": 0.10011641443538999
+  },
+  {
+    "image": "C367_S2_I1_R.jpg",
+    "reference_pixels": 4963,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999395526899053
+  },
+  {
+    "image": "C367_S2_I2_L.jpg",
+    "reference_pixels": 4429,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002257846014902
+  },
+  {
+    "image": "C367_S2_I2_R.jpg",
+    "reference_pixels": 4163,
+    "fraction_defined": true,
+    "affected_fraction": 0.09992793658419409
+  },
+  {
+    "image": "C367_S2_I3_L.jpg",
+    "reference_pixels": 3905,
+    "fraction_defined": true,
+    "affected_fraction": 0.0998719590268886
+  },
+  {
+    "image": "C367_S2_I3_R.jpg",
+    "reference_pixels": 4424,
+    "fraction_defined": true,
+    "affected_fraction": 0.09990958408679927
+  },
+  {
+    "image": "C367_S2_I4_L.jpg",
+    "reference_pixels": 4753,
+    "fraction_defined": true,
+    "affected_fraction": 0.09993688196928256
+  },
+  {
+    "image": "C367_S2_I4_R.jpg",
+    "reference_pixels": 5286,
+    "fraction_defined": true,
+    "affected_fraction": 0.10007567158531971
+  },
+  {
+    "image": "C367_S2_I5_L.jpg",
+    "reference_pixels": 4277,
+    "fraction_defined": true,
+    "affected_fraction": 0.10007014262333411
+  },
+  {
+    "image": "C367_S2_I5_R.jpg",
+    "reference_pixels": 3968,
+    "fraction_defined": true,
+    "affected_fraction": 0.10005040322580645
+  },
+  {
+    "image": "C367_S2_I6_L.jpg",
+    "reference_pixels": 4762,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999580008399832
+  },
+  {
+    "image": "C367_S2_I6_R.jpg",
+    "reference_pixels": 5046,
+    "fraction_defined": true,
+    "affected_fraction": 0.10007927070947285
+  },
+  {
+    "image": "C367_S2_I7_L.jpg",
+    "reference_pixels": 6253,
+    "fraction_defined": true,
+    "affected_fraction": 0.09995202302894611
+  },
+  {
+    "image": "C367_S2_I7_R.jpg",
+    "reference_pixels": 6666,
+    "fraction_defined": true,
+    "affected_fraction": 0.10006000600060005
+  },
+  {
+    "image": "C367_S2_I8_L.jpg",
+    "reference_pixels": 6277,
+    "fraction_defined": true,
+    "affected_fraction": 0.10004779353194201
+  },
+  {
+    "image": "C367_S2_I8_R.jpg",
+    "reference_pixels": 5544,
+    "fraction_defined": true,
+    "affected_fraction": 0.09992784992784992
+  },
+  {
+    "image": "C367_S2_I9_L.jpg",
+    "reference_pixels": 6224,
+    "fraction_defined": true,
+    "affected_fraction": 0.09993573264781491
+  },
+  {
+    "image": "C367_S2_I9_R.jpg",
+    "reference_pixels": 7458,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002681684097613
+  },
+  {
+    "image": "C445_S2_I10_L.jpg",
+    "reference_pixels": 10465,
+    "fraction_defined": true,
+    "affected_fraction": 0.09995222169135212
+  },
+  {
+    "image": "C445_S2_I10_R.jpg",
+    "reference_pixels": 10513,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997146390183582
+  },
+  {
+    "image": "C445_S2_I11_L.jpg",
+    "reference_pixels": 1009,
+    "fraction_defined": true,
+    "affected_fraction": 0.10009910802775025
+  },
+  {
+    "image": "C445_S2_I11_R.jpg",
+    "reference_pixels": 687,
+    "fraction_defined": true,
+    "affected_fraction": 0.10043668122270742
+  },
+  {
+    "image": "C445_S2_I12_L.jpg",
+    "reference_pixels": 8611,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998838694692835
+  },
+  {
+    "image": "C445_S2_I12_R.jpg",
+    "reference_pixels": 9597,
+    "fraction_defined": true,
+    "affected_fraction": 0.10003125976867772
+  },
+  {
+    "image": "C445_S2_I13_L.jpg",
+    "reference_pixels": 20168,
+    "fraction_defined": true,
+    "affected_fraction": 0.10000991669972233
+  },
+  {
+    "image": "C445_S2_I13_R.jpg",
+    "reference_pixels": 20818,
+    "fraction_defined": true,
+    "affected_fraction": 0.10000960707080411
+  },
+  {
+    "image": "C445_S2_I14_L.jpg",
+    "reference_pixels": 20617,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001455109860795
+  },
+  {
+    "image": "C445_S2_I14_R.jpg",
+    "reference_pixels": 1944,
+    "fraction_defined": true,
+    "affected_fraction": 0.09979423868312758
+  },
+  {
+    "image": "C445_S2_I15_L.jpg",
+    "reference_pixels": 16139,
+    "fraction_defined": true,
+    "affected_fraction": 0.10000619617076646
+  },
+  {
+    "image": "C445_S2_I15_R.jpg",
+    "reference_pixels": 1834,
+    "fraction_defined": true,
+    "affected_fraction": 0.09978189749182116
+  },
+  {
+    "image": "C445_S2_I1_L.jpg",
+    "reference_pixels": 3792,
+    "fraction_defined": true,
+    "affected_fraction": 0.09994725738396625
+  },
+  {
+    "image": "C445_S2_I1_R.jpg",
+    "reference_pixels": 4185,
+    "fraction_defined": true,
+    "affected_fraction": 0.0998805256869773
+  },
+  {
+    "image": "C445_S2_I2_L.jpg",
+    "reference_pixels": 550,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C445_S2_I2_R.jpg",
+    "reference_pixels": 3458,
+    "fraction_defined": true,
+    "affected_fraction": 0.10005783689994216
+  },
+  {
+    "image": "C445_S2_I3_L.jpg",
+    "reference_pixels": 3352,
+    "fraction_defined": true,
+    "affected_fraction": 0.09994033412887827
+  },
+  {
+    "image": "C445_S2_I3_R.jpg",
+    "reference_pixels": 3503,
+    "fraction_defined": true,
+    "affected_fraction": 0.09991435912075364
+  },
+  {
+    "image": "C445_S2_I4_L.jpg",
+    "reference_pixels": 5199,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001923446816696
+  },
+  {
+    "image": "C445_S2_I4_R.jpg",
+    "reference_pixels": 5216,
+    "fraction_defined": true,
+    "affected_fraction": 0.10007668711656442
+  },
+  {
+    "image": "C445_S2_I5_L.jpg",
+    "reference_pixels": 5491,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998178838098706
+  },
+  {
+    "image": "C445_S2_I5_R.jpg",
+    "reference_pixels": 4921,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997967892704734
+  },
+  {
+    "image": "C445_S2_I6_L.jpg",
+    "reference_pixels": 4865,
+    "fraction_defined": true,
+    "affected_fraction": 0.0998972250770812
+  },
+  {
+    "image": "C445_S2_I6_R.jpg",
+    "reference_pixels": 5203,
+    "fraction_defined": true,
+    "affected_fraction": 0.09994234095714011
+  },
+  {
+    "image": "C445_S2_I7_L.jpg",
+    "reference_pixels": 7355,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000679809653297
+  },
+  {
+    "image": "C445_S2_I7_R.jpg",
+    "reference_pixels": 7916,
+    "fraction_defined": true,
+    "affected_fraction": 0.10005053057099546
+  },
+  {
+    "image": "C445_S2_I8_L.jpg",
+    "reference_pixels": 7446,
+    "fraction_defined": true,
+    "affected_fraction": 0.10005372011818427
+  },
+  {
+    "image": "C445_S2_I8_R.jpg",
+    "reference_pixels": 6489,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001541069502234
+  },
+  {
+    "image": "C445_S2_I9_L.jpg",
+    "reference_pixels": 6636,
+    "fraction_defined": true,
+    "affected_fraction": 0.10006027727546715
+  },
+  {
+    "image": "C445_S2_I9_R.jpg",
+    "reference_pixels": 7291,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999862844602935
+  },
+  {
+    "image": "C45_S2_I10_L.jpg",
+    "reference_pixels": 12766,
+    "fraction_defined": true,
+    "affected_fraction": 0.10003133322888924
+  },
+  {
+    "image": "C45_S2_I10_R.jpg",
+    "reference_pixels": 12582,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998410427594977
+  },
+  {
+    "image": "C45_S2_I11_L.jpg",
+    "reference_pixels": 11896,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000336247478144
+  },
+  {
+    "image": "C45_S2_I11_R.jpg",
+    "reference_pixels": 10516,
+    "fraction_defined": true,
+    "affected_fraction": 0.100038037276531
+  },
+  {
+    "image": "C45_S2_I12_L.jpg",
+    "reference_pixels": 8704,
+    "fraction_defined": true,
+    "affected_fraction": 0.09995404411764706
+  },
+  {
+    "image": "C45_S2_I12_R.jpg",
+    "reference_pixels": 9433,
+    "fraction_defined": true,
+    "affected_fraction": 0.09996819675606912
+  },
+  {
+    "image": "C45_S2_I13_L.jpg",
+    "reference_pixels": 20080,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C45_S2_I13_R.jpg",
+    "reference_pixels": 19275,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002594033722438
+  },
+  {
+    "image": "C45_S2_I14_L.jpg",
+    "reference_pixels": 17583,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999829380651766
+  },
+  {
+    "image": "C45_S2_I14_R.jpg",
+    "reference_pixels": 15923,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998115932927212
+  },
+  {
+    "image": "C45_S2_I15_L.jpg",
+    "reference_pixels": 12268,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001630257580697
+  },
+  {
+    "image": "C45_S2_I15_R.jpg",
+    "reference_pixels": 2814,
+    "fraction_defined": true,
+    "affected_fraction": 0.09985785358919687
+  },
+  {
+    "image": "C45_S2_I1_L.jpg",
+    "reference_pixels": 4314,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999072786277237
+  },
+  {
+    "image": "C45_S2_I1_R.jpg",
+    "reference_pixels": 4243,
+    "fraction_defined": true,
+    "affected_fraction": 0.09992929530992223
+  },
+  {
+    "image": "C45_S2_I2_L.jpg",
+    "reference_pixels": 3365,
+    "fraction_defined": true,
+    "affected_fraction": 0.099851411589896
+  },
+  {
+    "image": "C45_S2_I2_R.jpg",
+    "reference_pixels": 3403,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999118424919189
+  },
+  {
+    "image": "C45_S2_I3_L.jpg",
+    "reference_pixels": 3249,
+    "fraction_defined": true,
+    "affected_fraction": 0.10003077870113881
+  },
+  {
+    "image": "C45_S2_I3_R.jpg",
+    "reference_pixels": 3275,
+    "fraction_defined": true,
+    "affected_fraction": 0.10015267175572519
+  },
+  {
+    "image": "C45_S2_I4_L.jpg",
+    "reference_pixels": 5922,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999662276258021
+  },
+  {
+    "image": "C45_S2_I4_R.jpg",
+    "reference_pixels": 5896,
+    "fraction_defined": true,
+    "affected_fraction": 0.10006784260515604
+  },
+  {
+    "image": "C45_S2_I5_L.jpg",
+    "reference_pixels": 5193,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999422299248989
+  },
+  {
+    "image": "C45_S2_I5_R.jpg",
+    "reference_pixels": 4972,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999597747385358
+  },
+  {
+    "image": "C45_S2_I6_L.jpg",
+    "reference_pixels": 3711,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997305308542172
+  },
+  {
+    "image": "C45_S2_I6_R.jpg",
+    "reference_pixels": 3762,
+    "fraction_defined": true,
+    "affected_fraction": 0.09994683678894205
+  },
+  {
+    "image": "C45_S2_I7_L.jpg",
+    "reference_pixels": 7586,
+    "fraction_defined": true,
+    "affected_fraction": 0.10005272871078302
+  },
+  {
+    "image": "C45_S2_I7_R.jpg",
+    "reference_pixels": 7448,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002685284640171
+  },
+  {
+    "image": "C45_S2_I8_L.jpg",
+    "reference_pixels": 8173,
+    "fraction_defined": true,
+    "affected_fraction": 0.09996329377217668
+  },
+  {
+    "image": "C45_S2_I8_R.jpg",
+    "reference_pixels": 7399,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000135153399108
+  },
+  {
+    "image": "C45_S2_I9_L.jpg",
+    "reference_pixels": 6607,
+    "fraction_defined": true,
+    "affected_fraction": 0.10004540638716512
+  },
+  {
+    "image": "C45_S2_I9_R.jpg",
+    "reference_pixels": 6688,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000299043062201
+  },
+  {
+    "image": "C47_S2_I10_L.jpg",
+    "reference_pixels": 9177,
+    "fraction_defined": true,
+    "affected_fraction": 0.10003269042170644
+  },
+  {
+    "image": "C47_S2_I10_R.jpg",
+    "reference_pixels": 8793,
+    "fraction_defined": true,
+    "affected_fraction": 0.09996588195155237
+  },
+  {
+    "image": "C47_S2_I11_L.jpg",
+    "reference_pixels": 7651,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998692981309633
+  },
+  {
+    "image": "C47_S2_I11_R.jpg",
+    "reference_pixels": 7669,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001303950971444
+  },
+  {
+    "image": "C47_S2_I12_L.jpg",
+    "reference_pixels": 6787,
+    "fraction_defined": true,
+    "affected_fraction": 0.10004420215117135
+  },
+  {
+    "image": "C47_S2_I12_R.jpg",
+    "reference_pixels": 7526,
+    "fraction_defined": true,
+    "affected_fraction": 0.10005314908317832
+  },
+  {
+    "image": "C47_S2_I13_L.jpg",
+    "reference_pixels": 15909,
+    "fraction_defined": true,
+    "affected_fraction": 0.10000628575020429
+  },
+  {
+    "image": "C47_S2_I13_R.jpg",
+    "reference_pixels": 14798,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000135153399108
+  },
+  {
+    "image": "C47_S2_I14_L.jpg",
+    "reference_pixels": 12688,
+    "fraction_defined": true,
+    "affected_fraction": 0.100015762925599
+  },
+  {
+    "image": "C47_S2_I14_R.jpg",
+    "reference_pixels": 11454,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999650777021128
+  },
+  {
+    "image": "C47_S2_I15_L.jpg",
+    "reference_pixels": 12258,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000163158753467
+  },
+  {
+    "image": "C47_S2_I15_R.jpg",
+    "reference_pixels": 11286,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000354421407053
+  },
+  {
+    "image": "C47_S2_I1_L.jpg",
+    "reference_pixels": 3589,
+    "fraction_defined": true,
+    "affected_fraction": 0.10002786291446085
+  },
+  {
+    "image": "C47_S2_I1_R.jpg",
+    "reference_pixels": 3675,
+    "fraction_defined": true,
+    "affected_fraction": 0.1001360544217687
+  },
+  {
+    "image": "C47_S2_I2_L.jpg",
+    "reference_pixels": 3025,
+    "fraction_defined": true,
+    "affected_fraction": 0.09983471074380165
+  },
+  {
+    "image": "C47_S2_I2_R.jpg",
+    "reference_pixels": 2845,
+    "fraction_defined": true,
+    "affected_fraction": 0.09982425307557118
+  },
+  {
+    "image": "C47_S2_I3_L.jpg",
+    "reference_pixels": 2362,
+    "fraction_defined": true,
+    "affected_fraction": 0.09991532599491956
+  },
+  {
+    "image": "C47_S2_I3_R.jpg",
+    "reference_pixels": 3226,
+    "fraction_defined": true,
+    "affected_fraction": 0.10012399256044638
+  },
+  {
+    "image": "C47_S2_I4_L.jpg",
+    "reference_pixels": 3965,
+    "fraction_defined": true,
+    "affected_fraction": 0.09987389659520807
+  },
+  {
+    "image": "C47_S2_I4_R.jpg",
+    "reference_pixels": 4165,
+    "fraction_defined": true,
+    "affected_fraction": 0.09987995198079232
+  },
+  {
+    "image": "C47_S2_I5_L.jpg",
+    "reference_pixels": 2858,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000699790062981
+  },
+  {
+    "image": "C47_S2_I5_R.jpg",
+    "reference_pixels": 3368,
+    "fraction_defined": true,
+    "affected_fraction": 0.10005938242280285
+  },
+  {
+    "image": "C47_S2_I6_L.jpg",
+    "reference_pixels": 3622,
+    "fraction_defined": true,
+    "affected_fraction": 0.09994478188845941
+  },
+  {
+    "image": "C47_S2_I6_R.jpg",
+    "reference_pixels": 4203,
+    "fraction_defined": true,
+    "affected_fraction": 0.09992862241256245
+  },
+  {
+    "image": "C47_S2_I7_L.jpg",
+    "reference_pixels": 5824,
+    "fraction_defined": true,
+    "affected_fraction": 0.09993131868131869
+  },
+  {
+    "image": "C47_S2_I7_R.jpg",
+    "reference_pixels": 5748,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000347947112039
+  },
+  {
+    "image": "C47_S2_I8_L.jpg",
+    "reference_pixels": 4652,
+    "fraction_defined": true,
+    "affected_fraction": 0.09995700773860705
+  },
+  {
+    "image": "C47_S2_I8_R.jpg",
+    "reference_pixels": 5076,
+    "fraction_defined": true,
+    "affected_fraction": 0.10007880220646179
+  },
+  {
+    "image": "C47_S2_I9_L.jpg",
+    "reference_pixels": 4368,
+    "fraction_defined": true,
+    "affected_fraction": 0.10004578754578755
+  },
+  {
+    "image": "C47_S2_I9_R.jpg",
+    "reference_pixels": 5239,
+    "fraction_defined": true,
+    "affected_fraction": 0.10001908761213972
+  },
+  {
+    "image": "C499_S2_I10_L.jpg",
+    "reference_pixels": 10270,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C499_S2_I10_R.jpg",
+    "reference_pixels": 8843,
+    "fraction_defined": true,
+    "affected_fraction": 0.09996607486147235
+  },
+  {
+    "image": "C499_S2_I11_L.jpg",
+    "reference_pixels": 9752,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997949138638228
+  },
+  {
+    "image": "C499_S2_I11_R.jpg",
+    "reference_pixels": 7041,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998579747195001
+  },
+  {
+    "image": "C499_S2_I12_L.jpg",
+    "reference_pixels": 6644,
+    "fraction_defined": true,
+    "affected_fraction": 0.09993979530403371
+  },
+  {
+    "image": "C499_S2_I12_R.jpg",
+    "reference_pixels": 8081,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998762529389928
+  },
+  {
+    "image": "C499_S2_I13_L.jpg",
+    "reference_pixels": 19404,
+    "fraction_defined": true,
+    "affected_fraction": 0.0999793856936714
+  },
+  {
+    "image": "C499_S2_I13_R.jpg",
+    "reference_pixels": 15792,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998733535967579
+  },
+  {
+    "image": "C499_S2_I14_L.jpg",
+    "reference_pixels": 15103,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998013639674237
+  },
+  {
+    "image": "C499_S2_I14_R.jpg",
+    "reference_pixels": 10599,
+    "fraction_defined": true,
+    "affected_fraction": 0.10000943485234456
+  },
+  {
+    "image": "C499_S2_I15_L.jpg",
+    "reference_pixels": 13912,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998562392179414
+  },
+  {
+    "image": "C499_S2_I15_R.jpg",
+    "reference_pixels": 13901,
+    "fraction_defined": true,
+    "affected_fraction": 0.09999280627293
+  },
+  {
+    "image": "C499_S2_I1_L.jpg",
+    "reference_pixels": 3491,
+    "fraction_defined": true,
+    "affected_fraction": 0.09997135491263248
+  },
+  {
+    "image": "C499_S2_I1_R.jpg",
+    "reference_pixels": 2559,
+    "fraction_defined": true,
+    "affected_fraction": 0.10003907776475186
+  },
+  {
+    "image": "C499_S2_I2_L.jpg",
+    "reference_pixels": 3503,
+    "fraction_defined": true,
+    "affected_fraction": 0.09991435912075364
+  },
+  {
+    "image": "C499_S2_I2_R.jpg",
+    "reference_pixels": 2734,
+    "fraction_defined": true,
+    "affected_fraction": 0.09985369422092173
+  },
+  {
+    "image": "C499_S2_I3_L.jpg",
+    "reference_pixels": 3184,
+    "fraction_defined": true,
+    "affected_fraction": 0.09987437185929648
+  },
+  {
+    "image": "C499_S2_I3_R.jpg",
+    "reference_pixels": 3096,
+    "fraction_defined": true,
+    "affected_fraction": 0.10012919896640828
+  },
+  {
+    "image": "C499_S2_I4_L.jpg",
+    "reference_pixels": 5418,
+    "fraction_defined": true,
+    "affected_fraction": 0.10003691399040236
+  },
+  {
+    "image": "C499_S2_I4_R.jpg",
+    "reference_pixels": 4595,
+    "fraction_defined": true,
+    "affected_fraction": 0.10010881392818281
+  },
+  {
+    "image": "C499_S2_I5_L.jpg",
+    "reference_pixels": 4687,
+    "fraction_defined": true,
+    "affected_fraction": 0.10006400682739493
+  },
+  {
+    "image": "C499_S2_I5_R.jpg",
+    "reference_pixels": 3148,
+    "fraction_defined": true,
+    "affected_fraction": 0.10006353240152478
+  },
+  {
+    "image": "C499_S2_I6_L.jpg",
+    "reference_pixels": 3118,
+    "fraction_defined": true,
+    "affected_fraction": 0.10006414368184734
+  },
+  {
+    "image": "C499_S2_I6_R.jpg",
+    "reference_pixels": 3583,
+    "fraction_defined": true,
+    "affected_fraction": 0.09991627128104939
+  },
+  {
+    "image": "C499_S2_I7_L.jpg",
+    "reference_pixels": 6521,
+    "fraction_defined": true,
+    "affected_fraction": 0.09998466492869192
+  },
+  {
+    "image": "C499_S2_I7_R.jpg",
+    "reference_pixels": 5620,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C499_S2_I8_L.jpg",
+    "reference_pixels": 5740,
+    "fraction_defined": true,
+    "affected_fraction": 0.1
+  },
+  {
+    "image": "C499_S2_I8_R.jpg",
+    "reference_pixels": 3563,
+    "fraction_defined": true,
+    "affected_fraction": 0.09991580129104687
+  },
+  {
+    "image": "C499_S2_I9_L.jpg",
+    "reference_pixels": 5575,
+    "fraction_defined": true,
+    "affected_fraction": 0.1000896860986547
+  },
+  {
+    "image": "C499_S2_I9_R.jpg",
+    "reference_pixels": 5797,
+    "fraction_defined": true,
+    "affected_fraction": 0.10005175090564085
+  }
+]

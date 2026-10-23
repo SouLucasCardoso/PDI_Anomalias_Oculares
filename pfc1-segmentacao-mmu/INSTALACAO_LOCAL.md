@@ -1,8 +1,11 @@
 
+> Atualização posterior de 21/10: teste com configuração congelada =91,36% de Rank-1, 92,39% de TAR e 0,88% de FMR. A busca de área em passos nominais de 1% foi concluída:99% aprovados na oclusão inferior; na superior, apenas a condição original passou. Consulte [os resultados e limitações](RESULTADOS_CONGELADOS_E_OCLUSAO_2026-10-21.md).
+
+
 
 ## Atualização de desenvolvimento — 21/10/2026
 
-O candidato congelado atingiu **Rank-1 de90,04% e TAR de90,66%, com FMR de0,98%**, na validação UBIPr de482 consultas, com uma foto original e lado do olho informado (16 candidatos). São434 identificações corretas e437 aceitações genuínas; o resultado conjunto de identificação correta e aceitação é88,38%. A validação foi reutilizada para seleção de estratégias e o componente externo ArcIris tem população de pré-treinamento desconhecida: estes números são exploratórios, sem confirmação independente. O mínimo de área permanece não determinado, com e sem oclusão. Consulte [o relatório atualizado](AVANCO_RECONHECIMENTO_2026-10-21.md) e `outputs/candidato_congelado_2026-10-21/CONGELADO.json`.
+O candidato congelado atingiu **Rank-1 de 90,04% e TAR de 90,66%, com FMR de 0,98%**, na validação UBIPr de 482 consultas, com uma foto original e lado do olho informado (16 candidatos). São 434 identificações corretas e 437 aceitações genuínas; o resultado conjunto de identificação correta e aceitação é88,38%. A validação foi reutilizada para seleção de estratégias e o componente externo ArcIris tem população de pré-treinamento desconhecida: estes números são exploratórios, sem confirmação independente. O mínimo de área permanece não determinado, com e sem oclusão. Consulte [o relatório atualizado](AVANCO_RECONHECIMENTO_2026-10-21.md) e `outputs/candidato_congelado_2026-10-21/CONGELADO.json`.
 
 # Instalação local — 20/10/2026
 
@@ -283,3 +286,8 @@ para criar o backup dos pesos finais. A avaliação Nuclear Cataract foi
 registrada em `outputs/nuclear_biometria_protocolo_2026-10-20/protocolo.json`,
 com pacientes separados entre calibração e teste, antes de examinar escores.
 Ainda não foi executada a avaliação de reconhecimento nessa base.
+
+
+### Desenvolvimento posterior: segmentação sob oclusão
+
+O diagnóstico e o novo ajuste foram concluídos. O novo segmentador melhorou Dice e identificação sob oclusão inferior, mas regrediu em outras condições; não substituiu o candidato aprovado. [Resultados e máscaras reais](DIAGNOSTICO_E_SEGMENTACAO_ROBUSTA_2026-10-21.md).

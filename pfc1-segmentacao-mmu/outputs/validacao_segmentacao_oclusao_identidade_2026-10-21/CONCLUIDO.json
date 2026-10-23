@@ -1,0 +1,126 @@
+{
+  "status": "segmentation_recognition_validation_completed",
+  "records": [
+    {
+      "segmenter": "original",
+      "condition": "original",
+      "occluded_percent": 0,
+      "result": {
+        "rank1": 0.9004149377593361,
+        "tar": 0.9066390041493776,
+        "fnmr": 0.09336099585062241,
+        "far": 0.009820193637621023,
+        "eer_descriptive": 0.04329183955739972,
+        "extraction_failures": 4,
+        "queries": 482,
+        "genuine_mean_valid": 0.9198967805247797,
+        "margin_mean_valid": 0.13741244408667197,
+        "threshold": 0.8581747485460748,
+        "joint_success": 0.8838174273858921,
+        "replay_max_abs_score_difference": 9.992007221626409e-16,
+        "replay_rank1_decisions_changed": 0,
+        "replay_acceptance_decisions_changed": 0
+      },
+      "source": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\confirmacao_congelada_val_2026-10-21"
+    },
+    {
+      "segmenter": "original",
+      "condition": "oclusao_superior",
+      "occluded_percent": 10,
+      "result": {
+        "rank1": 0.8070539419087137,
+        "tar": 0.7800829875518672,
+        "fnmr": 0.21991701244813278,
+        "far": 0.013001383125864454,
+        "eer_descriptive": 0.07053941908713693,
+        "extraction_failures": 4,
+        "queries": 482,
+        "genuine_mean_valid": 0.8943935362022664,
+        "margin_mean_valid": 0.0947425222581766,
+        "threshold": 0.8581747485460748,
+        "joint_success": 0.7614107883817427
+      },
+      "source": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\confirmacao_congelada_val_oclusao_superior_10_2026-10-21"
+    },
+    {
+      "segmenter": "original",
+      "condition": "oclusao_inferior",
+      "occluded_percent": 10,
+      "result": {
+        "rank1": 0.5995850622406639,
+        "tar": 0.578838174273859,
+        "fnmr": 0.421161825726141,
+        "far": 0.024066390041493777,
+        "eer_descriptive": 0.13900414937759337,
+        "extraction_failures": 7,
+        "queries": 482,
+        "genuine_mean_valid": 0.8409128074113923,
+        "margin_mean_valid": 0.016845094238804117,
+        "threshold": 0.8581747485460748,
+        "joint_success": 0.558091286307054
+      },
+      "source": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\confirmacao_congelada_val_oclusao_inferior_10_2026-10-21"
+    },
+    {
+      "segmenter": "robust",
+      "condition": "original",
+      "occluded_percent": 0,
+      "result": {
+        "rank1": 0.8858921161825726,
+        "tar": 0.8921161825726142,
+        "fnmr": 0.10788381742738584,
+        "far": 0.009820193637621023,
+        "eer_descriptive": 0.04771784232365145,
+        "extraction_failures": 4,
+        "queries": 482,
+        "genuine_mean_valid": 0.9160612138695691,
+        "margin_mean_valid": 0.13338076412387473,
+        "threshold": 0.8581747485460748,
+        "joint_success": 0.8713692946058091
+      },
+      "source": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\confirmacao_congelada_val_segmentador_8f126141f4dd_2026-10-21"
+    },
+    {
+      "segmenter": "robust",
+      "condition": "oclusao_superior",
+      "occluded_percent": 10,
+      "result": {
+        "rank1": 0.7697095435684648,
+        "tar": 0.7136929460580913,
+        "fnmr": 0.2863070539419087,
+        "far": 0.012863070539419087,
+        "eer_descriptive": 0.07468879668049792,
+        "extraction_failures": 4,
+        "queries": 482,
+        "genuine_mean_valid": 0.8887656905330267,
+        "margin_mean_valid": 0.08927363594952531,
+        "threshold": 0.8581747485460748,
+        "joint_success": 0.7033195020746889
+      },
+      "source": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\confirmacao_congelada_val_oclusao_superior_10_segmentador_8f126141f4dd_2026-10-21"
+    },
+    {
+      "segmenter": "robust",
+      "condition": "oclusao_inferior",
+      "occluded_percent": 10,
+      "result": {
+        "rank1": 0.8195020746887967,
+        "tar": 0.7925311203319502,
+        "fnmr": 0.20746887966804983,
+        "far": 0.011479944674965423,
+        "eer_descriptive": 0.06224066390041494,
+        "extraction_failures": 4,
+        "queries": 482,
+        "genuine_mean_valid": 0.8976565612892118,
+        "margin_mean_valid": 0.09942947260784471,
+        "threshold": 0.8581747485460748,
+        "joint_success": 0.7780082987551867
+      },
+      "source": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\confirmacao_congelada_val_oclusao_inferior_10_segmentador_8f126141f4dd_2026-10-21"
+    }
+  ],
+  "test_inference": false,
+  "minimum_area": null,
+  "frozen_candidate_replaced": false,
+  "threshold_recalibrated": false
+}
