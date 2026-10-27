@@ -1,0 +1,11 @@
+{
+  "status": "regional_distillation_audited",
+  "metrics_and_decisions_exact": true,
+  "clean_only_calibration": true,
+  "primary_prespecified": true,
+  "fit_reproduction_exact": true,
+  "score_reproduction_exact": true,
+  "clean_gate_passed": true,
+  "monitor_gate_passed": false,
+  "no_validation_or_test": true
+}

@@ -1,0 +1,213 @@
+{
+  "zip_bytes": 5503752,
+  "zip_sha256": "dc495cfba058715d315ba24828d308ac3008368a3d9e316906cbe728f43b5fb2",
+  "parts": [
+    "parte_001.b64",
+    "parte_002.b64",
+    "parte_003.b64",
+    "parte_004.b64",
+    "parte_005.b64",
+    "parte_006.b64",
+    "parte_007.b64",
+    "parte_008.b64"
+  ],
+  "files": {
+    "casos_oculares_reais_2026-10-27/areas_clinicas.json": {
+      "bytes": 4431,
+      "sha256": "f12bf377cafaf93db3d4fc8f9504548b44b520d2abf2f0038591e421551c046a"
+    },
+    "casos_oculares_reais_2026-10-27/AUDITORIA.json": {
+      "bytes": 399,
+      "sha256": "022e4b6da39908abebc8b547328350fb49b92436a8348758eb3d073dc3ad2af1"
+    },
+    "casos_oculares_reais_2026-10-27/CASOS_CLINICOS_01.png": {
+      "bytes": 878160,
+      "sha256": "10a3cc9d412d76bfecc3d99be26b662e786cfd1f47f954814ab5ee8c01f7cae7"
+    },
+    "casos_oculares_reais_2026-10-27/CASOS_CLINICOS_02.png": {
+      "bytes": 840519,
+      "sha256": "8d7db73123f13b65c3a6776afba80e4dd37f89f894a632ec007196d7565b61d8"
+    },
+    "casos_oculares_reais_2026-10-27/CONCLUIDO.json": {
+      "bytes": 1461,
+      "sha256": "012aec689b24ccbed615497d6abfd8262d12f4120bff6fdd738d4de36726e015"
+    },
+    "casos_oculares_reais_2026-10-27/consultas_clinicas.json": {
+      "bytes": 1521,
+      "sha256": "2b651e65968ba6d08dab1838d9996d3500cfe4b44e830fb6472c6c67da366653"
+    },
+    "casos_oculares_reais_2026-10-27/DISPONIBILIDADE_CADASTRO.json": {
+      "bytes": 513,
+      "sha256": "9140f9f5e52d49128896cd365aa70519c8fe337e8f94643b8940e2fc21fb67eb"
+    },
+    "casos_oculares_reais_2026-10-27/grupos_ubipr.json": {
+      "bytes": 620,
+      "sha256": "b13bb4ff67e43671843de56f6d8a80773cea6537a046cfab72e24da5f7903bac"
+    },
+    "casos_oculares_reais_2026-10-27/protocolo.json": {
+      "bytes": 22477,
+      "sha256": "48fe4c604ab4709a6b1622e99f3d91730ba17c8865f717cbbf1facd2b9650e7f"
+    },
+    "casos_oculares_reais_2026-10-27/scores_arc_clahe.npz": {
+      "bytes": 1017,
+      "sha256": "a06baede4e6697e57a36977ac1ed8a5e6c2fcea22ce35f19d19743fdfd43df97"
+    },
+    "casos_oculares_reais_2026-10-27/scores_arc_red.npz": {
+      "bytes": 1012,
+      "sha256": "193bf82123448b151fe4a0babcae85a867cf158e70e0ef12bce205979aea7227"
+    },
+    "casos_oculares_reais_2026-10-27/scores_convnext.npz": {
+      "bytes": 868,
+      "sha256": "42a1fd2e93ec65120cbd40f93c559b29e4ad9eb44a0698cc921932ae45d431c6"
+    },
+    "casos_oculares_reais_2026-10-27/scores_finais.npz": {
+      "bytes": 1402,
+      "sha256": "bd1269215e4b0b0c738bb939be26700c9b086986a20ef060c80ad5d9f4e9d950"
+    },
+    "casos_oculares_reais_2026-10-27/scores_native.npz": {
+      "bytes": 856,
+      "sha256": "80bb277839f258bcfd36bfaa97d91de9f0e3feef04300aea75e9b6cb7c57d55b"
+    },
+    "casos_oculares_reais_2026-10-27/scores_polar.npz": {
+      "bytes": 861,
+      "sha256": "34924c7bd7b8ce0d98368a73b6b306254d8a6c4b5a8b483c0935f68eb6ffc35a"
+    },
+    "casos_oculares_reais_2026-10-27/scores_r50.npz": {
+      "bytes": 864,
+      "sha256": "7b8260d8a2c918e484e80e1ef416511028c0d9a86b9b32082afaf63e1dc3a680"
+    },
+    "casos_oculares_reais_2026-10-27/scores_rgb.npz": {
+      "bytes": 868,
+      "sha256": "59915b65e715ee0d691691044e7b6b2073195bd0f6a0062ba37db700056a0aea"
+    },
+    "casos_oculares_reais_2026-10-27/scores_spatial.npz": {
+      "bytes": 858,
+      "sha256": "e41a34dde181d38ae89808d8c8bae24e811bed0851740bd6d103365476a9fb9a"
+    },
+    "casos_oculares_reais_2026-10-27/scores_transformer.npz": {
+      "bytes": 868,
+      "sha256": "a5b7320b041b5be8c9431b7d47cadac2af4f82e71cc55e053ba3fe90b981bf80"
+    },
+    "casos_oculares_reais_2026-10-27/source.py": {
+      "bytes": 15731,
+      "sha256": "0bfd0a7c5cc0e0600dfc8f1b8c8742e7fc3d83f96d7ce32fb659d6754e736d57"
+    },
+    "casos_oculares_reais_2026-10-27/UBIPR_SUPORTE_NATURAL_01.png": {
+      "bytes": 870962,
+      "sha256": "c7c164c9064c89f0c55f4b3c0fd6b5a108818547594019cdc2ebad70f43c6270"
+    },
+    "casos_oculares_escala3_2026-10-27/areas_clinicas.json": {
+      "bytes": 4495,
+      "sha256": "e347ae39b4b3f06b083fa05527a197fa62dd3cf03191c3343d373e404e7b0b7c"
+    },
+    "casos_oculares_escala3_2026-10-27/AUDITORIA.json": {
+      "bytes": 398,
+      "sha256": "12ecdd05d00d9652e4e031b340f50e98c348e7fa9d65763a6437640197fd36e2"
+    },
+    "casos_oculares_escala3_2026-10-27/CASOS_CLINICOS_01.png": {
+      "bytes": 1038542,
+      "sha256": "2677a9a5c77559b235e6113a78bf827ba86085db5f793ec5008a85f0453303af"
+    },
+    "casos_oculares_escala3_2026-10-27/CASOS_CLINICOS_02.png": {
+      "bytes": 1058640,
+      "sha256": "19c8546a552a9a208afff3952bda8718e75b62cd8378c7fd41f3dfe2d2ba8e7c"
+    },
+    "casos_oculares_escala3_2026-10-27/CONCLUIDO.json": {
+      "bytes": 1446,
+      "sha256": "c8b083c5f1fb15fa5368202cc327c51cfa16b0676064143474535d91d73b0eb9"
+    },
+    "casos_oculares_escala3_2026-10-27/consultas_clinicas.json": {
+      "bytes": 1493,
+      "sha256": "15c9780f61ac29275ae9c325ff1de8059bbf87834153a0d37428f2da72d9756f"
+    },
+    "casos_oculares_escala3_2026-10-27/DISPONIBILIDADE_CADASTRO.json": {
+      "bytes": 515,
+      "sha256": "0a7f4a48b6968c04397f5a19b0750464df13018e8923bc36db7213feded0cd74"
+    },
+    "casos_oculares_escala3_2026-10-27/grupos_ubipr.json": {
+      "bytes": 620,
+      "sha256": "b13bb4ff67e43671843de56f6d8a80773cea6537a046cfab72e24da5f7903bac"
+    },
+    "casos_oculares_escala3_2026-10-27/protocolo.json": {
+      "bytes": 22679,
+      "sha256": "e894c477709859865ed5d4a5b132d15e883ad4245c340c89f6ccb523d9f008a6"
+    },
+    "casos_oculares_escala3_2026-10-27/scores_arc_clahe.npz": {
+      "bytes": 1091,
+      "sha256": "7205c148554c794da8af394551191a71d9adad1c5e25eb84ccfe2b522e7754ae"
+    },
+    "casos_oculares_escala3_2026-10-27/scores_arc_red.npz": {
+      "bytes": 1090,
+      "sha256": "390781cd7654ab94d9536c2a27c304b291970910de30471c5e6c09fedd7d1f19"
+    },
+    "casos_oculares_escala3_2026-10-27/scores_convnext.npz": {
+      "bytes": 910,
+      "sha256": "cb5a528d1b3ca227b50efb0e06183456fd02c5ef0998f0c7cc6e17f979344206"
+    },
+    "casos_oculares_escala3_2026-10-27/scores_finais.npz": {
+      "bytes": 1478,
+      "sha256": "7abfc9309b0a71ae68fa078fe32425f1a7fa3457200b36a941c80ed8f7bf1e14"
+    },
+    "casos_oculares_escala3_2026-10-27/scores_native.npz": {
+      "bytes": 901,
+      "sha256": "33ba52f441b2e15af66ee7c418175127a9886906b3dad433e43856d60a9a4727"
+    },
+    "casos_oculares_escala3_2026-10-27/scores_polar.npz": {
+      "bytes": 909,
+      "sha256": "643ac2fc2bfaa1132d1649002fd90d87275f000e15e750fecee6996cf5e6fdb8"
+    },
+    "casos_oculares_escala3_2026-10-27/scores_r50.npz": {
+      "bytes": 912,
+      "sha256": "9fcd4c24dd2b086c6b7c612541ed3a235c318873c0058a1f14ef27fc95afb840"
+    },
+    "casos_oculares_escala3_2026-10-27/scores_rgb.npz": {
+      "bytes": 915,
+      "sha256": "77e2bcb01b19def7928a4a0a8a298559692c7c370f0667bcdf5ab2dfeba73b70"
+    },
+    "casos_oculares_escala3_2026-10-27/scores_spatial.npz": {
+      "bytes": 899,
+      "sha256": "b3fb8270421ce057c261c85d92808817c42ee07d489729ccfb1f239b59b425b4"
+    },
+    "casos_oculares_escala3_2026-10-27/scores_transformer.npz": {
+      "bytes": 905,
+      "sha256": "8627c22b09ca8f18fb227a3741d3656b0a27eb3f9176702baa4420c038ded3b1"
+    },
+    "casos_oculares_escala3_2026-10-27/source.py": {
+      "bytes": 16039,
+      "sha256": "0fb81895e6d3df46a391cf8fef6a966d04e1cd6c31ff740a6082d286b64a1f54"
+    },
+    "casos_oculares_escala3_2026-10-27/UBIPR_SUPORTE_NATURAL_01.png": {
+      "bytes": 870962,
+      "sha256": "c7c164c9064c89f0c55f4b3c0fd6b5a108818547594019cdc2ebad70f43c6270"
+    },
+    "scripts/testar_casos_oculares_reais.py": {
+      "bytes": 15731,
+      "sha256": "0bfd0a7c5cc0e0600dfc8f1b8c8742e7fc3d83f96d7ce32fb659d6754e736d57"
+    },
+    "scripts/testar_casos_oculares_escala3.py": {
+      "bytes": 16039,
+      "sha256": "0fb81895e6d3df46a391cf8fef6a966d04e1cd6c31ff740a6082d286b64a1f54"
+    },
+    "scripts/segmentacao_clinica_escala.py": {
+      "bytes": 2641,
+      "sha256": "6ec36553402ada0b05baee78eca2ae273854e554105503b68ab6dfc468a494ed"
+    },
+    "scripts/test_casos_oculares_reais.py": {
+      "bytes": 888,
+      "sha256": "4f2a8158f3db764b5b023c8295250dfef26cdc49800df9c3dc0df0693ba39396"
+    },
+    "scripts/test_segmentacao_clinica_escala.py": {
+      "bytes": 1094,
+      "sha256": "ebedda4e9d9386f2b3c108323f83d9b837a5813404806e20a256cb06aff34289"
+    },
+    "scripts/auditar_casos_oculares_reais.py": {
+      "bytes": 5278,
+      "sha256": "155a10c48856718732df1f1a934712d8d640d8ba8127c191d28827363dcab15f"
+    },
+    "scripts/preservar_casos_oculares_reais.py": {
+      "bytes": 2998,
+      "sha256": "d90c56c9fb150cf7a0b56499887daf82786d78bc85374004d007845a39b443aa"
+    }
+  },
+  "excluded": "Original clinical/UBIPr images, pretrained checkpoints and reproducible preprocessing caches; required sources recorded in protocols. Contains biometric illustrations: LOCAL ONLY,notGit."
+}

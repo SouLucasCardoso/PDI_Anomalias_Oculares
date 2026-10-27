@@ -1,0 +1,125 @@
+{
+  "zip_bytes": 4644720,
+  "zip_sha256": "69aec6c0ec25f99fa8981354127b56105dc4e8556164ccecc2347f8262e16a28",
+  "parts": [
+    "parte_001.b64",
+    "parte_002.b64",
+    "parte_003.b64",
+    "parte_004.b64",
+    "parte_005.b64",
+    "parte_006.b64",
+    "parte_007.b64"
+  ],
+  "files": {
+    "destilacao_regional_treino_2026-10-27/AUDITORIA_REPRODUCAO.json": {
+      "bytes": 326,
+      "sha256": "de7152f1fb645cf4a95554dbbfa66f5b814b986f5599ab7bb5e8f497a40b2735"
+    },
+    "destilacao_regional_treino_2026-10-27/CONCLUIDO.json": {
+      "bytes": 8969,
+      "sha256": "6c0f2ff9bb8dc580f579c7ed16098f3b38423f2a087c70d551d20476cb673844"
+    },
+    "destilacao_regional_treino_2026-10-27/model.npz": {
+      "bytes": 4054156,
+      "sha256": "cdba2fb2e054ecd4eeaca678e31277f13ac9eee81f6c7445963dcb034b5fae0f"
+    },
+    "destilacao_regional_treino_2026-10-27/protocolo.json": {
+      "bytes": 327644,
+      "sha256": "91f1612f208ec87b5f97a798c99e538d4cb7fd57679bd9d4134e6524dd65cba4"
+    },
+    "destilacao_regional_treino_2026-10-27/scores_internal_fusion6_clean.npz": {
+      "bytes": 12563,
+      "sha256": "a4eaa06440554084816ea902f96ead91504ffc6a729497de8a2a0d2e0ba1dfd6"
+    },
+    "destilacao_regional_treino_2026-10-27/scores_internal_fusion8_clean.npz": {
+      "bytes": 12727,
+      "sha256": "36db59e61a3a5b36778a4d2ec34e90924cc75a8fc3250eda9236088b01dd977a"
+    },
+    "destilacao_regional_treino_2026-10-27/scores_internal_global_clean.npz": {
+      "bytes": 9890,
+      "sha256": "d39ee61d52e12fcb3235ccb4e0294c70a00d85d708143da40bf7f80f93bdcd9d"
+    },
+    "destilacao_regional_treino_2026-10-27/scores_internal_regional6_clean.npz": {
+      "bytes": 11846,
+      "sha256": "d7155b8bbcf229dc463279b9fea53703e9df7a4accc2086b9c9766e58631c037"
+    },
+    "destilacao_regional_treino_2026-10-27/scores_monitor_fusion6_clean.npz": {
+      "bytes": 45787,
+      "sha256": "f5fbc4b0f79a343065fa552cb083b07abdbda8bed31a9ffe222efd2a8dcab064"
+    },
+    "destilacao_regional_treino_2026-10-27/scores_monitor_fusion6_lower10.npz": {
+      "bytes": 46113,
+      "sha256": "5a26904a582c9101a2b9b89461856b3302e64448f0c729402e49b0f35f5a682d"
+    },
+    "destilacao_regional_treino_2026-10-27/scores_monitor_fusion6_upper10.npz": {
+      "bytes": 46203,
+      "sha256": "e2b49bde4e37c46e584ccbb090304bd181d1a582910fb96c4732860d78dfdff6"
+    },
+    "destilacao_regional_treino_2026-10-27/scores_monitor_fusion8_clean.npz": {
+      "bytes": 46486,
+      "sha256": "76954e20f848b18f1e30d2c86acf719680110def89f4116d7f2a48be7a0296bf"
+    },
+    "destilacao_regional_treino_2026-10-27/scores_monitor_fusion8_lower10.npz": {
+      "bytes": 46791,
+      "sha256": "da36af5d069a2b531b8ba055e04cd62f30350510c8528a0b1e4f83bd4c4a708e"
+    },
+    "destilacao_regional_treino_2026-10-27/scores_monitor_fusion8_upper10.npz": {
+      "bytes": 46830,
+      "sha256": "0803e83a281f1fa974aef4c814a2b1cac7af02e70b8a342c4334f54769c606d1"
+    },
+    "destilacao_regional_treino_2026-10-27/scores_monitor_global_clean.npz": {
+      "bytes": 35292,
+      "sha256": "f6fe57bee309382c2e5a676f36b0c3411b8379358b4c2e2ddb7c6b802bdecc82"
+    },
+    "destilacao_regional_treino_2026-10-27/scores_monitor_global_lower10.npz": {
+      "bytes": 35516,
+      "sha256": "1961deb760ae5a1360212c01947fe4270da7f8dd3b0927303f3cc19259440e51"
+    },
+    "destilacao_regional_treino_2026-10-27/scores_monitor_global_upper10.npz": {
+      "bytes": 35689,
+      "sha256": "6405492d163eb13f87bdc0cf6ed57437a4d8be5b294f98fcf984c295698d0468"
+    },
+    "destilacao_regional_treino_2026-10-27/scores_monitor_regional6_clean.npz": {
+      "bytes": 42769,
+      "sha256": "c91b56b722e2b5de8abd70b98083719b1dcfc154eab1e0c5f1af8ab84e557c7d"
+    },
+    "destilacao_regional_treino_2026-10-27/scores_monitor_regional6_lower10.npz": {
+      "bytes": 42654,
+      "sha256": "ef034111accc39b90fde4cb7251f90223fffcd2f05c05c134ca6a73a7b21be3a"
+    },
+    "destilacao_regional_treino_2026-10-27/scores_monitor_regional6_upper10.npz": {
+      "bytes": 42695,
+      "sha256": "77acc77fc4a64c51a1ff475aab6c8a4ad83dd4c2f46d6ebd16b82e61d642ad66"
+    },
+    "destilacao_regional_treino_2026-10-27/source.py": {
+      "bytes": 9162,
+      "sha256": "a3af317a09bd5e3fcbf8e09742fdc2f04376c423c7eb5a4f4f5a71770f1955c4"
+    },
+    "scripts/descritor_regional_aprendido.py": {
+      "bytes": 2076,
+      "sha256": "a3eb618b431ab4f4064e3b5df0fa73e3f9192a5d43dbd049714f303122452651"
+    },
+    "scripts/test_descritor_regional_aprendido.py": {
+      "bytes": 1391,
+      "sha256": "7622847f0d4966bba614b6c3ce7700580ef586125bb31072a4abedc84f157e87"
+    },
+    "scripts/piloto_destilacao_regional.py": {
+      "bytes": 9162,
+      "sha256": "a3af317a09bd5e3fcbf8e09742fdc2f04376c423c7eb5a4f4f5a71770f1955c4"
+    },
+    "scripts/auditar_destilacao_regional.py": {
+      "bytes": 5677,
+      "sha256": "a9d8b5da498e867fb6b910647be49ab1b619d7c9c5ec3f8d9069e3a862961d68"
+    },
+    "scripts/preservar_destilacao_regional.py": {
+      "bytes": 2840,
+      "sha256": "3a6f296ab93cae7ace4ea841f5efadd562005aed1151a08475229e9d69845600"
+    }
+  },
+  "excluded_reproducible_fit_evidence": {
+    "destilacao_regional_treino_2026-10-27/fit_evidence.npz": {
+      "bytes": 73650352,
+      "sha256": "1b77c15fdb97efd611d72bb0bcc186eeeae504d59e753661f90bf00aa7fb73fd"
+    }
+  }
+}

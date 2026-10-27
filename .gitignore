@@ -39,3 +39,5 @@
 **/outputs/**/amostras_recortes_diagnostico.png
 **/outputs/**/comparacao_mascaras.png
 **/outputs/**/recortes_sob_oclusao.png
+# Pranchas clinicas locais: reproduzem fotografias biometricas.
+**/outputs/casos_oculares_*/*.png

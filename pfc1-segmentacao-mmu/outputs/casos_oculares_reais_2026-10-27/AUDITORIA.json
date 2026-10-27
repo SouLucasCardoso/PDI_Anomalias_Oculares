@@ -1,0 +1,13 @@
+{
+  "status": "real_ocular_cases_audited",
+  "variant": "original",
+  "source_image_hashes_verified": 42,
+  "explicit_iris_images": 9,
+  "queries": 4,
+  "candidate_eyes_each": 16,
+  "unavailable_genuine_comparisons": 1,
+  "frozen_fusion_and_decisions_exact": true,
+  "area_denominators_verified": true,
+  "anatomical_percent_not_claimed": true,
+  "ubipr_groups_all482_reproduced": true
+}

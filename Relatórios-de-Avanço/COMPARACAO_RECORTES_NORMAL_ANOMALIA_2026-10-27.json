@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-27",
+  "selection": "First2 distinct development subjects labelled exactly Normal eye by filename; then fixed P0114 query and P0803 enrollment illustrating both improvement and failure. Not prevalence estimates or a matched clinical experiment.",
+  "source": "https://doi.org/10.6084/m9.figshare.32576697.v3",
+  "attribution": "Qian,Hulei(2026).SLP-VLD.v3.Figshare.CC BY4.0. Derived composition/crops/overlays by this project.",
+  "unet_sha256": "2bcfc269ffc9562ca8cf0956998faf1e22641587cd60f7059b3cec3dd0f4093d",
+  "png_sha256": "f1ef0f50c48ecc04c3c6fdc880b62f7d5d72cb33fd2efe29026ec60235cb0e4e",
+  "samples": [
+    {
+      "filename": "P0005_OD20241206.JPG",
+      "diagnosis_raw": "Normal eye",
+      "image_sha256": "37a105b917c6bd5959f26db21aa054de1fc3f63d42b7a76dbb04fe15b77ecef4",
+      "mask_pixels_original": 74760,
+      "mask_pixels_scale3": 1195270,
+      "image_pixels": 5904384,
+      "recognition_of_normal_controls_evaluated": false
+    },
+    {
+      "filename": "P0007_OS20250306.JPG",
+      "diagnosis_raw": "Normal eye",
+      "image_sha256": "b033515645f0700e80240c58e3e04417a8ab0e1a2713f6eda5401442dd68c52b",
+      "mask_pixels_original": 95122,
+      "mask_pixels_scale3": 881843,
+      "image_pixels": 5904384,
+      "recognition_of_normal_controls_evaluated": false
+    },
+    {
+      "filename": "P0114_OS20250417.JPG",
+      "diagnosis_raw": "Iris cyst, Corneal ulcer, Bullous keratopathy",
+      "image_sha256": "1f90538202e540ee5175ca5d370bdaf13dfcd7238a354af14d86784fe4ce570a",
+      "mask_pixels_original": 6055,
+      "mask_pixels_scale3": 620862,
+      "image_pixels": 5904384,
+      "recognition_of_normal_controls_evaluated": false
+    },
+    {
+      "filename": "P0803_OD20250112.JPG",
+      "diagnosis_raw": "Intraocular foreign body, Penetrating corneal injury, Corneal foreign body, Iris laceration, Traumatic cataract",
+      "image_sha256": "a5b11184dfad0a605e80c2bc38b19bc9c237f53e464a754328d0407a6ce58da0",
+      "mask_pixels_original": 33340,
+      "mask_pixels_scale3": 0,
+      "image_pixels": 5904384,
+      "recognition_of_normal_controls_evaluated": false
+    }
+  ],
+  "clinical_anatomical_preserved_percent": null
+}

@@ -1,0 +1,228 @@
+{
+  "zip_bytes": 32770356,
+  "zip_sha256": "0d68d71388d93a6ed099d99a3de8abdc5e3da55f2f03a93a974faaccc281c407",
+  "parts": [
+    "parte_001.b64",
+    "parte_002.b64",
+    "parte_003.b64",
+    "parte_004.b64",
+    "parte_005.b64",
+    "parte_006.b64",
+    "parte_007.b64",
+    "parte_008.b64",
+    "parte_009.b64",
+    "parte_010.b64",
+    "parte_011.b64",
+    "parte_012.b64",
+    "parte_013.b64",
+    "parte_014.b64",
+    "parte_015.b64",
+    "parte_016.b64",
+    "parte_017.b64",
+    "parte_018.b64",
+    "parte_019.b64",
+    "parte_020.b64",
+    "parte_021.b64",
+    "parte_022.b64",
+    "parte_023.b64",
+    "parte_024.b64",
+    "parte_025.b64",
+    "parte_026.b64",
+    "parte_027.b64",
+    "parte_028.b64",
+    "parte_029.b64",
+    "parte_030.b64",
+    "parte_031.b64",
+    "parte_032.b64",
+    "parte_033.b64",
+    "parte_034.b64",
+    "parte_035.b64",
+    "parte_036.b64",
+    "parte_037.b64",
+    "parte_038.b64",
+    "parte_039.b64",
+    "parte_040.b64",
+    "parte_041.b64",
+    "parte_042.b64",
+    "parte_043.b64",
+    "parte_044.b64"
+  ],
+  "files": {
+    "vistas_validas_treino_2026-10-27/AUDITORIA_REPRODUCAO.json": {
+      "bytes": 480,
+      "sha256": "54fb2a80001659bcaa74b83ea4b8fe4284891e5db069a3bd3e775a867e82f006"
+    },
+    "vistas_validas_treino_2026-10-27/CACHE_DIVERSO_CONCLUIDO.json": {
+      "bytes": 364,
+      "sha256": "328b2a6310605b3752a8b21c9dcb1cdef7c44129c98ca0c2852b80cd2836b11a"
+    },
+    "vistas_validas_treino_2026-10-27/CONCLUIDO.json": {
+      "bytes": 7503,
+      "sha256": "2697832218367c4ad8b035d85422f7819151a25627df40788c3bcbbfada837d3"
+    },
+    "vistas_validas_treino_2026-10-27/historico.csv": {
+      "bytes": 992,
+      "sha256": "90bd1ab12b83565db0cccf3257e12dbf356e1770895f7bece7c5748711e60409"
+    },
+    "vistas_validas_treino_2026-10-27/indices_ajuste.npz": {
+      "bytes": 26277,
+      "sha256": "07b98affef7da05a8aa31a791baa231de1600ceea23f0908b72e6ce707e29f0c"
+    },
+    "vistas_validas_treino_2026-10-27/intervencoes_diversas.json": {
+      "bytes": 169427,
+      "sha256": "b6b9dab8dbc73d03013ac7cf74c609bbef72f849bd5865fa71f03af3e7376ac2"
+    },
+    "vistas_validas_treino_2026-10-27/melhor_modelo.pt": {
+      "bytes": 33685531,
+      "sha256": "b30d7de89266a2a6a45f5a3765be314bf62f8226499ea883d8d10f83539c10c1"
+    },
+    "vistas_validas_treino_2026-10-27/protocolo.json": {
+      "bytes": 329297,
+      "sha256": "eaf26f9ba14e224949a6020d282a71dc7a2ede8d8ef9f0587a4f5f02967bae2d"
+    },
+    "vistas_validas_treino_2026-10-27/REFERENCIA_AJUSTE.json": {
+      "bytes": 136,
+      "sha256": "0d9f045c5dbafd83833af321d57bbf14516a7625aa6bbe0df38adc4d02153d5f"
+    },
+    "vistas_validas_treino_2026-10-27/referencia_ajuste.npz": {
+      "bytes": 1159219,
+      "sha256": "eb1a46b1a3afa3b838c106bb62b0baab72d3c90568dc01a9c3ef95439f525185"
+    },
+    "vistas_validas_treino_2026-10-27/rows.json": {
+      "bytes": 786765,
+      "sha256": "f015208f57ef456016495bf24ae35daa31c0c43718a97d192e089049bd434893"
+    },
+    "vistas_validas_treino_2026-10-27/scores_baseline_internal_clean.npz": {
+      "bytes": 10328,
+      "sha256": "004da4d5d76973bcbc77d11eef48f6cf0c290ef0f5d25b3730d42a944f23c583"
+    },
+    "vistas_validas_treino_2026-10-27/scores_baseline_internal_lower10.npz": {
+      "bytes": 10410,
+      "sha256": "692026c9cb3e5770fe822b82f54706d0ae3a8159b49177d86317e307076d0c4d"
+    },
+    "vistas_validas_treino_2026-10-27/scores_baseline_internal_upper10.npz": {
+      "bytes": 10397,
+      "sha256": "a6e1904f0d16659bfe7c8359277089b0fb3432c5768c8616007ea87586f6de7f"
+    },
+    "vistas_validas_treino_2026-10-27/scores_baseline_monitor_clean.npz": {
+      "bytes": 37742,
+      "sha256": "5e4a49855697c8d2b2747028d7b8a45a78906a89e4e16e8ef4ee683eed18ae07"
+    },
+    "vistas_validas_treino_2026-10-27/scores_baseline_monitor_lower10.npz": {
+      "bytes": 37985,
+      "sha256": "0c49be6d8b0394cd248c5d3c19e9195c59da710c928256e6901fb4caa1cfd012"
+    },
+    "vistas_validas_treino_2026-10-27/scores_baseline_monitor_upper10.npz": {
+      "bytes": 38178,
+      "sha256": "6c8d247ac8b67b7e25dff946fe95380da23dac13115c5c25975bccaf1457f0d6"
+    },
+    "vistas_validas_treino_2026-10-27/scores_internal_clean_selected.npz": {
+      "bytes": 10325,
+      "sha256": "d2aeeea9b55f2e1c81c51bb855cc1a276ff394c9177e87d541226d361ab846b5"
+    },
+    "vistas_validas_treino_2026-10-27/scores_selected_internal_clean.npz": {
+      "bytes": 10325,
+      "sha256": "d2aeeea9b55f2e1c81c51bb855cc1a276ff394c9177e87d541226d361ab846b5"
+    },
+    "vistas_validas_treino_2026-10-27/scores_selected_internal_lower10.npz": {
+      "bytes": 10449,
+      "sha256": "c2d4ec601bafdb9bae1a86d853cd16355990ad88aab7b15b3e769d23c7c63b62"
+    },
+    "vistas_validas_treino_2026-10-27/scores_selected_internal_upper10.npz": {
+      "bytes": 10382,
+      "sha256": "5122db67cfba91a9cc49d83b65e47e39d15eb7cc628de6174722e36ceaef0866"
+    },
+    "vistas_validas_treino_2026-10-27/scores_selected_monitor_clean.npz": {
+      "bytes": 37711,
+      "sha256": "bb5d98539ee00cc271de8e9e8520b57128d71a9aee100476b3ace4bb48ee0627"
+    },
+    "vistas_validas_treino_2026-10-27/scores_selected_monitor_lower10.npz": {
+      "bytes": 37988,
+      "sha256": "08480c21ac9ce6655292bea2ebf90554abf76b4c703b7a614a505daa5d094d0b"
+    },
+    "vistas_validas_treino_2026-10-27/scores_selected_monitor_upper10.npz": {
+      "bytes": 38139,
+      "sha256": "c85bd41a33410b053073ef4c06594e0aa319bd36d08fb4f2a607ee7f6139bee1"
+    },
+    "vistas_validas_treino_2026-10-27/source.py": {
+      "bytes": 17304,
+      "sha256": "2965a29c4945f4d3e398a770d1975f0facac8277869aaa681dbbaacdb77acaa6"
+    },
+    "vistas_validas_treino_2026-10-27/VISTAS_AJUSTE.json": {
+      "bytes": 158,
+      "sha256": "d5f4bb875a0475b1cc787b1fedb1eae4a2a61a20fc41fe29c47530c6c2a8ba53"
+    },
+    "scripts/treinar_vistas_validas.py": {
+      "bytes": 17304,
+      "sha256": "2965a29c4945f4d3e398a770d1975f0facac8277869aaa681dbbaacdb77acaa6"
+    },
+    "scripts/oclusao_diversa_polar.py": {
+      "bytes": 5579,
+      "sha256": "b0c1a646b6cd1c866b483f0d8fc6e0185ddaad8ce2d4937266991c36da010f92"
+    },
+    "scripts/perda_vistas_validas.py": {
+      "bytes": 2195,
+      "sha256": "0425fc04e424c51d320185ef8495f98fe5b91c92016cd7a582c02408a0218c7c"
+    },
+    "scripts/test_perda_vistas_validas.py": {
+      "bytes": 2765,
+      "sha256": "7d4c2e27f2fd8453fb8247a5728bde40978038503cd4b42e380c5602cff7029d"
+    },
+    "scripts/ajuste_bloco_polar.py": {
+      "bytes": 1904,
+      "sha256": "0d1bf7f5bdd096f596c17839bf5a6490e919d4f71a7c64d3935fd1d025fcef51"
+    },
+    "scripts/auditar_vistas_validas.py": {
+      "bytes": 11108,
+      "sha256": "0de18974952725db27540771cc03cf9e9f47c8d8509c859b5722847cdea63d19"
+    },
+    "scripts/reproduzir_amostra_oclusao_diversa.py": {
+      "bytes": 3924,
+      "sha256": "5fd5537884fdceffe9ee5a1b00b650d4a9d13fde0288fd86e02ac93ac162832e"
+    },
+    "scripts/test_oclusao_diversa_polar.py": {
+      "bytes": 1189,
+      "sha256": "d60928e5516d336a1640d2078d0f0899ac2a5038f64225fe4badd4517642626a"
+    },
+    "scripts/preservar_vistas_validas.py": {
+      "bytes": 4263,
+      "sha256": "055e08ab589dd0925636710012b0c7538b5ec848a1f861d43f1f32ff9b91a031"
+    },
+    "scripts/perda_fmr_polar.py": {
+      "bytes": 1642,
+      "sha256": "15256d8ffa4f3976b8b954520b215c5b4f2dddb541e525f431d993e01b6fc4c8"
+    },
+    "scripts/encoder_polar_espacial.py": {
+      "bytes": 3029,
+      "sha256": "b022672c1c97bb93c1c64d3df0b4be52044643ac311373b7d17235b3bc0bf9a9"
+    },
+    "scripts/perda_top3_polar.py": {
+      "bytes": 1356,
+      "sha256": "08ccde64234ff6156d5bfdb0c3d17a1475f219613ce275d6ac908cf03fba197a"
+    },
+    "scripts/perda_identidade_polar.py": {
+      "bytes": 1065,
+      "sha256": "2663b88f379d00f688198d1d7ce76540bc1b883f59a7e049c38364d9245e8489"
+    },
+    "scripts/treinar_adaptador_polar.py": {
+      "bytes": 18999,
+      "sha256": "d96649deacba6a257b2ba3a1d3c468676d3e7eb1189ec4827e6ac1459c88c6ee"
+    },
+    "scripts/treinar_adaptador_polar_original.py": {
+      "bytes": 13460,
+      "sha256": "a07414f70dddd672a077761363f29d56f5d63915e304e4b358951b1c51b15969"
+    },
+    "vistas_validas_treino_2026-10-27/ultima_epoca.xor": {
+      "bytes": 33685531,
+      "sha256": "bd6eee6d5e404b44ead04b69dd15ad6f78aa534801e587393a3953c1e5c47fb4"
+    }
+  },
+  "excluded_feature_caches": {},
+  "reconstructed_checkpoint": {
+    "base": "vistas_validas_treino_2026-10-27/melhor_modelo.pt",
+    "delta": "vistas_validas_treino_2026-10-27/ultima_epoca.xor",
+    "target": "vistas_validas_treino_2026-10-27/ultima_epoca.pt",
+    "bytes": 33685520,
+    "sha256": "5a674bd5902a1f110358e5aee246d2a1b4fb022c251986fd6d2315e2155e2ba1"
+  }
+}
