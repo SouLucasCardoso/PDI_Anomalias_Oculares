@@ -1,0 +1,95 @@
+{
+  "external_scripts_executed": false,
+  "source": {
+    "dataset.py": {
+      "sha256": "eb75b3511030332c0bc30eef62d4491731831520509ba293997908424d5e2d29",
+      "relevant_calls": [
+        {
+          "line": 74,
+          "function": "get_bounding_box",
+          "arguments": [
+            "ground_truth_mask"
+          ]
+        }
+      ],
+      "cuda2_lines": [],
+      "module_level_training_loops": []
+    },
+    "sam_infer.py": {
+      "sha256": "83af0d1be8bfff9b67d29bf018027148594faa2c6893781a90c9a20d551fb956",
+      "relevant_calls": [
+        {
+          "line": 78,
+          "function": "draw_box_points",
+          "arguments": [
+            "input_image"
+          ]
+        }
+      ],
+      "cuda2_lines": [],
+      "module_level_training_loops": []
+    },
+    "sam_infer_auto.py": {
+      "sha256": "1f635116df495c4a145c1a9620d9885deb3ca62c517a8098c99e729fa4b6867c",
+      "relevant_calls": [
+        {
+          "line": 94,
+          "function": "draw_box_points",
+          "arguments": [
+            "input_image"
+          ]
+        }
+      ],
+      "cuda2_lines": [],
+      "module_level_training_loops": []
+    },
+    "sam_test.py": {
+      "sha256": "e52e8c3af3e3563d93e3030ef3ce8b5467e8c484de69b104f43f75b178b16593",
+      "relevant_calls": [],
+      "cuda2_lines": [
+        87
+      ],
+      "module_level_training_loops": []
+    },
+    "sam_train_losses.py": {
+      "sha256": "69fd2accad236b3f80ca668cdd7689f7ac1fa097e5f87844ca9927b75e609f77",
+      "relevant_calls": [
+        {
+          "line": 203,
+          "function": "train",
+          "arguments": [
+            "args"
+          ]
+        }
+      ],
+      "cuda2_lines": [
+        43
+      ],
+      "module_level_training_loops": [
+        197
+      ]
+    },
+    "utils/common.py": {
+      "sha256": "6babf0cf7767466b6e494e803bba14e3475b1b68c7192398115c5119401fec42",
+      "relevant_calls": [],
+      "cuda2_lines": [],
+      "module_level_training_loops": []
+    }
+  },
+  "non_image_placeholders": [
+    {
+      "file": "data/test/images/img.jpg",
+      "bytes": 1
+    },
+    {
+      "file": "data/train/images/img.jpg",
+      "bytes": 1
+    }
+  ],
+  "standard_LICENSE_files": [],
+  "interpretation": {
+    "automatic_script_still_calls_interactive_box": true,
+    "test_dataset_box_comes_from_reference": true,
+    "train_module_has_unconditional_training_loop": true
+  }
+}

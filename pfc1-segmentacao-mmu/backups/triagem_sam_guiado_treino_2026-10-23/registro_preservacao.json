@@ -1,0 +1,57 @@
+{
+  "zip_bytes": 148228,
+  "zip_sha256": "4eedd61e357c054b78034621a8e16f11b7bc754656d35a64abe348286a565117",
+  "parts": [
+    "parte_001.b64",
+    "parte_002.b64",
+    "parte_003.b64",
+    "parte_004.b64"
+  ],
+  "files": {
+    "triagem_sam_guiado_treino_2026-10-23/AUDITORIA_REPRODUCAO.json": {
+      "bytes": 254,
+      "sha256": "c612f859e1e50ddd39b47fe0dad9e7662c2decebc5bcceb6db34c4327faca2b4"
+    },
+    "triagem_sam_guiado_treino_2026-10-23/CONCLUIDO.json": {
+      "bytes": 1715,
+      "sha256": "8203776eb483aecb575cbc6e2c6a307b2339873ac6a8782ea91bd985b2fb62c8"
+    },
+    "triagem_sam_guiado_treino_2026-10-23/mascaras_empacotadas.npz": {
+      "bytes": 169474,
+      "sha256": "a0566a3db1b5b3c5483be5b4d182bd79bb9463d04b5c02c07ffbd048efd6ae64"
+    },
+    "triagem_sam_guiado_treino_2026-10-23/metricas_por_imagem.csv": {
+      "bytes": 25376,
+      "sha256": "e1126efdc0286fa42a4b8cac85446abca56af891a60c58aa466f89ef0772c8e3"
+    },
+    "triagem_sam_guiado_treino_2026-10-23/prompts.json": {
+      "bytes": 64989,
+      "sha256": "bbfa3395c90701689b6a967cf79e0cbbdca7a3b1cee4c138afbbf7bbc049bc51"
+    },
+    "triagem_sam_guiado_treino_2026-10-23/protocolo.json": {
+      "bytes": 7273,
+      "sha256": "778904b92c5775ae0573d47ba93bec4a6a1dd4752bd92b5129d8d2859c4a5f51"
+    },
+    "triagem_sam_guiado_treino_2026-10-23/source.py": {
+      "bytes": 11191,
+      "sha256": "6e70a0e6c4b9537fc4fb3f1f9a12482e52cd78954526ea1f2a66164327bc5673"
+    },
+    "scripts/piloto_sam_guiado.py": {
+      "bytes": 11191,
+      "sha256": "6e70a0e6c4b9537fc4fb3f1f9a12482e52cd78954526ea1f2a66164327bc5673"
+    },
+    "scripts/test_piloto_sam_guiado.py": {
+      "bytes": 809,
+      "sha256": "f9ade01939ee3b71999168388155ce3b0dc16d6f84e807fa247dd0be99501ce7"
+    },
+    "scripts/verificar_triagem_sam.py": {
+      "bytes": 3487,
+      "sha256": "eb6a74dbe6eb0addeba9aabfcae331a4883c207a1336adad9da63947103d1a68"
+    },
+    "scripts/preservar_triagem_sam.py": {
+      "bytes": 2848,
+      "sha256": "c1bff868c2df78d51a1a940d6a31990adcf381ab2c8d1bf3ca4f4726457ba2f4"
+    }
+  },
+  "excluded_feature_caches": {}
+}

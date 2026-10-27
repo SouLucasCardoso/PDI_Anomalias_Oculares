@@ -1,0 +1,10 @@
+{
+  "registered_utc": "2026-10-23T19:00:40.509341+00:00",
+  "scope": "Exploratory development validation; follow-up registered after clean TTA Rank1=433/482 and TAR431/482, before viewing occluded TTA results. No independent confirmation.",
+  "strategy": "Equal mean of logits of original frozen fusion and clean-calibrated TTA fusion, then same per-query score normalization. Exactly one weight choice: 50/50. Two processing hypotheses of ONE photo, same side and16candidates. No query-label selection or quality filtering.",
+  "calibration": "One new threshold on CLEAN validation only; same frozen threshold for both10% occlusions. Branches use their own already fixed clean component calibration. AND availability/validity retains failures as rejections.",
+  "evaluation": "Clean Rank1/TAR>=90% and FMR<=1%; both occluded Rank1/TAR improve versus original and FMR<=1%. No promotion or test inference automatically.",
+  "stopping": "One fixed consensus, no weight search or best-per-query branch selection.",
+  "source_sha256": "68cffbb69a57b275a1ef57c3428e595728f7a4fee982c2be58ee9fcd78e4c71a",
+  "tta_protocol_sha256": "aa7a8a9dcbb3db55f71f64eccfce878a238e49a4513634d6163e9d938fceca26"
+}

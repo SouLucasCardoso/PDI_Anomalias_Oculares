@@ -1,0 +1,102 @@
+{
+  "zip_bytes": 9046016,
+  "zip_sha256": "a8d6e1a2dd02a55f55c919c61440cbc562f8f85f6a365efc6244adee0d490ab2",
+  "parts": [
+    "parte_001.b64",
+    "parte_002.b64",
+    "parte_003.b64",
+    "parte_004.b64",
+    "parte_005.b64",
+    "parte_006.b64",
+    "parte_007.b64",
+    "parte_008.b64",
+    "parte_009.b64",
+    "parte_010.b64",
+    "parte_011.b64",
+    "parte_012.b64",
+    "parte_013.b64"
+  ],
+  "files": {
+    "coorte_polar_separada_2026-10-23/AUDITORIA_REPRODUCAO.json": {
+      "bytes": 315,
+      "sha256": "a4b0e44c3a8755726ee6625f7d5ad34221226693c2dd84428e858c547ce5c041"
+    },
+    "coorte_polar_separada_2026-10-23/CONCLUIDO.json": {
+      "bytes": 7188,
+      "sha256": "08794aae255d6c22c7053db3996c43b179f76b5c951c96950b215e53c4361a36"
+    },
+    "coorte_polar_separada_2026-10-23/coorte.npz": {
+      "bytes": 4244339,
+      "sha256": "f3cc029e87fe4e5ea2afb01719956c36364fc58d73125c2e8f3e2ad7080b9e1b"
+    },
+    "coorte_polar_separada_2026-10-23/dependency_protocol.json": {
+      "bytes": 5177,
+      "sha256": "1b240d382ad59f6acb371cf79c19c51d471f4781d74dd6dde982a12dc7d0fabc"
+    },
+    "coorte_polar_separada_2026-10-23/dependency_rows.json": {
+      "bytes": 786765,
+      "sha256": "f015208f57ef456016495bf24ae35daa31c0c43718a97d192e089049bd434893"
+    },
+    "coorte_polar_separada_2026-10-23/grupos_coorte.json": {
+      "bytes": 72725,
+      "sha256": "37a34d6b834024410747e3940db1a20e6e395b04f7f3585e6a6473fbc8f148d5"
+    },
+    "coorte_polar_separada_2026-10-23/protocolo.json": {
+      "bytes": 2124,
+      "sha256": "bba1e8f32b168fd673ebfe8063c2c2e373fcfc48dc98d695c46fcc0fd9209a63"
+    },
+    "coorte_polar_separada_2026-10-23/scores_internal_clean.npz": {
+      "bytes": 597122,
+      "sha256": "1e67e4d310cc481fe68cb6bf2219ed027bf7744b764d78394e8762f7aa5eaaac"
+    },
+    "coorte_polar_separada_2026-10-23/scores_internal_lower10.npz": {
+      "bytes": 597294,
+      "sha256": "5e6edbaae8895d720fba678a850932ad29f4e0ed7782d38c718eb66fece45905"
+    },
+    "coorte_polar_separada_2026-10-23/scores_internal_upper10.npz": {
+      "bytes": 596371,
+      "sha256": "aa8a6ebe44bb9380648fe8d3ce69a9c74caad833a314fa778ed8d4a249d34514"
+    },
+    "coorte_polar_separada_2026-10-23/scores_monitor_clean.npz": {
+      "bytes": 983789,
+      "sha256": "1e93effe4268fcdfe6421cd4ca14bfc9d124466edf3409ef25f34d0173f94bcd"
+    },
+    "coorte_polar_separada_2026-10-23/scores_monitor_lower10.npz": {
+      "bytes": 984638,
+      "sha256": "55966a2b29f8235094031bb3a61b24d4246f0479adc925c9cc7bef318d346cf6"
+    },
+    "coorte_polar_separada_2026-10-23/scores_monitor_upper10.npz": {
+      "bytes": 984587,
+      "sha256": "5646b1ac9304dec5bd75632ad5fa2e5f677c27b7ac5358941d0eec364b23f038"
+    },
+    "coorte_polar_separada_2026-10-23/source.py": {
+      "bytes": 8119,
+      "sha256": "7f895df0382100dc8882abc4954ec29a28bb16510febef8f2662e8bd2b1476d6"
+    },
+    "scripts/avaliar_coorte_polar.py": {
+      "bytes": 8119,
+      "sha256": "7f895df0382100dc8882abc4954ec29a28bb16510febef8f2662e8bd2b1476d6"
+    },
+    "scripts/normalizacao_coorte_polar.py": {
+      "bytes": 1035,
+      "sha256": "3bb482267471ef9ec31e6c7fd9635d3b859608c1967f4ab4df76e21fa6229f26"
+    },
+    "scripts/auditar_coorte_polar.py": {
+      "bytes": 3812,
+      "sha256": "fa6c0704d4c6efcc07c75f964f8255d8bb9d0b36270113aaf209b7c48ac7cf65"
+    },
+    "scripts/test_normalizacao_coorte_polar.py": {
+      "bytes": 1100,
+      "sha256": "1339530bd006c5696a4d50e132d468b2cb5a8a2d4571a067a20508a08546475d"
+    },
+    "scripts/preservar_coorte_polar.py": {
+      "bytes": 2952,
+      "sha256": "3fc03043e0ded3b50a32331620cbc8261c00540d2b2b012138f230b43fee9e68"
+    },
+    "scripts/treinar_bloco_fmr_separado.py": {
+      "bytes": 13372,
+      "sha256": "f230f94852875687a935e02dba744ba566805535bfac36f52bbc80a2484c58b4"
+    }
+  },
+  "excluded_feature_caches": {}
+}

@@ -1,0 +1,16 @@
+{
+  "status": "restored_original_checkpoints_and_scores_reaudited",
+  "zip_files": 40,
+  "parts": 44,
+  "zip_bytes": 32765878,
+  "selected_epoch": 8,
+  "selected_checkpoint_sha256": "121fd97966a3216956304c4c0cbf7c1b143cb7acf1485af209364fbbfabb432d",
+  "last_checkpoint_sha256": "f6456ac87345432d266e6268da7ed7871544b925a96d3af5fe4cf4ab97c770a7",
+  "lossless_checkpoint_reconstruction_verified": true,
+  "selection_and_score_decisions_reproduced": true,
+  "monitor_gate_passed": false,
+  "native_sample_audit_cases": 32,
+  "native_sample_maximum_feature_difference": 0.0,
+  "cache_excluded_from_package": true,
+  "cloud_upload_verified": false
+}

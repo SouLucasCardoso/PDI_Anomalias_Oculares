@@ -1,0 +1,194 @@
+{
+  "status": "midpoint_scores_inputs_and_boundary_audited",
+  "records": [
+    {
+      "rank1": 0.911522633744856,
+      "tar": 0.9238683127572016,
+      "fnmr": 0.0761316872427984,
+      "far": 0.008916323731138546,
+      "eer_descriptive": 0.0411522633744856,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.9258019825385876,
+      "margin_mean_valid": 0.14552469285641306,
+      "tag": "superior_0p5",
+      "occluded_percent": 0.5,
+      "nominal_retained_percent": 99.5,
+      "rank1_correct": 443,
+      "genuine_accepted": 449,
+      "false_accepts": 65,
+      "passed": true,
+      "defined_queries": 480,
+      "empty_reference_queries": 6,
+      "defined_zero_selected_queries": 1,
+      "actual_loss_percent_mean": 0.49860145759475694,
+      "actual_loss_percent_min": 0.0,
+      "actual_loss_percent_max": 0.5454545454545455,
+      "unchanged_inputs_verified": true,
+      "zero_intervention_scores_equal_original": true,
+      "intervals95_percent": {
+        "rank1": [
+          85.0,
+          95.625
+        ],
+        "tar": [
+          86.04166666666667,
+          96.87596450617282
+        ],
+        "fmr": [
+          0.5416666666666667,
+          1.2601626016260163
+        ]
+      },
+      "joint_pass_fraction_of_resamples": 0.62
+    },
+    {
+      "rank1": 0.8909465020576132,
+      "tar": 0.8888888888888888,
+      "fnmr": 0.11111111111111116,
+      "far": 0.010150891632373114,
+      "eer_descriptive": 0.051440329218107,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.9148163443867982,
+      "margin_mean_valid": 0.12931544053618116,
+      "tag": "inferior_1p5",
+      "occluded_percent": 1.5,
+      "nominal_retained_percent": 98.5,
+      "rank1_correct": 433,
+      "genuine_accepted": 432,
+      "false_accepts": 74,
+      "passed": false,
+      "defined_queries": 480,
+      "empty_reference_queries": 6,
+      "defined_zero_selected_queries": 0,
+      "actual_loss_percent_mean": 1.5000711718956268,
+      "actual_loss_percent_min": 1.4545454545454546,
+      "actual_loss_percent_max": 1.694915254237288,
+      "unchanged_inputs_verified": true,
+      "zero_intervention_scores_equal_original": true,
+      "intervals95_percent": {
+        "rank1": [
+          81.06995884773663,
+          94.71544715447155
+        ],
+        "tar": [
+          80.65760030864197,
+          94.84163727219281
+        ],
+        "fmr": [
+          0.6527777777777778,
+          1.3789303555686148
+        ]
+      },
+      "joint_pass_fraction_of_resamples": 0.2632
+    }
+  ],
+  "boundaries": {
+    "superior": {
+      "smallest_passing_retained_percent_on_tested_prefix": 99.5,
+      "first_failing_retained_percent": 99,
+      "loss_grid": [
+        0,
+        0.5,
+        1,
+        10
+      ],
+      "records": [
+        {
+          "loss": 0.5,
+          "retained": 99.5,
+          "passed": true
+        },
+        {
+          "loss": 1,
+          "retained": 99,
+          "passed": false
+        },
+        {
+          "loss": 10,
+          "retained": 90,
+          "passed": false
+        }
+      ]
+    },
+    "inferior": {
+      "smallest_passing_retained_percent_on_tested_prefix": 99,
+      "first_failing_retained_percent": 98.5,
+      "loss_grid": [
+        0,
+        1,
+        1.5,
+        2,
+        10
+      ],
+      "records": [
+        {
+          "loss": 1,
+          "retained": 99,
+          "passed": true
+        },
+        {
+          "loss": 1.5,
+          "retained": 98.5,
+          "passed": false
+        },
+        {
+          "loss": 2,
+          "retained": 98,
+          "passed": false
+        },
+        {
+          "loss": 10,
+          "retained": 90,
+          "passed": false
+        }
+      ]
+    },
+    "common": {
+      "smallest_passing_retained_percent_on_common_tested_prefix": 100,
+      "loss_grid": [
+        0,
+        1,
+        10
+      ],
+      "note": "Use only levels evaluated in BOTH orientations. Do not infer lower0.5% or take maximum of orientation minima as a common certified fraction."
+    }
+  },
+  "maximum_fusion_score_difference": 0.0,
+  "threshold_unchanged": 0.8581747485460748,
+  "source_hashes": {
+    "superior_0p5": {
+      "rgb": "2c6e806f059ff2a263fc17a0fb694319df7806d0399b1bfd6d99a610dd5e8653",
+      "polar": "fd36440c10758d3ab5cb3d41cffe0dae323a6de9c9695aa60d27413d20bea7cf",
+      "spatial": "5cd8021a7a9f01e93c7724889b84fdc0025f55d650a6d85072cf6e7d6dbede7e",
+      "r50": "adb0ce5560adbd8c8f21e567cefb2a027ebc5eb9e7126d239ea34c3cdd305a5a",
+      "convnext": "fa2c58bc737c6db53465584d30b3baa99220346046494852276b94bd8e5df175",
+      "native": "bac2feeb5bf849e2df52d882edab7bbc4341103fc98f4f9136ad0bc56467c235",
+      "transformer": "2047784ece2c49a40c8d7f2f5437883efa3284b9fedc98032513ab4eafd18dab",
+      "arc_clahe": "d637fc9bff6675eb6e85f2a67e9c2c9864a251e69790b19f231e2cfeb065ea6e",
+      "arc_red": "b607106cff37e4533a831a8bcd1effe52f7bb2f82966ae1159e54cdcd144546b",
+      "finais": "fa0fbeca537112fe323520aece86a6c66b232bb0d48be36cad65a3341191c266"
+    },
+    "inferior_1p5": {
+      "rgb": "87ab32bc94c34976f9878c33e3e225aaa2af95c123ff15bb908824cf49b58986",
+      "polar": "23c47605d58d195969fcd6b297630d3f4c40cc4e98d9836d1b60095ceced44af",
+      "spatial": "83fa079bce038e6446060983debba42892bb902a2ced90405ff0ff0c56cccb8d",
+      "r50": "2d52a7b21bad1e50de01dc7ae2e0235b06f2e90c463496349106bef64b79b9da",
+      "convnext": "bf3a1ca6f415f28097203c4d180cee5993b7b532a495d0e4205a490ca0d44912",
+      "native": "8c848ea2a29ef76c112d0cd9dbf16a3cdb613b3f419da4abb18716d2984f6a13",
+      "transformer": "a3202c28b4ea26b7f1558fd442740546fcbf2e7f40c6ddd3c7568c235657bf7b",
+      "arc_clahe": "b3e09f2abfe9532b17e91a88ca0eacdfd6e37094dfa7e6141a145b8ded079ff5",
+      "arc_red": "cd7c233228bedb6f45c89d4fdb1500934d71ec7a707308fda066dbbd1bff5625",
+      "finais": "11efc28db80dec60912186f5d6646645585cee8454cd032213a69fadb4dfd381"
+    }
+  },
+  "bootstrap_repetitions": 5000,
+  "bootstrap_seed": 20261001,
+  "audit_source_sha256": "f5d361a4ed633abbfb6e1a00ebcedf8319986d448c7d3fb3b4bcfa2e28e5b9a7",
+  "training": false,
+  "threshold_recalibrated": false,
+  "anatomical_minimum": null,
+  "clinical_minimum": null,
+  "limits": "Two prespecified exploratory additions on exposed test. Irregular tested grid,lower0.5% absent; no continuous/uniform0.5pp claim. Fixed gallery/threshold,16people,pointwise95% intervals,unknown pretraining overlap. Bootstrap pass frequencies NOT posterior population success probabilities."
+}

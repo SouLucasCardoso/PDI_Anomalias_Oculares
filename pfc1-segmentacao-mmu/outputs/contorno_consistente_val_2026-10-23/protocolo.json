@@ -1,0 +1,28 @@
+{
+  "registered_utc": "2026-10-23T19:23:27.214556+00:00",
+  "scope": "Exploratory reused development validation ONLY, conditional on training geometry gate; no test inference or automatic promotion.",
+  "intervention": "Only polar outer ellipse from whole-photo frozen-U-Net features and trained residual; fixed guards fallback to original. RGB/native crops, masks and inner ellipses unchanged. Gray/red textures recomputed from original or occluded query pixels. One photograph,side informed,16same-side candidates,all482queries and480S1images.",
+  "comparisons": "Primary clean-only recalibration of component means/stds and threshold, applied unchanged to both10%occlusions; secondary old fixed calibration diagnostic. Same9components/equal8groups; no group or parameter search.",
+  "advancement": "Clean Rank1/TAR>=90%,FMR<=1%; BOTH10%occlusions improve Rank1 and TAR vs reference and FMR<=1%. Separate absolute target flag requires Rank1/TAR>=90% and FMR<=1% in all3conditions. No promotion or test inference automatically.",
+  "training_experiment": "contorno_consistente_2026-10-23",
+  "training_protocol_sha256": "1a579e2ad9ea1566834b983033628a145195355650e3087a1d6b35d196780dcf",
+  "module_sha256": "ae661c4e882b9740210f6dae195b31bebb75c0bd969b5be097ef11db95ffde70",
+  "script_sha256": "b166a76cd5feaec52ad32b561a5ce54704322dd01b88199b7c431cb9bf668547",
+  "conditions": [
+    [
+      "clean",
+      "original",
+      0
+    ],
+    [
+      "upper10",
+      "oclusao_superior",
+      10
+    ],
+    [
+      "lower10",
+      "oclusao_inferior",
+      10
+    ]
+  ]
+}

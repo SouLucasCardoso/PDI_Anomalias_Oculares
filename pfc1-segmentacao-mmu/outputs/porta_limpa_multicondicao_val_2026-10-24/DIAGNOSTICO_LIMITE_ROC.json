@@ -1,0 +1,7 @@
+{
+  "scope": "Descriptive oracle ROC limit ONLY, not deployable calibration; NO threshold replacement or promotion",
+  "maximum_empirical_TAR_at_FMR_one_percent": 0.7759336099585062,
+  "oracle_fmr": 0.00995850622406639,
+  "rank1": 0.9045643153526971,
+  "production_threshold_changed": false
+}

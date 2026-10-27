@@ -1,0 +1,224 @@
+{
+  "registered_utc": "2026-10-23T22:40:24.782500+00:00",
+  "scope": "Feasibility ONLY32S2original-TRAINphotos,one per eye of16reused internal-monitor people;3conditions=96cases. No validation/test or biometric inference. Not a population comparison.",
+  "external_assessment": "External pipeline is anchored Pinus instance separation/green chroma/geodesic competition and stem measurement, not iris segmentation. No iris-trained weights found. Do NOT install/import/run it. Test ONLY transferable SAM prompted-refinement idea in existing iris project.",
+  "distinction": "External default SAM2 Hiera Tiny; this adaptation uses already-downloaded SAM2.1 Hiera Tiny through Transformers, not exact reproduction of external package. DINO disabled, no model download/install/network.",
+  "candidate": "Frozen U-Net native mask supplies bbox+5percentpadding, up to4distance-maxpositivepoints by bboxquadrant, negativepredictedholecenterifpresent plus2outsidecorners. SAM highestpredictedIoU candidate only. No ground-truth prompts or quality-based selection, no fallback to U-Net. Missingprompt means empty candidate, counted.",
+  "target": "Original full annotation AND visible target excluding exactly gray128 intervention pixels; annotation ONLYfor intervention and metrics. No hidden-tissue reconstruction claim.",
+  "conditions": [
+    "clean",
+    "upper10",
+    "lower10"
+  ],
+  "sampling": "Lexicographically first S2filename per subject/side, fixed before inference. Allcases retained; sample chosen without masks/scores.",
+  "gate": "Screen passes ONLYif mean visible Dice clean>=U-Net and upper/lower each >=U-Net+0.01, and total mean full Dice>=U-Net. No promptsearch/rerun. Pass only motivates broader training-only iris study, never automatic model promotion.",
+  "sample": [
+    {
+      "image": "C29_S2_I10_L.jpg",
+      "mask": "C29_S2_I10_L.png",
+      "subject": 29,
+      "side": "L"
+    },
+    {
+      "image": "C29_S2_I10_R.jpg",
+      "mask": "C29_S2_I10_R.png",
+      "subject": 29,
+      "side": "R"
+    },
+    {
+      "image": "C103_S2_I10_L.jpg",
+      "mask": "C103_S2_I10_L.png",
+      "subject": 103,
+      "side": "L"
+    },
+    {
+      "image": "C103_S2_I10_R.jpg",
+      "mask": "C103_S2_I10_R.png",
+      "subject": 103,
+      "side": "R"
+    },
+    {
+      "image": "C133_S2_I10_L.jpg",
+      "mask": "C133_S2_I10_L.png",
+      "subject": 133,
+      "side": "L"
+    },
+    {
+      "image": "C133_S2_I10_R.jpg",
+      "mask": "C133_S2_I10_R.png",
+      "subject": 133,
+      "side": "R"
+    },
+    {
+      "image": "C167_S2_I10_L.jpg",
+      "mask": "C167_S2_I10_L.png",
+      "subject": 167,
+      "side": "L"
+    },
+    {
+      "image": "C167_S2_I10_R.jpg",
+      "mask": "C167_S2_I10_R.png",
+      "subject": 167,
+      "side": "R"
+    },
+    {
+      "image": "C179_S2_I10_L.jpg",
+      "mask": "C179_S2_I10_L.png",
+      "subject": 179,
+      "side": "L"
+    },
+    {
+      "image": "C179_S2_I10_R.jpg",
+      "mask": "C179_S2_I10_R.png",
+      "subject": 179,
+      "side": "R"
+    },
+    {
+      "image": "C233_S2_I10_L.jpg",
+      "mask": "C233_S2_I10_L.png",
+      "subject": 233,
+      "side": "L"
+    },
+    {
+      "image": "C233_S2_I10_R.jpg",
+      "mask": "C233_S2_I10_R.png",
+      "subject": 233,
+      "side": "R"
+    },
+    {
+      "image": "C243_S2_I10_L.jpg",
+      "mask": "C243_S2_I10_L.png",
+      "subject": 243,
+      "side": "L"
+    },
+    {
+      "image": "C243_S2_I10_R.jpg",
+      "mask": "C243_S2_I10_R.png",
+      "subject": 243,
+      "side": "R"
+    },
+    {
+      "image": "C261_S2_I10_L.jpg",
+      "mask": "C261_S2_I10_L.png",
+      "subject": 261,
+      "side": "L"
+    },
+    {
+      "image": "C261_S2_I10_R.jpg",
+      "mask": "C261_S2_I10_R.png",
+      "subject": 261,
+      "side": "R"
+    },
+    {
+      "image": "C299_S2_I10_L.jpg",
+      "mask": "C299_S2_I10_L.png",
+      "subject": 299,
+      "side": "L"
+    },
+    {
+      "image": "C299_S2_I10_R.jpg",
+      "mask": "C299_S2_I10_R.png",
+      "subject": 299,
+      "side": "R"
+    },
+    {
+      "image": "C335_S2_I10_L.jpg",
+      "mask": "C335_S2_I10_L.png",
+      "subject": 335,
+      "side": "L"
+    },
+    {
+      "image": "C335_S2_I10_R.jpg",
+      "mask": "C335_S2_I10_R.png",
+      "subject": 335,
+      "side": "R"
+    },
+    {
+      "image": "C393_S2_I10_L.jpg",
+      "mask": "C393_S2_I10_L.png",
+      "subject": 393,
+      "side": "L"
+    },
+    {
+      "image": "C393_S2_I10_R.jpg",
+      "mask": "C393_S2_I10_R.png",
+      "subject": 393,
+      "side": "R"
+    },
+    {
+      "image": "C431_S2_I10_L.jpg",
+      "mask": "C431_S2_I10_L.png",
+      "subject": 431,
+      "side": "L"
+    },
+    {
+      "image": "C431_S2_I10_R.jpg",
+      "mask": "C431_S2_I10_R.png",
+      "subject": 431,
+      "side": "R"
+    },
+    {
+      "image": "C433_S2_I10_L.jpg",
+      "mask": "C433_S2_I10_L.png",
+      "subject": 433,
+      "side": "L"
+    },
+    {
+      "image": "C433_S2_I10_R.jpg",
+      "mask": "C433_S2_I10_R.png",
+      "subject": 433,
+      "side": "R"
+    },
+    {
+      "image": "C441_S2_I10_L.jpg",
+      "mask": "C441_S2_I10_L.png",
+      "subject": 441,
+      "side": "L"
+    },
+    {
+      "image": "C441_S2_I10_R.jpg",
+      "mask": "C441_S2_I10_R.png",
+      "subject": 441,
+      "side": "R"
+    },
+    {
+      "image": "C449_S2_I10_L.jpg",
+      "mask": "C449_S2_I10_L.png",
+      "subject": 449,
+      "side": "L"
+    },
+    {
+      "image": "C449_S2_I10_R.jpg",
+      "mask": "C449_S2_I10_R.png",
+      "subject": 449,
+      "side": "R"
+    },
+    {
+      "image": "C451_S2_I10_L.jpg",
+      "mask": "C451_S2_I10_L.png",
+      "subject": 451,
+      "side": "L"
+    },
+    {
+      "image": "C451_S2_I10_R.jpg",
+      "mask": "C451_S2_I10_R.png",
+      "subject": 451,
+      "side": "R"
+    }
+  ],
+  "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+  "unet_sha256": "2bcfc269ffc9562ca8cf0956998faf1e22641587cd60f7059b3cec3dd0f4093d",
+  "sam_path": "C:\\Users\\lucaz\\pfc-hf-cache\\hub\\models--facebook--sam2.1-hiera-tiny\\snapshots\\de431c4043854a71d8101e17995dfe596bf101a5",
+  "sam_revision": "de431c4043854a71d8101e17995dfe596bf101a5",
+  "sam_sha256": "48c14467e5cf9e51870511feb72c89688e82dd74523142c0538b663e193ac2a7",
+  "script_sha256": "6e70a0e6c4b9537fc4fb3f1f9a12482e52cd78954526ea1f2a66164327bc5673",
+  "external_sources": {
+    "README.md": "27387df88477ae960f4460a723e30a1c32041b0db1ef7016f37ded58150efd0c",
+    "config.yaml": "091ab9d5ed46c76c54619cb327401fbc013e57f7ac2300e21667d99c77fbe900",
+    "pyproject.toml": "78ce270cff7cf4b3a914862e98dee33a1de6414771919683df04c64dec9eb528",
+    "pinus_separator/models/sam2_provider.py": "de44c0b5d07f39a8aad42bea74f7339564863897732003c2d90e5f48cfb441bf",
+    "pinus_separator/models/dinov3_provider.py": "d711fa36d72651ffd2984ada81064d7b2de88ec5d23cc61554763e93c36855a7",
+    "pinus_separator/methods/foreground.py": "869dc95b96d3653344b2b1b23ef51809737a5dc5e7aa2f2cbaaae333d99fead6",
+    "pinus_separator/methods/separation.py": "972130aed85191e14bcd3538ea82bb4cb404a5c3d1c81199cc6d37af9bc0e503"
+  }
+}

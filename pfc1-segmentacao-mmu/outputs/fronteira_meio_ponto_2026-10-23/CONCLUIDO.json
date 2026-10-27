@@ -1,0 +1,54 @@
+{
+  "status": "bounded_midpoint_round_completed",
+  "records": [
+    {
+      "tag": "superior_0p5",
+      "orientation": "oclusao_superior",
+      "occluded_percent": 0.5,
+      "nominal_retained_percent": 99.5,
+      "result": {
+        "rank1": 0.911522633744856,
+        "tar": 0.9238683127572016,
+        "fnmr": 0.0761316872427984,
+        "far": 0.008916323731138546,
+        "eer_descriptive": 0.0411522633744856,
+        "extraction_failures": 2,
+        "queries": 486,
+        "genuine_mean_valid": 0.9258019825385876,
+        "margin_mean_valid": 0.14552469285641306
+      },
+      "rank1_correct": 443,
+      "genuine_accepted": 449,
+      "passed": true,
+      "gallery_and_empty_reference_inputs_exact": true
+    },
+    {
+      "tag": "inferior_1p5",
+      "orientation": "oclusao_inferior",
+      "occluded_percent": 1.5,
+      "nominal_retained_percent": 98.5,
+      "result": {
+        "rank1": 0.8909465020576132,
+        "tar": 0.8888888888888888,
+        "fnmr": 0.11111111111111116,
+        "far": 0.010150891632373114,
+        "eer_descriptive": 0.051440329218107,
+        "extraction_failures": 2,
+        "queries": 486,
+        "genuine_mean_valid": 0.9148163443867982,
+        "margin_mean_valid": 0.12931544053618116
+      },
+      "rank1_correct": 433,
+      "genuine_accepted": 432,
+      "passed": false,
+      "gallery_and_empty_reference_inputs_exact": true
+    }
+  ],
+  "threshold_unchanged": 0.8581747485460748,
+  "new_conditions": 2,
+  "training": false,
+  "threshold_recalibrated": false,
+  "independent_blind_test": false,
+  "anatomical_minimum": null,
+  "clinical_minimum": null
+}

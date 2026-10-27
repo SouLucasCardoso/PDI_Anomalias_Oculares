@@ -1,0 +1,12 @@
+{
+  "status": "train_transport_replay_verified",
+  "fit_indices_verified": 200,
+  "monitor_changed_indices_verified": 55,
+  "maximum_score_difference": 0.0,
+  "unchanged_rows_bit_exact": true,
+  "gate_reproduced": false,
+  "validation_identity_inference": false,
+  "test_inference": false,
+  "frozen_candidate_replaced": false,
+  "limits": "Internal monitor already seen by original encoder and used in geometry selection; proxy alignment, not independent generalization."
+}

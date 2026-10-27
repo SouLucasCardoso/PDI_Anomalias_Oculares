@@ -1,0 +1,12 @@
+{
+  "registered_utc": "2026-10-23T17:54:44.845952+00:00",
+  "scope": "Reuse ONLY previously evaluated original,upper1,lower1,lower2,upper10,lower10 test scores. No training,inference,recalibration,new loss condition or model selection. Previously exposed test,exploratory descriptive analysis.",
+  "uncertainty": "5000paired participant-cluster bootstrap draws with replacement,seed20261001. Same draws for all conditions/metrics. Gallery,threshold and models fixed. All486query failures retained;15impostors per query. Pointwise percentile95% intervals,not simultaneous coverage; does not correct repeated test/model selection or unknown external pretraining overlap.",
+  "criterion": "Existing point estimate Rank1>=.9,TAR>=.9,FMR<=.01 unchanged. Bootstrap joint-pass frequencies are resampling stability,NOT posterior probabilities or proof of population performance.",
+  "prefixes": "Upper grid[0,1]pp loss,lower[0,1,2]pp loss. Require baseline and all consecutive larger-area conditions to pass; original failure gives undefined prefix,never100%. No interpolation,monotonicity assertion or anatomical minimum.",
+  "pixel_diagnostic": "Describe selected reference-pixel fractions for hypothetical0.5% and1.5% losses using existing480reference sizes; no inference/performance estimate at these levels. Keep6empty references in main metrics.",
+  "technical_note": "Supersedes a temporary technical run whose prefix summary omitted the terminal category. Integer-count comparisons preserve exact boundary criteria. No observation or model changed.",
+  "frozen_sha256": "d933686f045eab5d6578cfe4701578d9ca1eeaaff4069bcff8427a602546dbda",
+  "script_sha256": "b8e69c4d05e6b0f8e3038ec99eedd58b8ff6ed6b0d178d044c1b80dd6fe94461",
+  "threshold": 0.8581747485460748
+}

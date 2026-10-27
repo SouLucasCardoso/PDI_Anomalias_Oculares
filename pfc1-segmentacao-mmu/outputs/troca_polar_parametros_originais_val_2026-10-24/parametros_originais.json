@@ -1,0 +1,133 @@
+{
+  "frozen_utc": "2026-10-21T04:19:48.118743+00:00",
+  "status": "development_target_reached_pending_confirmation",
+  "scope": {
+    "primary_dataset": "UBIPr",
+    "original_query_images": 1,
+    "supplied_eye_side_required": true,
+    "candidate_eyes": 16,
+    "queries": 482,
+    "impostor_comparisons": 7230,
+    "retained_extraction_failures": 4
+  },
+  "counts": {
+    "rank1_correct": 434,
+    "genuine_accepts": 437,
+    "correct_and_accepted": 426,
+    "false_accepts": 71
+  },
+  "metrics": {
+    "rank1": 0.9004149377593361,
+    "tar": 0.9066390041493776,
+    "fnmr": 0.09336099585062241,
+    "far": 0.009820193637621023,
+    "eer_descriptive": 0.04329183955739972,
+    "extraction_failures": 4,
+    "queries": 482,
+    "genuine_mean_valid": 0.9198967805247797,
+    "margin_mean_valid": 0.13741244408667197
+  },
+  "frozen_threshold": 0.8581747485460748,
+  "component_calibration_red_and_clahe": [
+    [
+      {
+        "mean": 0.13122799080806388,
+        "std": 0.10420303589640487
+      },
+      {
+        "mean": 0.123085520293729,
+        "std": 0.07507690295608112
+      },
+      {
+        "mean": 0.6224773753886442,
+        "std": 0.04882472859612996
+      },
+      {
+        "mean": 0.11163836653933283,
+        "std": 0.08259312418878491
+      },
+      {
+        "mean": 0.12028174920227375,
+        "std": 0.09432536817462622
+      },
+      {
+        "mean": 0.11934254742218295,
+        "std": 0.08647527110228072
+      },
+      {
+        "mean": 0.129551823712925,
+        "std": 0.10089495964456476
+      },
+      {
+        "mean": 0.5568074217600181,
+        "std": 0.013710306782633292
+      }
+    ],
+    [
+      {
+        "mean": 0.13122799080806388,
+        "std": 0.10420303589640487
+      },
+      {
+        "mean": 0.123085520293729,
+        "std": 0.07507690295608112
+      },
+      {
+        "mean": 0.6224773753886442,
+        "std": 0.04882472859612996
+      },
+      {
+        "mean": 0.11163836653933283,
+        "std": 0.08259312418878491
+      },
+      {
+        "mean": 0.12028174920227375,
+        "std": 0.09432536817462622
+      },
+      {
+        "mean": 0.11934254742218295,
+        "std": 0.08647527110228072
+      },
+      {
+        "mean": 0.129551823712925,
+        "std": 0.10089495964456476
+      },
+      {
+        "mean": 0.5483656686206722,
+        "std": 0.012939933953774223
+      }
+    ]
+  ],
+  "method": "Seven prior components each1/8; ArcIris contributes1/8 as mean of red and CLAHE standardized scores; logistic then per-query logit standardization over16 candidates. Fixed threshold above. No test recalibration.",
+  "limitations": [
+    "Repeatedly reused development validation; selection bias",
+    "ArcIris external pretraining identities undocumented; overlap unknown",
+    "Not a minimum iris area result",
+    "Rank1 and TAR are separate criteria, not necessarily same successes"
+  ],
+  "exact_score_reconstruction": true,
+  "test_inference": false,
+  "minimum_area": null,
+  "artifacts_sha256": {
+    "outputs\\arciris_polar_2026-10-21\\CONCLUIDO.json": "656b36ee64ffba539ba47c07b482ea72ceeb3c4bcb5024bd1262d51d336a1769",
+    "outputs\\arciris_polar_2026-10-21\\protocolo.json": "ad6547f0d894a077924e31db51fb36e80632de4e0c89d7cdbf700704d514ca84",
+    "outputs\\arciris_polar_2026-10-21\\scores_arciris.npz": "9c072721a301de2dac1c6524a6bd5b56db9e5bbbef6db764bb2867b52b2f1771",
+    "outputs\\arciris_polar_2026-10-21\\scores_full32.npz": "b7d8872e1103965bb2ec9e27943d4c0edbaf1a98800a37ef2228fcc45be9b2d6",
+    "outputs\\arciris_polar_2026-10-21\\scores_fusion8.npz": "351d139a2690db18dde7b9b3447287809ceeb76eca7ba1be86e7a45125d69f13",
+    "outputs\\arciris_polar_2026-10-21\\scores_fusion8_normalized.npz": "195aa79385ff5aebde54587696628332f49cf8c24503b6820c2271c6511b4506",
+    "outputs\\arciris_polar_2026-10-21\\source.py": "d9ee692075def9bf38e1410130b21c95e6e523bada1fd5bad13a839416464060",
+    "outputs\\arciris_red_2026-10-21\\CONCLUIDO.json": "0ed1da076d2faab6c6231a5a0e031f0be3689561c8e1413ae4cf73c583d2e110",
+    "outputs\\arciris_red_2026-10-21\\protocolo.json": "a665ef9f283c9837f90d3215de4a178fbbf10e905fca587c73ff0786116f6722",
+    "outputs\\arciris_red_2026-10-21\\scores_arciris.npz": "d47cdae0d057417f974de89d78cd69c917a59857e7611c729e4b2f75544ddbd3",
+    "outputs\\arciris_red_2026-10-21\\scores_full32.npz": "9c2f30c06474febb7b24db4500ee7c49396957791c5adb18e9a51d33cfca5494",
+    "outputs\\arciris_red_2026-10-21\\scores_fusion8.npz": "87b826f98699570c2c44506a9eb9be4905a8d0d822f8cda6cc333ebc72bf1b0b",
+    "outputs\\arciris_red_2026-10-21\\scores_fusion8_normalized.npz": "7bb91a15d071f55358ad10958bcc8351a18d53585ac7a617951e276c99bc4ab6",
+    "outputs\\arciris_red_2026-10-21\\source.py": "c47395a1afd610727d6750c65a25bf4fea21a3d60fda1f040052e067fbc16d8b",
+    "outputs\\arciris_duas_vistas_2026-10-21\\CONCLUIDO.json": "e7fa472d4f5d0facdb854238796ce50d061ddd94b7b2969f68a250ed81365f5c",
+    "outputs\\arciris_duas_vistas_2026-10-21\\protocolo.json": "a2496fd9d87cdf1b14137b12cfa39629467700f1a2f174da5078024ffc73a56a",
+    "outputs\\arciris_duas_vistas_2026-10-21\\scores_equal_views.npz": "5948221da87b16b123c992e72fd4b63f41033e708f9335f9b26d0d161dcce8ad",
+    "outputs\\arciris_duas_vistas_2026-10-21\\scores_equal_views_normalized.npz": "e1887204003ca951798c9074a9ec9290e704835181efc4edc6eaeb086ad7c916",
+    "outputs\\arciris_duas_vistas_2026-10-21\\source.py": "7b386933c890cd4be36cd01949a5ad596f2113174106dde9df4fcc20efc375a3"
+  },
+  "next_required": "Confirm frozen configuration/threshold on separate evaluation with previous exposure disclosed, then assess occlusion curves; do not retune using confirmation results."
+}

@@ -1,0 +1,67 @@
+{
+  "status": "top3_hardnegative_adapter_verified",
+  "selected_epoch": 11,
+  "training_selection_reproduced": true,
+  "checkpoint_hashes_verified": true,
+  "feature_forward_and_scores_exact": false,
+  "score_decisions_reproduced": true,
+  "monitor_gate_reproduced": false,
+  "records": [
+    {
+      "strategy": "baseline",
+      "condition": "clean",
+      "correct": 479,
+      "accepted": 479
+    },
+    {
+      "strategy": "baseline",
+      "condition": "upper10",
+      "correct": 396,
+      "accepted": 372
+    },
+    {
+      "strategy": "baseline",
+      "condition": "lower10",
+      "correct": 291,
+      "accepted": 268
+    },
+    {
+      "strategy": "selected",
+      "condition": "clean",
+      "correct": 479,
+      "accepted": 479
+    },
+    {
+      "strategy": "selected",
+      "condition": "upper10",
+      "correct": 404,
+      "accepted": 377
+    },
+    {
+      "strategy": "selected",
+      "condition": "lower10",
+      "correct": 328,
+      "accepted": 287
+    },
+    {
+      "strategy": "last",
+      "condition": "clean",
+      "correct": 479,
+      "accepted": 479
+    },
+    {
+      "strategy": "last",
+      "condition": "upper10",
+      "correct": 404,
+      "accepted": 376
+    },
+    {
+      "strategy": "last",
+      "condition": "lower10",
+      "correct": 324,
+      "accepted": 287
+    }
+  ],
+  "new_cnn_inference": false,
+  "validation_skipped_by_gate": true
+}

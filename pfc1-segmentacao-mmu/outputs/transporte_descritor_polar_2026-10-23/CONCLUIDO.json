@@ -1,0 +1,60 @@
+{
+  "status": "train_only_polar_transport_completed",
+  "fit_changed_images": 200,
+  "monitor_changed_images": 55,
+  "original_fallback_images": 259,
+  "actual_changed_images": 255,
+  "monitor_queries": 480,
+  "results": [
+    {
+      "rank1": 0.9979166666666667,
+      "tar": 0.9979166666666667,
+      "fnmr": 0.002083333333333326,
+      "far": 0.00986111111111111,
+      "eer_descriptive": 0.0020833333333333333,
+      "extraction_failures": 1,
+      "queries": 480,
+      "genuine_mean_valid": 0.7689173079731569,
+      "margin_mean_valid": 0.5406496443461027,
+      "method": "original",
+      "threshold": 0.28573266665140795
+    },
+    {
+      "rank1": 0.9958333333333333,
+      "tar": 0.9958333333333333,
+      "fnmr": 0.004166666666666652,
+      "far": 0.00986111111111111,
+      "eer_descriptive": 0.004166666666666667,
+      "extraction_failures": 1,
+      "queries": 480,
+      "genuine_mean_valid": 0.7560902484585696,
+      "margin_mean_valid": 0.5264013763970813,
+      "method": "ellipse",
+      "threshold": 0.28674998879432684
+    },
+    {
+      "rank1": 0.9979166666666667,
+      "tar": 0.99375,
+      "fnmr": 0.006249999999999978,
+      "far": 0.00986111111111111,
+      "eer_descriptive": 0.008333333333333333,
+      "extraction_failures": 1,
+      "queries": 480,
+      "genuine_mean_valid": 0.7512603400478616,
+      "margin_mean_valid": 0.522355189841181,
+      "method": "transported",
+      "threshold": 0.28573266665140795
+    }
+  ],
+  "monitor_teacher_cosine_before": 0.7400505416413207,
+  "monitor_teacher_cosine_after": 0.6613028818973776,
+  "recognition_validation_gate_passed": false,
+  "parameters_sha256": "c2ba73acdf2d792c0581b5f10a7d4e91209a4c29073ff79a38a5aa5d7490474b",
+  "encoder_sha256_unchanged": true,
+  "unchanged_images_exact": true,
+  "original_polar_fallback_inputs_exact": true,
+  "validation_identity_inference": false,
+  "test_inference": false,
+  "frozen_candidate_replaced": false,
+  "minimum_area": null
+}

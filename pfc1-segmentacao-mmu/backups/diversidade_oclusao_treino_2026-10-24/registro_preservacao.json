@@ -1,0 +1,229 @@
+{
+  "zip_bytes": 32765878,
+  "zip_sha256": "774ccbc63fb2863728456bc58b220f926bd6e69f42c07b0e02b3408682cc0f84",
+  "parts": [
+    "parte_001.b64",
+    "parte_002.b64",
+    "parte_003.b64",
+    "parte_004.b64",
+    "parte_005.b64",
+    "parte_006.b64",
+    "parte_007.b64",
+    "parte_008.b64",
+    "parte_009.b64",
+    "parte_010.b64",
+    "parte_011.b64",
+    "parte_012.b64",
+    "parte_013.b64",
+    "parte_014.b64",
+    "parte_015.b64",
+    "parte_016.b64",
+    "parte_017.b64",
+    "parte_018.b64",
+    "parte_019.b64",
+    "parte_020.b64",
+    "parte_021.b64",
+    "parte_022.b64",
+    "parte_023.b64",
+    "parte_024.b64",
+    "parte_025.b64",
+    "parte_026.b64",
+    "parte_027.b64",
+    "parte_028.b64",
+    "parte_029.b64",
+    "parte_030.b64",
+    "parte_031.b64",
+    "parte_032.b64",
+    "parte_033.b64",
+    "parte_034.b64",
+    "parte_035.b64",
+    "parte_036.b64",
+    "parte_037.b64",
+    "parte_038.b64",
+    "parte_039.b64",
+    "parte_040.b64",
+    "parte_041.b64",
+    "parte_042.b64",
+    "parte_043.b64",
+    "parte_044.b64"
+  ],
+  "files": {
+    "diversidade_oclusao_treino_2026-10-24/AUDITORIA_AMOSTRA_NATIVA.json": {
+      "bytes": 433,
+      "sha256": "a6c1e7a2c40b74be39d39deb04593c5f11b440fb41466317aeb9586df70c5e7f"
+    },
+    "diversidade_oclusao_treino_2026-10-24/AUDITORIA_REPRODUCAO.json": {
+      "bytes": 480,
+      "sha256": "54fb2a80001659bcaa74b83ea4b8fe4284891e5db069a3bd3e775a867e82f006"
+    },
+    "diversidade_oclusao_treino_2026-10-24/CACHE_DIVERSO_CONCLUIDO.json": {
+      "bytes": 364,
+      "sha256": "328b2a6310605b3752a8b21c9dcb1cdef7c44129c98ca0c2852b80cd2836b11a"
+    },
+    "diversidade_oclusao_treino_2026-10-24/CONCLUIDO.json": {
+      "bytes": 7519,
+      "sha256": "eb36b849551eb64025b21f25223e2f89281e15b923c298d53ce2fdc3d9c09022"
+    },
+    "diversidade_oclusao_treino_2026-10-24/historico.csv": {
+      "bytes": 993,
+      "sha256": "fac3fa6cdd6d9354162e35fe69f478aff8c299b9e2640aeff0c4f3132de6cfa0"
+    },
+    "diversidade_oclusao_treino_2026-10-24/indices_ajuste.npz": {
+      "bytes": 26277,
+      "sha256": "07b98affef7da05a8aa31a791baa231de1600ceea23f0908b72e6ce707e29f0c"
+    },
+    "diversidade_oclusao_treino_2026-10-24/intervencoes_diversas.json": {
+      "bytes": 169427,
+      "sha256": "b6b9dab8dbc73d03013ac7cf74c609bbef72f849bd5865fa71f03af3e7376ac2"
+    },
+    "diversidade_oclusao_treino_2026-10-24/melhor_modelo.pt": {
+      "bytes": 33684827,
+      "sha256": "121fd97966a3216956304c4c0cbf7c1b143cb7acf1485af209364fbbfabb432d"
+    },
+    "diversidade_oclusao_treino_2026-10-24/protocolo.json": {
+      "bytes": 328636,
+      "sha256": "0ba87e5f619b3caccbdf8b54e215e76c9fdec32cf58b89957e5016d3cf6d5896"
+    },
+    "diversidade_oclusao_treino_2026-10-24/REFERENCIA_AJUSTE.json": {
+      "bytes": 136,
+      "sha256": "0d9f045c5dbafd83833af321d57bbf14516a7625aa6bbe0df38adc4d02153d5f"
+    },
+    "diversidade_oclusao_treino_2026-10-24/referencia_ajuste.npz": {
+      "bytes": 1159219,
+      "sha256": "eb1a46b1a3afa3b838c106bb62b0baab72d3c90568dc01a9c3ef95439f525185"
+    },
+    "diversidade_oclusao_treino_2026-10-24/rows.json": {
+      "bytes": 786765,
+      "sha256": "f015208f57ef456016495bf24ae35daa31c0c43718a97d192e089049bd434893"
+    },
+    "diversidade_oclusao_treino_2026-10-24/scores_baseline_internal_clean.npz": {
+      "bytes": 10328,
+      "sha256": "004da4d5d76973bcbc77d11eef48f6cf0c290ef0f5d25b3730d42a944f23c583"
+    },
+    "diversidade_oclusao_treino_2026-10-24/scores_baseline_internal_lower10.npz": {
+      "bytes": 10410,
+      "sha256": "692026c9cb3e5770fe822b82f54706d0ae3a8159b49177d86317e307076d0c4d"
+    },
+    "diversidade_oclusao_treino_2026-10-24/scores_baseline_internal_upper10.npz": {
+      "bytes": 10397,
+      "sha256": "a6e1904f0d16659bfe7c8359277089b0fb3432c5768c8616007ea87586f6de7f"
+    },
+    "diversidade_oclusao_treino_2026-10-24/scores_baseline_monitor_clean.npz": {
+      "bytes": 37742,
+      "sha256": "5e4a49855697c8d2b2747028d7b8a45a78906a89e4e16e8ef4ee683eed18ae07"
+    },
+    "diversidade_oclusao_treino_2026-10-24/scores_baseline_monitor_lower10.npz": {
+      "bytes": 37985,
+      "sha256": "0c49be6d8b0394cd248c5d3c19e9195c59da710c928256e6901fb4caa1cfd012"
+    },
+    "diversidade_oclusao_treino_2026-10-24/scores_baseline_monitor_upper10.npz": {
+      "bytes": 38178,
+      "sha256": "6c8d247ac8b67b7e25dff946fe95380da23dac13115c5c25975bccaf1457f0d6"
+    },
+    "diversidade_oclusao_treino_2026-10-24/scores_internal_clean_selected.npz": {
+      "bytes": 10342,
+      "sha256": "e6c3dd258ce826a24263f5389fc45a9ad118e7f5adca3eea9a84023dd275454b"
+    },
+    "diversidade_oclusao_treino_2026-10-24/scores_selected_internal_clean.npz": {
+      "bytes": 10342,
+      "sha256": "e6c3dd258ce826a24263f5389fc45a9ad118e7f5adca3eea9a84023dd275454b"
+    },
+    "diversidade_oclusao_treino_2026-10-24/scores_selected_internal_lower10.npz": {
+      "bytes": 10411,
+      "sha256": "9900631d21844b3a397362933f521699b63e2116217a1ec86d5ce7b73ce464c9"
+    },
+    "diversidade_oclusao_treino_2026-10-24/scores_selected_internal_upper10.npz": {
+      "bytes": 10408,
+      "sha256": "89c956355a6fe20fbea906fa4c49bce2f842a31cc751c8ea7f80ad2e221e2b3c"
+    },
+    "diversidade_oclusao_treino_2026-10-24/scores_selected_monitor_clean.npz": {
+      "bytes": 37701,
+      "sha256": "43c3749000670bd8f17fe233ce5c796c23275aff91b188b14338a9582a4aa103"
+    },
+    "diversidade_oclusao_treino_2026-10-24/scores_selected_monitor_lower10.npz": {
+      "bytes": 38007,
+      "sha256": "38cb6431932c1f9eccb2a703bf11e0b4d0d795e9ef4003fadab79bfe86a416b8"
+    },
+    "diversidade_oclusao_treino_2026-10-24/scores_selected_monitor_upper10.npz": {
+      "bytes": 38116,
+      "sha256": "d7ff4b0aa688a3cd92b65b7fed987394f96aaa541b6eb4d6577e8ddbf42f69ea"
+    },
+    "diversidade_oclusao_treino_2026-10-24/source.py": {
+      "bytes": 15896,
+      "sha256": "6fdc20c0abebe62e381067a01cce2eee5ab7ac5705fdebd77dd8e4ec4366c319"
+    },
+    "scripts/treinar_diversidade_oclusao.py": {
+      "bytes": 15896,
+      "sha256": "6fdc20c0abebe62e381067a01cce2eee5ab7ac5705fdebd77dd8e4ec4366c319"
+    },
+    "scripts/oclusao_diversa_polar.py": {
+      "bytes": 5579,
+      "sha256": "b0c1a646b6cd1c866b483f0d8fc6e0185ddaad8ce2d4937266991c36da010f92"
+    },
+    "scripts/ajuste_bloco_polar.py": {
+      "bytes": 1904,
+      "sha256": "0d1bf7f5bdd096f596c17839bf5a6490e919d4f71a7c64d3935fd1d025fcef51"
+    },
+    "scripts/auditar_diversidade_oclusao.py": {
+      "bytes": 9817,
+      "sha256": "2471f5830a49c31babd501de83e0b030fc922893680c0ba865d1df4b2f3a090f"
+    },
+    "scripts/reproduzir_amostra_oclusao_diversa.py": {
+      "bytes": 3924,
+      "sha256": "5fd5537884fdceffe9ee5a1b00b650d4a9d13fde0288fd86e02ac93ac162832e"
+    },
+    "scripts/test_oclusao_diversa_polar.py": {
+      "bytes": 1189,
+      "sha256": "d60928e5516d336a1640d2078d0f0899ac2a5038f64225fe4badd4517642626a"
+    },
+    "scripts/preservar_diversidade_oclusao.py": {
+      "bytes": 4220,
+      "sha256": "16cf06bd4313f921556ec1efb65f31cac4e108dae754c5c39e5b263960f0eff4"
+    },
+    "scripts/perda_fmr_polar.py": {
+      "bytes": 1642,
+      "sha256": "15256d8ffa4f3976b8b954520b215c5b4f2dddb541e525f431d993e01b6fc4c8"
+    },
+    "scripts/encoder_polar_espacial.py": {
+      "bytes": 3029,
+      "sha256": "b022672c1c97bb93c1c64d3df0b4be52044643ac311373b7d17235b3bc0bf9a9"
+    },
+    "scripts/perda_top3_polar.py": {
+      "bytes": 1356,
+      "sha256": "08ccde64234ff6156d5bfdb0c3d17a1475f219613ce275d6ac908cf03fba197a"
+    },
+    "scripts/perda_identidade_polar.py": {
+      "bytes": 1065,
+      "sha256": "2663b88f379d00f688198d1d7ce76540bc1b883f59a7e049c38364d9245e8489"
+    },
+    "scripts/treinar_adaptador_polar.py": {
+      "bytes": 18999,
+      "sha256": "d96649deacba6a257b2ba3a1d3c468676d3e7eb1189ec4827e6ac1459c88c6ee"
+    },
+    "scripts/treinar_adaptador_polar_original.py": {
+      "bytes": 13460,
+      "sha256": "a07414f70dddd672a077761363f29d56f5d63915e304e4b358951b1c51b15969"
+    },
+    "diversidade_oclusao_treino_2026-10-24/ultima_epoca.xor": {
+      "bytes": 33684827,
+      "sha256": "da50383f14c859970809ae01a766d37813135a69028bc3b9628709afea2482d9"
+    }
+  },
+  "excluded_feature_caches": {
+    "diversidade_oclusao_treino_2026-10-24/cache_diverso.npy": {
+      "bytes": 422314112,
+      "sha256": "71f1b257758afda43b17fb2ea84913bc880611f5ae47b3d9715acda9415a7033"
+    },
+    "diversidade_oclusao_treino_2026-10-24/cache_diverso_valid.npz": {
+      "bytes": 257,
+      "sha256": "ea292ac0111ad1e2ee1d5adf20efda14f6a57f8b9483963cb3685b63ce073572"
+    }
+  },
+  "reconstructed_checkpoint": {
+    "base": "diversidade_oclusao_treino_2026-10-24/melhor_modelo.pt",
+    "delta": "diversidade_oclusao_treino_2026-10-24/ultima_epoca.xor",
+    "target": "diversidade_oclusao_treino_2026-10-24/ultima_epoca.pt",
+    "bytes": 33684816,
+    "sha256": "f6456ac87345432d266e6268da7ed7871544b925a96d3af5fe4cf4ab97c770a7"
+  }
+}

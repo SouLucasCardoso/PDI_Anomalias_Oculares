@@ -1,0 +1,12 @@
+{
+  "fit_valid_paired_photos": 6665,
+  "fit_people": 167,
+  "monitor_photos": 960,
+  "monitor_people": 16,
+  "monitor_queries": 480,
+  "prototype_eyes": 334,
+  "prototype_clean_enrollment_photos": 4955,
+  "fit_S2_photos_with_identity_loss": 1729,
+  "source_cache_sha256": "eedfb2218eba4455442b60af044fca221526aab0087cf41f9427390784cafdc9",
+  "new_cnn_inference": false
+}

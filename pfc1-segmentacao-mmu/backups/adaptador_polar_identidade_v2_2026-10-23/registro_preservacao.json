@@ -1,0 +1,180 @@
+{
+  "zip_bytes": 1487320,
+  "zip_sha256": "f9154edc514143465892beb4ac9eef26c625f0203de1b778af5df71bfce64b79",
+  "parts": [
+    "parte_001.b64",
+    "parte_002.b64",
+    "parte_003.b64",
+    "parte_004.b64",
+    "parte_005.b64",
+    "parte_006.b64",
+    "parte_007.b64",
+    "parte_008.b64",
+    "parte_009.b64",
+    "parte_010.b64",
+    "parte_011.b64",
+    "parte_012.b64",
+    "parte_013.b64",
+    "parte_014.b64",
+    "parte_015.b64",
+    "parte_016.b64",
+    "parte_017.b64",
+    "parte_018.b64",
+    "parte_019.b64",
+    "parte_020.b64",
+    "parte_021.b64",
+    "parte_022.b64",
+    "parte_023.b64",
+    "parte_024.b64",
+    "parte_025.b64",
+    "parte_026.b64",
+    "parte_027.b64",
+    "parte_028.b64",
+    "parte_029.b64",
+    "parte_030.b64",
+    "parte_031.b64"
+  ],
+  "files": {
+    "adaptador_polar_identidade_v2_2026-10-23/AUDITORIA_DADOS.json": {
+      "bytes": 381,
+      "sha256": "1ae61d7699a2591f1d5a2bec679fa2bfed69db547a9a3d0b2798d125f8d0ccd9"
+    },
+    "adaptador_polar_identidade_v2_2026-10-23/AUDITORIA_REPRODUCAO.json": {
+      "bytes": 1457,
+      "sha256": "b29077115aa825048be3a68abe3559ad64dd002dbfde70ee7422e9e1cbdc6586"
+    },
+    "adaptador_polar_identidade_v2_2026-10-23/CONCLUIDO.json": {
+      "bytes": 5096,
+      "sha256": "70d9e3d57bd45c2d5d451109786f0ede11efd5f8fcb5e31210f7ff8f00ae7d3f"
+    },
+    "adaptador_polar_identidade_v2_2026-10-23/historico.csv": {
+      "bytes": 3329,
+      "sha256": "f4cbdb58916725b5e9394bee21afff19c44f893e044c991e6c47bc0737032a05"
+    },
+    "adaptador_polar_identidade_v2_2026-10-23/melhor_modelo.pt": {
+      "bytes": 406301,
+      "sha256": "d99a420fda35e789068115bf5436453c8d7c8d50c0e6bb93fdf1b7b6819b8c90"
+    },
+    "adaptador_polar_identidade_v2_2026-10-23/protocolo.json": {
+      "bytes": 4878,
+      "sha256": "0d455ad32dc6ad8dc5281356c6eff80aa9c7a10d1c052dfb5f7b0a37fffadddf"
+    },
+    "adaptador_polar_identidade_v2_2026-10-23/prototipos_ajuste.npz": {
+      "bytes": 334369,
+      "sha256": "3a3477e31aeb3a6eb76e77ab99dacfb2a70a1e7dd3b46ff7453d58f8b0c904b8"
+    },
+    "adaptador_polar_identidade_v2_2026-10-23/PROVENIENCIA_CACHE.json": {
+      "bytes": 273,
+      "sha256": "85f750e2a20269b3d5f05c4f19cfb7c94e4911baac11eb45d5b72159fecce54d"
+    },
+    "adaptador_polar_identidade_v2_2026-10-23/rows.json": {
+      "bytes": 786765,
+      "sha256": "f015208f57ef456016495bf24ae35daa31c0c43718a97d192e089049bd434893"
+    },
+    "adaptador_polar_identidade_v2_2026-10-23/scores_baseline_clean.npz": {
+      "bytes": 37759,
+      "sha256": "6f6a1126e7ff948f0de22e5f045c8b8c5bc8495a123442e8781ed8457adaa363"
+    },
+    "adaptador_polar_identidade_v2_2026-10-23/scores_baseline_lower10.npz": {
+      "bytes": 37976,
+      "sha256": "c2fb73a21610ae296ec0ce3efb8fbbb404172570cd2f02000bd253096bca80dd"
+    },
+    "adaptador_polar_identidade_v2_2026-10-23/scores_baseline_upper10.npz": {
+      "bytes": 38086,
+      "sha256": "84a9150b4c46ca202bcfc00f3b1c181821913c7e53ba21aa5aa37cc51d4cae3b"
+    },
+    "adaptador_polar_identidade_v2_2026-10-23/scores_last_clean.npz": {
+      "bytes": 37710,
+      "sha256": "ca146f0446296a781b7f77fa7696dabf4090eff2486c0811b6589f4d6d9f64a5"
+    },
+    "adaptador_polar_identidade_v2_2026-10-23/scores_last_lower10.npz": {
+      "bytes": 38027,
+      "sha256": "21988e0049f8d1c171d9a65448aaa52d50930fca6d87b0437a718676a8499e8b"
+    },
+    "adaptador_polar_identidade_v2_2026-10-23/scores_last_upper10.npz": {
+      "bytes": 38080,
+      "sha256": "0ba54ba99ec7fe3017905055ea94860880a934af54d87a9f030d6d625bfb5f4f"
+    },
+    "adaptador_polar_identidade_v2_2026-10-23/scores_selected_clean.npz": {
+      "bytes": 37710,
+      "sha256": "ca146f0446296a781b7f77fa7696dabf4090eff2486c0811b6589f4d6d9f64a5"
+    },
+    "adaptador_polar_identidade_v2_2026-10-23/scores_selected_lower10.npz": {
+      "bytes": 38027,
+      "sha256": "21988e0049f8d1c171d9a65448aaa52d50930fca6d87b0437a718676a8499e8b"
+    },
+    "adaptador_polar_identidade_v2_2026-10-23/scores_selected_upper10.npz": {
+      "bytes": 38080,
+      "sha256": "0ba54ba99ec7fe3017905055ea94860880a934af54d87a9f030d6d625bfb5f4f"
+    },
+    "adaptador_polar_identidade_v2_2026-10-23/source.py": {
+      "bytes": 10672,
+      "sha256": "5fce6d7a4f5e253fa53245bace6571d517b639c6a2f27a91e71c77172c89ccf1"
+    },
+    "adaptador_polar_identidade_v2_2026-10-23/ultima_epoca.pt": {
+      "bytes": 406289,
+      "sha256": "4ac6516a4c9a4edb2c94ddc3db2b3796f5241044b1b0eb2b273a6d8811374380"
+    },
+    "adaptador_polar_identidade_v2_val_2026-10-23/CONCLUIDO.json": {
+      "bytes": 240,
+      "sha256": "05aad632e5cdf2a9a907801b1676166b1d5e0a81fa409beb124d319dbd4546ff"
+    },
+    "adaptador_polar_identidade_v2_val_2026-10-23/protocolo.json": {
+      "bytes": 1172,
+      "sha256": "f13316e94bbb39639697018f8062ca9b1041164b3c10d6ee54f104c55326484a"
+    },
+    "adaptador_polar_identidade_v2_val_2026-10-23/source.py": {
+      "bytes": 8071,
+      "sha256": "d5f9dfa10445da271820a39c9563ede1506936827050c68b500220d9fce71b39"
+    },
+    "technical_interruption_v1/protocolo.json": {
+      "bytes": 4649,
+      "sha256": "b2eb8faa5defc8a05bc331216c4fd421869eb911807842a3f546ee6267ec8078"
+    },
+    "technical_interruption_v1/source.py": {
+      "bytes": 10434,
+      "sha256": "63f231444e0cab4c867666d5e577aef0f15b5675658ad0deda9c3002efa35c95"
+    },
+    "technical_interruption_v1/historico.csv": {
+      "bytes": 405,
+      "sha256": "dfd15969c7319276e7d6f1c31ea28a419e5cdb36746ff76d48e24f0b22d17b79"
+    },
+    "scripts/treinar_adaptador_polar_identidade.py": {
+      "bytes": 10672,
+      "sha256": "5fce6d7a4f5e253fa53245bace6571d517b639c6a2f27a91e71c77172c89ccf1"
+    },
+    "scripts/perda_identidade_polar.py": {
+      "bytes": 1065,
+      "sha256": "2663b88f379d00f688198d1d7ce76540bc1b883f59a7e049c38364d9245e8489"
+    },
+    "scripts/test_perda_identidade_polar.py": {
+      "bytes": 1792,
+      "sha256": "73c47b2058fd77b5394065692d42277505de4bb380c311bffbf6a83b4160b196"
+    },
+    "scripts/verificar_adaptador_identidade.py": {
+      "bytes": 6473,
+      "sha256": "1a88de37a685d22975d140188163c3d57c69bcc53073e9296c081d856216175b"
+    },
+    "scripts/preservar_adaptador_identidade.py": {
+      "bytes": 3568,
+      "sha256": "44a8f3eadbb68aad06b67c189526d03607439b577021c30948ec0c16d49e8569"
+    },
+    "scripts/validar_adaptador_identidade.py": {
+      "bytes": 8071,
+      "sha256": "d5f9dfa10445da271820a39c9563ede1506936827050c68b500220d9fce71b39"
+    },
+    "scripts/treinar_adaptador_polar_original.py": {
+      "bytes": 13460,
+      "sha256": "a07414f70dddd672a077761363f29d56f5d63915e304e4b358951b1c51b15969"
+    },
+    "scripts/treinar_adaptador_polar.py": {
+      "bytes": 18999,
+      "sha256": "d96649deacba6a257b2ba3a1d3c468676d3e7eb1189ec4827e6ac1459c88c6ee"
+    },
+    "scripts/adaptador_polar.py": {
+      "bytes": 1668,
+      "sha256": "211ca146fed33d61c6752ffea78e4e3ac1ea4890499690974294b3aef87166ea"
+    }
+  },
+  "excluded_feature_caches": {}
+}

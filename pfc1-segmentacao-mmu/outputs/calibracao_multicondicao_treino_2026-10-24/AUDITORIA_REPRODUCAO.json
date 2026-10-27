@@ -1,0 +1,9 @@
+{
+  "status": "20261024_compact_evidence_audited",
+  "experiment": "calibracao_multicondicao_treino_2026-10-24",
+  "single_global_threshold_exact": true,
+  "all_scores_and_metrics_exact": true,
+  "all_monitor_fmr_at_most_one_percent": true,
+  "absolute_target_reached": false,
+  "new_image_inference": false
+}

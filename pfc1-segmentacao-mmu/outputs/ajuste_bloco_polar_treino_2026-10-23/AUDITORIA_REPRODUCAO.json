@@ -1,0 +1,67 @@
+{
+  "status": "full_layer4_finetuning_verified",
+  "selected_epoch": 8,
+  "training_selection_reproduced": true,
+  "checkpoint_hashes_verified": true,
+  "feature_forward_and_scores_exact": true,
+  "score_decisions_reproduced": true,
+  "monitor_gate_reproduced": false,
+  "records": [
+    {
+      "strategy": "baseline",
+      "condition": "clean",
+      "correct": 479,
+      "accepted": 479
+    },
+    {
+      "strategy": "baseline",
+      "condition": "upper10",
+      "correct": 396,
+      "accepted": 372
+    },
+    {
+      "strategy": "baseline",
+      "condition": "lower10",
+      "correct": 291,
+      "accepted": 268
+    },
+    {
+      "strategy": "selected",
+      "condition": "clean",
+      "correct": 479,
+      "accepted": 479
+    },
+    {
+      "strategy": "selected",
+      "condition": "upper10",
+      "correct": 407,
+      "accepted": 392
+    },
+    {
+      "strategy": "selected",
+      "condition": "lower10",
+      "correct": 342,
+      "accepted": 297
+    },
+    {
+      "strategy": "last",
+      "condition": "clean",
+      "correct": 479,
+      "accepted": 479
+    },
+    {
+      "strategy": "last",
+      "condition": "upper10",
+      "correct": 407,
+      "accepted": 392
+    },
+    {
+      "strategy": "last",
+      "condition": "lower10",
+      "correct": 342,
+      "accepted": 297
+    }
+  ],
+  "new_full_image_inference": false,
+  "trainable_scope_and_frozen_state_verified": true
+}

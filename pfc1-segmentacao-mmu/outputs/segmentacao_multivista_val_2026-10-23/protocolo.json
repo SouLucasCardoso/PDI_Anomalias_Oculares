@@ -1,0 +1,48 @@
+{
+  "registered_utc": "2026-10-23T18:57:03.870470+00:00",
+  "scope": "One fixed exploratory development-validation pilot; no test images or selection on test; prior validation repeatedly used.",
+  "intervention": "Only segmentation probabilities: equal mean of original, horizontal mirror with output unmirrored, LAB-L CLAHE clip2 grid8. Same original photo supplies recognition pixels. No clean counterpart, reconstructed texture, enrollment/query photo selection, or new identity weights.",
+  "transforms": 3,
+  "query_photos": 1,
+  "candidates_same_side": 16,
+  "conditions": [
+    [
+      "clean",
+      "original",
+      0
+    ],
+    [
+      "upper10",
+      "oclusao_superior",
+      10
+    ],
+    [
+      "lower10",
+      "oclusao_inferior",
+      10
+    ]
+  ],
+  "primary": "New component means/stds and operating threshold calibrated once on CLEAN validation only. Unchanged equal8group fusion, apply same parameters to both occluded conditions. Secondary old fixed calibration is diagnostic only.",
+  "acceptance": "Clean Rank1>=90%,TAR>=90%,FMR<=1%; both10% occlusions must improve Rank1 and TAR against original AND retain FMR<=1%. No automatic promotion or test evaluation even if passes.",
+  "stopping": "Execute all three specified conditions once; no transform/weight search in this pilot.",
+  "failures": "All482 queries and480 original enrollment images; failed extraction rejects and stays in denominators; annotations only determine simulated occlusion.",
+  "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+  "unet_sha256": "2bcfc269ffc9562ca8cf0956998faf1e22641587cd60f7059b3cec3dd0f4093d",
+  "identity_sha256": {
+    "rgb": "7c03b4c7ef4c54e5f86e58eb550ffc124fa11384fe5c3f5b947d1041178e706d",
+    "polar": "db93dfcca33b8a77cd3bfbaa66f07d1efae2e976414d67748ccf5eff4a5ebe5c",
+    "r50": "699b8236211da2fd43b104f157b6cc3835bd5d89a01a74a5b75ce4261bf35e24",
+    "convnext": "a03400e62df6282e4532dce75fabd6e12d06678a8de7dc3e55a2a274c60f1529",
+    "native": "6530b1227f271789ca7ad8a7d9011d2a9e9ee6fe71a7ce4079d2ed8a75b3388f",
+    "transformer": "0ad83d9f9c78e434bda11e99e01c90cc197e7e5127c3aed75e5da6df38808b87"
+  },
+  "script_sha256": "4778e8bd345a917b81e7e7c7ac07f71e182bd8def49616498dc67970eda51494",
+  "dependencies_sha256": {
+    "avaliar_candidato_congelado.py": "9f727ef17eb0e87c51ea2ee3d6527f950717ddd80e6ef9ec9c7a33611c947586",
+    "reconhecedor_convnext.py": "7e121f99323b2c4c9d988621969fc4cd37d207a796a43994a949f95841554230",
+    "validar_fusao_identidade_adaptada.py": "0d08e311a9fcd765e8755b18144ec69b4e1a22dc8ef7d40737b027998c76d1de",
+    "avaliar_robustez_reconhecimento.py": "e6d0b8d8eb78dc2e86ed3f73084cd9fb5d83d1afee27f73ca0ffbee1a5947f95",
+    "textura_polar.py": "f977efb2101f2b23338041513908d4deb6eea51a2a730c8f71f0d20c19bcdadc",
+    "normalizacao_eliptica.py": "370f61686ce7209b3e705b1dc9b2ffa55bb0eac0cf54911f1edc3d92d7aca72a"
+  }
+}

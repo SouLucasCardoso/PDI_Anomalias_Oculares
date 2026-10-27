@@ -1,0 +1,12 @@
+{
+  "status": "rounds_restored_all_hashes_and_decisions_verified",
+  "files": 65,
+  "parts": 4,
+  "zip_bytes": 2681651,
+  "destination": "%TEMP%/pfc-rodadas-restauradas-20261024",
+  "multidomain_calibration_audit_passed": true,
+  "clean_validation_audit_passed": true,
+  "isolated_swap_audit_passed": true,
+  "candidate_promoted": false,
+  "cloud_upload_verified": false
+}

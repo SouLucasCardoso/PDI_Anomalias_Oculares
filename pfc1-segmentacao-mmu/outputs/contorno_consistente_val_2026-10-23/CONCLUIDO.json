@@ -1,0 +1,357 @@
+{
+  "status": "outer_contour_identity_validation_completed",
+  "results": [
+    {
+      "rank1": 0.8921161825726142,
+      "tar": 0.8983402489626556,
+      "fnmr": 0.10165975103734437,
+      "far": 0.009820193637621023,
+      "eer_descriptive": 0.04536652835408022,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.919243902692252,
+      "margin_mean_valid": 0.1398887466627528,
+      "strategy": "outer_clean_calibrated",
+      "condition": "clean",
+      "rank1_correct": 430,
+      "genuine_accepted": 433,
+      "threshold": 0.8547834078878219
+    },
+    {
+      "rank1": 0.7883817427385892,
+      "tar": 0.7738589211618258,
+      "fnmr": 0.22614107883817425,
+      "far": 0.012033195020746889,
+      "eer_descriptive": 0.07420470262793914,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.8889361211463706,
+      "margin_mean_valid": 0.09148139025210444,
+      "strategy": "outer_clean_calibrated",
+      "condition": "upper10",
+      "rank1_correct": 380,
+      "genuine_accepted": 373,
+      "threshold": 0.8547834078878219
+    },
+    {
+      "rank1": 0.6348547717842323,
+      "tar": 0.6161825726141079,
+      "fnmr": 0.3838174273858921,
+      "far": 0.02074688796680498,
+      "eer_descriptive": 0.13485477178423236,
+      "extraction_failures": 7,
+      "queries": 482,
+      "genuine_mean_valid": 0.8433795741688425,
+      "margin_mean_valid": 0.027434802876895842,
+      "strategy": "outer_clean_calibrated",
+      "condition": "lower10",
+      "rank1_correct": 306,
+      "genuine_accepted": 297,
+      "threshold": 0.8547834078878219
+    },
+    {
+      "rank1": 0.8900414937759336,
+      "tar": 0.8921161825726142,
+      "fnmr": 0.10788381742738584,
+      "far": 0.008852005532503458,
+      "eer_descriptive": 0.04515905947441217,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.9192509309166126,
+      "margin_mean_valid": 0.13984682486543282,
+      "strategy": "outer_fixed_diagnostic",
+      "condition": "clean",
+      "rank1_correct": 429,
+      "genuine_accepted": 430,
+      "threshold": 0.8581747485460748
+    },
+    {
+      "rank1": 0.7883817427385892,
+      "tar": 0.7634854771784232,
+      "fnmr": 0.2365145228215768,
+      "far": 0.011341632088520055,
+      "eer_descriptive": 0.07302904564315353,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.888936226946732,
+      "margin_mean_valid": 0.09153667333026469,
+      "strategy": "outer_fixed_diagnostic",
+      "condition": "upper10",
+      "rank1_correct": 380,
+      "genuine_accepted": 368,
+      "threshold": 0.8581747485460748
+    },
+    {
+      "rank1": 0.6348547717842323,
+      "tar": 0.6099585062240664,
+      "fnmr": 0.39004149377593356,
+      "far": 0.019778699861687413,
+      "eer_descriptive": 0.13478561549100967,
+      "extraction_failures": 7,
+      "queries": 482,
+      "genuine_mean_valid": 0.8433357821310992,
+      "margin_mean_valid": 0.02742169735617561,
+      "strategy": "outer_fixed_diagnostic",
+      "condition": "lower10",
+      "rank1_correct": 306,
+      "genuine_accepted": 294,
+      "threshold": 0.8581747485460748
+    }
+  ],
+  "baseline": {
+    "clean": {
+      "rank1": 0.9004149377593361,
+      "tar": 0.9066390041493776,
+      "fnmr": 0.09336099585062241,
+      "far": 0.009820193637621023,
+      "eer_descriptive": 0.04329183955739972,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.9198967805247797,
+      "margin_mean_valid": 0.13741244408667197
+    },
+    "upper10": {
+      "rank1": 0.8070539419087137,
+      "tar": 0.7800829875518672,
+      "fnmr": 0.21991701244813278,
+      "far": 0.013001383125864454,
+      "eer_descriptive": 0.07053941908713693,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.8943935362022664,
+      "margin_mean_valid": 0.0947425222581766
+    },
+    "lower10": {
+      "rank1": 0.5995850622406639,
+      "tar": 0.578838174273859,
+      "fnmr": 0.421161825726141,
+      "far": 0.024066390041493777,
+      "eer_descriptive": 0.13900414937759337,
+      "extraction_failures": 7,
+      "queries": 482,
+      "genuine_mean_valid": 0.8409128074113923,
+      "margin_mean_valid": 0.016845094238804117
+    }
+  },
+  "parameters": {
+    "outer_clean_calibrated": {
+      "calibration": [
+        [
+          {
+            "mean": 0.13122799080806388,
+            "std": 0.10420303589640487
+          },
+          {
+            "mean": 0.12986144878720668,
+            "std": 0.07644492515951878
+          },
+          {
+            "mean": 0.6147958546128732,
+            "std": 0.04794831690906236
+          },
+          {
+            "mean": 0.11163836653933283,
+            "std": 0.08259312418878491
+          },
+          {
+            "mean": 0.12028174920227375,
+            "std": 0.09432536817462622
+          },
+          {
+            "mean": 0.11934254742218295,
+            "std": 0.08647527110228072
+          },
+          {
+            "mean": 0.13240747185430896,
+            "std": 0.09798569019704496
+          },
+          {
+            "mean": 0.5566299521601198,
+            "std": 0.013551394764764899
+          }
+        ],
+        [
+          {
+            "mean": 0.13122799080806388,
+            "std": 0.10420303589640487
+          },
+          {
+            "mean": 0.12986144878720668,
+            "std": 0.07644492515951878
+          },
+          {
+            "mean": 0.6147958546128732,
+            "std": 0.04794831690906236
+          },
+          {
+            "mean": 0.11163836653933283,
+            "std": 0.08259312418878491
+          },
+          {
+            "mean": 0.12028174920227375,
+            "std": 0.09432536817462622
+          },
+          {
+            "mean": 0.11934254742218295,
+            "std": 0.08647527110228072
+          },
+          {
+            "mean": 0.13240747185430896,
+            "std": 0.09798569019704496
+          },
+          {
+            "mean": 0.5483593966438642,
+            "std": 0.013115378489598364
+          }
+        ]
+      ],
+      "threshold": 0.8547834078878219
+    },
+    "outer_fixed_diagnostic": {
+      "calibration": [
+        [
+          {
+            "mean": 0.13122799080806388,
+            "std": 0.10420303589640487
+          },
+          {
+            "mean": 0.123085520293729,
+            "std": 0.07507690295608112
+          },
+          {
+            "mean": 0.6224773753886442,
+            "std": 0.04882472859612996
+          },
+          {
+            "mean": 0.11163836653933283,
+            "std": 0.08259312418878491
+          },
+          {
+            "mean": 0.12028174920227375,
+            "std": 0.09432536817462622
+          },
+          {
+            "mean": 0.11934254742218295,
+            "std": 0.08647527110228072
+          },
+          {
+            "mean": 0.129551823712925,
+            "std": 0.10089495964456476
+          },
+          {
+            "mean": 0.5568074217600181,
+            "std": 0.013710306782633292
+          }
+        ],
+        [
+          {
+            "mean": 0.13122799080806388,
+            "std": 0.10420303589640487
+          },
+          {
+            "mean": 0.123085520293729,
+            "std": 0.07507690295608112
+          },
+          {
+            "mean": 0.6224773753886442,
+            "std": 0.04882472859612996
+          },
+          {
+            "mean": 0.11163836653933283,
+            "std": 0.08259312418878491
+          },
+          {
+            "mean": 0.12028174920227375,
+            "std": 0.09432536817462622
+          },
+          {
+            "mean": 0.11934254742218295,
+            "std": 0.08647527110228072
+          },
+          {
+            "mean": 0.129551823712925,
+            "std": 0.10089495964456476
+          },
+          {
+            "mean": 0.5483656686206722,
+            "std": 0.012939933953774223
+          }
+        ]
+      ],
+      "threshold": 0.8581747485460748
+    }
+  },
+  "changes": [
+    {
+      "condition": "clean",
+      "applied_images": 951,
+      "applied_queries": 477,
+      "guards": {
+        "applied": 951,
+        "original_polar_invalid": 6,
+        "pupil_not_contained": 5
+      }
+    },
+    {
+      "condition": "upper10",
+      "applied_images": 949,
+      "applied_queries": 475,
+      "guards": {
+        "applied": 949,
+        "original_polar_invalid": 6,
+        "pupil_not_contained": 7
+      }
+    },
+    {
+      "condition": "lower10",
+      "applied_images": 926,
+      "applied_queries": 452,
+      "guards": {
+        "applied": 926,
+        "pupil_not_contained": 27,
+        "original_polar_invalid": 9
+      }
+    }
+  ],
+  "source_scores_sha256": {
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_2026-10-21\\scores_rgb.npz": "64b9710817d674f3aa5f0acf91c221cef6d601ab72eb556459a68c2f2bb0607f",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_2026-10-21\\scores_polar.npz": "cd23c2c4af9827cc343dedd711b25659cb76068112a5a638316b69501f640c80",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_2026-10-21\\scores_spatial.npz": "a2139bb1310d6dfc1cd2af300b9d5d22d0fa01719a8bf8f7062a02dcd775a793",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_2026-10-21\\scores_r50.npz": "219be388ee67aa1835a4f7d877d748db096184389f94f39aedb4f82991ef95f3",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_2026-10-21\\scores_convnext.npz": "a379e5022c267f8dc5c1f9fbbb8f6986eac23bd8195aa382c031c255f80ad43a",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_2026-10-21\\scores_native.npz": "afbb501ee7e2052c8acda8fc31dc7aed3e895a4a8ae07ae5f0fffee3e4032789",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_2026-10-21\\scores_transformer.npz": "11113a8d58e8180e6bfd973c112efec14c3af84afb3751e0c46388af3d6d4c5c",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_2026-10-21\\scores_arc_clahe.npz": "9bac426e1e0bc6d7d87605de429916b1aba0d722e0f4e2ed85f44239f334ec42",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_2026-10-21\\scores_arc_red.npz": "29be9e9a730d0c082c599e788a0ac2ed5aa93630180671b4c737b0a8df9a0727",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_oclusao_superior_10_2026-10-21\\scores_rgb.npz": "8f845c008906695dc6356ad45ce6b11f2914d444017348b6ff7df6091500a88a",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_oclusao_superior_10_2026-10-21\\scores_polar.npz": "a0cb3872b779b256f75ae89b6576cc669735d9d3c239a066392b6c8580889595",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_oclusao_superior_10_2026-10-21\\scores_spatial.npz": "6f7b4328cb3828fb5dcc78d2b1e6d52d5ea7811c26580c965285bac51a0e3509",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_oclusao_superior_10_2026-10-21\\scores_r50.npz": "3c9ac7410fc38290a4d9039b0b76f636e25b0d9a997b5c5655c78de9ae11dd78",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_oclusao_superior_10_2026-10-21\\scores_convnext.npz": "896c9ab06e442857f5568b2a0091f740c0664b82d8c0c17a90f8cc9598e471e3",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_oclusao_superior_10_2026-10-21\\scores_native.npz": "7f1c1684f6b48b6bb7aa9d81b31e1e149946788d9b2fd98546a8afcaa8def7ff",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_oclusao_superior_10_2026-10-21\\scores_transformer.npz": "2c80aaa6f03214f48d0eecbb83fbb8905906f97e96283fa2cd3d629feb2012d1",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_oclusao_superior_10_2026-10-21\\scores_arc_clahe.npz": "6ed509b7bb5ae0a37f3440927b0d0d97850fc3a46a48ee8119b7aed32e7f2ac1",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_oclusao_superior_10_2026-10-21\\scores_arc_red.npz": "a49e9721516b40ef4447bf02f37594a269142d092fcfc027e267ce1c2e787a35",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_oclusao_inferior_10_2026-10-21\\scores_rgb.npz": "cfeb4f8ca43f3bd7095386a3906e8e104d2807a96012108278e8db8bf2ab5ce5",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_oclusao_inferior_10_2026-10-21\\scores_polar.npz": "24e78bba0295337d4b89f21f7e61e6559b07258cdfc16d6b4a2008f25afe95cb",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_oclusao_inferior_10_2026-10-21\\scores_spatial.npz": "9b0b56dcb55a4abe1e143d14ed93baff3a4f50a59fa7ab77e4d462826fef3a64",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_oclusao_inferior_10_2026-10-21\\scores_r50.npz": "c04b329f847e9fac471975b908dc189e87d080caf0f00976d281b992ff3ccde4",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_oclusao_inferior_10_2026-10-21\\scores_convnext.npz": "3a63d314c99bd198f421c087450f999b615cba0f1534ee9d5c55d924f6013aa6",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_oclusao_inferior_10_2026-10-21\\scores_native.npz": "b95385c2da70b212c0c5f5ed619be8ab711a16d4155d63d7004cd8280c4132e0",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_oclusao_inferior_10_2026-10-21\\scores_transformer.npz": "340c1cef734f8b8a2a1bb48cf3dc773f863599a65e87383dde0941c9f261138c",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_oclusao_inferior_10_2026-10-21\\scores_arc_clahe.npz": "05cfcc6a9d08736816452f888e670c5be352bd6faf679391c1f310f22596d34c",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_oclusao_inferior_10_2026-10-21\\scores_arc_red.npz": "144f90a3121e43119b9d879fc050ad723750d30fb7da173e027bb5e0c00c6f53"
+  },
+  "checkpoint_sha256": "1fd1bb33efaa32fb8d116eb98d60081a7a425ea90ab83dcae2bbc359a89a0d3c",
+  "promotion_gate_passed": false,
+  "absolute_all_conditions_target_reached": false,
+  "rgb_inputs_exact": true,
+  "enrollment_inputs_same_across_conditions": true,
+  "test_inference": false,
+  "frozen_candidate_replaced": false,
+  "minimum_area": null,
+  "compact_readable_copy": true,
+  "omitted_verbose_field": "changes[].details",
+  "full_completion_sha256": "26be18b0ff954581aa9670bbe6013d54a2c0278f10f2b28362b8354d08aec1d2",
+  "full_completion_backup_member": "contorno_consistente_val_2026-10-23/CONCLUIDO.json"
+}

@@ -1,0 +1,19 @@
+{
+  "registered_utc": "2026-10-24T02:39:07.992890+00:00",
+  "scope": "Fixed post-training TRAIN experiment. No retraining/VAL/test. ModelselectedpreviouslywithoutOLDmonitor;normalizationhypothesisintroducedafterpriorresults,thusmonitorremainsreuseddevelopmentNOTindependent.",
+  "method": "Cohort ONLY151FIT cleanvalidS1 eyes. For each observed photo,mean/std oftop3cosine-per-cohort-eye on SAMEside;std floor.05. For query/galleryphoto pair,z=.5*((cos-mean_query)/std_query+(cos-mean_gallery)/std_gallery). Boundpairscore=.5+.5tanh(z/4) toreserve-2failure sentinel; top3mean per enrolled eye. No clean query counterpart, labels/GT/occlusionlevel in normalization.",
+  "calibration": "Single16INTERNALpeople CLEAN threshold,targetFMR0.5%,frozenforbothocclusionsand16OLDmonitor inclclean. No parametersweep,weightfitting,threshold adjustment on occlusions/OLDmonitor. Raw frozen candidate reported alongside.",
+  "gate": "OLDmonitor cleanRank1/TAR>=rawcandidateclean,FMR<=1%;BOTHocclusionRank1/TAR>=rawcandidate,FMR<=1%. Absolute90%Rank1/TAR+FMR<=1 separate. No automaticVAL/test/promotion/minimum.",
+  "training_protocol_sha256": "1b240d382ad59f6acb371cf79c19c51d471f4781d74dd6dde982a12dc7d0fabc",
+  "training_result_sha256": "edc5e6eedd9e3c12a3b15b029b5efd92c5ccd2992bdd63fa649faaccf01d6bf6",
+  "checkpoint_sha256": "13907185dd61c5801f2bdfdfcbb3cafcad79d1b1b33358ee1cb6b1e502c03fb4",
+  "script_sha256": "7f895df0382100dc8882abc4954ec29a28bb16510febef8f2662e8bd2b1476d6",
+  "normalizer_sha256": "3bb482267471ef9ec31e6c7fd9635d3b859608c1967f4ab4df76e21fa6229f26",
+  "dependencies_sha256": {
+    "treinar_bloco_fmr_separado.py": "f230f94852875687a935e02dba744ba566805535bfac36f52bbc80a2484c58b4",
+    "comparador_hdbif_lote.py": "0c6c086a348a17d900e17b4031dc0a2f06ab3721f9f7a53df26c382585882464",
+    "ajuste_bloco_polar.py": "0d1bf7f5bdd096f596c17839bf5a6490e919d4f71a7c64d3935fd1d025fcef51",
+    "encoder_polar_espacial.py": "b022672c1c97bb93c1c64d3df0b4be52044643ac311373b7d17235b3bc0bf9a9",
+    "validar_lateralidade_informada.py": "438c67e9f50e4a0bbcaf666e0ffaff59119f1b183b61442e698ede274bfb1247"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "first_registered_diverse_batch_replayed",
+  "cases": 32,
+  "selection": "first32bycacheorder_not_selected_by_score",
+  "native_support_counts_and_fill_exact": true,
+  "automatic_segmentation_validity_exact": true,
+  "maximum_feature_absolute_difference": 0.0,
+  "feature_rtol": 1e-05,
+  "feature_atol": 1e-05,
+  "scope": "Sampled cache audit only,not full3222map regeneration or new recognition evaluation"
+}

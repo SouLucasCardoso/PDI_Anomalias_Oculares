@@ -1,0 +1,21 @@
+{
+  "tag": "superior_0p5",
+  "orientation": "oclusao_superior",
+  "occluded_percent": 0.5,
+  "nominal_retained_percent": 99.5,
+  "result": {
+    "rank1": 0.911522633744856,
+    "tar": 0.9238683127572016,
+    "fnmr": 0.0761316872427984,
+    "far": 0.008916323731138546,
+    "eer_descriptive": 0.0411522633744856,
+    "extraction_failures": 2,
+    "queries": 486,
+    "genuine_mean_valid": 0.9258019825385876,
+    "margin_mean_valid": 0.14552469285641306
+  },
+  "rank1_correct": 443,
+  "genuine_accepted": 449,
+  "passed": true,
+  "gallery_and_empty_reference_inputs_exact": true
+}

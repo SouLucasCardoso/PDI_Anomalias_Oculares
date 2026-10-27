@@ -1,0 +1,832 @@
+{
+  "status": "saved_monitor_false_acceptances_described",
+  "scope": "Reused originalTRAINmonitor ONLY; thresholds unchanged, no diagnosis-based promotion or filtering. Descriptive concentration, not causal evidence.",
+  "methods": {
+    "adaptador_polar_original_2026-10-23": {
+      "clean": {
+        "false_acceptances": 71,
+        "maximum_allowed_at_one_percent": 72,
+        "excess": 0,
+        "queries_with_any_false_acceptance": 67,
+        "queries_accounting_for_80_percent": 53,
+        "false_acceptances_on_correctly_identified_queries": 71,
+        "false_acceptances_on_genuine_rejected_queries": 0,
+        "top_queries": [
+          {
+            "image": "C103_S2_I13_R.jpg",
+            "subject": 103,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C103_S2_I14_R.jpg",
+            "subject": 103,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C299_S2_I7_R.jpg",
+            "subject": 299,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C451_S2_I15_L.jpg",
+            "subject": 451,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C103_S2_I4_R.jpg",
+            "subject": 103,
+            "side": "R",
+            "false_acceptances": 1,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C103_S2_I5_R.jpg",
+            "subject": 103,
+            "side": "R",
+            "false_acceptances": 1,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C103_S2_I7_R.jpg",
+            "subject": 103,
+            "side": "R",
+            "false_acceptances": 1,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C103_S2_I8_R.jpg",
+            "subject": 103,
+            "side": "R",
+            "false_acceptances": 1,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C103_S2_I9_R.jpg",
+            "subject": 103,
+            "side": "R",
+            "false_acceptances": 1,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C133_S2_I10_L.jpg",
+            "subject": 133,
+            "side": "L",
+            "false_acceptances": 1,
+            "correct": true,
+            "genuine_accepted": true
+          }
+        ]
+      },
+      "upper10": {
+        "false_acceptances": 109,
+        "maximum_allowed_at_one_percent": 72,
+        "excess": 37,
+        "queries_with_any_false_acceptance": 96,
+        "queries_accounting_for_80_percent": 75,
+        "false_acceptances_on_correctly_identified_queries": 85,
+        "false_acceptances_on_genuine_rejected_queries": 15,
+        "top_queries": [
+          {
+            "image": "C261_S2_I15_R.jpg",
+            "subject": 261,
+            "side": "R",
+            "false_acceptances": 3,
+            "correct": false,
+            "genuine_accepted": false
+          },
+          {
+            "image": "C133_S2_I1_R.jpg",
+            "subject": 133,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C133_S2_I4_L.jpg",
+            "subject": 133,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C299_S2_I12_L.jpg",
+            "subject": 299,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": false,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C299_S2_I14_L.jpg",
+            "subject": 299,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": false,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C299_S2_I3_L.jpg",
+            "subject": 299,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C299_S2_I9_L.jpg",
+            "subject": 299,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C441_S2_I8_R.jpg",
+            "subject": 441,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C441_S2_I9_L.jpg",
+            "subject": 441,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C449_S2_I15_L.jpg",
+            "subject": 449,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          }
+        ]
+      },
+      "lower10": {
+        "false_acceptances": 107,
+        "maximum_allowed_at_one_percent": 72,
+        "excess": 35,
+        "queries_with_any_false_acceptance": 101,
+        "queries_accounting_for_80_percent": 80,
+        "false_acceptances_on_correctly_identified_queries": 59,
+        "false_acceptances_on_genuine_rejected_queries": 38,
+        "top_queries": [
+          {
+            "image": "C133_S2_I11_R.jpg",
+            "subject": 133,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C133_S2_I13_R.jpg",
+            "subject": 133,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C433_S2_I15_R.jpg",
+            "subject": 433,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": false,
+            "genuine_accepted": false
+          },
+          {
+            "image": "C441_S2_I12_R.jpg",
+            "subject": 441,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C449_S2_I2_R.jpg",
+            "subject": 449,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": false,
+            "genuine_accepted": false
+          },
+          {
+            "image": "C451_S2_I13_L.jpg",
+            "subject": 451,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": false,
+            "genuine_accepted": false
+          },
+          {
+            "image": "C103_S2_I10_R.jpg",
+            "subject": 103,
+            "side": "R",
+            "false_acceptances": 1,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C103_S2_I2_L.jpg",
+            "subject": 103,
+            "side": "L",
+            "false_acceptances": 1,
+            "correct": false,
+            "genuine_accepted": false
+          },
+          {
+            "image": "C133_S2_I10_R.jpg",
+            "subject": 133,
+            "side": "R",
+            "false_acceptances": 1,
+            "correct": false,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C133_S2_I12_L.jpg",
+            "subject": 133,
+            "side": "L",
+            "false_acceptances": 1,
+            "correct": true,
+            "genuine_accepted": true
+          }
+        ]
+      }
+    },
+    "adaptador_polar_top3_2026-10-23": {
+      "clean": {
+        "false_acceptances": 71,
+        "maximum_allowed_at_one_percent": 72,
+        "excess": 0,
+        "queries_with_any_false_acceptance": 68,
+        "queries_accounting_for_80_percent": 54,
+        "false_acceptances_on_correctly_identified_queries": 71,
+        "false_acceptances_on_genuine_rejected_queries": 0,
+        "top_queries": [
+          {
+            "image": "C103_S2_I13_R.jpg",
+            "subject": 103,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C299_S2_I2_L.jpg",
+            "subject": 299,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C299_S2_I7_R.jpg",
+            "subject": 299,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C103_S2_I10_R.jpg",
+            "subject": 103,
+            "side": "R",
+            "false_acceptances": 1,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C103_S2_I14_R.jpg",
+            "subject": 103,
+            "side": "R",
+            "false_acceptances": 1,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C103_S2_I4_R.jpg",
+            "subject": 103,
+            "side": "R",
+            "false_acceptances": 1,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C103_S2_I5_R.jpg",
+            "subject": 103,
+            "side": "R",
+            "false_acceptances": 1,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C103_S2_I6_R.jpg",
+            "subject": 103,
+            "side": "R",
+            "false_acceptances": 1,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C103_S2_I7_R.jpg",
+            "subject": 103,
+            "side": "R",
+            "false_acceptances": 1,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C103_S2_I9_R.jpg",
+            "subject": 103,
+            "side": "R",
+            "false_acceptances": 1,
+            "correct": true,
+            "genuine_accepted": true
+          }
+        ]
+      },
+      "upper10": {
+        "false_acceptances": 107,
+        "maximum_allowed_at_one_percent": 72,
+        "excess": 35,
+        "queries_with_any_false_acceptance": 95,
+        "queries_accounting_for_80_percent": 74,
+        "false_acceptances_on_correctly_identified_queries": 82,
+        "false_acceptances_on_genuine_rejected_queries": 18,
+        "top_queries": [
+          {
+            "image": "C261_S2_I15_R.jpg",
+            "subject": 261,
+            "side": "R",
+            "false_acceptances": 3,
+            "correct": false,
+            "genuine_accepted": false
+          },
+          {
+            "image": "C133_S2_I4_L.jpg",
+            "subject": 133,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C299_S2_I12_L.jpg",
+            "subject": 299,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": false,
+            "genuine_accepted": false
+          },
+          {
+            "image": "C299_S2_I14_L.jpg",
+            "subject": 299,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": false,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C299_S2_I3_L.jpg",
+            "subject": 299,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C299_S2_I9_L.jpg",
+            "subject": 299,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C441_S2_I8_R.jpg",
+            "subject": 441,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C441_S2_I9_L.jpg",
+            "subject": 441,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C449_S2_I15_L.jpg",
+            "subject": 449,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C451_S2_I11_L.jpg",
+            "subject": 451,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          }
+        ]
+      },
+      "lower10": {
+        "false_acceptances": 93,
+        "maximum_allowed_at_one_percent": 72,
+        "excess": 21,
+        "queries_with_any_false_acceptance": 85,
+        "queries_accounting_for_80_percent": 67,
+        "false_acceptances_on_correctly_identified_queries": 49,
+        "false_acceptances_on_genuine_rejected_queries": 33,
+        "top_queries": [
+          {
+            "image": "C133_S2_I11_R.jpg",
+            "subject": 133,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C133_S2_I13_R.jpg",
+            "subject": 133,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": false,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C243_S2_I4_R.jpg",
+            "subject": 243,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": false,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C433_S2_I15_R.jpg",
+            "subject": 433,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": false,
+            "genuine_accepted": false
+          },
+          {
+            "image": "C441_S2_I12_R.jpg",
+            "subject": 441,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C449_S2_I2_R.jpg",
+            "subject": 449,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": false,
+            "genuine_accepted": false
+          },
+          {
+            "image": "C451_S2_I13_L.jpg",
+            "subject": 451,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": false,
+            "genuine_accepted": false
+          },
+          {
+            "image": "C451_S2_I9_R.jpg",
+            "subject": 451,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C103_S2_I2_L.jpg",
+            "subject": 103,
+            "side": "L",
+            "false_acceptances": 1,
+            "correct": false,
+            "genuine_accepted": false
+          },
+          {
+            "image": "C133_S2_I10_R.jpg",
+            "subject": 133,
+            "side": "R",
+            "false_acceptances": 1,
+            "correct": false,
+            "genuine_accepted": true
+          }
+        ]
+      }
+    },
+    "adaptador_polar_fmr_2026-10-23": {
+      "clean": {
+        "false_acceptances": 71,
+        "maximum_allowed_at_one_percent": 72,
+        "excess": 0,
+        "queries_with_any_false_acceptance": 69,
+        "queries_accounting_for_80_percent": 55,
+        "false_acceptances_on_correctly_identified_queries": 71,
+        "false_acceptances_on_genuine_rejected_queries": 0,
+        "top_queries": [
+          {
+            "image": "C103_S2_I13_R.jpg",
+            "subject": 103,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C299_S2_I2_L.jpg",
+            "subject": 299,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C103_S2_I10_R.jpg",
+            "subject": 103,
+            "side": "R",
+            "false_acceptances": 1,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C103_S2_I11_R.jpg",
+            "subject": 103,
+            "side": "R",
+            "false_acceptances": 1,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C103_S2_I14_R.jpg",
+            "subject": 103,
+            "side": "R",
+            "false_acceptances": 1,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C103_S2_I4_R.jpg",
+            "subject": 103,
+            "side": "R",
+            "false_acceptances": 1,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C103_S2_I5_R.jpg",
+            "subject": 103,
+            "side": "R",
+            "false_acceptances": 1,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C103_S2_I7_R.jpg",
+            "subject": 103,
+            "side": "R",
+            "false_acceptances": 1,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C103_S2_I8_R.jpg",
+            "subject": 103,
+            "side": "R",
+            "false_acceptances": 1,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C103_S2_I9_R.jpg",
+            "subject": 103,
+            "side": "R",
+            "false_acceptances": 1,
+            "correct": true,
+            "genuine_accepted": true
+          }
+        ]
+      },
+      "upper10": {
+        "false_acceptances": 102,
+        "maximum_allowed_at_one_percent": 72,
+        "excess": 30,
+        "queries_with_any_false_acceptance": 93,
+        "queries_accounting_for_80_percent": 73,
+        "false_acceptances_on_correctly_identified_queries": 73,
+        "false_acceptances_on_genuine_rejected_queries": 21,
+        "top_queries": [
+          {
+            "image": "C133_S2_I4_L.jpg",
+            "subject": 133,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C261_S2_I15_R.jpg",
+            "subject": 261,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": false,
+            "genuine_accepted": false
+          },
+          {
+            "image": "C299_S2_I12_L.jpg",
+            "subject": 299,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": false,
+            "genuine_accepted": false
+          },
+          {
+            "image": "C299_S2_I14_L.jpg",
+            "subject": 299,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": false,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C441_S2_I8_R.jpg",
+            "subject": 441,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C449_S2_I15_L.jpg",
+            "subject": 449,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C449_S2_I5_L.jpg",
+            "subject": 449,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C451_S2_I11_L.jpg",
+            "subject": 451,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C451_S2_I6_R.jpg",
+            "subject": 451,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": false,
+            "genuine_accepted": false
+          },
+          {
+            "image": "C103_S2_I10_R.jpg",
+            "subject": 103,
+            "side": "R",
+            "false_acceptances": 1,
+            "correct": true,
+            "genuine_accepted": true
+          }
+        ]
+      },
+      "lower10": {
+        "false_acceptances": 92,
+        "maximum_allowed_at_one_percent": 72,
+        "excess": 20,
+        "queries_with_any_false_acceptance": 83,
+        "queries_accounting_for_80_percent": 65,
+        "false_acceptances_on_correctly_identified_queries": 42,
+        "false_acceptances_on_genuine_rejected_queries": 36,
+        "top_queries": [
+          {
+            "image": "C133_S2_I11_R.jpg",
+            "subject": 133,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": false,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C133_S2_I13_R.jpg",
+            "subject": 133,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": false,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C167_S2_I3_L.jpg",
+            "subject": 167,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": false,
+            "genuine_accepted": false
+          },
+          {
+            "image": "C233_S2_I14_L.jpg",
+            "subject": 233,
+            "side": "L",
+            "false_acceptances": 2,
+            "correct": false,
+            "genuine_accepted": false
+          },
+          {
+            "image": "C243_S2_I4_R.jpg",
+            "subject": 243,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": false,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C433_S2_I15_R.jpg",
+            "subject": 433,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": false,
+            "genuine_accepted": false
+          },
+          {
+            "image": "C433_S2_I9_R.jpg",
+            "subject": 433,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": false,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C441_S2_I12_R.jpg",
+            "subject": 441,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": true,
+            "genuine_accepted": true
+          },
+          {
+            "image": "C449_S2_I2_R.jpg",
+            "subject": 449,
+            "side": "R",
+            "false_acceptances": 2,
+            "correct": false,
+            "genuine_accepted": false
+          },
+          {
+            "image": "C133_S2_I10_R.jpg",
+            "subject": 133,
+            "side": "R",
+            "false_acceptances": 1,
+            "correct": false,
+            "genuine_accepted": true
+          }
+        ]
+      }
+    }
+  },
+  "new_inference": false
+}

@@ -1,0 +1,159 @@
+{
+  "status": "original_geometry_polar_adapter_completed",
+  "selected_epoch": 12,
+  "epochs_trained": 12,
+  "baseline_monitor": {
+    "clean": {
+      "rank1": 0.9979166666666667,
+      "tar": 0.9979166666666667,
+      "fnmr": 0.002083333333333326,
+      "far": 0.00986111111111111,
+      "eer_descriptive": 0.0020833333333333333,
+      "extraction_failures": 1,
+      "queries": 480,
+      "genuine_mean_valid": 0.7686167465122359,
+      "margin_mean_valid": 0.5407055423503628,
+      "threshold": 0.2851408620675405,
+      "correct": 479,
+      "accepted": 479
+    },
+    "upper10": {
+      "rank1": 0.825,
+      "tar": 0.775,
+      "fnmr": 0.22499999999999998,
+      "far": 0.015694444444444445,
+      "eer_descriptive": 0.10208333333333333,
+      "extraction_failures": 1,
+      "queries": 480,
+      "genuine_mean_valid": 0.46164084802088107,
+      "margin_mean_valid": 0.22763847429454379,
+      "threshold": 0.2851408620675405,
+      "correct": 396,
+      "accepted": 372
+    },
+    "lower10": {
+      "rank1": 0.60625,
+      "tar": 0.5583333333333333,
+      "fnmr": 0.44166666666666665,
+      "far": 0.016527777777777777,
+      "eer_descriptive": 0.18125,
+      "extraction_failures": 2,
+      "queries": 480,
+      "genuine_mean_valid": 0.3228983380490001,
+      "margin_mean_valid": 0.07913201981127675,
+      "threshold": 0.2851408620675405,
+      "correct": 291,
+      "accepted": 268
+    }
+  },
+  "selected_monitor": {
+    "clean": {
+      "rank1": 0.9979166666666667,
+      "tar": 0.9979166666666667,
+      "fnmr": 0.002083333333333326,
+      "far": 0.00986111111111111,
+      "eer_descriptive": 0.0020833333333333333,
+      "extraction_failures": 1,
+      "queries": 480,
+      "genuine_mean_valid": 0.7618207714585854,
+      "margin_mean_valid": 0.5320402692300874,
+      "threshold": 0.2877560953299205,
+      "correct": 479,
+      "accepted": 479
+    },
+    "upper10": {
+      "rank1": 0.84375,
+      "tar": 0.7916666666666666,
+      "fnmr": 0.20833333333333337,
+      "far": 0.01513888888888889,
+      "eer_descriptive": 0.09583333333333334,
+      "extraction_failures": 1,
+      "queries": 480,
+      "genuine_mean_valid": 0.47748661721831676,
+      "margin_mean_valid": 0.2451993069004218,
+      "threshold": 0.2877560953299205,
+      "correct": 405,
+      "accepted": 380
+    },
+    "lower10": {
+      "rank1": 0.6833333333333333,
+      "tar": 0.6,
+      "fnmr": 0.4,
+      "far": 0.014861111111111111,
+      "eer_descriptive": 0.1770138888888889,
+      "extraction_failures": 2,
+      "queries": 480,
+      "genuine_mean_valid": 0.3356207191360909,
+      "margin_mean_valid": 0.09731909897336878,
+      "threshold": 0.2877560953299205,
+      "correct": 328,
+      "accepted": 288
+    }
+  },
+  "last_monitor": {
+    "clean": {
+      "rank1": 0.9979166666666667,
+      "tar": 0.9979166666666667,
+      "fnmr": 0.002083333333333326,
+      "far": 0.00986111111111111,
+      "eer_descriptive": 0.0020833333333333333,
+      "extraction_failures": 1,
+      "queries": 480,
+      "genuine_mean_valid": 0.7618207714585854,
+      "margin_mean_valid": 0.5320402692300874,
+      "threshold": 0.2877560953299205,
+      "correct": 479,
+      "accepted": 479
+    },
+    "upper10": {
+      "rank1": 0.84375,
+      "tar": 0.7916666666666666,
+      "fnmr": 0.20833333333333337,
+      "far": 0.01513888888888889,
+      "eer_descriptive": 0.09583333333333334,
+      "extraction_failures": 1,
+      "queries": 480,
+      "genuine_mean_valid": 0.47748661721831676,
+      "margin_mean_valid": 0.2451993069004218,
+      "threshold": 0.2877560953299205,
+      "correct": 405,
+      "accepted": 380
+    },
+    "lower10": {
+      "rank1": 0.6833333333333333,
+      "tar": 0.6,
+      "fnmr": 0.4,
+      "far": 0.014861111111111111,
+      "eer_descriptive": 0.1770138888888889,
+      "extraction_failures": 2,
+      "queries": 480,
+      "genuine_mean_valid": 0.3356207191360909,
+      "margin_mean_valid": 0.09731909897336878,
+      "threshold": 0.2877560953299205,
+      "correct": 328,
+      "accepted": 288
+    }
+  },
+  "selected_cosines": {
+    "clean": 0.9878453085914246,
+    "upper10": 0.5822576211720527,
+    "lower10": 0.3930354229702435
+  },
+  "recognition_validation_gate_passed": false,
+  "checkpoint_sha256": "1ccec037d84afd9f4101758bc85e5d4817b5fbea1b817e8129e71645162fedc0",
+  "last_checkpoint_sha256": "4494bcb7131bb83dbd2e3479e224ba0f04d46c0231ede845223d31ba6f2c9143",
+  "data_audit": {
+    "fit_valid_paired_photos": 6665,
+    "fit_people": 167,
+    "fit_excluded_photos": 91,
+    "monitor_photos": 960,
+    "monitor_queries": 480,
+    "monitor_people": 16,
+    "maximum_clean_teacher_difference": 0.0,
+    "precision": "FP32"
+  },
+  "validation_identity_inference": false,
+  "test_inference": false,
+  "frozen_candidate_replaced": false,
+  "minimum_area": null
+}

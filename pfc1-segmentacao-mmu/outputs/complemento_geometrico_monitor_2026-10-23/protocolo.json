@@ -1,0 +1,23 @@
+{
+  "registered_utc": "2026-10-23T22:31:34.259323+00:00",
+  "scope": "Only16reused original-TRAIN monitor people/960photos/480S2queries. Both frozen encoders saw these people historically; not independent. No validation/test inference or fitting.",
+  "hypothesis": "Keep original polar branch; append unadapted corrected-outer-geometry descriptor. Fixed original/corrected cosine contribution75/25 BEFORE unchanged top3 enrollment aggregation. NO weight search, no learned adapter, no use of rejected weights.",
+  "conditions": "Clean and native gray128 upper/lower10percent reference pixels. Annotation ONLY defines intervention; automatic U-Net extracts each observed query. One query photo, supplied side,16candidate eyes. S1 gallery explicitly copied from CLEAN in ALL conditions. Never use clean counterpart of query for occluded inference.",
+  "calibration": "Separate one CLEAN FMR<=1% threshold per strategy, reused unchanged for occlusions. All480queries and extraction failures retained. Complement requires BOTH branches valid, no fallback or filtering. Original and corrected-only controls identical feature precision FP32batch32.",
+  "gate": "Candidate CLEAN Rank1/TAR >= original control, FMR<=1%; BOTH occlusions Rank1/TAR strictly improve vs original and FMR<=1%. Absolute90%Rank1/TAR target reported separately. If fails NO validation inference; no test/promotion/minimum-area claim.",
+  "weight_corrected": 0.25,
+  "script_sha256": "1c824d23b4584e491614988f88c8a79db182bf3d01bd91875ec84f0dd3f13c0a",
+  "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+  "encoder_sha256": "db93dfcca33b8a77cd3bfbaa66f07d1efae2e976414d67748ccf5eff4a5ebe5c",
+  "unet_sha256": "2bcfc269ffc9562ca8cf0956998faf1e22641587cd60f7059b3cec3dd0f4093d",
+  "source_cache_sha256": "4ae91c31e06031431600c758cefc26833826ed7493cec156cf554379eb55e330",
+  "source_rows_sha256": "f015208f57ef456016495bf24ae35daa31c0c43718a97d192e089049bd434893",
+  "source_protocol_sha256": "c92b137d1e9235dc258390322c36c1b9a7269c76f9270fd6655077b88527c4a5",
+  "dependencies_sha256": {
+    "treinar_adaptador_polar.py": "d96649deacba6a257b2ba3a1d3c468676d3e7eb1189ec4827e6ac1459c88c6ee",
+    "adaptador_polar.py": "211ca146fed33d61c6752ffea78e4e3ac1ea4890499690974294b3aef87166ea",
+    "avaliar_candidato_congelado.py": "9f727ef17eb0e87c51ea2ee3d6527f950717ddd80e6ef9ec9c7a33611c947586",
+    "textura_polar.py": "f977efb2101f2b23338041513908d4deb6eea51a2a730c8f71f0d20c19bcdadc",
+    "avaliar_robustez_reconhecimento.py": "e6d0b8d8eb78dc2e86ed3f73084cd9fb5d83d1afee27f73ca0ffbee1a5947f95"
+  }
+}

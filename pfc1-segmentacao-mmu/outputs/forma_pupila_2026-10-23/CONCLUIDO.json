@@ -1,0 +1,15 @@
+{
+  "status": "pupil_shape_training_completed",
+  "best_epoch": 4,
+  "epochs_trained": 7,
+  "best_monitor_loss": 0.004534728359431028,
+  "isotropic_monitor_loss": 0.008965758606791496,
+  "recognition_validation_gate_passed": true,
+  "shape_sha256": "043d9183502ac3e08d5bb946027a3332f9db5f1afb46935e77d8bbf6018176b2",
+  "circle_checkpoint_sha256": "e8cdccd0b76797682e8516cf3a8cffe7f2c360307a9db34f101262a60bd63f6a",
+  "fit_images": 6282,
+  "monitor_images": 879,
+  "test_inference": false,
+  "frozen_candidate_replaced": false,
+  "minimum_area": null
+}

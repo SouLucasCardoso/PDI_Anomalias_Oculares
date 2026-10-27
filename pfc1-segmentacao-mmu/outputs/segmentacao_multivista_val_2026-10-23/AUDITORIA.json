@@ -1,0 +1,91 @@
+{
+  "status": "tta_components_decisions_threshold_and_gallery_audited",
+  "records": [
+    {
+      "strategy": "tta_clean_calibrated",
+      "condition": "clean",
+      "rank1_correct": 433,
+      "genuine_accepted": 431,
+      "false_accepts": 71,
+      "queries": 482,
+      "impostor_comparisons": 7230
+    },
+    {
+      "strategy": "tta_clean_calibrated",
+      "condition": "upper10",
+      "rank1_correct": 380,
+      "genuine_accepted": 378,
+      "false_accepts": 105,
+      "queries": 482,
+      "impostor_comparisons": 7230
+    },
+    {
+      "strategy": "tta_clean_calibrated",
+      "condition": "lower10",
+      "rank1_correct": 287,
+      "genuine_accepted": 278,
+      "false_accepts": 170,
+      "queries": 482,
+      "impostor_comparisons": 7230
+    },
+    {
+      "strategy": "tta_fixed_diagnostic",
+      "condition": "clean",
+      "rank1_correct": 433,
+      "genuine_accepted": 431,
+      "false_accepts": 68,
+      "queries": 482,
+      "impostor_comparisons": 7230
+    },
+    {
+      "strategy": "tta_fixed_diagnostic",
+      "condition": "upper10",
+      "rank1_correct": 380,
+      "genuine_accepted": 378,
+      "false_accepts": 102,
+      "queries": 482,
+      "impostor_comparisons": 7230
+    },
+    {
+      "strategy": "tta_fixed_diagnostic",
+      "condition": "lower10",
+      "rank1_correct": 287,
+      "genuine_accepted": 276,
+      "false_accepts": 161,
+      "queries": 482,
+      "impostor_comparisons": 7230
+    }
+  ],
+  "promotion_gate_reproduced": false,
+  "fusion_max_difference": 0.0,
+  "all_queries_retained": true,
+  "csv_roundtrip_exact": true,
+  "clean_only_calibration_verified": true,
+  "enrollment_arrays_exact_across_conditions": true,
+  "test_inference": false,
+  "consensus_audit": {
+    "records": [
+      {
+        "condition": "clean",
+        "rank1_correct": 437,
+        "genuine_accepted": 432,
+        "false_accepts": 71
+      },
+      {
+        "condition": "upper10",
+        "rank1_correct": 383,
+        "genuine_accepted": 377,
+        "false_accepts": 95
+      },
+      {
+        "condition": "lower10",
+        "rank1_correct": 292,
+        "genuine_accepted": 279,
+        "false_accepts": 170
+      }
+    ],
+    "score_roundtrip_exact": true,
+    "clean_only_threshold_verified": true,
+    "promotion_gate_reproduced": false
+  }
+}

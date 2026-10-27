@@ -1,0 +1,13 @@
+{
+  "exclusions": {
+    "fit:invalid_reference_outer": 110,
+    "fit:invalid_predicted_outer": 23,
+    "monitor:invalid_predicted_outer": 4,
+    "monitor:invalid_reference_outer": 5
+  },
+  "fit_images": 6623,
+  "monitor_images": 951,
+  "fit_people": 167,
+  "monitor_people": 16,
+  "all_original_train_images": 7716
+}

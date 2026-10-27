@@ -1,0 +1,66 @@
+{
+  "status": "outer_training_selection_and_geometry_audited",
+  "geometry_gate_reproduced": true,
+  "fit_and_monitor_disjoint": true,
+  "standardization_fit_clean_only_verified": true,
+  "selected_predictions_max_difference": 0.0,
+  "selected_losses": [
+    0.00021458405535668135,
+    0.000309273338643834,
+    0.0003965881187468767
+  ],
+  "selected_drift": [
+    0.0002159835712518543,
+    0.00044026007526554167
+  ],
+  "identity_weights_unchanged": true,
+  "recognition_audit": {
+    "records": [
+      {
+        "strategy": "outer_clean_calibrated",
+        "condition": "clean",
+        "correct": 430,
+        "accepted": 433,
+        "false_accepts": 71
+      },
+      {
+        "strategy": "outer_clean_calibrated",
+        "condition": "upper10",
+        "correct": 380,
+        "accepted": 373,
+        "false_accepts": 87
+      },
+      {
+        "strategy": "outer_clean_calibrated",
+        "condition": "lower10",
+        "correct": 306,
+        "accepted": 297,
+        "false_accepts": 150
+      },
+      {
+        "strategy": "outer_fixed_diagnostic",
+        "condition": "clean",
+        "correct": 429,
+        "accepted": 430,
+        "false_accepts": 64
+      },
+      {
+        "strategy": "outer_fixed_diagnostic",
+        "condition": "upper10",
+        "correct": 380,
+        "accepted": 368,
+        "false_accepts": 82
+      },
+      {
+        "strategy": "outer_fixed_diagnostic",
+        "condition": "lower10",
+        "correct": 306,
+        "accepted": 294,
+        "false_accepts": 143
+      }
+    ],
+    "fusion_and_csv_exact": true,
+    "advancement_gate_reproduced": false,
+    "absolute_target_reproduced": false
+  }
+}

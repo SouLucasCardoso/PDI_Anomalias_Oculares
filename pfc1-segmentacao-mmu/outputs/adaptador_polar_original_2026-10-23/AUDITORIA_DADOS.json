@@ -1,0 +1,10 @@
+{
+  "fit_valid_paired_photos": 6665,
+  "fit_people": 167,
+  "fit_excluded_photos": 91,
+  "monitor_photos": 960,
+  "monitor_queries": 480,
+  "monitor_people": 16,
+  "maximum_clean_teacher_difference": 0.0,
+  "precision": "FP32"
+}

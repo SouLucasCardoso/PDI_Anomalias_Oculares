@@ -1,0 +1,24 @@
+{
+  "status": "frozen_train_pipeline_clean_validation_evaluated",
+  "result": {
+    "rank1": 0.9045643153526971,
+    "tar": 0.6431535269709544,
+    "fnmr": 0.3568464730290456,
+    "far": 0.002074688796680498,
+    "eer_descriptive": 0.058091286307053944,
+    "extraction_failures": 4,
+    "queries": 482,
+    "genuine_mean_valid": 0.9593040569297572,
+    "margin_mean_valid": 0.07285530718021527,
+    "threshold": 0.9592531099730544,
+    "correct": 436,
+    "accepted": 310
+  },
+  "clean_gate_passed": false,
+  "validation_fitting": false,
+  "calibration_changed": false,
+  "occlusion_inference": false,
+  "test_inference": false,
+  "candidate_replaced": false,
+  "minimum_area": null
+}

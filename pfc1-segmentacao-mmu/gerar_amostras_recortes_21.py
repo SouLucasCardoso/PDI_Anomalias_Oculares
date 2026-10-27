@@ -12,17 +12,23 @@ def main():
     from avaliar_dinov3_ubipr import masked_crop
     from preparar_polar_vermelho import red_texture
     from textura_polar import prepare_texture
-    p=argparse.ArgumentParser();p.add_argument('--output-dir',type=Path,required=True);a=p.parse_args();a.output_dir.mkdir(parents=True,exist_ok=True)
+    p=argparse.ArgumentParser();p.add_argument('--output-dir',type=Path,required=True);p.add_argument('--date',default='2026-10-21');p.add_argument('--skip-subjects',type=int,default=0);a=p.parse_args();a.output_dir.mkdir(parents=True,exist_ok=True)
+    from datetime import date
+    display_date=date.fromisoformat(a.date).strftime('%d/%m/%Y')
+    if a.skip_subjects<0: p.error('--skip-subjects must be nonnegative')
     rows=load_splits(json.loads((ROOT/'outputs/cnn/ubipr_retreino_2026-10-20/manifesto.json').read_text()))['val']
     valid=np.load(ROOT/'data/cache_identidade_automatica_2026-10-20/val_valid.npy');selected=[];seen=set()
     for i,r in enumerate(rows):
-        if r.session==2 and valid[i] and r.subject not in seen:selected.append(i);seen.add(r.subject)
+        if r.session==2 and valid[i] and r.subject not in seen:
+            seen.add(r.subject)
+            if len(seen)>a.skip_subjects:selected.append(i)
         if len(selected)==4:break
+    if len(selected)!=4: raise ValueError('Need four distinct eligible subjects')
     checkpoint=ROOT/'outputs/cnn/ubipr_retreino_2026-10-20/melhor_modelo.pt';device=torch.device('cuda' if torch.cuda.is_available() else 'cpu');torch.set_num_threads(4)
     model=MulticlassUNet(8).to(device).eval();model.load_state_dict(torch.load(checkpoint,map_location='cpu',weights_only=True)['model'])
     font=lambda size:ImageFont.truetype('C:/Windows/Fonts/arial.ttf',size)
     canvas=Image.new('RGB',(1800,1530),'#f3f5f7');draw=ImageDraw.Draw(canvas)
-    draw.text((30,20),'Recortes reais de íris — estado do processamento em 21/10/2026',font=font(32),fill='#172333')
+    draw.text((30,20),f'Recortes reais de íris — estado do processamento em {display_date}',font=font(32),fill='#172333')
     draw.text((30,68),'UBIPr • quatro consultas da sessão 2 • pessoas distintas • seleção pela ordem do manifesto, sem usar escores',font=font(21),fill='#425369')
     xs=[30,385,740,1005,1270];widths=[335,335,245,245,500]
     headers=['Foto original','Máscara automática (verde)','Entrada RGB 128 × 128','Entrada RGB 224 × 224','Faixas polares 512 × 64']
@@ -46,8 +52,8 @@ def main():
         metadata.append({'manifest_index':i,'image':source.name,'subject':r.subject,'session':r.session,'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'geometry':geometry})
     draw.text((30,1420),'Preto: exterior removido no recorte RGB. Cinza: suporte excluído nas faixas polares. Reflexos e oclusões naturais permanecem.',font=font(21),fill='#425369')
     draw.text((30,1454),'Ampliação apenas para exibição; recortes calculados diretamente do original. As amostras não demonstram acerto de identidade.',font=font(21),fill='#425369')
-    name='AMOSTRAS_RECORTES_IRIS_2026-10-21';canvas.save(a.output_dir/(name+'.png'))
-    audit={'selection':'First valid session2 image of first4 distinct subjects in validation manifest; no recognition scores used','segmentation_checkpoint_sha256':hashlib.sha256(checkpoint.read_bytes()).hexdigest(),'samples':metadata,'display':'RGB inputs128 and224 displayed at same panel size, polar resized only for layout; no synthetic texture, no reference masks'}
+    name='AMOSTRAS_RECORTES_IRIS_'+a.date;canvas.save(a.output_dir/(name+'.png'))
+    audit={'date':a.date,'selection':f'First valid session2 image of next4 distinct subjects after skipping {a.skip_subjects} eligible subjects in validation manifest; no recognition scores used','segmentation_checkpoint_sha256':hashlib.sha256(checkpoint.read_bytes()).hexdigest(),'samples':metadata,'display':'RGB inputs128 and224 displayed at same panel size, polar resized only for layout; no synthetic texture, no reference masks'}
     (a.output_dir/(name+'.json')).write_text(json.dumps(audit,indent=2,ensure_ascii=False),encoding='utf-8');print(a.output_dir/(name+'.png'))
 
 if __name__=='__main__':main()

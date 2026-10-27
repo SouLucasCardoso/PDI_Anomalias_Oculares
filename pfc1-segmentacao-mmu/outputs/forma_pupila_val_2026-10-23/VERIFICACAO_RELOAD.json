@@ -1,0 +1,133 @@
+{
+  "status": "ellipse_shape_and_fusion_reload_verified",
+  "monitor_loss": 0.004534728359431028,
+  "maximum_score_difference": 0.0,
+  "circle_control_exact": true,
+  "identity_checkpoint_hashes_unchanged": true,
+  "all_csv_scores_match_npz": true,
+  "geometry": [
+    {
+      "condition": "clean",
+      "fallback_images": 68,
+      "noncircular_outputs": 65,
+      "maximum_relative_area_difference": 3.150468195415598e-16,
+      "centers_exact": true
+    },
+    {
+      "condition": "upper10",
+      "fallback_images": 167,
+      "noncircular_outputs": 160,
+      "maximum_relative_area_difference": 3.73808247442991e-16,
+      "centers_exact": true
+    },
+    {
+      "condition": "lower10",
+      "fallback_images": 210,
+      "noncircular_outputs": 197,
+      "maximum_relative_area_difference": 2.7317144941680913e-16,
+      "centers_exact": true
+    }
+  ],
+  "comparisons": [
+    {
+      "condition": "clean",
+      "control": "original_control",
+      "rank1_gain_pp": 0.0,
+      "rank1_gain_ci95_pp": [
+        -0.625,
+        0.6172839506172839
+      ],
+      "tar_gain_pp": -0.6224066390041472,
+      "tar_gain_ci95_pp": [
+        -1.25,
+        0.0
+      ],
+      "lost_correct": 2,
+      "recovered": 2
+    },
+    {
+      "condition": "clean",
+      "control": "circle_fixed",
+      "rank1_gain_pp": 0.0,
+      "rank1_gain_ci95_pp": [
+        -0.625,
+        0.6172839506172839
+      ],
+      "tar_gain_pp": -0.20746887966804906,
+      "tar_gain_ci95_pp": [
+        -0.6172839506172839,
+        0.0
+      ],
+      "lost_correct": 1,
+      "recovered": 1
+    },
+    {
+      "condition": "upper10",
+      "control": "original_control",
+      "rank1_gain_pp": 0.4149377593360981,
+      "rank1_gain_ci95_pp": [
+        -0.8333333333333334,
+        2.074688796680498
+      ],
+      "tar_gain_pp": 0.8298755186721962,
+      "tar_gain_ci95_pp": [
+        -0.625,
+        2.2821576763485476
+      ],
+      "lost_correct": 5,
+      "recovered": 7
+    },
+    {
+      "condition": "upper10",
+      "control": "circle_fixed",
+      "rank1_gain_pp": 0.6224066390041472,
+      "rank1_gain_ci95_pp": [
+        0.0,
+        1.2448132780082988
+      ],
+      "tar_gain_pp": 0.0,
+      "tar_gain_ci95_pp": [
+        -0.625,
+        0.6172839506172839
+      ],
+      "lost_correct": 0,
+      "recovered": 3
+    },
+    {
+      "condition": "lower10",
+      "control": "original_control",
+      "rank1_gain_pp": 1.0373443983402564,
+      "rank1_gain_ci95_pp": [
+        -0.625,
+        2.904564315352697
+      ],
+      "tar_gain_pp": -0.6224066390041583,
+      "tar_gain_ci95_pp": [
+        -2.0833333333333335,
+        0.823045267489712
+      ],
+      "lost_correct": 6,
+      "recovered": 11
+    },
+    {
+      "condition": "lower10",
+      "control": "circle_fixed",
+      "rank1_gain_pp": 0.0,
+      "rank1_gain_ci95_pp": [
+        -0.8333333333333334,
+        0.8264462809917356
+      ],
+      "tar_gain_pp": 0.0,
+      "tar_gain_ci95_pp": [
+        -0.6224066390041494,
+        0.6224066390041494
+      ],
+      "lost_correct": 2,
+      "recovered": 2
+    }
+  ],
+  "test_inference": false,
+  "frozen_candidate_replaced": false,
+  "minimum_area": null,
+  "limits": "Proxy labels; reused internal monitor/development validation.5000person-cluster pointwise bootstrap with fixed gallery/threshold; no model-selection correction."
+}

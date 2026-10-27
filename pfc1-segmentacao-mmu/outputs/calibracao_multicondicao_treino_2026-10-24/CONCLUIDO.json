@@ -1,0 +1,200 @@
+{
+  "status": "global_internal_multidomain_threshold_evaluated",
+  "results": {
+    "internal": {
+      "clean": {
+        "rank1": 0.9916666666666667,
+        "tar": 0.9916666666666667,
+        "fnmr": 0.008333333333333304,
+        "far": 0.0,
+        "eer_descriptive": 0.008333333333333333,
+        "extraction_failures": 1,
+        "queries": 120,
+        "genuine_mean_valid": 0.9995158203316182,
+        "margin_mean_valid": 0.1351314698874145,
+        "threshold": 0.9592531099730544,
+        "correct": 119,
+        "accepted": 119
+      },
+      "upper10": {
+        "rank1": 0.9666666666666667,
+        "tar": 0.9,
+        "fnmr": 0.09999999999999998,
+        "far": 0.0005555555555555556,
+        "eer_descriptive": 0.03333333333333333,
+        "extraction_failures": 2,
+        "queries": 120,
+        "genuine_mean_valid": 0.9895305768502782,
+        "margin_mean_valid": 0.11414976494024812,
+        "threshold": 0.9592531099730544,
+        "correct": 116,
+        "accepted": 108
+      },
+      "lower10": {
+        "rank1": 0.7583333333333333,
+        "tar": 0.5916666666666667,
+        "fnmr": 0.4083333333333333,
+        "far": 0.0044444444444444444,
+        "eer_descriptive": 0.08333333333333333,
+        "extraction_failures": 1,
+        "queries": 120,
+        "genuine_mean_valid": 0.9413281670358477,
+        "margin_mean_valid": 0.04760363495729791,
+        "threshold": 0.9592531099730544,
+        "correct": 91,
+        "accepted": 71
+      }
+    },
+    "monitor": {
+      "clean": {
+        "rank1": 0.9979166666666667,
+        "tar": 0.9979166666666667,
+        "fnmr": 0.002083333333333326,
+        "far": 0.0004166666666666667,
+        "eer_descriptive": 0.0020833333333333333,
+        "extraction_failures": 1,
+        "queries": 480,
+        "genuine_mean_valid": 0.9995127583616745,
+        "margin_mean_valid": 0.11268926618779591,
+        "threshold": 0.9592531099730544,
+        "correct": 479,
+        "accepted": 479
+      },
+      "upper10": {
+        "rank1": 0.96875,
+        "tar": 0.925,
+        "fnmr": 0.07499999999999996,
+        "far": 0.0009722222222222222,
+        "eer_descriptive": 0.03125,
+        "extraction_failures": 1,
+        "queries": 480,
+        "genuine_mean_valid": 0.9863647894849731,
+        "margin_mean_valid": 0.1070249143257621,
+        "threshold": 0.9592531099730544,
+        "correct": 465,
+        "accepted": 444
+      },
+      "lower10": {
+        "rank1": 0.89375,
+        "tar": 0.7625,
+        "fnmr": 0.23750000000000004,
+        "far": 0.0022222222222222222,
+        "eer_descriptive": 0.058333333333333334,
+        "extraction_failures": 2,
+        "queries": 480,
+        "genuine_mean_valid": 0.9653476585866232,
+        "margin_mean_valid": 0.08349447800476636,
+        "threshold": 0.9592531099730544,
+        "correct": 429,
+        "accepted": 366
+      }
+    }
+  },
+  "clean_only_control": {
+    "internal": {
+      "clean": {
+        "rank1": 0.9916666666666667,
+        "tar": 0.9916666666666667,
+        "fnmr": 0.008333333333333304,
+        "far": 0.0044444444444444444,
+        "eer_descriptive": 0.008333333333333333,
+        "extraction_failures": 1,
+        "queries": 120,
+        "genuine_mean_valid": 0.9995158203316182,
+        "margin_mean_valid": 0.1351314698874145,
+        "threshold": 0.922514353775003,
+        "correct": 119,
+        "accepted": 119
+      },
+      "upper10": {
+        "rank1": 0.9666666666666667,
+        "tar": 0.95,
+        "fnmr": 0.050000000000000044,
+        "far": 0.0077777777777777776,
+        "eer_descriptive": 0.03333333333333333,
+        "extraction_failures": 2,
+        "queries": 120,
+        "genuine_mean_valid": 0.9895305768502782,
+        "margin_mean_valid": 0.11414976494024812,
+        "threshold": 0.922514353775003,
+        "correct": 116,
+        "accepted": 114
+      },
+      "lower10": {
+        "rank1": 0.7583333333333333,
+        "tar": 0.7333333333333333,
+        "fnmr": 0.2666666666666667,
+        "far": 0.019444444444444445,
+        "eer_descriptive": 0.08333333333333333,
+        "extraction_failures": 1,
+        "queries": 120,
+        "genuine_mean_valid": 0.9413281670358477,
+        "margin_mean_valid": 0.04760363495729791,
+        "threshold": 0.922514353775003,
+        "correct": 91,
+        "accepted": 88
+      }
+    },
+    "monitor": {
+      "clean": {
+        "rank1": 0.9979166666666667,
+        "tar": 0.9979166666666667,
+        "fnmr": 0.002083333333333326,
+        "far": 0.01625,
+        "eer_descriptive": 0.0020833333333333333,
+        "extraction_failures": 1,
+        "queries": 480,
+        "genuine_mean_valid": 0.9995127583616745,
+        "margin_mean_valid": 0.11268926618779591,
+        "threshold": 0.922514353775003,
+        "correct": 479,
+        "accepted": 479
+      },
+      "upper10": {
+        "rank1": 0.96875,
+        "tar": 0.95625,
+        "fnmr": 0.043749999999999956,
+        "far": 0.011944444444444445,
+        "eer_descriptive": 0.03125,
+        "extraction_failures": 1,
+        "queries": 480,
+        "genuine_mean_valid": 0.9863647894849731,
+        "margin_mean_valid": 0.1070249143257621,
+        "threshold": 0.922514353775003,
+        "correct": 465,
+        "accepted": 459
+      },
+      "lower10": {
+        "rank1": 0.89375,
+        "tar": 0.85,
+        "fnmr": 0.15000000000000002,
+        "far": 0.012777777777777779,
+        "eer_descriptive": 0.058333333333333334,
+        "extraction_failures": 2,
+        "queries": 480,
+        "genuine_mean_valid": 0.9653476585866232,
+        "margin_mean_valid": 0.08349447800476636,
+        "threshold": 0.922514353775003,
+        "correct": 429,
+        "accepted": 408
+      }
+    }
+  },
+  "threshold": 0.9592531099730544,
+  "internal_domain_thresholds": {
+    "clean": 0.922514353775003,
+    "upper10": 0.9331006658553653,
+    "lower10": 0.9592531099730544
+  },
+  "all_monitor_fmr_at_most_one_percent": true,
+  "absolute_target_reached": false,
+  "five_percent_feasibility_eligible": true,
+  "monitor_used_for_calibration": false,
+  "condition_specific_inference_threshold": false,
+  "new_training": false,
+  "new_image_inference": false,
+  "validation_inference": false,
+  "test_inference": false,
+  "candidate_replaced": false,
+  "minimum_area": null
+}

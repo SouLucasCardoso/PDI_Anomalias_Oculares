@@ -1,0 +1,200 @@
+{
+  "zip_bytes": 32692942,
+  "zip_sha256": "f4e72159c4be824ff1733ea69b045679260f246b6b5764a4119e5c51e5bdeb13",
+  "parts": [
+    "parte_001.b64",
+    "parte_002.b64",
+    "parte_003.b64",
+    "parte_004.b64",
+    "parte_005.b64",
+    "parte_006.b64",
+    "parte_007.b64",
+    "parte_008.b64",
+    "parte_009.b64",
+    "parte_010.b64",
+    "parte_011.b64",
+    "parte_012.b64",
+    "parte_013.b64",
+    "parte_014.b64",
+    "parte_015.b64",
+    "parte_016.b64",
+    "parte_017.b64",
+    "parte_018.b64",
+    "parte_019.b64",
+    "parte_020.b64",
+    "parte_021.b64",
+    "parte_022.b64",
+    "parte_023.b64",
+    "parte_024.b64",
+    "parte_025.b64",
+    "parte_026.b64",
+    "parte_027.b64",
+    "parte_028.b64",
+    "parte_029.b64",
+    "parte_030.b64",
+    "parte_031.b64",
+    "parte_032.b64",
+    "parte_033.b64",
+    "parte_034.b64",
+    "parte_035.b64",
+    "parte_036.b64",
+    "parte_037.b64",
+    "parte_038.b64",
+    "parte_039.b64",
+    "parte_040.b64",
+    "parte_041.b64",
+    "parte_042.b64",
+    "parte_043.b64",
+    "parte_044.b64"
+  ],
+  "files": {
+    "bloco_fmr_separado_2026-10-23/AUDITORIA_REPRODUCAO.json": {
+      "bytes": 360,
+      "sha256": "3b28afd08d0b594c2df89d3a59205662e0427b544ad99f5864bd61905af6d3a7"
+    },
+    "bloco_fmr_separado_2026-10-23/CONCLUIDO.json": {
+      "bytes": 6983,
+      "sha256": "edc5e6eedd9e3c12a3b15b029b5efd92c5ccd2992bdd63fa649faaccf01d6bf6"
+    },
+    "bloco_fmr_separado_2026-10-23/historico.csv": {
+      "bytes": 999,
+      "sha256": "e8dff5cf82243499622b62d8e0edbfd44b6d3361264654f63d3276ce61317f80"
+    },
+    "bloco_fmr_separado_2026-10-23/indices_ajuste.npz": {
+      "bytes": 26277,
+      "sha256": "07b98affef7da05a8aa31a791baa231de1600ceea23f0908b72e6ce707e29f0c"
+    },
+    "bloco_fmr_separado_2026-10-23/melhor_modelo.pt": {
+      "bytes": 33561627,
+      "sha256": "13907185dd61c5801f2bdfdfcbb3cafcad79d1b1b33358ee1cb6b1e502c03fb4"
+    },
+    "bloco_fmr_separado_2026-10-23/protocolo.json": {
+      "bytes": 5177,
+      "sha256": "1b240d382ad59f6acb371cf79c19c51d471f4781d74dd6dde982a12dc7d0fabc"
+    },
+    "bloco_fmr_separado_2026-10-23/REFERENCIA_AJUSTE.json": {
+      "bytes": 136,
+      "sha256": "0d9f045c5dbafd83833af321d57bbf14516a7625aa6bbe0df38adc4d02153d5f"
+    },
+    "bloco_fmr_separado_2026-10-23/referencia_ajuste.npz": {
+      "bytes": 1159219,
+      "sha256": "eb1a46b1a3afa3b838c106bb62b0baab72d3c90568dc01a9c3ef95439f525185"
+    },
+    "bloco_fmr_separado_2026-10-23/rows.json": {
+      "bytes": 786765,
+      "sha256": "f015208f57ef456016495bf24ae35daa31c0c43718a97d192e089049bd434893"
+    },
+    "bloco_fmr_separado_2026-10-23/scores_baseline_internal_clean.npz": {
+      "bytes": 10328,
+      "sha256": "004da4d5d76973bcbc77d11eef48f6cf0c290ef0f5d25b3730d42a944f23c583"
+    },
+    "bloco_fmr_separado_2026-10-23/scores_baseline_internal_lower10.npz": {
+      "bytes": 10410,
+      "sha256": "692026c9cb3e5770fe822b82f54706d0ae3a8159b49177d86317e307076d0c4d"
+    },
+    "bloco_fmr_separado_2026-10-23/scores_baseline_internal_upper10.npz": {
+      "bytes": 10397,
+      "sha256": "a6e1904f0d16659bfe7c8359277089b0fb3432c5768c8616007ea87586f6de7f"
+    },
+    "bloco_fmr_separado_2026-10-23/scores_baseline_monitor_clean.npz": {
+      "bytes": 37742,
+      "sha256": "5e4a49855697c8d2b2747028d7b8a45a78906a89e4e16e8ef4ee683eed18ae07"
+    },
+    "bloco_fmr_separado_2026-10-23/scores_baseline_monitor_lower10.npz": {
+      "bytes": 37985,
+      "sha256": "0c49be6d8b0394cd248c5d3c19e9195c59da710c928256e6901fb4caa1cfd012"
+    },
+    "bloco_fmr_separado_2026-10-23/scores_baseline_monitor_upper10.npz": {
+      "bytes": 38178,
+      "sha256": "6c8d247ac8b67b7e25dff946fe95380da23dac13115c5c25975bccaf1457f0d6"
+    },
+    "bloco_fmr_separado_2026-10-23/scores_internal_clean_selected.npz": {
+      "bytes": 10337,
+      "sha256": "22412cfd047d71dfc25f86d47382d3f34b7835ca7daafe7b05d48538a5ad826a"
+    },
+    "bloco_fmr_separado_2026-10-23/scores_selected_internal_clean.npz": {
+      "bytes": 10337,
+      "sha256": "22412cfd047d71dfc25f86d47382d3f34b7835ca7daafe7b05d48538a5ad826a"
+    },
+    "bloco_fmr_separado_2026-10-23/scores_selected_internal_lower10.npz": {
+      "bytes": 10433,
+      "sha256": "bfd47f5d622fd0e01312b2c54902265cbba31ace85475ec4ffa60b42eb32f151"
+    },
+    "bloco_fmr_separado_2026-10-23/scores_selected_internal_upper10.npz": {
+      "bytes": 10410,
+      "sha256": "c58a4dfb74e5077b8187168061c21e76a5f78ea953c9f41473c90181fcdd23bf"
+    },
+    "bloco_fmr_separado_2026-10-23/scores_selected_monitor_clean.npz": {
+      "bytes": 37685,
+      "sha256": "f80d1557573aaba463686b38fdd61d7b74fa7e64cec90a70de0280e42c01b03e"
+    },
+    "bloco_fmr_separado_2026-10-23/scores_selected_monitor_lower10.npz": {
+      "bytes": 37945,
+      "sha256": "6e8b27ce10055eb984d61a1f243b066503b3f3358cfaa35467f1165047f89815"
+    },
+    "bloco_fmr_separado_2026-10-23/scores_selected_monitor_upper10.npz": {
+      "bytes": 38076,
+      "sha256": "7ff6910d49284aff9fd5a10da4d48afb3a11b022f57c7e3b5a1ccc86682b41eb"
+    },
+    "bloco_fmr_separado_2026-10-23/source.py": {
+      "bytes": 13372,
+      "sha256": "f230f94852875687a935e02dba744ba566805535bfac36f52bbc80a2484c58b4"
+    },
+    "scripts/treinar_bloco_fmr_separado.py": {
+      "bytes": 13372,
+      "sha256": "f230f94852875687a935e02dba744ba566805535bfac36f52bbc80a2484c58b4"
+    },
+    "scripts/ajuste_bloco_polar.py": {
+      "bytes": 1904,
+      "sha256": "0d1bf7f5bdd096f596c17839bf5a6490e919d4f71a7c64d3935fd1d025fcef51"
+    },
+    "scripts/auditar_bloco_fmr_separado.py": {
+      "bytes": 8462,
+      "sha256": "ff62ad87d191b6b5fc61e8043c2faef65d77c04fe7168f747273e86eb27416b7"
+    },
+    "scripts/test_bloco_fmr_separado.py": {
+      "bytes": 1265,
+      "sha256": "e01cd236b1f81586c44a3697804b5a8389d42afe6339dd7e3e8e6454bb9a5065"
+    },
+    "scripts/preservar_bloco_fmr_separado.py": {
+      "bytes": 4135,
+      "sha256": "14ab8cf7e1dd324324e63645dfc6eacd1d70381ffefcfcaaeb8a6ec5e27a8466"
+    },
+    "scripts/perda_fmr_polar.py": {
+      "bytes": 1642,
+      "sha256": "15256d8ffa4f3976b8b954520b215c5b4f2dddb541e525f431d993e01b6fc4c8"
+    },
+    "scripts/encoder_polar_espacial.py": {
+      "bytes": 3029,
+      "sha256": "b022672c1c97bb93c1c64d3df0b4be52044643ac311373b7d17235b3bc0bf9a9"
+    },
+    "scripts/perda_top3_polar.py": {
+      "bytes": 1356,
+      "sha256": "08ccde64234ff6156d5bfdb0c3d17a1475f219613ce275d6ac908cf03fba197a"
+    },
+    "scripts/perda_identidade_polar.py": {
+      "bytes": 1065,
+      "sha256": "2663b88f379d00f688198d1d7ce76540bc1b883f59a7e049c38364d9245e8489"
+    },
+    "scripts/treinar_adaptador_polar.py": {
+      "bytes": 18999,
+      "sha256": "d96649deacba6a257b2ba3a1d3c468676d3e7eb1189ec4827e6ac1459c88c6ee"
+    },
+    "scripts/treinar_adaptador_polar_original.py": {
+      "bytes": 13460,
+      "sha256": "a07414f70dddd672a077761363f29d56f5d63915e304e4b358951b1c51b15969"
+    },
+    "bloco_fmr_separado_2026-10-23/ultima_epoca.xor": {
+      "bytes": 33561627,
+      "sha256": "6e44e63e1fc442b2bf7d3d946a8c662558cad7afddd073d03a26a82ca5c7c361"
+    }
+  },
+  "excluded_feature_caches": {},
+  "reconstructed_checkpoint": {
+    "base": "bloco_fmr_separado_2026-10-23/melhor_modelo.pt",
+    "delta": "bloco_fmr_separado_2026-10-23/ultima_epoca.xor",
+    "target": "bloco_fmr_separado_2026-10-23/ultima_epoca.pt",
+    "bytes": 33561616,
+    "sha256": "24cd3661f819b0e2f2e245fa63b7a237a851bdfc8bb346066c1680fc87f2c7ed"
+  }
+}

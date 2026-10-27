@@ -1,0 +1,11 @@
+{
+  "status": "polar_adapter_selection_and_monitor_audited",
+  "selected_epoch": 0,
+  "recognition_gate_reproduced": false,
+  "fit_and_monitor_people_disjoint": true,
+  "fit_clean_standardization_exact": true,
+  "selected_score_arrays_exact": true,
+  "selected_alignment_arrays_exact": true,
+  "monitor_queries": 480,
+  "validation_skipped_by_gate": true
+}

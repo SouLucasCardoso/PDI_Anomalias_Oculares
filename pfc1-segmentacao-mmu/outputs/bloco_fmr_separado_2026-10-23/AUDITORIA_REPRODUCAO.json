@@ -1,0 +1,11 @@
+{
+  "status": "separated_fmr_protocol_audited",
+  "selected_epoch": 8,
+  "selection_uses_only_fit_loss_and_internal_clean": true,
+  "monitor_not_in_epoch_history": true,
+  "metrics_exact": true,
+  "shared_internal_clean_threshold_verified": true,
+  "full_cache_reproduction": true,
+  "monitor_gate_passed": false,
+  "absolute_target_reached": false
+}

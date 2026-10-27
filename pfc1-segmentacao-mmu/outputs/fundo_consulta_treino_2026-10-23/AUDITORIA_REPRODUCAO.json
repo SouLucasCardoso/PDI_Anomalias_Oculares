@@ -1,0 +1,9 @@
+{
+  "status": "background_normalization_audited",
+  "all_scores_exact": true,
+  "calibration_internal_clean_only": true,
+  "shared_threshold_verified": true,
+  "all_monitor_fmr_at_most_one_percent": false,
+  "absolute_target_reached": false,
+  "new_image_inference": false
+}

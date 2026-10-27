@@ -1,0 +1,15 @@
+{
+  "status": "restored_exact_bytes_and_selection_reaudited",
+  "zip_files": 28,
+  "parts": 43,
+  "zip_bytes": 31591947,
+  "selected_epoch": 8,
+  "selected_checkpoint_sha256": "bee6ff02e6772f4b56c7ab79c3d78780dc298ce540aa7959d0973182a4e1dd78",
+  "last_checkpoint_sha256": "bf97debbd8457614e3833dce14a059833c3d49646d1bf503e30e1c3cb63fb543",
+  "both_original_checkpoint_byte_hashes_verified": true,
+  "xor_delta_lossless": true,
+  "training_selection_reproduced": true,
+  "score_decisions_reproduced": true,
+  "monitor_gate_reproduced": false,
+  "cloud_upload_verified": false
+}

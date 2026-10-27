@@ -1,0 +1,104 @@
+{
+  "registered_utc": "2026-10-24T16:00:27.409581+00:00",
+  "scope": "CLEAN developmentVAL ONLY,482queries,16same-sideeyes,onequeryphoto. IdentitiesdisjointTRAINgradient/calibration/monitor,butVALhistoricallyusedindevelopment;NOTnewblindconfirmation. No occlusion/test inference and no fitting onVAL.",
+  "pipeline": "8original cachedcomponents unchanged;151FIT fulltail adjusted polar FP32;fixed9componentweights;TRAINinternal componentmean/std;dropmaxbackground querynormalization;ONErobustglobalthreshold from120INTERNALqueriesclean+upper10+lower10. NO recalibration/selection/weights onVAL.",
+  "gate": "CLEANRank1>=90%,TAR>=90%,empiricalFMR<=1%,all482queries/failuresretained. Fail=>NO5%occlusionorTEST;no threshold tweak onthese results. Passingisnecessarynot sufficientforfutureareaestimate.",
+  "threshold": 0.9592531099730544,
+  "calibration": [
+    [
+      {
+        "mean": 0.08592515397666024,
+        "std": 0.09780962898440729
+      },
+      {
+        "mean": 0.08037015273817055,
+        "std": 0.08432343311825027
+      },
+      {
+        "mean": 0.6240365268302565,
+        "std": 0.054014358248046485
+      },
+      {
+        "mean": 0.09202217370389945,
+        "std": 0.08165124893698329
+      },
+      {
+        "mean": 0.08043498625094246,
+        "std": 0.09482119663388552
+      },
+      {
+        "mean": 0.11855327646064559,
+        "std": 0.07796658653400225
+      },
+      {
+        "mean": 0.1280348597368987,
+        "std": 0.10017463934819588
+      },
+      {
+        "mean": 0.5593659949049818,
+        "std": 0.014346151594650613
+      }
+    ],
+    [
+      {
+        "mean": 0.08592515397666024,
+        "std": 0.09780962898440729
+      },
+      {
+        "mean": 0.08037015273817055,
+        "std": 0.08432343311825027
+      },
+      {
+        "mean": 0.6240365268302565,
+        "std": 0.054014358248046485
+      },
+      {
+        "mean": 0.09202217370389945,
+        "std": 0.08165124893698329
+      },
+      {
+        "mean": 0.08043498625094246,
+        "std": 0.09482119663388552
+      },
+      {
+        "mean": 0.11855327646064559,
+        "std": 0.07796658653400225
+      },
+      {
+        "mean": 0.1280348597368987,
+        "std": 0.10017463934819588
+      },
+      {
+        "mean": 0.551802977057859,
+        "std": 0.011784979536233352
+      }
+    ]
+  ],
+  "checkpoint_sha256": "13907185dd61c5801f2bdfdfcbb3cafcad79d1b1b33358ee1cb6b1e502c03fb4",
+  "training_protocol_sha256": "1b240d382ad59f6acb371cf79c19c51d471f4781d74dd6dde982a12dc7d0fabc",
+  "training_result_sha256": "edc5e6eedd9e3c12a3b15b029b5efd92c5ccd2992bdd63fa649faaccf01d6bf6",
+  "calibration_result_sha256": "fb1de7a1d0efb3dec96bb9d40f27c5dfce66f91d0bb23432a494f91dba240a41",
+  "background_result_sha256": "97d94401a6f0dacaa58993e37ba45c1ada0309c426774ff8c4027663e461034c",
+  "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+  "cached_images_sha256": "0865928ce611f052c23a3d7e4b4730e2d4cd17cc751dc8a03f3e48ead232d1c3",
+  "cached_valid_sha256": "e77a5ee5643ea66dc60a097909ef6c7eaaa415ccbb4114370df74eb128fa84e3",
+  "original_components_sha256": {
+    "rgb": "64b9710817d674f3aa5f0acf91c221cef6d601ab72eb556459a68c2f2bb0607f",
+    "spatial": "a2139bb1310d6dfc1cd2af300b9d5d22d0fa01719a8bf8f7062a02dcd775a793",
+    "r50": "219be388ee67aa1835a4f7d877d748db096184389f94f39aedb4f82991ef95f3",
+    "convnext": "a379e5022c267f8dc5c1f9fbbb8f6986eac23bd8195aa382c031c255f80ad43a",
+    "native": "afbb501ee7e2052c8acda8fc31dc7aed3e895a4a8ae07ae5f0fffee3e4032789",
+    "transformer": "11113a8d58e8180e6bfd973c112efec14c3af84afb3751e0c46388af3d6d4c5c",
+    "arc_clahe": "9bac426e1e0bc6d7d87605de429916b1aba0d722e0f4e2ed85f44239f334ec42",
+    "arc_red": "29be9e9a730d0c082c599e788a0ac2ed5aa93630180671b4c737b0a8df9a0727"
+  },
+  "script_sha256": "d1ee36ca1696c5e0296f275d2c13e4f1e4bc5303e9be9a486e5c6a4395bfa2d0",
+  "dependencies_sha256": {
+    "normalizacao_fundo_consulta.py": "f0a178ed930cc47e063a57f8837558085028da4c4f8517914fcc2d2b5712d91d",
+    "ajuste_bloco_polar.py": "0d1bf7f5bdd096f596c17839bf5a6490e919d4f71a7c64d3935fd1d025fcef51",
+    "encoder_polar_espacial.py": "b022672c1c97bb93c1c64d3df0b4be52044643ac311373b7d17235b3bc0bf9a9",
+    "avaliar_candidato_congelado.py": "9f727ef17eb0e87c51ea2ee3d6527f950717ddd80e6ef9ec9c7a33611c947586",
+    "avaliar_robustez_reconhecimento.py": "e6d0b8d8eb78dc2e86ed3f73084cd9fb5d83d1afee27f73ca0ffbee1a5947f95",
+    "validar_lateralidade_informada.py": "438c67e9f50e4a0bbcaf666e0ffaff59119f1b183b61442e698ede274bfb1247"
+  }
+}

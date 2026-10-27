@@ -1,0 +1,9 @@
+{
+  "status": "sam_guided_screen_masks_and_metrics_verified",
+  "paired_cases": 96,
+  "metric_records": 192,
+  "automatic_prompts_reproduced": true,
+  "all_dice_iou_exact": true,
+  "screen_gate_reproduced": false,
+  "new_model_inference": false
+}

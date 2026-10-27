@@ -1,0 +1,49 @@
+{
+  "registered_utc": "2026-10-23T18:17:35.989097+00:00",
+  "scope": "Exactly two planned exploratory additions to previously exposed test: upper0.5% and lower1.5%; same frozen candidate,not new blind confirmation. No tuning/recalibration or further adaptive search.",
+  "conditions": [
+    [
+      "superior_0p5",
+      "oclusao_superior",
+      0.5
+    ],
+    [
+      "inferior_1p5",
+      "oclusao_inferior",
+      1.5
+    ]
+  ],
+  "threshold": 0.8581747485460748,
+  "queries": 486,
+  "defined_reference_queries": 480,
+  "undefined_reference_queries": 6,
+  "candidates": 16,
+  "query_images": 1,
+  "informed_side": true,
+  "intervention": "Same original perturb:gray128on round(reference_pixels*level/100) lexicographic upper/lower selected pixels. References only define intervention. Rerun original segmentation/geometry; original enrollment and undefined-reference queries unchanged. Selected fraction not anatomical/disease extent.",
+  "precision": "Reuse frozen prepare/extract/global_scores/spatial/fuse: CNN and Transformer BF16batch128,spatialFP32batch32,ArcFP32batch8. Same component and fusion weights/calibration; all failures retained.",
+  "criteria": "Rank1>=90%,TAR>=90%,FMR<=1% fixed threshold. Determine prefix using all larger TESTED fractions on explicitly irregular grid: upperloss[0,.5,1,10],lower[0,1,1.5,2,10]. Lower0.5% NOT tested; no continuous monotonicity or uniform0.5pp-grid claim.",
+  "stopping": "Run BOTH specified conditions regardless of outcomes; no additional points or model search in this closing round.",
+  "weights_sha256": {
+    "rgb": "7c03b4c7ef4c54e5f86e58eb550ffc124fa11384fe5c3f5b947d1041178e706d",
+    "polar": "db93dfcca33b8a77cd3bfbaa66f07d1efae2e976414d67748ccf5eff4a5ebe5c",
+    "r50": "699b8236211da2fd43b104f157b6cc3835bd5d89a01a74a5b75ce4261bf35e24",
+    "convnext": "a03400e62df6282e4532dce75fabd6e12d06678a8de7dc3e55a2a274c60f1529",
+    "native": "6530b1227f271789ca7ad8a7d9011d2a9e9ee6fe71a7ce4079d2ed8a75b3388f",
+    "transformer": "0ad83d9f9c78e434bda11e99e01c90cc197e7e5127c3aed75e5da6df38808b87"
+  },
+  "unet_sha256": "2bcfc269ffc9562ca8cf0956998faf1e22641587cd60f7059b3cec3dd0f4093d",
+  "arc_weights_sha256": "466014be7723eb0b1a741dcff5a0c8ae51d1918818a6b021952f9c4ccd443f8f",
+  "frozen_sha256": "d933686f045eab5d6578cfe4701578d9ca1eeaaff4069bcff8427a602546dbda",
+  "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+  "script_sha256": "e45a344e486d854c4f62a37f53eaa7926985f52255c38c399965a8d695a22e14",
+  "dependencies_sha256": {
+    "avaliar_candidato_congelado.py": "9f727ef17eb0e87c51ea2ee3d6527f950717ddd80e6ef9ec9c7a33611c947586",
+    "avaliar_robustez_reconhecimento.py": "e6d0b8d8eb78dc2e86ed3f73084cd9fb5d83d1afee27f73ca0ffbee1a5947f95",
+    "textura_polar.py": "f977efb2101f2b23338041513908d4deb6eea51a2a730c8f71f0d20c19bcdadc",
+    "normalizacao_eliptica.py": "370f61686ce7209b3e705b1dc9b2ffa55bb0eac0cf54911f1edc3d92d7aca72a",
+    "preparar_polar_vermelho.py": "8701d5925bf1b2ed35ace89ae0529be8160b1281be04250691387b793cd9de5b",
+    "validar_lateralidade_informada.py": "438c67e9f50e4a0bbcaf666e0ffaff59119f1b183b61442e698ede274bfb1247"
+  },
+  "limits": "Fixed-gallery16person test already examined,unknown ArcIris pretraining overlap; empirical point criterion and exploratory intervals,not clinical/anatomical universal minimum."
+}

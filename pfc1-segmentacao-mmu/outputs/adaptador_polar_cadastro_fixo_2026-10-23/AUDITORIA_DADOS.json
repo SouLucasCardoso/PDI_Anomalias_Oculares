@@ -1,0 +1,20 @@
+{
+  "fit_valid_paired_images": 6665,
+  "fit_people": 167,
+  "monitor_images": 960,
+  "monitor_people": 16,
+  "monitor_queries": 480,
+  "fit_excluded_images": 91,
+  "guards": {
+    "clean:applied": 7636,
+    "upper10:applied": 7591,
+    "lower10:applied": 7478,
+    "upper10:pupil_not_contained": 48,
+    "lower10:pupil_not_contained": 145,
+    "clean:invalid_polar": 71,
+    "upper10:invalid_polar": 77,
+    "lower10:invalid_polar": 93,
+    "clean:pupil_not_contained": 9
+  },
+  "clean_original_polar_inputs_exact": true
+}

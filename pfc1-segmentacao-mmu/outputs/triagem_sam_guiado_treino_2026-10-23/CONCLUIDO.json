@@ -1,0 +1,56 @@
+{
+  "status": "sam_guided_feasibility_screen_completed",
+  "summary": {
+    "unet": {
+      "clean": {
+        "full_dice": 0.9515214940094379,
+        "full_iou": 0.908091297313006,
+        "visible_dice": 0.9515214940094379,
+        "visible_iou": 0.908091297313006
+      },
+      "upper10": {
+        "full_dice": 0.8973993210192888,
+        "full_iou": 0.8176101428429713,
+        "visible_dice": 0.9169874163345049,
+        "visible_iou": 0.8486826697225633
+      },
+      "lower10": {
+        "full_dice": 0.8473163853572049,
+        "full_iou": 0.7498221089965149,
+        "visible_dice": 0.8906927393221065,
+        "visible_iou": 0.8194217260281701
+      }
+    },
+    "sam_guided": {
+      "clean": {
+        "full_dice": 0.9145274324641602,
+        "full_iou": 0.8430653365086758,
+        "visible_dice": 0.9145274324641602,
+        "visible_iou": 0.8430653365086758
+      },
+      "upper10": {
+        "full_dice": 0.8839387700433753,
+        "full_iou": 0.7924873302226892,
+        "visible_dice": 0.9265197673302797,
+        "visible_iou": 0.8635212756226633
+      },
+      "lower10": {
+        "full_dice": 0.8737815663683185,
+        "full_iou": 0.776735099230373,
+        "visible_dice": 0.9074958228435491,
+        "visible_iou": 0.8320004424122922
+      }
+    }
+  },
+  "screen_passed": false,
+  "original_train_photos": 32,
+  "conditions": 3,
+  "paired_cases": 96,
+  "prompt_failures": 0,
+  "validation_identity_inference": false,
+  "test_inference": false,
+  "biometric_inference": false,
+  "frozen_candidate_replaced": false,
+  "minimum_area": null,
+  "mask_file_sha256": "a0566a3db1b5b3c5483be5b4d182bd79bb9463d04b5c02c07ffbd048efd6ae64"
+}

@@ -3,6 +3,8 @@
 *.zip
 # Pacotes locais de recuperacao em texto; contêm escores derivados, como os NPZ.
 **/backups/**/*.b64
+# Copias recuperaveis locais de imagens biometricas.
+*.png.b64
 
 # Ambientes e caches
 /.runtime/
@@ -14,6 +16,7 @@
 # Pesos e arquivos com caminhos locais
 *.pt
 *.pt.part
+**/outputs/**/melhor_forma.json
 # Arrays derivados e caches numericos; os relatorios CSV/JSON permanecem revisaveis.
 **/outputs/**/*.npz
 **/manifesto.json

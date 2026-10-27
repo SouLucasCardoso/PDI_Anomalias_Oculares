@@ -1,0 +1,8 @@
+{
+  "status": "20261024_compact_evidence_audited",
+  "experiment": "porta_limpa_multicondicao_val_2026-10-24",
+  "clean_fusion_and_metrics_exact": true,
+  "train_threshold_unchanged": true,
+  "clean_gate_passed": false,
+  "new_image_inference": false
+}

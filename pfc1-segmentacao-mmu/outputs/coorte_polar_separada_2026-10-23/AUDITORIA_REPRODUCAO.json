@@ -1,0 +1,10 @@
+{
+  "status": "cohort_scores_reproduced",
+  "cohort_fit_only_verified": true,
+  "same_side_statistics_verified": true,
+  "all_scores_and_statistics_exact": true,
+  "internal_clean_threshold_exact": true,
+  "monitor_gate_passed": false,
+  "absolute_target_reached": false,
+  "new_network_inference": false
+}

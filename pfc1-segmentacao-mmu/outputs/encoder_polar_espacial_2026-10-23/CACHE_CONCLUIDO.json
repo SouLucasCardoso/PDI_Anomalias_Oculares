@@ -1,0 +1,20 @@
+{
+  "status": "layer3_cache_completed",
+  "photos": 7716,
+  "native_query_photos": 2222,
+  "feature_maps": 12160,
+  "dtype": "float32",
+  "shape": [
+    12160,
+    256,
+    4,
+    32
+  ],
+  "bytes": 1593835648,
+  "sha256": "28d931ca33317202f37e8bc41ed353193be91e7148ba41fd39ae49117a408894",
+  "indices_sha256": "3acf69d79111114b283b4a4e3583ed1473b097b52a6b1e634393a34f27b2f89e",
+  "maximum_clean_embedding_difference": 0.0,
+  "native_query_extraction_validity_matches_previous": true,
+  "clean_enrollment_only": true,
+  "seconds": 169.31200000000536
+}
