@@ -1,0 +1,134 @@
+{
+  "status": "irissam_ubipr_feasibility_completed",
+  "summary": {
+    "unet": {
+      "clean": {
+        "full_dice": 0.8440406195770305,
+        "full_iou": 0.792279863431544,
+        "visible_dice": 0.8440406195770305,
+        "visible_iou": 0.792279863431544
+      },
+      "upper10": {
+        "full_dice": 0.7930795764061209,
+        "full_iou": 0.7104471000337362,
+        "visible_dice": 0.8128744587528299,
+        "visible_iou": 0.7417234179615522
+      },
+      "lower10": {
+        "full_dice": 0.7522945511822281,
+        "full_iou": 0.6536970356783147,
+        "visible_dice": 0.7867281647283297,
+        "visible_iou": 0.7071762698525366
+      }
+    },
+    "irissam_auto_unet_box": {
+      "clean": {
+        "full_dice": 0.7879867182137616,
+        "full_iou": 0.7025440010146108,
+        "visible_dice": 0.7879867182137616,
+        "visible_iou": 0.7025440010146108
+      },
+      "upper10": {
+        "full_dice": 0.7699073040985254,
+        "full_iou": 0.6710890360382453,
+        "visible_dice": 0.8028573441041451,
+        "visible_iou": 0.7227686219294902
+      },
+      "lower10": {
+        "full_dice": 0.7380716877331049,
+        "full_iou": 0.6267404941861522,
+        "visible_dice": 0.7748701917974613,
+        "visible_iou": 0.6823673882777824
+      }
+    },
+    "irissam_no_prompt": {
+      "clean": {
+        "full_dice": 0.001937405912347092,
+        "full_iou": 0.0009801637090814967,
+        "visible_dice": 0.001937405912347092,
+        "visible_iou": 0.0009801637090814967
+      },
+      "upper10": {
+        "full_dice": 0.007844394610230971,
+        "full_iou": 0.004044640774090605,
+        "visible_dice": 0.0013265962862431472,
+        "visible_iou": 0.0006705884251796658
+      },
+      "lower10": {
+        "full_dice": 0.005184361068395413,
+        "full_iou": 0.0026230022900502374,
+        "visible_dice": 0.0004126777737065942,
+        "visible_iou": 0.00020683156472473883
+      }
+    },
+    "irissam_oracle_box": {
+      "clean": {
+        "full_dice": 0.8510189229987211,
+        "full_iou": 0.7674680901871063,
+        "visible_dice": 0.8510189229987211,
+        "visible_iou": 0.7674680901871063
+      },
+      "upper10": {
+        "full_dice": 0.8222787600185608,
+        "full_iou": 0.7216453132258587,
+        "visible_dice": 0.8545731397201437,
+        "visible_iou": 0.7749278185364437
+      },
+      "lower10": {
+        "full_dice": 0.7868874217409314,
+        "full_iou": 0.6776369831177658,
+        "visible_dice": 0.8169468571196932,
+        "visible_iou": 0.729819490489733
+      }
+    }
+  },
+  "primary_paired_differences": {
+    "clean": {
+      "mean_difference": -0.05605390136326882,
+      "bootstrap95": [
+        -0.06689111063828673,
+        -0.04604392544828514
+      ]
+    },
+    "upper10": {
+      "mean_difference": -0.010017114648684789,
+      "bootstrap95": [
+        -0.02298642829989871,
+        0.005209439512866153
+      ]
+    },
+    "lower10": {
+      "mean_difference": -0.011857972930868425,
+      "bootstrap95": [
+        -0.03778842543264222,
+        0.019993328102250088
+      ]
+    }
+  },
+  "screen_passed": false,
+  "precision_sanity": {
+    "attempted": true,
+    "completed": true,
+    "cases": 2,
+    "maximum_absolute_Dice_difference": 5.370496901002664e-05,
+    "material_difference": false
+  },
+  "cuda_memory_peak_bytes": 2993655808,
+  "photos": 32,
+  "people": 32,
+  "paired_cases": 96,
+  "conditions": 3,
+  "methods": [
+    "unet",
+    "irissam_auto_unet_box",
+    "irissam_no_prompt",
+    "irissam_oracle_box"
+  ],
+  "precision": "FP16SAM/FP32UNet",
+  "checkpoint_sha256": "388a1b4ca72a455b3710fa434118c390b1e7cd1614960aaef29e5f319961fffe",
+  "masks_sha256": "ca1fa8d7bdfa8ea6988262443b83306a5fd2c1bf532ae44bea78b55aff515697",
+  "biometric_inference": false,
+  "test_inference": false,
+  "frozen_candidate_replaced": false,
+  "minimum_area": null
+}

@@ -1,0 +1,2 @@
+Verificacao de escrita pelo mecanismo de edicao apos liberacao pelo usuario no Windows Defender.
+Nenhuma configuracao de seguranca foi alterada pelo agente.

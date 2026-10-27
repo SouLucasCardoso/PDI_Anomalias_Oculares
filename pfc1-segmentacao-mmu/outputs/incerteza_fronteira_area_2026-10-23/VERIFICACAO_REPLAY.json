@@ -1,0 +1,12 @@
+{
+  "status": "boundary_uncertainty_reproduced_from_person_counts",
+  "person_condition_rows": 96,
+  "people": 16,
+  "queries": 486,
+  "repetitions": 5000,
+  "maximum_interval_difference_pp": 2.220446049250313e-16,
+  "all_prefix_categories_account_for5000_draws": true,
+  "integer_boundary_criteria_verified": true,
+  "new_inference": false,
+  "threshold_recalibrated": false
+}

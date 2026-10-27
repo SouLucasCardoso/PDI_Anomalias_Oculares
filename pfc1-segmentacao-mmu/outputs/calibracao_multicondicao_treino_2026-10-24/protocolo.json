@@ -1,0 +1,20 @@
+{
+  "registered_utc": "2026-10-24T15:58:00.005745+00:00",
+  "scope": "New TRAIN calibration hypothesis after clean-only transfer failed. Same fixed151FITnetwork,120queries/16INTERNALpeople for calibration,480queries/16OLDmonitor for assessment. Reused development populations,NOTindependent confirmation. No retraining/VAL/test.",
+  "method": "Fixed background-normalized9componentfusion unchanged. Compute internal impostor0.5%FMRthreshold in each of CLEAN/upper10/lower10; ONEglobal threshold=max of these3, usedforALLconditions/ALLpeople. Condition labels ONLYdefine calibrationdomains,NEVERswitchthreshold at inference. No monitor cases/labels in threshold selection.",
+  "difference": "Unlike earlier experiments, INTERNAL synthetic occlusions now legitimately enter calibration in NEWprotocol,not retroactive change. No condition-specific evaluation threshold, percentile search, model/fusionweight changes, query filtering or monitor-based threshold adjustment.",
+  "gate": "Reportjoint90%Rank1/TAR andFMR<=1%percondition. Onlyif ALLmonitorFMR<=1%andcleanRank1/TAR>=90% consider separatelyregistered fixed5%occlusion feasibility. No automaticVAL/test/promotion/minimum; 10%ranking cannot change from monotonicthreshold.",
+  "target_internal_fmr": 0.005,
+  "source_completion_sha256": "97d94401a6f0dacaa58993e37ba45c1ada0309c426774ff8c4027663e461034c",
+  "source_protocol_sha256": "d0270ba62e9ae91845ee8a5a8d7c511d5429ac84fc6fccf1248c3df3af0cbebc",
+  "script_sha256": "f6f66a439a7cbf6797ebdffb8c5522f1b3d180b205d58d072e94566b5c25cccb",
+  "calibrator_sha256": "401616583b6bd6936dc914afac383c157e681b8355d97d54d92bda5983a36d24",
+  "score_files_sha256": {
+    "scores_internal_clean.npz": "d1c06c41093e8291edfd7bd7a507b492e0e6f1a9839a135741274e873359e43e",
+    "scores_internal_upper10.npz": "d39abd60596d79590ac34f65dc8671820b3ef2f5fb535731905ef45ce867b8f0",
+    "scores_internal_lower10.npz": "d4fcd9f6235a4ce71d1b512f6b6ba81c9ebf8cfcb16dd69c8507ce302ddf5831",
+    "scores_monitor_clean.npz": "759ec3d18dc921d1e8539b668b33a2a0287c93a863cb4f06a0adce645604476f",
+    "scores_monitor_upper10.npz": "200f670e2049026fec93530b748087f7fee47c95a17fbed12b683f499a0fe515",
+    "scores_monitor_lower10.npz": "14c51822e1617066b65bdcacd546a57e6f10c3d96897113174663bea45e8990c"
+  }
+}

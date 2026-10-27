@@ -1,0 +1,15 @@
+{
+  "status": "restored_hash_verified_and_masks_reaudited",
+  "files": 22,
+  "parts": 83,
+  "zip_bytes": 3945803,
+  "destination": "%TEMP%/pfc-irissam-restaurado-20261023",
+  "people": 32,
+  "paired_cases": 96,
+  "records": 384,
+  "all_dice_iou_exact": true,
+  "automatic_prompts_reproduced": true,
+  "paired_bootstrap_exact": true,
+  "checkpoint_in_package": false,
+  "cloud_upload_verified": false
+}

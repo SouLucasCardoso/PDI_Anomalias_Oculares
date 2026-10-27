@@ -1,0 +1,106 @@
+{
+  "zip_bytes": 379618,
+  "zip_sha256": "1a6beb3c26910a36d35e77af278742231fd07403e253ca39fbd1f6cddc6b1817",
+  "parts": [
+    "parte_001.b64",
+    "parte_002.b64",
+    "parte_003.b64",
+    "parte_004.b64",
+    "parte_005.b64",
+    "parte_006.b64",
+    "parte_007.b64",
+    "parte_008.b64"
+  ],
+  "files": {
+    "complemento_geometrico_monitor_2026-10-23/AUDITORIA_REPRODUCAO.json": {
+      "bytes": 1333,
+      "sha256": "ccb24e2caf66ee4a0bd53a361d7c1b30fed7c89d6806e49007fc8660c6165d86"
+    },
+    "complemento_geometrico_monitor_2026-10-23/CONCLUIDO.json": {
+      "bytes": 4803,
+      "sha256": "cc06ae3763c264b8ad5d532c86f3c4b5ca9800015c324c368d0695b539a9433e"
+    },
+    "complemento_geometrico_monitor_2026-10-23/interventions.json": {
+      "bytes": 143381,
+      "sha256": "8c6eeca51dd03e5bbd7348b9cbc65fa78aa7cc6a84457254617193912f8dc67f"
+    },
+    "complemento_geometrico_monitor_2026-10-23/protocolo.json": {
+      "bytes": 2618,
+      "sha256": "068d9f1711f23a34c319adf13b9cd242074038329bd3c163144a255da37fe8d3"
+    },
+    "complemento_geometrico_monitor_2026-10-23/rows.json": {
+      "bytes": 98187,
+      "sha256": "521d511dc527c969c0c9ee637db3ac79e148c867e46ade026fc360ddfaaac974"
+    },
+    "complemento_geometrico_monitor_2026-10-23/scores_complement_clean.npz": {
+      "bytes": 38069,
+      "sha256": "69ed4b227644ba75bc01c4f6d895b2a1d84832a3c3f7afd5a36a0986ef27c33f"
+    },
+    "complemento_geometrico_monitor_2026-10-23/scores_complement_lower10.npz": {
+      "bytes": 38159,
+      "sha256": "9b2ab49c8003f91eee3ae0bb2d37fa3fcc1159130b24f2209f69467a06412172"
+    },
+    "complemento_geometrico_monitor_2026-10-23/scores_complement_upper10.npz": {
+      "bytes": 38260,
+      "sha256": "fbdc438ad3bae920ae83886007aeb23b39e8c2d81e3d2309550bbf20b02c55cf"
+    },
+    "complemento_geometrico_monitor_2026-10-23/scores_corrected_clean.npz": {
+      "bytes": 37718,
+      "sha256": "fffc09b1a1264134d5df814882c8a5dcf16437a3db31d8b2a91f1c33005d3ea4"
+    },
+    "complemento_geometrico_monitor_2026-10-23/scores_corrected_lower10.npz": {
+      "bytes": 37671,
+      "sha256": "0891eacdd901ce11399b4d4f84a72f11b8c7101c1da6e60ba6b939a00fde6de2"
+    },
+    "complemento_geometrico_monitor_2026-10-23/scores_corrected_upper10.npz": {
+      "bytes": 37918,
+      "sha256": "e61b52521a31137fccd174e21dc8784d193265ff3dc41c2f72447b4c8fa48d2b"
+    },
+    "complemento_geometrico_monitor_2026-10-23/scores_original_clean.npz": {
+      "bytes": 37742,
+      "sha256": "5e4a49855697c8d2b2747028d7b8a45a78906a89e4e16e8ef4ee683eed18ae07"
+    },
+    "complemento_geometrico_monitor_2026-10-23/scores_original_lower10.npz": {
+      "bytes": 37984,
+      "sha256": "fc527a8ff47e14cbc15828ec2c51108c5762a4f904bcb1f41107b344fee46581"
+    },
+    "complemento_geometrico_monitor_2026-10-23/scores_original_upper10.npz": {
+      "bytes": 38176,
+      "sha256": "a8b3f587155a9ccb96b70e964347c3a15b2f92e4858914977bc847445e466151"
+    },
+    "complemento_geometrico_monitor_2026-10-23/source.py": {
+      "bytes": 9964,
+      "sha256": "1c824d23b4584e491614988f88c8a79db182bf3d01bd91875ec84f0dd3f13c0a"
+    },
+    "scripts/avaliar_complemento_geometrico.py": {
+      "bytes": 9964,
+      "sha256": "1c824d23b4584e491614988f88c8a79db182bf3d01bd91875ec84f0dd3f13c0a"
+    },
+    "scripts/test_complemento_geometrico.py": {
+      "bytes": 926,
+      "sha256": "f4ff4448ff198213486c02dec4c41536d07f99146e62a3689b40d7fb032fe08e"
+    },
+    "scripts/verificar_complemento_geometrico.py": {
+      "bytes": 3662,
+      "sha256": "f7be83c289e38827257ef8c2cc63cf314f5c22fef16d982bbd8d1eee2e123d6d"
+    },
+    "scripts/preservar_complemento_geometrico.py": {
+      "bytes": 2950,
+      "sha256": "8ac25165fa22c84cf4ec22622811ab8e008cd25678d11d85b3daf538c5365b6b"
+    },
+    "scripts/treinar_adaptador_polar.py": {
+      "bytes": 18999,
+      "sha256": "d96649deacba6a257b2ba3a1d3c468676d3e7eb1189ec4827e6ac1459c88c6ee"
+    },
+    "scripts/adaptador_polar.py": {
+      "bytes": 1668,
+      "sha256": "211ca146fed33d61c6752ffea78e4e3ac1ea4890499690974294b3aef87166ea"
+    }
+  },
+  "excluded_feature_caches": {
+    "complemento_geometrico_monitor_2026-10-23/cache_features.npz": {
+      "bytes": 4541226,
+      "sha256": "1ff1187cfbc2803a94d4fac9e739e11542d1da80f54645f8a332f61055d3f21a"
+    }
+  }
+}

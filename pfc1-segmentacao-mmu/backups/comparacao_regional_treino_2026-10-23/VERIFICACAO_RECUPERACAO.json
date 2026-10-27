@@ -1,0 +1,13 @@
+{
+  "status": "restored_hash_verified_and_decisions_reaudited",
+  "files": 19,
+  "parts": 26,
+  "zip_bytes": 1232507,
+  "destination": "%TEMP%/pfc-regional-restaurado-20261023",
+  "metrics_exact": true,
+  "clean_thresholds_exact": true,
+  "gate_passed": false,
+  "torch_required_for_restore_or_audit": false,
+  "original_cache_in_package": false,
+  "cloud_upload_verified": false
+}

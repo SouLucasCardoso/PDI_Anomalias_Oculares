@@ -1,0 +1,171 @@
+{
+  "zip_bytes": 31591947,
+  "zip_sha256": "d5878f688e3718b8ba97533b2bf62c67d8c391442cb860656728e819134231d0",
+  "parts": [
+    "parte_001.b64",
+    "parte_002.b64",
+    "parte_003.b64",
+    "parte_004.b64",
+    "parte_005.b64",
+    "parte_006.b64",
+    "parte_007.b64",
+    "parte_008.b64",
+    "parte_009.b64",
+    "parte_010.b64",
+    "parte_011.b64",
+    "parte_012.b64",
+    "parte_013.b64",
+    "parte_014.b64",
+    "parte_015.b64",
+    "parte_016.b64",
+    "parte_017.b64",
+    "parte_018.b64",
+    "parte_019.b64",
+    "parte_020.b64",
+    "parte_021.b64",
+    "parte_022.b64",
+    "parte_023.b64",
+    "parte_024.b64",
+    "parte_025.b64",
+    "parte_026.b64",
+    "parte_027.b64",
+    "parte_028.b64",
+    "parte_029.b64",
+    "parte_030.b64",
+    "parte_031.b64",
+    "parte_032.b64",
+    "parte_033.b64",
+    "parte_034.b64",
+    "parte_035.b64",
+    "parte_036.b64",
+    "parte_037.b64",
+    "parte_038.b64",
+    "parte_039.b64",
+    "parte_040.b64",
+    "parte_041.b64",
+    "parte_042.b64",
+    "parte_043.b64"
+  ],
+  "files": {
+    "ajuste_bloco_polar_treino_2026-10-23/AUDITORIA_REPRODUCAO.json": {
+      "bytes": 1479,
+      "sha256": "5d4ef1bb6155eacfadfb0437c256e25a32e36dab24e0f9126dd3d24845db295a"
+    },
+    "ajuste_bloco_polar_treino_2026-10-23/cadastros_ajuste.npz": {
+      "bytes": 28660,
+      "sha256": "661d6c3d74a9ffc9a3dcb5639c4d7f8ef46bd935d602dac72719af1bafc67b7c"
+    },
+    "ajuste_bloco_polar_treino_2026-10-23/CONCLUIDO.json": {
+      "bytes": 5539,
+      "sha256": "5c359e60a26abee1bf842be5c06aeda2abecf6b5b17707bfd7633a0fbd60bd33"
+    },
+    "ajuste_bloco_polar_treino_2026-10-23/historico.csv": {
+      "bytes": 2905,
+      "sha256": "68a677d1c3b46c5a057a62c276d5aea4547c917d1455fc3b8677db4107cf0826"
+    },
+    "ajuste_bloco_polar_treino_2026-10-23/melhor_modelo.pt": {
+      "bytes": 33562459,
+      "sha256": "bee6ff02e6772f4b56c7ab79c3d78780dc298ce540aa7959d0973182a4e1dd78"
+    },
+    "ajuste_bloco_polar_treino_2026-10-23/protocolo.json": {
+      "bytes": 5640,
+      "sha256": "ec4905674fc2876ca67dbbaac1b0ac0e923ca5930baaaac784508e92cd4952cf"
+    },
+    "ajuste_bloco_polar_treino_2026-10-23/rows.json": {
+      "bytes": 786765,
+      "sha256": "f015208f57ef456016495bf24ae35daa31c0c43718a97d192e089049bd434893"
+    },
+    "ajuste_bloco_polar_treino_2026-10-23/scores_baseline_clean.npz": {
+      "bytes": 37742,
+      "sha256": "5e4a49855697c8d2b2747028d7b8a45a78906a89e4e16e8ef4ee683eed18ae07"
+    },
+    "ajuste_bloco_polar_treino_2026-10-23/scores_baseline_lower10.npz": {
+      "bytes": 37984,
+      "sha256": "fc527a8ff47e14cbc15828ec2c51108c5762a4f904bcb1f41107b344fee46581"
+    },
+    "ajuste_bloco_polar_treino_2026-10-23/scores_baseline_upper10.npz": {
+      "bytes": 38176,
+      "sha256": "a8b3f587155a9ccb96b70e964347c3a15b2f92e4858914977bc847445e466151"
+    },
+    "ajuste_bloco_polar_treino_2026-10-23/scores_last_clean.npz": {
+      "bytes": 37820,
+      "sha256": "811ce54721a2827bbcd972dbc2ef2e9ebd084081986997629655c20a8f27667b"
+    },
+    "ajuste_bloco_polar_treino_2026-10-23/scores_last_lower10.npz": {
+      "bytes": 38063,
+      "sha256": "04e386c66673fc3c838455f509dba50efc17505a1119eec4be60ea3311fb58b5"
+    },
+    "ajuste_bloco_polar_treino_2026-10-23/scores_last_upper10.npz": {
+      "bytes": 38061,
+      "sha256": "4373dd315cfa424cc42089e7cfe2d1145b658ed938130dfea5f31f62e64f97e4"
+    },
+    "ajuste_bloco_polar_treino_2026-10-23/scores_selected_clean.npz": {
+      "bytes": 37820,
+      "sha256": "811ce54721a2827bbcd972dbc2ef2e9ebd084081986997629655c20a8f27667b"
+    },
+    "ajuste_bloco_polar_treino_2026-10-23/scores_selected_lower10.npz": {
+      "bytes": 38063,
+      "sha256": "04e386c66673fc3c838455f509dba50efc17505a1119eec4be60ea3311fb58b5"
+    },
+    "ajuste_bloco_polar_treino_2026-10-23/scores_selected_upper10.npz": {
+      "bytes": 38061,
+      "sha256": "4373dd315cfa424cc42089e7cfe2d1145b658ed938130dfea5f31f62e64f97e4"
+    },
+    "ajuste_bloco_polar_treino_2026-10-23/source.py": {
+      "bytes": 13255,
+      "sha256": "568c609362bf8c54b7d311fc0abff9a1812310424af658249a6e8c25f4ac66b1"
+    },
+    "scripts/treinar_ajuste_bloco_polar.py": {
+      "bytes": 13255,
+      "sha256": "568c609362bf8c54b7d311fc0abff9a1812310424af658249a6e8c25f4ac66b1"
+    },
+    "scripts/ajuste_bloco_polar.py": {
+      "bytes": 1904,
+      "sha256": "0d1bf7f5bdd096f596c17839bf5a6490e919d4f71a7c64d3935fd1d025fcef51"
+    },
+    "scripts/auditar_ajuste_bloco_polar.py": {
+      "bytes": 7596,
+      "sha256": "c2473bd99d44295f385688f55f53fde94417d51c2458d43bed7bfa2f5475c104"
+    },
+    "scripts/test_ajuste_bloco_polar.py": {
+      "bytes": 1553,
+      "sha256": "c62303a39e47e4b1821d6455d90c44230e56512a61cb82cd7d0ea71058101f8f"
+    },
+    "scripts/preservar_ajuste_bloco_polar.py": {
+      "bytes": 4113,
+      "sha256": "47d027ccd4faa0c1f64cbcd9dea93c3c912ca14ea56aec6dde7b2c2ba19474e8"
+    },
+    "scripts/encoder_polar_espacial.py": {
+      "bytes": 3029,
+      "sha256": "b022672c1c97bb93c1c64d3df0b4be52044643ac311373b7d17235b3bc0bf9a9"
+    },
+    "scripts/perda_top3_polar.py": {
+      "bytes": 1356,
+      "sha256": "08ccde64234ff6156d5bfdb0c3d17a1475f219613ce275d6ac908cf03fba197a"
+    },
+    "scripts/perda_identidade_polar.py": {
+      "bytes": 1065,
+      "sha256": "2663b88f379d00f688198d1d7ce76540bc1b883f59a7e049c38364d9245e8489"
+    },
+    "scripts/treinar_adaptador_polar.py": {
+      "bytes": 18999,
+      "sha256": "d96649deacba6a257b2ba3a1d3c468676d3e7eb1189ec4827e6ac1459c88c6ee"
+    },
+    "scripts/treinar_adaptador_polar_original.py": {
+      "bytes": 13460,
+      "sha256": "a07414f70dddd672a077761363f29d56f5d63915e304e4b358951b1c51b15969"
+    },
+    "ajuste_bloco_polar_treino_2026-10-23/ultima_epoca.xor": {
+      "bytes": 33562459,
+      "sha256": "59dd1fae1b5060827845ac8032b9e824c1fe520827133c1dc0784bac14566f14"
+    }
+  },
+  "excluded_feature_caches": {},
+  "reconstructed_checkpoint": {
+    "base": "ajuste_bloco_polar_treino_2026-10-23/melhor_modelo.pt",
+    "delta": "ajuste_bloco_polar_treino_2026-10-23/ultima_epoca.xor",
+    "target": "ajuste_bloco_polar_treino_2026-10-23/ultima_epoca.pt",
+    "bytes": 33562448,
+    "sha256": "bf97debbd8457614e3833dce14a059833c3d49646d1bf503e30e1c3cb63fb543"
+  }
+}

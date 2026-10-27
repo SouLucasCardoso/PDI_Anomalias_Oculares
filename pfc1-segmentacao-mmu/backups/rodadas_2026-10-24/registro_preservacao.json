@@ -1,0 +1,273 @@
+{
+  "zip_bytes": 2681651,
+  "zip_sha256": "b575159c88b98182cece5e190bc2412b7d59914e5d7b2cd3749c225f688f0378",
+  "parts": [
+    "parte_001.b64",
+    "parte_002.b64",
+    "parte_003.b64",
+    "parte_004.b64"
+  ],
+  "files": {
+    "calibracao_multicondicao_treino_2026-10-24/AUDITORIA_REPRODUCAO.json": {
+      "bytes": 317,
+      "sha256": "5590e7c1ebda410c0a540d1f1dabd51863e4968ea6390a9b4bf5116727d0a72a"
+    },
+    "calibracao_multicondicao_treino_2026-10-24/CONCLUIDO.json": {
+      "bytes": 6422,
+      "sha256": "fb1de7a1d0efb3dec96bb9d40f27c5dfce66f91d0bb23432a494f91dba240a41"
+    },
+    "calibracao_multicondicao_treino_2026-10-24/input_scores_internal_clean.npz": {
+      "bytes": 15342,
+      "sha256": "d1c06c41093e8291edfd7bd7a507b492e0e6f1a9839a135741274e873359e43e"
+    },
+    "calibracao_multicondicao_treino_2026-10-24/input_scores_internal_lower10.npz": {
+      "bytes": 15406,
+      "sha256": "d4fcd9f6235a4ce71d1b512f6b6ba81c9ebf8cfcb16dd69c8507ce302ddf5831"
+    },
+    "calibracao_multicondicao_treino_2026-10-24/input_scores_internal_upper10.npz": {
+      "bytes": 15259,
+      "sha256": "d39abd60596d79590ac34f65dc8671820b3ef2f5fb535731905ef45ce867b8f0"
+    },
+    "calibracao_multicondicao_treino_2026-10-24/input_scores_monitor_clean.npz": {
+      "bytes": 58658,
+      "sha256": "759ec3d18dc921d1e8539b668b33a2a0287c93a863cb4f06a0adce645604476f"
+    },
+    "calibracao_multicondicao_treino_2026-10-24/input_scores_monitor_lower10.npz": {
+      "bytes": 58813,
+      "sha256": "14c51822e1617066b65bdcacd546a57e6f10c3d96897113174663bea45e8990c"
+    },
+    "calibracao_multicondicao_treino_2026-10-24/input_scores_monitor_upper10.npz": {
+      "bytes": 58835,
+      "sha256": "200f670e2049026fec93530b748087f7fee47c95a17fbed12b683f499a0fe515"
+    },
+    "calibracao_multicondicao_treino_2026-10-24/protocolo.json": {
+      "bytes": 2293,
+      "sha256": "c867438902a7110c2b62a3b28a91a5f9a7c3ce5ededc745869c35a3ed9a96bc2"
+    },
+    "calibracao_multicondicao_treino_2026-10-24/scores_internal_clean.npz": {
+      "bytes": 15342,
+      "sha256": "d1c06c41093e8291edfd7bd7a507b492e0e6f1a9839a135741274e873359e43e"
+    },
+    "calibracao_multicondicao_treino_2026-10-24/scores_internal_lower10.npz": {
+      "bytes": 15411,
+      "sha256": "a6ff8eb59996ca1656009bc07c6568faac5caac3096c0cc7dc525824261289b0"
+    },
+    "calibracao_multicondicao_treino_2026-10-24/scores_internal_upper10.npz": {
+      "bytes": 15266,
+      "sha256": "367205d5699ae2f88d1334ce68aa44c94a46f066fff8651ce9fedcf44b763f44"
+    },
+    "calibracao_multicondicao_treino_2026-10-24/scores_monitor_clean.npz": {
+      "bytes": 58658,
+      "sha256": "759ec3d18dc921d1e8539b668b33a2a0287c93a863cb4f06a0adce645604476f"
+    },
+    "calibracao_multicondicao_treino_2026-10-24/scores_monitor_lower10.npz": {
+      "bytes": 58835,
+      "sha256": "fbcd0aa8d91a1b592ae76955d2ab56fd4545da6eb22016d54d77d2316e2a0147"
+    },
+    "calibracao_multicondicao_treino_2026-10-24/scores_monitor_upper10.npz": {
+      "bytes": 58853,
+      "sha256": "f7de289568efc0d1e8e48f6a1f942a5cf5b631bd2e8aa17cfaadf6dd2f18c60d"
+    },
+    "calibracao_multicondicao_treino_2026-10-24/source.py": {
+      "bytes": 4582,
+      "sha256": "f6f66a439a7cbf6797ebdffb8c5522f1b3d180b205d58d072e94566b5c25cccb"
+    },
+    "porta_limpa_multicondicao_val_2026-10-24/AUDITORIA_REPRODUCAO.json": {
+      "bytes": 259,
+      "sha256": "e97c19b0ceef18c623486b1db48149b7978985dc6f499773ffe4d23f6e033466"
+    },
+    "porta_limpa_multicondicao_val_2026-10-24/component_arc_clahe.npz": {
+      "bytes": 55830,
+      "sha256": "b4655c0ec620baf43c00bb1a0a56e078e97a8fd8a8c1555d1dfd8141a71f1726"
+    },
+    "porta_limpa_multicondicao_val_2026-10-24/component_arc_red.npz": {
+      "bytes": 55839,
+      "sha256": "0da3cc8d94f515958e0656372af5fb9605073b1d3f040143ff9357952286f132"
+    },
+    "porta_limpa_multicondicao_val_2026-10-24/component_convnext.npz": {
+      "bytes": 36843,
+      "sha256": "dfb1e5820459d889b8cf22a33c0174defc2cad4607b6c6f58b2675aafc02ef73"
+    },
+    "porta_limpa_multicondicao_val_2026-10-24/component_native.npz": {
+      "bytes": 36593,
+      "sha256": "a04c18239a5a350e91946f012ac8269365c05f7b349a5c59843049eed2dbfea6"
+    },
+    "porta_limpa_multicondicao_val_2026-10-24/component_polar.npz": {
+      "bytes": 36088,
+      "sha256": "14f93e40aca5eed68c490d890c20a03ebaa381d58ed3111fb955cd006f8423ec"
+    },
+    "porta_limpa_multicondicao_val_2026-10-24/component_r50.npz": {
+      "bytes": 36679,
+      "sha256": "e5cf1f13e296ebc7d17359bf7908911c40f2019f52fab9fe88f649b917a9fd23"
+    },
+    "porta_limpa_multicondicao_val_2026-10-24/component_rgb.npz": {
+      "bytes": 36863,
+      "sha256": "79827b9fea936c4421a95498022aaee18672dc80381baca372a3cc64081eea8b"
+    },
+    "porta_limpa_multicondicao_val_2026-10-24/component_spatial.npz": {
+      "bytes": 30008,
+      "sha256": "8976ac78059bad57af53aac69f1aa6df898f7260fa86ca8e9f67e78cab8b9ce4"
+    },
+    "porta_limpa_multicondicao_val_2026-10-24/component_transformer.npz": {
+      "bytes": 36800,
+      "sha256": "adb02624c6ec5aeb9e2d728e745d0ea3366f5f98a10de934b12441e07e89dc53"
+    },
+    "porta_limpa_multicondicao_val_2026-10-24/CONCLUIDO.json": {
+      "bytes": 708,
+      "sha256": "f5e3ae6e5efb22e59056decb1e182ea7b263cc672afce01633b35582ad18d41e"
+    },
+    "porta_limpa_multicondicao_val_2026-10-24/DIAGNOSTICO_LIMITE_ROC.json": {
+      "bytes": 298,
+      "sha256": "396e907f40f82a3155d702bf9b5ebe5d0674f5e1b06a4339c86a43daafffc5f1"
+    },
+    "porta_limpa_multicondicao_val_2026-10-24/input_scores_arc_clahe.npz": {
+      "bytes": 55830,
+      "sha256": "9bac426e1e0bc6d7d87605de429916b1aba0d722e0f4e2ed85f44239f334ec42"
+    },
+    "porta_limpa_multicondicao_val_2026-10-24/input_scores_arc_red.npz": {
+      "bytes": 55839,
+      "sha256": "29be9e9a730d0c082c599e788a0ac2ed5aa93630180671b4c737b0a8df9a0727"
+    },
+    "porta_limpa_multicondicao_val_2026-10-24/input_scores_convnext.npz": {
+      "bytes": 36843,
+      "sha256": "a379e5022c267f8dc5c1f9fbbb8f6986eac23bd8195aa382c031c255f80ad43a"
+    },
+    "porta_limpa_multicondicao_val_2026-10-24/input_scores_native.npz": {
+      "bytes": 36593,
+      "sha256": "afbb501ee7e2052c8acda8fc31dc7aed3e895a4a8ae07ae5f0fffee3e4032789"
+    },
+    "porta_limpa_multicondicao_val_2026-10-24/input_scores_r50.npz": {
+      "bytes": 36679,
+      "sha256": "219be388ee67aa1835a4f7d877d748db096184389f94f39aedb4f82991ef95f3"
+    },
+    "porta_limpa_multicondicao_val_2026-10-24/input_scores_rgb.npz": {
+      "bytes": 36863,
+      "sha256": "64b9710817d674f3aa5f0acf91c221cef6d601ab72eb556459a68c2f2bb0607f"
+    },
+    "porta_limpa_multicondicao_val_2026-10-24/input_scores_spatial.npz": {
+      "bytes": 30008,
+      "sha256": "a2139bb1310d6dfc1cd2af300b9d5d22d0fa01719a8bf8f7062a02dcd775a793"
+    },
+    "porta_limpa_multicondicao_val_2026-10-24/input_scores_transformer.npz": {
+      "bytes": 36800,
+      "sha256": "11113a8d58e8180e6bfd973c112efec14c3af84afb3751e0c46388af3d6d4c5c"
+    },
+    "porta_limpa_multicondicao_val_2026-10-24/polar_adapted.npz": {
+      "bytes": 945698,
+      "sha256": "88e898d7229938f3454fd02085bc624d21d4b3170db82cd71448ff65b07b0f30"
+    },
+    "porta_limpa_multicondicao_val_2026-10-24/protocolo.json": {
+      "bytes": 4612,
+      "sha256": "556b41d2750d0bc352bc8ceb4179c57733695f4b0fda952d6f194503797b1e2d"
+    },
+    "porta_limpa_multicondicao_val_2026-10-24/scores_finais.npz": {
+      "bytes": 58882,
+      "sha256": "868871d3e016278b2481af945b2209a5a345b850b161e2b115c3dddff87107e7"
+    },
+    "porta_limpa_multicondicao_val_2026-10-24/source.py": {
+      "bytes": 6990,
+      "sha256": "d1ee36ca1696c5e0296f275d2c13e4f1e4bc5303e9be9a486e5c6a4395bfa2d0"
+    },
+    "troca_polar_parametros_originais_val_2026-10-24/AUDITORIA_REPRODUCAO.json": {
+      "bytes": 246,
+      "sha256": "0658d0cfde84beb8e3f4dce4fea291b3a1466b04405b333e0f4e62e9589683b3"
+    },
+    "troca_polar_parametros_originais_val_2026-10-24/component_original_clean_arc_clahe.npz": {
+      "bytes": 55830,
+      "sha256": "b4655c0ec620baf43c00bb1a0a56e078e97a8fd8a8c1555d1dfd8141a71f1726"
+    },
+    "troca_polar_parametros_originais_val_2026-10-24/component_original_clean_arc_red.npz": {
+      "bytes": 55839,
+      "sha256": "0da3cc8d94f515958e0656372af5fb9605073b1d3f040143ff9357952286f132"
+    },
+    "troca_polar_parametros_originais_val_2026-10-24/component_original_clean_convnext.npz": {
+      "bytes": 36843,
+      "sha256": "dfb1e5820459d889b8cf22a33c0174defc2cad4607b6c6f58b2675aafc02ef73"
+    },
+    "troca_polar_parametros_originais_val_2026-10-24/component_original_clean_native.npz": {
+      "bytes": 36593,
+      "sha256": "a04c18239a5a350e91946f012ac8269365c05f7b349a5c59843049eed2dbfea6"
+    },
+    "troca_polar_parametros_originais_val_2026-10-24/component_original_clean_polar.npz": {
+      "bytes": 36290,
+      "sha256": "1967bc7ced6820a0e4026ac95bcc43a6820a4f0c7e4abf767753b9408a647cad"
+    },
+    "troca_polar_parametros_originais_val_2026-10-24/component_original_clean_r50.npz": {
+      "bytes": 36679,
+      "sha256": "e5cf1f13e296ebc7d17359bf7908911c40f2019f52fab9fe88f649b917a9fd23"
+    },
+    "troca_polar_parametros_originais_val_2026-10-24/component_original_clean_rgb.npz": {
+      "bytes": 36863,
+      "sha256": "79827b9fea936c4421a95498022aaee18672dc80381baca372a3cc64081eea8b"
+    },
+    "troca_polar_parametros_originais_val_2026-10-24/component_original_clean_spatial.npz": {
+      "bytes": 30008,
+      "sha256": "8976ac78059bad57af53aac69f1aa6df898f7260fa86ca8e9f67e78cab8b9ce4"
+    },
+    "troca_polar_parametros_originais_val_2026-10-24/component_original_clean_transformer.npz": {
+      "bytes": 36800,
+      "sha256": "adb02624c6ec5aeb9e2d728e745d0ea3366f5f98a10de934b12441e07e89dc53"
+    },
+    "troca_polar_parametros_originais_val_2026-10-24/CONCLUIDO.json": {
+      "bytes": 3902,
+      "sha256": "0d1a08dbf69fefbe3a4fb352712bd2b977d890c8c1b086cfd2c3b261a8f4213f"
+    },
+    "troca_polar_parametros_originais_val_2026-10-24/parametros_originais.json": {
+      "bytes": 5747,
+      "sha256": "d933686f045eab5d6578cfe4701578d9ca1eeaaff4069bcff8427a602546dbda"
+    },
+    "troca_polar_parametros_originais_val_2026-10-24/polar_adapted_clean.npz": {
+      "bytes": 36088,
+      "sha256": "14f93e40aca5eed68c490d890c20a03ebaa381d58ed3111fb955cd006f8423ec"
+    },
+    "troca_polar_parametros_originais_val_2026-10-24/protocolo.json": {
+      "bytes": 1884,
+      "sha256": "ad281de6c6564032935d04c59a9d58152e948823a01ebd05c9bc2cd056ebfff6"
+    },
+    "troca_polar_parametros_originais_val_2026-10-24/scores_adapted_clean.npz": {
+      "bytes": 58803,
+      "sha256": "3ad18e8964bdb2862a035267a2d628baab03e835f86c7e67b03ff710f4d1ca6c"
+    },
+    "troca_polar_parametros_originais_val_2026-10-24/scores_original_clean.npz": {
+      "bytes": 58806,
+      "sha256": "7f590308cfb5ecefa628da8bd2a52fd613ea5eeb0d2fdca3021247a0695408d0"
+    },
+    "troca_polar_parametros_originais_val_2026-10-24/source.py": {
+      "bytes": 6961,
+      "sha256": "5aa41d320cc39aea57093ab3fcf60dcf6c504dcbef7f1e4b8028da08fec070cd"
+    },
+    "scripts/calibracao_multicondicao.py": {
+      "bytes": 778,
+      "sha256": "401616583b6bd6936dc914afac383c157e681b8355d97d54d92bda5983a36d24"
+    },
+    "scripts/test_calibracao_multicondicao.py": {
+      "bytes": 890,
+      "sha256": "c13dcebf27e232ff2006477a91adc298de8ba6c718953b15d74ec11827a765cb"
+    },
+    "scripts/avaliar_calibracao_multicondicao.py": {
+      "bytes": 4582,
+      "sha256": "f6f66a439a7cbf6797ebdffb8c5522f1b3d180b205d58d072e94566b5c25cccb"
+    },
+    "scripts/avaliar_porta_limpa_multicondicao.py": {
+      "bytes": 6990,
+      "sha256": "d1ee36ca1696c5e0296f275d2c13e4f1e4bc5303e9be9a486e5c6a4395bfa2d0"
+    },
+    "scripts/auditar_rodadas_2026-10-24.py": {
+      "bytes": 3950,
+      "sha256": "8cb02bacadb29a68bf299be98ea1abe85bb3a70880c37669dd094a267faeef1c"
+    },
+    "scripts/avaliar_troca_polar_congelada.py": {
+      "bytes": 6961,
+      "sha256": "5aa41d320cc39aea57093ab3fcf60dcf6c504dcbef7f1e4b8028da08fec070cd"
+    },
+    "scripts/auditar_troca_polar_congelada.py": {
+      "bytes": 2697,
+      "sha256": "1c0f7630ce31b9d5cf335b554404244e55e8d267c7fe44aefa5ae344d5fd75f2"
+    },
+    "scripts/preservar_rodadas_2026-10-24.py": {
+      "bytes": 3098,
+      "sha256": "86f684e7b9babe164ec2525b00f40a0acfed9ae09b75ced0b7930d1bcb124589"
+    }
+  },
+  "cloud_upload_verified": false
+}

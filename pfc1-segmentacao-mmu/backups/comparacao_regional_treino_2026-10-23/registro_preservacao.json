@@ -1,0 +1,111 @@
+{
+  "zip_bytes": 1232507,
+  "zip_sha256": "ec2889533bc973c62fc4feb422d251eee1b5cecf991b7acf14cf3ff455f3f4b4",
+  "parts": [
+    "parte_001.b64",
+    "parte_002.b64",
+    "parte_003.b64",
+    "parte_004.b64",
+    "parte_005.b64",
+    "parte_006.b64",
+    "parte_007.b64",
+    "parte_008.b64",
+    "parte_009.b64",
+    "parte_010.b64",
+    "parte_011.b64",
+    "parte_012.b64",
+    "parte_013.b64",
+    "parte_014.b64",
+    "parte_015.b64",
+    "parte_016.b64",
+    "parte_017.b64",
+    "parte_018.b64",
+    "parte_019.b64",
+    "parte_020.b64",
+    "parte_021.b64",
+    "parte_022.b64",
+    "parte_023.b64",
+    "parte_024.b64",
+    "parte_025.b64",
+    "parte_026.b64"
+  ],
+  "files": {
+    "comparacao_regional_treino_2026-10-23/AUDITORIA_REPRODUCAO.json": {
+      "bytes": 292,
+      "sha256": "507d5c4fae049a03445c7573b4ee5004b9a396c8bfc760ea333e2c29735c3d2d"
+    },
+    "comparacao_regional_treino_2026-10-23/comparator_source.py": {
+      "bytes": 749,
+      "sha256": "ea8695eb32c5c0234a73e95eafff6523c0e3541cd9a47c9fc8bc774d46850436"
+    },
+    "comparacao_regional_treino_2026-10-23/CONCLUIDO.json": {
+      "bytes": 5760,
+      "sha256": "a3d4ed3cbdc1593d6cfc7ee858e000e91afbf7cea7ad5f1b146331777bc98c3a"
+    },
+    "comparacao_regional_treino_2026-10-23/consultas_cadastro.json": {
+      "bytes": 67929,
+      "sha256": "42a766025fb40c9d18e4b43c55fae0a6d85738bb532fbc2cc4fcf841b343e535"
+    },
+    "comparacao_regional_treino_2026-10-23/normalizacao_ajuste.npz": {
+      "bytes": 9381,
+      "sha256": "a81a963800a82d183df0628646e0fc85a9fc852914b0daf37916df24647d8ae8"
+    },
+    "comparacao_regional_treino_2026-10-23/protocolo.json": {
+      "bytes": 3995,
+      "sha256": "1d6c92ec3eef4de3f06274dd54ae090ca8e801c71f44b34d48092fc1cdc5a9bd"
+    },
+    "comparacao_regional_treino_2026-10-23/prototipos.npz": {
+      "bytes": 968261,
+      "sha256": "9de118d3fd832135b6898748ca209ff4aa2294d7b81d8184d11a4e1e80ae3a33"
+    },
+    "comparacao_regional_treino_2026-10-23/scores_mean32_clean.npz": {
+      "bytes": 40814,
+      "sha256": "24c4c76369e4a02ca952a9b33da54eac53aef92266488b8d4f28301129a95356"
+    },
+    "comparacao_regional_treino_2026-10-23/scores_mean32_lower10.npz": {
+      "bytes": 42346,
+      "sha256": "8221a7fc650107805d604f61b3a86935f4de45f2039f9151c06334b56ff2219e"
+    },
+    "comparacao_regional_treino_2026-10-23/scores_mean32_upper10.npz": {
+      "bytes": 41281,
+      "sha256": "227fc34634dde047de02af4659a0affe125b1aa53ad191c2519ab8f6ab0e54bf"
+    },
+    "comparacao_regional_treino_2026-10-23/scores_regional24_clean.npz": {
+      "bytes": 37655,
+      "sha256": "ce4ff7846cf7fb61b990c041007c0b77b5e5eaf94d30e649c5f56b2ef190a9d4"
+    },
+    "comparacao_regional_treino_2026-10-23/scores_regional24_lower10.npz": {
+      "bytes": 38368,
+      "sha256": "0baf48dd860e00da2779352f90426c93242bfa810cee25a7ad6cdb4b75a0e862"
+    },
+    "comparacao_regional_treino_2026-10-23/scores_regional24_upper10.npz": {
+      "bytes": 37830,
+      "sha256": "555ae5f4e27ca37cf70532566fabb195321aa9903d47bc8cf753475726bcef0f"
+    },
+    "comparacao_regional_treino_2026-10-23/source.py": {
+      "bytes": 7954,
+      "sha256": "d0316fac6f69540d34e98f8d972012e7ffdf954a16d1e425c9a2f9b6d7444b14"
+    },
+    "scripts/piloto_comparacao_regional.py": {
+      "bytes": 7954,
+      "sha256": "0765386dac3a8665f42eade369204e1de9307bea54f79105ba4786fa6ce49b64"
+    },
+    "scripts/comparador_regional.py": {
+      "bytes": 749,
+      "sha256": "ea8695eb32c5c0234a73e95eafff6523c0e3541cd9a47c9fc8bc774d46850436"
+    },
+    "scripts/auditar_comparacao_regional.py": {
+      "bytes": 7436,
+      "sha256": "0571d5fbe37eb3dd7a6d1e0ee58dbb37fe7ec8dfe95abe7e414f0a0b1d12d9a3"
+    },
+    "scripts/test_comparador_regional.py": {
+      "bytes": 906,
+      "sha256": "2cf36f0c1d8df59834b626cf1e259736b91d64d1fd6abc43ed18ef784bec04fe"
+    },
+    "scripts/preservar_comparacao_regional.py": {
+      "bytes": 2933,
+      "sha256": "19731b3bad4d4c8e051deec59b0f9708851e557f31a228335f2a2b834be8236d"
+    }
+  },
+  "excluded_feature_caches": {}
+}

@@ -1,0 +1,11 @@
+{
+  "zip_sha256": "62133f7701e8c879c4ca05c53fe057d72c2469b21cd1c8e59a6741233db8736a",
+  "files": 55,
+  "destination": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\restauracao_forma_verificada_1792776864844396000\\resultados",
+  "restored_member_hashes_verified": true,
+  "readable_text_copies_verified": 22,
+  "new_tests_total": 94,
+  "security_settings_changed": false,
+  "cloud_upload_verified": false,
+  "note": "Readable copies normalize line endings and final newline; recovery archive preserves exact original bytes. Changed input image arrays excluded and reproducible from source."
+}

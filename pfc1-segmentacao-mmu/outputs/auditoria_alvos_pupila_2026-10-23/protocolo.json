@@ -1,0 +1,9 @@
+{
+  "registered_utc": "2026-10-23T17:16:17.249290+00:00",
+  "purpose": "Descriptive audit of selected locator on internal training monitor only; original vs filled predicted-mask channel, RGB/targets unchanged. No new fitting, identity validation/test inference, threshold search or promotion.",
+  "limits": "Monitor reused for checkpoint selection. Targets are proxies derived from iris annotation. Mask topology measured at64x64 is not native fallback classification. Filling holes is a channel intervention, NOT an ocular occlusion.",
+  "checkpoint_sha256": "e8cdccd0b76797682e8516cf3a8cffe7f2c360307a9db34f101262a60bd63f6a",
+  "inputs_sha256": "40e49ba2e41308e6b5c57e8578917c772866a072b0f45db9bcaeb3da303d84bc",
+  "script_sha256": "a1f3990a002025907da63a44f014aa3869e2a6e6e2c6d0a1fa345fe18945f8f5",
+  "statistics": "All879 retained; center error ROI normalized Euclidean, radius absolute normalized error; report original/filled mask and concentric baseline, per-person means and quantiles; native annotation ellipticity and512-angle inner/outer containment, no score-based selection."
+}

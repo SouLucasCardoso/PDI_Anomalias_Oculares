@@ -1,0 +1,57 @@
+{
+  "zip_sha256": "0f450d345bdc733be9162ad9e879233e5f9da2c1f76a615b1fe12efdd1acbbbf",
+  "zip_bytes": 609617,
+  "parts": [
+    "parte_001.b64",
+    "parte_002.b64",
+    "parte_003.b64",
+    "parte_004.b64",
+    "parte_005.b64",
+    "parte_006.b64",
+    "parte_007.b64",
+    "parte_008.b64",
+    "parte_009.b64",
+    "parte_010.b64",
+    "parte_011.b64",
+    "parte_012.b64",
+    "parte_013.b64"
+  ],
+  "files": {
+    "ARTIGO_AREA_IRIS_CONSOLIDADO_2026-10-23.docx": {
+      "bytes": 445692,
+      "sha256": "225b2b47eb14b22bb93e2da6bdbffbd8d19410136bb852d3621ecd54bd4901f0"
+    },
+    "artifact.md": {
+      "bytes": 1235,
+      "sha256": "5b8d3e8e854c760977c35863825284f1cb21b621f67b2784c20d9c881fbc0117"
+    },
+    "verificacao_pacote.json": {
+      "bytes": 553,
+      "sha256": "4cd07ab63e63b9ee5b52b07f68e12e0b62c5ce571d563324a03048357059af41"
+    },
+    "figuras/fluxo_experimental.png": {
+      "bytes": 67523,
+      "sha256": "c8d93d23045e4801f0376fbecb1ba68bd4686db6d6747cbe362cb963b80dd218"
+    },
+    "figuras/intervalos_condicoes.png": {
+      "bytes": 89617,
+      "sha256": "9b482da1606e7971e09b173c5a5fc3eff216e19a51f26493b23187ac720075c6"
+    },
+    "ARTIGO_CONSOLIDADO_2026-10-23.md": {
+      "bytes": 41183,
+      "sha256": "e82315736730d4118a179e7d092c6e9cbb0de9b63b694798d129ea456ab11c6f"
+    },
+    "consolidar_artigo.py": {
+      "bytes": 15751,
+      "sha256": "7c290c48e9d112da2f3c92a85c3a11d52622db83abb86449737c247de69fec1b"
+    },
+    "render_word_docx.py": {
+      "bytes": 1983,
+      "sha256": "9d4befc3a9c069b5a9afee0c8b735569e93f69f83bee54d17df01b0836f76bdd"
+    },
+    "preservar_artigo.py": {
+      "bytes": 3045,
+      "sha256": "a8c55965c937e227c59223cada4379952db47dc1f3051dbbabcd95400d7fc931"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "status": "pupil_proxy_audit_completed",
+  "images": 879,
+  "people": 16,
+  "mask_channel_changed": 860,
+  "losses": {
+    "original": 0.00016635084466543049,
+    "filled_mask": 0.00017235081759281456,
+    "concentric": 0.0008265906944870949
+  },
+  "summary": {
+    "original_center_error_roi": {
+      "mean": 0.015938502060942376,
+      "median": 0.012317289598286152,
+      "p90": 0.027474998682737353
+    },
+    "original_radius_error_roi": {
+      "mean": 0.00797758081056966,
+      "median": 0.006190396845340729,
+      "p90": 0.01668243110179901
+    },
+    "filled_mask_center_error_roi": {
+      "mean": 0.016367115981267492,
+      "median": 0.012609143741428852,
+      "p90": 0.028492926061153414
+    },
+    "filled_mask_radius_error_roi": {
+      "mean": 0.008045451522755,
+      "median": 0.00622173398733139,
+      "p90": 0.01699677258729935
+    },
+    "concentric_center_error_roi": {
+      "mean": 0.05128814108178138,
+      "median": 0.049047939479351044,
+      "p90": 0.07306584268808365
+    },
+    "concentric_radius_error_roi": {
+      "mean": 0.01850226705001754,
+      "median": 0.018538735806941986,
+      "p90": 0.03221312463283539
+    },
+    "center_shift_roi": {
+      "mean": 0.004389477707813144,
+      "median": 0.003949260339140892,
+      "p90": 0.00806476455181837
+    },
+    "target_minor_major_ratio": {
+      "mean": 0.7410171910507948,
+      "median": 0.7618052938454987,
+      "p90": 0.8985787157241548
+    },
+    "target_ellipse_inside_outer_fraction": {
+      "mean": 1.0,
+      "median": 1.0,
+      "p90": 1.0
+    },
+    "target_circle_inside_outer_fraction": {
+      "mean": 1.0,
+      "median": 1.0,
+      "p90": 1.0
+    }
+  },
+  "ellipse_not_fully_contained": 0,
+  "circle_not_fully_contained": 0,
+  "original_monitor_loss_recorded": 0.00016635084466543049,
+  "rgb_unchanged": true,
+  "new_training": false,
+  "identity_validation_inference": false,
+  "test_inference": false,
+  "frozen_candidate_replaced": false,
+  "minimum_area": null
+}

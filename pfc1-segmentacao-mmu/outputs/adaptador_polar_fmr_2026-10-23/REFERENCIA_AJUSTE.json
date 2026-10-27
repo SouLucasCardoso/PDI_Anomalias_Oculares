@@ -1,0 +1,12 @@
+{
+  "reference": 0.27272370457649237,
+  "method": "OriginalFITcleanFP32top3same-side1%impostorquantile; fixedbeforeANYoptimizerstep",
+  "fit_people": 167,
+  "fit_photos": 6756,
+  "queries": 1742,
+  "valid_queries": 1732,
+  "usable_impostor_comparisons": 287512,
+  "same_side_candidate_eyes": 167,
+  "monitor_labels_used": false,
+  "evaluation_threshold_changed": false
+}

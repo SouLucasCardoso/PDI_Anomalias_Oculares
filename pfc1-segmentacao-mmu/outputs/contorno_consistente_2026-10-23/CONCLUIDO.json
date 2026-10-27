@@ -1,0 +1,34 @@
+{
+  "status": "clean_teacher_outer_geometry_training_completed",
+  "best_epoch": 12,
+  "epochs_trained": 12,
+  "best_worst_occlusion_loss": 0.0003965881187468767,
+  "baseline_losses": [
+    0.0002086002059513703,
+    0.0003579089534468949,
+    0.0005145756294950843
+  ],
+  "baseline_drift": [
+    0.00034013568074442446,
+    0.0007101746159605682
+  ],
+  "recognition_validation_gate_passed": true,
+  "checkpoint_sha256": "1fd1bb33efaa32fb8d116eb98d60081a7a425ea90ab83dcae2bbc359a89a0d3c",
+  "data_audit": {
+    "exclusions": {
+      "fit:invalid_reference_outer": 110,
+      "fit:invalid_predicted_outer": 23,
+      "monitor:invalid_predicted_outer": 4,
+      "monitor:invalid_reference_outer": 5
+    },
+    "fit_images": 6623,
+    "monitor_images": 951,
+    "fit_people": 167,
+    "monitor_people": 16,
+    "all_original_train_images": 7716
+  },
+  "test_inference": false,
+  "identity_validation_in_training": false,
+  "frozen_candidate_replaced": false,
+  "minimum_area": null
+}

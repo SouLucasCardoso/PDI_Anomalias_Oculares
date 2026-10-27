@@ -1,0 +1,14 @@
+{
+  "status": "restored_hash_verified_and_selection_reaudited",
+  "files": 28,
+  "parts": 12,
+  "zip_bytes": 550588,
+  "destination": "%TEMP%/pfc-atencao-restaurado-20261023",
+  "selected_epoch": 8,
+  "training_selection_reproduced": true,
+  "checkpoint_hashes_verified": true,
+  "score_decisions_reproduced": true,
+  "monitor_gate_reproduced": false,
+  "full_cache_forward_repeated_during_restore": false,
+  "cloud_upload_verified": false
+}

@@ -1,0 +1,8 @@
+{
+  "status": "absolute_fmr_adapter_monitor_failed_no_validation_inference",
+  "selected_epoch": 4,
+  "validation_identity_inference": false,
+  "test_inference": false,
+  "frozen_candidate_replaced": false,
+  "minimum_area": null
+}

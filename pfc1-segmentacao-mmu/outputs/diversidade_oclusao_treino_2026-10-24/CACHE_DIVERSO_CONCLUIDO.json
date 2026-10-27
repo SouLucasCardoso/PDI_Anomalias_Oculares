@@ -1,0 +1,10 @@
+{
+  "status": "native_diverse_fit_cache_completed",
+  "maps": 3222,
+  "bytes": 422314112,
+  "sha256": "71f1b257758afda43b17fb2ea84913bc880611f5ae47b3d9715acda9415a7033",
+  "indices_sha256": "ea292ac0111ad1e2ee1d5adf20efda14f6a57f8b9483963cb3685b63ce073572",
+  "extraction_failures": 10,
+  "all_fit_samples_retained": true,
+  "seconds": 83.63999999998487
+}

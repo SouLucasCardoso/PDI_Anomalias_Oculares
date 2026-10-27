@@ -1,0 +1,256 @@
+{
+  "registered_utc": "2026-10-24T00:04:46.525180+00:00",
+  "scope": "Newthirdparty pretrained segmentation benchmark:32distinctVALpeople,oneimageeach,3conditions=96pairedcases. No TEST/biometric inference/training/weightsearch. VALhistorically usedindevelopment,notblindconfirmation.",
+  "primary": "Iris-SAM released checkpoint ViT-H;AUTOMATICbbox from CURRENTU-Netprediction with5%padding,boxONLY,multimaskFalse,rawmaskthreshold0. This is a two-stage refinement,not standaloneIrisSAMlocalization. NEVERreferenceboxforprimary.",
+  "diagnostics": "No-promptSAM fixedsecondary;oracle tightREFERENCEbbox for diagnosticONLY,NEVERdeployableorautomaticcandidate. No prompt/mask selection byDice; reportALLmethods. U-Netnativeargmaxirisclass1,320x240input,FP32,asreferencepipeline.",
+  "precision": "SAM FP16+autocast onCUDAtofit6GB;CPUfallbackFP32. FullViT-Hcheckpoint2.564GB,weights_only=True,mmap,strictstate matching,not executing externaltrain/inferGUI. PredeterminedFP32sanity on first2CLEANprimarycases if fits; reportmaxDiceDifference,materialif>0.005. No precision chosenafterresults.",
+  "interventions": "Nativegray128 insideEXACTround(10%referenceiris)pixels,upper/lowerrowmajor. AnnotationONLYintervention,metrics,andclearlyseparatedoracle. FULLoriginalannotation andVISIBLEreferenceexcludingaffectedpixels reportedseparately;allcasesinclfailed/emptyretained.",
+  "selection": "Seed63 choose32of39VALsubjectswithoutreplacement;randomimageperchosenperson,alternatingL/Rifavailable. No maskquality/score filtering. MeanperimageDice/IoU and pairedbootstrap95%CI over32people,5000drawsseed63.",
+  "gate": "Feasibilityonly:primarycleanDice>=U-Net AND bothocclusionsVISIBLEDice>=U-Net+0.01. DoesNOTpromote/replacepipelineorclaimrecognition/minimum. Reportoracle/seconddiagnosticswithoutchoosingbestasprimary.",
+  "paper": "https://arxiv.org/abs/2402.06497",
+  "repository": "https://github.com/ParisaFarmanifard/Iris-SAM",
+  "checkpoint_file_id": "1Oqr93dMaHMZfwd2M3FvM-q5Xnn_d321x",
+  "checkpoint_bytes_expected": 2564545909,
+  "checkpoint_training_dataset": "Not specified by filename/README singlecheckpoint; inspect metadata if available",
+  "sample": [
+    {
+      "image": "C195_S1_I2_L.jpg",
+      "mask": "C195_S1_I2_L.png",
+      "subject": 195,
+      "side": "L",
+      "session": 1
+    },
+    {
+      "image": "C81_S1_I9_R.jpg",
+      "mask": "C81_S1_I9_R.png",
+      "subject": 81,
+      "side": "R",
+      "session": 1
+    },
+    {
+      "image": "C321_S2_I13_L.jpg",
+      "mask": "C321_S2_I13_L.png",
+      "subject": 321,
+      "side": "L",
+      "session": 2
+    },
+    {
+      "image": "C283_S1_I4_R.jpg",
+      "mask": "C283_S1_I4_R.png",
+      "subject": 283,
+      "side": "R",
+      "session": 1
+    },
+    {
+      "image": "C41_S1_I3_L.jpg",
+      "mask": "C41_S1_I3_L.png",
+      "subject": 41,
+      "side": "L",
+      "session": 1
+    },
+    {
+      "image": "C99_S1_I11_R.jpg",
+      "mask": "C99_S1_I11_R.png",
+      "subject": 99,
+      "side": "R",
+      "session": 1
+    },
+    {
+      "image": "C397_S1_I4_L.jpg",
+      "mask": "C397_S1_I4_L.png",
+      "subject": 397,
+      "side": "L",
+      "session": 1
+    },
+    {
+      "image": "C79_S1_I7_R.jpg",
+      "mask": "C79_S1_I7_R.png",
+      "subject": 79,
+      "side": "R",
+      "session": 1
+    },
+    {
+      "image": "C149_S1_I8_L.jpg",
+      "mask": "C149_S1_I8_L.png",
+      "subject": 149,
+      "side": "L",
+      "session": 1
+    },
+    {
+      "image": "C493_S1_I6_R.jpg",
+      "mask": "C493_S1_I6_R.png",
+      "subject": 493,
+      "side": "R",
+      "session": 1
+    },
+    {
+      "image": "C507_S1_I15_L.jpg",
+      "mask": "C507_S1_I15_L.png",
+      "subject": 507,
+      "side": "L",
+      "session": 1
+    },
+    {
+      "image": "C177_S1_I3_R.jpg",
+      "mask": "C177_S1_I3_R.png",
+      "subject": 177,
+      "side": "R",
+      "session": 1
+    },
+    {
+      "image": "C49_S2_I7_L.jpg",
+      "mask": "C49_S2_I7_L.png",
+      "subject": 49,
+      "side": "L",
+      "session": 2
+    },
+    {
+      "image": "C275_S1_I15_R.jpg",
+      "mask": "C275_S1_I15_R.png",
+      "subject": 275,
+      "side": "R",
+      "session": 1
+    },
+    {
+      "image": "C175_S1_I2_L.jpg",
+      "mask": "C175_S1_I2_L.png",
+      "subject": 175,
+      "side": "L",
+      "session": 1
+    },
+    {
+      "image": "C409_S1_I4_R.jpg",
+      "mask": "C409_S1_I4_R.png",
+      "subject": 409,
+      "side": "R",
+      "session": 1
+    },
+    {
+      "image": "C391_S2_I2_L.jpg",
+      "mask": "C391_S2_I2_L.png",
+      "subject": 391,
+      "side": "L",
+      "session": 2
+    },
+    {
+      "image": "C479_S1_I10_R.jpg",
+      "mask": "C479_S1_I10_R.png",
+      "subject": 479,
+      "side": "R",
+      "session": 1
+    },
+    {
+      "image": "C483_S1_I9_L.jpg",
+      "mask": "C483_S1_I9_L.png",
+      "subject": 483,
+      "side": "L",
+      "session": 1
+    },
+    {
+      "image": "C173_S2_I4_R.jpg",
+      "mask": "C173_S2_I4_R.png",
+      "subject": 173,
+      "side": "R",
+      "session": 2
+    },
+    {
+      "image": "C63_S1_I1_L.jpg",
+      "mask": "C63_S1_I1_L.png",
+      "subject": 63,
+      "side": "L",
+      "session": 1
+    },
+    {
+      "image": "C361_S2_I4_R.jpg",
+      "mask": "C361_S2_I4_R.png",
+      "subject": 361,
+      "side": "R",
+      "session": 2
+    },
+    {
+      "image": "C455_S1_I15_L.jpg",
+      "mask": "C455_S1_I15_L.png",
+      "subject": 455,
+      "side": "L",
+      "session": 1
+    },
+    {
+      "image": "C317_S2_I11_R.jpg",
+      "mask": "C317_S2_I11_R.png",
+      "subject": 317,
+      "side": "R",
+      "session": 2
+    },
+    {
+      "image": "C185_S2_I9_L.jpg",
+      "mask": "C185_S2_I9_L.png",
+      "subject": 185,
+      "side": "L",
+      "session": 2
+    },
+    {
+      "image": "C183_S1_I15_R.jpg",
+      "mask": "C183_S1_I15_R.png",
+      "subject": 183,
+      "side": "R",
+      "session": 1
+    },
+    {
+      "image": "C373_S1_I9_L.jpg",
+      "mask": "C373_S1_I9_L.png",
+      "subject": 373,
+      "side": "L",
+      "session": 1
+    },
+    {
+      "image": "C151_S1_I15_R.jpg",
+      "mask": "C151_S1_I15_R.png",
+      "subject": 151,
+      "side": "R",
+      "session": 1
+    },
+    {
+      "image": "C135_S1_I10_L.jpg",
+      "mask": "C135_S1_I10_L.png",
+      "subject": 135,
+      "side": "L",
+      "session": 1
+    },
+    {
+      "image": "C193_S1_I5_R.jpg",
+      "mask": "C193_S1_I5_R.png",
+      "subject": 193,
+      "side": "R",
+      "session": 1
+    },
+    {
+      "image": "C295_S1_I11_L.jpg",
+      "mask": "C295_S1_I11_L.png",
+      "subject": 295,
+      "side": "L",
+      "session": 1
+    },
+    {
+      "image": "C357_S1_I11_R.jpg",
+      "mask": "C357_S1_I11_R.png",
+      "subject": 357,
+      "side": "R",
+      "session": 1
+    }
+  ],
+  "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+  "unet_sha256": "2bcfc269ffc9562ca8cf0956998faf1e22641587cd60f7059b3cec3dd0f4093d",
+  "script_sha256": "cfdfd6aa24dad8ae78ee05b43c9e87a770db61b6ca0cefde7b4e5ebe3877f029",
+  "external_sources": {
+    "README.md": "8cfa73f8ac078bc4e7ecc2e5f94ed7a2e1edb51564cb45ba894aa80d1801c0f6",
+    "requirements.txt": "98358cd414d5169660f97798e8dab2169a37db7dac48d473a7271243a37f7584",
+    "dataset.py": "eb75b3511030332c0bc30eef62d4491731831520509ba293997908424d5e2d29",
+    "sam_infer.py": "83af0d1be8bfff9b67d29bf018027148594faa2c6893781a90c9a20d551fb956",
+    "sam_infer_auto.py": "1f635116df495c4a145c1a9620d9885deb3ca62c517a8098c99e729fa4b6867c",
+    "sam_test.py": "e52e8c3af3e3563d93e3030ef3ce8b5467e8c484de69b104f43f75b178b16593",
+    "sam_test_main.py": "e55b88f1ed0765751c18c30852b1923b3f71aa839e54208efbf0fcd60b44c849",
+    "sam_train_losses.py": "69fd2accad236b3f80ca668cdd7689f7ac1fa097e5f87844ca9927b75e609f77",
+    "utils/common.py": "6babf0cf7767466b6e494e803bba14e3475b1b68c7192398115c5119401fec42"
+  },
+  "runtime_version": "segment-anything==1.0 isolated TEMP; existingprojectdependencies unchanged"
+}

@@ -1,0 +1,133 @@
+{
+  "zip_bytes": 550588,
+  "zip_sha256": "453d5f910a0ecd6426fa2a00da365347cbdf55a7cacc0639ea6321741f36db20",
+  "parts": [
+    "parte_001.b64",
+    "parte_002.b64",
+    "parte_003.b64",
+    "parte_004.b64",
+    "parte_005.b64",
+    "parte_006.b64",
+    "parte_007.b64",
+    "parte_008.b64",
+    "parte_009.b64",
+    "parte_010.b64",
+    "parte_011.b64",
+    "parte_012.b64"
+  ],
+  "files": {
+    "atencao_polar_treino_2026-10-23/AUDITORIA_REPRODUCAO.json": {
+      "bytes": 1474,
+      "sha256": "ec06353878b550e37c2c1bae3117a6d0f61829bbef352e6097b90757f7e7eb1b"
+    },
+    "atencao_polar_treino_2026-10-23/cadastros_ajuste.npz": {
+      "bytes": 28660,
+      "sha256": "661d6c3d74a9ffc9a3dcb5639c4d7f8ef46bd935d602dac72719af1bafc67b7c"
+    },
+    "atencao_polar_treino_2026-10-23/CONCLUIDO.json": {
+      "bytes": 5612,
+      "sha256": "dec267ef1658540401945b9d2de63c01c09f4374dec97cdc198d66b0a734a2c9"
+    },
+    "atencao_polar_treino_2026-10-23/historico.csv": {
+      "bytes": 2981,
+      "sha256": "358009e38cbbead5b2b560db9d03f4b72e0585264aa0f5943125cd22cb919dca"
+    },
+    "atencao_polar_treino_2026-10-23/melhor_modelo.pt": {
+      "bytes": 73497,
+      "sha256": "62d2322c44320739c27976eecbab448d99ef3a87ad7ab7dacdb6e0c07e1eba93"
+    },
+    "atencao_polar_treino_2026-10-23/protocolo.json": {
+      "bytes": 5705,
+      "sha256": "da6c474cca478265863d30e9aaa4819e40a93b8a726a801ebc49ec7579a1091b"
+    },
+    "atencao_polar_treino_2026-10-23/rows.json": {
+      "bytes": 786765,
+      "sha256": "f015208f57ef456016495bf24ae35daa31c0c43718a97d192e089049bd434893"
+    },
+    "atencao_polar_treino_2026-10-23/scores_baseline_clean.npz": {
+      "bytes": 37742,
+      "sha256": "5e4a49855697c8d2b2747028d7b8a45a78906a89e4e16e8ef4ee683eed18ae07"
+    },
+    "atencao_polar_treino_2026-10-23/scores_baseline_lower10.npz": {
+      "bytes": 37984,
+      "sha256": "fc527a8ff47e14cbc15828ec2c51108c5762a4f904bcb1f41107b344fee46581"
+    },
+    "atencao_polar_treino_2026-10-23/scores_baseline_upper10.npz": {
+      "bytes": 38176,
+      "sha256": "a8b3f587155a9ccb96b70e964347c3a15b2f92e4858914977bc847445e466151"
+    },
+    "atencao_polar_treino_2026-10-23/scores_last_clean.npz": {
+      "bytes": 37782,
+      "sha256": "19bc771c4ac304a5f673f3d48450c9f9a2a026c8ee07acb45e0a058188c4afc8"
+    },
+    "atencao_polar_treino_2026-10-23/scores_last_lower10.npz": {
+      "bytes": 38003,
+      "sha256": "32f05413e222440414711f3d95895af76d3af1287d6365782f63fedeac16776e"
+    },
+    "atencao_polar_treino_2026-10-23/scores_last_upper10.npz": {
+      "bytes": 38143,
+      "sha256": "6c1353a768d3615325072445061f64daa5448230311bb4a827bdddac3d259b60"
+    },
+    "atencao_polar_treino_2026-10-23/scores_selected_clean.npz": {
+      "bytes": 37782,
+      "sha256": "19bc771c4ac304a5f673f3d48450c9f9a2a026c8ee07acb45e0a058188c4afc8"
+    },
+    "atencao_polar_treino_2026-10-23/scores_selected_lower10.npz": {
+      "bytes": 38003,
+      "sha256": "32f05413e222440414711f3d95895af76d3af1287d6365782f63fedeac16776e"
+    },
+    "atencao_polar_treino_2026-10-23/scores_selected_upper10.npz": {
+      "bytes": 38143,
+      "sha256": "6c1353a768d3615325072445061f64daa5448230311bb4a827bdddac3d259b60"
+    },
+    "atencao_polar_treino_2026-10-23/source.py": {
+      "bytes": 13346,
+      "sha256": "3c9842cb00f078163806cec9fd6080e21af5d1bcdd9eaf0b209e27344939a871"
+    },
+    "atencao_polar_treino_2026-10-23/ultima_epoca.pt": {
+      "bytes": 73487,
+      "sha256": "1e19fe6270902b211fe9dc7eb93588ffaab3c18a4f3f7ff9756e0a1a39584635"
+    },
+    "scripts/treinar_atencao_polar.py": {
+      "bytes": 13346,
+      "sha256": "3c9842cb00f078163806cec9fd6080e21af5d1bcdd9eaf0b209e27344939a871"
+    },
+    "scripts/atencao_polar.py": {
+      "bytes": 1934,
+      "sha256": "a3a51103b98b5c53ca1c6a375114f03a3d259583ccbdfdfb91124c07cc36c917"
+    },
+    "scripts/auditar_atencao_polar.py": {
+      "bytes": 7598,
+      "sha256": "f258786cef771af18a15dfba985f95dfe432384febcdb75347cba475a13774a2"
+    },
+    "scripts/test_atencao_polar.py": {
+      "bytes": 1684,
+      "sha256": "c03a76620031f758ebcf43536e2af854b8b10fd4ff1f5dba0507596584836bf5"
+    },
+    "scripts/preservar_atencao_polar.py": {
+      "bytes": 3041,
+      "sha256": "c657970193bfee530ff20dba629ce4a59537c59dd11ced9bc28aaf7bcb5270e1"
+    },
+    "scripts/encoder_polar_espacial.py": {
+      "bytes": 3029,
+      "sha256": "b022672c1c97bb93c1c64d3df0b4be52044643ac311373b7d17235b3bc0bf9a9"
+    },
+    "scripts/perda_top3_polar.py": {
+      "bytes": 1356,
+      "sha256": "08ccde64234ff6156d5bfdb0c3d17a1475f219613ce275d6ac908cf03fba197a"
+    },
+    "scripts/perda_identidade_polar.py": {
+      "bytes": 1065,
+      "sha256": "2663b88f379d00f688198d1d7ce76540bc1b883f59a7e049c38364d9245e8489"
+    },
+    "scripts/treinar_adaptador_polar.py": {
+      "bytes": 18999,
+      "sha256": "d96649deacba6a257b2ba3a1d3c468676d3e7eb1189ec4827e6ac1459c88c6ee"
+    },
+    "scripts/treinar_adaptador_polar_original.py": {
+      "bytes": 13460,
+      "sha256": "a07414f70dddd672a077761363f29d56f5d63915e304e4b358951b1c51b15969"
+    }
+  },
+  "excluded_feature_caches": {}
+}

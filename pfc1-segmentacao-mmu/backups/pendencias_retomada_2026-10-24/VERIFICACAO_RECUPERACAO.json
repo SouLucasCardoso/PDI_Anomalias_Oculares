@@ -1,0 +1,10 @@
+{
+  "status": "restored_archive_and_all_file_hashes_verified",
+  "zip_bytes": 2267778,
+  "zip_sha256": "062333028da8169998d64065da0ae7aa663f209efbe4c9258d7d8e57855e2c02",
+  "zip_files": 104,
+  "parts": 4,
+  "destination": "%TEMP%/pfc-pendencias-restauradas-20261024",
+  "project_write_verified_after_user_allow": true,
+  "cloud_upload_verified": false
+}

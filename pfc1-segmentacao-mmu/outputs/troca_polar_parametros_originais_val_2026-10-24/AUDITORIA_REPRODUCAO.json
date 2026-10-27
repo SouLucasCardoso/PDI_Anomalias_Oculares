@@ -1,0 +1,8 @@
+{
+  "status": "fixed_reference_polar_swap_audited",
+  "all_fusions_and_metrics_exact": true,
+  "reference_parameters_and_threshold_exact": true,
+  "clean_gate_passed": false,
+  "occlusion_inference": false,
+  "new_image_inference": false
+}

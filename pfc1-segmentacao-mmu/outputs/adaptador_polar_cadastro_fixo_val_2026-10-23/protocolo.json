@@ -1,0 +1,12 @@
+{
+  "registered_utc": "2026-10-23T20:01:53.517710+00:00",
+  "scope": "Conditional exploratory development-validation ONLY; no test inference, no automatic replacement. Fit/monitor selection completed before opening validation for adapter.",
+  "candidate": "Replace ONLY polar GLOBAL component of prior outer-geometry fusion. Other8 raw score components fixed, equal8group weights unchanged. One query photo, supplied side,16same-side candidates,all482queries,480S1photos. Reconstruct identical corrected textures from saved changed-input cache; no clean counterpart at inference.",
+  "controls": "Original frozen BF16 pipeline; outer-geometry+unadapted polar FP32 control; outer-geometry+adapted polar FP32. FP32batch32 frozen backbone/projection and FP32batch512adapter fixed before inference.",
+  "calibration": "Original control uses original frozen parameters/threshold. Each other strategy calibrates component means/stds and threshold ONCE on CLEAN validation only, unchanged in both10%occlusions. No weight search or query filtering.",
+  "advancement": "Adapted clean Rank1/TAR>=90%,FMR<=1%; both occluded Rank1/TAR improve vs original and FMR<=1%. Also report paired comparison with outer-FP32 control. Absolute target separately requires90%Rank1/TAR,FMR<=1 in all3conditions.",
+  "script_sha256": "72574b035fa4d69879163a9c819368faff20dbead4d9808b8a14889209a85791",
+  "adapter_source_sha256": "211ca146fed33d61c6752ffea78e4e3ac1ea4890499690974294b3aef87166ea",
+  "training_protocol_sha256": "c92b137d1e9235dc258390322c36c1b9a7269c76f9270fd6655077b88527c4a5",
+  "outer_completion_sha256": "26be18b0ff954581aa9670bbe6013d54a2c0278f10f2b28362b8354d08aec1d2"
+}

@@ -1,0 +1,56 @@
+{
+  "status": "restored_outer_artifacts_verified",
+  "geometry": [
+    {
+      "experiment": "contorno_externo_2026-10-23",
+      "gate": false,
+      "selected_epoch": 0
+    },
+    {
+      "experiment": "contorno_consistente_2026-10-23",
+      "gate": true,
+      "selected_epoch": 12
+    }
+  ],
+  "identity_records": [
+    {
+      "strategy": "outer_clean_calibrated",
+      "condition": "clean",
+      "correct": 430,
+      "accepted": 433
+    },
+    {
+      "strategy": "outer_clean_calibrated",
+      "condition": "upper10",
+      "correct": 380,
+      "accepted": 373
+    },
+    {
+      "strategy": "outer_clean_calibrated",
+      "condition": "lower10",
+      "correct": 306,
+      "accepted": 297
+    },
+    {
+      "strategy": "outer_fixed_diagnostic",
+      "condition": "clean",
+      "correct": 429,
+      "accepted": 430
+    },
+    {
+      "strategy": "outer_fixed_diagnostic",
+      "condition": "upper10",
+      "correct": 380,
+      "accepted": 368
+    },
+    {
+      "strategy": "outer_fixed_diagnostic",
+      "condition": "lower10",
+      "correct": 306,
+      "accepted": 294
+    }
+  ],
+  "checkpoint_hashes_verified": true,
+  "restored_score_fusion_and_csv_exact": true,
+  "full_feature_or_image_forward_replayed": false
+}

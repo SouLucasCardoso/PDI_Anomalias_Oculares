@@ -1,0 +1,190 @@
+{
+  "zip_bytes": 3945803,
+  "zip_sha256": "f06e1654b6483a1b7cbd50b579156ad4eb57fddb9e532bb02f185deb9564db08",
+  "parts": [
+    "parte_001.b64",
+    "parte_002.b64",
+    "parte_003.b64",
+    "parte_004.b64",
+    "parte_005.b64",
+    "parte_006.b64",
+    "parte_007.b64",
+    "parte_008.b64",
+    "parte_009.b64",
+    "parte_010.b64",
+    "parte_011.b64",
+    "parte_012.b64",
+    "parte_013.b64",
+    "parte_014.b64",
+    "parte_015.b64",
+    "parte_016.b64",
+    "parte_017.b64",
+    "parte_018.b64",
+    "parte_019.b64",
+    "parte_020.b64",
+    "parte_021.b64",
+    "parte_022.b64",
+    "parte_023.b64",
+    "parte_024.b64",
+    "parte_025.b64",
+    "parte_026.b64",
+    "parte_027.b64",
+    "parte_028.b64",
+    "parte_029.b64",
+    "parte_030.b64",
+    "parte_031.b64",
+    "parte_032.b64",
+    "parte_033.b64",
+    "parte_034.b64",
+    "parte_035.b64",
+    "parte_036.b64",
+    "parte_037.b64",
+    "parte_038.b64",
+    "parte_039.b64",
+    "parte_040.b64",
+    "parte_041.b64",
+    "parte_042.b64",
+    "parte_043.b64",
+    "parte_044.b64",
+    "parte_045.b64",
+    "parte_046.b64",
+    "parte_047.b64",
+    "parte_048.b64",
+    "parte_049.b64",
+    "parte_050.b64",
+    "parte_051.b64",
+    "parte_052.b64",
+    "parte_053.b64",
+    "parte_054.b64",
+    "parte_055.b64",
+    "parte_056.b64",
+    "parte_057.b64",
+    "parte_058.b64",
+    "parte_059.b64",
+    "parte_060.b64",
+    "parte_061.b64",
+    "parte_062.b64",
+    "parte_063.b64",
+    "parte_064.b64",
+    "parte_065.b64",
+    "parte_066.b64",
+    "parte_067.b64",
+    "parte_068.b64",
+    "parte_069.b64",
+    "parte_070.b64",
+    "parte_071.b64",
+    "parte_072.b64",
+    "parte_073.b64",
+    "parte_074.b64",
+    "parte_075.b64",
+    "parte_076.b64",
+    "parte_077.b64",
+    "parte_078.b64",
+    "parte_079.b64",
+    "parte_080.b64",
+    "parte_081.b64",
+    "parte_082.b64",
+    "parte_083.b64"
+  ],
+  "files": {
+    "irissam_viabilidade_val_2026-10-23/AUDITORIA_CODIGO_TERCEIRO.json": {
+      "bytes": 2462,
+      "sha256": "a9dc18d044ac59a92f4a96e3dbc2e5f33e9e2892c4ccd39e44bbdead1b491067"
+    },
+    "irissam_viabilidade_val_2026-10-23/AUDITORIA_REPRODUCAO.json": {
+      "bytes": 322,
+      "sha256": "0da0890af2334fcffc04dac2aa2a47f4589f3e9e2aed250c3cd261d0d99cfba3"
+    },
+    "irissam_viabilidade_val_2026-10-23/comparacao_recortes_irissam.png": {
+      "bytes": 3677937,
+      "sha256": "1a5aada7a8fba245741014966ecbab3e52f117ba439ee36584253bf900b2aeaa"
+    },
+    "irissam_viabilidade_val_2026-10-23/COMPATIBILIDADE_RUNTIME.json": {
+      "bytes": 6896,
+      "sha256": "8a7a713f9f500989244979ce5bcb3c11e3f84f6ffb465ca9a99c8c87e172359a"
+    },
+    "irissam_viabilidade_val_2026-10-23/CONCLUIDO.json": {
+      "bytes": 3981,
+      "sha256": "0e0ef0809d37e7f785f244b2de15b6da3c7e5237f0c629a9586b269453ac2751"
+    },
+    "irissam_viabilidade_val_2026-10-23/INSPECAO_CHECKPOINT_REMOTO.json": {
+      "bytes": 119830,
+      "sha256": "3e37e0aa5dc2b563b6bdac0b51c8136b515b053e9f7b45b32c9df9a438c228b4"
+    },
+    "irissam_viabilidade_val_2026-10-23/mascaras_empacotadas.npz": {
+      "bytes": 310007,
+      "sha256": "ca1fa8d7bdfa8ea6988262443b83306a5fd2c1bf532ae44bea78b55aff515697"
+    },
+    "irissam_viabilidade_val_2026-10-23/metricas_por_imagem.csv": {
+      "bytes": 48697,
+      "sha256": "405d81b1ff47965c36e352e148bdcc32e28425883d8d01fd0f0ea167642f6c79"
+    },
+    "irissam_viabilidade_val_2026-10-23/prompts.json": {
+      "bytes": 21845,
+      "sha256": "d425d166f4bb0550cd2accb7692576e67e9e12112bfe81606f9a19395e2976a6"
+    },
+    "irissam_viabilidade_val_2026-10-23/protocolo.json": {
+      "bytes": 8166,
+      "sha256": "5a9c8a9135913f290847439e6829720014bdf0d9cad4743761c2f197eefbd343"
+    },
+    "irissam_viabilidade_val_2026-10-23/PROVENIENCIA_CHECKPOINT.json": {
+      "bytes": 2324,
+      "sha256": "b6a154ce55b3965f1d5f016f0e8ec152a5a45675dadd80ba2ece656fe774033c"
+    },
+    "irissam_viabilidade_val_2026-10-23/source.py": {
+      "bytes": 13583,
+      "sha256": "cfdfd6aa24dad8ae78ee05b43c9e87a770db61b6ca0cefde7b4e5ebe3877f029"
+    },
+    "scripts/avaliar_irissam_ubipr.py": {
+      "bytes": 13583,
+      "sha256": "cfdfd6aa24dad8ae78ee05b43c9e87a770db61b6ca0cefde7b4e5ebe3877f029"
+    },
+    "scripts/test_irissam_viabilidade.py": {
+      "bytes": 1019,
+      "sha256": "c8f15c40cbc24b277e1d682060b9b30580dfae4af033e8f0a3e5d474fca1f907"
+    },
+    "scripts/verificar_irissam_ubipr.py": {
+      "bytes": 4667,
+      "sha256": "88450af171319c5ac438355fa1bfeb796d2f26cba77adb3cdcdcd24f669f683b"
+    },
+    "scripts/preservar_irissam_viabilidade.py": {
+      "bytes": 3074,
+      "sha256": "0a4d404f21ad168be5d4ea309011b8c4fe7515f4269bd80cdc499c1a7ebc1e94"
+    },
+    "scripts/baixar_pesos_irissam.py": {
+      "bytes": 2914,
+      "sha256": "a8f4db12a1f86f878dfa81cb9375789570148ab3afdbdba5f794973f3548c534"
+    },
+    "scripts/baixar_irissam_segmentado.py": {
+      "bytes": 4206,
+      "sha256": "f3a973ee50c88d22a07edc2f275dd8ab24e0876b22e6b2b9c7fff01595407f40"
+    },
+    "scripts/inspecionar_checkpoint_irissam_remoto.py": {
+      "bytes": 4243,
+      "sha256": "d05c2283ad839df56902c28b1d506fe95c469bd3d00013eacf4e14a33b65f090"
+    },
+    "scripts/auditar_codigo_irissam.py": {
+      "bytes": 2538,
+      "sha256": "892dbcd08fa1f97cf610b6b4cffd2615dc84105776d77c39341f30b336119473"
+    },
+    "scripts/verificar_compatibilidade_irissam.py": {
+      "bytes": 1138,
+      "sha256": "068f459ab17c2863513c6cf97cbece1c3516afc9921dabe0ac6d8c88a6f1e717"
+    },
+    "scripts/visualizar_irissam_viabilidade.py": {
+      "bytes": 2446,
+      "sha256": "8d3439bcee101d5b630764b05838398e1f8077bc3ebab92c85b753728ff1e0a7"
+    }
+  },
+  "excluded_public_checkpoint": {
+    "downloaded_utc": "2026-10-24T01:39:28.418490+00:00",
+    "source": "README public checkpoint link https://github.com/ParisaFarmanifard/Iris-SAM",
+    "google_drive_file_id": "1Oqr93dMaHMZfwd2M3FvM-q5Xnn_d321x",
+    "path": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-irissam\\IrisSAM_model.pt",
+    "bytes": 2564545909,
+    "sha256": "388a1b4ca72a455b3710fa434118c390b1e7cd1614960aaef29e5f319961fffe",
+    "range_download": true,
+    "network_credentials_used": false,
+    "seconds": 13.953000000008615
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "train_fusion_reproduced",
+  "internal_clean_component_calibration_exact": true,
+  "internal_clean_threshold_exact": true,
+  "all_twelve_fusions_exact": true,
+  "all_metrics_exact": true,
+  "side_and_query_alignment_verified": true,
+  "monitor_gate_passed": false,
+  "absolute_target_reached": false,
+  "new_image_inference": false
+}

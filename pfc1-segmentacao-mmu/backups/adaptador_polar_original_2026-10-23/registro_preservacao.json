@@ -1,0 +1,150 @@
+{
+  "zip_bytes": 1150181,
+  "zip_sha256": "3521a4fd9515b1c147e9253e9d094f58887ad9f84bbe25bc130d8b41c275a4f3",
+  "parts": [
+    "parte_001.b64",
+    "parte_002.b64",
+    "parte_003.b64",
+    "parte_004.b64",
+    "parte_005.b64",
+    "parte_006.b64",
+    "parte_007.b64",
+    "parte_008.b64",
+    "parte_009.b64",
+    "parte_010.b64",
+    "parte_011.b64",
+    "parte_012.b64",
+    "parte_013.b64",
+    "parte_014.b64",
+    "parte_015.b64",
+    "parte_016.b64",
+    "parte_017.b64",
+    "parte_018.b64",
+    "parte_019.b64",
+    "parte_020.b64",
+    "parte_021.b64",
+    "parte_022.b64",
+    "parte_023.b64",
+    "parte_024.b64"
+  ],
+  "files": {
+    "adaptador_polar_original_2026-10-23/AUDITORIA_DADOS.json": {
+      "bytes": 237,
+      "sha256": "98b76e768c5b2eb5d9ff713bd39719f9dd09a7ba09a4af7b85bed45b17682e8b"
+    },
+    "adaptador_polar_original_2026-10-23/AUDITORIA_REPRODUCAO.json": {
+      "bytes": 1461,
+      "sha256": "8c68f1f490dd31a3c8cc1dbc9d9d1a8f00c539407586e6d149e927e9a748d1f0"
+    },
+    "adaptador_polar_original_2026-10-23/CONCLUIDO.json": {
+      "bytes": 4935,
+      "sha256": "c6fa23956983c32284a324a0484cd126463ca902e8467288f3500c1fdf885b2a"
+    },
+    "adaptador_polar_original_2026-10-23/historico.csv": {
+      "bytes": 3261,
+      "sha256": "082e93a6a4f3bf63d1410200e56562608d6c6841f6f14ca353583748de11bc14"
+    },
+    "adaptador_polar_original_2026-10-23/melhor_modelo.pt": {
+      "bytes": 406685,
+      "sha256": "1ccec037d84afd9f4101758bc85e5d4817b5fbea1b817e8129e71645162fedc0"
+    },
+    "adaptador_polar_original_2026-10-23/protocolo.json": {
+      "bytes": 5280,
+      "sha256": "263c6243212ac2253364712473a675477ae09a377dd9996365b4ef0ceebf5603"
+    },
+    "adaptador_polar_original_2026-10-23/rows.json": {
+      "bytes": 786765,
+      "sha256": "f015208f57ef456016495bf24ae35daa31c0c43718a97d192e089049bd434893"
+    },
+    "adaptador_polar_original_2026-10-23/scores_baseline_clean.npz": {
+      "bytes": 37759,
+      "sha256": "6f6a1126e7ff948f0de22e5f045c8b8c5bc8495a123442e8781ed8457adaa363"
+    },
+    "adaptador_polar_original_2026-10-23/scores_baseline_lower10.npz": {
+      "bytes": 37976,
+      "sha256": "c2fb73a21610ae296ec0ce3efb8fbbb404172570cd2f02000bd253096bca80dd"
+    },
+    "adaptador_polar_original_2026-10-23/scores_baseline_upper10.npz": {
+      "bytes": 38086,
+      "sha256": "84a9150b4c46ca202bcfc00f3b1c181821913c7e53ba21aa5aa37cc51d4cae3b"
+    },
+    "adaptador_polar_original_2026-10-23/scores_last_clean.npz": {
+      "bytes": 37708,
+      "sha256": "537f65b82bf133cf61a800ef48f3f2714dd7f692ff380462a907c7dd7507f104"
+    },
+    "adaptador_polar_original_2026-10-23/scores_last_lower10.npz": {
+      "bytes": 38092,
+      "sha256": "d93f5a1db1b9a3a3359546a851c53c134a9d2b66fbec67577a9955f5bc6b8070"
+    },
+    "adaptador_polar_original_2026-10-23/scores_last_upper10.npz": {
+      "bytes": 38081,
+      "sha256": "b71daac2b315e392f3236a53283ace646d33ab64470ec7d8c4eeb3fcdbeddd99"
+    },
+    "adaptador_polar_original_2026-10-23/scores_selected_clean.npz": {
+      "bytes": 37708,
+      "sha256": "537f65b82bf133cf61a800ef48f3f2714dd7f692ff380462a907c7dd7507f104"
+    },
+    "adaptador_polar_original_2026-10-23/scores_selected_lower10.npz": {
+      "bytes": 38092,
+      "sha256": "d93f5a1db1b9a3a3359546a851c53c134a9d2b66fbec67577a9955f5bc6b8070"
+    },
+    "adaptador_polar_original_2026-10-23/scores_selected_upper10.npz": {
+      "bytes": 38081,
+      "sha256": "b71daac2b315e392f3236a53283ace646d33ab64470ec7d8c4eeb3fcdbeddd99"
+    },
+    "adaptador_polar_original_2026-10-23/source.py": {
+      "bytes": 13460,
+      "sha256": "a07414f70dddd672a077761363f29d56f5d63915e304e4b358951b1c51b15969"
+    },
+    "adaptador_polar_original_2026-10-23/ultima_epoca.pt": {
+      "bytes": 406673,
+      "sha256": "4494bcb7131bb83dbd2e3479e224ba0f04d46c0231ede845223d31ba6f2c9143"
+    },
+    "adaptador_polar_original_val_2026-10-23/CONCLUIDO.json": {
+      "bytes": 235,
+      "sha256": "b18d577732ff2d8480bac6014f97f100ef379441ef78697ae908214e25a3e5ed"
+    },
+    "adaptador_polar_original_val_2026-10-23/protocolo.json": {
+      "bytes": 1172,
+      "sha256": "4eb5a02f7034672031a5967ca5f6f79c43a6366fdb3b835db4bdf8b5363756a0"
+    },
+    "adaptador_polar_original_val_2026-10-23/source.py": {
+      "bytes": 8098,
+      "sha256": "0f17ec0e174755ffc985007063cf1e378973353216faffde1a64e76327e4c2a3"
+    },
+    "scripts/treinar_adaptador_polar_original.py": {
+      "bytes": 13460,
+      "sha256": "a07414f70dddd672a077761363f29d56f5d63915e304e4b358951b1c51b15969"
+    },
+    "scripts/test_adaptador_polar_original.py": {
+      "bytes": 982,
+      "sha256": "2d19fc6abdf8b1c05c5f2405ec8b520cd7f8e0b544ec64534723116a1e68c4fd"
+    },
+    "scripts/verificar_adaptador_original.py": {
+      "bytes": 5243,
+      "sha256": "8bec1f07fd22678f6610520e229f2da729e72dca112b30741275c5cf6fa5301e"
+    },
+    "scripts/preservar_adaptador_original.py": {
+      "bytes": 3240,
+      "sha256": "ebe92adb3020465fcf04cad0d66b4829bd6fa0766627997c04c9f1ecf7b47dca"
+    },
+    "scripts/validar_adaptador_original.py": {
+      "bytes": 8098,
+      "sha256": "0f17ec0e174755ffc985007063cf1e378973353216faffde1a64e76327e4c2a3"
+    },
+    "scripts/treinar_adaptador_polar.py": {
+      "bytes": 18999,
+      "sha256": "d96649deacba6a257b2ba3a1d3c468676d3e7eb1189ec4827e6ac1459c88c6ee"
+    },
+    "scripts/adaptador_polar.py": {
+      "bytes": 1668,
+      "sha256": "211ca146fed33d61c6752ffea78e4e3ac1ea4890499690974294b3aef87166ea"
+    }
+  },
+  "excluded_feature_caches": {
+    "adaptador_polar_original_2026-10-23/cache_features.npz": {
+      "bytes": 70316118,
+      "sha256": "eedfb2218eba4455442b60af044fca221526aab0087cf41f9427390784cafdc9"
+    }
+  }
+}

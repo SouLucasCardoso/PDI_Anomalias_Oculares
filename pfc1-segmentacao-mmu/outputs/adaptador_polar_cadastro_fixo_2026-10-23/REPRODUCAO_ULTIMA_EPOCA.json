@@ -1,0 +1,59 @@
+{
+  "status": "rejected_last_epoch_training_reproduced",
+  "epoch": 5,
+  "maximum_training_loss_difference": 0.0,
+  "metrics": {
+    "clean": {
+      "rank1": 0.9916666666666667,
+      "tar": 0.99375,
+      "fnmr": 0.006249999999999978,
+      "far": 0.00986111111111111,
+      "eer_descriptive": 0.007916666666666666,
+      "extraction_failures": 1,
+      "queries": 480,
+      "genuine_mean_valid": 0.6735385440046289,
+      "margin_mean_valid": 0.4330723921281643,
+      "threshold": 0.31121555964152026,
+      "correct": 476,
+      "accepted": 477
+    },
+    "upper10": {
+      "rank1": 0.7645833333333333,
+      "tar": 0.69375,
+      "fnmr": 0.30625,
+      "far": 0.00986111111111111,
+      "eer_descriptive": 0.13333333333333333,
+      "extraction_failures": 1,
+      "queries": 480,
+      "genuine_mean_valid": 0.4121039205625467,
+      "margin_mean_valid": 0.17211530035038894,
+      "threshold": 0.31121555964152026,
+      "correct": 367,
+      "accepted": 333
+    },
+    "lower10": {
+      "rank1": 0.6395833333333333,
+      "tar": 0.47291666666666665,
+      "fnmr": 0.5270833333333333,
+      "far": 0.008055555555555555,
+      "eer_descriptive": 0.18541666666666667,
+      "extraction_failures": 2,
+      "queries": 480,
+      "genuine_mean_valid": 0.3097528439463925,
+      "margin_mean_valid": 0.07069344908964133,
+      "threshold": 0.31121555964152026,
+      "correct": 307,
+      "accepted": 227
+    }
+  },
+  "teacher_cosines": {
+    "clean": 0.8821473026841221,
+    "upper10": 0.46532520169651415,
+    "lower10": 0.3539297407953626
+  },
+  "checkpoint_sha256": "b97d55e8f8222f34de1cf8af0f242479e382ead969da61dcaeb5db2507362ea7",
+  "accepted": false,
+  "selected_epoch_unchanged": 0,
+  "validation_identity_inference": false,
+  "test_inference": false
+}

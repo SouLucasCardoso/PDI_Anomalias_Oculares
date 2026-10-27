@@ -1,0 +1,18 @@
+{
+  "status": "outer_training_selection_and_geometry_audited",
+  "geometry_gate_reproduced": false,
+  "fit_and_monitor_disjoint": true,
+  "standardization_fit_clean_only_verified": true,
+  "selected_predictions_max_difference": 0.0,
+  "selected_losses": [
+    0.00020860022050328553,
+    0.00035790898255072534,
+    0.0005145756877027452
+  ],
+  "selected_drift": [
+    0.00034013547701761127,
+    0.0007101749652065337
+  ],
+  "identity_weights_unchanged": true,
+  "recognition_inference_skipped": true
+}

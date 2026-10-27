@@ -1,0 +1,12 @@
+{
+  "fit": {
+    "images": 200,
+    "cosine_before": 0.6842392906682746,
+    "cosine_after": 0.8505651389678723
+  },
+  "monitor": {
+    "images": 55,
+    "cosine_before": 0.7400505416413207,
+    "cosine_after": 0.6613028818973776
+  }
+}

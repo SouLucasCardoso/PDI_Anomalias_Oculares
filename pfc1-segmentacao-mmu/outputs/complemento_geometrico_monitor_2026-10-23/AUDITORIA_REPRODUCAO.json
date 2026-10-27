@@ -1,0 +1,63 @@
+{
+  "status": "complement_monitor_verified",
+  "feature_fusion_and_scores_exact": true,
+  "score_decisions_reproduced": true,
+  "gate_reproduced": false,
+  "records": [
+    {
+      "strategy": "original",
+      "condition": "clean",
+      "correct": 479,
+      "accepted": 479
+    },
+    {
+      "strategy": "original",
+      "condition": "upper10",
+      "correct": 396,
+      "accepted": 372
+    },
+    {
+      "strategy": "original",
+      "condition": "lower10",
+      "correct": 291,
+      "accepted": 268
+    },
+    {
+      "strategy": "corrected",
+      "condition": "clean",
+      "correct": 471,
+      "accepted": 477
+    },
+    {
+      "strategy": "corrected",
+      "condition": "upper10",
+      "correct": 310,
+      "accepted": 294
+    },
+    {
+      "strategy": "corrected",
+      "condition": "lower10",
+      "correct": 217,
+      "accepted": 201
+    },
+    {
+      "strategy": "complement",
+      "condition": "clean",
+      "correct": 479,
+      "accepted": 479
+    },
+    {
+      "strategy": "complement",
+      "condition": "upper10",
+      "correct": 394,
+      "accepted": 371
+    },
+    {
+      "strategy": "complement",
+      "condition": "lower10",
+      "correct": 296,
+      "accepted": 262
+    }
+  ],
+  "validation_and_test_inference": false
+}

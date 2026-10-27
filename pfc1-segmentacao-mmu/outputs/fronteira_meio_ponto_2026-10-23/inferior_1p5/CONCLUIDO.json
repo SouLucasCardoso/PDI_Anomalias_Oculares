@@ -1,0 +1,21 @@
+{
+  "tag": "inferior_1p5",
+  "orientation": "oclusao_inferior",
+  "occluded_percent": 1.5,
+  "nominal_retained_percent": 98.5,
+  "result": {
+    "rank1": 0.8909465020576132,
+    "tar": 0.8888888888888888,
+    "fnmr": 0.11111111111111116,
+    "far": 0.010150891632373114,
+    "eer_descriptive": 0.051440329218107,
+    "extraction_failures": 2,
+    "queries": 486,
+    "genuine_mean_valid": 0.9148163443867982,
+    "margin_mean_valid": 0.12931544053618116
+  },
+  "rank1_correct": 433,
+  "genuine_accepted": 432,
+  "passed": false,
+  "gallery_and_empty_reference_inputs_exact": true
+}

@@ -1,0 +1,19 @@
+{
+  "registered_utc": "2026-10-24T16:07:36.934670+00:00",
+  "scope": "Exploratory VAL counterfactual AFTER newcalibration pipeline failed. Candidateweights selectedonTRAIN only. Restore EXACTpriorstablefusionparameters,replaceONLYglobalpolar. No newcalibration or thresholdadjustment. VALpreviouslyexamined;notblind.",
+  "method": "Original8components and original fixed calibration/querynormalization/threshold unchanged. TRAIN151FIT adjustedpolar FP32 ONLY change. ORIGINALcontrol exactreplay from all9cachedcomponents. No backgroundnormalizer,robustthreshold,weightsearch or modelselection onVAL.",
+  "gate": "Firstclean must reach90%Rank1/TAR,FMR<=1%;otherwise skipocclusions. Ifpasses,diagnoseexistingupper/lower10%withsamefrozenparameters. No automatictest/promotion/minimum;0/10only,all482queries,onephoto,suppliedside,16eyes.",
+  "source_checkpoint_sha256": "13907185dd61c5801f2bdfdfcbb3cafcad79d1b1b33358ee1cb6b1e502c03fb4",
+  "source_protocol_sha256": "1b240d382ad59f6acb371cf79c19c51d471f4781d74dd6dde982a12dc7d0fabc",
+  "source_result_sha256": "edc5e6eedd9e3c12a3b15b029b5efd92c5ccd2992bdd63fa649faaccf01d6bf6",
+  "frozen_parameters_sha256": "d933686f045eab5d6578cfe4701578d9ca1eeaaff4069bcff8427a602546dbda",
+  "threshold": 0.8581747485460748,
+  "script_sha256": "5aa41d320cc39aea57093ab3fcf60dcf6c504dcbef7f1e4b8028da08fec070cd",
+  "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+  "dependencies_sha256": {
+    "avaliar_candidato_congelado.py": "9f727ef17eb0e87c51ea2ee3d6527f950717ddd80e6ef9ec9c7a33611c947586",
+    "ajuste_bloco_polar.py": "0d1bf7f5bdd096f596c17839bf5a6490e919d4f71a7c64d3935fd1d025fcef51",
+    "encoder_polar_espacial.py": "b022672c1c97bb93c1c64d3df0b4be52044643ac311373b7d17235b3bc0bf9a9",
+    "normalizar_consulta.py": "8e105dbdb11ba547420fdb171403bc4cebb07fd9358a1e59c22e37b0f0a8e3a6"
+  }
+}

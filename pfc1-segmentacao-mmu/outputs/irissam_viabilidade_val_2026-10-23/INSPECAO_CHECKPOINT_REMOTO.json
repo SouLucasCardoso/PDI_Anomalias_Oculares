@@ -1,0 +1,5153 @@
+{
+  "status": "remote_checkpoint_metadata_inspected",
+  "iris": {
+    "bytes": 2564545909,
+    "metadata_bytes_downloaded": 144114,
+    "tensors": 594
+  },
+  "iris_metadata": {
+    "image_encoder.pos_embed": {
+      "shape": [
+        1,
+        64,
+        64,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20971520,
+      "crc32": 4186228985
+    },
+    "image_encoder.patch_embed.proj.weight": {
+      "shape": [
+        1280,
+        3,
+        16,
+        16
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 3932160,
+      "crc32": 3788406882
+    },
+    "image_encoder.patch_embed.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2490804594
+    },
+    "image_encoder.blocks.0.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3038727566
+    },
+    "image_encoder.blocks.0.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1354711652
+    },
+    "image_encoder.blocks.0.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 633791221
+    },
+    "image_encoder.blocks.0.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 4172798385
+    },
+    "image_encoder.blocks.0.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 2801514767
+    },
+    "image_encoder.blocks.0.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 3968088186
+    },
+    "image_encoder.blocks.0.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 3106976025
+    },
+    "image_encoder.blocks.0.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2103583045
+    },
+    "image_encoder.blocks.0.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 70431594
+    },
+    "image_encoder.blocks.0.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3050753557
+    },
+    "image_encoder.blocks.0.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 951242391
+    },
+    "image_encoder.blocks.0.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 1007008882
+    },
+    "image_encoder.blocks.0.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 3976394272
+    },
+    "image_encoder.blocks.0.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1424500341
+    },
+    "image_encoder.blocks.1.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3294918711
+    },
+    "image_encoder.blocks.1.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 636835025
+    },
+    "image_encoder.blocks.1.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 1081122988
+    },
+    "image_encoder.blocks.1.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 1698396012
+    },
+    "image_encoder.blocks.1.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 1389661151
+    },
+    "image_encoder.blocks.1.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 4226813603
+    },
+    "image_encoder.blocks.1.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 2145607434
+    },
+    "image_encoder.blocks.1.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2313327422
+    },
+    "image_encoder.blocks.1.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1481914397
+    },
+    "image_encoder.blocks.1.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1314164425
+    },
+    "image_encoder.blocks.1.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 3566100245
+    },
+    "image_encoder.blocks.1.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 1065160743
+    },
+    "image_encoder.blocks.1.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 1014667867
+    },
+    "image_encoder.blocks.1.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1602769922
+    },
+    "image_encoder.blocks.2.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 481209060
+    },
+    "image_encoder.blocks.2.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3367181017
+    },
+    "image_encoder.blocks.2.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 2219546622
+    },
+    "image_encoder.blocks.2.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 2695236308
+    },
+    "image_encoder.blocks.2.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 89242713
+    },
+    "image_encoder.blocks.2.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 712313621
+    },
+    "image_encoder.blocks.2.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 1674682262
+    },
+    "image_encoder.blocks.2.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3972707693
+    },
+    "image_encoder.blocks.2.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2505980044
+    },
+    "image_encoder.blocks.2.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2297712852
+    },
+    "image_encoder.blocks.2.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 103677169
+    },
+    "image_encoder.blocks.2.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 3873035550
+    },
+    "image_encoder.blocks.2.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 4078338926
+    },
+    "image_encoder.blocks.2.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1778909033
+    },
+    "image_encoder.blocks.3.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2089641954
+    },
+    "image_encoder.blocks.3.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2633571612
+    },
+    "image_encoder.blocks.3.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 1218943073
+    },
+    "image_encoder.blocks.3.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 4214009733
+    },
+    "image_encoder.blocks.3.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 1820022782
+    },
+    "image_encoder.blocks.3.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 840354892
+    },
+    "image_encoder.blocks.3.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 2756842437
+    },
+    "image_encoder.blocks.3.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 892011128
+    },
+    "image_encoder.blocks.3.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1511627193
+    },
+    "image_encoder.blocks.3.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3285584142
+    },
+    "image_encoder.blocks.3.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 865810649
+    },
+    "image_encoder.blocks.3.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 3747827043
+    },
+    "image_encoder.blocks.3.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 3683734094
+    },
+    "image_encoder.blocks.3.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2368883994
+    },
+    "image_encoder.blocks.4.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1848409188
+    },
+    "image_encoder.blocks.4.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2621951073
+    },
+    "image_encoder.blocks.4.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 2729852744
+    },
+    "image_encoder.blocks.4.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 2226236530
+    },
+    "image_encoder.blocks.4.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 13199888
+    },
+    "image_encoder.blocks.4.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 156124072
+    },
+    "image_encoder.blocks.4.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 2634688592
+    },
+    "image_encoder.blocks.4.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1007953636
+    },
+    "image_encoder.blocks.4.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 516036006
+    },
+    "image_encoder.blocks.4.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 113005
+    },
+    "image_encoder.blocks.4.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 1633052852
+    },
+    "image_encoder.blocks.4.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 2897128132
+    },
+    "image_encoder.blocks.4.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 2328682789
+    },
+    "image_encoder.blocks.4.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1967130154
+    },
+    "image_encoder.blocks.5.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1779338839
+    },
+    "image_encoder.blocks.5.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1748133425
+    },
+    "image_encoder.blocks.5.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 3572540781
+    },
+    "image_encoder.blocks.5.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 3628327837
+    },
+    "image_encoder.blocks.5.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 946843146
+    },
+    "image_encoder.blocks.5.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 1880081028
+    },
+    "image_encoder.blocks.5.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 262677820
+    },
+    "image_encoder.blocks.5.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 282976964
+    },
+    "image_encoder.blocks.5.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 108155204
+    },
+    "image_encoder.blocks.5.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 4184474712
+    },
+    "image_encoder.blocks.5.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 2226164627
+    },
+    "image_encoder.blocks.5.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 1266926630
+    },
+    "image_encoder.blocks.5.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 3234420402
+    },
+    "image_encoder.blocks.5.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 4226221894
+    },
+    "image_encoder.blocks.6.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 4153516664
+    },
+    "image_encoder.blocks.6.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3460062009
+    },
+    "image_encoder.blocks.6.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 3650915083
+    },
+    "image_encoder.blocks.6.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 2053341587
+    },
+    "image_encoder.blocks.6.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 453987987
+    },
+    "image_encoder.blocks.6.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 823301713
+    },
+    "image_encoder.blocks.6.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 2157401779
+    },
+    "image_encoder.blocks.6.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1565083045
+    },
+    "image_encoder.blocks.6.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 53322847
+    },
+    "image_encoder.blocks.6.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3912419090
+    },
+    "image_encoder.blocks.6.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 180107210
+    },
+    "image_encoder.blocks.6.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 2561034119
+    },
+    "image_encoder.blocks.6.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 618557793
+    },
+    "image_encoder.blocks.6.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1096653247
+    },
+    "image_encoder.blocks.7.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2932408626
+    },
+    "image_encoder.blocks.7.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 748583532
+    },
+    "image_encoder.blocks.7.attn.rel_pos_h": {
+      "shape": [
+        127,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 40640,
+      "crc32": 2437145680
+    },
+    "image_encoder.blocks.7.attn.rel_pos_w": {
+      "shape": [
+        127,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 40640,
+      "crc32": 1642438121
+    },
+    "image_encoder.blocks.7.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 1981973957
+    },
+    "image_encoder.blocks.7.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 4106115821
+    },
+    "image_encoder.blocks.7.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 2859301162
+    },
+    "image_encoder.blocks.7.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 4119128821
+    },
+    "image_encoder.blocks.7.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2876528109
+    },
+    "image_encoder.blocks.7.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3755394111
+    },
+    "image_encoder.blocks.7.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 1297253582
+    },
+    "image_encoder.blocks.7.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 1315517032
+    },
+    "image_encoder.blocks.7.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 1869414651
+    },
+    "image_encoder.blocks.7.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1683276134
+    },
+    "image_encoder.blocks.8.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 4069893254
+    },
+    "image_encoder.blocks.8.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3458273718
+    },
+    "image_encoder.blocks.8.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 3556267308
+    },
+    "image_encoder.blocks.8.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 3812178188
+    },
+    "image_encoder.blocks.8.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 1628072927
+    },
+    "image_encoder.blocks.8.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 4058621937
+    },
+    "image_encoder.blocks.8.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 134498312
+    },
+    "image_encoder.blocks.8.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3282919257
+    },
+    "image_encoder.blocks.8.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2596097027
+    },
+    "image_encoder.blocks.8.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3133937854
+    },
+    "image_encoder.blocks.8.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 1068047115
+    },
+    "image_encoder.blocks.8.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 3177355869
+    },
+    "image_encoder.blocks.8.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 4278766522
+    },
+    "image_encoder.blocks.8.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 945552203
+    },
+    "image_encoder.blocks.9.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2659900015
+    },
+    "image_encoder.blocks.9.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3321526825
+    },
+    "image_encoder.blocks.9.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 358028647
+    },
+    "image_encoder.blocks.9.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 3980755768
+    },
+    "image_encoder.blocks.9.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 4008772476
+    },
+    "image_encoder.blocks.9.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 1664304684
+    },
+    "image_encoder.blocks.9.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 1955601780
+    },
+    "image_encoder.blocks.9.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1614003977
+    },
+    "image_encoder.blocks.9.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2013087978
+    },
+    "image_encoder.blocks.9.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 47145025
+    },
+    "image_encoder.blocks.9.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 585931257
+    },
+    "image_encoder.blocks.9.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 1817915689
+    },
+    "image_encoder.blocks.9.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 1108590819
+    },
+    "image_encoder.blocks.9.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 784228561
+    },
+    "image_encoder.blocks.10.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2751419852
+    },
+    "image_encoder.blocks.10.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2229585595
+    },
+    "image_encoder.blocks.10.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 3176914717
+    },
+    "image_encoder.blocks.10.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 973555454
+    },
+    "image_encoder.blocks.10.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 2053145917
+    },
+    "image_encoder.blocks.10.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 2479825782
+    },
+    "image_encoder.blocks.10.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 3539240255
+    },
+    "image_encoder.blocks.10.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1736600709
+    },
+    "image_encoder.blocks.10.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2770823439
+    },
+    "image_encoder.blocks.10.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2332738903
+    },
+    "image_encoder.blocks.10.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 1748635202
+    },
+    "image_encoder.blocks.10.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 3082307394
+    },
+    "image_encoder.blocks.10.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 2798894238
+    },
+    "image_encoder.blocks.10.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3142885620
+    },
+    "image_encoder.blocks.11.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3029216272
+    },
+    "image_encoder.blocks.11.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 4026599290
+    },
+    "image_encoder.blocks.11.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 1282955144
+    },
+    "image_encoder.blocks.11.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 1510398200
+    },
+    "image_encoder.blocks.11.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 2988222180
+    },
+    "image_encoder.blocks.11.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 1734623975
+    },
+    "image_encoder.blocks.11.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 305483636
+    },
+    "image_encoder.blocks.11.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2842680534
+    },
+    "image_encoder.blocks.11.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3988166457
+    },
+    "image_encoder.blocks.11.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 4294563500
+    },
+    "image_encoder.blocks.11.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 2585162364
+    },
+    "image_encoder.blocks.11.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 1062737606
+    },
+    "image_encoder.blocks.11.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 3264701521
+    },
+    "image_encoder.blocks.11.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2019396474
+    },
+    "image_encoder.blocks.12.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2841323651
+    },
+    "image_encoder.blocks.12.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3264108729
+    },
+    "image_encoder.blocks.12.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 2528353284
+    },
+    "image_encoder.blocks.12.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 251515213
+    },
+    "image_encoder.blocks.12.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 3969058795
+    },
+    "image_encoder.blocks.12.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 2696028118
+    },
+    "image_encoder.blocks.12.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 4171663135
+    },
+    "image_encoder.blocks.12.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1202599794
+    },
+    "image_encoder.blocks.12.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 786490077
+    },
+    "image_encoder.blocks.12.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1744019322
+    },
+    "image_encoder.blocks.12.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 2515238185
+    },
+    "image_encoder.blocks.12.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 116168863
+    },
+    "image_encoder.blocks.12.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 3279479123
+    },
+    "image_encoder.blocks.12.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 896436831
+    },
+    "image_encoder.blocks.13.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2324501017
+    },
+    "image_encoder.blocks.13.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2589211408
+    },
+    "image_encoder.blocks.13.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 4040985046
+    },
+    "image_encoder.blocks.13.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 768924749
+    },
+    "image_encoder.blocks.13.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 2764323471
+    },
+    "image_encoder.blocks.13.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 1561597321
+    },
+    "image_encoder.blocks.13.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 295124133
+    },
+    "image_encoder.blocks.13.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3853122682
+    },
+    "image_encoder.blocks.13.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1392754425
+    },
+    "image_encoder.blocks.13.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1990426843
+    },
+    "image_encoder.blocks.13.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 2598477135
+    },
+    "image_encoder.blocks.13.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 1253488485
+    },
+    "image_encoder.blocks.13.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 305486922
+    },
+    "image_encoder.blocks.13.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2333531252
+    },
+    "image_encoder.blocks.14.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2769680553
+    },
+    "image_encoder.blocks.14.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1460735977
+    },
+    "image_encoder.blocks.14.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 2100837057
+    },
+    "image_encoder.blocks.14.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 1029582801
+    },
+    "image_encoder.blocks.14.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 2592145949
+    },
+    "image_encoder.blocks.14.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 2591658193
+    },
+    "image_encoder.blocks.14.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 4007815077
+    },
+    "image_encoder.blocks.14.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 4195414913
+    },
+    "image_encoder.blocks.14.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3730486508
+    },
+    "image_encoder.blocks.14.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3251502139
+    },
+    "image_encoder.blocks.14.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 4202323940
+    },
+    "image_encoder.blocks.14.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 1291348505
+    },
+    "image_encoder.blocks.14.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 3174272259
+    },
+    "image_encoder.blocks.14.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1761364841
+    },
+    "image_encoder.blocks.15.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2816150061
+    },
+    "image_encoder.blocks.15.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2080971272
+    },
+    "image_encoder.blocks.15.attn.rel_pos_h": {
+      "shape": [
+        127,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 40640,
+      "crc32": 1306040654
+    },
+    "image_encoder.blocks.15.attn.rel_pos_w": {
+      "shape": [
+        127,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 40640,
+      "crc32": 3526254511
+    },
+    "image_encoder.blocks.15.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 3503758168
+    },
+    "image_encoder.blocks.15.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 2721402121
+    },
+    "image_encoder.blocks.15.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 1086634089
+    },
+    "image_encoder.blocks.15.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 839069220
+    },
+    "image_encoder.blocks.15.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 947708980
+    },
+    "image_encoder.blocks.15.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3341955286
+    },
+    "image_encoder.blocks.15.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 1144302535
+    },
+    "image_encoder.blocks.15.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 1224732260
+    },
+    "image_encoder.blocks.15.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 579080689
+    },
+    "image_encoder.blocks.15.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1747290886
+    },
+    "image_encoder.blocks.16.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 690885094
+    },
+    "image_encoder.blocks.16.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1722653990
+    },
+    "image_encoder.blocks.16.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 367642335
+    },
+    "image_encoder.blocks.16.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 2967881734
+    },
+    "image_encoder.blocks.16.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 2755549730
+    },
+    "image_encoder.blocks.16.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 1247651304
+    },
+    "image_encoder.blocks.16.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 584362599
+    },
+    "image_encoder.blocks.16.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2685168358
+    },
+    "image_encoder.blocks.16.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1734674778
+    },
+    "image_encoder.blocks.16.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2478115448
+    },
+    "image_encoder.blocks.16.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 2583417840
+    },
+    "image_encoder.blocks.16.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 3855887122
+    },
+    "image_encoder.blocks.16.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 3872696744
+    },
+    "image_encoder.blocks.16.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1695248936
+    },
+    "image_encoder.blocks.17.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2583831125
+    },
+    "image_encoder.blocks.17.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3129416295
+    },
+    "image_encoder.blocks.17.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 1213315471
+    },
+    "image_encoder.blocks.17.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 67856102
+    },
+    "image_encoder.blocks.17.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 122376059
+    },
+    "image_encoder.blocks.17.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 261371533
+    },
+    "image_encoder.blocks.17.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 2773599292
+    },
+    "image_encoder.blocks.17.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 347126816
+    },
+    "image_encoder.blocks.17.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2066592324
+    },
+    "image_encoder.blocks.17.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 585028737
+    },
+    "image_encoder.blocks.17.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 691281835
+    },
+    "image_encoder.blocks.17.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 1228188510
+    },
+    "image_encoder.blocks.17.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 2440840099
+    },
+    "image_encoder.blocks.17.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1542772253
+    },
+    "image_encoder.blocks.18.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 960048090
+    },
+    "image_encoder.blocks.18.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 418606703
+    },
+    "image_encoder.blocks.18.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 2737119682
+    },
+    "image_encoder.blocks.18.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 2105943789
+    },
+    "image_encoder.blocks.18.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 1452702243
+    },
+    "image_encoder.blocks.18.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 1976058087
+    },
+    "image_encoder.blocks.18.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 1728495204
+    },
+    "image_encoder.blocks.18.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 87002525
+    },
+    "image_encoder.blocks.18.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1503650977
+    },
+    "image_encoder.blocks.18.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3305909557
+    },
+    "image_encoder.blocks.18.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 486504777
+    },
+    "image_encoder.blocks.18.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 1879397011
+    },
+    "image_encoder.blocks.18.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 1149271909
+    },
+    "image_encoder.blocks.18.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3190689901
+    },
+    "image_encoder.blocks.19.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 794667996
+    },
+    "image_encoder.blocks.19.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2511964586
+    },
+    "image_encoder.blocks.19.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 3092517310
+    },
+    "image_encoder.blocks.19.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 2201380750
+    },
+    "image_encoder.blocks.19.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 4227457174
+    },
+    "image_encoder.blocks.19.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 2349995288
+    },
+    "image_encoder.blocks.19.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 3476343903
+    },
+    "image_encoder.blocks.19.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1914455440
+    },
+    "image_encoder.blocks.19.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3753175213
+    },
+    "image_encoder.blocks.19.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 4030544303
+    },
+    "image_encoder.blocks.19.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 894462849
+    },
+    "image_encoder.blocks.19.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 1611621085
+    },
+    "image_encoder.blocks.19.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 2014354038
+    },
+    "image_encoder.blocks.19.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1935779277
+    },
+    "image_encoder.blocks.20.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2388096355
+    },
+    "image_encoder.blocks.20.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1674364442
+    },
+    "image_encoder.blocks.20.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 477366896
+    },
+    "image_encoder.blocks.20.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 183596468
+    },
+    "image_encoder.blocks.20.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 3412617090
+    },
+    "image_encoder.blocks.20.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 2102115552
+    },
+    "image_encoder.blocks.20.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 2589866009
+    },
+    "image_encoder.blocks.20.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2257510521
+    },
+    "image_encoder.blocks.20.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2001947672
+    },
+    "image_encoder.blocks.20.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1325212896
+    },
+    "image_encoder.blocks.20.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 183819076
+    },
+    "image_encoder.blocks.20.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 2601145893
+    },
+    "image_encoder.blocks.20.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 995185229
+    },
+    "image_encoder.blocks.20.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 4215449385
+    },
+    "image_encoder.blocks.21.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2196488807
+    },
+    "image_encoder.blocks.21.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 4078652868
+    },
+    "image_encoder.blocks.21.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 3613879396
+    },
+    "image_encoder.blocks.21.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 2436958405
+    },
+    "image_encoder.blocks.21.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 891163151
+    },
+    "image_encoder.blocks.21.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 1965224373
+    },
+    "image_encoder.blocks.21.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 3276402028
+    },
+    "image_encoder.blocks.21.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 266330791
+    },
+    "image_encoder.blocks.21.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 875659306
+    },
+    "image_encoder.blocks.21.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3820070309
+    },
+    "image_encoder.blocks.21.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 1043202977
+    },
+    "image_encoder.blocks.21.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 495439761
+    },
+    "image_encoder.blocks.21.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 982108257
+    },
+    "image_encoder.blocks.21.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3089172949
+    },
+    "image_encoder.blocks.22.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2771337230
+    },
+    "image_encoder.blocks.22.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3385345115
+    },
+    "image_encoder.blocks.22.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 2176577761
+    },
+    "image_encoder.blocks.22.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 2119043259
+    },
+    "image_encoder.blocks.22.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 3003510203
+    },
+    "image_encoder.blocks.22.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 4273763010
+    },
+    "image_encoder.blocks.22.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 3996037938
+    },
+    "image_encoder.blocks.22.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2216845143
+    },
+    "image_encoder.blocks.22.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 680681329
+    },
+    "image_encoder.blocks.22.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 469062225
+    },
+    "image_encoder.blocks.22.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 2407417154
+    },
+    "image_encoder.blocks.22.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 2302739722
+    },
+    "image_encoder.blocks.22.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 556049122
+    },
+    "image_encoder.blocks.22.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3402875859
+    },
+    "image_encoder.blocks.23.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1838014014
+    },
+    "image_encoder.blocks.23.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2348400079
+    },
+    "image_encoder.blocks.23.attn.rel_pos_h": {
+      "shape": [
+        127,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 40640,
+      "crc32": 4001518711
+    },
+    "image_encoder.blocks.23.attn.rel_pos_w": {
+      "shape": [
+        127,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 40640,
+      "crc32": 1540753988
+    },
+    "image_encoder.blocks.23.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 1266003533
+    },
+    "image_encoder.blocks.23.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 805419841
+    },
+    "image_encoder.blocks.23.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 3448102867
+    },
+    "image_encoder.blocks.23.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1709980121
+    },
+    "image_encoder.blocks.23.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2038513292
+    },
+    "image_encoder.blocks.23.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1495988387
+    },
+    "image_encoder.blocks.23.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 1674866009
+    },
+    "image_encoder.blocks.23.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 2389698501
+    },
+    "image_encoder.blocks.23.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 4196534096
+    },
+    "image_encoder.blocks.23.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 858507460
+    },
+    "image_encoder.blocks.24.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 201394155
+    },
+    "image_encoder.blocks.24.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 281377220
+    },
+    "image_encoder.blocks.24.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 2630690422
+    },
+    "image_encoder.blocks.24.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 1801942639
+    },
+    "image_encoder.blocks.24.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 309581101
+    },
+    "image_encoder.blocks.24.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 1599791141
+    },
+    "image_encoder.blocks.24.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 1242497478
+    },
+    "image_encoder.blocks.24.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3338835940
+    },
+    "image_encoder.blocks.24.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3098109213
+    },
+    "image_encoder.blocks.24.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2739371272
+    },
+    "image_encoder.blocks.24.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 2338121908
+    },
+    "image_encoder.blocks.24.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 997893478
+    },
+    "image_encoder.blocks.24.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 304282269
+    },
+    "image_encoder.blocks.24.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1271810713
+    },
+    "image_encoder.blocks.25.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1903401579
+    },
+    "image_encoder.blocks.25.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3678978374
+    },
+    "image_encoder.blocks.25.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 1993669090
+    },
+    "image_encoder.blocks.25.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 2239853705
+    },
+    "image_encoder.blocks.25.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 2002384287
+    },
+    "image_encoder.blocks.25.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 825419292
+    },
+    "image_encoder.blocks.25.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 1674263605
+    },
+    "image_encoder.blocks.25.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 4030354392
+    },
+    "image_encoder.blocks.25.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1114189221
+    },
+    "image_encoder.blocks.25.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 590884455
+    },
+    "image_encoder.blocks.25.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 3711374849
+    },
+    "image_encoder.blocks.25.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 2720249740
+    },
+    "image_encoder.blocks.25.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 1367211956
+    },
+    "image_encoder.blocks.25.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3396041210
+    },
+    "image_encoder.blocks.26.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1513422352
+    },
+    "image_encoder.blocks.26.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1282316174
+    },
+    "image_encoder.blocks.26.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 963940588
+    },
+    "image_encoder.blocks.26.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 3587324040
+    },
+    "image_encoder.blocks.26.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 3783737472
+    },
+    "image_encoder.blocks.26.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 3886334339
+    },
+    "image_encoder.blocks.26.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 1645690874
+    },
+    "image_encoder.blocks.26.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3139874425
+    },
+    "image_encoder.blocks.26.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1612192378
+    },
+    "image_encoder.blocks.26.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3937021190
+    },
+    "image_encoder.blocks.26.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 3401909321
+    },
+    "image_encoder.blocks.26.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 4243739949
+    },
+    "image_encoder.blocks.26.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 4148453237
+    },
+    "image_encoder.blocks.26.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2516780047
+    },
+    "image_encoder.blocks.27.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1838774197
+    },
+    "image_encoder.blocks.27.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 743175544
+    },
+    "image_encoder.blocks.27.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 3538493851
+    },
+    "image_encoder.blocks.27.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 1370347049
+    },
+    "image_encoder.blocks.27.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 39074642
+    },
+    "image_encoder.blocks.27.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 3158115128
+    },
+    "image_encoder.blocks.27.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 446091209
+    },
+    "image_encoder.blocks.27.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3548015153
+    },
+    "image_encoder.blocks.27.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1350256013
+    },
+    "image_encoder.blocks.27.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3989611899
+    },
+    "image_encoder.blocks.27.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 2716829673
+    },
+    "image_encoder.blocks.27.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 1241306583
+    },
+    "image_encoder.blocks.27.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 2032798678
+    },
+    "image_encoder.blocks.27.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2177486380
+    },
+    "image_encoder.blocks.28.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 48966165
+    },
+    "image_encoder.blocks.28.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 128973108
+    },
+    "image_encoder.blocks.28.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 1581026064
+    },
+    "image_encoder.blocks.28.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 1386713199
+    },
+    "image_encoder.blocks.28.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 3261326130
+    },
+    "image_encoder.blocks.28.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 2477170267
+    },
+    "image_encoder.blocks.28.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 1491480004
+    },
+    "image_encoder.blocks.28.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2513683714
+    },
+    "image_encoder.blocks.28.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1684489970
+    },
+    "image_encoder.blocks.28.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 971054567
+    },
+    "image_encoder.blocks.28.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 882552250
+    },
+    "image_encoder.blocks.28.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 1752915163
+    },
+    "image_encoder.blocks.28.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 130036746
+    },
+    "image_encoder.blocks.28.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 480903630
+    },
+    "image_encoder.blocks.29.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 545247288
+    },
+    "image_encoder.blocks.29.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3776532917
+    },
+    "image_encoder.blocks.29.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 4243724036
+    },
+    "image_encoder.blocks.29.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 86638972
+    },
+    "image_encoder.blocks.29.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 765477740
+    },
+    "image_encoder.blocks.29.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 726762510
+    },
+    "image_encoder.blocks.29.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 1025875310
+    },
+    "image_encoder.blocks.29.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 704141306
+    },
+    "image_encoder.blocks.29.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3063426472
+    },
+    "image_encoder.blocks.29.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2310982763
+    },
+    "image_encoder.blocks.29.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 496871349
+    },
+    "image_encoder.blocks.29.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 2225003888
+    },
+    "image_encoder.blocks.29.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 87147656
+    },
+    "image_encoder.blocks.29.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 202695778
+    },
+    "image_encoder.blocks.30.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2248912760
+    },
+    "image_encoder.blocks.30.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 2729183931
+    },
+    "image_encoder.blocks.30.attn.rel_pos_h": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 183524475
+    },
+    "image_encoder.blocks.30.attn.rel_pos_w": {
+      "shape": [
+        27,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8640,
+      "crc32": 2047738883
+    },
+    "image_encoder.blocks.30.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 2285086275
+    },
+    "image_encoder.blocks.30.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 550584221
+    },
+    "image_encoder.blocks.30.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 2423078968
+    },
+    "image_encoder.blocks.30.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 178061508
+    },
+    "image_encoder.blocks.30.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1905420883
+    },
+    "image_encoder.blocks.30.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 4284269220
+    },
+    "image_encoder.blocks.30.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 493858789
+    },
+    "image_encoder.blocks.30.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 226150086
+    },
+    "image_encoder.blocks.30.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 2356329333
+    },
+    "image_encoder.blocks.30.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 384826207
+    },
+    "image_encoder.blocks.31.norm1.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3994425293
+    },
+    "image_encoder.blocks.31.norm1.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1231517419
+    },
+    "image_encoder.blocks.31.attn.rel_pos_h": {
+      "shape": [
+        127,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 40640,
+      "crc32": 7677784
+    },
+    "image_encoder.blocks.31.attn.rel_pos_w": {
+      "shape": [
+        127,
+        80
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 40640,
+      "crc32": 1170239042
+    },
+    "image_encoder.blocks.31.attn.qkv.weight": {
+      "shape": [
+        3840,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 19660800,
+      "crc32": 2135672671
+    },
+    "image_encoder.blocks.31.attn.qkv.bias": {
+      "shape": [
+        3840
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 15360,
+      "crc32": 1386139751
+    },
+    "image_encoder.blocks.31.attn.proj.weight": {
+      "shape": [
+        1280,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 6553600,
+      "crc32": 1040725593
+    },
+    "image_encoder.blocks.31.attn.proj.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 1539961979
+    },
+    "image_encoder.blocks.31.norm2.weight": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 50997679
+    },
+    "image_encoder.blocks.31.norm2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 169609535
+    },
+    "image_encoder.blocks.31.mlp.lin1.weight": {
+      "shape": [
+        5120,
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 1224652080
+    },
+    "image_encoder.blocks.31.mlp.lin1.bias": {
+      "shape": [
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 20480,
+      "crc32": 983464595
+    },
+    "image_encoder.blocks.31.mlp.lin2.weight": {
+      "shape": [
+        1280,
+        5120
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 26214400,
+      "crc32": 2460737727
+    },
+    "image_encoder.blocks.31.mlp.lin2.bias": {
+      "shape": [
+        1280
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 5120,
+      "crc32": 3961580250
+    },
+    "image_encoder.neck.0.weight": {
+      "shape": [
+        256,
+        1280,
+        1,
+        1
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1310720,
+      "crc32": 3431218650
+    },
+    "image_encoder.neck.1.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 305598281
+    },
+    "image_encoder.neck.1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 4266235243
+    },
+    "image_encoder.neck.2.weight": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 2359296,
+      "crc32": 3845628154
+    },
+    "image_encoder.neck.3.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 1533444756
+    },
+    "image_encoder.neck.3.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 176286487
+    },
+    "prompt_encoder.pe_layer.positional_encoding_gaussian_matrix": {
+      "shape": [
+        2,
+        128
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 1261092939
+    },
+    "prompt_encoder.point_embeddings.0.weight": {
+      "shape": [
+        1,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 2726522771
+    },
+    "prompt_encoder.point_embeddings.1.weight": {
+      "shape": [
+        1,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 959519877
+    },
+    "prompt_encoder.point_embeddings.2.weight": {
+      "shape": [
+        1,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 43366160
+    },
+    "prompt_encoder.point_embeddings.3.weight": {
+      "shape": [
+        1,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 856265640
+    },
+    "prompt_encoder.not_a_point_embed.weight": {
+      "shape": [
+        1,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 1406226262
+    },
+    "prompt_encoder.mask_downscaling.0.weight": {
+      "shape": [
+        4,
+        1,
+        2,
+        2
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 64,
+      "crc32": 1447790270
+    },
+    "prompt_encoder.mask_downscaling.0.bias": {
+      "shape": [
+        4
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 16,
+      "crc32": 4267338545
+    },
+    "prompt_encoder.mask_downscaling.1.weight": {
+      "shape": [
+        4
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 16,
+      "crc32": 1701969245
+    },
+    "prompt_encoder.mask_downscaling.1.bias": {
+      "shape": [
+        4
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 16,
+      "crc32": 2131211076
+    },
+    "prompt_encoder.mask_downscaling.3.weight": {
+      "shape": [
+        16,
+        4,
+        2,
+        2
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 4151398440
+    },
+    "prompt_encoder.mask_downscaling.3.bias": {
+      "shape": [
+        16
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 64,
+      "crc32": 2671752077
+    },
+    "prompt_encoder.mask_downscaling.4.weight": {
+      "shape": [
+        16
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 64,
+      "crc32": 1103306615
+    },
+    "prompt_encoder.mask_downscaling.4.bias": {
+      "shape": [
+        16
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 64,
+      "crc32": 1442185459
+    },
+    "prompt_encoder.mask_downscaling.6.weight": {
+      "shape": [
+        256,
+        16,
+        1,
+        1
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 16384,
+      "crc32": 1623146496
+    },
+    "prompt_encoder.mask_downscaling.6.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 1898544552
+    },
+    "prompt_encoder.no_mask_embed.weight": {
+      "shape": [
+        1,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 768412962
+    },
+    "mask_decoder.transformer.layers.0.self_attn.q_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 262144,
+      "crc32": 1229505995
+    },
+    "mask_decoder.transformer.layers.0.self_attn.q_proj.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 3258809178
+    },
+    "mask_decoder.transformer.layers.0.self_attn.k_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 262144,
+      "crc32": 2589098462
+    },
+    "mask_decoder.transformer.layers.0.self_attn.k_proj.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 4205320623
+    },
+    "mask_decoder.transformer.layers.0.self_attn.v_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 262144,
+      "crc32": 1580610961
+    },
+    "mask_decoder.transformer.layers.0.self_attn.v_proj.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 195984178
+    },
+    "mask_decoder.transformer.layers.0.self_attn.out_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 262144,
+      "crc32": 1019024287
+    },
+    "mask_decoder.transformer.layers.0.self_attn.out_proj.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 2224724655
+    },
+    "mask_decoder.transformer.layers.0.norm1.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 2027707305
+    },
+    "mask_decoder.transformer.layers.0.norm1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 1467346488
+    },
+    "mask_decoder.transformer.layers.0.cross_attn_token_to_image.q_proj.weight": {
+      "shape": [
+        128,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 131072,
+      "crc32": 3067395711
+    },
+    "mask_decoder.transformer.layers.0.cross_attn_token_to_image.q_proj.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 512,
+      "crc32": 1556342077
+    },
+    "mask_decoder.transformer.layers.0.cross_attn_token_to_image.k_proj.weight": {
+      "shape": [
+        128,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 131072,
+      "crc32": 2269568195
+    },
+    "mask_decoder.transformer.layers.0.cross_attn_token_to_image.k_proj.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 512,
+      "crc32": 3275901241
+    },
+    "mask_decoder.transformer.layers.0.cross_attn_token_to_image.v_proj.weight": {
+      "shape": [
+        128,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 131072,
+      "crc32": 463081023
+    },
+    "mask_decoder.transformer.layers.0.cross_attn_token_to_image.v_proj.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 512,
+      "crc32": 2926265870
+    },
+    "mask_decoder.transformer.layers.0.cross_attn_token_to_image.out_proj.weight": {
+      "shape": [
+        256,
+        128
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 131072,
+      "crc32": 3806868391
+    },
+    "mask_decoder.transformer.layers.0.cross_attn_token_to_image.out_proj.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 2150282055
+    },
+    "mask_decoder.transformer.layers.0.norm2.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 2092523660
+    },
+    "mask_decoder.transformer.layers.0.norm2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 929323392
+    },
+    "mask_decoder.transformer.layers.0.mlp.lin1.weight": {
+      "shape": [
+        2048,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 2097152,
+      "crc32": 2292454373
+    },
+    "mask_decoder.transformer.layers.0.mlp.lin1.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8192,
+      "crc32": 2737348377
+    },
+    "mask_decoder.transformer.layers.0.mlp.lin2.weight": {
+      "shape": [
+        256,
+        2048
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 2097152,
+      "crc32": 690436928
+    },
+    "mask_decoder.transformer.layers.0.mlp.lin2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 1017210951
+    },
+    "mask_decoder.transformer.layers.0.norm3.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 2726180600
+    },
+    "mask_decoder.transformer.layers.0.norm3.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 3892720651
+    },
+    "mask_decoder.transformer.layers.0.norm4.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 4065142910
+    },
+    "mask_decoder.transformer.layers.0.norm4.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 2079804704
+    },
+    "mask_decoder.transformer.layers.0.cross_attn_image_to_token.q_proj.weight": {
+      "shape": [
+        128,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 131072,
+      "crc32": 3727782639
+    },
+    "mask_decoder.transformer.layers.0.cross_attn_image_to_token.q_proj.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 512,
+      "crc32": 945047911
+    },
+    "mask_decoder.transformer.layers.0.cross_attn_image_to_token.k_proj.weight": {
+      "shape": [
+        128,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 131072,
+      "crc32": 730303573
+    },
+    "mask_decoder.transformer.layers.0.cross_attn_image_to_token.k_proj.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 512,
+      "crc32": 3844537525
+    },
+    "mask_decoder.transformer.layers.0.cross_attn_image_to_token.v_proj.weight": {
+      "shape": [
+        128,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 131072,
+      "crc32": 467755680
+    },
+    "mask_decoder.transformer.layers.0.cross_attn_image_to_token.v_proj.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 512,
+      "crc32": 1850281941
+    },
+    "mask_decoder.transformer.layers.0.cross_attn_image_to_token.out_proj.weight": {
+      "shape": [
+        256,
+        128
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 131072,
+      "crc32": 931215995
+    },
+    "mask_decoder.transformer.layers.0.cross_attn_image_to_token.out_proj.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 4281028051
+    },
+    "mask_decoder.transformer.layers.1.self_attn.q_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 262144,
+      "crc32": 3350280320
+    },
+    "mask_decoder.transformer.layers.1.self_attn.q_proj.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 2257552646
+    },
+    "mask_decoder.transformer.layers.1.self_attn.k_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 262144,
+      "crc32": 3496102804
+    },
+    "mask_decoder.transformer.layers.1.self_attn.k_proj.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 1266774099
+    },
+    "mask_decoder.transformer.layers.1.self_attn.v_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 262144,
+      "crc32": 2602567222
+    },
+    "mask_decoder.transformer.layers.1.self_attn.v_proj.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 34711321
+    },
+    "mask_decoder.transformer.layers.1.self_attn.out_proj.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 262144,
+      "crc32": 357359836
+    },
+    "mask_decoder.transformer.layers.1.self_attn.out_proj.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 3449596542
+    },
+    "mask_decoder.transformer.layers.1.norm1.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 2850990497
+    },
+    "mask_decoder.transformer.layers.1.norm1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 2189571830
+    },
+    "mask_decoder.transformer.layers.1.cross_attn_token_to_image.q_proj.weight": {
+      "shape": [
+        128,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 131072,
+      "crc32": 813167967
+    },
+    "mask_decoder.transformer.layers.1.cross_attn_token_to_image.q_proj.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 512,
+      "crc32": 1980483238
+    },
+    "mask_decoder.transformer.layers.1.cross_attn_token_to_image.k_proj.weight": {
+      "shape": [
+        128,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 131072,
+      "crc32": 3971276999
+    },
+    "mask_decoder.transformer.layers.1.cross_attn_token_to_image.k_proj.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 512,
+      "crc32": 3338400405
+    },
+    "mask_decoder.transformer.layers.1.cross_attn_token_to_image.v_proj.weight": {
+      "shape": [
+        128,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 131072,
+      "crc32": 2111182361
+    },
+    "mask_decoder.transformer.layers.1.cross_attn_token_to_image.v_proj.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 512,
+      "crc32": 1611236326
+    },
+    "mask_decoder.transformer.layers.1.cross_attn_token_to_image.out_proj.weight": {
+      "shape": [
+        256,
+        128
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 131072,
+      "crc32": 268379486
+    },
+    "mask_decoder.transformer.layers.1.cross_attn_token_to_image.out_proj.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 880222520
+    },
+    "mask_decoder.transformer.layers.1.norm2.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 651112750
+    },
+    "mask_decoder.transformer.layers.1.norm2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 1835923425
+    },
+    "mask_decoder.transformer.layers.1.mlp.lin1.weight": {
+      "shape": [
+        2048,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 2097152,
+      "crc32": 4045413364
+    },
+    "mask_decoder.transformer.layers.1.mlp.lin1.bias": {
+      "shape": [
+        2048
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 8192,
+      "crc32": 3111754273
+    },
+    "mask_decoder.transformer.layers.1.mlp.lin2.weight": {
+      "shape": [
+        256,
+        2048
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 2097152,
+      "crc32": 3574249980
+    },
+    "mask_decoder.transformer.layers.1.mlp.lin2.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 636875641
+    },
+    "mask_decoder.transformer.layers.1.norm3.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 2209130676
+    },
+    "mask_decoder.transformer.layers.1.norm3.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 34760671
+    },
+    "mask_decoder.transformer.layers.1.norm4.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 3810537766
+    },
+    "mask_decoder.transformer.layers.1.norm4.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 2365188498
+    },
+    "mask_decoder.transformer.layers.1.cross_attn_image_to_token.q_proj.weight": {
+      "shape": [
+        128,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 131072,
+      "crc32": 3678062202
+    },
+    "mask_decoder.transformer.layers.1.cross_attn_image_to_token.q_proj.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 512,
+      "crc32": 3651428617
+    },
+    "mask_decoder.transformer.layers.1.cross_attn_image_to_token.k_proj.weight": {
+      "shape": [
+        128,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 131072,
+      "crc32": 2758301082
+    },
+    "mask_decoder.transformer.layers.1.cross_attn_image_to_token.k_proj.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 512,
+      "crc32": 3443055340
+    },
+    "mask_decoder.transformer.layers.1.cross_attn_image_to_token.v_proj.weight": {
+      "shape": [
+        128,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 131072,
+      "crc32": 3262855631
+    },
+    "mask_decoder.transformer.layers.1.cross_attn_image_to_token.v_proj.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 512,
+      "crc32": 1569522625
+    },
+    "mask_decoder.transformer.layers.1.cross_attn_image_to_token.out_proj.weight": {
+      "shape": [
+        256,
+        128
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 131072,
+      "crc32": 2962395648
+    },
+    "mask_decoder.transformer.layers.1.cross_attn_image_to_token.out_proj.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 3819369380
+    },
+    "mask_decoder.transformer.final_attn_token_to_image.q_proj.weight": {
+      "shape": [
+        128,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 131072,
+      "crc32": 1256094404
+    },
+    "mask_decoder.transformer.final_attn_token_to_image.q_proj.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 512,
+      "crc32": 2118294474
+    },
+    "mask_decoder.transformer.final_attn_token_to_image.k_proj.weight": {
+      "shape": [
+        128,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 131072,
+      "crc32": 3699664687
+    },
+    "mask_decoder.transformer.final_attn_token_to_image.k_proj.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 512,
+      "crc32": 1354744882
+    },
+    "mask_decoder.transformer.final_attn_token_to_image.v_proj.weight": {
+      "shape": [
+        128,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 131072,
+      "crc32": 3057647035
+    },
+    "mask_decoder.transformer.final_attn_token_to_image.v_proj.bias": {
+      "shape": [
+        128
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 512,
+      "crc32": 2118131967
+    },
+    "mask_decoder.transformer.final_attn_token_to_image.out_proj.weight": {
+      "shape": [
+        256,
+        128
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 131072,
+      "crc32": 3027271347
+    },
+    "mask_decoder.transformer.final_attn_token_to_image.out_proj.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 61204842
+    },
+    "mask_decoder.transformer.norm_final_attn.weight": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 106248609
+    },
+    "mask_decoder.transformer.norm_final_attn.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 3657197785
+    },
+    "mask_decoder.iou_token.weight": {
+      "shape": [
+        1,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 4006853425
+    },
+    "mask_decoder.mask_tokens.weight": {
+      "shape": [
+        4,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 4096,
+      "crc32": 3776113966
+    },
+    "mask_decoder.output_upscaling.0.weight": {
+      "shape": [
+        256,
+        64,
+        2,
+        2
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 262144,
+      "crc32": 625851437
+    },
+    "mask_decoder.output_upscaling.0.bias": {
+      "shape": [
+        64
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 256,
+      "crc32": 4119909710
+    },
+    "mask_decoder.output_upscaling.1.weight": {
+      "shape": [
+        64
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 256,
+      "crc32": 3083779616
+    },
+    "mask_decoder.output_upscaling.1.bias": {
+      "shape": [
+        64
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 256,
+      "crc32": 3201868278
+    },
+    "mask_decoder.output_upscaling.3.weight": {
+      "shape": [
+        64,
+        32,
+        2,
+        2
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 32768,
+      "crc32": 551850240
+    },
+    "mask_decoder.output_upscaling.3.bias": {
+      "shape": [
+        32
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 128,
+      "crc32": 549289709
+    },
+    "mask_decoder.output_hypernetworks_mlps.0.layers.0.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 262144,
+      "crc32": 2482478666
+    },
+    "mask_decoder.output_hypernetworks_mlps.0.layers.0.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 1071613220
+    },
+    "mask_decoder.output_hypernetworks_mlps.0.layers.1.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 262144,
+      "crc32": 2873758698
+    },
+    "mask_decoder.output_hypernetworks_mlps.0.layers.1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 3662019398
+    },
+    "mask_decoder.output_hypernetworks_mlps.0.layers.2.weight": {
+      "shape": [
+        32,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 32768,
+      "crc32": 1522899245
+    },
+    "mask_decoder.output_hypernetworks_mlps.0.layers.2.bias": {
+      "shape": [
+        32
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 128,
+      "crc32": 3221301621
+    },
+    "mask_decoder.output_hypernetworks_mlps.1.layers.0.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 262144,
+      "crc32": 1975570731
+    },
+    "mask_decoder.output_hypernetworks_mlps.1.layers.0.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 935881148
+    },
+    "mask_decoder.output_hypernetworks_mlps.1.layers.1.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 262144,
+      "crc32": 14328415
+    },
+    "mask_decoder.output_hypernetworks_mlps.1.layers.1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 614846263
+    },
+    "mask_decoder.output_hypernetworks_mlps.1.layers.2.weight": {
+      "shape": [
+        32,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 32768,
+      "crc32": 3110221229
+    },
+    "mask_decoder.output_hypernetworks_mlps.1.layers.2.bias": {
+      "shape": [
+        32
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 128,
+      "crc32": 67229056
+    },
+    "mask_decoder.output_hypernetworks_mlps.2.layers.0.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 262144,
+      "crc32": 728410462
+    },
+    "mask_decoder.output_hypernetworks_mlps.2.layers.0.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 629047085
+    },
+    "mask_decoder.output_hypernetworks_mlps.2.layers.1.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 262144,
+      "crc32": 1566064803
+    },
+    "mask_decoder.output_hypernetworks_mlps.2.layers.1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 1593887411
+    },
+    "mask_decoder.output_hypernetworks_mlps.2.layers.2.weight": {
+      "shape": [
+        32,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 32768,
+      "crc32": 353690434
+    },
+    "mask_decoder.output_hypernetworks_mlps.2.layers.2.bias": {
+      "shape": [
+        32
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 128,
+      "crc32": 349531838
+    },
+    "mask_decoder.output_hypernetworks_mlps.3.layers.0.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 262144,
+      "crc32": 3929381741
+    },
+    "mask_decoder.output_hypernetworks_mlps.3.layers.0.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 3577678548
+    },
+    "mask_decoder.output_hypernetworks_mlps.3.layers.1.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 262144,
+      "crc32": 1596703574
+    },
+    "mask_decoder.output_hypernetworks_mlps.3.layers.1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 4176335225
+    },
+    "mask_decoder.output_hypernetworks_mlps.3.layers.2.weight": {
+      "shape": [
+        32,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 32768,
+      "crc32": 2170579428
+    },
+    "mask_decoder.output_hypernetworks_mlps.3.layers.2.bias": {
+      "shape": [
+        32
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 128,
+      "crc32": 1082691130
+    },
+    "mask_decoder.iou_prediction_head.layers.0.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 262144,
+      "crc32": 3765852512
+    },
+    "mask_decoder.iou_prediction_head.layers.0.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 3436179920
+    },
+    "mask_decoder.iou_prediction_head.layers.1.weight": {
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 262144,
+      "crc32": 1758564633
+    },
+    "mask_decoder.iou_prediction_head.layers.1.bias": {
+      "shape": [
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 1024,
+      "crc32": 2319450618
+    },
+    "mask_decoder.iou_prediction_head.layers.2.weight": {
+      "shape": [
+        4,
+        256
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 4096,
+      "crc32": 211965721
+    },
+    "mask_decoder.iou_prediction_head.layers.2.bias": {
+      "shape": [
+        4
+      ],
+      "dtype": "FloatStorage",
+      "bytes": 16,
+      "crc32": 4280660226
+    }
+  },
+  "pickle_execution": false,
+  "method": "Restrictedpicklemetadataonly;storagetensorsNEVERread. ZIPCRCcomparisonisprovenancehint,notcryptographicauthentication.",
+  "base": {
+    "bytes": 2564550879,
+    "metadata_bytes_downloaded": 112009,
+    "tensors": 594
+  },
+  "comparison": {
+    "image_encoder.": {
+      "tensors": 457,
+      "different_crc_or_metadata": 1,
+      "different_keys": [
+        "image_encoder.pos_embed"
+      ]
+    },
+    "prompt_encoder.": {
+      "tensors": 17,
+      "different_crc_or_metadata": 0,
+      "different_keys": []
+    },
+    "mask_decoder.": {
+      "tensors": 120,
+      "different_crc_or_metadata": 89,
+      "different_keys": [
+        "mask_decoder.transformer.layers.0.self_attn.q_proj.weight",
+        "mask_decoder.transformer.layers.0.self_attn.q_proj.bias",
+        "mask_decoder.transformer.layers.0.self_attn.k_proj.weight",
+        "mask_decoder.transformer.layers.0.self_attn.v_proj.weight",
+        "mask_decoder.transformer.layers.0.self_attn.v_proj.bias",
+        "mask_decoder.transformer.layers.0.self_attn.out_proj.weight",
+        "mask_decoder.transformer.layers.0.self_attn.out_proj.bias",
+        "mask_decoder.transformer.layers.0.norm1.weight",
+        "mask_decoder.transformer.layers.0.norm1.bias",
+        "mask_decoder.transformer.layers.0.cross_attn_token_to_image.q_proj.weight",
+        "mask_decoder.transformer.layers.0.cross_attn_token_to_image.q_proj.bias",
+        "mask_decoder.transformer.layers.0.cross_attn_token_to_image.k_proj.weight",
+        "mask_decoder.transformer.layers.0.cross_attn_token_to_image.v_proj.weight",
+        "mask_decoder.transformer.layers.0.cross_attn_token_to_image.v_proj.bias",
+        "mask_decoder.transformer.layers.0.cross_attn_token_to_image.out_proj.weight",
+        "mask_decoder.transformer.layers.0.cross_attn_token_to_image.out_proj.bias",
+        "mask_decoder.transformer.layers.0.norm2.weight",
+        "mask_decoder.transformer.layers.0.norm2.bias",
+        "mask_decoder.transformer.layers.0.mlp.lin1.weight",
+        "mask_decoder.transformer.layers.0.mlp.lin1.bias",
+        "mask_decoder.transformer.layers.0.mlp.lin2.weight",
+        "mask_decoder.transformer.layers.0.mlp.lin2.bias",
+        "mask_decoder.transformer.layers.0.norm3.weight",
+        "mask_decoder.transformer.layers.0.norm3.bias",
+        "mask_decoder.transformer.layers.0.norm4.weight",
+        "mask_decoder.transformer.layers.0.norm4.bias",
+        "mask_decoder.transformer.layers.0.cross_attn_image_to_token.q_proj.weight",
+        "mask_decoder.transformer.layers.0.cross_attn_image_to_token.q_proj.bias",
+        "mask_decoder.transformer.layers.0.cross_attn_image_to_token.k_proj.weight",
+        "mask_decoder.transformer.layers.0.cross_attn_image_to_token.v_proj.weight",
+        "mask_decoder.transformer.layers.0.cross_attn_image_to_token.v_proj.bias",
+        "mask_decoder.transformer.layers.0.cross_attn_image_to_token.out_proj.weight",
+        "mask_decoder.transformer.layers.0.cross_attn_image_to_token.out_proj.bias",
+        "mask_decoder.transformer.layers.1.self_attn.q_proj.weight",
+        "mask_decoder.transformer.layers.1.self_attn.q_proj.bias",
+        "mask_decoder.transformer.layers.1.self_attn.k_proj.weight",
+        "mask_decoder.transformer.layers.1.self_attn.v_proj.weight",
+        "mask_decoder.transformer.layers.1.self_attn.v_proj.bias",
+        "mask_decoder.transformer.layers.1.self_attn.out_proj.weight",
+        "mask_decoder.transformer.layers.1.self_attn.out_proj.bias",
+        "mask_decoder.transformer.layers.1.norm1.weight",
+        "mask_decoder.transformer.layers.1.norm1.bias",
+        "mask_decoder.transformer.layers.1.cross_attn_token_to_image.q_proj.weight",
+        "mask_decoder.transformer.layers.1.cross_attn_token_to_image.q_proj.bias",
+        "mask_decoder.transformer.layers.1.cross_attn_token_to_image.k_proj.weight",
+        "mask_decoder.transformer.layers.1.cross_attn_token_to_image.v_proj.weight",
+        "mask_decoder.transformer.layers.1.cross_attn_token_to_image.v_proj.bias",
+        "mask_decoder.transformer.layers.1.cross_attn_token_to_image.out_proj.weight",
+        "mask_decoder.transformer.layers.1.cross_attn_token_to_image.out_proj.bias",
+        "mask_decoder.transformer.layers.1.norm2.weight",
+        "mask_decoder.transformer.layers.1.norm2.bias",
+        "mask_decoder.transformer.layers.1.mlp.lin1.weight",
+        "mask_decoder.transformer.layers.1.mlp.lin1.bias",
+        "mask_decoder.transformer.layers.1.mlp.lin2.weight",
+        "mask_decoder.transformer.layers.1.mlp.lin2.bias",
+        "mask_decoder.transformer.layers.1.norm3.weight",
+        "mask_decoder.transformer.layers.1.norm3.bias",
+        "mask_decoder.transformer.layers.1.norm4.weight",
+        "mask_decoder.transformer.layers.1.norm4.bias",
+        "mask_decoder.transformer.layers.1.cross_attn_image_to_token.q_proj.weight",
+        "mask_decoder.transformer.layers.1.cross_attn_image_to_token.q_proj.bias",
+        "mask_decoder.transformer.layers.1.cross_attn_image_to_token.k_proj.weight",
+        "mask_decoder.transformer.layers.1.cross_attn_image_to_token.v_proj.weight",
+        "mask_decoder.transformer.layers.1.cross_attn_image_to_token.v_proj.bias",
+        "mask_decoder.transformer.layers.1.cross_attn_image_to_token.out_proj.weight",
+        "mask_decoder.transformer.layers.1.cross_attn_image_to_token.out_proj.bias",
+        "mask_decoder.transformer.final_attn_token_to_image.q_proj.weight",
+        "mask_decoder.transformer.final_attn_token_to_image.q_proj.bias",
+        "mask_decoder.transformer.final_attn_token_to_image.k_proj.weight",
+        "mask_decoder.transformer.final_attn_token_to_image.v_proj.weight",
+        "mask_decoder.transformer.final_attn_token_to_image.v_proj.bias",
+        "mask_decoder.transformer.final_attn_token_to_image.out_proj.weight",
+        "mask_decoder.transformer.final_attn_token_to_image.out_proj.bias",
+        "mask_decoder.transformer.norm_final_attn.weight",
+        "mask_decoder.transformer.norm_final_attn.bias",
+        "mask_decoder.iou_token.weight",
+        "mask_decoder.mask_tokens.weight",
+        "mask_decoder.output_upscaling.0.weight",
+        "mask_decoder.output_upscaling.0.bias",
+        "mask_decoder.output_upscaling.1.weight",
+        "mask_decoder.output_upscaling.1.bias",
+        "mask_decoder.output_upscaling.3.weight",
+        "mask_decoder.output_upscaling.3.bias",
+        "mask_decoder.output_hypernetworks_mlps.0.layers.0.weight",
+        "mask_decoder.output_hypernetworks_mlps.0.layers.0.bias",
+        "mask_decoder.output_hypernetworks_mlps.0.layers.1.weight",
+        "mask_decoder.output_hypernetworks_mlps.0.layers.1.bias",
+        "mask_decoder.output_hypernetworks_mlps.0.layers.2.weight",
+        "mask_decoder.output_hypernetworks_mlps.0.layers.2.bias"
+      ]
+    }
+  }
+}

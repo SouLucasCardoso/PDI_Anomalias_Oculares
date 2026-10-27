@@ -1,0 +1,7 @@
+{
+  "zip_bytes": 2267778,
+  "zip_sha256": "062333028da8169998d64065da0ae7aa663f209efbe4c9258d7d8e57855e2c02",
+  "parts": ["parte_001.b64", "parte_002.b64", "parte_003.b64", "parte_004.b64"],
+  "zip_files": 104,
+  "cloud_upload_verified": false
+}

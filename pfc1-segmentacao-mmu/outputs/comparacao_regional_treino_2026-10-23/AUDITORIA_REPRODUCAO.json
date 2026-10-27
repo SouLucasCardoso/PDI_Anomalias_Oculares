@@ -1,0 +1,10 @@
+{
+  "status": "regional_scores_and_gate_audited",
+  "metrics_exact": true,
+  "clean_thresholds_exact": true,
+  "source_hashes_verified": true,
+  "full_cache_reproduction": true,
+  "gate_passed": false,
+  "registered_source_preserved": true,
+  "post_completion_print_only_fix": true
+}

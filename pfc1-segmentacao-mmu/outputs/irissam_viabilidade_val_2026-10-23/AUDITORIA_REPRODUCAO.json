@@ -1,0 +1,12 @@
+{
+  "status": "irissam_masks_prompts_metrics_verified",
+  "people": 32,
+  "paired_cases": 96,
+  "records": 384,
+  "automatic_prompts_reproduced": true,
+  "oracle_separated": true,
+  "all_dice_iou_exact": true,
+  "paired_bootstrap_exact": true,
+  "screen_gate_reproduced": false,
+  "new_model_inference": false
+}

@@ -1,0 +1,207 @@
+{
+  "status": "fixed_cohort_normalization_completed",
+  "results": {
+    "internal": {
+      "clean": {
+        "rank1": 0.9916666666666667,
+        "tar": 0.9916666666666667,
+        "fnmr": 0.008333333333333304,
+        "far": 0.0044444444444444444,
+        "eer_descriptive": 0.008333333333333333,
+        "extraction_failures": 1,
+        "queries": 120,
+        "genuine_mean_valid": 0.9793647348546142,
+        "margin_mean_valid": 0.26437310833634187,
+        "threshold": 0.7895247095099804,
+        "correct": 119,
+        "accepted": 119
+      },
+      "upper10": {
+        "rank1": 0.875,
+        "tar": 0.7916666666666666,
+        "fnmr": 0.20833333333333337,
+        "far": 0.012777777777777779,
+        "eer_descriptive": 0.1,
+        "extraction_failures": 2,
+        "queries": 120,
+        "genuine_mean_valid": 0.874152775766959,
+        "margin_mean_valid": 0.15300077429810363,
+        "threshold": 0.7895247095099804,
+        "correct": 105,
+        "accepted": 95
+      },
+      "lower10": {
+        "rank1": 0.55,
+        "tar": 0.4166666666666667,
+        "fnmr": 0.5833333333333333,
+        "far": 0.015555555555555555,
+        "eer_descriptive": 0.2,
+        "extraction_failures": 1,
+        "queries": 120,
+        "genuine_mean_valid": 0.7450231839100073,
+        "margin_mean_valid": 0.01243317183829887,
+        "threshold": 0.7895247095099804,
+        "correct": 66,
+        "accepted": 50
+      }
+    },
+    "monitor": {
+      "clean": {
+        "rank1": 0.9979166666666667,
+        "tar": 0.9979166666666667,
+        "fnmr": 0.002083333333333326,
+        "far": 0.006527777777777778,
+        "eer_descriptive": 0.0020833333333333333,
+        "extraction_failures": 1,
+        "queries": 480,
+        "genuine_mean_valid": 0.9840613499104705,
+        "margin_mean_valid": 0.2702098893271306,
+        "threshold": 0.7895247095099804,
+        "correct": 479,
+        "accepted": 479
+      },
+      "upper10": {
+        "rank1": 0.8291666666666667,
+        "tar": 0.7854166666666667,
+        "fnmr": 0.21458333333333335,
+        "far": 0.012083333333333333,
+        "eer_descriptive": 0.10208333333333333,
+        "extraction_failures": 1,
+        "queries": 480,
+        "genuine_mean_valid": 0.8703295281642492,
+        "margin_mean_valid": 0.1528566239145481,
+        "threshold": 0.7895247095099804,
+        "correct": 398,
+        "accepted": 377
+      },
+      "lower10": {
+        "rank1": 0.6770833333333334,
+        "tar": 0.5875,
+        "fnmr": 0.4125,
+        "far": 0.0125,
+        "eer_descriptive": 0.16854166666666667,
+        "extraction_failures": 2,
+        "queries": 480,
+        "genuine_mean_valid": 0.7911892605984655,
+        "margin_mean_valid": 0.0697739545714976,
+        "threshold": 0.7895247095099804,
+        "correct": 325,
+        "accepted": 282
+      }
+    }
+  },
+  "raw_control": {
+    "internal": {
+      "clean": {
+        "rank1": 0.9916666666666667,
+        "tar": 0.9916666666666667,
+        "fnmr": 0.008333333333333304,
+        "far": 0.0044444444444444444,
+        "eer_descriptive": 0.008333333333333333,
+        "extraction_failures": 1,
+        "queries": 120,
+        "genuine_mean_valid": 0.7289905803544181,
+        "margin_mean_valid": 0.4978051949448946,
+        "threshold": 0.29762315750122076,
+        "correct": 119,
+        "accepted": 119
+      },
+      "upper10": {
+        "rank1": 0.875,
+        "tar": 0.7916666666666666,
+        "fnmr": 0.20833333333333337,
+        "far": 0.011666666666666667,
+        "eer_descriptive": 0.1,
+        "extraction_failures": 2,
+        "queries": 120,
+        "genuine_mean_valid": 0.46234965414903256,
+        "margin_mean_valid": 0.22484453180331296,
+        "threshold": 0.29762315750122076,
+        "correct": 105,
+        "accepted": 95
+      },
+      "lower10": {
+        "rank1": 0.5583333333333333,
+        "tar": 0.39166666666666666,
+        "fnmr": 0.6083333333333334,
+        "far": 0.013888888888888888,
+        "eer_descriptive": 0.2,
+        "extraction_failures": 1,
+        "queries": 120,
+        "genuine_mean_valid": 0.2819768367230851,
+        "margin_mean_valid": 0.03851944451019459,
+        "threshold": 0.29762315750122076,
+        "correct": 67,
+        "accepted": 47
+      }
+    },
+    "monitor": {
+      "clean": {
+        "rank1": 0.9979166666666667,
+        "tar": 0.9979166666666667,
+        "fnmr": 0.002083333333333326,
+        "far": 0.005277777777777778,
+        "eer_descriptive": 0.0020833333333333333,
+        "extraction_failures": 1,
+        "queries": 480,
+        "genuine_mean_valid": 0.760607776081056,
+        "margin_mean_valid": 0.5339552737259168,
+        "threshold": 0.29762315750122076,
+        "correct": 479,
+        "accepted": 479
+      },
+      "upper10": {
+        "rank1": 0.83125,
+        "tar": 0.7791666666666667,
+        "fnmr": 0.22083333333333333,
+        "far": 0.010555555555555556,
+        "eer_descriptive": 0.10208333333333333,
+        "extraction_failures": 1,
+        "queries": 480,
+        "genuine_mean_valid": 0.47162297210366405,
+        "margin_mean_valid": 0.24103297123059414,
+        "threshold": 0.29762315750122076,
+        "correct": 399,
+        "accepted": 374
+      },
+      "lower10": {
+        "rank1": 0.6875,
+        "tar": 0.5708333333333333,
+        "fnmr": 0.4291666666666667,
+        "far": 0.01,
+        "eer_descriptive": 0.16923611111111111,
+        "extraction_failures": 2,
+        "queries": 480,
+        "genuine_mean_valid": 0.33884858808349017,
+        "margin_mean_valid": 0.10695742375335579,
+        "threshold": 0.29762315750122076,
+        "correct": 330,
+        "accepted": 274
+      }
+    }
+  },
+  "threshold": 0.7895247095099804,
+  "monitor_gate_passed": false,
+  "absolute_target_reached": false,
+  "cohort_people": 151,
+  "internal_people": 16,
+  "monitor_people": 16,
+  "labels_used_for_normalization": false,
+  "new_training": false,
+  "validation_inference": false,
+  "test_inference": false,
+  "candidate_replaced": false,
+  "minimum_area": null,
+  "files_sha256": {
+    "coorte.npz": "f3cc029e87fe4e5ea2afb01719956c36364fc58d73125c2e8f3e2ad7080b9e1b",
+    "grupos_coorte.json": "37a34d6b834024410747e3940db1a20e6e395b04f7f3585e6a6473fbc8f148d5",
+    "protocolo.json": "bba1e8f32b168fd673ebfe8063c2c2e373fcfc48dc98d695c46fcc0fd9209a63",
+    "scores_internal_clean.npz": "1e67e4d310cc481fe68cb6bf2219ed027bf7744b764d78394e8762f7aa5eaaac",
+    "scores_internal_lower10.npz": "5e6edbaae8895d720fba678a850932ad29f4e0ed7782d38c718eb66fece45905",
+    "scores_internal_upper10.npz": "aa8a6ebe44bb9380648fe8d3ce69a9c74caad833a314fa778ed8d4a249d34514",
+    "scores_monitor_clean.npz": "1e93effe4268fcdfe6421cd4ca14bfc9d124466edf3409ef25f34d0173f94bcd",
+    "scores_monitor_lower10.npz": "55966a2b29f8235094031bb3a61b24d4246f0479adc925c9cc7bef318d346cf6",
+    "scores_monitor_upper10.npz": "5646b1ac9304dec5bd75632ad5fa2e5f677c27b7ac5358941d0eec364b23f038",
+    "source.py": "7f895df0382100dc8882abc4954ec29a28bb16510febef8f2662e8bd2b1476d6"
+  }
+}

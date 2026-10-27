@@ -421,3 +421,106 @@ Esses subgrupos não alteram o resultado global de 434/482 acertos (90,04%) nem 
 ### Localização aprendida da pupila — 22/10/2026
 
 Um localizador auxiliar foi treinado exclusivamente no treino original, com alvos geométricos aproximados obtidos de buracos nas máscaras. Na validação com 482 consultas, o Rank-1 limpo permaneceu em 90,0415%. A calibração fixa produziu TAR de 90,2490% e FMR de 1,0235%; a recalibração limpa produziu TAR de 89,8340% e FMR de 0,9820%. Nenhuma cumpriu os critérios simultâneos e o candidato anterior foi preservado. O ganho de Rank-1 sob oclusão inferior de 10% teve intervalo por participante incluindo zero. Não houve nova inferência no teste. Alvos aproximados e reutilização da validação limitam as conclusões. A suíte completa passou em 87 testes. Ver [protocolo, resultados e imagem](PUPILA_APRENDIDA_2026-10-22.md).
+
+### Forma elíptica da pupila — 23/10/2026
+
+Foi isolado o efeito da forma com uma camada de 8.194 parâmetros, mantendo centro e raio equivalente do localizador circular congelados. O treino usou 6.282 exemplos e selecionou a época 4 por perda em 879 exemplos internos. Na validação com todas as 482 consultas, a elipse com calibração fixa manteve Rank-1 de 90,0415%, com TAR de 90,0415% e FMR de 1,0235%. A recalibração somente limpa atingiu os mesmos Rank-1 e TAR, com FMR de 0,9820%, passando os critérios limpos, mas sem superar a referência, cujo TAR era 90,6639%. Sob oclusão superior/inferior de 10%, o Rank-1 foi 81,1203%/60,9959%, sem aprovação dos critérios completos. Nenhuma variante foi promovida e não houve nova inferência no teste. Alvos aproximados e reutilização da validação limitam a conclusão. A reprodução dos escores foi exata e a suíte completa passou em 94 testes. Ver [protocolo, controles e resultados](FORMA_PUPILA_2026-10-23.md).
+
+### Transporte de descritores — piloto interno de 23/10/2026
+
+Uma regressão residual fixa, ajustada em 200 descritores de fotos alteradas das pessoas de ajuste, não passou o controle nas 55 fotos alteradas do monitor. A similaridade média com o descritor original melhorou no ajuste (0,6842 para 0,8506), mas piorou no monitor (0,7401 para 0,6613), e o TAR interno caiu. O encoder permaneceu congelado; nenhuma avaliação desta adaptação foi feita na validação principal ou no teste. O monitor pertence ao treino original e já foi visto pelo encoder, portanto seus resultados não são confirmação independente. A referência e as fronteiras de área foram preservadas. A regressão e os escores foram reproduzidos e a suíte completa passou em 97 testes. Ver [protocolo e resultado do piloto](TRANSPORTE_DESCRITOR_2026-10-23.md).
+
+### Fronteira de área e fechamento — 23/10/2026
+
+Uma análise com 5.000 reamostragens pareadas por participante reaproveitou as seis condições existentes, sem novo treino, inferência ou calibração. Com perda nominal de 10%, a diferença de Rank-1 entre superior e inferior foi 24,07 pontos percentuais (IC95% pareado 10,83–36,25), evidenciando a influência da região no processamento completo. A condição inferior com perda de 1% passou os critérios em 50,46% das reamostras; essa frequência descreve estabilidade amostral, não probabilidade populacional de sucesso. Os mínimos pontuais da grade continuam em 100% superior e 99% inferior, sem interpretação de mínimo clínico universal.
+
+A análise foi reproduzida por uma segunda implementação usando 96 linhas de contagens por participante/condição, com diferença máxima de intervalo de 2,23 × 10⁻¹⁶ p.p.; cinco testes direcionados passaram. Não houve nova execução da suíte completa nesta etapa. Foram descritas somente as perdas em pixels de duas condições candidatas, 0,5% superior e 1,5% inferior; elas ainda não foram avaliadas no reconhecedor. O plano limita o refinamento a uma rodada com esses dois pontos e reserva o restante do prazo para fechar o artigo até 09/11. Ver [incerteza, resultados e plano de fechamento](INCERTEZA_AREA_2026-10-23.md).
+
+### Rodada fracionária concluída — fronteira atual de 23/10/2026
+
+Foram executados exatamente os dois novos pontos previstos, com modelo e limiar congelados e todas as 486 consultas mantidas. A perda superior de 0,5% passou: 443 acertos (Rank-1 91,1523%), TAR de 92,3868% e FMR de 0,8916%. A perda inferior de 1,5% reprovou: 433 acertos (89,0947%), TAR de 88,8889% e FMR de 1,0151%. Portanto, o menor aproveitamento nominal aprovado na grade irregular estudada é agora **99,5% na superior e 99% na inferior**. Isso refina o limite observado, sem alterar o reconhecedor ou estabelecer mínimo anatômico/clínico.
+
+Não foi avaliada perda inferior de 0,5%; assim, 99,5% não foi aprovado em ambas as orientações. Entre os níveis coincidentes, o prefixo comum continua em 100%. Na condição superior de 0,5%, uma referência definida arredondou para zero pixels selecionados; as seis referências vazias continuaram inalteradas. Os IC95% descritivos de Rank-1 foram 85,00–95,63% e 81,07–94,72% nas duas novas condições, respectivamente.
+
+A auditoria reproduziu a fusão com diferença zero e conferiu intervenções, entradas inalteradas e hashes do pipeline original. Cinco testes direcionados passaram. O pacote de recuperação foi restaurado em 37 arquivos com hashes conferidos; os escores foram reproduzidos a partir dos componentes restaurados. A rodada experimental limitada foi encerrada, priorizando agora método, tabelas e discussão do artigo. Ver [fronteira consolidada e limites](FRONTEIRA_REFINADA_2026-10-23.md).
+
+### Artigo consolidado para revisão — 23/10/2026
+
+O [manuscrito ativo](artigo/ARTIGO_AREA_IRIS_EM_PRODUCAO.md) foi reorganizado como artigo completo, com resultados atuais, método, discussão e limitações. Foi preparado um Word de 18 páginas no modelo UniSATC, com cinco tabelas e duas figuras, e todas as páginas foram conferidas visualmente. Os dados de curso e e-mail dos autores foram incluídos; a versão anterior foi arquivada. O documento e as figuras possuem cópia restaurável com hashes conferidos dentro do projeto, sem alterar o Defender. Ver [revisão, localização do Word e recuperação](artigo/REVISAO_ARTIGO_2026-10-23.md). A revisão do orientador permanece pendente.
+
+### Retomada da robustez após solicitação do autor — 23/10/2026
+
+Foram concluídos dois pilotos somente na validação: média de três vistas da mesma foto para segmentar e consenso fixo 50/50 entre a extração original e a nova. O consenso elevou o Rank-1 limpo de 434/482 (90,04%) para 437/482 (90,66%), mas reduziu o TAR de 90,66% para 89,63% e não resolveu a robustez sob oclusão. Nenhum candidato passou o critério registrado; a referência e os resultados de teste permanecem preservados. Quatro testes direcionados passaram, os escores e decisões foram auditados e 55 arquivos foram restaurados com hashes conferidos. Ver [resultados completos e direção seguinte](RETOMADA_ROBUSTEZ_2026-10-23.md).
+
+### Correção aprendida do contorno externo — 23/10/2026
+
+Foram treinadas duas formulações somente no treino original. A primeira falhou na preservação geométrica limpa; a segunda, ensinada pela geometria limpa das fotos de treino, reduziu o erro geométrico superior/inferior em 13,59%/22,93% no monitor, com aumento limpo de 2,87% dentro do limite registrado. Na validação biométrica, o Rank-1 inferior passou de 59,96% para 63,49%, mas o limpo caiu para 89,21% e o superior para 78,84%. O candidato não cumpriu os critérios e não substituiu a referência. Nove testes direcionados passaram; as seleções e os escores foram auditados, e 60 arquivos foram restaurados com hashes conferidos. Ver [método, tabelas e alcance](CONTORNO_EXTERNO_2026-10-23.md).
+
+### Adaptação polar com cadastro fixo — 23/10/2026
+
+O adaptador residual melhorou o Rank-1 do descritor polar no monitor interno de 64,58% para 76,46% na perda superior de 10% e de 45,21% para 63,96% na inferior. A última época permaneceu abaixo da referência limpa original e foi rejeitada; nenhuma época foi elegível. Não houve inferência na validação ou no teste. Treze testes passaram; as cinco épocas foram reproduzidas com perdas idênticas, e 40 arquivos foram restaurados com hashes conferidos. Ver [método, resultados e recuperação](ADAPTACAO_POLAR_2026-10-23.md).
+
+
+### Complemento geométrico com ramo original preservado — 23/10/2026
+
+O piloto fixo 75% original/25% corrigido preservou 479/480 acertos limpos do descritor polar no monitor interno. Na perda inferior de 10%, o Rank-1 passou de 60,63% para 61,67%, mas o TAR caiu; na superior, ambos pioraram. A FMR permaneceu acima de 1% nas duas oclusões. O candidato foi rejeitado antes da validação, sem nova inferência no teste. Seis testes direcionados passaram e a auditoria reproduziu exatamente a combinação e as decisões. Ver [resultados e recuperação](COMPLEMENTO_GEOMETRICO_2026-10-23.md).
+
+
+### Estudo do segmentador compartilhado pelo orientador — 23/10/2026
+
+A aplicação externa foi examinada e sua lógica botânica não será integrada. A ideia reaproveitável de SAM guiado foi testada no nosso projeto, sem instalar o aplicativo: 32 fotos de treino em três condições, com prompts automáticos da U-Net. O Dice limpo caiu de 95,15% para 91,45%, apesar de ganho localizado inferior; o piloto reprovou o critério registrado. Dois testes passaram e máscaras, métricas e prompts foram auditados e preservados. Não houve avaliação de identidade nem uso de validação/teste. Ver [viabilidade, resultados e decisão](ESTUDO_SEGMENTADOR_ORIENTADOR_2026-10-23.md).
+
+
+### Adaptação à oclusão com normalização original — 23/10/2026
+
+Foram preparadas as 7.716 fotos do treino original em três condições e treinado um adaptador residual por 12 épocas, com encoders congelados. Nas 480 consultas do monitor interno, o Rank-1 limpo permaneceu em 479/480 (99,79%), e o superior/inferior com perda de 10% passou de 82,50%/60,63% para 84,38%/68,33%. O TAR melhorou nas duas oclusões, mas a FMR permaneceu em 1,5139%/1,4861%, reprovando o avanço antes da validação. Cinco testes passaram; escores e seleção foram auditados, e 28 arquivos foram restaurados com hashes conferidos. Ver [método, resultados e limites](ADAPTACAO_POLAR_ORIGINAL_2026-10-23.md).
+
+
+### Perda de identidade no adaptador polar — 23/10/2026
+
+A nova perda com protótipos limpos S1 das pessoas de ajuste foi treinada por 12 épocas, reutilizando as características existentes. O monitor manteve 479/480 acertos limpos; o Rank-1 com perda superior/inferior de 10% foi 84,79%/68,54%, com FMR de 1,6111%/1,5000%. Houve dois e um acertos adicionais frente à rodada anterior, mas a FMR piorou ligeiramente e o candidato continuou barrado antes da validação. Oito testes passaram, protótipos e escores foram auditados, e 35 arquivos foram restaurados com hashes conferidos. Ver [método, correção técnica e resultados](ADAPTACAO_IDENTIDADE_POLAR_2026-10-23.md).
+
+
+### Cadastro múltiplo e negativos difíceis — 23/10/2026
+
+A perda passou a usar a média das três melhores fotos de cadastro por olho e o impostor mais semelhante do mesmo lado. O treino concluiu 12 épocas, com a época 11 selecionada. No monitor interno, preservou 479/480 acertos limpos; os Rank-1 superior/inferior com perda de 10% foram 84,17%/68,33%. As FMR caíram de 1,6111%/1,5000% na rodada anterior para 1,4861%/1,2917%, com pequena perda de identificação. O candidato continuou barrado antes da validação. Onze testes passaram; 33 arquivos foram restaurados com hashes conferidos. Ver [método, resultados e limites](ADAPTACAO_TOP3_POLAR_2026-10-23.md).
+
+
+### Penalização absoluta de escores impostores — 23/10/2026
+
+Foi testada uma referência fixa de similaridade calculada somente nas pessoas do ajuste, mantendo o limiar de avaliação limpo. O treino parou na época 8 e selecionou a época 4. No monitor interno, as FMR superior/inferior caíram de 1,4861%/1,2917% para 1,4167%/1,2778%, com Rank-1 de 83,54%/66,67% e perda de acertos/TAR frente ao piloto top3. O limpo permaneceu em 99,79%. O candidato continuou barrado antes da validação. O diagnóstico mostrou erros distribuídos entre dezenas de consultas. Quatorze testes passaram, e 38 arquivos foram restaurados com hashes conferidos. Ver [referência, resultados e diagnóstico](ADAPTACAO_FMR_POLAR_2026-10-23.md).
+
+
+### Correções espaciais no último bloco do encoder — 23/10/2026
+
+Foi concluído um piloto de oito épocas com 145.408 parâmetros de correção treináveis nas convoluções de layer4, mantendo kernels originais, prefixo, projeção e BatchNorm congelados. A época 6 preservou 479/480 acertos limpos no monitor interno e elevou o TAR superior/inferior, frente ao encoder sem adaptação, para 80,63%/60,21%. Os Rank-1 foram 83,13%/68,13%, com FMR de 1,5833%/1,3056%; o candidato continuou barrado antes da validação. Doze testes passaram; 33 arquivos foram restaurados com hashes conferidos. O cache FP32 de 1,59 GB pode ser reaproveitado. Ver [escopo do piloto, resultados e recuperação](ENCODER_ESPACIAL_2026-10-23.md).
+
+### Retomada, calibração e transferência — 24/10/2026
+
+Foi concluído e auditado um piloto de diversidade nativa de oclusões no ajuste: 3.222 simulações de 1% a 20% e cinco tons, com oito épocas e avaliação fixa de 10%. Preservou 99,79% limpos no monitor, mas não superou o controle direto: Rank-1 de 82,92%/65,63% e FMR de 1,4028%/1,2917%. Não avançou à validação. Pesos, escores e protocolos foram preservados e recuperados por hashes. Ver [hipótese, comparação e limites](DIVERSIDADE_OCLUSAO_2026-10-24.md).
+
+A gravação no projeto voltou a funcionar após a liberação do Defender pelo usuário. O pacote pendente de 104 arquivos foi preservado em quatro partes e recuperado com hashes. O relatório de 24/10 registra as rodadas anteriores com calibração separada, coorte, fusão completa e normalização de fundo.
+
+Uma nova calibração global, estimada somente nas condições simuladas internas, controlou a FMR do monitor em 0,0417%/0,0972%/0,2222% no limpo/superior/inferior de 10%. Não atingiu a meta conjunta: o TAR inferior foi 76,25%. Com todos os parâmetros de treino congelados, a validação limpa obteve Rank-1 de 90,46%, TAR de 64,32% e FMR de 0,2075%, reprovando a porta limpa. A troca isolada do polar mantendo exatamente os parâmetros do sistema principal também reprovou: Rank-1 de 89,83%, TAR de 90,25% e FMR de 1,0235%. Não foram abertas oclusões ou teste desses candidatos. Nenhuma variante substituiu a referência ou estabeleceu novo mínimo.
+
+As três rodadas foram auditadas e preservadas em um pacote de 65 arquivos, com recuperação por hashes. Ver [relatório e limites](../Relatórios-de-Avanço/RELATORIO_AVANCO_2026-10-24.md), `restaurar_pendencias_2026-10-24.py` e `preservar_rodadas_2026-10-24.py`. Gravação local não comprova envio à nuvem.
+
+### Ajuste dos kernels do último bloco — 23/10/2026
+
+Foi concluído um piloto de oito épocas ajustando os cinco kernels originais de layer4, com 8.388.608 pesos treináveis e prefixo, projeção e BatchNorm congelados. A época 8 preservou 479/480 acertos limpos e elevou o Rank-1 superior/inferior sob perda de 10% de 82,50%/60,63% para 84,79%/71,25% no monitor de treino. A FMR de 1,6389%/1,3472% barrou o avanço à validação. O teste direcionado e a auditoria dos descritores/escores passaram. Ambos os checkpoints foram recuperados com hashes exatos de um pacote de 43 partes, sem quantização. Ver [método, ganhos, limites e recuperação](AJUSTE_BLOCO_POLAR_2026-10-23.md).
+
+### Ponderação aprendida de regiões — 23/10/2026
+
+O PyTorch voltou a carregar após a liberação dos arquivos pelo usuário, e teste CUDA, treinamento e auditoria executaram com sucesso. O novo pooling de atenção usa 16.449 parâmetros, com inicialização equivalente à média global e encoder/projeção congelados. A época 8 preservou 479/480 acertos limpos e obteve Rank-1 de 83,75%/61,46% sob perda superior/inferior de 10%, com FMR de 1,7083%/1,8056%; não avançou à validação. Dois testes passaram e a auditoria reproduziu os escores no cache. Foram preservados 28 arquivos em 12 partes, sem duplicar os mapas. Ver [método, limites e recuperação](ATENCAO_POLAR_2026-10-23.md).
+
+### Comparação regional da textura — 23/10/2026
+
+Foi executado um piloto registrado usando 32 descritores locais dos mapas polares congelados, com padronização em 4.955 fotos S1 das pessoas de ajuste. O primário retém as 24 maiores concordâncias de cada par, sem referência ou identidade para escolher regiões; o controle compara todas as 32. No monitor de treino, o primário obteve Rank-1 de 77,29% limpo e 54,38%/48,13% nas perdas superior/inferior de 10%, abaixo do polar global. O critério limpo falhou e o piloto não avançou à validação. Três testes passaram; a reconstrução do cache reproduziu escores, protótipos e decisões. Nenhuma nova fronteira foi aprovada. Ver [resultado, limites e recuperação](COMPARACAO_REGIONAL_2026-10-23.md).
+
+### Diagnóstico dos limites de comparação — 23/10/2026
+
+Os escores de quatro componentes polares foram reanalisados nas 480 consultas do monitor de treino, sem novas imagens ou treinamento. Mesmo o melhor limiar privilegiado por condição, usado somente como diagnóstico, limita o TAR espacial a 78,13%/58,13% sob perda superior/inferior de 10%, com FMR de até 1%. A seleção privilegiada entre as decisões top3/espacial também permanece abaixo de 90%; isso não é um limite para fusão de escores. Dois testes passaram. A próxima hipótese deve atuar na comparação da textura disponível, sem repetir ajustes globais ou recalibrar sobre o monitor ocluído. Ver [números, alcance e reprodução](DIAGNOSTICO_COMPARACAO_2026-10-23.md).
+
+### Avaliação do Iris-SAM — 23/10/2026
+
+O checkpoint público foi baixado e executado com adaptador próprio, sem alterar o repositório externo ou o ambiente principal. Em 32 pessoas da validação e 96 casos pareados, a U-Net atual obteve Dice limpo de 84,40%, contra 78,80% do Iris-SAM guiado por caixa automática da U-Net. Com perda superior/inferior de 10%, os Dice da área visível foram 81,29%/78,67% e 80,29%/77,49%, respectivamente. O candidato não passou ao critério registrado e não substituiu o segmentador. O modo sem prompt falhou, e caixas da anotação foram separadas como diagnóstico privilegiado. Três testes passaram; máscaras, caixas, métricas e bootstrap foram auditados e recuperados por hashes em um pacote de 22 arquivos, incluindo figura de casos fixos. Nenhuma nova identificação ou estimativa de área mínima foi realizada. Ver [estudo, resultados e recuperação da figura](IRIS_SAM_ESTUDO_2026-10-23.md).

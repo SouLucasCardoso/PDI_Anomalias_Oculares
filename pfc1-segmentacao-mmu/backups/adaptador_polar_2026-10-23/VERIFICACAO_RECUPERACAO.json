@@ -1,0 +1,47 @@
+{
+  "status": "restored_polar_adapter_verified",
+  "monitor_records": [
+    {
+      "method": "original_clean",
+      "correct": 479,
+      "accepted": 479
+    },
+    {
+      "method": "baseline_clean",
+      "correct": 471,
+      "accepted": 477
+    },
+    {
+      "method": "baseline_upper10",
+      "correct": 310,
+      "accepted": 294
+    },
+    {
+      "method": "baseline_lower10",
+      "correct": 217,
+      "accepted": 201
+    },
+    {
+      "method": "selected_clean",
+      "correct": 471,
+      "accepted": 477
+    },
+    {
+      "method": "selected_upper10",
+      "correct": 310,
+      "accepted": 294
+    },
+    {
+      "method": "selected_lower10",
+      "correct": 217,
+      "accepted": 201
+    }
+  ],
+  "monitor_gate_reproduced": false,
+  "checkpoint_hash_verified": true,
+  "alignment_statistics_reproduced": true,
+  "full_feature_or_image_forward_replayed": false,
+  "rejected_last_checkpoint_hash_and_scores_verified": true,
+  "training_loss_replay_maximum_difference": 0.0,
+  "validation_skipped_by_gate": true
+}

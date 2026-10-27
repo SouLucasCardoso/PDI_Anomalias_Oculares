@@ -1,0 +1,31 @@
+{
+  "checkpoint": {
+    "downloaded_utc": "2026-10-24T01:39:28.418490+00:00",
+    "source": "README public checkpoint link https://github.com/ParisaFarmanifard/Iris-SAM",
+    "google_drive_file_id": "1Oqr93dMaHMZfwd2M3FvM-q5Xnn_d321x",
+    "path": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-irissam\\IrisSAM_model.pt",
+    "bytes": 2564545909,
+    "sha256": "388a1b4ca72a455b3710fa434118c390b1e7cd1614960aaef29e5f319961fffe",
+    "range_download": true,
+    "network_credentials_used": false,
+    "seconds": 13.953000000008615
+  },
+  "runtime_sources": {
+    "segment_anything\\automatic_mask_generator.py": "c818960c61c4f51d3f5a2286034d4b5f491e05ab1e84f3155756d9d031375d01",
+    "segment_anything\\build_sam.py": "9dd66a90524c63458c2cacec971963834c92e9f87ff1de99485f7b1c2b4dc9b8",
+    "segment_anything\\predictor.py": "7a97015cb3ea812c8c389e88cbab53fcfa825c19506a5240b4e26b723f3681c4",
+    "segment_anything\\__init__.py": "c8d8eb649610b2d51f138481a89617a3dcb61106465121dcb1c2f23affc84c30",
+    "segment_anything\\modeling\\common.py": "59a53bfa5d0a4d446df7f2bb57d2e95808b130601592b934600fb663d256ce17",
+    "segment_anything\\modeling\\image_encoder.py": "ec9dd904e88c0d8feef5c62d9459fb517036990854ab390a7635e3d9dbed00e4",
+    "segment_anything\\modeling\\mask_decoder.py": "6775488f57a425acfc4a2391d9f552c0fe99950ee8eea93cb74828c46335f1d8",
+    "segment_anything\\modeling\\prompt_encoder.py": "bd8f2f5903f0647f55c21c608bcbb334eec2901ebe76aa41061b1c513df4a06f",
+    "segment_anything\\modeling\\sam.py": "43a8e7ae55e440db4fc6bb00bc26d5a50610467ef37fac8d3be4648f3db2d871",
+    "segment_anything\\modeling\\transformer.py": "680c463c365bacb9304468f91addc8131d8de8aeb96bfc3e39ebb365f01a29a0",
+    "segment_anything\\modeling\\__init__.py": "47f6363b86c0bfaa7a6abf723975136d17fae4a5f002d2814a5cce8834d18980",
+    "segment_anything\\utils\\amg.py": "ba333540bf125fe5fe06396e9f1bcc53f603caa21856db6223b1e89a1c56b2c2",
+    "segment_anything\\utils\\onnx.py": "6f939eb882441220f0b2700527e9048770cde34cee8f402fa75ae91a2e16708c",
+    "segment_anything\\utils\\transforms.py": "5d64e083cc0f68dc59c20d75f49a21b306a772b8a35560b3287b5084a9e7711a",
+    "segment_anything\\utils\\__init__.py": "34bd8069c54764e7b8d73a78905dbe6467140a2f73170875128f6ca4d8cdd0aa"
+  },
+  "checkpoint_dataset_unknown": true
+}

@@ -1,0 +1,11 @@
+{
+  "registered_utc": "2026-10-23T17:24:23.561079+00:00",
+  "scope": "Exploratory validation ONLY after locator selected on internal TRAIN monitor; no test inference or automatic promotion",
+  "intervention": "Change ONLY shape of learned-circle fallback; frozen circle center/equivalent radius, outer ellipse, ordinary holes, masks, RGB/native and identity weights unchanged. Predicted ellipse must be contained at512angles; otherwise use learned circle. S1/S2 same transform; references only define artificial query occlusion.",
+  "controls": "Four fixed strategies: original frozen control; yesterday circle with frozen calibration; ellipse with frozen calibration; ellipse with CLEAN-only calibration and empirical FMR<=1% threshold. Each strategy parameters unchanged upper/lower10%. No choice of strategy/weights/threshold using occlusion results.",
+  "gate": "If selected shape does not beat isotropic zero-shape on internal monitor proxy loss, record gate failure and do NOT extract validation identity scores.",
+  "precision": "Same original extraction: CNN/Transformer BF16batch128,spatialFP32batch32,ArcIrisFP32batch8. One original query photo, informed side,16 candidates,ALL482 queries/failures retained.",
+  "limits": "Shape target is annotation-hole-derived ellipse proxy, not anatomical pupil ground truth; internal monitor seen by frozen U-Net. Reused development validation and external ArcIris pretraining overlap unknown. No minimum-area claim.",
+  "script_sha256": "f736bdf05e41548ad20a5a278b19de9c55b8b3303650103a270b9ea560a28df7",
+  "locator_source_sha256": "4674b3b9f2939d737085d0baf3de88aab38cb1cff6e0226f3f5310a6501f7d9f"
+}

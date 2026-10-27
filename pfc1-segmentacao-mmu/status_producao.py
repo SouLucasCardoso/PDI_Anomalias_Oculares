@@ -46,6 +46,31 @@ def main():
         if (folder/'CONCLUIDO.json').exists():entry['result']=json.loads((folder/'CONCLUIDO.json').read_text(encoding='utf-8'))
         elif (folder/'progresso.json').exists():entry['progress']=json.loads((folder/'progresso.json').read_text(encoding='utf-8'))
         report['frozen_occlusion'][kind]=entry
+    folder=ROOT/'outputs/irissam_viabilidade_val_2026-10-23'
+    temporary=Path(tempfile.gettempdir())/'pfc-tcc-resultados/irissam_viabilidade_val_2026-10-23'
+    if not (folder/'protocolo.json').exists() and (temporary/'protocolo.json').exists():folder=temporary
+    report['irissam_segmentation_feasibility']={'protocol_registered':(folder/'protocolo.json').exists(),'completed':(folder/'CONCLUIDO.json').exists(),'artifact_directory':str(folder),'note':'Exploratory paired VAL segmentation only; automatic U-Net box primary, oracle diagnostic separated; no identity/minimum-area conclusion'}
+    if (folder/'CONCLUIDO.json').exists():report['irissam_segmentation_feasibility']['result']=json.loads((folder/'CONCLUIDO.json').read_text(encoding='utf-8'))
+    diagnostic=ROOT/'outputs/diagnostico_comparacao_treino_2026-10-23/CONCLUIDO.json'
+    report['train_score_diagnostic']={'completed':diagnostic.exists(),'note':'Descriptive privileged thresholds/decision overlap only; no model promotion or production threshold change'}
+    if diagnostic.exists():report['train_score_diagnostic']['result']=json.loads(diagnostic.read_text(encoding='utf-8'))
+    regional=ROOT/'outputs/comparacao_regional_treino_2026-10-23/CONCLUIDO.json'
+    report['regional_comparison_pilot']={'completed':regional.exists(),'note':'Fixed local matching, reused TRAIN monitor only; no VAL/test or automatic candidate promotion'}
+    if regional.exists():report['regional_comparison_pilot']['result']=json.loads(regional.read_text(encoding='utf-8'))
+    attention=ROOT/'outputs/atencao_polar_treino_2026-10-23/CONCLUIDO.json'
+    report['attention_pooling_pilot']={'completed':attention.exists(),'note':'Learned pooling only, reused TRAIN monitor; no VAL/test or automatic promotion'}
+    if attention.exists():report['attention_pooling_pilot']['result']=json.loads(attention.read_text(encoding='utf-8'))
+    full_tail=ROOT/'outputs/ajuste_bloco_polar_treino_2026-10-23/CONCLUIDO.json'
+    report['full_layer4_pilot']={'completed':full_tail.exists(),'note':'Five original Conv kernels adjusted, BN/projection/prefix frozen; reused TRAIN monitor only, no VAL/test or promotion'}
+    if full_tail.exists():report['full_layer4_pilot']['result']=json.loads(full_tail.read_text(encoding='utf-8'))
+    report['calibration_and_clean_transfer_20261024']={}
+    for key,name in [('multidomain_calibration','calibracao_multicondicao_treino_2026-10-24'),('frozen_train_clean_validation','porta_limpa_multicondicao_val_2026-10-24'),('isolated_reference_swap','troca_polar_parametros_originais_val_2026-10-24')]:
+        file=ROOT/'outputs'/name/'CONCLUIDO.json'
+        report['calibration_and_clean_transfer_20261024'][key]={'completed':file.exists(),'note':'Development evidence; passing TRAIN FMR does not establish VAL joint target or a new area minimum'}
+        if file.exists():report['calibration_and_clean_transfer_20261024'][key]['result']=json.loads(file.read_text(encoding='utf-8'))
+    diverse=ROOT/'outputs/diversidade_oclusao_treino_2026-10-24/CONCLUIDO.json'
+    report['diverse_native_training']={'completed':diverse.exists(),'note':'FIT-only native1..20% varied gray, internal/monitor fixed10; no VAL/test or primary replacement'}
+    if diverse.exists():report['diverse_native_training']['result']=json.loads(diverse.read_text(encoding='utf-8'))
     report['recognition']={}
     report['recognizer_development']={}
     for name,folder_name in [('normalization','melhoria_normalizacao_val_gpu_2026-10-20'),
@@ -105,6 +130,32 @@ def main():
                              ('resolution_geometry_diagnostic','diagnostico_resolucao_geometria_val_2026-10-22'),
                              ('pupil_locator_training','localizador_pupila_2026-10-22'),
                              ('pupil_locator_identity_validation','pupila_aprendida_val_2026-10-22'),
+                             ('pupil_proxy_target_audit','auditoria_alvos_pupila_2026-10-23'),
+                             ('pupil_ellipse_shape_training','forma_pupila_2026-10-23'),
+                             ('pupil_ellipse_shape_validation','forma_pupila_val_2026-10-23'),
+                             ('train_only_polar_descriptor_transport','transporte_descritor_polar_2026-10-23'),
+                             ('frozen_area_boundary_uncertainty','incerteza_fronteira_area_2026-10-23'),
+                             ('bounded_midpoint_boundary_round','fronteira_meio_ponto_2026-10-23'),
+                             ('single_photo_segmentation_tta','segmentacao_multivista_val_2026-10-23'),
+                             ('fixed_geometry_score_consensus','consenso_geometrias_val_2026-10-23'),
+                             ('outer_contour_geometry_head','contorno_externo_2026-10-23'),
+                             ('outer_contour_geometry_validation','contorno_externo_val_2026-10-23'),
+                             ('clean_teacher_outer_geometry_head','contorno_consistente_2026-10-23'),
+                             ('clean_teacher_outer_geometry_validation','contorno_consistente_val_2026-10-23'),
+                             ('fixed_enrollment_polar_adapter','adaptador_polar_cadastro_fixo_2026-10-23'),
+                             ('fixed_enrollment_polar_adapter_validation','adaptador_polar_cadastro_fixo_val_2026-10-23'),
+                             ('fixed_original_corrected_complement_monitor','complemento_geometrico_monitor_2026-10-23'),
+                             ('advisor_segmenter_sam_guided_feasibility','triagem_sam_guiado_treino_2026-10-23'),
+                             ('original_geometry_polar_adapter','adaptador_polar_original_2026-10-23'),
+                             ('original_geometry_polar_adapter_validation','adaptador_polar_original_val_2026-10-23'),
+                             ('identity_loss_polar_adapter','adaptador_polar_identidade_v2_2026-10-23'),
+                             ('identity_loss_polar_adapter_validation','adaptador_polar_identidade_v2_val_2026-10-23'),
+                             ('top3_hardnegative_polar_adapter','adaptador_polar_top3_2026-10-23'),
+                             ('top3_hardnegative_polar_adapter_validation','adaptador_polar_top3_val_2026-10-23'),
+                             ('absolute_fmr_polar_adapter','adaptador_polar_fmr_2026-10-23'),
+                             ('absolute_fmr_polar_adapter_validation','adaptador_polar_fmr_val_2026-10-23'),
+                             ('spatial_layer4_corrections','encoder_polar_espacial_2026-10-23'),
+                             ('spatial_layer4_corrections_validation','encoder_polar_espacial_val_2026-10-23'),
                              ('original_geometry_diagnostic','diagnostico_geometria_fixa_2026-10-21'),
                              ('enrollment_adaptation_failed','adaptacao_cadastro_2026-10-21'),
                              ('enrollment_adaptation','adaptacao_cadastro_v2_2026-10-21')]:

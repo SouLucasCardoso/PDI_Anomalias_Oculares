@@ -1,0 +1,10 @@
+{
+  "registered_utc": "2026-10-23T22:46:50.808586+00:00",
+  "scope": "ONLYdevelopmentVALifTRAINmonitor passes. All482queries,onephoto,suppliedside,16candidateeyes,480cleanS1enrollment. No test or automatic replacement.",
+  "candidate": "ONLYglobalpolarcomponent adapted; other8components use ORIGINALgeometry and frozenidentityweights. OriginalBF16control,originalFP32unadaptedcontrol,originalFP32adapted. NOoutergeometry/SAM. FP32batch32backbone/512adapter.",
+  "calibration": "One clean-only component calibration and empiricalFMR<=1%threshold per newmethod; unchanged forupper/lower10. OriginalBF16 uses original frozenparameters. Fixed8groupweights,no tuning/filtering.",
+  "gate": "Adapted cleanRank1/TAR>=90%,FMR<=1%;BOTHocclusionRank1/TAR improve vs ORIGINALBF16 and FMR<=1%. Also reportFP32control. Absolute90%Rank1/TAR target separate. No automatictest/promotion/minimum.",
+  "script_sha256": "0f17ec0e174755ffc985007063cf1e378973353216faffde1a64e76327e4c2a3",
+  "adapter_source_sha256": "211ca146fed33d61c6752ffea78e4e3ac1ea4890499690974294b3aef87166ea",
+  "training_protocol_sha256": "263c6243212ac2253364712473a675477ae09a377dd9996365b4ef0ceebf5603"
+}

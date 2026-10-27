@@ -1,0 +1,94 @@
+{
+  "status": "fixed_two_geometry_consensus_validation_completed",
+  "results": {
+    "clean": {
+      "rank1": 0.9066390041493776,
+      "tar": 0.8962655601659751,
+      "fnmr": 0.10373443983402486,
+      "far": 0.009820193637621023,
+      "eer_descriptive": 0.03941908713692946,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.9203522177155938,
+      "margin_mean_valid": 0.1386489649197817,
+      "rank1_correct": 437,
+      "genuine_accepted": 432,
+      "threshold": 0.8592986951573449
+    },
+    "upper10": {
+      "rank1": 0.7946058091286307,
+      "tar": 0.7821576763485477,
+      "fnmr": 0.21784232365145229,
+      "far": 0.01313969571230982,
+      "eer_descriptive": 0.07053941908713693,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.8944314840721284,
+      "margin_mean_valid": 0.09518505249145989,
+      "rank1_correct": 383,
+      "genuine_accepted": 377,
+      "threshold": 0.8592986951573449
+    },
+    "lower10": {
+      "rank1": 0.6058091286307054,
+      "tar": 0.578838174273859,
+      "fnmr": 0.421161825726141,
+      "far": 0.02351313969571231,
+      "eer_descriptive": 0.13900414937759337,
+      "extraction_failures": 10,
+      "queries": 482,
+      "genuine_mean_valid": 0.8413189062129834,
+      "margin_mean_valid": 0.01751401286854861,
+      "rank1_correct": 292,
+      "genuine_accepted": 279,
+      "threshold": 0.8592986951573449
+    }
+  },
+  "baseline": {
+    "clean": {
+      "rank1": 0.9004149377593361,
+      "tar": 0.9066390041493776,
+      "fnmr": 0.09336099585062241,
+      "far": 0.009820193637621023,
+      "eer_descriptive": 0.04329183955739972,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.9198967805247797,
+      "margin_mean_valid": 0.13741244408667197
+    },
+    "upper10": {
+      "rank1": 0.8070539419087137,
+      "tar": 0.7800829875518672,
+      "fnmr": 0.21991701244813278,
+      "far": 0.013001383125864454,
+      "eer_descriptive": 0.07053941908713693,
+      "extraction_failures": 4,
+      "queries": 482,
+      "genuine_mean_valid": 0.8943935362022664,
+      "margin_mean_valid": 0.0947425222581766
+    },
+    "lower10": {
+      "rank1": 0.5995850622406639,
+      "tar": 0.578838174273859,
+      "fnmr": 0.421161825726141,
+      "far": 0.024066390041493777,
+      "eer_descriptive": 0.13900414937759337,
+      "extraction_failures": 7,
+      "queries": 482,
+      "genuine_mean_valid": 0.8409128074113923,
+      "margin_mean_valid": 0.016845094238804117
+    }
+  },
+  "promotion_gate_passed": false,
+  "source_scores_sha256": {
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_2026-10-21\\scores_finais.npz": "7f590308cfb5ecefa628da8bd2a52fd613ea5eeb0d2fdca3021247a0695408d0",
+    "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\segmentacao_multivista_val_2026-10-23\\tta_clean_calibrated_clean.npz": "1dce9850b63d32f715447426e3643494561b56af3574901142638a61e1084427",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_oclusao_superior_10_2026-10-21\\scores_finais.npz": "c6f3576048601e0c3dabfb62999dd6a43fe8eb357e60889e09d365a0d3fbc943",
+    "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\segmentacao_multivista_val_2026-10-23\\tta_clean_calibrated_upper10.npz": "21f9b0c52ed0483836a091b811b036f6da0f934c337994cc36a21119052d70b8",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\confirmacao_congelada_val_oclusao_inferior_10_2026-10-21\\scores_finais.npz": "c133a26bef0567a120e8ca8f2c650c408816c2dfb64c8d9ac38e59834672a30d",
+    "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-tcc-resultados\\segmentacao_multivista_val_2026-10-23\\tta_clean_calibrated_lower10.npz": "dfc719748b5adf9fcf01bf2b97a4be2305c8b12da4e4ed8693ccbe651c6c9369"
+  },
+  "test_inference": false,
+  "frozen_candidate_replaced": false,
+  "minimum_area": null
+}
