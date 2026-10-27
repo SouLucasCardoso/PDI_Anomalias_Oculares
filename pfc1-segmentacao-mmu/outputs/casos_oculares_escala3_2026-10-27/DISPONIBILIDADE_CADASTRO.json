@@ -1,0 +1,24 @@
+{
+  "query_count": 4,
+  "nominal_candidate_eyes": 16,
+  "available_candidates_per_query": [
+    15,
+    15,
+    15,
+    15
+  ],
+  "query_extraction_available": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "genuine_comparison_available": [
+    true,
+    false,
+    false,
+    false
+  ],
+  "unavailable_genuine_count": 3,
+  "interpretation": "Do not attribute unavailable genuine enrollment to identity discrimination or anatomical iris loss. All failures retained in primary denominator."
+}

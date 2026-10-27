@@ -1,0 +1,13 @@
+{
+  "status": "diverse_occlusion_training_protocol_audited",
+  "selected_epoch": 8,
+  "selection_uses_only_fit_loss_and_internal_clean": true,
+  "monitor_not_in_epoch_history": true,
+  "augmentation_plan_seed_and_fit_only_verified": true,
+  "exact_native_affected_counts_verified": true,
+  "metrics_exact": true,
+  "shared_internal_clean_threshold_verified": true,
+  "full_cache_reproduction": false,
+  "monitor_gate_passed": false,
+  "absolute_target_reached": false
+}

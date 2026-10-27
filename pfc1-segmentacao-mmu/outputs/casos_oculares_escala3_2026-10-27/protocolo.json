@@ -1,0 +1,383 @@
+{
+  "registered_utc": "2026-10-27T16:18:58.005153+00:00",
+  "scope": "POSTHOC exploratory scale-control after baseline casefailure. Fixedscale1/3neutral128paddingforclinicalU-NetONLY;NOweightchange,NOparametersearch,NOnewclinicalcalibration;notblind. UBIPR illustration stays original. No anatomical claim.",
+  "clinical": "ALL9SLPVLDimages with literaliris/iridolabels;6single-captureeyes segmentationonly;2eyes with eligible oldclinicaltest repeatedcaptures yield4queries. Earliestgalleryasoldmanifest,mayalreadyhavepathology. Nohealthybefore/aftercausalclaim.16same-sideeyes:target+first15othergalleryeyes sortedsubject/image,NOscorequalityselection.",
+  "ubipr": "ReuseALL482VALcleanrecognitiondecisions andsupportmeasurements. Illustrate4lowest-supportdistinctpeople thenfirst2remainingpeople byexistingCSVorder,NOscoreselection. VisualflagsareNOTclinicaldiagnoses. No scan of all11018images claimed.",
+  "area": "Nativepredictedmaskpixels andmask/imagepercentage;polar_mask_fraction=algorithmicsupportinestimatedpolargrid. NOanatomicaldenominator,noclinicalpreservedpercentage,minimumnull. NoreferenceGTmasksforclinicalimages.",
+  "recognition": "ALL9frozencomponents,U-Netandfusioncalibration/thresholdunchangedfromUBIPr,onequeryimage;clinicaldomainshift,smallN4with60impostorpairs,notcomparablepopulationbenchmark. Allqueryfailuresretained,originalgalleryfixed.",
+  "rows": [
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0114_OS20250327.JPG",
+      "subject": "P0114",
+      "side": "L",
+      "session": 1,
+      "diagnosis_raw": "Iris cyst, Corneal ulcer, Bullous keratopathy",
+      "source_side": "OS"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0001_OS20250107.JPG",
+      "subject": "P0001",
+      "side": "L",
+      "session": 1,
+      "diagnosis_raw": "Glaucoma",
+      "source_side": "OS"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0028_OS20250104.JPG",
+      "subject": "P0028",
+      "side": "L",
+      "session": 1,
+      "diagnosis_raw": "Cataract",
+      "source_side": "OS"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0058_OS20250123.JPG",
+      "subject": "P0058",
+      "side": "L",
+      "session": 1,
+      "diagnosis_raw": "Pterygium, Status post intraocular lens implantation, Conjunctivitis",
+      "source_side": "OS"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0061_OS20250419.JPG",
+      "subject": "P0061",
+      "side": "L",
+      "session": 1,
+      "diagnosis_raw": "Pterygium, Cataract",
+      "source_side": "OS"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0062_OS20250220.JPG",
+      "subject": "P0062",
+      "side": "L",
+      "session": 1,
+      "diagnosis_raw": "Normal eye",
+      "source_side": "OS"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0072_OS20250205.JPG",
+      "subject": "P0072",
+      "side": "L",
+      "session": 1,
+      "diagnosis_raw": "Conjunctivitis",
+      "source_side": "OS"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0085_OS20241212.JPG",
+      "subject": "P0085",
+      "side": "L",
+      "session": 1,
+      "diagnosis_raw": "Uveitis, Cataract",
+      "source_side": "OS"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0086_OS20250405.JPG",
+      "subject": "P0086",
+      "side": "L",
+      "session": 1,
+      "diagnosis_raw": "Status post intraocular lens implantation, Conjunctivitis",
+      "source_side": "OS"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0094_OS20250228.JPG",
+      "subject": "P0094",
+      "side": "L",
+      "session": 1,
+      "diagnosis_raw": "Keratitis, Conjunctivitis",
+      "source_side": "OS"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0098_OS20241212.JPG",
+      "subject": "P0098",
+      "side": "L",
+      "session": 1,
+      "diagnosis_raw": "Cataract",
+      "source_side": "OS"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0108_OS20250308.JPG",
+      "subject": "P0108",
+      "side": "L",
+      "session": 1,
+      "diagnosis_raw": "Status post intraocular lens implantation, Conjunctivitis",
+      "source_side": "OS"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0131_OS20241205.JPG",
+      "subject": "P0131",
+      "side": "L",
+      "session": 1,
+      "diagnosis_raw": "Conjunctivitis",
+      "source_side": "OS"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0138_OS20250216.JPG",
+      "subject": "P0138",
+      "side": "L",
+      "session": 1,
+      "diagnosis_raw": "Normal eye",
+      "source_side": "OS"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0144_OS20250514.JPG",
+      "subject": "P0144",
+      "side": "L",
+      "session": 1,
+      "diagnosis_raw": "Cataract",
+      "source_side": "OS"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0150_OS20241230.JPG",
+      "subject": "P0150",
+      "side": "L",
+      "session": 1,
+      "diagnosis_raw": "Glaucoma, Cataract, Conjunctivitis",
+      "source_side": "OS"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0803_OD20250112.JPG",
+      "subject": "P0803",
+      "side": "R",
+      "session": 1,
+      "diagnosis_raw": "Intraocular foreign body, Penetrating corneal injury, Corneal foreign body, Iris laceration, Traumatic cataract",
+      "source_side": "OD"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0001_OD20250107.JPG",
+      "subject": "P0001",
+      "side": "R",
+      "session": 1,
+      "diagnosis_raw": "Glaucoma",
+      "source_side": "OD"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0007_OD20250306.JPG",
+      "subject": "P0007",
+      "side": "R",
+      "session": 1,
+      "diagnosis_raw": "Conjunctivitis",
+      "source_side": "OD"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0028_OD20250104.JPG",
+      "subject": "P0028",
+      "side": "R",
+      "session": 1,
+      "diagnosis_raw": "Cataract",
+      "source_side": "OD"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0058_OD20250123.JPG",
+      "subject": "P0058",
+      "side": "R",
+      "session": 1,
+      "diagnosis_raw": "Keratitis, Glaucoma",
+      "source_side": "OD"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0061_OD20250419.JPG",
+      "subject": "P0061",
+      "side": "R",
+      "session": 1,
+      "diagnosis_raw": "Cataract",
+      "source_side": "OD"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0062_OD20250220.JPG",
+      "subject": "P0062",
+      "side": "R",
+      "session": 1,
+      "diagnosis_raw": "Normal eye",
+      "source_side": "OD"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0079_OD20250520.JPG",
+      "subject": "P0079",
+      "side": "R",
+      "session": 1,
+      "diagnosis_raw": "Corneal injury",
+      "source_side": "OD"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0086_OD20250405.JPG",
+      "subject": "P0086",
+      "side": "R",
+      "session": 1,
+      "diagnosis_raw": "Status post intraocular lens implantation, Glaucoma, Conjunctivitis",
+      "source_side": "OD"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0096_OD20250610.JPG",
+      "subject": "P0096",
+      "side": "R",
+      "session": 1,
+      "diagnosis_raw": "Cataract",
+      "source_side": "OD"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0098_OD20241212.JPG",
+      "subject": "P0098",
+      "side": "R",
+      "session": 1,
+      "diagnosis_raw": "Cataract",
+      "source_side": "OD"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0104_OD20250223.JPG",
+      "subject": "P0104",
+      "side": "R",
+      "session": 1,
+      "diagnosis_raw": "Keratitis, Conjunctivitis",
+      "source_side": "OD"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0108_OD20250308.JPG",
+      "subject": "P0108",
+      "side": "R",
+      "session": 1,
+      "diagnosis_raw": "Status post intraocular lens implantation, Conjunctivitis",
+      "source_side": "OD"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0128_OD20250401.JPG",
+      "subject": "P0128",
+      "side": "R",
+      "session": 1,
+      "diagnosis_raw": "Cataract",
+      "source_side": "OD"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0131_OD20241205.JPG",
+      "subject": "P0131",
+      "side": "R",
+      "session": 1,
+      "diagnosis_raw": "Conjunctivitis",
+      "source_side": "OD"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0138_OD20250216.JPG",
+      "subject": "P0138",
+      "side": "R",
+      "session": 1,
+      "diagnosis_raw": "Cataract",
+      "source_side": "OD"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0114_OS20250417.JPG",
+      "subject": "P0114",
+      "side": "L",
+      "session": 2,
+      "diagnosis_raw": "Iris cyst, Corneal ulcer, Bullous keratopathy",
+      "source_side": "OS"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0803_OD20250209.JPG",
+      "subject": "P0803",
+      "side": "R",
+      "session": 2,
+      "diagnosis_raw": "Aphakia, Status post intraocular foreign body surgery, Status post penetrating corneal injury repair, Anterior synechiae",
+      "source_side": "OD"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0803_OD20250223.JPG",
+      "subject": "P0803",
+      "side": "R",
+      "session": 2,
+      "diagnosis_raw": "Aphakia, Status post intraocular foreign body surgery, Status post penetrating corneal injury repair, Anterior synechiae",
+      "source_side": "OD"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0803_OD20250415.JPG",
+      "subject": "P0803",
+      "side": "R",
+      "session": 2,
+      "diagnosis_raw": "Aphakia, Status post intraocular foreign body surgery, Status post penetrating corneal injury repair, Anterior synechiae",
+      "source_side": "OD"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0182_OS20250106.JPG",
+      "subject": "P0182",
+      "side": "L",
+      "session": 3,
+      "diagnosis_raw": "Status post intraocular lens implantation, Corneal endothelial decompensation, Iridodialysis",
+      "source_side": "OS"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0564_OD20250526.JPG",
+      "subject": "P0564",
+      "side": "R",
+      "session": 3,
+      "diagnosis_raw": "Iris synechiae, Intraocular lens capture, Posterior capsular opacification",
+      "source_side": "OD"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0189_OS20250328.JPG",
+      "subject": "P0189",
+      "side": "L",
+      "session": 3,
+      "diagnosis_raw": "Penetrating iris injury, Cataract",
+      "source_side": "OS"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0639_OD20250515.JPG",
+      "subject": "P0639",
+      "side": "R",
+      "session": 3,
+      "diagnosis_raw": "Aphakia, Traumatic iris defect, Status post globe rupture repair",
+      "source_side": "OD"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0209_OD20250329.JPG",
+      "subject": "P0209",
+      "side": "R",
+      "session": 3,
+      "diagnosis_raw": "Traumatic cataract, Iridodialysis, Ocular contusion",
+      "source_side": "OD"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\external_test_dataset_bijie\\bijie_images\\P0756_OD20250629.jpg",
+      "subject": "P0756",
+      "side": "R",
+      "session": 3,
+      "diagnosis_raw": "Status post corneal laceration repair, Partial iris defect, Aphakia",
+      "source_side": "OD"
+    }
+  ],
+  "explicit_filenames": [
+    "P0182_OS20250106.JPG",
+    "P0114_OS20250417.JPG",
+    "P0114_OS20250327.JPG",
+    "P0564_OD20250526.JPG",
+    "P0189_OS20250328.JPG",
+    "P0639_OD20250515.JPG",
+    "P0803_OD20250112.JPG",
+    "P0209_OD20250329.JPG",
+    "P0756_OD20250629.jpg"
+  ],
+  "ubipr_examples": [
+    "C317_S2_I12_L.jpg",
+    "C177_S2_I15_L.jpg",
+    "C149_S2_I7_L.jpg",
+    "C235_S2_I5_R.jpg",
+    "C151_S2_I10_L.jpg",
+    "C173_S2_I10_L.jpg"
+  ],
+  "threshold": 0.8581747485460748,
+  "sources_sha256": {
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\manifesto.json": "aca35e237bd8954046787813e4c0db4f5ebbec3a09fb70e80338c94e8b72648a",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\biometria_clinica_triagem_2026-10-20\\manifesto.json": "b793ea8fc596a34fac8b588e87afc645ab58d7d10b3855b0b7dbeeb09e5bf720",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\diagnostico_resolucao_geometria_val_2026-10-22\\consultas.csv": "9b912bbce0b5b36b67add23e0ad1089fcd039b3394bab2ac68214a444fbeb3db",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\candidato_congelado_2026-10-21\\CONGELADO.json": "d933686f045eab5d6578cfe4701578d9ca1eeaaff4069bcff8427a602546dbda"
+  },
+  "script_sha256": "0fb81895e6d3df46a391cf8fef6a966d04e1cd6c31ff740a6082d286b64a1f54",
+  "checkpoints_sha256": {
+    "rgb": "7c03b4c7ef4c54e5f86e58eb550ffc124fa11384fe5c3f5b947d1041178e706d",
+    "polar": "db93dfcca33b8a77cd3bfbaa66f07d1efae2e976414d67748ccf5eff4a5ebe5c",
+    "r50": "699b8236211da2fd43b104f157b6cc3835bd5d89a01a74a5b75ce4261bf35e24",
+    "convnext": "a03400e62df6282e4532dce75fabd6e12d06678a8de7dc3e55a2a274c60f1529",
+    "native": "6530b1227f271789ca7ad8a7d9011d2a9e9ee6fe71a7ce4079d2ed8a75b3388f",
+    "transformer": "0ad83d9f9c78e434bda11e99e01c90cc197e7e5127c3aed75e5da6df38808b87"
+  },
+  "unet_sha256": "2bcfc269ffc9562ca8cf0956998faf1e22641587cd60f7059b3cec3dd0f4093d",
+  "scale_module_sha256": "6ec36553402ada0b05baee78eca2ae273854e554105503b68ab6dfc468a494ed"
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "filename": "P0114_OS20250417.JPG",
+    "subject": "P0114",
+    "side": "L",
+    "diagnosis_raw": "Iris cyst, Corneal ulcer, Bullous keratopathy",
+    "correct": false,
+    "accepted": false,
+    "valid": true,
+    "genuine_score": -2.0,
+    "predicted_index": 7,
+    "genuine_index": 11
+  },
+  {
+    "filename": "P0803_OD20250209.JPG",
+    "subject": "P0803",
+    "side": "R",
+    "diagnosis_raw": "Aphakia, Status post intraocular foreign body surgery, Status post penetrating corneal injury repair, Anterior synechiae",
+    "correct": false,
+    "accepted": false,
+    "valid": true,
+    "genuine_score": 0.5754087805971709,
+    "predicted_index": 6,
+    "genuine_index": 15
+  },
+  {
+    "filename": "P0803_OD20250223.JPG",
+    "subject": "P0803",
+    "side": "R",
+    "diagnosis_raw": "Aphakia, Status post intraocular foreign body surgery, Status post penetrating corneal injury repair, Anterior synechiae",
+    "correct": false,
+    "accepted": false,
+    "valid": true,
+    "genuine_score": 0.482445862452088,
+    "predicted_index": 6,
+    "genuine_index": 15
+  },
+  {
+    "filename": "P0803_OD20250415.JPG",
+    "subject": "P0803",
+    "side": "R",
+    "diagnosis_raw": "Aphakia, Status post intraocular foreign body surgery, Status post penetrating corneal injury repair, Anterior synechiae",
+    "correct": false,
+    "accepted": false,
+    "valid": true,
+    "genuine_score": 0.7580718728608751,
+    "predicted_index": 6,
+    "genuine_index": 15
+  }
+]

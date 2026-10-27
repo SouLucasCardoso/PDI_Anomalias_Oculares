@@ -1,0 +1,122 @@
+[
+  {
+    "filename": "P0114_OS20250327.JPG",
+    "diagnosis_raw": "Iris cyst, Corneal ulcer, Bullous keratopathy",
+    "session": 1,
+    "predicted_pixels": 146225,
+    "image_pixels": 5904384,
+    "mask_percent_of_photo": 2.4765496282084634,
+    "polar_support_percent": 73.248291015625,
+    "anatomical_preserved_percent": null
+  },
+  {
+    "filename": "P0803_OD20250112.JPG",
+    "diagnosis_raw": "Intraocular foreign body, Penetrating corneal injury, Corneal foreign body, Iris laceration, Traumatic cataract",
+    "session": 1,
+    "predicted_pixels": 0,
+    "image_pixels": 5904384,
+    "mask_percent_of_photo": 0.0,
+    "polar_support_percent": null,
+    "anatomical_preserved_percent": null
+  },
+  {
+    "filename": "P0114_OS20250417.JPG",
+    "diagnosis_raw": "Iris cyst, Corneal ulcer, Bullous keratopathy",
+    "session": 2,
+    "predicted_pixels": 620862,
+    "image_pixels": 5904384,
+    "mask_percent_of_photo": 10.5152713644641,
+    "polar_support_percent": 94.10400390625,
+    "anatomical_preserved_percent": null
+  },
+  {
+    "filename": "P0803_OD20250209.JPG",
+    "diagnosis_raw": "Aphakia, Status post intraocular foreign body surgery, Status post penetrating corneal injury repair, Anterior synechiae",
+    "session": 2,
+    "predicted_pixels": 317616,
+    "image_pixels": 5904384,
+    "mask_percent_of_photo": 5.379324921956295,
+    "polar_support_percent": 59.002685546875,
+    "anatomical_preserved_percent": null
+  },
+  {
+    "filename": "P0803_OD20250223.JPG",
+    "diagnosis_raw": "Aphakia, Status post intraocular foreign body surgery, Status post penetrating corneal injury repair, Anterior synechiae",
+    "session": 2,
+    "predicted_pixels": 515319,
+    "image_pixels": 5904384,
+    "mask_percent_of_photo": 8.727735187955254,
+    "polar_support_percent": 84.55810546875,
+    "anatomical_preserved_percent": null
+  },
+  {
+    "filename": "P0803_OD20250415.JPG",
+    "diagnosis_raw": "Aphakia, Status post intraocular foreign body surgery, Status post penetrating corneal injury repair, Anterior synechiae",
+    "session": 2,
+    "predicted_pixels": 672211,
+    "image_pixels": 5904384,
+    "mask_percent_of_photo": 11.384947185006936,
+    "polar_support_percent": 61.8988037109375,
+    "anatomical_preserved_percent": null
+  },
+  {
+    "filename": "P0182_OS20250106.JPG",
+    "diagnosis_raw": "Status post intraocular lens implantation, Corneal endothelial decompensation, Iridodialysis",
+    "session": 3,
+    "predicted_pixels": 262352,
+    "image_pixels": 5904384,
+    "mask_percent_of_photo": 4.443342438432189,
+    "polar_support_percent": 89.0228271484375,
+    "anatomical_preserved_percent": null
+  },
+  {
+    "filename": "P0564_OD20250526.JPG",
+    "diagnosis_raw": "Iris synechiae, Intraocular lens capture, Posterior capsular opacification",
+    "session": 3,
+    "predicted_pixels": 618992,
+    "image_pixels": 5904384,
+    "mask_percent_of_photo": 10.483599982656955,
+    "polar_support_percent": 71.8963623046875,
+    "anatomical_preserved_percent": null
+  },
+  {
+    "filename": "P0189_OS20250328.JPG",
+    "diagnosis_raw": "Penetrating iris injury, Cataract",
+    "session": 3,
+    "predicted_pixels": 202162,
+    "image_pixels": 5904384,
+    "mask_percent_of_photo": 3.42393042186958,
+    "polar_support_percent": 86.822509765625,
+    "anatomical_preserved_percent": null
+  },
+  {
+    "filename": "P0639_OD20250515.JPG",
+    "diagnosis_raw": "Aphakia, Traumatic iris defect, Status post globe rupture repair",
+    "session": 3,
+    "predicted_pixels": 68734,
+    "image_pixels": 5904384,
+    "mask_percent_of_photo": 1.164118051942421,
+    "polar_support_percent": 35.2996826171875,
+    "anatomical_preserved_percent": null
+  },
+  {
+    "filename": "P0209_OD20250329.JPG",
+    "diagnosis_raw": "Traumatic cataract, Iridodialysis, Ocular contusion",
+    "session": 3,
+    "predicted_pixels": 846509,
+    "image_pixels": 5904384,
+    "mask_percent_of_photo": 14.33695708138224,
+    "polar_support_percent": 75.1983642578125,
+    "anatomical_preserved_percent": null
+  },
+  {
+    "filename": "P0756_OD20250629.jpg",
+    "diagnosis_raw": "Status post corneal laceration repair, Partial iris defect, Aphakia",
+    "session": 3,
+    "predicted_pixels": 265506,
+    "image_pixels": 3800445,
+    "mask_percent_of_photo": 6.9861818813323175,
+    "polar_support_percent": 60.382080078125,
+    "anatomical_preserved_percent": null
+  }
+]

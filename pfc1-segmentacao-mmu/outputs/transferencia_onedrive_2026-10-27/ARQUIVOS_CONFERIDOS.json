@@ -1,0 +1,490 @@
+﻿{
+    "date":  "2026-10-27",
+    "status":  "local_files_verified",
+    "cloud_upload_verified":  false,
+    "files":  [
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\AUDITORIA_REPRODUCAO.json",
+                      "bytes":  480,
+                      "sha256":  "54fb2a80001659bcaa74b83ea4b8fe4284891e5db069a3bd3e775a867e82f006"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\CACHE_DIVERSO_CONCLUIDO.json",
+                      "bytes":  364,
+                      "sha256":  "328b2a6310605b3752a8b21c9dcb1cdef7c44129c98ca0c2852b80cd2836b11a"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\CONCLUIDO.json",
+                      "bytes":  7503,
+                      "sha256":  "2697832218367c4ad8b035d85422f7819151a25627df40788c3bcbbfada837d3"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\historico.csv",
+                      "bytes":  992,
+                      "sha256":  "90bd1ab12b83565db0cccf3257e12dbf356e1770895f7bece7c5748711e60409"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\indices_ajuste.npz",
+                      "bytes":  26277,
+                      "sha256":  "07b98affef7da05a8aa31a791baa231de1600ceea23f0908b72e6ce707e29f0c"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\intervencoes_diversas.json",
+                      "bytes":  169427,
+                      "sha256":  "b6b9dab8dbc73d03013ac7cf74c609bbef72f849bd5865fa71f03af3e7376ac2"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\melhor_modelo.pt",
+                      "bytes":  33685531,
+                      "sha256":  "b30d7de89266a2a6a45f5a3765be314bf62f8226499ea883d8d10f83539c10c1"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\protocolo.json",
+                      "bytes":  329297,
+                      "sha256":  "eaf26f9ba14e224949a6020d282a71dc7a2ede8d8ef9f0587a4f5f02967bae2d"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\REFERENCIA_AJUSTE.json",
+                      "bytes":  136,
+                      "sha256":  "0d9f045c5dbafd83833af321d57bbf14516a7625aa6bbe0df38adc4d02153d5f"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\referencia_ajuste.npz",
+                      "bytes":  1159219,
+                      "sha256":  "eb1a46b1a3afa3b838c106bb62b0baab72d3c90568dc01a9c3ef95439f525185"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\rows.json",
+                      "bytes":  786765,
+                      "sha256":  "f015208f57ef456016495bf24ae35daa31c0c43718a97d192e089049bd434893"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\scores_baseline_internal_clean.npz",
+                      "bytes":  10328,
+                      "sha256":  "004da4d5d76973bcbc77d11eef48f6cf0c290ef0f5d25b3730d42a944f23c583"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\scores_baseline_internal_lower10.npz",
+                      "bytes":  10410,
+                      "sha256":  "692026c9cb3e5770fe822b82f54706d0ae3a8159b49177d86317e307076d0c4d"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\scores_baseline_internal_upper10.npz",
+                      "bytes":  10397,
+                      "sha256":  "a6e1904f0d16659bfe7c8359277089b0fb3432c5768c8616007ea87586f6de7f"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\scores_baseline_monitor_clean.npz",
+                      "bytes":  37742,
+                      "sha256":  "5e4a49855697c8d2b2747028d7b8a45a78906a89e4e16e8ef4ee683eed18ae07"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\scores_baseline_monitor_lower10.npz",
+                      "bytes":  37985,
+                      "sha256":  "0c49be6d8b0394cd248c5d3c19e9195c59da710c928256e6901fb4caa1cfd012"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\scores_baseline_monitor_upper10.npz",
+                      "bytes":  38178,
+                      "sha256":  "6c8d247ac8b67b7e25dff946fe95380da23dac13115c5c25975bccaf1457f0d6"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\scores_internal_clean_selected.npz",
+                      "bytes":  10325,
+                      "sha256":  "d2aeeea9b55f2e1c81c51bb855cc1a276ff394c9177e87d541226d361ab846b5"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\scores_selected_internal_clean.npz",
+                      "bytes":  10325,
+                      "sha256":  "d2aeeea9b55f2e1c81c51bb855cc1a276ff394c9177e87d541226d361ab846b5"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\scores_selected_internal_lower10.npz",
+                      "bytes":  10449,
+                      "sha256":  "c2d4ec601bafdb9bae1a86d853cd16355990ad88aab7b15b3e769d23c7c63b62"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\scores_selected_internal_upper10.npz",
+                      "bytes":  10382,
+                      "sha256":  "5122db67cfba91a9cc49d83b65e47e39d15eb7cc628de6174722e36ceaef0866"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\scores_selected_monitor_clean.npz",
+                      "bytes":  37711,
+                      "sha256":  "bb5d98539ee00cc271de8e9e8520b57128d71a9aee100476b3ace4bb48ee0627"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\scores_selected_monitor_lower10.npz",
+                      "bytes":  37988,
+                      "sha256":  "08480c21ac9ce6655292bea2ebf90554abf76b4c703b7a614a505daa5d094d0b"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\scores_selected_monitor_upper10.npz",
+                      "bytes":  38139,
+                      "sha256":  "c85bd41a33410b053073ef4c06594e0aa319bd36d08fb4f2a607ee7f6139bee1"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\source.py",
+                      "bytes":  17304,
+                      "sha256":  "2965a29c4945f4d3e398a770d1975f0facac8277869aaa681dbbaacdb77acaa6"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\ultima_epoca.pt",
+                      "bytes":  33685520,
+                      "sha256":  "5a674bd5902a1f110358e5aee246d2a1b4fb022c251986fd6d2315e2155e2ba1"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\VERIFICACAO_RECUPERACAO.json",
+                      "bytes":  481,
+                      "sha256":  "0da849b547aa75951287ccc2e69aa1a8de9822c16932b5d2146766bee2faf0b2"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\vistas_validas_treino_2026-10-27\\VISTAS_AJUSTE.json",
+                      "bytes":  158,
+                      "sha256":  "d5f4bb875a0475b1cc787b1fedb1eae4a2a61a20fc41fe29c47530c6c2a8ba53"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\destilacao_regional_treino_2026-10-27\\AUDITORIA_REPRODUCAO.json",
+                      "bytes":  326,
+                      "sha256":  "de7152f1fb645cf4a95554dbbfa66f5b814b986f5599ab7bb5e8f497a40b2735"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\destilacao_regional_treino_2026-10-27\\CONCLUIDO.json",
+                      "bytes":  8969,
+                      "sha256":  "6c0f2ff9bb8dc580f579c7ed16098f3b38423f2a087c70d551d20476cb673844"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\destilacao_regional_treino_2026-10-27\\fit_evidence.npz",
+                      "bytes":  73650352,
+                      "sha256":  "1b77c15fdb97efd611d72bb0bcc186eeeae504d59e753661f90bf00aa7fb73fd"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\destilacao_regional_treino_2026-10-27\\model.npz",
+                      "bytes":  4054156,
+                      "sha256":  "cdba2fb2e054ecd4eeaca678e31277f13ac9eee81f6c7445963dcb034b5fae0f"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\destilacao_regional_treino_2026-10-27\\protocolo.json",
+                      "bytes":  327644,
+                      "sha256":  "91f1612f208ec87b5f97a798c99e538d4cb7fd57679bd9d4134e6524dd65cba4"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\destilacao_regional_treino_2026-10-27\\scores_internal_fusion6_clean.npz",
+                      "bytes":  12563,
+                      "sha256":  "a4eaa06440554084816ea902f96ead91504ffc6a729497de8a2a0d2e0ba1dfd6"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\destilacao_regional_treino_2026-10-27\\scores_internal_fusion8_clean.npz",
+                      "bytes":  12727,
+                      "sha256":  "36db59e61a3a5b36778a4d2ec34e90924cc75a8fc3250eda9236088b01dd977a"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\destilacao_regional_treino_2026-10-27\\scores_internal_global_clean.npz",
+                      "bytes":  9890,
+                      "sha256":  "d39ee61d52e12fcb3235ccb4e0294c70a00d85d708143da40bf7f80f93bdcd9d"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\destilacao_regional_treino_2026-10-27\\scores_internal_regional6_clean.npz",
+                      "bytes":  11846,
+                      "sha256":  "d7155b8bbcf229dc463279b9fea53703e9df7a4accc2086b9c9766e58631c037"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\destilacao_regional_treino_2026-10-27\\scores_monitor_fusion6_clean.npz",
+                      "bytes":  45787,
+                      "sha256":  "f5fbc4b0f79a343065fa552cb083b07abdbda8bed31a9ffe222efd2a8dcab064"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\destilacao_regional_treino_2026-10-27\\scores_monitor_fusion6_lower10.npz",
+                      "bytes":  46113,
+                      "sha256":  "5a26904a582c9101a2b9b89461856b3302e64448f0c729402e49b0f35f5a682d"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\destilacao_regional_treino_2026-10-27\\scores_monitor_fusion6_upper10.npz",
+                      "bytes":  46203,
+                      "sha256":  "e2b49bde4e37c46e584ccbb090304bd181d1a582910fb96c4732860d78dfdff6"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\destilacao_regional_treino_2026-10-27\\scores_monitor_fusion8_clean.npz",
+                      "bytes":  46486,
+                      "sha256":  "76954e20f848b18f1e30d2c86acf719680110def89f4116d7f2a48be7a0296bf"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\destilacao_regional_treino_2026-10-27\\scores_monitor_fusion8_lower10.npz",
+                      "bytes":  46791,
+                      "sha256":  "da36af5d069a2b531b8ba055e04cd62f30350510c8528a0b1e4f83bd4c4a708e"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\destilacao_regional_treino_2026-10-27\\scores_monitor_fusion8_upper10.npz",
+                      "bytes":  46830,
+                      "sha256":  "0803e83a281f1fa974aef4c814a2b1cac7af02e70b8a342c4334f54769c606d1"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\destilacao_regional_treino_2026-10-27\\scores_monitor_global_clean.npz",
+                      "bytes":  35292,
+                      "sha256":  "f6fe57bee309382c2e5a676f36b0c3411b8379358b4c2e2ddb7c6b802bdecc82"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\destilacao_regional_treino_2026-10-27\\scores_monitor_global_lower10.npz",
+                      "bytes":  35516,
+                      "sha256":  "1961deb760ae5a1360212c01947fe4270da7f8dd3b0927303f3cc19259440e51"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\destilacao_regional_treino_2026-10-27\\scores_monitor_global_upper10.npz",
+                      "bytes":  35689,
+                      "sha256":  "6405492d163eb13f87bdc0cf6ed57437a4d8be5b294f98fcf984c295698d0468"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\destilacao_regional_treino_2026-10-27\\scores_monitor_regional6_clean.npz",
+                      "bytes":  42769,
+                      "sha256":  "c91b56b722e2b5de8abd70b98083719b1dcfc154eab1e0c5f1af8ab84e557c7d"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\destilacao_regional_treino_2026-10-27\\scores_monitor_regional6_lower10.npz",
+                      "bytes":  42654,
+                      "sha256":  "ef034111accc39b90fde4cb7251f90223fffcd2f05c05c134ca6a73a7b21be3a"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\destilacao_regional_treino_2026-10-27\\scores_monitor_regional6_upper10.npz",
+                      "bytes":  42695,
+                      "sha256":  "77acc77fc4a64c51a1ff475aab6c8a4ad83dd4c2f46d6ebd16b82e61d642ad66"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\destilacao_regional_treino_2026-10-27\\source.py",
+                      "bytes":  9162,
+                      "sha256":  "a3af317a09bd5e3fcbf8e09742fdc2f04376c423c7eb5a4f4f5a71770f1955c4"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\destilacao_regional_treino_2026-10-27\\VERIFICACAO_RECUPERACAO.json",
+                      "bytes":  328,
+                      "sha256":  "9b67ba4cd25b6f28b4975607a6f882f8c25eaec089c1c0e8122c8d069ec75e36"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_reais_2026-10-27\\areas_clinicas.json",
+                      "bytes":  4431,
+                      "sha256":  "f12bf377cafaf93db3d4fc8f9504548b44b520d2abf2f0038591e421551c046a"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_reais_2026-10-27\\AUDITORIA.json",
+                      "bytes":  399,
+                      "sha256":  "022e4b6da39908abebc8b547328350fb49b92436a8348758eb3d073dc3ad2af1"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_reais_2026-10-27\\CASOS_CLINICOS_01.png",
+                      "bytes":  878160,
+                      "sha256":  "10a3cc9d412d76bfecc3d99be26b662e786cfd1f47f954814ab5ee8c01f7cae7"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_reais_2026-10-27\\CASOS_CLINICOS_02.png",
+                      "bytes":  840519,
+                      "sha256":  "8d7db73123f13b65c3a6776afba80e4dd37f89f894a632ec007196d7565b61d8"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_reais_2026-10-27\\CONCLUIDO.json",
+                      "bytes":  1461,
+                      "sha256":  "012aec689b24ccbed615497d6abfd8262d12f4120bff6fdd738d4de36726e015"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_reais_2026-10-27\\consultas_clinicas.json",
+                      "bytes":  1521,
+                      "sha256":  "2b651e65968ba6d08dab1838d9996d3500cfe4b44e830fb6472c6c67da366653"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_reais_2026-10-27\\DISPONIBILIDADE_CADASTRO.json",
+                      "bytes":  513,
+                      "sha256":  "9140f9f5e52d49128896cd365aa70519c8fe337e8f94643b8940e2fc21fb67eb"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_reais_2026-10-27\\grupos_ubipr.json",
+                      "bytes":  620,
+                      "sha256":  "b13bb4ff67e43671843de56f6d8a80773cea6537a046cfab72e24da5f7903bac"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_reais_2026-10-27\\protocolo.json",
+                      "bytes":  22477,
+                      "sha256":  "48fe4c604ab4709a6b1622e99f3d91730ba17c8865f717cbbf1facd2b9650e7f"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_reais_2026-10-27\\scores_arc_clahe.npz",
+                      "bytes":  1017,
+                      "sha256":  "a06baede4e6697e57a36977ac1ed8a5e6c2fcea22ce35f19d19743fdfd43df97"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_reais_2026-10-27\\scores_arc_red.npz",
+                      "bytes":  1012,
+                      "sha256":  "193bf82123448b151fe4a0babcae85a867cf158e70e0ef12bce205979aea7227"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_reais_2026-10-27\\scores_convnext.npz",
+                      "bytes":  868,
+                      "sha256":  "42a1fd2e93ec65120cbd40f93c559b29e4ad9eb44a0698cc921932ae45d431c6"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_reais_2026-10-27\\scores_finais.npz",
+                      "bytes":  1402,
+                      "sha256":  "bd1269215e4b0b0c738bb939be26700c9b086986a20ef060c80ad5d9f4e9d950"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_reais_2026-10-27\\scores_native.npz",
+                      "bytes":  856,
+                      "sha256":  "80bb277839f258bcfd36bfaa97d91de9f0e3feef04300aea75e9b6cb7c57d55b"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_reais_2026-10-27\\scores_polar.npz",
+                      "bytes":  861,
+                      "sha256":  "34924c7bd7b8ce0d98368a73b6b306254d8a6c4b5a8b483c0935f68eb6ffc35a"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_reais_2026-10-27\\scores_r50.npz",
+                      "bytes":  864,
+                      "sha256":  "7b8260d8a2c918e484e80e1ef416511028c0d9a86b9b32082afaf63e1dc3a680"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_reais_2026-10-27\\scores_rgb.npz",
+                      "bytes":  868,
+                      "sha256":  "59915b65e715ee0d691691044e7b6b2073195bd0f6a0062ba37db700056a0aea"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_reais_2026-10-27\\scores_spatial.npz",
+                      "bytes":  858,
+                      "sha256":  "e41a34dde181d38ae89808d8c8bae24e811bed0851740bd6d103365476a9fb9a"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_reais_2026-10-27\\scores_transformer.npz",
+                      "bytes":  868,
+                      "sha256":  "a5b7320b041b5be8c9431b7d47cadac2af4f82e71cc55e053ba3fe90b981bf80"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_reais_2026-10-27\\source.py",
+                      "bytes":  15731,
+                      "sha256":  "0bfd0a7c5cc0e0600dfc8f1b8c8742e7fc3d83f96d7ce32fb659d6754e736d57"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_reais_2026-10-27\\UBIPR_SUPORTE_NATURAL_01.png",
+                      "bytes":  870962,
+                      "sha256":  "c7c164c9064c89f0c55f4b3c0fd6b5a108818547594019cdc2ebad70f43c6270"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_escala3_2026-10-27\\areas_clinicas.json",
+                      "bytes":  4495,
+                      "sha256":  "e347ae39b4b3f06b083fa05527a197fa62dd3cf03191c3343d373e404e7b0b7c"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_escala3_2026-10-27\\AUDITORIA.json",
+                      "bytes":  398,
+                      "sha256":  "12ecdd05d00d9652e4e031b340f50e98c348e7fa9d65763a6437640197fd36e2"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_escala3_2026-10-27\\CASOS_CLINICOS_01.png",
+                      "bytes":  1038542,
+                      "sha256":  "2677a9a5c77559b235e6113a78bf827ba86085db5f793ec5008a85f0453303af"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_escala3_2026-10-27\\CASOS_CLINICOS_02.png",
+                      "bytes":  1058640,
+                      "sha256":  "19c8546a552a9a208afff3952bda8718e75b62cd8378c7fd41f3dfe2d2ba8e7c"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_escala3_2026-10-27\\CONCLUIDO.json",
+                      "bytes":  1446,
+                      "sha256":  "c8b083c5f1fb15fa5368202cc327c51cfa16b0676064143474535d91d73b0eb9"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_escala3_2026-10-27\\consultas_clinicas.json",
+                      "bytes":  1493,
+                      "sha256":  "15c9780f61ac29275ae9c325ff1de8059bbf87834153a0d37428f2da72d9756f"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_escala3_2026-10-27\\DISPONIBILIDADE_CADASTRO.json",
+                      "bytes":  515,
+                      "sha256":  "0a7f4a48b6968c04397f5a19b0750464df13018e8923bc36db7213feded0cd74"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_escala3_2026-10-27\\grupos_ubipr.json",
+                      "bytes":  620,
+                      "sha256":  "b13bb4ff67e43671843de56f6d8a80773cea6537a046cfab72e24da5f7903bac"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_escala3_2026-10-27\\protocolo.json",
+                      "bytes":  22679,
+                      "sha256":  "e894c477709859865ed5d4a5b132d15e883ad4245c340c89f6ccb523d9f008a6"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_escala3_2026-10-27\\scores_arc_clahe.npz",
+                      "bytes":  1091,
+                      "sha256":  "7205c148554c794da8af394551191a71d9adad1c5e25eb84ccfe2b522e7754ae"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_escala3_2026-10-27\\scores_arc_red.npz",
+                      "bytes":  1090,
+                      "sha256":  "390781cd7654ab94d9536c2a27c304b291970910de30471c5e6c09fedd7d1f19"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_escala3_2026-10-27\\scores_convnext.npz",
+                      "bytes":  910,
+                      "sha256":  "cb5a528d1b3ca227b50efb0e06183456fd02c5ef0998f0c7cc6e17f979344206"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_escala3_2026-10-27\\scores_finais.npz",
+                      "bytes":  1478,
+                      "sha256":  "7abfc9309b0a71ae68fa078fe32425f1a7fa3457200b36a941c80ed8f7bf1e14"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_escala3_2026-10-27\\scores_native.npz",
+                      "bytes":  901,
+                      "sha256":  "33ba52f441b2e15af66ee7c418175127a9886906b3dad433e43856d60a9a4727"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_escala3_2026-10-27\\scores_polar.npz",
+                      "bytes":  909,
+                      "sha256":  "643ac2fc2bfaa1132d1649002fd90d87275f000e15e750fecee6996cf5e6fdb8"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_escala3_2026-10-27\\scores_r50.npz",
+                      "bytes":  912,
+                      "sha256":  "9fcd4c24dd2b086c6b7c612541ed3a235c318873c0058a1f14ef27fc95afb840"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_escala3_2026-10-27\\scores_rgb.npz",
+                      "bytes":  915,
+                      "sha256":  "77e2bcb01b19def7928a4a0a8a298559692c7c370f0667bcdf5ab2dfeba73b70"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_escala3_2026-10-27\\scores_spatial.npz",
+                      "bytes":  899,
+                      "sha256":  "b3fb8270421ce057c261c85d92808817c42ee07d489729ccfb1f239b59b425b4"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_escala3_2026-10-27\\scores_transformer.npz",
+                      "bytes":  905,
+                      "sha256":  "8627c22b09ca8f18fb227a3741d3656b0a27eb3f9176702baa4420c038ded3b1"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_escala3_2026-10-27\\source.py",
+                      "bytes":  16039,
+                      "sha256":  "0fb81895e6d3df46a391cf8fef6a966d04e1cd6c31ff740a6082d286b64a1f54"
+                  },
+                  {
+                      "path":  "pfc1-segmentacao-mmu\\outputs\\casos_oculares_escala3_2026-10-27\\UBIPR_SUPORTE_NATURAL_01.png",
+                      "bytes":  870962,
+                      "sha256":  "c7c164c9064c89f0c55f4b3c0fd6b5a108818547594019cdc2ebad70f43c6270"
+                  },
+                  {
+                      "path":  "Relatórios-de-Avanço\\AMOSTRAS_RECORTES_IRIS_2026-10-27.png",
+                      "bytes":  893616,
+                      "sha256":  "44fa98c4670ac882c9699e1736ce0a8d15637dd1d570c50a277f9750b55f5b68"
+                  },
+                  {
+                      "path":  "Relatórios-de-Avanço\\COMPARACAO_RECORTES_NORMAL_ANOMALIA_2026-10-27.png",
+                      "bytes":  679174,
+                      "sha256":  "f1ef0f50c48ecc04c3c6fdc880b62f7d5d72cb33fd2efe29026ec60235cb0e4e"
+                  },
+                  {
+                      "path":  "Relatórios-de-Avanço\\COMPARACAO_RECORTES_NORMAL_ANOMALIA_2026-10-27.json",
+                      "bytes":  2232,
+                      "sha256":  "82f737572eec0ca41c523c50e05f1a6833e17365560659a1f9867351c1e93fa5"
+                  }
+              ],
+    "file_count":  96,
+    "total_bytes":  156027730,
+    "note":  "92 restored files and regional fit evidence verified against TEMP originals; original sample PNG verified by SHA256. Comparative figure and JSON generated directly in OneDrive. Excludes reproducible preprocessing caches."
+}
