@@ -1,0 +1,51 @@
+{
+  "checked_utc": "2026-11-03T15:24:56.436745+00:00",
+  "source_hashes_match": true,
+  "finite_model_and_optimizer": true,
+  "mirror_recovery_matches": true,
+  "epoch": 16,
+  "next_epoch": 16,
+  "completed_batches": 50,
+  "totals": {
+    "loss_sum": 295.80861949920654,
+    "samples": 800
+  },
+  "best_epoch": 15,
+  "best_score": 0.8238336833568232,
+  "best_validation": {
+    "clean": {
+      "loss": 0.25868054466732476,
+      "macro_dice_all": 0.8538637051570791,
+      "macro_iou_all": 0.7927689439736614,
+      "samples": 1652,
+      "micro_dice": 0.8738108389139138,
+      "empty_reference_false_positives": 26
+    },
+    "zoom3": {
+      "loss": 0.4909723330352266,
+      "macro_dice_all": 0.8238336833568232,
+      "macro_iou_all": 0.7470379994221519,
+      "samples": 1652,
+      "micro_dice": 0.8613002955242357,
+      "empty_reference_false_positives": 52
+    },
+    "oblique": {
+      "loss": 0.29767241749290113,
+      "macro_dice_all": 0.8478647811072213,
+      "macro_iou_all": 0.7824778740111621,
+      "samples": 1652,
+      "micro_dice": 0.8730021628720279,
+      "empty_reference_false_positives": 28
+    },
+    "glasses": {
+      "loss": 0.28150380841178985,
+      "macro_dice_all": 0.845795205083944,
+      "macro_iou_all": 0.7798344840726321,
+      "samples": 1652,
+      "micro_dice": 0.86294144099267,
+      "empty_reference_false_positives": 25
+    }
+  },
+  "best_checkpoint_sha256": "b848fee1be0f39e5815693d987f99f3121aa45a8c70d93e65f754384c166da94",
+  "recovery_sha256": "c1f3b05a65f80491ea09c0e1f70f0daae67ec5ddbe1265140dbf4d3a90efd517"
+}

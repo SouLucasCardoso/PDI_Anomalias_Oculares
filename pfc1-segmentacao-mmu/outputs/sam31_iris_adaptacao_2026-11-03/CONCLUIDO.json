@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "best_epoch": 15,
+  "checkpoint_sha256": "cf8a718e0160c14408d1533445ff611b00a79c75d2c0fd07fb7540150e59db99",
+  "best_score": 0.8651486230548204,
+  "validation": {
+    "clean": {
+      "macro_dice": 0.8862457197281224,
+      "macro_iou": 0.8384638312174278,
+      "p10_dice": 0.8282218800505273,
+      "catastrophic_cases": 104,
+      "samples": 1652
+    },
+    "zoom3": {
+      "macro_dice": 0.8651486230548204,
+      "macro_iou": 0.8072473995748883,
+      "p10_dice": 0.7702332758834932,
+      "catastrophic_cases": 116,
+      "samples": 1652
+    },
+    "oblique": {
+      "macro_dice": 0.876089398661878,
+      "macro_iou": 0.8228535208591168,
+      "p10_dice": 0.8043553643478862,
+      "catastrophic_cases": 110,
+      "samples": 1652
+    },
+    "glasses": {
+      "macro_dice": 0.8820817450348554,
+      "macro_iou": 0.8306715137963093,
+      "p10_dice": 0.8107871797172992,
+      "catastrophic_cases": 102,
+      "samples": 1652
+    }
+  },
+  "segmentation_engineering_target_passed": false,
+  "clinical_masks_reviewed": false,
+  "recognition_measured": false,
+  "test_inference": false,
+  "development_smoke_only": false
+}

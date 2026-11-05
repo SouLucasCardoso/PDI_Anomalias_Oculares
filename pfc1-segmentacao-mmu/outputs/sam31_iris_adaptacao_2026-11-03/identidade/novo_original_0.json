@@ -1,0 +1,27 @@
+{
+  "checkpoint_sha256": "cf8a718e0160c14408d1533445ff611b00a79c75d2c0fd07fb7540150e59db99",
+  "counts": {
+    "correct": 431,
+    "accepted": 432,
+    "joint": 419,
+    "false_accepts": 76,
+    "queries": 482,
+    "impostors": 7230,
+    "extraction_failures": 3
+  },
+  "rates": {
+    "rank1": 0.8941908713692946,
+    "tar": 0.8962655601659751,
+    "joint": 0.8692946058091287,
+    "fmr": 0.010511756569847857
+  },
+  "passed_new_readiness_criterion": false,
+  "folder": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-s3id\\novo_original_0\\a001\\r\\confirmacao_congelada_val_segmentador_cf8a718e0160_2026-10-21",
+  "condition": "original",
+  "loss_percent": 0,
+  "model": "sam3_adapter",
+  "threshold": 0.8581747485460748,
+  "queries": 482,
+  "people": 16,
+  "test_inference": false
+}

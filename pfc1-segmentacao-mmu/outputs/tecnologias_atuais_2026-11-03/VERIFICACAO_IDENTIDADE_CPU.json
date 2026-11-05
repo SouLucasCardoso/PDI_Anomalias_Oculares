@@ -1,0 +1,20 @@
+{
+  "verified_utc": "2026-11-03T22:41:53.698516+00:00",
+  "nine_components_passed_cpu_in_both_environments": true,
+  "two_fixed_validation_images_only": true,
+  "prepared_inputs_exactly_equal": true,
+  "all_nine_component_outputs_exactly_equal": true,
+  "active_protocol_sources_unchanged": true,
+  "current_sam3_progress": {
+    "stage": "sam3_cache",
+    "completed": 3175,
+    "total": 22040,
+    "utc": "2026-11-03T22:41:49.853288+00:00"
+  },
+  "recent_cache_rate_per_second": 1.5318775461336696,
+  "estimated_remaining_cache_hours_only": 3.42082028097076,
+  "estimate_excludes_decoder_training_and_identity_evaluation": true,
+  "comparison_sha256": "6d6c6f6baba4a8416623b7a4804ed7860d62b1d424cb2c481d4382d15349c55e",
+  "minimum_area_assigned": false,
+  "no_test_inference": true
+}

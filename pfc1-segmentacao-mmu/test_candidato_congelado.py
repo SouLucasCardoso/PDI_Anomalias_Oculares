@@ -1,9 +1,15 @@
 import unittest
 import numpy as np
-from avaliar_candidato_congelado import fuse
+from avaliar_candidato_congelado import fuse,segmenter_input_size
 from normalizar_consulta import normalize
 
 class FrozenFusionTests(unittest.TestCase):
+    def test_new_segmenter_uses_training_resolution_and_legacy_is_fixed(self):
+        checkpoint={'configuration':{'width':416,'height':320}}
+        self.assertEqual(segmenter_input_size(checkpoint,True),(416,320))
+        self.assertEqual(segmenter_input_size(checkpoint,False),(320,240))
+        self.assertEqual(segmenter_input_size({},True),(320,240))
+        with self.assertRaises(ValueError):segmenter_input_size({'configuration':{'width':415,'height':320}},True)
     def test_equal_views_fixed_weights_and_missing_failure(self):
         rng=np.random.default_rng(11)
         arrays=[rng.uniform(.1,.9,(3,16)) for _ in range(9)]

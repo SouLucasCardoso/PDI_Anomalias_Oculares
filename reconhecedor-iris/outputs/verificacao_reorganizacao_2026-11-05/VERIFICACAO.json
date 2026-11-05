@@ -1,0 +1,127 @@
+{
+  "status": "completed",
+  "scope": "Integration smoke only, existing VAL, not phone or accuracy estimate",
+  "images": [
+    {
+      "file": "C49_S1_I10_L.jpg",
+      "sha256": "8b7378f714ce3a58c238b2baeae28e8a863aacffc330aa86df1e29a738f4fdd7"
+    },
+    {
+      "file": "C49_S2_I10_L.jpg",
+      "sha256": "6286efda4208a4dd71810adc701aef30dd4425c85c47d6214817a18602b8c101"
+    },
+    {
+      "file": "C79_S1_I10_L.jpg",
+      "sha256": "ea9983800ac1bac521ebd6b9bb1f7e7b3468affbd633607d1b1fd09220be0654"
+    }
+  ],
+  "shapes": {
+    "rgb": [
+      256
+    ],
+    "polar": [
+      256
+    ],
+    "spatial": [
+      256,
+      4,
+      32
+    ],
+    "r50": [
+      256
+    ],
+    "convnext": [
+      256
+    ],
+    "native": [
+      256
+    ],
+    "transformer": [
+      256
+    ],
+    "arc_clahe": [
+      512
+    ],
+    "arc_red": [
+      512
+    ]
+  },
+  "matching": {
+    "ranking": [
+      {
+        "person_id": "49",
+        "name": "Participante VAL 49",
+        "side": "L",
+        "samples": 1,
+        "score": 0.9543149203816892,
+        "components": {
+          "rgb": 0.36388195529616246,
+          "polar": -0.024079634193858,
+          "spatial": 0.5970288269606095,
+          "r50": 0.3049623328975605,
+          "convnext": 0.2300701407198929,
+          "native": 0.3010979510285017,
+          "transformer": 0.26204559578087594,
+          "arc_clahe": 0.5557460655913871,
+          "arc_red": 0.5743057287973996
+        }
+      },
+      {
+        "person_id": "79",
+        "name": "Participante VAL 79",
+        "side": "L",
+        "samples": 1,
+        "score": -2.8406707758065353,
+        "components": {
+          "rgb": -0.10919844477391998,
+          "polar": -0.22239740783575845,
+          "spatial": 0.45493929781611464,
+          "r50": -0.04902634242422741,
+          "convnext": -0.12168469458537895,
+          "native": -0.1549333192982731,
+          "transformer": -0.1658212421321319,
+          "arc_clahe": 0.5296645055123395,
+          "arc_red": 0.5280416226378977
+        }
+      }
+    ],
+    "candidate_count": 2,
+    "accepted": null,
+    "decision": "experimental_ranking_only",
+    "phone_threshold_validated": false,
+    "benchmark_threshold_transferred": false,
+    "margin": 3.7949856961882245
+  },
+  "expected": "49",
+  "top1_matches_expected": true,
+  "provenance": {
+    "schema": "iris_mobile_nine_components_v1",
+    "segmenter_sha256": "fbe9a56276c115de41a5b7ba0c00cab2d4d99ff87930d802dad3a52d97fce5f6",
+    "selected_epoch": 8,
+    "identity_weights": {
+      "rgb": "7c03b4c7ef4c54e5f86e58eb550ffc124fa11384fe5c3f5b947d1041178e706d",
+      "polar": "db93dfcca33b8a77cd3bfbaa66f07d1efae2e976414d67748ccf5eff4a5ebe5c",
+      "r50": "699b8236211da2fd43b104f157b6cc3835bd5d89a01a74a5b75ce4261bf35e24",
+      "convnext": "a03400e62df6282e4532dce75fabd6e12d06678a8de7dc3e55a2a274c60f1529",
+      "native": "6530b1227f271789ca7ad8a7d9011d2a9e9ee6fe71a7ce4079d2ed8a75b3388f",
+      "transformer": "0ad83d9f9c78e434bda11e99e01c90cc197e7e5127c3aed75e5da6df38808b87"
+    },
+    "arc_weights_sha256": "466014be7723eb0b1a741dcff5a0c8ae51d1918818a6b021952f9c4ccd443f8f",
+    "sources": {
+      "app_celular/motor.py": "55c3b6d863f65a55a406cc59feaa182b98b192093e0d320f5efb558b2c703257",
+      "segmentador_sam3_residual.py": "5828d7c40d0d54f840157f1e15df31aab6388a31c1ac23a4a18b6b11153c62d5",
+      "segmentador_sam3_iris.py": "e4091a076cd214d4a9dcb78452c8ec37bd65e4f201fbdc1f0dc46147eaaff596",
+      "avaliar_candidato_congelado.py": "6390747960dd339f39782cc2895999e6929d7a9e97111e70c143b6f4193db278",
+      "textura_polar.py": "f977efb2101f2b23338041513908d4deb6eea51a2a730c8f71f0d20c19bcdadc",
+      "preparar_polar_vermelho.py": "8701d5925bf1b2ed35ace89ae0529be8160b1281be04250691387b793cd9de5b",
+      "normalizacao_eliptica.py": "370f61686ce7209b3e705b1dc9b2ffa55bb0eac0cf54911f1edc3d92d7aca72a",
+      "reconhecedor_resnet50.py": "2416940a33a01b0d745a9bb6609f7f2e5ebbb16a77dfaab6635abab3eefe6b2f",
+      "reconhecedor_convnext.py": "7e121f99323b2c4c9d988621969fc4cd37d207a796a43994a949f95841554230",
+      "reconhecedor_transformer_polar.py": "967ca7a7a8b35fe267cd8aff7374e38d04727b00676f644b139e96dd36798e1c",
+      "treinar_identidade_iris.py": "a8f6dc53ace011c968774f9f3f494a085f0c14af2a9ab04853952553c580b0a5"
+    },
+    "fusion": "Original component standardization and relative weights, BEFORE per-query gallery normalization. Top3 per component; mean local spatial prototype. No mobile acceptance threshold.",
+    "benchmark_metrics_apply_to_phone": false,
+    "training_or_threshold_changes": false
+  }
+}

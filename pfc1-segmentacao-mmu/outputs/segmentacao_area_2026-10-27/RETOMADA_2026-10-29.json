@@ -1,0 +1,10 @@
+﻿{
+    "checked_utc":  "2026-10-30T00:18:51.4790285Z",
+    "task_name":  "PFC_Iris_Segmentacao_Area_20261027",
+    "previous_state":  "Ready",
+    "previous_last_run":  "\/Date(1793153283000)\/",
+    "previous_last_result":  1073807364,
+    "source_hashes_verified":  true,
+    "recovery_checkpoint":  "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-segmentacao-area-20261027\\training\\retomada.pt",
+    "action":  "resumed_existing_task"
+}

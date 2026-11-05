@@ -1,0 +1,82 @@
+{
+  "verified_utc": "2026-11-03T22:23:34.921611+00:00",
+  "source_checks": {
+    "completed_reference": {
+      "avaliar_area_segmentador_diverso.py": true,
+      "treinar_segmentacao_area.py": true,
+      "treinar_segmentacao_diversa.py": true,
+      "avaliar_candidato_congelado.py": true,
+      "avaliar_robustez_reconhecimento.py": true,
+      "comparar_recortes_diversos.py": true,
+      "textura_polar.py": true,
+      "normalizacao_eliptica.py": true,
+      "normalizar_consulta.py": true,
+      "validar_lateralidade_informada.py": true
+    },
+    "active_sam3": {
+      "treinar_sam3_iris_adaptado.py": true,
+      "segmentador_sam3_iris.py": true,
+      "treinar_segmentacao_diversa.py": true,
+      "treinar_segmentacao_ubipr.py": true,
+      "avaliar_sam31_diverso.py": true
+    },
+    "active_followup": {
+      "acompanhar_prontidao_anomalias.py": true,
+      "avaliar_identidade_sam3_adaptado.py": true,
+      "avaliar_clinica_sam3_adaptado.py": true,
+      "avaliar_prontidao_anomalias.py": true,
+      "criterios_prontidao_anomalias.json": true,
+      "segmentador_sam3_iris.py": true,
+      "avaliar_candidato_congelado.py": true,
+      "analisar_rodada_segmentacao_area.py": true
+    }
+  },
+  "progress": {
+    "stage": "sam3_cache",
+    "completed": 1550,
+    "total": 22040,
+    "utc": "2026-11-03T22:23:31.014285+00:00"
+  },
+  "cache_entries_observed": 1556,
+  "cache_sample_checks": [
+    {
+      "key": "train/bank0/C103_S1_I10_L",
+      "bytes": 3188812,
+      "sha256": "9c016e78a40b62ee8730bc5108c41814d3a2e5bd67fd3bea3636269474b16b7d",
+      "finite_features": true,
+      "aligned_shapes": true
+    },
+    {
+      "key": "train/bank0/C125_S1_I9_R",
+      "bytes": 3188808,
+      "sha256": "0c4995771c9de979a5f9d010cf4b29a8c48ee64ba96dbcda1761bc367baa1572",
+      "finite_features": true,
+      "aligned_shapes": true
+    },
+    {
+      "key": "train/bank1/C147_S1_I8_R",
+      "bytes": 3188808,
+      "sha256": "9cca5c3850a4f0cfcaaf5d011367e62787103da60d2bb942b22e2cd8271e4904",
+      "finite_features": true,
+      "aligned_shapes": true
+    }
+  ],
+  "editor_cases": 36,
+  "editor_status_counts": {
+    "reviewed_initial": 2,
+    "draft": 0,
+    "unreviewed": 34
+  },
+  "unit_tests_this_verification": {
+    "test_identidade_sam3_adaptado": 1,
+    "test_prontidao_anomalias": 2,
+    "passed": true
+  },
+  "python_compile_and_launcher_parse_passed": true,
+  "gpu_integration_smoke_completed": true,
+  "smoke_used_as_performance_evidence": false,
+  "all_three_tasks_running": true,
+  "readiness_requirements_met": false,
+  "initialization_sha256": "d4def289756b123bd58ea85363ed2829d0a6d011c508c30a06c306f6af768511",
+  "no_new_test_inference": true
+}

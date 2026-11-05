@@ -1,0 +1,11 @@
+﻿{
+    "pid":  7964,
+    "started":  "2026-10-27T21:41:27.4199312Z",
+    "runtime_directory":  "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-segmentacao-diversa-20261027",
+    "mirror_directory":  "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\segmentacao_diversa_2026-10-27",
+    "stdout":  "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\segmentacao_diversa_2026-10-27.stdout.log",
+    "stderr":  "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\segmentacao_diversa_2026-10-27.stderr.log",
+    "epochs":  30,
+    "batch_size":  16,
+    "script":  "treinar_segmentacao_diversa.py"
+}

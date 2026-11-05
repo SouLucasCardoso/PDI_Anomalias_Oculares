@@ -1,0 +1,17 @@
+﻿[
+    {
+        "task":  "PFC_SAM3_Prontidao_Anomalias_20261103",
+        "state":  "Running",
+        "last_result":  267009
+    },
+    {
+        "task":  "PFC_SAM3_Analise_Area_20261103",
+        "state":  "Running",
+        "last_result":  267009
+    },
+    {
+        "task":  "PFC_SAM3_Sensibilidade_Area_20261103",
+        "state":  "Ready",
+        "last_result":  0
+    }
+]

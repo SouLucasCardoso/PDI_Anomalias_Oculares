@@ -1,0 +1,38 @@
+{
+  "registered_utc": "2026-11-03T22:18:08.184028+00:00",
+  "sources": {
+    "acompanhar_prontidao_anomalias.py": "ab1d9f3cafc02481d2c19e91e16cbc84cb7308b7cf43fe89ad05766bc6d4db0b",
+    "avaliar_identidade_sam3_adaptado.py": "aa9e470b2f31f2a9939cf91eda335609997f1306b1f29a89b4c34f989a3c45fe",
+    "avaliar_clinica_sam3_adaptado.py": "cd90f0a55cae55f9ecd4c6b55ae107e283e0ec9dd79f882c7d856b84be8d14da",
+    "avaliar_prontidao_anomalias.py": "48589082b3708c83940ccf22b3a1a4f6a6b75acc09039e946bd5500a0fb8d16c",
+    "criterios_prontidao_anomalias.json": "1eff22b2b887af6be655cec93ab091fbede2384d1115b265451b632705f4dc46",
+    "segmentador_sam3_iris.py": "e4091a076cd214d4a9dcb78452c8ec37bd65e4f201fbdc1f0dc46147eaaff596",
+    "avaliar_candidato_congelado.py": "6390747960dd339f39782cc2895999e6929d7a9e97111e70c143b6f4193db278",
+    "analisar_rodada_segmentacao_area.py": "7e2f7200d75cca37e6365609efa731cd06454628c90115c06f6ab208f06493d4"
+  },
+  "versions": {
+    "torch": "2.14.1+cu130",
+    "torchvision": "0.29.1+cu130",
+    "numpy": "1.26.4",
+    "pillow": "13.0.0",
+    "sam3": "0.1.0"
+  },
+  "identity_gate_includes_joint_success": true,
+  "area_loss_grid": [
+    0,
+    1,
+    2,
+    5,
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90
+  ],
+  "clinical_references_not_used_for_checkpoint_selection": true,
+  "no_test_inference": true
+}

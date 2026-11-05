@@ -1,0 +1,22 @@
+﻿{
+    "verified_utc":  "2026-11-05T12:05:26.6724837Z",
+    "task_name":  "PFC_SAM3_Residual_20261105",
+    "task_state":  "Running",
+    "worker_alive":  true,
+    "worker_pid":  12792,
+    "worker_cpu_seconds":  243.828125,
+    "worker_working_set":  456687616,
+    "training_status":  {
+                            "stage":  "baseline_validation",
+                            "pid":  12792,
+                            "epoch":  0
+                        },
+    "progress":  {
+                     "stage":  "validation",
+                     "mode":  "zoom3",
+                     "batch":  100,
+                     "batches":  207
+                 },
+    "report":  "analise_area/RELATORIO_ATUAL.md",
+    "report_failures_isolated":  true
+}

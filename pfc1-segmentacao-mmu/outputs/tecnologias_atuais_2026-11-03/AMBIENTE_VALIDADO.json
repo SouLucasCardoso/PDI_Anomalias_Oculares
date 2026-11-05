@@ -1,0 +1,28 @@
+{
+  "checked_utc": "2026-11-03T19:22:09.727996+00:00",
+  "python": "C:\\Users\\lucaz\\pfc-sam3-20261103\\Scripts\\python.exe",
+  "versions": {
+    "torch": "2.14.1+cu130",
+    "torchvision": "0.29.1+cu130",
+    "transformers": "5.22.1",
+    "huggingface-hub": "2.4.0",
+    "sam3": "0.1.0",
+    "numpy": "1.26.4",
+    "pillow": "13.0.0",
+    "opencv-python-headless": "4.11.0.86"
+  },
+  "cuda": "13.0",
+  "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "sam3_origin": {
+    "archive_info": {
+      "hash": "sha256=3e1c4119c0fc50e091dd8dd23a70a01f7ea5d6797772148d72206d10c74f8819",
+      "hashes": {
+        "sha256": "3e1c4119c0fc50e091dd8dd23a70a01f7ea5d6797772148d72206d10c74f8819"
+      }
+    },
+    "url": "https://github.com/facebookresearch/sam3/archive/f1647e8d0c1d280991f4d1b7d974c2704537fe66.zip"
+  },
+  "bf16_matmul_passed": true,
+  "torchvision_cuda_nms_passed": true,
+  "updated_modules_inside_isolated_prefix": true
+}

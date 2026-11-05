@@ -1,0 +1,23 @@
+﻿{
+    "checked_utc":  "2026-11-03T15:43:26.0943361Z",
+    "training_alive":  true,
+    "progress":  {
+                     "utc":  "2026-11-03T15:42:39.403307+00:00",
+                     "phase":  "training",
+                     "epoch":  16,
+                     "batch":  350,
+                     "batches":  483,
+                     "samples":  5600,
+                     "loss":  0.38208330137389046
+                 },
+    "observer_alive":  true,
+    "science_sources_unchanged":  true,
+    "analysis_sources_match_registered":  true,
+    "unit_checks_passed":  4,
+    "historical_query_condition_records_reproduced":  1446,
+    "integration_fixture_records":  2892,
+    "integration_fixture_is_candidate_evaluation":  false,
+    "new_candidate_identity_pending":  true,
+    "clinical_inspection_epoch":  15,
+    "clinical_reference_masks_available":  false
+}

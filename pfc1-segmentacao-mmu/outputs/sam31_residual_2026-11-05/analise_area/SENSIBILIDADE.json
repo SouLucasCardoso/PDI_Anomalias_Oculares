@@ -1,0 +1,185 @@
+{
+  "registered_strata_before_new_scores": true,
+  "all_queries": 482,
+  "defined_reference": 472,
+  "undefined_reference": 10,
+  "records": {
+    "novo_oclusao_inferior_10": {
+      "all_queries": {
+        "counts": {
+          "correct": 391,
+          "accepted": 371,
+          "joint": 366,
+          "false_accepts": 98,
+          "queries": 482,
+          "impostors": 7230,
+          "extraction_failures": 3
+        },
+        "rates": {
+          "rank1": 0.8112033195020747,
+          "tar": 0.7697095435684648,
+          "joint": 0.7593360995850622,
+          "fmr": 0.01355463347164592
+        },
+        "passed": false
+      },
+      "defined_reference": {
+        "counts": {
+          "correct": 387,
+          "accepted": 366,
+          "joint": 362,
+          "false_accepts": 96,
+          "queries": 472,
+          "impostors": 7080,
+          "extraction_failures": 0
+        },
+        "rates": {
+          "rank1": 0.8199152542372882,
+          "tar": 0.7754237288135594,
+          "joint": 0.7669491525423728,
+          "fmr": 0.013559322033898305
+        },
+        "passed": false
+      },
+      "undefined_reference": {
+        "counts": {
+          "correct": 4,
+          "accepted": 5,
+          "joint": 4,
+          "false_accepts": 2,
+          "queries": 10,
+          "impostors": 150,
+          "extraction_failures": 3
+        },
+        "rates": {
+          "rank1": 0.4,
+          "tar": 0.5,
+          "joint": 0.4,
+          "fmr": 0.013333333333333334
+        },
+        "passed": false
+      }
+    },
+    "novo_oclusao_superior_10": {
+      "all_queries": {
+        "counts": {
+          "correct": 405,
+          "accepted": 392,
+          "joint": 385,
+          "false_accepts": 79,
+          "queries": 482,
+          "impostors": 7230,
+          "extraction_failures": 3
+        },
+        "rates": {
+          "rank1": 0.8402489626556017,
+          "tar": 0.8132780082987552,
+          "joint": 0.7987551867219918,
+          "fmr": 0.010926694329183955
+        },
+        "passed": false
+      },
+      "defined_reference": {
+        "counts": {
+          "correct": 401,
+          "accepted": 387,
+          "joint": 381,
+          "false_accepts": 77,
+          "queries": 472,
+          "impostors": 7080,
+          "extraction_failures": 0
+        },
+        "rates": {
+          "rank1": 0.8495762711864406,
+          "tar": 0.8199152542372882,
+          "joint": 0.8072033898305084,
+          "fmr": 0.010875706214689265
+        },
+        "passed": false
+      },
+      "undefined_reference": {
+        "counts": {
+          "correct": 4,
+          "accepted": 5,
+          "joint": 4,
+          "false_accepts": 2,
+          "queries": 10,
+          "impostors": 150,
+          "extraction_failures": 3
+        },
+        "rates": {
+          "rank1": 0.4,
+          "tar": 0.5,
+          "joint": 0.4,
+          "fmr": 0.013333333333333334
+        },
+        "passed": false
+      }
+    },
+    "novo_original_0": {
+      "all_queries": {
+        "counts": {
+          "correct": 431,
+          "accepted": 432,
+          "joint": 421,
+          "false_accepts": 67,
+          "queries": 482,
+          "impostors": 7230,
+          "extraction_failures": 3
+        },
+        "rates": {
+          "rank1": 0.8941908713692946,
+          "tar": 0.8962655601659751,
+          "joint": 0.8734439834024896,
+          "fmr": 0.009266943291839557
+        },
+        "passed": false
+      },
+      "defined_reference": {
+        "counts": {
+          "correct": 427,
+          "accepted": 427,
+          "joint": 417,
+          "false_accepts": 65,
+          "queries": 472,
+          "impostors": 7080,
+          "extraction_failures": 0
+        },
+        "rates": {
+          "rank1": 0.9046610169491526,
+          "tar": 0.9046610169491526,
+          "joint": 0.8834745762711864,
+          "fmr": 0.009180790960451978
+        },
+        "passed": false
+      },
+      "undefined_reference": {
+        "counts": {
+          "correct": 4,
+          "accepted": 5,
+          "joint": 4,
+          "false_accepts": 2,
+          "queries": 10,
+          "impostors": 150,
+          "extraction_failures": 3
+        },
+        "rates": {
+          "rank1": 0.4,
+          "tar": 0.5,
+          "joint": 0.4,
+          "fmr": 0.013333333333333334
+        },
+        "passed": false
+      }
+    }
+  },
+  "defined_frontier": {
+    "clean_gate_passed": false,
+    "grid_complete": false,
+    "minimum_assigned": false,
+    "orientations": {}
+  },
+  "conservative_minimum_annotated_visible_percent": null,
+  "undefined_reference_has_no_area_fraction": true,
+  "test_inference": false
+}

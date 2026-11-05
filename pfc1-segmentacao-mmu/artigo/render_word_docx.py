@@ -2,8 +2,8 @@
 from pathlib import Path
 import base64,importlib.util,os,subprocess
 
-SKILL=Path('C:/Users/lucaz/.codex/plugins/cache/openai-primary-runtime/documents/26.1022.11436/skills/documents')
 RUNTIME=Path('C:/Users/lucaz/.cache/codex-runtimes/codex-primary-runtime')
+SKILL=RUNTIME/'plugins/openai-primary-runtime/plugins/documents/skills/documents'
 os.environ['PATH']=str(RUNTIME/'dependencies/native/poppler/Library/bin')+os.pathsep+os.environ.get('PATH','')
 spec=importlib.util.spec_from_file_location('packaged_docx_renderer',SKILL/'render_docx.py');renderer=importlib.util.module_from_spec(spec);spec.loader.exec_module(renderer)
 

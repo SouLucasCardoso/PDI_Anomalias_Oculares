@@ -1,0 +1,8 @@
+{
+  "updated_utc": "2026-11-05T14:47:08.455601+00:00",
+  "supervisor_pid": 24876,
+  "worker_pid": 12608,
+  "wake_request_active": false,
+  "worker_exit_code": 1,
+  "scientific_worker_source_unchanged": true
+}

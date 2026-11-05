@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "registered_date": "2026-11-03",
+  "scope": "Metas de engenharia para iniciar piloto exploratorio; nao sao padrao clinico validado ou prova de causalidade",
+  "segmentation_validation": {
+    "minimum_macro_dice_each_condition": 0.90,
+    "conditions": ["clean", "zoom3", "oblique", "glasses"],
+    "minimum_images_each_condition": 1652,
+    "no_smoke_results": true
+  },
+  "clinical_normal_controls": {
+    "minimum_reviewed_images": 30,
+    "minimum_people": 15,
+    "minimum_visible_pupil_references": 20,
+    "minimum_macro_dice": 0.90,
+    "minimum_p10_dice": 0.75,
+    "maximum_catastrophic_dice_below_0_5": 0,
+    "maximum_macro_pupil_leak_fraction": 0.02,
+    "maximum_uncertain_fraction_in_eye_region": 0.05,
+    "reference_level": "user_initial; expert confirmation still separate"
+  },
+  "identification_study": {
+    "minimum_rank1": 0.90,
+    "minimum_tar": 0.90,
+    "maximum_fmr": 0.01,
+    "minimum_joint_correct_and_accepted": 0.90,
+    "all_extraction_failures_retained": true,
+    "same_candidate_checkpoint_for_all_evidence": true
+  },
+  "clinical_anomaly_effect": "Requer comparacoes clinicas de identidade e capturas comparaveis; seis fotos com mascaras nao bastam para afirmar efeito causal ou minimo anatomico"
+}

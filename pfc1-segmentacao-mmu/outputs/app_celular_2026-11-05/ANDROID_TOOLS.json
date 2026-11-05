@@ -1,0 +1,11 @@
+{
+  "version": "37.0.1",
+  "channel": "stable",
+  "url": "https://dl.google.com/android/repository/platform-tools_r37.0.1-win.zip",
+  "archive_sha1": "e03e78b1d80b396f1c3358e31251cb31740e1110",
+  "archive_sha256": "45f4d63113e895ebde0c90f194099a4676b6ac653bd28d54314a9e022bbc1a99",
+  "adb_sha256": "b4a6b455702684652cccf7b46258b29e653538904359a58fd4931cf3ef286b3f",
+  "adb_version": "Android Debug Bridge version 1.0.41\nVersion 37.0.1-15733141\nInstalled as C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\.runtime\\android_sdk\\platform-tools\\adb.exe\nRunning on Windows 10.0.26300\n",
+  "repository_sha256": "9f4964bf8e1a70a5285088f8a522ddfd379a2664f52d1ef8751ad2696c3053d5",
+  "device_or_usb_authorization_tested": false
+}

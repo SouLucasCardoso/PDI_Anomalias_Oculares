@@ -1,0 +1,3454 @@
+[
+  {
+    "image": "C233_S1_I5_R.jpg",
+    "subject": 233,
+    "methods": {
+      "global": {
+        "dice": 0.9476278496718776,
+        "iou": 0.9004683841137906,
+        "prediction_pixels": 2497,
+        "reference_pixels": 2372,
+        "intersection_pixels": 2307,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.9291570317575873,
+        "iou": 0.8676874755132754,
+        "prediction_pixels": 2385,
+        "reference_pixels": 2372,
+        "intersection_pixels": 2210,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.9263383297802273,
+        "iou": 0.8627842042828943,
+        "prediction_pixels": 2298,
+        "reference_pixels": 2372,
+        "intersection_pixels": 2163,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.9169406092665043,
+        "iou": 0.8466208013570939,
+        "prediction_pixels": 2191,
+        "reference_pixels": 2372,
+        "intersection_pixels": 2092,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.61328125,
+          "pixels": 238,
+          "hull_fraction": 0.08937288772061584,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.04485382458950741,
+          "aspect": 1.6666666666666667,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.78125,
+          "pixels": 2792,
+          "hull_fraction": 1.0484416072099136,
+          "inside_fraction": 0.9383954154727794,
+          "removed_iris_fraction": 0.985983179815779,
+          "aspect": 1.2641509433962264,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        105,
+        135,
+        203,
+        217
+      ],
+      "box_native_xyxy": [
+        161,
+        186,
+        312,
+        300
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 0.920304365238286,
+        "original_overlap": 0.9018822587104526
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.8774529435322387,
+        "original_overlap": 0.8718462154585502
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.69140625,
+          "pixels": 3337,
+          "hull_fraction": 0.07846410684474124,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.04618168467428931,
+          "aspect": 1.368421052631579,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.6875,
+          "pixels": 44249,
+          "hull_fraction": 1.0404429918408615,
+          "inside_fraction": 0.9442021288616692,
+          "removed_iris_fraction": 0.9891692017203398,
+          "aspect": 1.3689320388349515,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "b6f6b58fe0cec952cacb4ace00ecfd226f5ba87080eed65303e45e1cb948ba9e"
+  },
+  {
+    "image": "C375_S2_I6_L.jpg",
+    "subject": 375,
+    "methods": {
+      "global": {
+        "dice": 0.8707011463954409,
+        "iou": 0.771010387265812,
+        "prediction_pixels": 1877,
+        "reference_pixels": 1874,
+        "intersection_pixels": 1633,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.8707011463954409,
+        "iou": 0.771010387265812,
+        "prediction_pixels": 1877,
+        "reference_pixels": 1874,
+        "intersection_pixels": 1633,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.7694459989453145,
+        "iou": 0.6252842202704484,
+        "prediction_pixels": 1700,
+        "reference_pixels": 1874,
+        "intersection_pixels": 1375,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.7694459989453145,
+        "iou": 0.6252842202704484,
+        "prediction_pixels": 1700,
+        "reference_pixels": 1874,
+        "intersection_pixels": 1375,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": null,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.79296875,
+          "pixels": 2315,
+          "hull_fraction": 1.1686017163048965,
+          "inside_fraction": 0.8233261339092872,
+          "removed_iris_fraction": 0.9648375066595631,
+          "aspect": 1.2,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": true
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        155,
+        180,
+        239,
+        250
+      ],
+      "box_native_xyxy": [
+        294,
+        307,
+        455,
+        427
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 0.9057005860415557,
+        "original_overlap": 0.8438998401704848
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.9057005860415557,
+        "original_overlap": 0.8438998401704848
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": null,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.6015625,
+          "pixels": 50668,
+          "hull_fraction": 1.185465946047121,
+          "inside_fraction": 0.8231822846767191,
+          "removed_iris_fraction": 0.9897704849932496,
+          "aspect": 1.4253393665158371,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": true
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "ea5ad7a7e4c99301009410e4f05996ffac3445b1baeb28960031232a7e4519c7"
+  },
+  {
+    "image": "C439_S2_I13_R.jpg",
+    "subject": 439,
+    "methods": {
+      "global": {
+        "dice": 0.9763614078136296,
+        "iou": 0.9538145740835393,
+        "prediction_pixels": 2824,
+        "reference_pixels": 2887,
+        "intersection_pixels": 2788,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.936635105619695,
+        "iou": 0.8808219178490336,
+        "prediction_pixels": 2605,
+        "reference_pixels": 2887,
+        "intersection_pixels": 2572,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.9574764726459609,
+        "iou": 0.9184219324913333,
+        "prediction_pixels": 2851,
+        "reference_pixels": 2887,
+        "intersection_pixels": 2747,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.9388048956193655,
+        "iou": 0.8846675712738576,
+        "prediction_pixels": 2669,
+        "reference_pixels": 2887,
+        "intersection_pixels": 2608,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.74609375,
+          "pixels": 448,
+          "hull_fraction": 0.14465611882466903,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.07754957507082152,
+          "aspect": 1.2727272727272727,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.68359375,
+          "pixels": 3197,
+          "hull_fraction": 1.0322893122376493,
+          "inside_fraction": 0.9618392242727557,
+          "removed_iris_fraction": 0.9950424929178471,
+          "aspect": 1.2857142857142858,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        86,
+        113,
+        192,
+        202
+      ],
+      "box_native_xyxy": [
+        263,
+        310,
+        589,
+        555
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 1.0095609065155808,
+        "original_overlap": 0.9670679886685553
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.9451133144475921,
+        "original_overlap": 0.9192634560906515
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.81640625,
+          "pixels": 5885,
+          "hull_fraction": 0.1334527642977006,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.06376833246184109,
+          "aspect": 1.3636363636363635,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.64453125,
+          "pixels": 43640,
+          "hull_fraction": 0.9896140414531271,
+          "inside_fraction": 0.9836617781851512,
+          "removed_iris_fraction": 0.978362092577376,
+          "aspect": 1.3819095477386936,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "dc2dd36b29fad512732a560cffce3173a773e357d30e84b59817751ba1abca68"
+  },
+  {
+    "image": "C107_S2_I10_L.jpg",
+    "subject": 107,
+    "methods": {
+      "global": {
+        "dice": 0.9398876404663237,
+        "iou": 0.8865924748878683,
+        "prediction_pixels": 1711,
+        "reference_pixels": 1849,
+        "intersection_pixels": 1673,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.9398876404663237,
+        "iou": 0.8865924748878683,
+        "prediction_pixels": 1711,
+        "reference_pixels": 1849,
+        "intersection_pixels": 1673,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.841910631789858,
+        "iou": 0.7269824376120371,
+        "prediction_pixels": 1396,
+        "reference_pixels": 1849,
+        "intersection_pixels": 1366,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.8171082030586951,
+        "iou": 0.6907717216995296,
+        "prediction_pixels": 1284,
+        "reference_pixels": 1849,
+        "intersection_pixels": 1280,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": null,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.8046875,
+          "pixels": 2095,
+          "hull_fraction": 1.1348862405200433,
+          "inside_fraction": 0.8806682577565632,
+          "removed_iris_fraction": 1.0,
+          "aspect": 2.1470588235294117,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": true
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        165,
+        140,
+        271,
+        206
+      ],
+      "box_native_xyxy": [
+        385,
+        293,
+        634,
+        432
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 0.8158971361776739,
+        "original_overlap": 0.8001168907071888
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.7504383401519579,
+        "original_overlap": 0.7422559906487435
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.74609375,
+          "pixels": 4479,
+          "hull_fraction": 0.13994688329948446,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.08271410343015838,
+          "aspect": 1.0133333333333334,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.51953125,
+          "pixels": 35118,
+          "hull_fraction": 1.097266052179347,
+          "inside_fraction": 0.8983142547981092,
+          "removed_iris_fraction": 0.9864895293852736,
+          "aspect": 1.759493670886076,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "df7d86670b598bc189633bd2b73e2da9993e0da66291cd8cab9bbb3b8bb76806"
+  },
+  {
+    "image": "C147_S1_I7_L.jpg",
+    "subject": 147,
+    "methods": {
+      "global": {
+        "dice": 0.9750404022310935,
+        "iou": 0.9512964260857406,
+        "prediction_pixels": 2768,
+        "reference_pixels": 2801,
+        "intersection_pixels": 2715,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.943466172392314,
+        "iou": 0.8929824561779008,
+        "prediction_pixels": 2594,
+        "reference_pixels": 2801,
+        "intersection_pixels": 2545,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.9448760636431972,
+        "iou": 0.8955119214952623,
+        "prediction_pixels": 2605,
+        "reference_pixels": 2801,
+        "intersection_pixels": 2554,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.9243346007748413,
+        "iou": 0.859314245366096,
+        "prediction_pixels": 2459,
+        "reference_pixels": 2801,
+        "intersection_pixels": 2431,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.60546875,
+          "pixels": 362,
+          "hull_fraction": 0.12046589018302829,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.06286127167630058,
+          "aspect": 1.1,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.80859375,
+          "pixels": 3135,
+          "hull_fraction": 1.043261231281198,
+          "inside_fraction": 0.9365231259968102,
+          "removed_iris_fraction": 0.9801300578034682,
+          "aspect": 1.3396226415094339,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        162,
+        148,
+        270,
+        233
+      ],
+      "box_native_xyxy": [
+        297,
+        244,
+        497,
+        385
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 0.9411127167630058,
+        "original_overlap": 0.9299132947976878
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.8883670520231214,
+        "original_overlap": 0.8876445086705202
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.78515625,
+          "pixels": 4826,
+          "hull_fraction": 0.11530283120296261,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.057151153582176234,
+          "aspect": 1.1506849315068493,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.71484375,
+          "pixels": 43147,
+          "hull_fraction": 1.0308684744952814,
+          "inside_fraction": 0.9492201080028739,
+          "removed_iris_fraction": 0.979515337099414,
+          "aspect": 1.3979591836734695,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "26bd1e4d1b872185422850ea802579ba54b8b788426eea97d4f947c1dad78120"
+  },
+  {
+    "image": "C131_S1_I10_L.jpg",
+    "subject": 131,
+    "methods": {
+      "global": {
+        "dice": 0.9628310705624681,
+        "iou": 0.9283261802882721,
+        "prediction_pixels": 2230,
+        "reference_pixels": 2263,
+        "intersection_pixels": 2163,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.9628310705624681,
+        "iou": 0.9283261802882721,
+        "prediction_pixels": 2230,
+        "reference_pixels": 2263,
+        "intersection_pixels": 2163,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.9474372955403626,
+        "iou": 0.9001243266058333,
+        "prediction_pixels": 2322,
+        "reference_pixels": 2263,
+        "intersection_pixels": 2172,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.9151223976401001,
+        "iou": 0.8435259384886016,
+        "prediction_pixels": 2108,
+        "reference_pixels": 2263,
+        "intersection_pixels": 2000,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": null,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.89453125,
+          "pixels": 2624,
+          "hull_fraction": 1.0988274706867671,
+          "inside_fraction": 0.9066310975609756,
+          "removed_iris_fraction": 0.9973094170403587,
+          "aspect": 1.38,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": true
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        177,
+        144,
+        274,
+        222
+      ],
+      "box_native_xyxy": [
+        383,
+        279,
+        594,
+        432
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 1.041255605381166,
+        "original_overlap": 0.9829596412556054
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.9452914798206278,
+        "original_overlap": 0.9076233183856502
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": 1,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.86328125,
+          "pixels": 43575,
+          "hull_fraction": 1.0053526521006853,
+          "inside_fraction": 0.9715892139988526,
+          "removed_iris_fraction": 0.9834964074646264,
+          "aspect": 1.4642857142857142,
+          "rejected": "implausible_area"
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.609375,
+          "pixels": 5354,
+          "hull_fraction": 0.12352629028908936,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.09119890139532602,
+          "aspect": 1.1139240506329113,
+          "rejected": null
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "2690483bbf3962d812dad55d158088a0e1f54131bc5ea837560270ad37d4a193"
+  },
+  {
+    "image": "C495_S1_I4_L.jpg",
+    "subject": 495,
+    "methods": {
+      "global": {
+        "dice": 0.926829268314447,
+        "iou": 0.8636363637119533,
+        "prediction_pixels": 1596,
+        "reference_pixels": 1766,
+        "intersection_pixels": 1558,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.926829268314447,
+        "iou": 0.8636363637119533,
+        "prediction_pixels": 1596,
+        "reference_pixels": 1766,
+        "intersection_pixels": 1558,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.8916030534682128,
+        "iou": 0.804407713606387,
+        "prediction_pixels": 1509,
+        "reference_pixels": 1766,
+        "intersection_pixels": 1460,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.8916030534682128,
+        "iou": 0.804407713606387,
+        "prediction_pixels": 1509,
+        "reference_pixels": 1766,
+        "intersection_pixels": 1460,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": null,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.8984375,
+          "pixels": 1868,
+          "hull_fraction": 1.131435493640218,
+          "inside_fraction": 0.8832976445396146,
+          "removed_iris_fraction": 1.0,
+          "aspect": 1.9142857142857144,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": true
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        216,
+        121,
+        312,
+        184
+      ],
+      "box_native_xyxy": [
+        383,
+        192,
+        554,
+        293
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 0.9454887218045113,
+        "original_overlap": 0.9154135338345865
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.9454887218045113,
+        "original_overlap": 0.9154135338345865
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": null,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.875,
+          "pixels": 37843,
+          "hull_fraction": 1.0814139566782877,
+          "inside_fraction": 0.9054250455830669,
+          "removed_iris_fraction": 0.9815633552888808,
+          "aspect": 1.627906976744186,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": true
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "d11fdd86fed7bad51549009bef3c54fef2b42909f68620e82488911e6c10deef"
+  },
+  {
+    "image": "C103_S2_I13_R.jpg",
+    "subject": 103,
+    "methods": {
+      "global": {
+        "dice": 0.9740634005821185,
+        "iou": 0.9494382022690414,
+        "prediction_pixels": 2272,
+        "reference_pixels": 2239,
+        "intersection_pixels": 2197,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.9472466450839317,
+        "iou": 0.8997802198242725,
+        "prediction_pixels": 2083,
+        "reference_pixels": 2239,
+        "intersection_pixels": 2047,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.9565807327099546,
+        "iou": 0.9167750325458279,
+        "prediction_pixels": 2183,
+        "reference_pixels": 2239,
+        "intersection_pixels": 2115,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.9344529974493927,
+        "iou": 0.8769702277246191,
+        "prediction_pixels": 2048,
+        "reference_pixels": 2239,
+        "intersection_pixels": 2003,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.5625,
+          "pixels": 333,
+          "hull_fraction": 0.13564154786150712,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.08318661971830986,
+          "aspect": 1.2222222222222223,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.859375,
+          "pixels": 2545,
+          "hull_fraction": 1.0366598778004072,
+          "inside_fraction": 0.9497053045186641,
+          "removed_iris_fraction": 0.9876760563380281,
+          "aspect": 1.5681818181818181,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        135,
+        120,
+        237,
+        195
+      ],
+      "box_native_xyxy": [
+        417,
+        332,
+        733,
+        540
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 0.9608274647887324,
+        "original_overlap": 0.9454225352112676
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.9014084507042254,
+        "original_overlap": 0.8926056338028169
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.76171875,
+          "pixels": 5360,
+          "hull_fraction": 0.12736129262207438,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.058897737128439646,
+          "aspect": 1.2191780821917808,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.75390625,
+          "pixels": 42159,
+          "hull_fraction": 1.0017583462041106,
+          "inside_fraction": 0.9778220546028131,
+          "removed_iris_fraction": 0.9812610055454808,
+          "aspect": 1.4838709677419355,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "fc5350320943b6ae71fac3ec9ccd65d353f29c5e3d47b73db7794348353438e6"
+  },
+  {
+    "image": "C481_S1_I4_L.jpg",
+    "subject": 481,
+    "methods": {
+      "global": {
+        "dice": 0.9699441820588355,
+        "iou": 0.9416423510039006,
+        "prediction_pixels": 2275,
+        "reference_pixels": 2383,
+        "intersection_pixels": 2259,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.9699441820588355,
+        "iou": 0.9416423510039006,
+        "prediction_pixels": 2275,
+        "reference_pixels": 2383,
+        "intersection_pixels": 2259,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.9225707392141762,
+        "iou": 0.8562703583647108,
+        "prediction_pixels": 2176,
+        "reference_pixels": 2383,
+        "intersection_pixels": 2103,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.8780943484637799,
+        "iou": 0.7826810991745708,
+        "prediction_pixels": 1899,
+        "reference_pixels": 2383,
+        "intersection_pixels": 1880,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": null,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.8828125,
+          "pixels": 2531,
+          "hull_fraction": 1.0317977986139422,
+          "inside_fraction": 0.9561438166732517,
+          "removed_iris_fraction": 0.9876923076923076,
+          "aspect": 1.5348837209302326,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": true
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        187,
+        136,
+        288,
+        211
+      ],
+      "box_native_xyxy": [
+        306,
+        200,
+        473,
+        311
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 0.9564835164835165,
+        "original_overlap": 0.9164835164835164
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.8347252747252747,
+        "original_overlap": 0.825054945054945
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": 1,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.8515625,
+          "pixels": 41354,
+          "hull_fraction": 1.0049818950642786,
+          "inside_fraction": 0.9789621318373072,
+          "removed_iris_fraction": 0.9873883342091434,
+          "aspect": 1.5112359550561798,
+          "rejected": "implausible_area"
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.6171875,
+          "pixels": 7236,
+          "hull_fraction": 0.1758487448054631,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.12863899106673674,
+          "aspect": 1.3452380952380953,
+          "rejected": null
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "95724f61b919323891cecd56fe0a55768688b75553be2de7242974cc0afd6676"
+  },
+  {
+    "image": "C159_S1_I5_R.jpg",
+    "subject": 159,
+    "methods": {
+      "global": {
+        "dice": 0.9648604269409325,
+        "iou": 0.9321065990278512,
+        "prediction_pixels": 1511,
+        "reference_pixels": 1534,
+        "intersection_pixels": 1469,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.9648604269409325,
+        "iou": 0.9321065990278512,
+        "prediction_pixels": 1511,
+        "reference_pixels": 1534,
+        "intersection_pixels": 1469,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.9297188755255291,
+        "iou": 0.8686679175305392,
+        "prediction_pixels": 1454,
+        "reference_pixels": 1534,
+        "intersection_pixels": 1389,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.9297188755255291,
+        "iou": 0.8686679175305392,
+        "prediction_pixels": 1454,
+        "reference_pixels": 1534,
+        "intersection_pixels": 1389,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": null,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.890625,
+          "pixels": 1773,
+          "hull_fraction": 1.0985130111524164,
+          "inside_fraction": 0.9075014100394811,
+          "removed_iris_fraction": 0.9980145598941098,
+          "aspect": 1.6111111111111112,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": true
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        104,
+        133,
+        187,
+        195
+      ],
+      "box_native_xyxy": [
+        176,
+        201,
+        317,
+        297
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 0.9622766379880874,
+        "original_overlap": 0.9371277299801456
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.9622766379880874,
+        "original_overlap": 0.9371277299801456
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": null,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.8671875,
+          "pixels": 43275,
+          "hull_fraction": 1.0470602467940964,
+          "inside_fraction": 0.9288734835355286,
+          "removed_iris_fraction": 0.9783716363250359,
+          "aspect": 1.5027027027027027,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": true
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "8d505559152a15d1ba6febe5d21507d3160cafc0a238fe7fec14c3869db0250e"
+  },
+  {
+    "image": "C73_S1_I4_L.jpg",
+    "subject": 73,
+    "methods": {
+      "global": {
+        "dice": 0.9608394229040961,
+        "iou": 0.9246303642536493,
+        "prediction_pixels": 2644,
+        "reference_pixels": 2693,
+        "intersection_pixels": 2564,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.9608394229040961,
+        "iou": 0.9246303642536493,
+        "prediction_pixels": 2644,
+        "reference_pixels": 2693,
+        "intersection_pixels": 2564,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.9391437896066147,
+        "iou": 0.885269634496826,
+        "prediction_pixels": 2516,
+        "reference_pixels": 2693,
+        "intersection_pixels": 2446,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.9273192830554817,
+        "iou": 0.8644876974423475,
+        "prediction_pixels": 2384,
+        "reference_pixels": 2693,
+        "intersection_pixels": 2354,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": null,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.88671875,
+          "pixels": 3073,
+          "hull_fraction": 1.0778674149421257,
+          "inside_fraction": 0.9157175398633257,
+          "removed_iris_fraction": 0.9890317700453858,
+          "aspect": 1.3846153846153846,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": true
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        167,
+        147,
+        275,
+        231
+      ],
+      "box_native_xyxy": [
+        275,
+        217,
+        455,
+        343
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 0.9515885022692889,
+        "original_overlap": 0.9375945537065052
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.9016641452344932,
+        "original_overlap": 0.8982602118003026
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.63671875,
+          "pixels": 4372,
+          "hull_fraction": 0.10881847823381537,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.055639830967602125,
+          "aspect": 1.4153846153846155,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.84765625,
+          "pixels": 43146,
+          "hull_fraction": 1.0738980013440527,
+          "inside_fraction": 0.9146850229453484,
+          "removed_iris_fraction": 0.9849116914075198,
+          "aspect": 1.4205128205128206,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "091729d45f5fa49e4df8fe037ee89759d1e82830a7e74e9b25f34bd53379b7c3"
+  },
+  {
+    "image": "C189_S2_I14_R.jpg",
+    "subject": 189,
+    "methods": {
+      "global": {
+        "dice": 0.8564705882835393,
+        "iou": 0.7489711935632151,
+        "prediction_pixels": 1639,
+        "reference_pixels": 1336,
+        "intersection_pixels": 1274,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.8564705882835393,
+        "iou": 0.7489711935632151,
+        "prediction_pixels": 1639,
+        "reference_pixels": 1336,
+        "intersection_pixels": 1274,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.8588791357667525,
+        "iou": 0.7526627220398445,
+        "prediction_pixels": 1626,
+        "reference_pixels": 1336,
+        "intersection_pixels": 1272,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.8588791357667525,
+        "iou": 0.7526627220398445,
+        "prediction_pixels": 1626,
+        "reference_pixels": 1336,
+        "intersection_pixels": 1272,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": null,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.91796875,
+          "pixels": 1991,
+          "hull_fraction": 1.1929298981426004,
+          "inside_fraction": 0.8347564038171773,
+          "removed_iris_fraction": 0.9975594874923734,
+          "aspect": 1.641025641025641,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": true
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        183,
+        126,
+        269,
+        188
+      ],
+      "box_native_xyxy": [
+        708,
+        437,
+        1042,
+        653
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 0.9920683343502136,
+        "original_overlap": 0.9463087248322147
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.9920683343502136,
+        "original_overlap": 0.9463087248322147
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": null,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.91015625,
+          "pixels": 45162,
+          "hull_fraction": 1.0404552366032345,
+          "inside_fraction": 0.9315575040963642,
+          "removed_iris_fraction": 0.9753184122666008,
+          "aspect": 1.5416666666666667,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": true
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "cb7a07eac446e87a96ae6c8d03392bc080cd818ff071e77b19eac4fe8caae291"
+  },
+  {
+    "image": "C51_S1_I3_L.jpg",
+    "subject": 51,
+    "methods": {
+      "global": {
+        "dice": 0.943036386463479,
+        "iou": 0.8922127255972401,
+        "prediction_pixels": 2059,
+        "reference_pixels": 1926,
+        "intersection_pixels": 1879,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.943036386463479,
+        "iou": 0.8922127255972401,
+        "prediction_pixels": 2059,
+        "reference_pixels": 1926,
+        "intersection_pixels": 1879,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.9273715415199181,
+        "iou": 0.8645785352995954,
+        "prediction_pixels": 2122,
+        "reference_pixels": 1926,
+        "intersection_pixels": 1877,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.9273715415199181,
+        "iou": 0.8645785352995954,
+        "prediction_pixels": 2122,
+        "reference_pixels": 1926,
+        "intersection_pixels": 1877,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": null,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.88671875,
+          "pixels": 2445,
+          "hull_fraction": 1.1088435374149659,
+          "inside_fraction": 0.8977505112474438,
+          "removed_iris_fraction": 0.9970859640602234,
+          "aspect": 1.488888888888889,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": true
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        199,
+        124,
+        293,
+        198
+      ],
+      "box_native_xyxy": [
+        277,
+        155,
+        409,
+        248
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 1.0305973773676542,
+        "original_overlap": 0.9796017484215639
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 1.0305973773676542,
+        "original_overlap": 0.9796017484215639
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": null,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.75,
+          "pixels": 45719,
+          "hull_fraction": 1.067128819176995,
+          "inside_fraction": 0.9241015770248693,
+          "removed_iris_fraction": 0.9894840536879694,
+          "aspect": 1.5206185567010309,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": true
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "41f357af393becfbdf6ff6618383a1221d4ea64b4885e227d1d87e40dd85eba8"
+  },
+  {
+    "image": "C95_S1_I3_R.jpg",
+    "subject": 95,
+    "methods": {
+      "global": {
+        "dice": 0.9406889407043023,
+        "iou": 0.8880195599569587,
+        "prediction_pixels": 1903,
+        "reference_pixels": 1958,
+        "intersection_pixels": 1816,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.9406889407043023,
+        "iou": 0.8880195599569587,
+        "prediction_pixels": 1903,
+        "reference_pixels": 1958,
+        "intersection_pixels": 1816,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.9432074055683745,
+        "iou": 0.8925189394448302,
+        "prediction_pixels": 2039,
+        "reference_pixels": 1958,
+        "intersection_pixels": 1885,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.9414182939513314,
+        "iou": 0.8893203884032427,
+        "prediction_pixels": 1934,
+        "reference_pixels": 1958,
+        "intersection_pixels": 1832,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": null,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.87890625,
+          "pixels": 2314,
+          "hull_fraction": 1.138779527559055,
+          "inside_fraction": 0.8582541054451167,
+          "removed_iris_fraction": 0.9816079873883342,
+          "aspect": 0.9107142857142857,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": true
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        162,
+        140,
+        234,
+        214
+      ],
+      "box_native_xyxy": [
+        229,
+        177,
+        332,
+        272
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 1.0714661061481872,
+        "original_overlap": 0.9637414608512874
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 1.0162900683131897,
+        "original_overlap": 0.931161324224908
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.6015625,
+          "pixels": 5179,
+          "hull_fraction": 0.09458496940918637,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.05299336114211856,
+          "aspect": 0.6435643564356436,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.734375,
+          "pixels": 52997,
+          "hull_fraction": 0.9678933430736919,
+          "inside_fraction": 0.9859614695171425,
+          "removed_iris_fraction": 0.9593247556939467,
+          "aspect": 1.221276595744681,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "d64e11362f0627925b9cc3303549c184604f8efa69ca7a343e03fb83c9c87dc1"
+  },
+  {
+    "image": "C109_S2_I8_L.jpg",
+    "subject": 109,
+    "methods": {
+      "global": {
+        "dice": 0.9501187648563769,
+        "iou": 0.9049773756046987,
+        "prediction_pixels": 2341,
+        "reference_pixels": 2290,
+        "intersection_pixels": 2200,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.9090079817767369,
+        "iou": 0.8331939800028454,
+        "prediction_pixels": 2095,
+        "reference_pixels": 2290,
+        "intersection_pixels": 1993,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.9296131896153851,
+        "iou": 0.8684834123742167,
+        "prediction_pixels": 2441,
+        "reference_pixels": 2290,
+        "intersection_pixels": 2199,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.9232827832463687,
+        "iou": 0.8574979288079959,
+        "prediction_pixels": 2194,
+        "reference_pixels": 2290,
+        "intersection_pixels": 2070,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": 1,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.84375,
+          "pixels": 2691,
+          "hull_fraction": 1.0519937451133698,
+          "inside_fraction": 0.9390561129691565,
+          "removed_iris_fraction": 0.9910294745835113,
+          "aspect": 1.32,
+          "rejected": "implausible_area"
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.51171875,
+          "pixels": 426,
+          "hull_fraction": 0.16653635652853793,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.10508329773601026,
+          "aspect": 1.619047619047619,
+          "rejected": null
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        205,
+        129,
+        302,
+        208
+      ],
+      "box_native_xyxy": [
+        402,
+        226,
+        593,
+        366
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 1.0427167876975652,
+        "original_overlap": 0.973088423750534
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.9372063220845792,
+        "original_overlap": 0.905595899188381
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.69140625,
+          "pixels": 6058,
+          "hull_fraction": 0.13219281209767167,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.0973858356408692,
+          "aspect": 1.2195121951219512,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.6640625,
+          "pixels": 46892,
+          "hull_fraction": 1.0232395749230803,
+          "inside_fraction": 0.9457263499104325,
+          "removed_iris_fraction": 0.973858356408692,
+          "aspect": 1.3145539906103287,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "97a6a619da714e0b30d9886acfdebab75a7721b0ca716f12376e446e39261a03"
+  },
+  {
+    "image": "C105_S1_I6_R.jpg",
+    "subject": 105,
+    "methods": {
+      "global": {
+        "dice": 0.9745234277615316,
+        "iou": 0.9503127171819622,
+        "prediction_pixels": 2828,
+        "reference_pixels": 2785,
+        "intersection_pixels": 2735,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.9454410948871017,
+        "iou": 0.8965275342348202,
+        "prediction_pixels": 2622,
+        "reference_pixels": 2785,
+        "intersection_pixels": 2556,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.9341449917110967,
+        "iou": 0.876427829741631,
+        "prediction_pixels": 2636,
+        "reference_pixels": 2785,
+        "intersection_pixels": 2532,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.9201060204619261,
+        "iou": 0.8520336606409419,
+        "prediction_pixels": 2497,
+        "reference_pixels": 2785,
+        "intersection_pixels": 2430,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.69921875,
+          "pixels": 349,
+          "hull_fraction": 0.11563949635520213,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.07284299858557285,
+          "aspect": 1.1,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.7265625,
+          "pixels": 3025,
+          "hull_fraction": 1.0023194168323393,
+          "inside_fraction": 0.9699173553719008,
+          "removed_iris_fraction": 0.9777227722772277,
+          "aspect": 1.1964285714285714,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        162,
+        118,
+        264,
+        205
+      ],
+      "box_native_xyxy": [
+        228,
+        149,
+        373,
+        260
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 0.9321074964639321,
+        "original_overlap": 0.9091230551626591
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.882956152758133,
+        "original_overlap": 0.8688118811881188
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.70703125,
+          "pixels": 4129,
+          "hull_fraction": 0.09437498571461224,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.05381654257205085,
+          "aspect": 1.0410958904109588,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.74609375,
+          "pixels": 42581,
+          "hull_fraction": 0.9732577541084775,
+          "inside_fraction": 0.9904887156243395,
+          "removed_iris_fraction": 0.9702679430684293,
+          "aspect": 1.378787878787879,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "30ccb3c0d46577927524d8190b6c2dd474b3bf10e22e0755ab19f1eb0f2197d6"
+  },
+  {
+    "image": "C313_S1_I10_R.jpg",
+    "subject": 313,
+    "methods": {
+      "global": {
+        "dice": 0.9711691259997346,
+        "iou": 0.9439541041730123,
+        "prediction_pixels": 2208,
+        "reference_pixels": 2197,
+        "intersection_pixels": 2139,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.9561383151645072,
+        "iou": 0.9159626501040629,
+        "prediction_pixels": 2112,
+        "reference_pixels": 2197,
+        "intersection_pixels": 2060,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.9374851438227988,
+        "iou": 0.8823266219765877,
+        "prediction_pixels": 2010,
+        "reference_pixels": 2197,
+        "intersection_pixels": 1972,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.923114237224566,
+        "iou": 0.8572072072715283,
+        "prediction_pixels": 1926,
+        "reference_pixels": 2197,
+        "intersection_pixels": 1903,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.578125,
+          "pixels": 216,
+          "hull_fraction": 0.09121621621621621,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.043478260869565216,
+          "aspect": 1.1333333333333333,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.8359375,
+          "pixels": 2494,
+          "hull_fraction": 1.0532094594594594,
+          "inside_fraction": 0.9326383319967922,
+          "removed_iris_fraction": 0.9882246376811594,
+          "aspect": 1.5555555555555556,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        137,
+        130,
+        240,
+        205
+      ],
+      "box_native_xyxy": [
+        367,
+        312,
+        644,
+        493
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 0.9103260869565217,
+        "original_overlap": 0.8971920289855072
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.8722826086956522,
+        "original_overlap": 0.8673007246376812
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.65625,
+          "pixels": 3444,
+          "hull_fraction": 0.08731808731808732,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.04107415847010298,
+          "aspect": 1.1833333333333333,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.78125,
+          "pixels": 40466,
+          "hull_fraction": 1.0259621723036356,
+          "inside_fraction": 0.9452379775614096,
+          "removed_iris_fraction": 0.9727422192737027,
+          "aspect": 1.4656084656084656,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "e957cf416d4636b60a0c0a62f108ebadb393167801832aa93ea7cf1ff30384c4"
+  },
+  {
+    "image": "C55_S1_I5_R.jpg",
+    "subject": 55,
+    "methods": {
+      "global": {
+        "dice": 0.8951934349600952,
+        "iou": 0.8102716469396132,
+        "prediction_pixels": 2188,
+        "reference_pixels": 2077,
+        "intersection_pixels": 1909,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.8951934349600952,
+        "iou": 0.8102716469396132,
+        "prediction_pixels": 2188,
+        "reference_pixels": 2077,
+        "intersection_pixels": 1909,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.8672785909532923,
+        "iou": 0.765659220426781,
+        "prediction_pixels": 1954,
+        "reference_pixels": 2077,
+        "intersection_pixels": 1748,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.8611322671081157,
+        "iou": 0.75613018289963,
+        "prediction_pixels": 1862,
+        "reference_pixels": 2077,
+        "intersection_pixels": 1696,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": null,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.8515625,
+          "pixels": 2454,
+          "hull_fraction": 1.0140495867768595,
+          "inside_fraction": 0.9678076609616952,
+          "removed_iris_fraction": 0.9908592321755028,
+          "aspect": 1.488888888888889,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": true
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        168,
+        161,
+        266,
+        236
+      ],
+      "box_native_xyxy": [
+        113,
+        85,
+        180,
+        126
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 0.8930530164533821,
+        "original_overlap": 0.8395795246800731
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.8510054844606947,
+        "original_overlap": 0.8272394881170019
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.59375,
+          "pixels": 2852,
+          "hull_fraction": 0.07274767880828487,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.04981038093620875,
+          "aspect": 1.4509803921568627,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.578125,
+          "pixels": 35541,
+          "hull_fraction": 0.9065656565656566,
+          "inside_fraction": 0.9682620072592217,
+          "removed_iris_fraction": 0.8916058187581366,
+          "aspect": 1.5193370165745856,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "219dcd125952bbed40a0eaf142a3a4b7570a2411d5a963492b211140d6985ca1"
+  },
+  {
+    "image": "C241_S1_I14_R.jpg",
+    "subject": 241,
+    "methods": {
+      "global": {
+        "dice": 0.9363899215331702,
+        "iou": 0.8803883495610142,
+        "prediction_pixels": 2433,
+        "reference_pixels": 2409,
+        "intersection_pixels": 2267,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.9363899215331702,
+        "iou": 0.8803883495610142,
+        "prediction_pixels": 2433,
+        "reference_pixels": 2409,
+        "intersection_pixels": 2267,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.9208722741597358,
+        "iou": 0.8533487298485956,
+        "prediction_pixels": 2406,
+        "reference_pixels": 2409,
+        "intersection_pixels": 2217,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.9208722741597358,
+        "iou": 0.8533487298485956,
+        "prediction_pixels": 2406,
+        "reference_pixels": 2409,
+        "intersection_pixels": 2217,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": null,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.9296875,
+          "pixels": 2766,
+          "hull_fraction": 1.0911242603550295,
+          "inside_fraction": 0.8998553868402025,
+          "removed_iris_fraction": 0.9864364981504316,
+          "aspect": 1.469387755102041,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": true
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        124,
+        136,
+        230,
+        217
+      ],
+      "box_native_xyxy": [
+        408,
+        401,
+        758,
+        641
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 0.9889025893958077,
+        "original_overlap": 0.9301274147143445
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.9889025893958077,
+        "original_overlap": 0.9301274147143445
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": null,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.921875,
+          "pixels": 41449,
+          "hull_fraction": 1.0629584038570037,
+          "inside_fraction": 0.9051123066901493,
+          "removed_iris_fraction": 0.9677635457420012,
+          "aspect": 1.4607329842931938,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": true
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "54eb2405d640213a1a2a732f7f44b771e0b18c39c3eec387a3c5e851dea5d1f6"
+  },
+  {
+    "image": "C253_S1_I5_R.jpg",
+    "subject": 253,
+    "methods": {
+      "global": {
+        "dice": 0.973571428576148,
+        "iou": 0.9485038274361504,
+        "prediction_pixels": 2791,
+        "reference_pixels": 2809,
+        "intersection_pixels": 2726,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.9114356154159993,
+        "iou": 0.8372822300218529,
+        "prediction_pixels": 2464,
+        "reference_pixels": 2809,
+        "intersection_pixels": 2403,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.9483129935484004,
+        "iou": 0.9017064846751855,
+        "prediction_pixels": 2763,
+        "reference_pixels": 2809,
+        "intersection_pixels": 2642,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.9130763416641957,
+        "iou": 0.8400556328789792,
+        "prediction_pixels": 2483,
+        "reference_pixels": 2809,
+        "intersection_pixels": 2416,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": 1,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.68359375,
+          "pixels": 3258,
+          "hull_fraction": 1.060546875,
+          "inside_fraction": 0.9337016574585635,
+          "removed_iris_fraction": 0.9949838767466858,
+          "aspect": 1.3818181818181818,
+          "rejected": "implausible_area"
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.734375,
+          "pixels": 563,
+          "hull_fraction": 0.18326822916666666,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.11716230741669652,
+          "aspect": 1.619047619047619,
+          "rejected": null
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        121,
+        128,
+        231,
+        213
+      ],
+      "box_native_xyxy": [
+        183,
+        174,
+        351,
+        290
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 0.9899677534933715,
+        "original_overlap": 0.9512719455392332
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.889645288427087,
+        "original_overlap": 0.8735220351128627
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.8046875,
+          "pixels": 7497,
+          "hull_fraction": 0.1723606768438477,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.10297150714231151,
+          "aspect": 1.4938271604938271,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.6015625,
+          "pixels": 43673,
+          "hull_fraction": 1.0040693397093985,
+          "inside_fraction": 0.9667987085842511,
+          "removed_iris_fraction": 0.9760395182440863,
+          "aspect": 1.3823529411764706,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "afad5058798c3b888d7ebad9ac4904b994cc1fe536d2c807f3a1ce14a401ea60"
+  },
+  {
+    "image": "C441_S1_I13_R.jpg",
+    "subject": 441,
+    "methods": {
+      "global": {
+        "dice": 0.9527326440264526,
+        "iou": 0.9097320169570762,
+        "prediction_pixels": 2768,
+        "reference_pixels": 2648,
+        "intersection_pixels": 2580,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.9527326440264526,
+        "iou": 0.9097320169570762,
+        "prediction_pixels": 2768,
+        "reference_pixels": 2648,
+        "intersection_pixels": 2580,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.960449859426345,
+        "iou": 0.9239091237201914,
+        "prediction_pixels": 2687,
+        "reference_pixels": 2648,
+        "intersection_pixels": 2562,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.960449859426345,
+        "iou": 0.9239091237201914,
+        "prediction_pixels": 2687,
+        "reference_pixels": 2648,
+        "intersection_pixels": 2562,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": null,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.94921875,
+          "pixels": 3182,
+          "hull_fraction": 1.0567917635337096,
+          "inside_fraction": 0.9421747328724073,
+          "removed_iris_fraction": 0.9981936416184971,
+          "aspect": 1.4230769230769231,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": true
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        154,
+        145,
+        262,
+        229
+      ],
+      "box_native_xyxy": [
+        462,
+        390,
+        788,
+        617
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 0.9707369942196532,
+        "original_overlap": 0.9378612716763006
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.9707369942196532,
+        "original_overlap": 0.9378612716763006
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": null,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.9375,
+          "pixels": 45687,
+          "hull_fraction": 1.0635519240170404,
+          "inside_fraction": 0.9267187602600302,
+          "removed_iris_fraction": 0.9889828142055695,
+          "aspect": 1.4365482233502538,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": true
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "395ddd8e323823da0b65dad899d3fdcfe4aa701808915983f293a53c0cc30a1f"
+  },
+  {
+    "image": "C59_S1_I5_L.jpg",
+    "subject": 59,
+    "methods": {
+      "global": {
+        "dice": 0.9705882352998088,
+        "iou": 0.9428571428786251,
+        "prediction_pixels": 2575,
+        "reference_pixels": 2593,
+        "intersection_pixels": 2508,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.9705882352998088,
+        "iou": 0.9428571428786251,
+        "prediction_pixels": 2575,
+        "reference_pixels": 2593,
+        "intersection_pixels": 2508,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.954217806359981,
+        "iou": 0.9124441132964068,
+        "prediction_pixels": 2540,
+        "reference_pixels": 2593,
+        "intersection_pixels": 2449,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.9515873015969073,
+        "iou": 0.907645722972125,
+        "prediction_pixels": 2447,
+        "reference_pixels": 2593,
+        "intersection_pixels": 2398,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": null,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.8671875,
+          "pixels": 2876,
+          "hull_fraction": 1.0507855316039458,
+          "inside_fraction": 0.9485396383866481,
+          "removed_iris_fraction": 0.9988349514563106,
+          "aspect": 1.2884615384615385,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": true
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        153,
+        133,
+        250,
+        214
+      ],
+      "box_native_xyxy": [
+        253,
+        197,
+        415,
+        319
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 0.9864077669902913,
+        "original_overlap": 0.9677669902912621
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.9502912621359223,
+        "original_overlap": 0.9394174757281554
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.69140625,
+          "pixels": 3281,
+          "hull_fraction": 0.07219875011002552,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.03821284343705502,
+          "aspect": 1.293103448275862,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.7578125,
+          "pixels": 44679,
+          "hull_fraction": 0.9831660945339319,
+          "inside_fraction": 0.976140916314152,
+          "removed_iris_fraction": 0.9705175190830785,
+          "aspect": 1.4461538461538461,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "25445df5a568ee5a12a7e6f52eb2f5352b11a8116129b447adad57f2873c9244"
+  },
+  {
+    "image": "C39_S1_I11_L.jpg",
+    "subject": 39,
+    "methods": {
+      "global": {
+        "dice": 0.9658151765653991,
+        "iou": 0.9338903015132981,
+        "prediction_pixels": 2660,
+        "reference_pixels": 2664,
+        "intersection_pixels": 2571,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.9658151765653991,
+        "iou": 0.9338903015132981,
+        "prediction_pixels": 2660,
+        "reference_pixels": 2664,
+        "intersection_pixels": 2571,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.9498612396022459,
+        "iou": 0.9045102184973537,
+        "prediction_pixels": 2741,
+        "reference_pixels": 2664,
+        "intersection_pixels": 2567,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.9439093484525195,
+        "iou": 0.8937768240723258,
+        "prediction_pixels": 2631,
+        "reference_pixels": 2664,
+        "intersection_pixels": 2499,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": null,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.890625,
+          "pixels": 2974,
+          "hull_fraction": 1.0358760013932429,
+          "inside_fraction": 0.941156691324815,
+          "removed_iris_fraction": 0.9800751879699248,
+          "aspect": 1.0333333333333334,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": true
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        153,
+        146,
+        248,
+        232
+      ],
+      "box_native_xyxy": [
+        346,
+        296,
+        562,
+        472
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 1.030451127819549,
+        "original_overlap": 0.9718045112781954
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.9890977443609023,
+        "original_overlap": 0.9406015037593985
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.64453125,
+          "pixels": 4166,
+          "hull_fraction": 0.08559335963182117,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.039958786901402144,
+          "aspect": 1.0555555555555556,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.80859375,
+          "pixels": 46311,
+          "hull_fraction": 0.9514916173570019,
+          "inside_fraction": 0.9965450972771048,
+          "removed_iris_fraction": 0.9583389329391211,
+          "aspect": 1.2283105022831051,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "d7b6f4262e373b36d0084df8d52ca7812bc4778f4f42a96802b8d062ff456912"
+  },
+  {
+    "image": "C399_S1_I2_L.jpg",
+    "subject": 399,
+    "methods": {
+      "global": {
+        "dice": 0.9450148300376421,
+        "iou": 0.8957612457198264,
+        "prediction_pixels": 2088,
+        "reference_pixels": 2295,
+        "intersection_pixels": 2071,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.9092636579787972,
+        "iou": 0.8336236934522546,
+        "prediction_pixels": 1915,
+        "reference_pixels": 2295,
+        "intersection_pixels": 1914,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.9099415204889024,
+        "iou": 0.8347639485687709,
+        "prediction_pixels": 1980,
+        "reference_pixels": 2295,
+        "intersection_pixels": 1945,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.894610202142779,
+        "iou": 0.809316499865339,
+        "prediction_pixels": 1861,
+        "reference_pixels": 2295,
+        "intersection_pixels": 1859,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.58984375,
+          "pixels": 271,
+          "hull_fraction": 0.12240289069557363,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.0828544061302682,
+          "aspect": 1.4375,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.7890625,
+          "pixels": 2358,
+          "hull_fraction": 1.065040650406504,
+          "inside_fraction": 0.9376590330788804,
+          "removed_iris_fraction": 1.0,
+          "aspect": 1.5,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        178,
+        162,
+        272,
+        235
+      ],
+      "box_native_xyxy": [
+        270,
+        221,
+        414,
+        321
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 0.9482758620689655,
+        "original_overlap": 0.9147509578544061
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.8912835249042146,
+        "original_overlap": 0.8706896551724138
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.73828125,
+          "pixels": 4632,
+          "hull_fraction": 0.10739624391374913,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.059968259749720323,
+          "aspect": 1.4477611940298507,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.68359375,
+          "pixels": 43747,
+          "hull_fraction": 1.0143055877579412,
+          "inside_fraction": 0.9698950785196699,
+          "removed_iris_fraction": 0.9905819913104561,
+          "aspect": 1.4947368421052631,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "6e5607233e65cad405b3564adfec4d57b557c825f770f546a493c2f92a6138e9"
+  },
+  {
+    "image": "C315_S1_I4_R.jpg",
+    "subject": 315,
+    "methods": {
+      "global": {
+        "dice": 0.9601820250375013,
+        "iou": 0.9234135667731231,
+        "prediction_pixels": 2245,
+        "reference_pixels": 2150,
+        "intersection_pixels": 2110,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.9210212360007106,
+        "iou": 0.8536045997993789,
+        "prediction_pixels": 2041,
+        "reference_pixels": 2150,
+        "intersection_pixels": 1930,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.9306839186851469,
+        "iou": 0.8703543647924139,
+        "prediction_pixels": 2178,
+        "reference_pixels": 2150,
+        "intersection_pixels": 2014,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.905669481325532,
+        "iou": 0.8276014110107578,
+        "prediction_pixels": 1995,
+        "reference_pixels": 2150,
+        "intersection_pixels": 1877,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.69921875,
+          "pixels": 359,
+          "hull_fraction": 0.14671025745811198,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.09086859688195992,
+          "aspect": 1.05,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.74609375,
+          "pixels": 2550,
+          "hull_fraction": 1.0420923579893748,
+          "inside_fraction": 0.9403921568627451,
+          "removed_iris_fraction": 0.9857461024498887,
+          "aspect": 1.5555555555555556,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        128,
+        126,
+        229,
+        203
+      ],
+      "box_native_xyxy": [
+        190,
+        168,
+        341,
+        271
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 0.9701559020044543,
+        "original_overlap": 0.933630289532294
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.888641425389755,
+        "original_overlap": 0.867706013363029
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.7578125,
+          "pixels": 5533,
+          "hull_fraction": 0.133828366873065,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.081869931797433,
+          "aspect": 1.0493827160493827,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.71875,
+          "pixels": 40733,
+          "hull_fraction": 0.9852215557275542,
+          "inside_fraction": 0.98097365772224,
+          "removed_iris_fraction": 0.9772837119381343,
+          "aspect": 1.5243243243243243,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "5dcf161ff9c8b60dd02caee5f37153b84d47b6f7cfd6704d3c6a6062760f04e6"
+  },
+  {
+    "image": "C387_S1_I13_R.jpg",
+    "subject": 387,
+    "methods": {
+      "global": {
+        "dice": 0.9631365864131395,
+        "iou": 0.9288943691208819,
+        "prediction_pixels": 2317,
+        "reference_pixels": 2376,
+        "intersection_pixels": 2260,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.9631365864131395,
+        "iou": 0.9288943691208819,
+        "prediction_pixels": 2317,
+        "reference_pixels": 2376,
+        "intersection_pixels": 2260,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.9415384615513103,
+        "iou": 0.8895348837668045,
+        "prediction_pixels": 2174,
+        "reference_pixels": 2376,
+        "intersection_pixels": 2142,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.9244264507592383,
+        "iou": 0.859473023898171,
+        "prediction_pixels": 2070,
+        "reference_pixels": 2376,
+        "intersection_pixels": 2055,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": null,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.859375,
+          "pixels": 2593,
+          "hull_fraction": 1.0417838489353153,
+          "inside_fraction": 0.9479367527959892,
+          "removed_iris_fraction": 0.9896417781614156,
+          "aspect": 1.488888888888889,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": true
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        135,
+        127,
+        236,
+        203
+      ],
+      "box_native_xyxy": [
+        501,
+        422,
+        876,
+        676
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 0.9382822615451014,
+        "original_overlap": 0.9313767803193785
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.8933966335779024,
+        "original_overlap": 0.889943892965041
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.625,
+          "pixels": 4795,
+          "hull_fraction": 0.11459229519166428,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.04659355795719432,
+          "aspect": 1.1466666666666667,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.72265625,
+          "pixels": 42281,
+          "hull_fraction": 1.0104435522416595,
+          "inside_fraction": 0.9655400771031906,
+          "removed_iris_fraction": 0.9792328883237974,
+          "aspect": 1.380710659898477,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "8cd5eeb13163ea836cff1c37cc8d1769b3d0377608f420c5e6c4068bac99e4bb"
+  },
+  {
+    "image": "C69_S1_I8_L.jpg",
+    "subject": 69,
+    "methods": {
+      "global": {
+        "dice": 0.9299105855408392,
+        "iou": 0.8690026954884082,
+        "prediction_pixels": 1804,
+        "reference_pixels": 1663,
+        "intersection_pixels": 1612,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.9143199520927742,
+        "iou": 0.8421633554954948,
+        "prediction_pixels": 1675,
+        "reference_pixels": 1663,
+        "intersection_pixels": 1526,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.9330466830672461,
+        "iou": 0.8744962579882002,
+        "prediction_pixels": 1593,
+        "reference_pixels": 1663,
+        "intersection_pixels": 1519,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.9219589257750525,
+        "iou": 0.8552168816792398,
+        "prediction_pixels": 1502,
+        "reference_pixels": 1663,
+        "intersection_pixels": 1459,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.51953125,
+          "pixels": 224,
+          "hull_fraction": 0.11594202898550725,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.07150776053215077,
+          "aspect": 1.2666666666666666,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.80078125,
+          "pixels": 2002,
+          "hull_fraction": 1.036231884057971,
+          "inside_fraction": 0.9465534465534465,
+          "removed_iris_fraction": 0.9850332594235033,
+          "aspect": 1.2826086956521738,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        188,
+        159,
+        274,
+        228
+      ],
+      "box_native_xyxy": [
+        377,
+        286,
+        551,
+        412
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 0.8830376940133038,
+        "original_overlap": 0.8708425720620843
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.8325942350332595,
+        "original_overlap": 0.8309312638580931
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.75390625,
+          "pixels": 4185,
+          "hull_fraction": 0.10386419477328568,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.05754333166137212,
+          "aspect": 1.1176470588235294,
+          "rejected": null
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "fe358d171af1c17ca1f8a8b33f7f675fa6585b0bf8895c66e098147179966c7d"
+  },
+  {
+    "image": "C517_S1_I12_L.jpg",
+    "subject": 517,
+    "methods": {
+      "global": {
+        "dice": 1.3586956503278592e-09,
+        "iou": 1.3586956503278592e-09,
+        "prediction_pixels": 736,
+        "reference_pixels": 0,
+        "intersection_pixels": 0,
+        "empty_reference_false_positive": true
+      },
+      "global_pupil": {
+        "dice": 1.3586956503278592e-09,
+        "iou": 1.3586956503278592e-09,
+        "prediction_pixels": 736,
+        "reference_pixels": 0,
+        "intersection_pixels": 0,
+        "empty_reference_false_positive": true
+      },
+      "roi": {
+        "dice": 1.3386880838839517e-09,
+        "iou": 1.3386880838839517e-09,
+        "prediction_pixels": 747,
+        "reference_pixels": 0,
+        "intersection_pixels": 0,
+        "empty_reference_false_positive": true
+      },
+      "roi_pupil": {
+        "dice": 1.3386880838839517e-09,
+        "iou": 1.3386880838839517e-09,
+        "prediction_pixels": 747,
+        "reference_pixels": 0,
+        "intersection_pixels": 0,
+        "empty_reference_false_positive": true
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": null,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.68359375,
+          "pixels": 1394,
+          "hull_fraction": 1.7446808510638299,
+          "inside_fraction": 0.5652797704447633,
+          "removed_iris_fraction": 0.9932065217391305,
+          "aspect": 1.0638297872340425,
+          "rejected": "implausible_area"
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.53125,
+          "pixels": 882,
+          "hull_fraction": 1.1038798498122653,
+          "inside_fraction": 0.8684807256235828,
+          "removed_iris_fraction": 0.9891304347826086,
+          "aspect": 1.8076923076923077,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": true
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        260,
+        147,
+        322,
+        191
+      ],
+      "box_native_xyxy": [
+        610,
+        309,
+        757,
+        403
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 1.014945652173913,
+        "original_overlap": 0.9225543478260869
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 1.014945652173913,
+        "original_overlap": 0.9225543478260869
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": null,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.57421875,
+          "pixels": 2316,
+          "hull_fraction": 0.058705736229753364,
+          "inside_fraction": 0.6550086355785838,
+          "removed_iris_fraction": 0.016476274165202108,
+          "aspect": 2.026315789473684,
+          "rejected": "outside_iris_hull"
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.73046875,
+          "pixels": 40969,
+          "hull_fraction": 1.0384781120884135,
+          "inside_fraction": 0.9163269789352926,
+          "removed_iris_fraction": 0.9544980228471002,
+          "aspect": 1.7348066298342542,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": true
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "ad08a97a6f759f71f9a9b603d9d72218e1bdcc50e0ceed0316990d0ff8a23acc"
+  },
+  {
+    "image": "C505_S1_I7_R.jpg",
+    "subject": 505,
+    "methods": {
+      "global": {
+        "dice": 0.9717674970410991,
+        "iou": 0.9450853715066518,
+        "prediction_pixels": 2079,
+        "reference_pixels": 2136,
+        "intersection_pixels": 2048,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.927644710596895,
+        "iou": 0.8650535133247774,
+        "prediction_pixels": 1872,
+        "reference_pixels": 2136,
+        "intersection_pixels": 1859,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.9584130019219853,
+        "iou": 0.9201468563927735,
+        "prediction_pixels": 2048,
+        "reference_pixels": 2136,
+        "intersection_pixels": 2005,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.9269020388048478,
+        "iou": 0.863762743343947,
+        "prediction_pixels": 1886,
+        "reference_pixels": 2136,
+        "intersection_pixels": 1864,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": 1,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.59375,
+          "pixels": 2417,
+          "hull_fraction": 1.0638204225352113,
+          "inside_fraction": 0.9387670666115019,
+          "removed_iris_fraction": 0.9990379990379991,
+          "aspect": 1.4666666666666666,
+          "rejected": "implausible_area"
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.7578125,
+          "pixels": 366,
+          "hull_fraction": 0.16109154929577466,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.09956709956709957,
+          "aspect": 1.2,
+          "rejected": null
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        126,
+        132,
+        222,
+        206
+      ],
+      "box_native_xyxy": [
+        254,
+        239,
+        449,
+        374
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 0.9850889850889851,
+        "original_overlap": 0.9571909571909571
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.9071669071669072,
+        "original_overlap": 0.8932178932178932
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.7890625,
+          "pixels": 5953,
+          "hull_fraction": 0.14158976310531823,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.08024659244615545,
+          "aspect": 1.170731707317073,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.6640625,
+          "pixels": 42947,
+          "hull_fraction": 1.0214774997621539,
+          "inside_fraction": 0.9740144829673784,
+          "removed_iris_fraction": 0.9969045884923525,
+          "aspect": 1.450777202072539,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "27d6d441195b97880a786b102f74e40806d6283d7597ef87a8271f4039cf1f19"
+  },
+  {
+    "image": "C469_S1_I5_R.jpg",
+    "subject": 469,
+    "methods": {
+      "global": {
+        "dice": 0.9755289788453488,
+        "iou": 0.9522270115114128,
+        "prediction_pixels": 2711,
+        "reference_pixels": 2724,
+        "intersection_pixels": 2651,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.9755289788453488,
+        "iou": 0.9522270115114128,
+        "prediction_pixels": 2711,
+        "reference_pixels": 2724,
+        "intersection_pixels": 2651,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.9469555472642966,
+        "iou": 0.8992550550197748,
+        "prediction_pixels": 2630,
+        "reference_pixels": 2724,
+        "intersection_pixels": 2535,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.9291610673969742,
+        "iou": 0.8676945142102207,
+        "prediction_pixels": 2485,
+        "reference_pixels": 2724,
+        "intersection_pixels": 2420,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": null,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.87109375,
+          "pixels": 3043,
+          "hull_fraction": 1.041409993155373,
+          "inside_fraction": 0.9447913243509695,
+          "removed_iris_fraction": 0.9881962375507193,
+          "aspect": 1.3584905660377358,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": true
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        151,
+        120,
+        258,
+        207
+      ],
+      "box_native_xyxy": [
+        225,
+        160,
+        386,
+        278
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 0.9701217263002582,
+        "original_overlap": 0.9387679822943563
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.916635927701955,
+        "original_overlap": 0.899299151604574
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.65625,
+          "pixels": 4140,
+          "hull_fraction": 0.10119527755371416,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.054155567394778906,
+          "aspect": 1.8035714285714286,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.671875,
+          "pixels": 39165,
+          "hull_fraction": 0.9573219916403901,
+          "inside_fraction": 0.9838886761138772,
+          "removed_iris_fraction": 0.9587639850825785,
+          "aspect": 1.4731182795698925,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "1c81f7c17b2b2c82ccca89926ed73e37c88ae19f5d23d11b8c85aa6c4ebe40af"
+  },
+  {
+    "image": "C167_S1_I15_R.jpg",
+    "subject": 167,
+    "methods": {
+      "global": {
+        "dice": 0.9188118812149135,
+        "iou": 0.8498168499085368,
+        "prediction_pixels": 1516,
+        "reference_pixels": 1514,
+        "intersection_pixels": 1392,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.8492462312098901,
+        "iou": 0.7379912665389948,
+        "prediction_pixels": 1272,
+        "reference_pixels": 1514,
+        "intersection_pixels": 1183,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.8925233645218547,
+        "iou": 0.8059071731127745,
+        "prediction_pixels": 1482,
+        "reference_pixels": 1514,
+        "intersection_pixels": 1337,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.8715400994068346,
+        "iou": 0.7723270441683477,
+        "prediction_pixels": 1304,
+        "reference_pixels": 1514,
+        "intersection_pixels": 1228,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.56640625,
+          "pixels": 343,
+          "hull_fraction": 0.20662650602409638,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.16094986807387862,
+          "aspect": 0.9565217391304348,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.74609375,
+          "pixels": 1703,
+          "hull_fraction": 1.0259036144578313,
+          "inside_fraction": 0.9336465061655901,
+          "removed_iris_fraction": 0.9683377308707124,
+          "aspect": 1.1162790697674418,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        191,
+        146,
+        263,
+        212
+      ],
+      "box_native_xyxy": [
+        581,
+        398,
+        801,
+        579
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 0.9775725593667546,
+        "original_overlap": 0.912269129287599
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.8601583113456465,
+        "original_overlap": 0.8278364116094987
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.61328125,
+          "pixels": 7100,
+          "hull_fraction": 0.15146020436461377,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.11943946948061378,
+          "aspect": 1.098901098901099,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.51953125,
+          "pixels": 38345,
+          "hull_fraction": 0.8179917656846641,
+          "inside_fraction": 0.9959316729690963,
+          "removed_iris_fraction": 0.8438210949223099,
+          "aspect": 1.3958333333333333,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "cached_global_prediction_disagreement_fraction": 0.0,
+    "saved_masks_sha256": "2863a55691e573a2e51bd6f4229771434c2b2c769573a330ebdf7b141745740d"
+  },
+  {
+    "image": "C223_S1_I10_R.jpg",
+    "subject": 223,
+    "methods": {
+      "global": {
+        "dice": 0.9644684479868578,
+        "iou": 0.9313752402054968,
+        "prediction_pixels": 3539,
+        "reference_pixels": 3497,
+        "intersection_pixels": 3393,
+        "empty_reference_false_positive": false
+      },
+      "global_pupil": {
+        "dice": 0.9644684479868578,
+        "iou": 0.9313752402054968,
+        "prediction_pixels": 3539,
+        "reference_pixels": 3497,
+        "intersection_pixels": 3393,
+        "empty_reference_false_positive": false
+      },
+      "roi": {
+        "dice": 0.9488093540640511,
+        "iou": 0.9026044492939217,
+        "prediction_pixels": 3516,
+        "reference_pixels": 3497,
+        "intersection_pixels": 3327,
+        "empty_reference_false_positive": false
+      },
+      "roi_pupil": {
+        "dice": 0.9433411215036009,
+        "iou": 0.892758430101504,
+        "prediction_pixels": 3351,
+        "reference_pixels": 3497,
+        "intersection_pixels": 3230,
+        "empty_reference_false_positive": false
+      }
+    },
+    "global_pupil_selection": {
+      "chosen_index": null,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.91015625,
+          "pixels": 4201,
+          "hull_fraction": 1.103203781512605,
+          "inside_fraction": 0.8945489169245417,
+          "removed_iris_fraction": 0.9895450692285956,
+          "aspect": 1.1515151515151516,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": true
+    },
+    "roi": {
+      "box_cached_xyxy": [
+        124,
+        125,
+        237,
+        222
+      ],
+      "box_native_xyxy": [
+        248,
+        224,
+        476,
+        399
+      ],
+      "roi": {
+        "accepted": true,
+        "area_ratio": 0.9935009889799379,
+        "original_overlap": 0.9641141565413959
+      },
+      "roi_pupil": {
+        "accepted": true,
+        "area_ratio": 0.9468776490534049,
+        "original_overlap": 0.9324667985306584
+      }
+    },
+    "roi_pupil_selection": {
+      "chosen_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "predicted_score_not_measured_iou": 0.65234375,
+          "pixels": 4153,
+          "hull_fraction": 0.08991318279243976,
+          "inside_fraction": 1.0,
+          "removed_iris_fraction": 0.045440711693784386,
+          "aspect": 1.1791044776119404,
+          "rejected": null
+        },
+        {
+          "index": 1,
+          "predicted_score_not_measured_iou": 0.81640625,
+          "pixels": 48510,
+          "hull_fraction": 1.0502500595379853,
+          "inside_fraction": 0.9163677592249021,
+          "removed_iris_fraction": 0.9666861758164579,
+          "aspect": 1.2072072072072073,
+          "rejected": "implausible_area"
+        }
+      ],
+      "fallback_unchanged": false
+    },
+    "cached_global_prediction_disagreement_fraction": 7.512019230769231e-06,
+    "saved_masks_sha256": "4bd6e9403443806b5a43169b0b613abe10cdfa517f83eac2dd09b1a4411c5a34"
+  }
+]

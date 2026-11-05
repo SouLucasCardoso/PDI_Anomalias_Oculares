@@ -1,0 +1,38 @@
+﻿{
+    "checked_utc":  "2026-11-03T23:01:53.2859879Z",
+    "tasks":  [
+                  {
+                      "task_name":  "PFC_SAM3_Iris_Adaptacao_20261103",
+                      "state":  "Running",
+                      "last_result":  267009,
+                      "next_run":  null
+                  },
+                  {
+                      "task_name":  "PFC_SAM3_Prontidao_Anomalias_20261103",
+                      "state":  "Running",
+                      "last_result":  267009,
+                      "next_run":  null
+                  },
+                  {
+                      "task_name":  "PFC_SAM3_Analise_Area_20261103",
+                      "state":  "Running",
+                      "last_result":  267009,
+                      "next_run":  null
+                  },
+                  {
+                      "task_name":  "PFC_SAM3_Sensibilidade_Area_20261103",
+                      "state":  "Ready",
+                      "last_result":  0,
+                      "next_run":  "11/03/2026 20:06:36"
+                  }
+              ],
+    "progress":  {
+                     "stage":  "sam3_cache",
+                     "completed":  4925,
+                     "total":  22040,
+                     "utc":  "2026-11-03T23:01:38.705283+00:00"
+                 },
+    "free_disk_bytes":  292266422272,
+    "gpu_status_csv":  "NVIDIA GeForce RTX 3050 6GB Laptop GPU, 2515, 6144, 0",
+    "clinical_reviews_block_area":  false
+}

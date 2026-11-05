@@ -1,0 +1,45 @@
+{
+  "registered_utc": "2026-10-28T02:08:08.200505+00:00",
+  "configuration": {
+    "output_dir": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-segmentacao-area-20261027\\training",
+    "mirror_dir": "outputs\\segmentacao_area_2026-10-27\\treino",
+    "baseline_dir": "outputs\\segmentacao_diversa_2026-10-27",
+    "epochs": 30,
+    "batch_size": 16,
+    "save_every": 25,
+    "patience": 8,
+    "learning_rate": 0.0001,
+    "width": 416,
+    "height": 320,
+    "seed": 127,
+    "limit": null
+  },
+  "provenance": {
+    "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+    "initial_checkpoint_sha256": "2bcfc269ffc9562ca8cf0956998faf1e22641587cd60f7059b3cec3dd0f4093d",
+    "script_sha256": "ec5be7ede0d6a0c33808586eea4fd80d7fb697e8e5c72fb83254a062c4a5177e",
+    "preprocessing_sha256": "3d7c937e0e10d0c3f785070ac5386dfe953b7c86b96572a5791149dfd7156065"
+  },
+  "scope": "Train/validation only. Test images and recognition scores never choose checkpoint.",
+  "selection": "Same minimum Dice over4 validation conditions; clean guard baseline-0.01; epoch0 included; patience8",
+  "augmentation": "Same geometry/photometry as diverse v1; deterministic seed per image and epoch for resume",
+  "baseline_reused_from": "outputs\\segmentacao_diversa_2026-10-27",
+  "counts": {
+    "train": {
+      "images": 7716,
+      "people": 183
+    },
+    "val": {
+      "images": 1652,
+      "people": 39
+    },
+    "test": {
+      "images": 1650,
+      "people": 39
+    }
+  },
+  "checkpoint_policy": "Save before training, every25batches and after epoch; model+AdamW+scheduler+order progress. Mirror latest recovery at50batches and immutable selected candidates.",
+  "interrupted_v1_note": "Previous process absent; only epoch0 survived. Partial epoch1 updates unavailable, not counted as completed training.",
+  "clinical_masks_available": false,
+  "recognition_gain_measured": false
+}

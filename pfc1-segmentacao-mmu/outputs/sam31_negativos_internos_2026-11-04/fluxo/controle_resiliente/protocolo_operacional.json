@@ -1,0 +1,59 @@
+{
+  "registered_utc": "2026-11-05T01:54:52.781448+00:00",
+  "binding": {
+    "controller_sha256": "1dc8f0bb081132ef2f28703d8ecc8eb50be03d9134dd5ada9aacdbe672cf617c",
+    "training_protocol_sha256": "408253a180cedd31d2e742d730217b2a67c4e35edd80f9e45410399a3b04f60e",
+    "flow_protocol_sha256": "55ee3e613ceec7e0e0ec90e1846290ad313e677443f93064c50a8b8aac586840",
+    "protected_sources_unchanged": {
+      "treinar_sam3_negativos_internos.py": "d76676d3b51734b4ca3c984e464be6df74964b0a191114071f7c74aa1be9cff6",
+      "perda_negativos_internos.py": "2bd0e227efbc64b88235312a9eb0480e910295643e560001be7a6e418a2d6c73",
+      "executar_sam3_negativos_internos.py": "6e90e7d328df5e655592b8ad4b41a02fa5850f618b9cb6654f73b2c6f179d018",
+      "analisar_sam3_negativos_internos.py": "ba2aebe6404072fc5fc7ce03061613bbbfb89ba6e263297bca1179ca25732be7",
+      "treinar_sam3_iris_adaptado.py": "8416afc55c96d5dab3e389cc2dfba37667b8720b12fc753637e62aaec6be8f2c",
+      "segmentador_sam3_iris.py": "e4091a076cd214d4a9dcb78452c8ec37bd65e4f201fbdc1f0dc46147eaaff596",
+      "treinar_segmentacao_diversa.py": "3d7c937e0e10d0c3f785070ac5386dfe953b7c86b96572a5791149dfd7156065",
+      "treinar_segmentacao_ubipr.py": "a427b82c9879a2320a5d6544c89f96806ab74b12566cd3237650c62c54123431",
+      "avaliar_sam31_diverso.py": "923de89594b41c0f3b68403c2b2177d8bf5ce544a4c690521634eba87f46640c",
+      "acompanhar_prontidao_anomalias.py": "ab1d9f3cafc02481d2c19e91e16cbc84cb7308b7cf43fe89ad05766bc6d4db0b",
+      "avaliar_identidade_sam3_adaptado.py": "aa9e470b2f31f2a9939cf91eda335609997f1306b1f29a89b4c34f989a3c45fe",
+      "avaliar_clinica_sam3_adaptado.py": "cd90f0a55cae55f9ecd4c6b55ae107e283e0ec9dd79f882c7d856b84be8d14da",
+      "avaliar_prontidao_anomalias.py": "48589082b3708c83940ccf22b3a1a4f6a6b75acc09039e946bd5500a0fb8d16c",
+      "criterios_prontidao_anomalias.json": "1eff22b2b887af6be655cec93ab091fbede2384d1115b265451b632705f4dc46",
+      "avaliar_candidato_congelado.py": "6390747960dd339f39782cc2895999e6929d7a9e97111e70c143b6f4193db278",
+      "analisar_rodada_segmentacao_area.py": "7e2f7200d75cca37e6365609efa731cd06454628c90115c06f6ab208f06493d4",
+      "analisar_sam3_area.py": "687455ffda9da98d63f6db5a316ae221ba18c0f78101296d72f9559f79bf5254",
+      "analisar_sensibilidade_referencia_area.py": "b4309101a56786072ee1ed779124a40a300a71041363de1ddba8e119d409f468"
+    },
+    "training_command": [
+      "C:\\Users\\lucaz\\pfc-sam3-20261103\\Scripts\\python.exe",
+      "-u",
+      "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\treinar_sam3_negativos_internos.py",
+      "--run",
+      "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-s3-inner-20261104",
+      "--cache",
+      "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103",
+      "--mirror",
+      "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\sam31_negativos_internos_2026-11-04",
+      "--epochs",
+      "12",
+      "--batch-size",
+      "16",
+      "--seed",
+      "20261104"
+    ],
+    "identity_command": [
+      "C:\\Users\\lucaz\\pfc-sam3-20261103\\Scripts\\python.exe",
+      "-u",
+      "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\executar_sam3_negativos_internos.py",
+      "--identity-worker"
+    ],
+    "report_command": [
+      "C:\\Users\\lucaz\\pfc-sam3-20261103\\Scripts\\python.exe",
+      "-u",
+      "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\analisar_sam3_negativos_internos.py"
+    ]
+  },
+  "reason": "The previous supervisor terminated training when atomic replacement of its Markdown report raised WinError5. Reporting is now an independent child process; failures are recorded without terminating training or identity.",
+  "scope": "External process/task orchestration only. Same scientific workers, CLI arguments, environment, cache, initialization, optimizer, checkpoint selection, recognition threshold and gates. No changes to registered sources or scientific protocols.",
+  "adoption": "Task action may be updated while the existing instance runs; do not interrupt a healthy active training process."
+}

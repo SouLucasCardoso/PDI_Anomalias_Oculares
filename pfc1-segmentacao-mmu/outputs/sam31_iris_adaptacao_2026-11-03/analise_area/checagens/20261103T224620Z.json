@@ -1,0 +1,50 @@
+{
+  "verified_utc": "2026-11-03T22:46:20.735363+00:00",
+  "progress": {
+    "stage": "sam3_cache",
+    "completed": 3525,
+    "total": 22040,
+    "utc": "2026-11-03T22:46:08.584548+00:00"
+  },
+  "cache_entries_observed": 3542,
+  "all_three_processes_running": true,
+  "process_ids": {
+    "training": 20096,
+    "evaluation": 26036,
+    "observer": 20092
+  },
+  "source_hash_checks": {
+    "training": {
+      "treinar_sam3_iris_adaptado.py": true,
+      "segmentador_sam3_iris.py": true,
+      "treinar_segmentacao_diversa.py": true,
+      "treinar_segmentacao_ubipr.py": true,
+      "avaliar_sam31_diverso.py": true
+    },
+    "evaluation": {
+      "acompanhar_prontidao_anomalias.py": true,
+      "avaliar_identidade_sam3_adaptado.py": true,
+      "avaliar_clinica_sam3_adaptado.py": true,
+      "avaliar_prontidao_anomalias.py": true,
+      "criterios_prontidao_anomalias.json": true,
+      "segmentador_sam3_iris.py": true,
+      "avaliar_candidato_congelado.py": true,
+      "analisar_rodada_segmentacao_area.py": true
+    },
+    "observer": {
+      "analisar_sam3_area.py": true,
+      "acompanhar_analise_sam3_area.py": true,
+      "analisar_rodada_segmentacao_area.py": true,
+      "avaliar_prontidao_anomalias.py": true
+    }
+  },
+  "cache_sample_keys_verified": [
+    "train/bank0/C103_S1_I10_L",
+    "train/bank1/C157_S1_I2_R",
+    "train/bank1/C209_S1_I10_L"
+  ],
+  "clinical_reviews_block_area": false,
+  "new_training_final_checkpoint_available": false,
+  "no_new_minimum_area_yet": true,
+  "no_training_or_protocol_changes": true
+}

@@ -8,6 +8,8 @@
 
 # Ambientes e caches
 /.runtime/
+**/.runtime/
+**/tmp/
 **/.venv/
 **/.vscode/
 **/__pycache__/
@@ -16,6 +18,38 @@
 # Pesos e arquivos com caminhos locais
 *.pt
 *.pt.part
+*.pth
+*.onnx
+*.safetensors
+*.npy
+*.sqlite3
+*.sqlite3-*
+*.db
+**/dados_app_celular/
+**/outputs/**/*.log
+**/outputs/**/*.part
+**/outputs/**/*EXECUCAO_ATIVA*.json
+**/outputs/**/AGENDAMENTO.json
+**/outputs/**/TAREFAS_ATIVAS.json
+**/outputs/**/servidor.json
+**/outputs/**/*.xml
+**/outputs/tecnologias_atuais_*/sam_pyproject.toml
+# Validacoes por imagem ficam locais; resultados agregados e historicos sao publicados.
+**/outputs/**/validacao_epoca_*.json
+# Copias integrais de artigos/normas consultados: referencias e sinteses publicaveis.
+**/artigo/revisao_bibliografica_*/fontes_publicas/
+**/artigo/*.docx
+**/artigo/figuras/recortes_clinicos.png
+**/outputs/revisao_clinica_*/
+# Consultas bibliograficas brutas ficam locais; matriz, BibTeX e sinteses sao publicadas.
+**/artigo/revisao_bibliografica_*/crossref_verificado.json
+**/artigo/revisao_bibliografica_*/metadados_doi.json
+# Novas fotografias biometricas, mascaras e montagens permanecem locais.
+# As imagens ja rastreadas no historico nao sao removidas por esta regra.
+**/outputs/**/*.png
+**/outputs/**/*.jpg
+**/outputs/**/*.jpeg
+**/outputs/**/*.webp
 **/outputs/**/melhor_forma.json
 # Arrays derivados e caches numericos; os relatorios CSV/JSON permanecem revisaveis.
 **/outputs/**/*.npz

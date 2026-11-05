@@ -1,0 +1,57 @@
+[
+  {
+    "name": "sam3_main",
+    "latest_commit": "f1647e8d0c1d280991f4d1b7d974c2704537fe66",
+    "commit_date": "2026-10-23T19:49:10Z",
+    "source": "https://api.github.com/repos/facebookresearch/sam3/commits/main"
+  },
+  {
+    "name": "torch",
+    "installed": "2.14.1+cu126",
+    "latest_pypi": "2.15.0",
+    "requires_python": ">=3.11",
+    "source": "https://pypi.org/pypi/torch/json"
+  },
+  {
+    "name": "torchvision",
+    "installed": "0.29.1+cu126",
+    "latest_pypi": "0.29.2",
+    "requires_python": "!=3.14.1,>=3.10",
+    "source": "https://pypi.org/pypi/torchvision/json"
+  },
+  {
+    "name": "transformers",
+    "installed": "5.20.2",
+    "latest_pypi": "5.22.1",
+    "requires_python": ">=3.11.0",
+    "source": "https://pypi.org/pypi/transformers/json"
+  },
+  {
+    "name": "huggingface-hub",
+    "installed": "2.2.0",
+    "latest_pypi": "2.4.0",
+    "requires_python": ">=3.10.0",
+    "source": "https://pypi.org/pypi/huggingface-hub/json"
+  },
+  {
+    "name": "numpy",
+    "installed": "1.26.4",
+    "latest_pypi": "2.5.4",
+    "requires_python": ">=3.12",
+    "source": "https://pypi.org/pypi/numpy/json"
+  },
+  {
+    "name": "pillow",
+    "installed": "12.3.0",
+    "latest_pypi": "13.0.0",
+    "requires_python": ">=3.11",
+    "source": "https://pypi.org/pypi/pillow/json"
+  },
+  {
+    "name": "opencv-python-headless",
+    "installed": "4.11.0.86",
+    "latest_pypi": "5.0.0.93",
+    "requires_python": ">=3.6",
+    "source": "https://pypi.org/pypi/opencv-python-headless/json"
+  }
+]

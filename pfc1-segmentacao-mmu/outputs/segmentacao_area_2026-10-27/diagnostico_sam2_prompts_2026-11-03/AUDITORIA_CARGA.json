@@ -1,0 +1,19 @@
+{
+  "model_image_tensors": 309,
+  "checkpoint_tensors": 469,
+  "missing_image_tensors": [],
+  "different_image_tensors": [],
+  "all_image_tensors_exact": true,
+  "unused_tensor_prefix_counts": {
+    "mask_downsample": 2,
+    "memory_attention": 106,
+    "memory_encoder": 40,
+    "memory_temporal_positional_encoding": 1,
+    "no_memory_positional_encoding": 1,
+    "no_object_pointer": 1,
+    "object_pointer_proj": 6,
+    "occlusion_spatial_embedding_parameter": 1,
+    "temporal_positional_encoding_projection_layer": 2
+  },
+  "config_warning": "Checkpoint declares sam2_video; image-only Sam2Model used. Every image state tensor compared exactly to checkpoint after load; unused video tensors reported separately. No tracking evaluated."
+}

@@ -1,0 +1,7 @@
+# Ambiente separado. Revisao oficial mais recente verificada em 03/11/2026.
+sam3 @ https://github.com/facebookresearch/sam3/archive/f1647e8d0c1d280991f4d1b7d974c2704537fe66.zip
+transformers==5.22.1
+huggingface-hub==2.4.0
+pillow==13.0.0
+# Restricao publicada pelo proprio SAM3.
+numpy==1.26.4

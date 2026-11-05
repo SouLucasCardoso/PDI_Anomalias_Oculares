@@ -1,0 +1,389 @@
+{
+  "status": "completed",
+  "qualitative_only": true,
+  "images": 4,
+  "prompt_cases": [
+    {
+      "image": "P0005_OD20241206.JPG",
+      "support": "original",
+      "prompt": {
+        "box": [
+          447,
+          366,
+          591,
+          526
+        ],
+        "points": [
+          [
+            514,
+            400
+          ],
+          [
+            530,
+            406
+          ],
+          [
+            484,
+            491
+          ],
+          [
+            542,
+            474
+          ],
+          [
+            445,
+            364
+          ],
+          [
+            593,
+            528
+          ]
+        ],
+        "labels": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      "prompt_failed": false,
+      "predicted_iou_score_not_measured_iou": 0.9310699701309204,
+      "support_pixels": 12880,
+      "predicted_pixels": 21181
+    },
+    {
+      "image": "P0005_OD20241206.JPG",
+      "support": "diverse",
+      "prompt": {
+        "box": [
+          188,
+          259,
+          812,
+          744
+        ],
+        "points": [
+          [
+            284,
+            501
+          ],
+          [
+            726,
+            501
+          ],
+          [
+            323,
+            558
+          ],
+          [
+            718,
+            510
+          ],
+          [
+            186,
+            257
+          ],
+          [
+            814,
+            746
+          ]
+        ],
+        "labels": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      "prompt_failed": false,
+      "predicted_iou_score_not_measured_iou": 0.9372710585594177,
+      "support_pixels": 136536,
+      "predicted_pixels": 212114
+    },
+    {
+      "image": "P0007_OS20250306.JPG",
+      "support": "original",
+      "prompt": {
+        "box": [
+          538,
+          163,
+          908,
+          406
+        ],
+        "points": [
+          [
+            588,
+            236
+          ],
+          [
+            588,
+            285
+          ],
+          [
+            879,
+            377
+          ],
+          [
+            536,
+            161
+          ],
+          [
+            910,
+            408
+          ]
+        ],
+        "labels": [
+          1,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      "prompt_failed": false,
+      "predicted_iou_score_not_measured_iou": 0.8874354958534241,
+      "support_pixels": 15540,
+      "predicted_pixels": 33277
+    },
+    {
+      "image": "P0007_OS20250306.JPG",
+      "support": "diverse",
+      "prompt": {
+        "box": [
+          341,
+          87,
+          964,
+          454
+        ],
+        "points": [
+          [
+            423,
+            270
+          ],
+          [
+            872,
+            266
+          ],
+          [
+            478,
+            347
+          ],
+          [
+            847,
+            313
+          ],
+          [
+            339,
+            85
+          ],
+          [
+            966,
+            456
+          ]
+        ],
+        "labels": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      "prompt_failed": false,
+      "predicted_iou_score_not_measured_iou": 0.9371317028999329,
+      "support_pixels": 109085,
+      "predicted_pixels": 169365
+    },
+    {
+      "image": "P0114_OS20250417.JPG",
+      "support": "original",
+      "prompt": {
+        "box": [
+          530,
+          386,
+          845,
+          530
+        ],
+        "points": [
+          [
+            567,
+            415
+          ],
+          [
+            814,
+            514
+          ],
+          [
+            528,
+            384
+          ],
+          [
+            847,
+            532
+          ]
+        ],
+        "labels": [
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      "prompt_failed": false,
+      "predicted_iou_score_not_measured_iou": 0.8713734745979309,
+      "support_pixels": 1096,
+      "predicted_pixels": 39808
+    },
+    {
+      "image": "P0114_OS20250417.JPG",
+      "support": "diverse",
+      "prompt": {
+        "box": [
+          321,
+          225,
+          869,
+          691
+        ],
+        "points": [
+          [
+            595,
+            445
+          ],
+          [
+            607,
+            454
+          ],
+          [
+            595,
+            459
+          ],
+          [
+            605,
+            459
+          ],
+          [
+            319,
+            223
+          ],
+          [
+            871,
+            693
+          ]
+        ],
+        "labels": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      "prompt_failed": false,
+      "predicted_iou_score_not_measured_iou": 0.8765507340431213,
+      "support_pixels": 75842,
+      "predicted_pixels": 199364
+    },
+    {
+      "image": "P0803_OD20250112.JPG",
+      "support": "original",
+      "prompt": {
+        "box": [
+          177,
+          336,
+          329,
+          423
+        ],
+        "points": [
+          [
+            220,
+            379
+          ],
+          [
+            296,
+            379
+          ],
+          [
+            229,
+            393
+          ],
+          [
+            282,
+            393
+          ],
+          [
+            175,
+            334
+          ],
+          [
+            331,
+            425
+          ]
+        ],
+        "labels": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      "prompt_failed": false,
+      "predicted_iou_score_not_measured_iou": 0.9091071486473083,
+      "support_pixels": 5111,
+      "predicted_pixels": 12762
+    },
+    {
+      "image": "P0803_OD20250112.JPG",
+      "support": "diverse",
+      "prompt": {
+        "box": [
+          37,
+          85,
+          1199,
+          799
+        ],
+        "points": [
+          [
+            170,
+            355
+          ],
+          [
+            1065,
+            749
+          ],
+          [
+            35,
+            83
+          ],
+          [
+            1199,
+            799
+          ]
+        ],
+        "labels": [
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      "prompt_failed": false,
+      "predicted_iou_score_not_measured_iou": 0.7026901841163635,
+      "support_pixels": 37614,
+      "predicted_pixels": 684091
+    }
+  ],
+  "cuda_used": false,
+  "reference_masks_available": false,
+  "recognition_measured": false,
+  "production_replaced": false,
+  "masks_sha256": "ecdce791a7ef61a7c71f1442dcd534965d344783d43aa3a47c7b28e5101f9314",
+  "figure_sha256": "3a85deb1624ab41689fe4636cc9974888574cb3452c089d470273a98b62f7667",
+  "seconds_excluding_model_load": 23.95299999997951
+}

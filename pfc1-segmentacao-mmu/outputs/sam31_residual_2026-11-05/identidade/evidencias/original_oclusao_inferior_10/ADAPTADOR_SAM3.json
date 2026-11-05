@@ -1,0 +1,19 @@
+{
+  "scope": "New preparation adapter; original frozen identity score/calibration functions unchanged. Both controls rerun in same updated runtime.",
+  "sources": {
+    "avaliar_identidade_sam3_adaptado.py": "aa9e470b2f31f2a9939cf91eda335609997f1306b1f29a89b4c34f989a3c45fe",
+    "segmentador_sam3_iris.py": "e4091a076cd214d4a9dcb78452c8ec37bd65e4f201fbdc1f0dc46147eaaff596",
+    "avaliar_candidato_congelado.py": "6390747960dd339f39782cc2895999e6929d7a9e97111e70c143b6f4193db278"
+  },
+  "sam_revision": "f1647e8d0c1d280991f4d1b7d974c2704537fe66",
+  "candidate_sha256": null,
+  "versions": {
+    "torch": "2.14.1+cu130",
+    "torchvision": "0.29.1+cu130",
+    "numpy": "1.26.4",
+    "pillow": "13.0.0",
+    "sam3": "0.1.0"
+  },
+  "test_inference": false,
+  "reference_masks_used_only_for_intervention": true
+}

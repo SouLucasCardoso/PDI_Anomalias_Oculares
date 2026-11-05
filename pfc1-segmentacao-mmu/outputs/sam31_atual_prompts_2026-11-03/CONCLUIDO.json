@@ -1,0 +1,238 @@
+{
+  "status": "completed",
+  "sam_family": "SAM3.1",
+  "sam_code_revision": "f1647e8d0c1d280991f4d1b7d974c2704537fe66",
+  "strict_load": {
+    "strict": true,
+    "missing": [],
+    "unexpected": [],
+    "semantic_tensors": 1130,
+    "excluded_video_branch_tensors": [
+      "backbone.vision_backbone.interactive_convs.0.conv_1x1.bias",
+      "backbone.vision_backbone.interactive_convs.0.conv_1x1.weight",
+      "backbone.vision_backbone.interactive_convs.0.conv_3x3.bias",
+      "backbone.vision_backbone.interactive_convs.0.conv_3x3.weight",
+      "backbone.vision_backbone.interactive_convs.0.dconv_2x2_0.bias",
+      "backbone.vision_backbone.interactive_convs.0.dconv_2x2_0.weight",
+      "backbone.vision_backbone.interactive_convs.0.dconv_2x2_1.bias",
+      "backbone.vision_backbone.interactive_convs.0.dconv_2x2_1.weight",
+      "backbone.vision_backbone.interactive_convs.1.conv_1x1.bias",
+      "backbone.vision_backbone.interactive_convs.1.conv_1x1.weight",
+      "backbone.vision_backbone.interactive_convs.1.conv_3x3.bias",
+      "backbone.vision_backbone.interactive_convs.1.conv_3x3.weight",
+      "backbone.vision_backbone.interactive_convs.1.dconv_2x2.bias",
+      "backbone.vision_backbone.interactive_convs.1.dconv_2x2.weight",
+      "backbone.vision_backbone.interactive_convs.2.conv_1x1.bias",
+      "backbone.vision_backbone.interactive_convs.2.conv_1x1.weight",
+      "backbone.vision_backbone.interactive_convs.2.conv_3x3.bias",
+      "backbone.vision_backbone.interactive_convs.2.conv_3x3.weight",
+      "backbone.vision_backbone.propagation_convs.0.conv_1x1.bias",
+      "backbone.vision_backbone.propagation_convs.0.conv_1x1.weight",
+      "backbone.vision_backbone.propagation_convs.0.conv_3x3.bias",
+      "backbone.vision_backbone.propagation_convs.0.conv_3x3.weight",
+      "backbone.vision_backbone.propagation_convs.0.dconv_2x2_0.bias",
+      "backbone.vision_backbone.propagation_convs.0.dconv_2x2_0.weight",
+      "backbone.vision_backbone.propagation_convs.0.dconv_2x2_1.bias",
+      "backbone.vision_backbone.propagation_convs.0.dconv_2x2_1.weight",
+      "backbone.vision_backbone.propagation_convs.1.conv_1x1.bias",
+      "backbone.vision_backbone.propagation_convs.1.conv_1x1.weight",
+      "backbone.vision_backbone.propagation_convs.1.conv_3x3.bias",
+      "backbone.vision_backbone.propagation_convs.1.conv_3x3.weight",
+      "backbone.vision_backbone.propagation_convs.1.dconv_2x2.bias",
+      "backbone.vision_backbone.propagation_convs.1.dconv_2x2.weight",
+      "backbone.vision_backbone.propagation_convs.2.conv_1x1.bias",
+      "backbone.vision_backbone.propagation_convs.2.conv_1x1.weight",
+      "backbone.vision_backbone.propagation_convs.2.conv_3x3.bias",
+      "backbone.vision_backbone.propagation_convs.2.conv_3x3.weight"
+    ],
+    "scales": [
+      4.0,
+      2.0,
+      1.0
+    ],
+    "random_missing_weights_used": false,
+    "sam3_origin": {
+      "archive_info": {
+        "hash": "sha256=3e1c4119c0fc50e091dd8dd23a70a01f7ea5d6797772148d72206d10c74f8819",
+        "hashes": {
+          "sha256": "3e1c4119c0fc50e091dd8dd23a70a01f7ea5d6797772148d72206d10c74f8819"
+        }
+      },
+      "url": "https://github.com/facebookresearch/sam3/archive/f1647e8d0c1d280991f4d1b7d974c2704537fe66.zip"
+    },
+    "installed_builder_sha256": "60cef72b1f7e4a2162d1c3f1ad2c0451bbbdc10e3484433a9aa2d016fed6b448"
+  },
+  "records": [
+    {
+      "image": "P0005_OD20241206.JPG",
+      "method": "text_only",
+      "automatic_box_cxcywh": null,
+      "prompt_failed": false,
+      "prediction_pixels": 216905,
+      "model_scores_not_measured_iou": [
+        0.83203125,
+        0.73828125
+      ]
+    },
+    {
+      "image": "P0005_OD20241206.JPG",
+      "method": "text_box_original",
+      "automatic_box_cxcywh": [
+        0.43291666666666667,
+        0.558125,
+        0.12083333333333333,
+        0.20125
+      ],
+      "prompt_failed": false,
+      "prediction_pixels": 18380,
+      "model_scores_not_measured_iou": [
+        0.95703125
+      ]
+    },
+    {
+      "image": "P0005_OD20241206.JPG",
+      "method": "text_box_diverse",
+      "automatic_box_cxcywh": [
+        0.4170833333333333,
+        0.6275,
+        0.5208333333333334,
+        0.6075
+      ],
+      "prompt_failed": false,
+      "prediction_pixels": 27495,
+      "model_scores_not_measured_iou": [
+        0.953125
+      ]
+    },
+    {
+      "image": "P0007_OS20250306.JPG",
+      "method": "text_only",
+      "automatic_box_cxcywh": null,
+      "prompt_failed": false,
+      "prediction_pixels": 23098,
+      "model_scores_not_measured_iou": [
+        0.92578125
+      ]
+    },
+    {
+      "image": "P0007_OS20250306.JPG",
+      "method": "text_box_original",
+      "automatic_box_cxcywh": [
+        0.6029166666666667,
+        0.35625,
+        0.30916666666666665,
+        0.305
+      ],
+      "prompt_failed": false,
+      "prediction_pixels": 23369,
+      "model_scores_not_measured_iou": [
+        0.9609375
+      ]
+    },
+    {
+      "image": "P0007_OS20250306.JPG",
+      "method": "text_box_diverse",
+      "automatic_box_cxcywh": [
+        0.5441666666666667,
+        0.33875,
+        0.52,
+        0.46
+      ],
+      "prompt_failed": false,
+      "prediction_pixels": 36848,
+      "model_scores_not_measured_iou": [
+        0.94921875,
+        0.53515625
+      ]
+    },
+    {
+      "image": "P0114_OS20250417.JPG",
+      "method": "text_only",
+      "automatic_box_cxcywh": null,
+      "prompt_failed": false,
+      "prediction_pixels": 218147,
+      "model_scores_not_measured_iou": [
+        0.8125
+      ]
+    },
+    {
+      "image": "P0114_OS20250417.JPG",
+      "method": "text_box_original",
+      "automatic_box_cxcywh": [
+        0.5733333333333334,
+        0.573125,
+        0.2633333333333333,
+        0.18125
+      ],
+      "prompt_failed": false,
+      "prediction_pixels": 30979,
+      "model_scores_not_measured_iou": [
+        0.91796875
+      ]
+    },
+    {
+      "image": "P0114_OS20250417.JPG",
+      "method": "text_box_diverse",
+      "automatic_box_cxcywh": [
+        0.49625,
+        0.573125,
+        0.4575,
+        0.58375
+      ],
+      "prompt_failed": false,
+      "prediction_pixels": 180844,
+      "model_scores_not_measured_iou": [
+        0.97265625
+      ]
+    },
+    {
+      "image": "P0803_OD20250112.JPG",
+      "method": "text_only",
+      "automatic_box_cxcywh": null,
+      "prompt_failed": false,
+      "prediction_pixels": 41529,
+      "model_scores_not_measured_iou": [
+        0.90234375
+      ]
+    },
+    {
+      "image": "P0803_OD20250112.JPG",
+      "method": "text_box_original",
+      "automatic_box_cxcywh": [
+        0.21125,
+        0.475,
+        0.1275,
+        0.11
+      ],
+      "prompt_failed": false,
+      "prediction_pixels": 41362,
+      "model_scores_not_measured_iou": [
+        0.94140625,
+        0.546875
+      ]
+    },
+    {
+      "image": "P0803_OD20250112.JPG",
+      "method": "text_box_diverse",
+      "automatic_box_cxcywh": [
+        0.5154166666666666,
+        0.553125,
+        0.9691666666666666,
+        0.89375
+      ],
+      "prompt_failed": false,
+      "prediction_pixels": 11702,
+      "model_scores_not_measured_iou": [
+        0.94921875
+      ]
+    }
+  ],
+  "clinical_reference_masks_available": false,
+  "measured_dice_or_iou": null,
+  "identity_evaluated": false,
+  "production_replaced": false,
+  "peak_cuda_bytes": 4185758208,
+  "seconds_excluding_load": 9.125,
+  "masks_sha256": "caed3023cd897e83d0d228d5abf5b8d5fca360777fb18aa0cdd2a4f595412e2c",
+  "figure_sha256": "de9ef957712ea2b98b4eb47028edd3e6398f9934fb5e0b7ed958f9dbfa712be6"
+}

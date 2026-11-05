@@ -1,0 +1,12 @@
+[
+  {
+    "name": "torch",
+    "source": "https://download.pytorch.org/whl/cu131/torch/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "torchvision",
+    "source": "https://download.pytorch.org/whl/cu131/torchvision/",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

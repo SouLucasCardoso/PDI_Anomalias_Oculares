@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "paired_records_recalculated": 128,
+  "unique_people": 16,
+  "clinical_pixel_counts_recalculated": 4,
+  "paired_differences": {
+    "clean": {
+      "sam_minus_unet": -0.09447998203133279,
+      "paired_person_bootstrap95": [
+        -0.21850566510941422,
+        -0.02725178609394552
+      ]
+    },
+    "zoom3": {
+      "sam_minus_unet": 0.7974824355206631,
+      "paired_person_bootstrap95": [
+        0.6414434045912646,
+        0.906269716079412
+      ]
+    },
+    "oblique": {
+      "sam_minus_unet": 0.00690452806795834,
+      "paired_person_bootstrap95": [
+        -0.018407207570126857,
+        0.03811221900602277
+      ]
+    },
+    "glasses": {
+      "sam_minus_unet": -0.028872575741019348,
+      "paired_person_bootstrap95": [
+        -0.1862416132825312,
+        0.0884427415531993
+      ]
+    }
+  },
+  "bootstrap_warning": "Exploratory reused validation; resampling16people is not new independent evidence",
+  "files_sha256": {
+    "protocolo.json": "9b6556f3f0d912a0d9e2aa4737d8d9f6ceb7303680851f0adfa558a50dc7f677",
+    "source.py": "601e9630914bf7753b6bede1fdcd6881b27faeecd8f5a20d86c0488d43caa90b",
+    "metricas_por_imagem.csv": "4aa8d1885d9dc215afaa7a3669a72eb2bdc831e8071b68a4ffbe974050b68b5c",
+    "mascaras.npz": "86d09b13d8e73e7d7a8650710340b4a1991d0983d8cb85dc6a901b197fc35dc2",
+    "CONCLUIDO.json": "b2cf0183ba3f42909f017f78406deecc6ab85a24962e4fb28ccb195b32fcec42"
+  }
+}

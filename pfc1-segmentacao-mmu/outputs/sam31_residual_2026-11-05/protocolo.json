@@ -1,0 +1,79 @@
+{
+  "registered_utc": "2026-11-05T11:59:38.295935+00:00",
+  "frozen": {
+    "configuration": {
+      "run": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-s3-residual-20261105",
+      "cache": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103",
+      "mirror": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\sam31_residual_2026-11-05",
+      "limit": null,
+      "epochs": 24,
+      "batch_size": 8,
+      "seed": 20261105
+    },
+    "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+    "sources": {
+      "treinar_sam3_residual.py": "e39c25cba80dddb7de6cc935ca497159e2d84bc4b60e8fb7e49f940605a2eeed",
+      "segmentador_sam3_residual.py": "5828d7c40d0d54f840157f1e15df31aab6388a31c1ac23a4a18b6b11153c62d5",
+      "avaliar_identidade_sam3_residual.py": "8598a95ac32cbac74d9b519f41c92905c894a8acac21fe544072b3d99c8ee3f6",
+      "executar_sam3_residual.py": "fa8553f20f774aa32877142b7d3c278c987b616bc787924655c5dd422a6ab626",
+      "analisar_sam3_residual.py": "95ac5e089c731436b73b8bbbcf851af960a39323f850599488b6826822f36bc4",
+      "executar_sam3_negativos_resiliente.py": "1dc8f0bb081132ef2f28703d8ecc8eb50be03d9134dd5ada9aacdbe672cf617c",
+      "perda_negativos_internos.py": "2bd0e227efbc64b88235312a9eb0480e910295643e560001be7a6e418a2d6c73",
+      "treinar_sam3_iris_adaptado.py": "8416afc55c96d5dab3e389cc2dfba37667b8720b12fc753637e62aaec6be8f2c",
+      "segmentador_sam3_iris.py": "e4091a076cd214d4a9dcb78452c8ec37bd65e4f201fbdc1f0dc46147eaaff596",
+      "treinar_segmentacao_diversa.py": "3d7c937e0e10d0c3f785070ac5386dfe953b7c86b96572a5791149dfd7156065",
+      "treinar_segmentacao_ubipr.py": "a427b82c9879a2320a5d6544c89f96806ab74b12566cd3237650c62c54123431",
+      "avaliar_sam31_diverso.py": "923de89594b41c0f3b68403c2b2177d8bf5ce544a4c690521634eba87f46640c"
+    },
+    "versions": {
+      "torch": "2.14.1+cu130",
+      "torchvision": "0.29.1+cu130",
+      "sam3": "0.1.0",
+      "numpy": "1.26.4",
+      "pillow": "13.0.0"
+    },
+    "sam_origin": {
+      "archive_info": {
+        "hash": "sha256=3e1c4119c0fc50e091dd8dd23a70a01f7ea5d6797772148d72206d10c74f8819",
+        "hashes": {
+          "sha256": "3e1c4119c0fc50e091dd8dd23a70a01f7ea5d6797772148d72206d10c74f8819"
+        }
+      },
+      "url": "https://github.com/facebookresearch/sam3/archive/f1647e8d0c1d280991f4d1b7d974c2704537fe66.zip"
+    },
+    "sam_checkpoint_sha256": "0567debeec80ba4ac6369540c6c248025283cb3ff2b92827509e57e2b3541cb6",
+    "parent_checkpoint_sha256": "cf8a718e0160c14408d1533445ff611b00a79c75d2c0fd07fb7540150e59db99",
+    "parent_protocol_sha256": "444840da77f57c1ea89193316316bded3358fe4a1e33604155b77c865c6108d5",
+    "cache_reuse": {
+      "path": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103",
+      "cached_view_seed": 20261103,
+      "count": 22040,
+      "index_sha256": "525b5da50c1b23d9b15c23081301fb510d07390e2809900ece4c0b999efa61ba",
+      "protocol_sha256": "56e38285915254ccbd862d7d5e497fdfa9a613046d38db0fa13d17d8fe1020ee",
+      "npz_hash_checked_on_every_read": true
+    },
+    "official_latest_verification_sha256": "6b9511b7fd0f13d2b05f140d7d70642c432c335f943d0704bd49668ae755b8e8",
+    "compatible_package_verification_sha256": "ec63a44efe94460631b20f52115a1dcd41c01ac73a1e71de57c5ba9719f7bdcf"
+  },
+  "architecture": "Frozen selected eight-channel RGB+SAM3 adapter plus independently trainable32-channel RGB+SAM3 residual U-Net. Frozen foundation, frozen base weights and BatchNorm. Residual classifier initialized to exactly zero; float32 logit correction=4*tanh(delta). Not full SAM3 finetuning.",
+  "loss": "Original boundary CE + iris Dice + 0.25 Tversky, FP0.7/FN0.3; no additional inner-negative penalty, no invented pupil labels. Unknown255 ignored. Optimize only correction parameters.",
+  "selection": "Include epoch0. Maximize minimum macroDice of four complete validation modes; clean >= epoch0clean-0.002; patience6. No identity or clinical labels select weights.",
+  "optimization": {
+    "optimizer": "AdamW",
+    "lr": 0.0001,
+    "weight_decay": 0.0001,
+    "scheduler": "CosineAnnealingLR",
+    "eta_min": 1e-05,
+    "grad_clip": 1,
+    "precision": "BF16 forward, FP32 losses",
+    "fresh_optimizer": true,
+    "optimizer_order_and_bank_selection_seed": 20261105
+  },
+  "augmentation": "Reuse original closed cache with native and diverse train banks, fixed seed20261103; four fixed validation modes. New seed selects only image order and existing bank, never regenerates cached images.",
+  "baseline_guard": "Fresh epoch0; difference <=0.001 Dice from parent in each mode. Zero correction preserves base logits exactly under same inputs/precision/batch; batch8 versus historical batch16 may have numerical differences.",
+  "scope": "Train/validation only. All cases retained; no new test or clinical inference in trainer. Human reviews may follow later.",
+  "engineering_target_not_clinical_standard": {
+    "all4_validation_macroDice": 0.9
+  },
+  "development_smoke_only": false
+}

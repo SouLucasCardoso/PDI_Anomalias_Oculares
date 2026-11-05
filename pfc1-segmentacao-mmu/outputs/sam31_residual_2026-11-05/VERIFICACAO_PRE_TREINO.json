@@ -1,0 +1,26 @@
+{
+  "verified_utc": "2026-11-05T12:01:42.133735+00:00",
+  "unit_tests_passed": 9,
+  "gpu_smoke_train_images": 16,
+  "gpu_smoke_validation_images_per_mode": 16,
+  "gpu_smoke_complete": true,
+  "strict_checkpoint_reload": true,
+  "canonical_mirror_bytes_equal": true,
+  "parent_base_tensors_equal": true,
+  "zero_head_in_selected_smoke_checkpoint": true,
+  "initial_gpu_logits_equivalence": {
+    "float32": {
+      "exact_logits": true,
+      "images": 8
+    },
+    "bfloat16": {
+      "exact_logits": true,
+      "images": 8
+    }
+  },
+  "peak_cuda_allocated_bytes": 1641412096,
+  "peak_cuda_reserved_bytes": 2363490304,
+  "smoke_not_promoted": true,
+  "original_controls_raw_scores_reaudited": true,
+  "no_new_identity_or_minimum_area_result": true
+}

@@ -1,0 +1,40 @@
+{
+  "raw_scores_reaudited": true,
+  "same_runtime_and_source": true,
+  "new_control_inference": false,
+  "records": {
+    "original_oclusao_inferior_10": {
+      "source_record": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\sam31_iris_adaptacao_2026-11-03\\identidade\\original_oclusao_inferior_10.json",
+      "record_sha256": "47416d36d6d528fff4444904ddd5ceeea2aebcc04e8e92a7d0c2c12a6473a2ce",
+      "evidence_sha256": {
+        "scores_finais.npz": "57adc48c6e115d809f723ea8ee563b56327b6fdb798d7b5b000874c01ee915d0",
+        "protocolo.json": "bc7634e4452ef996056ca86be44e9b6ed20b46e504a3b2215e63f79441bcb09b",
+        "ADAPTADOR_SAM3.json": "8c97ef0ef0cf2807b72adfa79ea1cbd52214f2fd23d53d4dd3bfd5ac58b5d068",
+        "interventions.json": "d226c2a8712c65f4a5c334072fd58e36fa36c865a93c45cbb36baaf9e0c64478",
+        "source.py": "6390747960dd339f39782cc2895999e6929d7a9e97111e70c143b6f4193db278"
+      }
+    },
+    "original_oclusao_superior_10": {
+      "source_record": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\sam31_iris_adaptacao_2026-11-03\\identidade\\original_oclusao_superior_10.json",
+      "record_sha256": "ab89fb9469d097af86e22419012601154f2414bde2bce6c060ed104acad4e688",
+      "evidence_sha256": {
+        "scores_finais.npz": "58812637fb76c01d2d8c0a069ec61406a42a49a0a0268dff32abd04718a5f7d4",
+        "protocolo.json": "82ad4d344af2ed38ce05bbf5e998008a9263ad914bf6ab9ebe3e6dc718bdda1b",
+        "ADAPTADOR_SAM3.json": "8c97ef0ef0cf2807b72adfa79ea1cbd52214f2fd23d53d4dd3bfd5ac58b5d068",
+        "interventions.json": "d226c2a8712c65f4a5c334072fd58e36fa36c865a93c45cbb36baaf9e0c64478",
+        "source.py": "6390747960dd339f39782cc2895999e6929d7a9e97111e70c143b6f4193db278"
+      }
+    },
+    "original_original_0": {
+      "source_record": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\sam31_iris_adaptacao_2026-11-03\\identidade\\original_original_0.json",
+      "record_sha256": "8d9c11cf1ccc4977f35ab507cc5cb6e8a5405908c12201dc70c857cfcb70f7cc",
+      "evidence_sha256": {
+        "scores_finais.npz": "262c2f9dc08f292abb3cbcbf63d88c0cb8bf8482c339312947c79228d51f372a",
+        "protocolo.json": "d083613d058b009627b021a490322f95be6b64fe10a1044800acf3564fffcf6d",
+        "ADAPTADOR_SAM3.json": "8c97ef0ef0cf2807b72adfa79ea1cbd52214f2fd23d53d4dd3bfd5ac58b5d068",
+        "interventions.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "source.py": "6390747960dd339f39782cc2895999e6929d7a9e97111e70c143b6f4193db278"
+      }
+    }
+  }
+}

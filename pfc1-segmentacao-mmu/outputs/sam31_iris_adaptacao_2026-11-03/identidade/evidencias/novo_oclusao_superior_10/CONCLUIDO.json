@@ -1,0 +1,23 @@
+{
+  "status": "frozen_candidate_evaluation_completed",
+  "split": "val",
+  "condition": "oclusao_superior",
+  "occluded_percent": 10,
+  "result": {
+    "rank1": 0.8236514522821576,
+    "tar": 0.7904564315352697,
+    "fnmr": 0.20954356846473032,
+    "far": 0.011341632088520055,
+    "eer_descriptive": 0.056016597510373446,
+    "extraction_failures": 3,
+    "queries": 482,
+    "genuine_mean_valid": 0.9005942594380206,
+    "margin_mean_valid": 0.10797009792559473,
+    "threshold": 0.8581747485460748,
+    "joint_success": 0.7738589211618258
+  },
+  "minimum_area": null,
+  "target_reached": false,
+  "independent_blind_test": false,
+  "external_pretraining_overlap_unknown": true
+}

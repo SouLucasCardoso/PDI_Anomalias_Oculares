@@ -1,0 +1,27 @@
+{
+  "checkpoint_sha256": null,
+  "counts": {
+    "correct": 434,
+    "accepted": 436,
+    "joint": 426,
+    "false_accepts": 72,
+    "queries": 482,
+    "impostors": 7230,
+    "extraction_failures": 4
+  },
+  "rates": {
+    "rank1": 0.9004149377593361,
+    "tar": 0.9045643153526971,
+    "joint": 0.8838174273858921,
+    "fmr": 0.00995850622406639
+  },
+  "passed_new_readiness_criterion": false,
+  "folder": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-s3id\\original_original_0\\a001\\r\\confirmacao_congelada_val_2026-10-21",
+  "condition": "original",
+  "loss_percent": 0,
+  "model": "original_unet",
+  "threshold": 0.8581747485460748,
+  "queries": 482,
+  "people": 16,
+  "test_inference": false
+}

@@ -1,0 +1,58 @@
+{
+  "/": {
+    "status": 200,
+    "bytes": 8246,
+    "type": "text/html; charset=utf-8"
+  },
+  "/app.js": {
+    "status": 200,
+    "bytes": 14561,
+    "type": "text/javascript; charset=utf-8"
+  },
+  "/style.css": {
+    "status": 200,
+    "bytes": 10458,
+    "type": "text/css; charset=utf-8"
+  },
+  "/api/status": {
+    "status": 200,
+    "bytes": 124,
+    "type": "application/json; charset=utf-8"
+  },
+  "mode": {
+    "online": true,
+    "model": "SAM3.1 + descritores de \u00edris",
+    "local_only": true,
+    "phone_validated": false,
+    "transport": "usb"
+  },
+  "/api/pairing": {
+    "status": 200,
+    "bytes": 135,
+    "type": "application/json; charset=utf-8"
+  },
+  "pairing_usb": true,
+  "/api/qr.svg": {
+    "status": 200,
+    "bytes": 6818,
+    "type": "image/svg+xml"
+  },
+  "unauthenticated_gallery_status": 401,
+  "actual_phone_gallery_empty": true,
+  "iniciar_app_celular.ps1": {
+    "sha256": "34c3e07464fe0b4819faebd02ba5b371e3dfca8ecaa3ec120d15ff1a21e12ddc",
+    "powershell_parse": "passed"
+  },
+  "parar_app_celular.ps1": {
+    "sha256": "18afce7558b61faf12fc565c01efcfbdf8c3d3963c1d3bf24e50698d94199330",
+    "powershell_parse": "passed"
+  },
+  "conectar_app_usb.ps1": {
+    "sha256": "818b036f8219990ad08a406c8bbea1790a911b9161e10ac2be07aeb6afde50ee",
+    "powershell_parse": "passed"
+  },
+  "desconectar_app_usb.ps1": {
+    "sha256": "dc93c3dc03245574402062dbc9e8f556962dcbd60426c6d628d49fb449932671",
+    "powershell_parse": "passed"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "registered_utc": "2026-11-03T15:36:33.834265+00:00",
+  "source_sha256": "7e2f7200d75cca37e6365609efa731cd06454628c90115c06f6ab208f06493d4",
+  "experiment_protocol_sha256": "01c6833da0dfb3f68eece2ff64870330eb6df476c04ea19343afba2199279701",
+  "paired_bootstrap": {
+    "seed": 127,
+    "replicates": 5000,
+    "cluster": "query person",
+    "gallery": "fixed"
+  },
+  "direction": "candidate minus original, percentage points; positive FMR means worse",
+  "scope": "Observational report only; no checkpoint, calibration, threshold or production change; validation only"
+}

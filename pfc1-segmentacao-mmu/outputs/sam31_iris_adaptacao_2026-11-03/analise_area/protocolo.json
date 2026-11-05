@@ -1,0 +1,26 @@
+{
+  "registered_utc": "2026-11-03T22:33:25.352497+00:00",
+  "binding": {
+    "sources": {
+      "analisar_sam3_area.py": "687455ffda9da98d63f6db5a316ae221ba18c0f78101296d72f9559f79bf5254",
+      "acompanhar_analise_sam3_area.py": "4ddfe8d00356284084291dd56753ec80104798497211fcffe431b749d6ccc73e",
+      "analisar_rodada_segmentacao_area.py": "7e2f7200d75cca37e6365609efa731cd06454628c90115c06f6ab208f06493d4",
+      "avaliar_prontidao_anomalias.py": "48589082b3708c83940ccf22b3a1a4f6a6b75acc09039e946bd5500a0fb8d16c"
+    },
+    "training_protocol_sha256": "444840da77f57c1ea89193316316bded3358fe4a1e33604155b77c865c6108d5",
+    "flow_protocol_sha256": "e920cdb9ad8437192f9bee9627b73f637b1ddc7d94ea81fa9a20d757c9392725",
+    "frozen_configuration_sha256": "d933686f045eab5d6578cfe4701578d9ca1eeaaff4069bcff8427a602546dbda",
+    "criteria_sha256": "1eff22b2b887af6be655cec93ab091fbede2384d1115b265451b632705f4dc46",
+    "numpy_version": "1.26.4"
+  },
+  "scope": "Observational only; no training, inference, selection, recalibration or test access",
+  "bootstrap": {
+    "replicates": 5000,
+    "seed": 127,
+    "cluster": "query person",
+    "gallery": "fixed"
+  },
+  "intervals": "Pointwise descriptive; not simultaneous certification of the area frontier",
+  "manual_clinical_references_required_for_ubipr_area": false,
+  "minimum_rule": "Full registered grid, initial consecutive passing prefix, both orientations; no interpolation"
+}

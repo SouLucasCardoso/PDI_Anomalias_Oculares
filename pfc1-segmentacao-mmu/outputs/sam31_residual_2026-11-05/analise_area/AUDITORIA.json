@@ -1,0 +1,444 @@
+{
+  "queries": 482,
+  "people": 16,
+  "threshold": 0.8581747485460748,
+  "checkpoint_sha256": "fbe9a56276c115de41a5b7ba0c00cab2d4d99ff87930d802dad3a52d97fce5f6",
+  "records": [
+    {
+      "key": "novo_oclusao_inferior_10",
+      "segmenter": "novo",
+      "condition": "oclusao_inferior",
+      "loss_percent": 10,
+      "counts": {
+        "correct": 391,
+        "accepted": 371,
+        "joint": 366,
+        "false_accepts": 98,
+        "queries": 482,
+        "impostors": 7230,
+        "extraction_failures": 3
+      },
+      "rates": {
+        "rank1": 0.8112033195020747,
+        "tar": 0.7697095435684648,
+        "joint": 0.7593360995850622,
+        "fmr": 0.01355463347164592
+      },
+      "passed": false,
+      "interval95_cluster_person_pp": {
+        "rank1": [
+          71.48760330578513,
+          90.0
+        ],
+        "tar": [
+          67.01244813278008,
+          86.25
+        ],
+        "joint": [
+          65.7784121828447,
+          85.41666666666667
+        ],
+        "fmr": [
+          0.7468879668049793,
+          2.0798898071625342
+        ]
+      },
+      "evidence_sha256": {
+        "scores_finais.npz": "9c92efddea677bc065bddb0c9088fe65b69988a9bdf3c8e701efd041457877f1",
+        "protocolo.json": "f8d61a4617175ef5d2541167ce80f0116d1b1706c2010205e9f2068d5d11f69f",
+        "ADAPTADOR_SAM3.json": "95848d774aee9d300e11d1782720db64ff7efac58e0150298d5fbe8afda8befd",
+        "interventions.json": "d226c2a8712c65f4a5c334072fd58e36fa36c865a93c45cbb36baaf9e0c64478",
+        "source.py": "6390747960dd339f39782cc2895999e6929d7a9e97111e70c143b6f4193db278"
+      },
+      "actual_area": {
+        "nominal_retained_percent": 90,
+        "defined_queries": 472,
+        "undefined_queries_retained_in_identity": 10,
+        "actual_retained_percent_min_mean_max": [
+          89.91869918699187,
+          90.00166474964702,
+          90.4
+        ]
+      }
+    },
+    {
+      "key": "novo_oclusao_superior_10",
+      "segmenter": "novo",
+      "condition": "oclusao_superior",
+      "loss_percent": 10,
+      "counts": {
+        "correct": 405,
+        "accepted": 392,
+        "joint": 385,
+        "false_accepts": 79,
+        "queries": 482,
+        "impostors": 7230,
+        "extraction_failures": 3
+      },
+      "rates": {
+        "rank1": 0.8402489626556017,
+        "tar": 0.8132780082987552,
+        "joint": 0.7987551867219918,
+        "fmr": 0.010926694329183955
+      },
+      "passed": false,
+      "interval95_cluster_person_pp": {
+        "rank1": [
+          74.79338842975207,
+          92.08333333333333
+        ],
+        "tar": [
+          70.04132231404958,
+          91.04166666666667
+        ],
+        "joint": [
+          68.18181818181819,
+          90.20833333333333
+        ],
+        "fmr": [
+          0.677731673582296,
+          1.5639274691358005
+        ]
+      },
+      "evidence_sha256": {
+        "scores_finais.npz": "159fe74c8fdfdd05ba3a7ba5539b20eec0584d1dd09f6314127103199458bbd4",
+        "protocolo.json": "2fc2e7cac0c3b5934f0272c716918f064f8f1c96ed8eef1e4bcca7dc2fb33ee9",
+        "ADAPTADOR_SAM3.json": "95848d774aee9d300e11d1782720db64ff7efac58e0150298d5fbe8afda8befd",
+        "interventions.json": "d226c2a8712c65f4a5c334072fd58e36fa36c865a93c45cbb36baaf9e0c64478",
+        "source.py": "6390747960dd339f39782cc2895999e6929d7a9e97111e70c143b6f4193db278"
+      },
+      "actual_area": {
+        "nominal_retained_percent": 90,
+        "defined_queries": 472,
+        "undefined_queries_retained_in_identity": 10,
+        "actual_retained_percent_min_mean_max": [
+          89.91869918699187,
+          90.00166474964702,
+          90.4
+        ]
+      }
+    },
+    {
+      "key": "novo_original_0",
+      "segmenter": "novo",
+      "condition": "original",
+      "loss_percent": 0,
+      "counts": {
+        "correct": 431,
+        "accepted": 432,
+        "joint": 421,
+        "false_accepts": 67,
+        "queries": 482,
+        "impostors": 7230,
+        "extraction_failures": 3
+      },
+      "rates": {
+        "rank1": 0.8941908713692946,
+        "tar": 0.8962655601659751,
+        "joint": 0.8734439834024896,
+        "fmr": 0.009266943291839557
+      },
+      "passed": false,
+      "interval95_cluster_person_pp": {
+        "rank1": [
+          84.15637860082305,
+          94.375
+        ],
+        "tar": [
+          83.7448559670782,
+          94.79166666666667
+        ],
+        "joint": [
+          81.48148148148148,
+          92.91666666666667
+        ],
+        "fmr": [
+          0.5833333333333334,
+          1.313969571230982
+        ]
+      },
+      "evidence_sha256": {
+        "scores_finais.npz": "65d62b0948366efb125a5bf59c43e66588d626534b33f32cab4e631e47436b38",
+        "protocolo.json": "67c951076de9c8c5dbeb9bb344577d97a3b3da0c56aa8f297514810ab6f0c4ff",
+        "ADAPTADOR_SAM3.json": "95848d774aee9d300e11d1782720db64ff7efac58e0150298d5fbe8afda8befd",
+        "interventions.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "source.py": "6390747960dd339f39782cc2895999e6929d7a9e97111e70c143b6f4193db278"
+      },
+      "actual_area": null
+    },
+    {
+      "key": "original_oclusao_inferior_10",
+      "segmenter": "original",
+      "condition": "oclusao_inferior",
+      "loss_percent": 10,
+      "counts": {
+        "correct": 289,
+        "accepted": 279,
+        "joint": 269,
+        "false_accepts": 176,
+        "queries": 482,
+        "impostors": 7230,
+        "extraction_failures": 7
+      },
+      "rates": {
+        "rank1": 0.5995850622406639,
+        "tar": 0.578838174273859,
+        "joint": 0.558091286307054,
+        "fmr": 0.02434301521438451
+      },
+      "passed": false,
+      "interval95_cluster_person_pp": {
+        "rank1": [
+          47.090889298703964,
+          71.99399204702624
+        ],
+        "tar": [
+          44.8559670781893,
+          70.20833333333333
+        ],
+        "joint": [
+          42.32365145228216,
+          68.75
+        ],
+        "fmr": [
+          1.6111111111111112,
+          3.37483143153527
+        ]
+      },
+      "evidence_sha256": {
+        "scores_finais.npz": "57adc48c6e115d809f723ea8ee563b56327b6fdb798d7b5b000874c01ee915d0",
+        "protocolo.json": "bc7634e4452ef996056ca86be44e9b6ed20b46e504a3b2215e63f79441bcb09b",
+        "ADAPTADOR_SAM3.json": "8c97ef0ef0cf2807b72adfa79ea1cbd52214f2fd23d53d4dd3bfd5ac58b5d068",
+        "interventions.json": "d226c2a8712c65f4a5c334072fd58e36fa36c865a93c45cbb36baaf9e0c64478",
+        "source.py": "6390747960dd339f39782cc2895999e6929d7a9e97111e70c143b6f4193db278"
+      },
+      "actual_area": {
+        "nominal_retained_percent": 90,
+        "defined_queries": 472,
+        "undefined_queries_retained_in_identity": 10,
+        "actual_retained_percent_min_mean_max": [
+          89.91869918699187,
+          90.00166474964702,
+          90.4
+        ]
+      }
+    },
+    {
+      "key": "original_oclusao_superior_10",
+      "segmenter": "original",
+      "condition": "oclusao_superior",
+      "loss_percent": 10,
+      "counts": {
+        "correct": 390,
+        "accepted": 376,
+        "joint": 368,
+        "false_accepts": 93,
+        "queries": 482,
+        "impostors": 7230,
+        "extraction_failures": 4
+      },
+      "rates": {
+        "rank1": 0.8091286307053942,
+        "tar": 0.7800829875518672,
+        "joint": 0.7634854771784232,
+        "fmr": 0.012863070539419087
+      },
+      "passed": false,
+      "interval95_cluster_person_pp": {
+        "rank1": [
+          68.75,
+          91.04166666666667
+        ],
+        "tar": [
+          64.87603305785125,
+          88.95947873443981
+        ],
+        "joint": [
+          62.603305785123965,
+          87.97075985477173
+        ],
+        "fmr": [
+          0.7851239669421488,
+          1.9225449515905948
+        ]
+      },
+      "evidence_sha256": {
+        "scores_finais.npz": "58812637fb76c01d2d8c0a069ec61406a42a49a0a0268dff32abd04718a5f7d4",
+        "protocolo.json": "82ad4d344af2ed38ce05bbf5e998008a9263ad914bf6ab9ebe3e6dc718bdda1b",
+        "ADAPTADOR_SAM3.json": "8c97ef0ef0cf2807b72adfa79ea1cbd52214f2fd23d53d4dd3bfd5ac58b5d068",
+        "interventions.json": "d226c2a8712c65f4a5c334072fd58e36fa36c865a93c45cbb36baaf9e0c64478",
+        "source.py": "6390747960dd339f39782cc2895999e6929d7a9e97111e70c143b6f4193db278"
+      },
+      "actual_area": {
+        "nominal_retained_percent": 90,
+        "defined_queries": 472,
+        "undefined_queries_retained_in_identity": 10,
+        "actual_retained_percent_min_mean_max": [
+          89.91869918699187,
+          90.00166474964702,
+          90.4
+        ]
+      }
+    },
+    {
+      "key": "original_original_0",
+      "segmenter": "original",
+      "condition": "original",
+      "loss_percent": 0,
+      "counts": {
+        "correct": 434,
+        "accepted": 436,
+        "joint": 426,
+        "false_accepts": 72,
+        "queries": 482,
+        "impostors": 7230,
+        "extraction_failures": 4
+      },
+      "rates": {
+        "rank1": 0.9004149377593361,
+        "tar": 0.9045643153526971,
+        "joint": 0.8838174273858921,
+        "fmr": 0.00995850622406639
+      },
+      "passed": false,
+      "interval95_cluster_person_pp": {
+        "rank1": [
+          84.29752066115702,
+          95.0
+        ],
+        "tar": [
+          83.33333333333333,
+          96.25
+        ],
+        "joint": [
+          81.35184256173049,
+          94.375
+        ],
+        "fmr": [
+          0.6527777777777778,
+          1.3443072702331962
+        ]
+      },
+      "evidence_sha256": {
+        "scores_finais.npz": "262c2f9dc08f292abb3cbcbf63d88c0cb8bf8482c339312947c79228d51f372a",
+        "protocolo.json": "d083613d058b009627b021a490322f95be6b64fe10a1044800acf3564fffcf6d",
+        "ADAPTADOR_SAM3.json": "8c97ef0ef0cf2807b72adfa79ea1cbd52214f2fd23d53d4dd3bfd5ac58b5d068",
+        "interventions.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "source.py": "6390747960dd339f39782cc2895999e6929d7a9e97111e70c143b6f4193db278"
+      },
+      "actual_area": null
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "condition": "original",
+      "loss_percent": 0,
+      "paired": {
+        "rank1": {
+          "candidate_minus_original_pp": -0.6224066390041494,
+          "interval95_cluster_person_pp": [
+            -2.7083333333333335,
+            1.4522821576763485
+          ]
+        },
+        "tar": {
+          "candidate_minus_original_pp": -0.8298755186721992,
+          "interval95_cluster_person_pp": [
+            -3.125,
+            1.8518518518518519
+          ]
+        },
+        "joint": {
+          "candidate_minus_original_pp": -1.0373443983402488,
+          "interval95_cluster_person_pp": [
+            -3.9419087136929463,
+            1.8672199170124482
+          ]
+        },
+        "fmr": {
+          "candidate_minus_original_pp": -0.06915629322268327,
+          "interval95_cluster_person_pp": [
+            -0.3305785123966942,
+            0.19363762102351312
+          ]
+        }
+      }
+    },
+    {
+      "condition": "oclusao_superior",
+      "loss_percent": 10,
+      "paired": {
+        "rank1": {
+          "candidate_minus_original_pp": 3.112033195020747,
+          "interval95_cluster_person_pp": [
+            -1.037344398340249,
+            7.676348547717843
+          ]
+        },
+        "tar": {
+          "candidate_minus_original_pp": 3.319502074688797,
+          "interval95_cluster_person_pp": [
+            0.4132231404958678,
+            6.378600823045267
+          ]
+        },
+        "joint": {
+          "candidate_minus_original_pp": 3.5269709543568464,
+          "interval95_cluster_person_pp": [
+            -0.4149377593360996,
+            7.644628099173554
+          ]
+        },
+        "fmr": {
+          "candidate_minus_original_pp": -0.19363762102351315,
+          "interval95_cluster_person_pp": [
+            -0.513888888888889,
+            0.12448132780082985
+          ]
+        }
+      }
+    },
+    {
+      "condition": "oclusao_inferior",
+      "loss_percent": 10,
+      "paired": {
+        "rank1": {
+          "candidate_minus_original_pp": 21.16182572614108,
+          "interval95_cluster_person_pp": [
+            16.182572614107883,
+            26.25
+          ]
+        },
+        "tar": {
+          "candidate_minus_original_pp": 19.08713692946058,
+          "interval95_cluster_person_pp": [
+            14.522821576763485,
+            24.066390041493776
+          ]
+        },
+        "joint": {
+          "candidate_minus_original_pp": 20.12448132780083,
+          "interval95_cluster_person_pp": [
+            15.625,
+            25.103734439834025
+          ]
+        },
+        "fmr": {
+          "candidate_minus_original_pp": -1.078838174273859,
+          "interval95_cluster_person_pp": [
+            -1.7076502732240437,
+            -0.45833333333333337
+          ]
+        }
+      }
+    }
+  ],
+  "frontier": {
+    "clean_gate_passed": false,
+    "grid_complete": false,
+    "minimum_assigned": false,
+    "orientations": {}
+  },
+  "all_failures_retained": true,
+  "validation_reused_not_blind": true
+}

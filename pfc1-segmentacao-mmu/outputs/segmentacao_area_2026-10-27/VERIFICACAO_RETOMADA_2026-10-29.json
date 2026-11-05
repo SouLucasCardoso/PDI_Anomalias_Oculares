@@ -1,0 +1,20 @@
+﻿{
+    "checked_utc":  "2026-10-30T00:20:21.1261519Z",
+    "checkpoint_integrity":  "passed",
+    "completed_training_epoch":  15,
+    "completed_batches":  483,
+    "pending":  "validation_of_epoch15",
+    "best_validated_epoch":  14,
+    "best_validation_dice":  {
+                                 "clean":  0.85247052495185172,
+                                 "zoom3":  0.82363354625771179,
+                                 "oblique":  0.84731423306407416,
+                                 "glasses":  0.84401934790553534
+                             },
+    "best_checkpoint_sha256":  "e5565e15e851d06da74aec24955423e9d6dc32492b66455c8ad41c7be6664231",
+    "model_tensors_finite":  true,
+    "optimizer_state_present":  true,
+    "recovery_copy_matches":  true,
+    "sources_match_registered_protocol":  true,
+    "recognition_gain_measured":  false
+}

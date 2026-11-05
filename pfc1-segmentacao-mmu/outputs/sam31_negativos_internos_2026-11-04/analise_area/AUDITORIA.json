@@ -1,0 +1,10 @@
+{
+  "records": [],
+  "paired_comparisons": [],
+  "frontier": {
+    "clean_gate_passed": false,
+    "grid_complete": false,
+    "minimum_assigned": false,
+    "orientations": {}
+  }
+}

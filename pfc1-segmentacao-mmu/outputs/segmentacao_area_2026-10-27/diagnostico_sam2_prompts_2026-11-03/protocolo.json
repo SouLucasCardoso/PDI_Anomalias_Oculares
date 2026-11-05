@@ -1,0 +1,37 @@
+{
+  "registered_utc": "2026-11-03T15:56:29.338942+00:00",
+  "scope": "Four previously fixed SLPVLD cases; qualitative only, NO ground-truth masks, Dice, identity inference, training, checkpoint selection or production replacement",
+  "model": "Generic SAM2.1 Hiera Tiny, NOT Iris-SAM and NOT SAM3.1",
+  "sam_directory": "C:\\Users\\lucaz\\pfc-hf-cache\\hub\\models--facebook--sam2.1-hiera-tiny\\snapshots\\de431c4043854a71d8101e17995dfe596bf101a5",
+  "sam_revision": "de431c4043854a71d8101e17995dfe596bf101a5",
+  "sam_weight_sha256": "48c14467e5cf9e51870511feb72c89688e82dd74523142c0538b663e193ac2a7",
+  "checkpoint_sha256": "b848fee1be0f39e5815693d987f99f3121aa45a8c70d93e65f754384c166da94",
+  "initial_masks_sha256": "86d09b13d8e73e7d7a8650710340b4a1991d0983d8cb85dc6a901b197fc35dc2",
+  "unet_epoch": 15,
+  "precision_device": "CPU FP32, two threads, no CUDA use or downloads",
+  "prompt_rule": "Reuse automatic_prompts: bbox with5%padding, up to4positive distance maxima by quadrant, predicted-hole negative center if present and2outside corners; no reference/manual prompts. Highest SAM predicted IoU among multimasks; threshold logits0; missing prompt yields empty mask, no fallback.",
+  "image_rule": "RGB thumbnail1200 preserving aspect ratio; U-Net416x320 bilinear then native nearest mask; original U-Net masks reused from preserved clinical benchmark",
+  "sources": {
+    "diagnosticar_sam2_prompts_clinicos.py": "407769a5a3b4ef9cdd832463822c25bc19b6c651fa996d50736ddc8c2cceeb3f",
+    "piloto_sam_guiado.py": "6e70a0e6c4b9537fc4fb3f1f9a12482e52cd78954526ea1f2a66164327bc5673",
+    "treinar_segmentacao_ubipr.py": "a427b82c9879a2320a5d6544c89f96806ab74b12566cd3237650c62c54123431"
+  },
+  "images": [
+    {
+      "path": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0005_OD20241206.JPG",
+      "sha256": "37a105b917c6bd5959f26db21aa054de1fc3f63d42b7a76dbb04fe15b77ecef4"
+    },
+    {
+      "path": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0007_OS20250306.JPG",
+      "sha256": "b033515645f0700e80240c58e3e04417a8ab0e1a2713f6eda5401442dd68c52b"
+    },
+    {
+      "path": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0114_OS20250417.JPG",
+      "sha256": "1f90538202e540ee5175ca5d370bdaf13dfcd7238a354af14d86784fe4ce570a"
+    },
+    {
+      "path": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0803_OD20250112.JPG",
+      "sha256": "a5b11184dfad0a605e80c2bc38b19bc9c237f53e464a754328d0407a6ce58da0"
+    }
+  ]
+}

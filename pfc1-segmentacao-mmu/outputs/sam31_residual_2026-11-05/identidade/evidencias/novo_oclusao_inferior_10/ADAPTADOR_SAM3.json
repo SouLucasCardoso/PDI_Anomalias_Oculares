@@ -1,0 +1,20 @@
+{
+  "scope": "Residual preparation adapter; original frozen identity score/calibration functions unchanged. Original controls reused only after raw-score/source/runtime audit; candidate inference uses the same runtime.",
+  "sources": {
+    "avaliar_identidade_sam3_residual.py": "8598a95ac32cbac74d9b519f41c92905c894a8acac21fe544072b3d99c8ee3f6",
+    "segmentador_sam3_residual.py": "5828d7c40d0d54f840157f1e15df31aab6388a31c1ac23a4a18b6b11153c62d5",
+    "segmentador_sam3_iris.py": "e4091a076cd214d4a9dcb78452c8ec37bd65e4f201fbdc1f0dc46147eaaff596",
+    "avaliar_candidato_congelado.py": "6390747960dd339f39782cc2895999e6929d7a9e97111e70c143b6f4193db278"
+  },
+  "sam_revision": "f1647e8d0c1d280991f4d1b7d974c2704537fe66",
+  "candidate_sha256": "fbe9a56276c115de41a5b7ba0c00cab2d4d99ff87930d802dad3a52d97fce5f6",
+  "versions": {
+    "torch": "2.14.1+cu130",
+    "torchvision": "0.29.1+cu130",
+    "numpy": "1.26.4",
+    "pillow": "13.0.0",
+    "sam3": "0.1.0"
+  },
+  "test_inference": false,
+  "reference_masks_used_only_for_intervention": true
+}

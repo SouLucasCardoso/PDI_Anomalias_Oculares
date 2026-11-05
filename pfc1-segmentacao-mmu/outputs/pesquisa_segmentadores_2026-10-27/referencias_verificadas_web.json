@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-27",
+  "method": "Primary repository pages and README inspected through web tool; no complete clones or all-model benchmarks",
+  "public_references": 12,
+  "public_implementation_repositories": 11,
+  "repositories": [
+    {
+      "url": "https://github.com/ParisaFarmanifard/Iris-SAM",
+      "public_implementation_observed": true
+    },
+    {
+      "url": "https://github.com/xiamenwcy/IrisParseNet",
+      "public_implementation_observed": true
+    },
+    {
+      "url": "https://github.com/AayushKrChaudhary/RITnet",
+      "public_implementation_observed": true
+    },
+    {
+      "url": "https://github.com/fdbtrs/SS-Eye-MS",
+      "public_implementation_observed": true
+    },
+    {
+      "url": "https://github.com/RSKothari/EllSeg",
+      "public_implementation_observed": true
+    },
+    {
+      "url": "https://github.com/worldcoin/open-iris",
+      "public_implementation_observed": true
+    },
+    {
+      "url": "https://github.com/naveengv7/LightIrisNet",
+      "public_implementation_observed": true
+    },
+    {
+      "url": "https://github.com/gwquinn/IrisFinder",
+      "public_implementation_observed": true
+    },
+    {
+      "url": "https://github.com/CVRL/RaspberryPiOpenSourceIris",
+      "public_implementation_observed": true
+    },
+    {
+      "url": "https://github.com/RumanaSum/Iris-Segmentation",
+      "public_implementation_observed": true
+    },
+    {
+      "url": "https://github.com/vilibili/FRED-Net_Keras",
+      "public_implementation_observed": true
+    },
+    {
+      "url": "https://github.com/GeetanjaliGTZ/VREyeSAM",
+      "public_implementation_observed": false
+    }
+  ],
+  "note": "repositorios.json records a failed sandbox network attempt, not evidence of unavailable repositories. Verification used the web tool."
+}

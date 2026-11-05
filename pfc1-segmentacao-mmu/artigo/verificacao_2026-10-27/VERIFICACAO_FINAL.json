@@ -1,0 +1,41 @@
+{
+  "template_sha256": "e8d9f33821f15443b4c27d3289a4d65cc110385dcbdca790a3766030257ac2eb",
+  "output_sha256": "75ca102a40afa8ccc2dea4caacb10cb023ee3cb2e098a6fb5929388654522820",
+  "preserved_parts": 17,
+  "changed_parts": [
+    "[Content_Types].xml",
+    "docProps/core.xml",
+    "word/_rels/document.xml.rels",
+    "word/document.xml",
+    "word/footnotes.xml",
+    "word/settings.xml"
+  ],
+  "new_parts": [
+    "word/media/image5.png",
+    "word/media/image6.png",
+    "word/media/image7.png"
+  ],
+  "words_markdown": 8006,
+  "author_notes_verified": true,
+  "no_new_experiments": true,
+  "pages_rendered": 26,
+  "all_final_pages_visually_reviewed": true,
+  "references": 23,
+  "reference_pages": [
+    24,
+    25,
+    26
+  ],
+  "native_editable_tables": 6,
+  "embedded_figures": 3,
+  "native_equations": 1,
+  "real_author_footnotes": 2,
+  "active_reference_links": 26,
+  "tracked_changes": false,
+  "copied_to_onedrive_folder": true,
+  "cloud_upload_verified": false,
+  "copy_sha256_verified": true,
+  "final_file": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\artigo\\ARTIGO_AREA_IRIS_UNISATC_2026-10-27.docx",
+  "template_unchanged": true,
+  "visual_correction": "Clinical table widths corrected; page 19 rechecked; other 25 page PNGs identical to reviewed render."
+}

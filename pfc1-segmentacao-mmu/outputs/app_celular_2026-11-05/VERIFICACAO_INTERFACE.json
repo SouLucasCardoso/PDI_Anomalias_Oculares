@@ -1,0 +1,17 @@
+{
+  "syntax": "passed: Node vm.Script",
+  "literal_dom_ids": "all referenced IDs exist; no duplicate HTML IDs",
+  "portrait_coordinate_test": {
+    "photo_px": [3000, 4000],
+    "canvas_px": [1000, 750],
+    "display_px": [360, 270],
+    "image_scale_on_canvas": 0.1875,
+    "image_offset_on_canvas": [218.75, 0],
+    "center_in_original": [1500, 2000],
+    "pointer_move_36_display_px_in_original": [2033.3333333333333, 2000],
+    "passed": true,
+    "scope": "DOM/canvas mocks in Node VM, not a real browser layout or device test"
+  },
+  "browser_visual_test": "blocked: browser access host and native pipe unavailable",
+  "physical_s23_test": "pending: no USB device enumerated"
+}

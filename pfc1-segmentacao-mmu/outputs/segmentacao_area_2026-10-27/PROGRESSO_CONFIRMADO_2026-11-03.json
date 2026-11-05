@@ -1,0 +1,20 @@
+﻿{
+    "checked_utc":  "2026-11-03T15:27:36.9500476Z",
+    "child_alive":  true,
+    "child_pid":  5516,
+    "parent_pid":  25444,
+    "stage":  "training",
+    "progress":  {
+                     "utc":  "2026-11-03T15:26:35.167639+00:00",
+                     "phase":  "training",
+                     "epoch":  16,
+                     "batch":  51,
+                     "batches":  483,
+                     "samples":  816,
+                     "loss":  0.36934519749061734
+                 },
+    "resumed_after_batch":  50,
+    "experiment_sources_unchanged":  true,
+    "supervisor_lifecycle_checks_passed":  3,
+    "recognition_pending":  true
+}
