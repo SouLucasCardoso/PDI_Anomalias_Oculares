@@ -1,0 +1,54 @@
+{
+  "status": "completed_diagnostic_only",
+  "summary": {
+    "clean": {
+      "original": {
+        "dice": 0.953618760146832,
+        "iou": 0.9121553091654081
+      },
+      "snapshot": {
+        "dice": 0.9168411907010297,
+        "iou": 0.8534775062986425
+      }
+    },
+    "zoom3": {
+      "original": {
+        "dice": 0.017149079124269887,
+        "iou": 0.008726652187409372
+      },
+      "snapshot": {
+        "dice": 0.7173092151250234,
+        "iou": 0.5985332607876445
+      }
+    },
+    "oblique": {
+      "original": {
+        "dice": 0.9162871426856615,
+        "iou": 0.8510218790610002
+      },
+      "snapshot": {
+        "dice": 0.8263033187473292,
+        "iou": 0.7470426652173012
+      }
+    },
+    "glasses": {
+      "original": {
+        "dice": 0.8861136942645895,
+        "iou": 0.8184680458841503
+      },
+      "snapshot": {
+        "dice": 0.8356752405870559,
+        "iou": 0.7597712752345847
+      }
+    }
+  },
+  "people": 16,
+  "records_recalculated": 128,
+  "checkpoint_selected": false,
+  "full_validation_completed": false,
+  "recognition_gain_measured": false,
+  "minimum_visible_iris_area": null,
+  "training_changed": false,
+  "masks_sha256": "a5adb14975b88d6db7957c60cb1f5aa23c2395745876b69eb7a760a8fd6d0497",
+  "clinical_qualitative_only": true
+}

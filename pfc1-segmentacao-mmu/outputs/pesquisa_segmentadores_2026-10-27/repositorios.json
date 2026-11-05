@@ -1,0 +1,50 @@
+[
+  {
+    "repository": "ParisaFarmanifard/Iris-SAM",
+    "error": "<urlopen error [WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso>"
+  },
+  {
+    "repository": "GeetanjaliGTZ/VREyeSAM",
+    "error": "<urlopen error [WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso>"
+  },
+  {
+    "repository": "xiamenwcy/IrisParseNet",
+    "error": "<urlopen error [WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso>"
+  },
+  {
+    "repository": "AayushKrChaudhary/RITnet",
+    "error": "<urlopen error [WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso>"
+  },
+  {
+    "repository": "fdbtrs/SS-Eye-MS",
+    "error": "<urlopen error [WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso>"
+  },
+  {
+    "repository": "RSKothari/EllSeg",
+    "error": "<urlopen error [WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso>"
+  },
+  {
+    "repository": "worldcoin/open-iris",
+    "error": "<urlopen error [WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso>"
+  },
+  {
+    "repository": "naveengv7/LightIrisNet",
+    "error": "<urlopen error [WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso>"
+  },
+  {
+    "repository": "gwquinn/IrisFinder",
+    "error": "<urlopen error [WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso>"
+  },
+  {
+    "repository": "CVRL/RaspberryPiOpenSourceIris",
+    "error": "<urlopen error [WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso>"
+  },
+  {
+    "repository": "RumanaSum/Iris-Segmentation",
+    "error": "<urlopen error [WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso>"
+  },
+  {
+    "repository": "vilibili/FRED-Net_Keras",
+    "error": "<urlopen error [WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso>"
+  }
+]

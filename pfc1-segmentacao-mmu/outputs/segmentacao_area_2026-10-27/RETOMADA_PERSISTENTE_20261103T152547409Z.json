@@ -1,0 +1,13 @@
+﻿{
+    "checked_utc":  "2026-11-03T15:25:50.0349858Z",
+    "task_name":  "PFC_Iris_Segmentacao_Area_20261027",
+    "state":  "Running",
+    "automatic_resume_at_current_user_logon":  true,
+    "restart_count_on_failure":  3,
+    "restart_interval_minutes":  2,
+    "completed_run_guard":  true,
+    "temporary_idle_sleep_request_during_run":  true,
+    "science_source_hashes_match":  true,
+    "supervisor_sha256":  "c420372fe25f5bb5f14887ba01adacd6dd14cdd59c44193d73f4b1c635d96c73",
+    "previous_task_xml":  "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\segmentacao_area_2026-10-27\\tarefa_antes_retomada_20261103T152547409Z.xml"
+}

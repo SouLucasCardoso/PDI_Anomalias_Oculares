@@ -1,0 +1,1614 @@
+{
+  "audited_utc": "2026-11-04T20:19:07.594904+00:00",
+  "best_epoch": 15,
+  "canonical_path": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-adaptado-20261103\\melhor_modelo.pt",
+  "canonical_sha256": "cf8a718e0160c14408d1533445ff611b00a79c75d2c0fd07fb7540150e59db99",
+  "mirror_path": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\sam31_iris_adaptacao_2026-11-03\\candidato_epoca_15.pt",
+  "mirror_sha256": "88ba2d27f8481b7b4c6b3702f2176e489f2dee1c8857cc86b8656d731a7bad48",
+  "all_tensor_values_equal": true,
+  "tensors_compared": 258,
+  "non_tensor_values_compared": 470,
+  "tensor_schema": {
+    "state.model.enc1.block.0.weight": {
+      "shape": [
+        8,
+        3,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc1.block.1.weight": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc1.block.1.bias": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc1.block.1.running_mean": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc1.block.1.running_var": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc1.block.1.num_batches_tracked": {
+      "shape": [],
+      "dtype": "torch.int64"
+    },
+    "state.model.enc1.block.3.weight": {
+      "shape": [
+        8,
+        8,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc1.block.4.weight": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc1.block.4.bias": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc1.block.4.running_mean": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc1.block.4.running_var": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc1.block.4.num_batches_tracked": {
+      "shape": [],
+      "dtype": "torch.int64"
+    },
+    "state.model.enc2.block.0.weight": {
+      "shape": [
+        16,
+        8,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc2.block.1.weight": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc2.block.1.bias": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc2.block.1.running_mean": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc2.block.1.running_var": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc2.block.1.num_batches_tracked": {
+      "shape": [],
+      "dtype": "torch.int64"
+    },
+    "state.model.enc2.block.3.weight": {
+      "shape": [
+        16,
+        16,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc2.block.4.weight": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc2.block.4.bias": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc2.block.4.running_mean": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc2.block.4.running_var": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc2.block.4.num_batches_tracked": {
+      "shape": [],
+      "dtype": "torch.int64"
+    },
+    "state.model.enc3.block.0.weight": {
+      "shape": [
+        32,
+        16,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc3.block.1.weight": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc3.block.1.bias": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc3.block.1.running_mean": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc3.block.1.running_var": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc3.block.1.num_batches_tracked": {
+      "shape": [],
+      "dtype": "torch.int64"
+    },
+    "state.model.enc3.block.3.weight": {
+      "shape": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc3.block.4.weight": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc3.block.4.bias": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc3.block.4.running_mean": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc3.block.4.running_var": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.enc3.block.4.num_batches_tracked": {
+      "shape": [],
+      "dtype": "torch.int64"
+    },
+    "state.model.middle.block.0.weight": {
+      "shape": [
+        64,
+        32,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.middle.block.1.weight": {
+      "shape": [
+        64
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.middle.block.1.bias": {
+      "shape": [
+        64
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.middle.block.1.running_mean": {
+      "shape": [
+        64
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.middle.block.1.running_var": {
+      "shape": [
+        64
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.middle.block.1.num_batches_tracked": {
+      "shape": [],
+      "dtype": "torch.int64"
+    },
+    "state.model.middle.block.3.weight": {
+      "shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.middle.block.4.weight": {
+      "shape": [
+        64
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.middle.block.4.bias": {
+      "shape": [
+        64
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.middle.block.4.running_mean": {
+      "shape": [
+        64
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.middle.block.4.running_var": {
+      "shape": [
+        64
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.middle.block.4.num_batches_tracked": {
+      "shape": [],
+      "dtype": "torch.int64"
+    },
+    "state.model.up3.weight": {
+      "shape": [
+        64,
+        32,
+        2,
+        2
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.up3.bias": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec3.block.0.weight": {
+      "shape": [
+        32,
+        64,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec3.block.1.weight": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec3.block.1.bias": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec3.block.1.running_mean": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec3.block.1.running_var": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec3.block.1.num_batches_tracked": {
+      "shape": [],
+      "dtype": "torch.int64"
+    },
+    "state.model.dec3.block.3.weight": {
+      "shape": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec3.block.4.weight": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec3.block.4.bias": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec3.block.4.running_mean": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec3.block.4.running_var": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec3.block.4.num_batches_tracked": {
+      "shape": [],
+      "dtype": "torch.int64"
+    },
+    "state.model.up2.weight": {
+      "shape": [
+        32,
+        16,
+        2,
+        2
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.up2.bias": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec2.block.0.weight": {
+      "shape": [
+        16,
+        32,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec2.block.1.weight": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec2.block.1.bias": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec2.block.1.running_mean": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec2.block.1.running_var": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec2.block.1.num_batches_tracked": {
+      "shape": [],
+      "dtype": "torch.int64"
+    },
+    "state.model.dec2.block.3.weight": {
+      "shape": [
+        16,
+        16,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec2.block.4.weight": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec2.block.4.bias": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec2.block.4.running_mean": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec2.block.4.running_var": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec2.block.4.num_batches_tracked": {
+      "shape": [],
+      "dtype": "torch.int64"
+    },
+    "state.model.up1.weight": {
+      "shape": [
+        16,
+        8,
+        2,
+        2
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.up1.bias": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec1.block.0.weight": {
+      "shape": [
+        8,
+        16,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec1.block.1.weight": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec1.block.1.bias": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec1.block.1.running_mean": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec1.block.1.running_var": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec1.block.1.num_batches_tracked": {
+      "shape": [],
+      "dtype": "torch.int64"
+    },
+    "state.model.dec1.block.3.weight": {
+      "shape": [
+        8,
+        8,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec1.block.4.weight": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec1.block.4.bias": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec1.block.4.running_mean": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec1.block.4.running_var": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.dec1.block.4.num_batches_tracked": {
+      "shape": [],
+      "dtype": "torch.int64"
+    },
+    "state.model.output.weight": {
+      "shape": [
+        4,
+        8,
+        1,
+        1
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.output.bias": {
+      "shape": [
+        4
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.sam_projection.0.weight": {
+      "shape": [
+        32,
+        256,
+        1,
+        1
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.sam_projection.0.bias": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.sam_projection.2.weight": {
+      "shape": [
+        64,
+        32,
+        1,
+        1
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.model.sam_projection.2.bias": {
+      "shape": [
+        64
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.0.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.0.exp_avg": {
+      "shape": [
+        8,
+        3,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.0.exp_avg_sq": {
+      "shape": [
+        8,
+        3,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.1.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.1.exp_avg": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.1.exp_avg_sq": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.2.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.2.exp_avg": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.2.exp_avg_sq": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.3.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.3.exp_avg": {
+      "shape": [
+        8,
+        8,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.3.exp_avg_sq": {
+      "shape": [
+        8,
+        8,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.4.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.4.exp_avg": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.4.exp_avg_sq": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.5.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.5.exp_avg": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.5.exp_avg_sq": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.6.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.6.exp_avg": {
+      "shape": [
+        16,
+        8,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.6.exp_avg_sq": {
+      "shape": [
+        16,
+        8,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.7.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.7.exp_avg": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.7.exp_avg_sq": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.8.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.8.exp_avg": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.8.exp_avg_sq": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.9.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.9.exp_avg": {
+      "shape": [
+        16,
+        16,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.9.exp_avg_sq": {
+      "shape": [
+        16,
+        16,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.10.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.10.exp_avg": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.10.exp_avg_sq": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.11.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.11.exp_avg": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.11.exp_avg_sq": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.12.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.12.exp_avg": {
+      "shape": [
+        32,
+        16,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.12.exp_avg_sq": {
+      "shape": [
+        32,
+        16,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.13.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.13.exp_avg": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.13.exp_avg_sq": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.14.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.14.exp_avg": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.14.exp_avg_sq": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.15.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.15.exp_avg": {
+      "shape": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.15.exp_avg_sq": {
+      "shape": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.16.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.16.exp_avg": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.16.exp_avg_sq": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.17.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.17.exp_avg": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.17.exp_avg_sq": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.18.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.18.exp_avg": {
+      "shape": [
+        64,
+        32,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.18.exp_avg_sq": {
+      "shape": [
+        64,
+        32,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.19.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.19.exp_avg": {
+      "shape": [
+        64
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.19.exp_avg_sq": {
+      "shape": [
+        64
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.20.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.20.exp_avg": {
+      "shape": [
+        64
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.20.exp_avg_sq": {
+      "shape": [
+        64
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.21.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.21.exp_avg": {
+      "shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.21.exp_avg_sq": {
+      "shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.22.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.22.exp_avg": {
+      "shape": [
+        64
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.22.exp_avg_sq": {
+      "shape": [
+        64
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.23.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.23.exp_avg": {
+      "shape": [
+        64
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.23.exp_avg_sq": {
+      "shape": [
+        64
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.24.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.24.exp_avg": {
+      "shape": [
+        64,
+        32,
+        2,
+        2
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.24.exp_avg_sq": {
+      "shape": [
+        64,
+        32,
+        2,
+        2
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.25.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.25.exp_avg": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.25.exp_avg_sq": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.26.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.26.exp_avg": {
+      "shape": [
+        32,
+        64,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.26.exp_avg_sq": {
+      "shape": [
+        32,
+        64,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.27.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.27.exp_avg": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.27.exp_avg_sq": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.28.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.28.exp_avg": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.28.exp_avg_sq": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.29.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.29.exp_avg": {
+      "shape": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.29.exp_avg_sq": {
+      "shape": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.30.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.30.exp_avg": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.30.exp_avg_sq": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.31.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.31.exp_avg": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.31.exp_avg_sq": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.32.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.32.exp_avg": {
+      "shape": [
+        32,
+        16,
+        2,
+        2
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.32.exp_avg_sq": {
+      "shape": [
+        32,
+        16,
+        2,
+        2
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.33.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.33.exp_avg": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.33.exp_avg_sq": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.34.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.34.exp_avg": {
+      "shape": [
+        16,
+        32,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.34.exp_avg_sq": {
+      "shape": [
+        16,
+        32,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.35.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.35.exp_avg": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.35.exp_avg_sq": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.36.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.36.exp_avg": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.36.exp_avg_sq": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.37.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.37.exp_avg": {
+      "shape": [
+        16,
+        16,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.37.exp_avg_sq": {
+      "shape": [
+        16,
+        16,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.38.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.38.exp_avg": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.38.exp_avg_sq": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.39.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.39.exp_avg": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.39.exp_avg_sq": {
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.40.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.40.exp_avg": {
+      "shape": [
+        16,
+        8,
+        2,
+        2
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.40.exp_avg_sq": {
+      "shape": [
+        16,
+        8,
+        2,
+        2
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.41.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.41.exp_avg": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.41.exp_avg_sq": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.42.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.42.exp_avg": {
+      "shape": [
+        8,
+        16,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.42.exp_avg_sq": {
+      "shape": [
+        8,
+        16,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.43.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.43.exp_avg": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.43.exp_avg_sq": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.44.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.44.exp_avg": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.44.exp_avg_sq": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.45.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.45.exp_avg": {
+      "shape": [
+        8,
+        8,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.45.exp_avg_sq": {
+      "shape": [
+        8,
+        8,
+        3,
+        3
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.46.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.46.exp_avg": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.46.exp_avg_sq": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.47.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.47.exp_avg": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.47.exp_avg_sq": {
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.48.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.48.exp_avg": {
+      "shape": [
+        4,
+        8,
+        1,
+        1
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.48.exp_avg_sq": {
+      "shape": [
+        4,
+        8,
+        1,
+        1
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.49.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.49.exp_avg": {
+      "shape": [
+        4
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.49.exp_avg_sq": {
+      "shape": [
+        4
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.50.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.50.exp_avg": {
+      "shape": [
+        32,
+        256,
+        1,
+        1
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.50.exp_avg_sq": {
+      "shape": [
+        32,
+        256,
+        1,
+        1
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.51.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.51.exp_avg": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.51.exp_avg_sq": {
+      "shape": [
+        32
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.52.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.52.exp_avg": {
+      "shape": [
+        64,
+        32,
+        1,
+        1
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.52.exp_avg_sq": {
+      "shape": [
+        64,
+        32,
+        1,
+        1
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.53.step": {
+      "shape": [],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.53.exp_avg": {
+      "shape": [
+        64
+      ],
+      "dtype": "torch.float32"
+    },
+    "state.optimizer.state.53.exp_avg_sq": {
+      "shape": [
+        64
+      ],
+      "dtype": "torch.float32"
+    }
+  },
+  "zip_root_names": {
+    "source": "melhor_modelo.pt",
+    "mirror": "candidato_epoca_15.pt"
+  },
+  "zip_entries_compared": 264,
+  "zip_payload_entries_different": [],
+  "optimizer_and_scheduler_and_history_equal": true,
+  "source_matches_registered_final_sha256": true,
+  "repair_performed": false
+}

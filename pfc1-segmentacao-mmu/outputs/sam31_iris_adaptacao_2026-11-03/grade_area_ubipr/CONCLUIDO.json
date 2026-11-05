@@ -1,0 +1,16 @@
+{
+  "status": "reference_geometry_characterized",
+  "protocol_sha256": "f1d40a957345085090c43de03699f456c7664a836f3d68b74a17e6fd2e538e38",
+  "artifacts_sha256": {
+    "consultas.json": "181aaa3c2a01c29a652a76217a241148c88a78af6e2a76ae9a70e3e5ffe8a0b7",
+    "grade_por_consulta.csv": "c4bc796fec84e7976d3a91c3d0608cba99166ff879992a038b3c44669285f152",
+    "protocolo.json": "f1d40a957345085090c43de03699f456c7664a836f3d68b74a17e6fd2e538e38",
+    "REFERENCIA_AREA.md": "092d401d116bacd57e86006b44a84c91a05d1aaf940570b8e3917228f068084e",
+    "RESUMO.json": "336d1208db7a8636ede85a19929bfff87ca14ce61fe386ad73543121fa2c10a6",
+    "source.py": "ed48471d6b4adfbf0cbfc8c37ca7092067cf7d3a392a2d23e7ec2976aaecc2e1"
+  },
+  "queries": 482,
+  "loss_levels": 13,
+  "no_inference": true,
+  "minimum_area_assigned": false
+}

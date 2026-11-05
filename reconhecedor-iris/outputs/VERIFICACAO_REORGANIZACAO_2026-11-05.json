@@ -1,0 +1,28 @@
+{
+  "date_local": "2026-11-05",
+  "scope": "Reorganization compatibility, no new mobile accuracy estimate",
+  "regression_cases": 3,
+  "component_arrays_exactly_equal": 27,
+  "all_component_arrays_equal": true,
+  "ranking_exactly_equal": true,
+  "engine_provenance_unchanged": true,
+  "private_capture_files_present": true,
+  "tests": {
+    "scientific_unit_tests": 46,
+    "mobile_http_tests": 4,
+    "all_passed": true
+  },
+  "usb": {
+    "s23_authorized_detected": true,
+    "port_reverse_reestablished": true,
+    "serial_published": false
+  },
+  "private_gallery_published": false,
+  "photos_weights_caches_published": false,
+  "http_after_restart": {
+    "status_ok": true,
+    "private_gallery_preserved": true,
+    "saved_enrollment_restored": true,
+    "engine_id_preserved": true
+  }
+}

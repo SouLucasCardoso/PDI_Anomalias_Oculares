@@ -1,0 +1,131 @@
+{
+  "checkpoint_sha256": "cf8a718e0160c14408d1533445ff611b00a79c75d2c0fd07fb7540150e59db99",
+  "sources": {
+    "avaliar_clinica_sam3_adaptado.py": "cd90f0a55cae55f9ecd4c6b55ae107e283e0ec9dd79f882c7d856b84be8d14da",
+    "segmentador_sam3_iris.py": "e4091a076cd214d4a9dcb78452c8ec37bd65e4f201fbdc1f0dc46147eaaff596"
+  },
+  "tasks": [
+    {
+      "id": "P0005_OD20241206",
+      "image_sha256": "37a105b917c6bd5959f26db21aa054de1fc3f63d42b7a76dbb04fe15b77ecef4"
+    },
+    {
+      "id": "P0007_OS20250306",
+      "image_sha256": "b033515645f0700e80240c58e3e04417a8ab0e1a2713f6eda5401442dd68c52b"
+    },
+    {
+      "id": "P0969_OS20250106",
+      "image_sha256": "0d3094a9c2cebac28bb27ce980f3fc3d603d0046fe93608ba2721910b717cc87"
+    },
+    {
+      "id": "P0101_OD20250206",
+      "image_sha256": "b8e32561de2f3ebc57b91ef5d8503c290ea75cedcca4db6df6ca3c4b5ba27f61"
+    },
+    {
+      "id": "P0586_OD20250511",
+      "image_sha256": "deac023c36e252e362aa2bea9b6cc5e7538ba2f0467ffecf4c1ad4c5e0a78623"
+    },
+    {
+      "id": "P0421_OD20241219",
+      "image_sha256": "083dc6cb859dfbec4c8f87722768807922748197aaf79341328d2eacef1a9abd"
+    },
+    {
+      "id": "P0243_OD20241216",
+      "image_sha256": "68d43771d0437b072d512a18fadb7657b66e76425e53f20613c3bf67956b9990"
+    },
+    {
+      "id": "P0707_OD20250407",
+      "image_sha256": "57087174289187988697a8f872cdfccd17bc1de5843684f4e38c1dca4abc5b38"
+    },
+    {
+      "id": "P0842_OS20241213",
+      "image_sha256": "4fbb88c12434d52375aeae5da301004c188eb4270b8c9aa07caf6771b719e516"
+    },
+    {
+      "id": "P0965_OS20250325",
+      "image_sha256": "a2a5180be055f434cf70ee9800aa83a0eb21ca28cfd627d3f7ec1611feff0563"
+    },
+    {
+      "id": "P0820_OS20241205",
+      "image_sha256": "ba4d2c8161604d5fd2d45ce88805a82f7a788bf11b20fc7be749f53112084737"
+    },
+    {
+      "id": "P0127_OD20241216",
+      "image_sha256": "480302e6e98474bfabee78047eae629e6e6278f526b5b5dceda38831e94f4426"
+    },
+    {
+      "id": "P0815_OS20250519",
+      "image_sha256": "1f9fa91717232cc879439f26c9ee624df3f0dfde039069005d21f48d166114a8"
+    },
+    {
+      "id": "P0360_OD20250318",
+      "image_sha256": "50ded8517967eb32e5c722aeb9f8ca9733bb459585b499c22ec2e4dde8deaef5"
+    },
+    {
+      "id": "P0607_OS20250515",
+      "image_sha256": "8c045ff3f528faf8bc6ca4f30e254f2977e1bb69b06e4cb4e2f0d12f24e01431"
+    },
+    {
+      "id": "P0256_OD20250517",
+      "image_sha256": "a9c3d8e1dce274a78512edc9d126360beffe36ce8e2a454f4779bc336dd7c7d0"
+    },
+    {
+      "id": "P0110_OS20250527",
+      "image_sha256": "f6204294aea9d33aa8ddb6393f6c2379be3ee9974b7b8501d00f77da4a677030"
+    },
+    {
+      "id": "P0331_OD20250218",
+      "image_sha256": "85b57ba6c5ac53842adb51488a407e6ebeff68826df506101c81d675d7ca9e5a"
+    },
+    {
+      "id": "P0229_OS20250615",
+      "image_sha256": "ec4887079b2bae62be91db6743cac8a1c08e59ed844ed0d4a49e73df65d73b7e"
+    },
+    {
+      "id": "P0049_OS20250406",
+      "image_sha256": "fe7240af023929d8239e43d4000129d8b5152111ce27b59a733b953f4d6af0ab"
+    },
+    {
+      "id": "P0409_OD20250408",
+      "image_sha256": "5cb1958428a42e27823f3b44d9ee567257c1ed7215e2ce4090b288871356ba0b"
+    },
+    {
+      "id": "P0551_OD20250320",
+      "image_sha256": "2ac8b2e631e36480871f9e4c4e4f6f5795e8c29d5282f189dc9de610c25fd8fd"
+    },
+    {
+      "id": "P0681_OD20250121",
+      "image_sha256": "41fbbdf410e85d14b719bafaedb1c0893197163239eb60027dace4b6cf851d70"
+    },
+    {
+      "id": "P0325_OS20250225",
+      "image_sha256": "d5d9c4714d53fe56093e024c2709c980b903e774e63897c225ef60cfd874f3e1"
+    },
+    {
+      "id": "P0106_OD20250220",
+      "image_sha256": "3a93b67b4e61de295bfb9dedd20fc1ec441a66755fbdee5f0b9ecd151c343365"
+    },
+    {
+      "id": "P0889_OS20250221",
+      "image_sha256": "0539b0b01bf1d057f73d0fdfaa119064fd68e46894c28cb0e9d2ebfed0cf520f"
+    },
+    {
+      "id": "P0320_OD20241221",
+      "image_sha256": "f25fbb41044557266c3455a94eb867303f3114aaee5a01234ccdb34d7d7dcd1a"
+    },
+    {
+      "id": "P0714_OS20250304",
+      "image_sha256": "698df23d369637a48450b676610504d95527c73efcfd44b9da2cd5e23f062506"
+    },
+    {
+      "id": "P0105_OD20250124",
+      "image_sha256": "2b14991fce3e7f12d439836b442a4c09ad8fdf2d3fbbd56bf2817fe4d8a1159f"
+    },
+    {
+      "id": "P0895_OD20250608",
+      "image_sha256": "c1464e293c1cf7327bbd0d86f0b390d177479312d2f58c9edbda655680a40b06"
+    }
+  ],
+  "references_used_in_inference": false,
+  "precision": "SAM3 BF16, decoder FP32; RGB original resized416x320, native NN mask"
+}

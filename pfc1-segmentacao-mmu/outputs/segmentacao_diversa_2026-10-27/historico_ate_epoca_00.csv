@@ -1,0 +1,2 @@
+epoch,train_loss,dice_clean,dice_zoom3,dice_oblique,dice_glasses,eligible_clean_guard,minimum_dice,seconds
+0,,0.854869501354042,0.01964228879857682,0.47133152883220236,0.6733856131897712,True,0.01964228879857682,621.670999999973

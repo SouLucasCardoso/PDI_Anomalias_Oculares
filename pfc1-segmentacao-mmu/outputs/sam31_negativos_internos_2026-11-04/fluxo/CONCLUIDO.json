@@ -1,0 +1,8 @@
+{
+  "completed_utc": "2026-11-05T03:10:28.157576+00:00",
+  "reason": "Epoch0 selected: no segmentation improvement; unchanged parent identity results retained, no redundant identity or area inference",
+  "new_candidate_evaluated": false,
+  "test_inference": false,
+  "clinical_effect_established": false,
+  "production_replaced": false
+}

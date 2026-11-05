@@ -1,0 +1,140 @@
+{
+  "closed_utc": "2026-11-04T23:05:54.442648+00:00",
+  "checkpoint_sha256": "cf8a718e0160c14408d1533445ff611b00a79c75d2c0fd07fb7540150e59db99",
+  "six_conditions_audited": true,
+  "all_queries_retained": 482,
+  "clean_counts": {
+    "correct": 431,
+    "accepted": 432,
+    "joint": 419,
+    "false_accepts": 76,
+    "queries": 482,
+    "impostors": 7230,
+    "extraction_failures": 3
+  },
+  "clean_rates": {
+    "rank1": 0.8941908713692946,
+    "tar": 0.8962655601659751,
+    "joint": 0.8692946058091287,
+    "fmr": 0.010511756569847857
+  },
+  "required_integer_counts": {
+    "correct": 434,
+    "accepted": 434,
+    "joint": 434
+  },
+  "maximum_false_accepts": 72,
+  "deficits": {
+    "correct": 3,
+    "accepted": 2,
+    "joint": 15
+  },
+  "false_accepts_above_limit": 4,
+  "area_grid_not_started_due_to_clean_gate_failure": true,
+  "no_minimum_assigned": true,
+  "next_stage": "Train-only paired feasibility of native ROI and explicit SAM3 pupil subtraction; no threshold change",
+  "paired_comparisons": [
+    {
+      "condition": "original",
+      "loss_percent": 0,
+      "paired": {
+        "rank1": {
+          "candidate_minus_original_pp": -0.6224066390041494,
+          "interval95_cluster_person_pp": [
+            -3.319502074688797,
+            2.074688796680498
+          ]
+        },
+        "tar": {
+          "candidate_minus_original_pp": -0.8298755186721992,
+          "interval95_cluster_person_pp": [
+            -3.5416666666666665,
+            2.0661157024793386
+          ]
+        },
+        "joint": {
+          "candidate_minus_original_pp": -1.4522821576763485,
+          "interval95_cluster_person_pp": [
+            -4.791666666666667,
+            1.6597510373443984
+          ]
+        },
+        "fmr": {
+          "candidate_minus_original_pp": 0.05532503457814662,
+          "interval95_cluster_person_pp": [
+            -0.23415977961432505,
+            0.3333333333333333
+          ]
+        }
+      }
+    },
+    {
+      "condition": "oclusao_superior",
+      "loss_percent": 10,
+      "paired": {
+        "rank1": {
+          "candidate_minus_original_pp": 1.4522821576763485,
+          "interval95_cluster_person_pp": [
+            -2.074688796680498,
+            5.1658250745859124
+          ]
+        },
+        "tar": {
+          "candidate_minus_original_pp": 1.0373443983402488,
+          "interval95_cluster_person_pp": [
+            -2.4896265560165975,
+            4.149377593360996
+          ]
+        },
+        "joint": {
+          "candidate_minus_original_pp": 1.0373443983402488,
+          "interval95_cluster_person_pp": [
+            -2.904564315352697,
+            4.732510288065844
+          ]
+        },
+        "fmr": {
+          "candidate_minus_original_pp": -0.1521438450899032,
+          "interval95_cluster_person_pp": [
+            -0.48409405255878285,
+            0.18055555555555555
+          ]
+        }
+      }
+    },
+    {
+      "condition": "oclusao_inferior",
+      "loss_percent": 10,
+      "paired": {
+        "rank1": {
+          "candidate_minus_original_pp": 19.70954356846473,
+          "interval95_cluster_person_pp": [
+            14.583333333333334,
+            25.0
+          ]
+        },
+        "tar": {
+          "candidate_minus_original_pp": 19.502074688796682,
+          "interval95_cluster_person_pp": [
+            14.107883817427386,
+            25.311203319502074
+          ]
+        },
+        "joint": {
+          "candidate_minus_original_pp": 19.70954356846473,
+          "interval95_cluster_person_pp": [
+            14.375,
+            25.514510014855794
+          ]
+        },
+        "fmr": {
+          "candidate_minus_original_pp": -0.9681881051175656,
+          "interval95_cluster_person_pp": [
+            -1.5289256198347108,
+            -0.38888888888888895
+          ]
+        }
+      }
+    }
+  ]
+}

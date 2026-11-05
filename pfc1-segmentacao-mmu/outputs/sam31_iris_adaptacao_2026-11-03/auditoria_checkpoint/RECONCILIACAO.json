@@ -1,0 +1,15 @@
+{
+  "repaired_utc": "2026-11-04T20:20:03.510642+00:00",
+  "reason": "torch.save used distinct file names, changing ZIP root paths; all264 normalized ZIP payloads and258 tensors were identical",
+  "original_mirror_backup": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\sam31_iris_adaptacao_2026-11-03\\auditoria_checkpoint\\candidato_epoca_15_SERIALIZACAO_ORIGINAL.pt",
+  "original_mirror_sha256": "88ba2d27f8481b7b4c6b3702f2176e489f2dee1c8857cc86b8656d731a7bad48",
+  "canonical_checkpoint_sha256": "cf8a718e0160c14408d1533445ff611b00a79c75d2c0fd07fb7540150e59db99",
+  "repaired_mirror_sha256": "cf8a718e0160c14408d1533445ff611b00a79c75d2c0fd07fb7540150e59db99",
+  "best_epoch": 15,
+  "optimizer_updates": 7245,
+  "model_weights_changed": false,
+  "optimizer_scheduler_history_changed": false,
+  "declared_final_hash_changed": false,
+  "training_or_evaluation_sources_changed": false,
+  "method": "Byte copy of canonical file whose SHA256 already matched the registered final result; original mirror preserved"
+}

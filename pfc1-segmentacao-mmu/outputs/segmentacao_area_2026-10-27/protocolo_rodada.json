@@ -1,0 +1,48 @@
+{
+  "registered_utc": "2026-10-28T02:05:41.432134+00:00",
+  "source_hashes": {
+    "avaliar_area_segmentador_diverso.py": "2090408d1e3de193a5875304f6255fe2453e6f573f17fe486434397b292af155",
+    "treinar_segmentacao_area.py": "ec5be7ede0d6a0c33808586eea4fd80d7fb697e8e5c72fb83254a062c4a5177e",
+    "treinar_segmentacao_diversa.py": "3d7c937e0e10d0c3f785070ac5386dfe953b7c86b96572a5791149dfd7156065",
+    "avaliar_candidato_congelado.py": "6390747960dd339f39782cc2895999e6929d7a9e97111e70c143b6f4193db278",
+    "avaliar_robustez_reconhecimento.py": "e6d0b8d8eb78dc2e86ed3f73084cd9fb5d83d1afee27f73ca0ffbee1a5947f95",
+    "comparar_recortes_diversos.py": "ff475cce0e86c88692dffd0f1aefbd0d58f3824e6e35265835efcc322c7e826a",
+    "textura_polar.py": "f977efb2101f2b23338041513908d4deb6eea51a2a730c8f71f0d20c19bcdadc",
+    "normalizacao_eliptica.py": "370f61686ce7209b3e705b1dc9b2ffa55bb0eac0cf54911f1edc3d92d7aca72a",
+    "normalizar_consulta.py": "8e105dbdb11ba547420fdb171403bc4cebb07fd9358a1e59c22e37b0f0a8e3a6",
+    "validar_lateralidade_informada.py": "438c67e9f50e4a0bbcaf666e0ffaff59119f1b183b61442e698ede274bfb1247"
+  },
+  "configuration": {
+    "run_root": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-segmentacao-area-20261027",
+    "mirror_root": "outputs\\segmentacao_area_2026-10-27",
+    "baseline_dir": "outputs\\segmentacao_diversa_2026-10-27",
+    "epochs": 30
+  },
+  "main_objective": "Estimate smallest observed visible iris area supporting identification under controlled false matching",
+  "population": "Original subject-disjoint UBIPr segmentation train/validation; identity uses fixed session1 gallery and session2 queries, one image, supplied side, all failures retained",
+  "checkpoint_selection": "Final best epoch by segmentation validation ONLY; no recognition-guided checkpoint search",
+  "threshold_and_identity": "All original identity weights, component calibration, normalization and frozen threshold unchanged",
+  "controls": "Original and new segmenter on clean/upper10/lower10, all482 validation queries. Input resolution follows candidate training metadata.",
+  "area_grid_loss_percent": [
+    0,
+    1,
+    2,
+    5,
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90
+  ],
+  "area_grid_rule": "Only if candidate original passes Rank1>=90%,TAR>=90%,FMR<=1%; evaluate ALL registered levels both orientations, even after failure. Minimum is prefix on tested grid; no monotonic interpolation.",
+  "uncertainty": "5000 cluster bootstraps by query person, fixed gallery. Reused development validation, not independent confirmation.",
+  "area_definition": "Fraction of originally annotated visible iris pixels, not whole anatomical iris, disease severity or percent of a diagnosed lesion",
+  "intervention": "Gray128 at exact rounded annotated iris pixel count; reference used only for intervention and area measurement, never extraction. Segmentation recalculated on altered photograph.",
+  "clinical_scope": "SLP-VLD normal/anomaly cases qualitative, no clinical percentage without reviewed masks and repeated-session same-eye controls",
+  "test_inference": false,
+  "automatic_production_replacement": false
+}

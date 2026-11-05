@@ -1,0 +1,13 @@
+﻿{
+    "updated_utc":  "2026-11-05T01:55:54.5288388Z",
+    "task_name":  "PFC_SAM3_Negativos_Internos_20261104",
+    "state_before":  "Running",
+    "state_after":  "Running",
+    "action":  "-u \"C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\executar_sam3_negativos_resiliente.py\"",
+    "active_worker_pid":  20444,
+    "active_worker_alive":  true,
+    "current_worker_not_stopped":  true,
+    "new_entry_applies_on_next_start":  true,
+    "previous_task_xml":  "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\sam31_negativos_internos_2026-11-04\\fluxo\\controle_resiliente\\tarefa_antes.xml",
+    "registered_scientific_sources_unchanged":  true
+}

@@ -1,0 +1,183 @@
+{
+  "audited_utc": "2026-11-05T11:50:10.013392+00:00",
+  "best_epoch": 0,
+  "parent_model_tensors_exactly_equal": true,
+  "model_tensor_count": 96,
+  "canonical_mirror_sha_match": true,
+  "optimizer_step_values": [
+    1932
+  ],
+  "expected_optimizer_steps": 1932,
+  "scheduler_last_epoch": 4,
+  "final_lr": 2.3250000000000003e-05,
+  "scheduler_warning_resume_after_complete_training_epoch": true,
+  "measurements": [
+    {
+      "epoch": 0,
+      "modes": {
+        "clean": {
+          "macro_dice": 0.8862457197281223,
+          "tp": 3316861,
+          "fp": 393302,
+          "fn": 195000,
+          "catastrophic": 104
+        },
+        "zoom3": {
+          "macro_dice": 0.8651486230548204,
+          "tp": 27197714,
+          "fp": 3969204,
+          "fn": 1851968,
+          "catastrophic": 116
+        },
+        "oblique": {
+          "macro_dice": 0.876089398661878,
+          "tp": 4816168,
+          "fp": 625130,
+          "fn": 318485,
+          "catastrophic": 110
+        },
+        "glasses": {
+          "macro_dice": 0.8820817450348553,
+          "tp": 3206125,
+          "fp": 411731,
+          "fn": 194845,
+          "catastrophic": 102
+        }
+      }
+    },
+    {
+      "epoch": 1,
+      "modes": {
+        "clean": {
+          "macro_dice": 0.8618896871550299,
+          "tp": 3143502,
+          "fp": 355508,
+          "fn": 368359,
+          "catastrophic": 106
+        },
+        "zoom3": {
+          "macro_dice": 0.8325773136996572,
+          "tp": 25314002,
+          "fp": 3543523,
+          "fn": 3735680,
+          "catastrophic": 122
+        },
+        "oblique": {
+          "macro_dice": 0.8422389350329301,
+          "tp": 4469393,
+          "fp": 550776,
+          "fn": 665260,
+          "catastrophic": 115
+        },
+        "glasses": {
+          "macro_dice": 0.8535416455270748,
+          "tp": 3025019,
+          "fp": 382927,
+          "fn": 375951,
+          "catastrophic": 108
+        }
+      }
+    },
+    {
+      "epoch": 2,
+      "modes": {
+        "clean": {
+          "macro_dice": 0.8623187432175071,
+          "tp": 3145043,
+          "fp": 355178,
+          "fn": 366818,
+          "catastrophic": 105
+        },
+        "zoom3": {
+          "macro_dice": 0.8410771668008123,
+          "tp": 25631264,
+          "fp": 3487773,
+          "fn": 3418418,
+          "catastrophic": 119
+        },
+        "oblique": {
+          "macro_dice": 0.8469758407699552,
+          "tp": 4497219,
+          "fp": 540641,
+          "fn": 637434,
+          "catastrophic": 113
+        },
+        "glasses": {
+          "macro_dice": 0.8548777713839852,
+          "tp": 3027531,
+          "fp": 374276,
+          "fn": 373439,
+          "catastrophic": 105
+        }
+      }
+    },
+    {
+      "epoch": 3,
+      "modes": {
+        "clean": {
+          "macro_dice": 0.8693970528813115,
+          "tp": 3197338,
+          "fp": 369461,
+          "fn": 314523,
+          "catastrophic": 105
+        },
+        "zoom3": {
+          "macro_dice": 0.8433748395238228,
+          "tp": 25977869,
+          "fp": 3794995,
+          "fn": 3071813,
+          "catastrophic": 120
+        },
+        "oblique": {
+          "macro_dice": 0.8528229700201652,
+          "tp": 4573093,
+          "fp": 573355,
+          "fn": 561560,
+          "catastrophic": 114
+        },
+        "glasses": {
+          "macro_dice": 0.8629665335996656,
+          "tp": 3082375,
+          "fp": 390539,
+          "fn": 318595,
+          "catastrophic": 105
+        }
+      }
+    },
+    {
+      "epoch": 4,
+      "modes": {
+        "clean": {
+          "macro_dice": 0.8608167891446644,
+          "tp": 3146811,
+          "fp": 369067,
+          "fn": 365050,
+          "catastrophic": 107
+        },
+        "zoom3": {
+          "macro_dice": 0.8366912594989626,
+          "tp": 25643197,
+          "fp": 3742565,
+          "fn": 3406485,
+          "catastrophic": 121
+        },
+        "oblique": {
+          "macro_dice": 0.8420799906035342,
+          "tp": 4485436,
+          "fp": 578378,
+          "fn": 649217,
+          "catastrophic": 114
+        },
+        "glasses": {
+          "macro_dice": 0.852703214440932,
+          "tp": 3030035,
+          "fp": 396672,
+          "fn": 370935,
+          "catastrophic": 108
+        }
+      }
+    }
+  ],
+  "new_identity_needed_for_same_weights": false,
+  "minimum_assigned": false
+}

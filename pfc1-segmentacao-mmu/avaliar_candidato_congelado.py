@@ -17,6 +17,15 @@ WEIGHTS={
 
 def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 
+def segmenter_input_size(checkpoint, custom=False):
+    """Mantem a referencia320x240; candidato usa a resolucao registrada no treino."""
+    if not custom:return (320,240)
+    config=checkpoint.get('configuration',{})
+    width,height=config.get('width',320),config.get('height',240)
+    if not isinstance(width,int) or not isinstance(height,int) or min(width,height)<8 or width%8 or height%8:
+        raise ValueError('Resolucao invalida no checkpoint de segmentacao')
+    return width,height
+
 def fuse(components,calibration):
     """Labels never enter fusion; calibration fixed from development."""
     if len(components)!=9:raise ValueError('Seven shared and two ArcIris components required')
@@ -38,7 +47,9 @@ def prepare(rows,device,folder,condition='original',level=0,fixed_geometry=False
     specs={'rgb':(128,128,3),'native':(224,224,3),'polar':(64,512,3),'red':(64,512,3)}
     arrays={k:np.lib.format.open_memmap(folder/(k+'.npy'),mode='w+',dtype=np.uint8,shape=(len(rows),*shape)) for k,shape in specs.items()}
     rv=np.zeros(len(rows),bool);pv=rv.copy();interventions=[];model=MulticlassUNet(8).to(device).eval()
-    model.load_state_dict(torch.load(segmenter_checkpoint or ROOT/'outputs/cnn/ubipr_retreino_2026-10-20/melhor_modelo.pt',map_location='cpu',weights_only=True)['model'])
+    checkpoint=torch.load(segmenter_checkpoint or ROOT/'outputs/cnn/ubipr_retreino_2026-10-20/melhor_modelo.pt',map_location='cpu',weights_only=True)
+    input_size=segmenter_input_size(checkpoint,segmenter_checkpoint is not None)
+    model.load_state_dict(checkpoint['model'])
     for start in range(0,len(rows),32):
         originals=[];inputs=[]
         for r in rows[start:start+32]:
@@ -52,7 +63,7 @@ def prepare(rows,device,folder,condition='original',level=0,fixed_geometry=False
                 rgb,meta=perturb(rgb,reference,condition,level)
                 interventions.append({'image':Path(r.image).name,'reference_pixels':int(reference.sum()),'fraction_defined':bool(reference.any()),'affected_fraction':meta['affected_fraction']})
             if not fixed_geometry:segmentation_image=rgb
-            originals.append(rgb);inputs.append(np.asarray(segmentation_image.resize((320,240),Image.Resampling.BILINEAR),np.float32)/255)
+            originals.append(rgb);inputs.append(np.asarray(segmentation_image.resize(input_size,Image.Resampling.BILINEAR),np.float32)/255)
         x=torch.from_numpy(np.stack(inputs).transpose(0,3,1,2).copy()).to(device)
         with torch.inference_mode():masks=model(x).argmax(1).cpu().numpy()==1
         for offset,(im,mask) in enumerate(zip(originals,masks)):
@@ -147,6 +158,7 @@ def main():
       'external_arciris':{'weights_sha256':digest(arc_weights),'source_sha256':digest(arc_base/'modules/network.py'),'pretraining_population':'unknown'},
       'dependencies_sha256':{n:digest(ROOT/n) for n in ['textura_polar.py','preparar_polar_vermelho.py','normalizacao_eliptica.py','normalizar_consulta.py','validar_lateralidade_informada.py','comparador_hdbif_lote.py','avaliar_robustez_reconhecimento.py','avaliar_dinov3_ubipr.py','treinar_identidade_iris.py','treinar_segmentacao_ubipr.py','reconhecedor_resnet50.py','reconhecedor_convnext.py','reconhecedor_transformer_polar.py','validar_correspondencia_espacial.py']},
       'next':'If original does not meet Rank1>=90%,TAR>=90%,FMR<=1%, do not claim minimum or retune using these scores.'}
+    protocol['segmenter_input_size']=list(segmenter_input_size(torch.load(a.segmenter,map_location='cpu',weights_only=True),True)) if a.segmenter else [320,240]
     if not a.segmenter:assert protocol['unet_sha256']=='2bcfc269ffc9562ca8cf0956998faf1e22641587cd60f7059b3cec3dd0f4093d'
     if a.fixed_geometry:
         protocol['intervention']='Query annotated iris pixels only, exact row-major count, gray128, upper/lower; enrollment original. Predict mask on ORIGINAL unoccluded counterpart; altered photo supplies recognition pixels and recomputed CLAHE. Original predicted mask fixes support,bbox,ellipses. Diagnostic requires original counterpart, not operational one-photo recognition. Empty references unchanged, all queries retained.'

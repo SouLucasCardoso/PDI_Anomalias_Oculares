@@ -1,0 +1,43 @@
+{
+  "metrics": {
+    "rank1": 0.7033195020746889,
+    "tar": 0.7095435684647303,
+    "fnmr": 0.2904564315352697,
+    "far": 0.022544951590594744,
+    "eer_descriptive": 0.11203319502074689,
+    "extraction_failures": 3,
+    "queries": 482,
+    "genuine_mean_valid": 0.8638735399552111,
+    "margin_mean_valid": 0.05207786017504253
+  },
+  "counts": {
+    "correct": 339,
+    "accepted": 342,
+    "false_accepts": 163,
+    "queries": 482,
+    "impostors": 7230
+  },
+  "passed": false,
+  "intervals95_cluster_person": {
+    "rank1": [
+      0.6016597510373444,
+      0.8008504509447547
+    ],
+    "tar": [
+      0.6136363636363636,
+      0.8020833333333334
+    ],
+    "fmr": [
+      0.014722222222222222,
+      0.030886550453514707
+    ]
+  },
+  "scores_sha256": "0a72023c257e862ac8bfb6acd7b13bd98526d792bb354916e9ecf962cdc993c9",
+  "folder": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-segmentacao-area-20261027\\recognition\\novo_oclusao_inferior_10\\attempt_001\\confirmacao_congelada_val_oclusao_inferior_10_segmentador_d4def289756b_2026-10-21",
+  "segmenter": "novo",
+  "condition": "oclusao_inferior",
+  "loss_percent": 10,
+  "nominal_visible_area_percent": 90,
+  "actual_visible_area_mean_percent": 90.00166474964702,
+  "defined_area_queries": 472
+}

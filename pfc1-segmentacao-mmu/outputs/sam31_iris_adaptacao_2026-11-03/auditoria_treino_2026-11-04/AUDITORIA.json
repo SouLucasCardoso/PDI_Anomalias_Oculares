@@ -1,0 +1,307 @@
+{
+  "audited_utc": "2026-11-04T20:29:38.002237+00:00",
+  "best_epoch": 15,
+  "checkpoint_sha256": "cf8a718e0160c14408d1533445ff611b00a79c75d2c0fd07fb7540150e59db99",
+  "selection_rule_reproduced": true,
+  "all_epochs_pixel_metrics_audited": 21,
+  "samples_per_condition": 1652,
+  "epoch_zero_and_selected_paired": true,
+  "modes": {
+    "clean": {
+      "all": {
+        "baseline": {
+          "samples": 1652,
+          "macro_dice": 0.8608981806288178,
+          "dice_below_0_5": 121,
+          "empty_reference_false_positives": 25
+        },
+        "selected": {
+          "samples": 1652,
+          "macro_dice": 0.8862457197281224,
+          "dice_below_0_5": 104,
+          "empty_reference_false_positives": 22
+        },
+        "paired_dice_change": {
+          "candidate_minus_original_pp": 2.534753909930445,
+          "interval95_cluster_person_pp": [
+            1.3301254610972162,
+            3.925197790261516
+          ]
+        }
+      },
+      "reference_positive": {
+        "baseline": {
+          "samples": 1621,
+          "macro_dice": 0.8736605763819929,
+          "dice_below_0_5": 96,
+          "empty_reference_false_positives": 0
+        },
+        "selected": {
+          "samples": 1621,
+          "macro_dice": 0.8976421523463076,
+          "dice_below_0_5": 82,
+          "empty_reference_false_positives": 0
+        },
+        "paired_dice_change": {
+          "candidate_minus_original_pp": 2.3981575964314703,
+          "interval95_cluster_person_pp": [
+            1.2222783652207982,
+            3.764414921493852
+          ]
+        }
+      },
+      "reference_empty": {
+        "baseline": {
+          "samples": 31,
+          "macro_dice": 0.19354838979344752,
+          "dice_below_0_5": 25,
+          "empty_reference_false_positives": 25
+        },
+        "selected": {
+          "samples": 31,
+          "macro_dice": 0.2903225818546353,
+          "dice_below_0_5": 22,
+          "empty_reference_false_positives": 22
+        },
+        "paired_dice_change": {
+          "candidate_minus_original_pp": 9.677419206118783,
+          "interval95_cluster_person_pp": [
+            1.5256602568406036e-08,
+            22.857142446477532
+          ]
+        }
+      }
+    },
+    "zoom3": {
+      "all": {
+        "baseline": {
+          "samples": 1652,
+          "macro_dice": 0.8317785851549773,
+          "dice_below_0_5": 141,
+          "empty_reference_false_positives": 51
+        },
+        "selected": {
+          "samples": 1652,
+          "macro_dice": 0.8651486230548204,
+          "dice_below_0_5": 116,
+          "empty_reference_false_positives": 47
+        },
+        "paired_dice_change": {
+          "candidate_minus_original_pp": 3.33700378998432,
+          "interval95_cluster_person_pp": [
+            2.4282235666002046,
+            4.3620659029823114
+          ]
+        }
+      },
+      "reference_positive": {
+        "baseline": {
+          "samples": 1594,
+          "macro_dice": 0.8576525863541034,
+          "dice_below_0_5": 90,
+          "empty_reference_false_positives": 0
+        },
+        "selected": {
+          "samples": 1594,
+          "macro_dice": 0.8897274311523793,
+          "dice_below_0_5": 69,
+          "empty_reference_false_positives": 0
+        },
+        "paired_dice_change": {
+          "candidate_minus_original_pp": 3.2074844798276088,
+          "interval95_cluster_person_pp": [
+            2.293247479816692,
+            4.287839767177497
+          ]
+        }
+      },
+      "reference_empty": {
+        "baseline": {
+          "samples": 58,
+          "macro_dice": 0.12068965564796388,
+          "dice_below_0_5": 51,
+          "empty_reference_false_positives": 51
+        },
+        "selected": {
+          "samples": 58,
+          "macro_dice": 0.18965517292535822,
+          "dice_below_0_5": 47,
+          "empty_reference_false_positives": 47
+        },
+        "paired_dice_change": {
+          "candidate_minus_original_pp": 6.896551727739429,
+          "interval95_cluster_person_pp": [
+            1.5773151968646107e-08,
+            20.51282051823893
+          ]
+        }
+      }
+    },
+    "oblique": {
+      "all": {
+        "baseline": {
+          "samples": 1652,
+          "macro_dice": 0.8553825524016833,
+          "dice_below_0_5": 120,
+          "empty_reference_false_positives": 28
+        },
+        "selected": {
+          "samples": 1652,
+          "macro_dice": 0.876089398661878,
+          "dice_below_0_5": 110,
+          "empty_reference_false_positives": 26
+        },
+        "paired_dice_change": {
+          "candidate_minus_original_pp": 2.0706846260194722,
+          "interval95_cluster_person_pp": [
+            1.2028822311373948,
+            3.066412723529924
+          ]
+        }
+      },
+      "reference_positive": {
+        "baseline": {
+          "samples": 1621,
+          "macro_dice": 0.8698901767527395,
+          "dice_below_0_5": 92,
+          "empty_reference_false_positives": 0
+        },
+        "selected": {
+          "samples": 1621,
+          "macro_dice": 0.889759214377713,
+          "dice_below_0_5": 84,
+          "empty_reference_false_positives": 0
+        },
+        "paired_dice_change": {
+          "candidate_minus_original_pp": 1.9869037624973447,
+          "interval95_cluster_person_pp": [
+            1.114856698798052,
+            3.0097757818904416
+          ]
+        }
+      },
+      "reference_empty": {
+        "baseline": {
+          "samples": 31,
+          "macro_dice": 0.09677419520612779,
+          "dice_below_0_5": 28,
+          "empty_reference_false_positives": 28
+        },
+        "selected": {
+          "samples": 31,
+          "macro_dice": 0.16129032526289294,
+          "dice_below_0_5": 26,
+          "empty_reference_false_positives": 26
+        },
+        "paired_dice_change": {
+          "candidate_minus_original_pp": 6.451613005676515,
+          "interval95_cluster_person_pp": [
+            1.2261098860558943e-07,
+            15.999999676852692
+          ]
+        }
+      }
+    },
+    "glasses": {
+      "all": {
+        "baseline": {
+          "samples": 1652,
+          "macro_dice": 0.8517586493376367,
+          "dice_below_0_5": 124,
+          "empty_reference_false_positives": 25
+        },
+        "selected": {
+          "samples": 1652,
+          "macro_dice": 0.8820817450348554,
+          "dice_below_0_5": 102,
+          "empty_reference_false_positives": 20
+        },
+        "paired_dice_change": {
+          "candidate_minus_original_pp": 3.032309569721843,
+          "interval95_cluster_person_pp": [
+            1.7665849485857206,
+            4.53705641221744
+          ]
+        }
+      },
+      "reference_positive": {
+        "baseline": {
+          "samples": 1621,
+          "macro_dice": 0.8643462607004282,
+          "dice_below_0_5": 99,
+          "empty_reference_false_positives": 0
+        },
+        "selected": {
+          "samples": 1621,
+          "macro_dice": 0.8921647395278812,
+          "dice_below_0_5": 82,
+          "empty_reference_false_positives": 0
+        },
+        "paired_dice_change": {
+          "candidate_minus_original_pp": 2.7818478827453084,
+          "interval95_cluster_person_pp": [
+            1.6338065166746654,
+            4.114698768418265
+          ]
+        }
+      },
+      "reference_empty": {
+        "baseline": {
+          "samples": 31,
+          "macro_dice": 0.19354839065747936,
+          "dice_below_0_5": 25,
+          "empty_reference_false_positives": 25
+        },
+        "selected": {
+          "samples": 31,
+          "macro_dice": 0.35483871041565335,
+          "dice_below_0_5": 20,
+          "empty_reference_false_positives": 20
+        },
+        "paired_dice_change": {
+          "candidate_minus_original_pp": 16.129031975817394,
+          "interval95_cluster_person_pp": [
+            1.8747250897264912e-08,
+            37.037036339583565
+          ]
+        }
+      }
+    }
+  },
+  "bootstrap": {
+    "replicates": 5000,
+    "seed": 127,
+    "unit": "validation person"
+  },
+  "post_selection_intervals_descriptive_not_independent_confirmation": true,
+  "sam3_specific_causal_gain_isolated": false,
+  "recognition_or_minimum_area_measured_here": false,
+  "sources": {
+    "audit": "569d0127bd5bbcd090fb0d8714af5772c9789e2e47ccf7314b5fe35a891f4398",
+    "metrics": "7e2f7200d75cca37e6365609efa731cd06454628c90115c06f6ab208f06493d4"
+  },
+  "evidence_sha256": {
+    "validacao_epoca_00.json": "604997b7e2efa2d87e74e39b4158e4f03c9e4268237236fe3db026ba31e1bc99",
+    "validacao_epoca_01.json": "bebb27cbcc4f4e14da4b9a20a342bf2f2873ca17059fa966a6b575acf41816b5",
+    "validacao_epoca_02.json": "5db15370b4f7917d2e12ba54f1cfe1d15fcfbf9a1547fe5791364dd0090ed568",
+    "validacao_epoca_03.json": "2a57998fb765388092f421ed7f0a1f06a4d789186a88e0488648fd31d0a7f042",
+    "validacao_epoca_04.json": "d1ce75625668e658b7627d91fcb08b31b1f016a0c68bec89c9b1c4eb00624e72",
+    "validacao_epoca_05.json": "330fc1c0f84f31c9f901e44c3b708aba2d88510d1414be3206288469e06650f1",
+    "validacao_epoca_06.json": "a189a05a779599d06fa00e5942d6ad78c24e6350ed708b7b6ef6d341e666ba38",
+    "validacao_epoca_07.json": "f3591c6bd5fbaaab9ca2b8808e127668dbc266cb257dbe40c8a7d2f9c9248cd0",
+    "validacao_epoca_08.json": "1bb0d166753309fc893fcecb3c5b6f21f251bdf1979bb6f0e378c29bc69cf311",
+    "validacao_epoca_09.json": "631fc69a1922fc4363365cb03afbfc0a4fe21641512a46d7413c88e9950560df",
+    "validacao_epoca_10.json": "ca258ced5ac85f9b84fa57b5eaf8ad19c10b6794ff03448706ed5fa3b7d11d93",
+    "validacao_epoca_11.json": "ce23efec9b50e59be28f744f3d5dec8295a06b0121d01fbab97af282ae8908b9",
+    "validacao_epoca_12.json": "dccabaa9273663897515767310c54b8151354915c7281494e16af28f971e06c5",
+    "validacao_epoca_13.json": "7440e8640b1dec44d5c9b6146906cbd14ee6e20cc41cee10becf13047395700e",
+    "validacao_epoca_14.json": "1f90b7cdc5cf545ed97cc9e73607fa6ebcfcb92c784276140f44f4282821dbeb",
+    "validacao_epoca_15.json": "94f854fac54f48dcc4af5fe7d94348905707e04b8ce5f42ac97848f4eeedfaf2",
+    "validacao_epoca_16.json": "8fabe4f493f68df4403b28a0a76dd112bdfed6994524bf48c9012ec3f4c322c4",
+    "validacao_epoca_17.json": "f4e62f0ab87bd1284f40caf9e11dff56d9e143c2c8090fb9c52804e2bd260cde",
+    "validacao_epoca_18.json": "6db37c1a9204e00e37e626f3b14fbf010ea0637766ab883df7da78b75bbbb4a5",
+    "validacao_epoca_19.json": "80a813378c2d34ce3c8d0aa1aa4dd306042620d6089aad9b2bd5418561dad170",
+    "validacao_epoca_20.json": "f1bb46195f49c581cd9ff85ce4b16e7e6a3e51ad33bfb437f66f4193c6e7b320"
+  },
+  "training_protocol_sha256": "444840da77f57c1ea89193316316bded3358fe4a1e33604155b77c865c6108d5"
+}

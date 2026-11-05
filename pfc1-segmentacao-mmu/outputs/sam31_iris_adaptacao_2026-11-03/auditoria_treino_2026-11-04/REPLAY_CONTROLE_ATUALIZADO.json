@@ -1,0 +1,112 @@
+{
+  "created_utc": "2026-11-04T20:38:54.425878+00:00",
+  "scope": "Replay comparison, all482validation queries; no retuning or inference",
+  "threshold": 0.8581747485460748,
+  "same_internal_weights_unet_and_frozen_configuration": true,
+  "historical_counts": {
+    "correct": 434,
+    "accepted": 437,
+    "joint": 426,
+    "false_accepts": 71,
+    "queries": 482,
+    "impostors": 7230,
+    "extraction_failures": 4
+  },
+  "updated_environment_counts": {
+    "correct": 434,
+    "accepted": 436,
+    "joint": 426,
+    "false_accepts": 72,
+    "queries": 482,
+    "impostors": 7230,
+    "extraction_failures": 4
+  },
+  "components": [
+    {
+      "component": "rgb",
+      "max_absolute_difference": 0.023902446031570435,
+      "mean_absolute_difference": 0.0006032658785993069,
+      "validity_changes": 0,
+      "old_scores_sha256": "64b9710817d674f3aa5f0acf91c221cef6d601ab72eb556459a68c2f2bb0607f",
+      "updated_scores_sha256": "0e170b818962971266e516715b1cf1ba7e21851a2aa2e804d459d48dc045ef42"
+    },
+    {
+      "component": "polar",
+      "max_absolute_difference": 0.036837399626771614,
+      "mean_absolute_difference": 0.0014797622762982093,
+      "validity_changes": 0,
+      "old_scores_sha256": "cd23c2c4af9827cc343dedd711b25659cb76068112a5a638316b69501f640c80",
+      "updated_scores_sha256": "e98bcdfc1886b023094e3f9f74446cd29db19b50968d6dd33dbb1eea1906ec8c"
+    },
+    {
+      "component": "spatial",
+      "max_absolute_difference": 0.13488277792930603,
+      "mean_absolute_difference": 0.0011328156521597961,
+      "validity_changes": 0,
+      "old_scores_sha256": "a2139bb1310d6dfc1cd2af300b9d5d22d0fa01719a8bf8f7062a02dcd775a793",
+      "updated_scores_sha256": "1794d64a6d04f9c8158f5ad4fcd9f8f8790a2070b6e6994951b32e4a69aef9e5"
+    },
+    {
+      "component": "r50",
+      "max_absolute_difference": 0.035659665862719236,
+      "mean_absolute_difference": 0.0008164517670163125,
+      "validity_changes": 0,
+      "old_scores_sha256": "219be388ee67aa1835a4f7d877d748db096184389f94f39aedb4f82991ef95f3",
+      "updated_scores_sha256": "c767354e2f246c3888fbba6906db5a0a2f55d12f5cd115e660a9af95625e9f0a"
+    },
+    {
+      "component": "convnext",
+      "max_absolute_difference": 0.021746630469957985,
+      "mean_absolute_difference": 0.000763243670123527,
+      "validity_changes": 0,
+      "old_scores_sha256": "a379e5022c267f8dc5c1f9fbbb8f6986eac23bd8195aa382c031c255f80ad43a",
+      "updated_scores_sha256": "8bf260cc96e3e8f35036400a20f588000fc1fcc376b20d294f203f765d77c0e3"
+    },
+    {
+      "component": "native",
+      "max_absolute_difference": 0.028465300798416138,
+      "mean_absolute_difference": 0.0007662726501285493,
+      "validity_changes": 0,
+      "old_scores_sha256": "afbb501ee7e2052c8acda8fc31dc7aed3e895a4a8ae07ae5f0fffee3e4032789",
+      "updated_scores_sha256": "1fdce8c84f4052cbab4f98722e534f9af417162bd276a49d1e04e1ee2a971e63"
+    },
+    {
+      "component": "transformer",
+      "max_absolute_difference": 0.027298370997110993,
+      "mean_absolute_difference": 0.0010428818686793251,
+      "validity_changes": 0,
+      "old_scores_sha256": "11113a8d58e8180e6bfd973c112efec14c3af84afb3751e0c46388af3d6d4c5c",
+      "updated_scores_sha256": "1db5e780d19fd58530d932b0a8a6671fe93fb5cfc620d3a7fb29d0369e7b6916"
+    },
+    {
+      "component": "arc_clahe",
+      "max_absolute_difference": 0.009350533471379485,
+      "mean_absolute_difference": 0.00012647765212502198,
+      "validity_changes": 0,
+      "old_scores_sha256": "9bac426e1e0bc6d7d87605de429916b1aba0d722e0f4e2ed85f44239f334ec42",
+      "updated_scores_sha256": "34fe2c3dbc4d0d665560c745fa2c96feb572e8a89fac7606ec077ad63995c471"
+    },
+    {
+      "component": "arc_red",
+      "max_absolute_difference": 0.00872006726471275,
+      "mean_absolute_difference": 0.00012492057432296103,
+      "validity_changes": 0,
+      "old_scores_sha256": "29be9e9a730d0c082c599e788a0ac2ed5aa93630180671b4c737b0a8df9a0727",
+      "updated_scores_sha256": "e1c80c9e2ff1afa2fa2f75ccfa8b3f76c0377c2c7ef1a6a396225f691400b1d3"
+    },
+    {
+      "component": "finais",
+      "max_absolute_difference": 0.02601975656944233,
+      "mean_absolute_difference": 0.0010811723065853006,
+      "validity_changes": 0,
+      "old_scores_sha256": "7f590308cfb5ecefa628da8bd2a52fd613ea5eeb0d2fdca3021247a0695408d0",
+      "updated_scores_sha256": "262c2f9dc08f292abb3cbcbf63d88c0cb8bf8482c339312947c79228d51f372a",
+      "rank1_decisions_changed": 0,
+      "acceptance_decisions_changed": 1,
+      "false_accept_decisions_changed": 1
+    }
+  ],
+  "numerical_or_preparation_difference_cause_not_isolated": true,
+  "all_sam3_comparisons_use_rerun_updated_environment_controls": true,
+  "two_image_cpu_smoke_did_not_guarantee_full_cuda_equality": true
+}

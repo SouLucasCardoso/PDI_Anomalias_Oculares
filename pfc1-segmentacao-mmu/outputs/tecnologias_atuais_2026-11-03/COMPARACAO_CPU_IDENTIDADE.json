@@ -1,0 +1,153 @@
+{
+  "verified_utc": "2026-11-03T22:40:29.687253+00:00",
+  "scope": "Two predetermined validation images, CPU FP32 runtime comparison only; not full recognition or CUDA equivalence",
+  "reference_versions": {
+    "torch": "2.14.1+cu126",
+    "torchvision": "0.29.1+cu126",
+    "transformers": "5.20.2",
+    "numpy": "1.26.4",
+    "pillow": "12.3.0"
+  },
+  "new_versions": {
+    "torch": "2.14.1+cu130",
+    "torchvision": "0.29.1+cu130",
+    "transformers": "5.22.1",
+    "numpy": "1.26.4",
+    "pillow": "13.0.0"
+  },
+  "input_comparisons": [
+    {
+      "branch": "rgb",
+      "identical": true,
+      "different_values": 0,
+      "max_absolute_pixel_difference": 0
+    },
+    {
+      "branch": "native",
+      "identical": true,
+      "different_values": 0,
+      "max_absolute_pixel_difference": 0
+    },
+    {
+      "branch": "polar",
+      "identical": true,
+      "different_values": 0,
+      "max_absolute_pixel_difference": 0
+    },
+    {
+      "branch": "red",
+      "identical": true,
+      "different_values": 0,
+      "max_absolute_pixel_difference": 0
+    }
+  ],
+  "component_comparisons": [
+    {
+      "component": "rgb",
+      "shape": [
+        2,
+        256
+      ],
+      "identical": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0,
+      "minimum_embedding_cosine": 0.9999999999999998
+    },
+    {
+      "component": "polar",
+      "shape": [
+        2,
+        256
+      ],
+      "identical": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0,
+      "minimum_embedding_cosine": 1.0
+    },
+    {
+      "component": "spatial",
+      "shape": [
+        1,
+        1
+      ],
+      "identical": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0
+    },
+    {
+      "component": "r50",
+      "shape": [
+        2,
+        256
+      ],
+      "identical": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0,
+      "minimum_embedding_cosine": 0.9999999999999998
+    },
+    {
+      "component": "convnext",
+      "shape": [
+        2,
+        256
+      ],
+      "identical": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0,
+      "minimum_embedding_cosine": 1.0
+    },
+    {
+      "component": "native",
+      "shape": [
+        2,
+        256
+      ],
+      "identical": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0,
+      "minimum_embedding_cosine": 0.9999999999999999
+    },
+    {
+      "component": "transformer",
+      "shape": [
+        2,
+        256
+      ],
+      "identical": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0,
+      "minimum_embedding_cosine": 0.9999999999999998
+    },
+    {
+      "component": "arc_clahe",
+      "shape": [
+        2,
+        512
+      ],
+      "identical": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0,
+      "minimum_embedding_cosine": 1.0
+    },
+    {
+      "component": "arc_red",
+      "shape": [
+        2,
+        512
+      ],
+      "identical": true,
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0,
+      "minimum_embedding_cosine": 1.0
+    }
+  ],
+  "same_sources_weights_and_images": true,
+  "reference_evidence_sha256": "32d1327ed8f041f1e4456fb09ec430b63b2a46be7be19b550bd3aba0d9ecfac4",
+  "new_evidence_sha256": "f22329dba3e47ef2288b0a2e8dc1f8f29605ed4c56771a048a4da28d49cec241",
+  "all_nine_components_finite_in_both_environments": true,
+  "test_inference": false,
+  "minimum_area_assigned": false,
+  "full_paired_cuda_evaluation_still_required": true,
+  "prepared_inputs_archive": "identidade_smoke_cpu/entradas_preparadas.npz",
+  "prepared_inputs_archive_sha256": "5b3582b536608635aec7de186b51d54343000633099e018f4855f1207498ef92"
+}

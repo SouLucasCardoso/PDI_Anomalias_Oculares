@@ -1,0 +1,27 @@
+{
+  "registered_utc": "2026-11-04T23:30:31.189241+00:00",
+  "binding": {
+    "sources": {
+      "analisar_sam3_negativos_internos.py": "ba2aebe6404072fc5fc7ce03061613bbbfb89ba6e263297bca1179ca25732be7",
+      "analisar_sam3_area.py": "687455ffda9da98d63f6db5a316ae221ba18c0f78101296d72f9559f79bf5254",
+      "analisar_rodada_segmentacao_area.py": "7e2f7200d75cca37e6365609efa731cd06454628c90115c06f6ab208f06493d4",
+      "avaliar_prontidao_anomalias.py": "48589082b3708c83940ccf22b3a1a4f6a6b75acc09039e946bd5500a0fb8d16c",
+      "analisar_sensibilidade_referencia_area.py": "b4309101a56786072ee1ed779124a40a300a71041363de1ddba8e119d409f468"
+    },
+    "training_protocol_sha256": "408253a180cedd31d2e742d730217b2a67c4e35edd80f9e45410399a3b04f60e",
+    "flow_protocol_sha256": "55ee3e613ceec7e0e0ec90e1846290ad313e677443f93064c50a8b8aac586840",
+    "frozen_configuration_sha256": "d933686f045eab5d6578cfe4701578d9ca1eeaaff4069bcff8427a602546dbda",
+    "criteria_sha256": "1eff22b2b887af6be655cec93ab091fbede2384d1115b265451b632705f4dc46",
+    "numpy_version": "1.26.4"
+  },
+  "scope": "Observational only; no training, inference, selection, recalibration or test access",
+  "bootstrap": {
+    "replicates": 5000,
+    "seed": 127,
+    "cluster": "query person",
+    "gallery": "fixed"
+  },
+  "intervals": "Pointwise descriptive; not simultaneous certification of the area frontier",
+  "manual_clinical_references_required_for_ubipr_area": false,
+  "minimum_rule": "Full registered grid, initial consecutive passing prefix, both orientations; no interpolation"
+}

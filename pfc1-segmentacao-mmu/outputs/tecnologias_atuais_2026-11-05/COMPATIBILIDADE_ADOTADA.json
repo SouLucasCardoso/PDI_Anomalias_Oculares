@@ -1,0 +1,17 @@
+{
+  "recorded_utc": "2026-11-05T12:01:42.133735+00:00",
+  "installed": {
+    "torch": "2.14.1+cu130",
+    "torchvision": "0.29.1+cu130",
+    "sam3": "0.1.0",
+    "numpy": "1.26.4",
+    "pillow": "13.0.0",
+    "transformers": "5.22.1",
+    "huggingface-hub": "2.4.0",
+    "opencv-python-headless": "4.11.0.86"
+  },
+  "sam3_numpy_requirements": [
+    "numpy<2,>=1.26"
+  ],
+  "selection_reason": "Official Windows CP312 CUDA indices queried today offer torch2.14.1+cu130 / torchvision0.29.1+cu130 as newest compatible pair. PyPI has newer versions without matching newer wheels in the consulted CUDA indices. SAM3 requires numpy<2; current newer OpenCV requires numpy>=2. Preserve compatible libraries and closed feature-cache provenance. No environment change in this round."
+}

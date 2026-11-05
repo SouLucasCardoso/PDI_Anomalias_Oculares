@@ -1,0 +1,32 @@
+{
+  "registered_utc": "2026-11-03T22:50:52.268972+00:00",
+  "source_sha256": "ed48471d6b4adfbf0cbfc8c37ca7092067cf7d3a392a2d23e7ec2976aaecc2e1",
+  "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+  "flow_protocol_sha256": "e920cdb9ad8437192f9bee9627b73f637b1ddc7d94ea81fa9a20d757c9392725",
+  "helper_sha256": "7e2f7200d75cca37e6365609efa731cd06454628c90115c06f6ab208f06493d4",
+  "queries": 482,
+  "people": 16,
+  "loss_grid_percent": [
+    0,
+    1,
+    2,
+    5,
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90
+  ],
+  "native_iris_value": 85,
+  "reference_resolution": "native annotation pixels",
+  "scope": "Reference geometry only; all eligible validation queries, including empty annotations",
+  "reference_is_not_full_anatomical_iris": true,
+  "no_model_inference": true,
+  "no_test_image_or_annotation_access": true,
+  "clinical_references_required": false,
+  "minimum_area_assigned": false
+}

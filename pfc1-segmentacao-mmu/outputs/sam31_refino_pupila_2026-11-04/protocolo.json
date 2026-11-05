@@ -1,0 +1,327 @@
+{
+  "registered_utc": "2026-11-04T23:02:57.334412+00:00",
+  "binding": {
+    "count": 32,
+    "seed": 20261104,
+    "sources": {
+      "pilotar_refinamento_sam3.py": "65c261e56d103ca1c7c546338c9925725b038ac63de471c545a38450d9aee3b9",
+      "refinamento_sam3_pupila.py": "9e6b7a64b8dd8e08aabf95921735324ca2d246636cfbfb7aaf93cc6bd5e8b4ec",
+      "segmentador_sam3_iris.py": "e4091a076cd214d4a9dcb78452c8ec37bd65e4f201fbdc1f0dc46147eaaff596",
+      "avaliar_sam31_diverso.py": "923de89594b41c0f3b68403c2b2177d8bf5ce544a4c690521634eba87f46640c"
+    },
+    "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+    "cache_index_sha256": "525b5da50c1b23d9b15c23081301fb510d07390e2809900ece4c0b999efa61ba",
+    "cases": [
+      {
+        "image": "C233_S1_I5_R.jpg",
+        "subject": 233,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C233_S1_I5_R.jpg",
+        "photo_sha256": "ac67ae0e4651e767f5691f2254a6b85101125e04cc5ce54bb9739eddf1e0effe",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C233_S1_I5_R.npz",
+        "cache_sha256": "2009cf96cb9587cfff806ce9cb35c43f0fe255da16b6a37bc34853fcd230c420"
+      },
+      {
+        "image": "C375_S2_I6_L.jpg",
+        "subject": 375,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C375_S2_I6_L.jpg",
+        "photo_sha256": "5d1b1c4c324f831c6c71387b7cb146c4c2b3f61953c4799de0dceb478e2550ab",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C375_S2_I6_L.npz",
+        "cache_sha256": "d5435da3f486f690ed80bf70a5793df1c4c8efd6ce04a670b43e69a9ad807c1d"
+      },
+      {
+        "image": "C439_S2_I13_R.jpg",
+        "subject": 439,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C439_S2_I13_R.jpg",
+        "photo_sha256": "4e8b39ac343c74eec12c8a98d5f753cb8c986539d236cbe80072e9d8ff025282",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C439_S2_I13_R.npz",
+        "cache_sha256": "292b09c9d7408d62d225d9b9916009744912cb91df143a3d6c57739ccdf906d1"
+      },
+      {
+        "image": "C107_S2_I10_L.jpg",
+        "subject": 107,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C107_S2_I10_L.jpg",
+        "photo_sha256": "dd1932b1c0a627ac3b6f91e94bc4f7baee5146842b5d600257cf8e45a0e4453a",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C107_S2_I10_L.npz",
+        "cache_sha256": "24b500dd69a70d3da3e8d34ce3a735fb1ed5f3c2a3c04f5078b7afc61170a6fe"
+      },
+      {
+        "image": "C147_S1_I7_L.jpg",
+        "subject": 147,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C147_S1_I7_L.jpg",
+        "photo_sha256": "075e596ac559dac0c8b282be4b21a42bdcefe78fda8d74ad4e1251be97cbe6c2",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C147_S1_I7_L.npz",
+        "cache_sha256": "0429f84bae1af0079609c1395dca9e0a49c9f5957c6666fc5a40586ab6e72a08"
+      },
+      {
+        "image": "C131_S1_I10_L.jpg",
+        "subject": 131,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C131_S1_I10_L.jpg",
+        "photo_sha256": "1d3e5f4337dcaa2a4d87109cacfdcc9b2ac9204094fb79985d0876bdaf388d29",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C131_S1_I10_L.npz",
+        "cache_sha256": "f28c48e41650c0e9d62be6eff28ff4fae3d94077a80a9e3d7e92aaff4a5b1574"
+      },
+      {
+        "image": "C495_S1_I4_L.jpg",
+        "subject": 495,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C495_S1_I4_L.jpg",
+        "photo_sha256": "2f920cca35e51f65a1d24704c94b6ef252932a628bc97e32c33eaa47b02b001f",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C495_S1_I4_L.npz",
+        "cache_sha256": "7633a5d56ee8c6c9e277c4ffaf660e708e8425538d4708bfad1d208f8c8a5307"
+      },
+      {
+        "image": "C103_S2_I13_R.jpg",
+        "subject": 103,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C103_S2_I13_R.jpg",
+        "photo_sha256": "445c63fbeac618cc3e6d408ae6e33f59adb30bf7fd21ac95eb2283ab52d711c2",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C103_S2_I13_R.npz",
+        "cache_sha256": "76fb232246e44260f477cbdd901651f22aa743ee433a44b44f7851092e38f914"
+      },
+      {
+        "image": "C481_S1_I4_L.jpg",
+        "subject": 481,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C481_S1_I4_L.jpg",
+        "photo_sha256": "26517681304f2df07a7bf185d15e33f88380c04d1d2f7d102ab5080b8ff72d55",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C481_S1_I4_L.npz",
+        "cache_sha256": "b37cefbd67d87a0380e37e445f3251116067b9487f787ec5269223a5ec628dcb"
+      },
+      {
+        "image": "C159_S1_I5_R.jpg",
+        "subject": 159,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C159_S1_I5_R.jpg",
+        "photo_sha256": "c1911bb9541111082fcf979d322250ddffe10a7d56c19193b130467272e8fbbc",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C159_S1_I5_R.npz",
+        "cache_sha256": "0edfad8262dc9dccc99ef05a151c2c0a06028225c7cf1d2f43bb354ae26e9fe8"
+      },
+      {
+        "image": "C73_S1_I4_L.jpg",
+        "subject": 73,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C73_S1_I4_L.jpg",
+        "photo_sha256": "087954420aae9a06dbf9abb7d9c4c55bdcb4b369defdf7c186ca8d11f3bab4f7",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C73_S1_I4_L.npz",
+        "cache_sha256": "492f95445d8d99e70fe77aa5294602f2f355230e693dbab0b8c4a79e922c2e75"
+      },
+      {
+        "image": "C189_S2_I14_R.jpg",
+        "subject": 189,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C189_S2_I14_R.jpg",
+        "photo_sha256": "a35a6e028e9378081b6350c7f1cc7ddfc2009aeaf1c40b4e9c636bcd9ebb6e6d",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C189_S2_I14_R.npz",
+        "cache_sha256": "e30a9c69638911e020d7c1042ebc20422ad4ab3232c84d3fa247786c6e171acd"
+      },
+      {
+        "image": "C51_S1_I3_L.jpg",
+        "subject": 51,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C51_S1_I3_L.jpg",
+        "photo_sha256": "4d63b1df963217bf0c2bdfec31c186e6b1143fd4a22862a9f37dcb9abd25880a",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C51_S1_I3_L.npz",
+        "cache_sha256": "0f629f132235ea48114e66ab5b98a9b208c60ce72fa6d7f79e7ed14e76c11ad1"
+      },
+      {
+        "image": "C95_S1_I3_R.jpg",
+        "subject": 95,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C95_S1_I3_R.jpg",
+        "photo_sha256": "7ccb99042e1093c429b1ad7d6d20bef81f7ae18d6bd7771d5e8331d9b2da10af",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C95_S1_I3_R.npz",
+        "cache_sha256": "b73b10cb8aade7125e163d7561282b1b9d6cdf216d81158c9eb7c07506f5e15b"
+      },
+      {
+        "image": "C109_S2_I8_L.jpg",
+        "subject": 109,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C109_S2_I8_L.jpg",
+        "photo_sha256": "21bcf2ec530c49d8c02539aa4cdfb1d994918e4c1c295cc7ef5e9370ef4a8997",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C109_S2_I8_L.npz",
+        "cache_sha256": "f42b72bf62b493de318b49ef976334542fe5510d0af357d3401cdfae68d62646"
+      },
+      {
+        "image": "C105_S1_I6_R.jpg",
+        "subject": 105,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C105_S1_I6_R.jpg",
+        "photo_sha256": "db969e1165916a797536ca67afbe04bc38ae3697293ed49a9b2d72bc5913cabc",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C105_S1_I6_R.npz",
+        "cache_sha256": "4e1efd2df76dcd3db1678146f00829c0053e0f34d82807626f0aa7d1f0feb82d"
+      },
+      {
+        "image": "C313_S1_I10_R.jpg",
+        "subject": 313,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C313_S1_I10_R.jpg",
+        "photo_sha256": "5f45fe4d41b1fe0e18132496d6d39cbeca52d309aee511dbacb9e52bfcc589a2",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C313_S1_I10_R.npz",
+        "cache_sha256": "b8381ff01efe393b7dad7582c4c29227048617a48a5297500fb441f347e691ed"
+      },
+      {
+        "image": "C55_S1_I5_R.jpg",
+        "subject": 55,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C55_S1_I5_R.jpg",
+        "photo_sha256": "b38877515774b16ca458301046c04467ed0e50e7211d55d544f0a00c666b6225",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C55_S1_I5_R.npz",
+        "cache_sha256": "6e70439a433d110098cf13495819b117cd63c91e8a5223feee7dc7304234e626"
+      },
+      {
+        "image": "C241_S1_I14_R.jpg",
+        "subject": 241,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C241_S1_I14_R.jpg",
+        "photo_sha256": "df3ab8a500ee0290676511307401a98d703ccc05f4db1be2fa2ebb03e5cd6f6b",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C241_S1_I14_R.npz",
+        "cache_sha256": "7e2d3e8dbaa1d958f7658f5f039128c8f1f8533b31667ee662c9434147aa7dcd"
+      },
+      {
+        "image": "C253_S1_I5_R.jpg",
+        "subject": 253,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C253_S1_I5_R.jpg",
+        "photo_sha256": "47756f07424b7c77e95479210a211086bbab406959b039fa459fadd6123ba708",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C253_S1_I5_R.npz",
+        "cache_sha256": "931e3d78ef06c8e976857a77d083574fbf616d2f1c9af0e3c3a779ef28175c39"
+      },
+      {
+        "image": "C441_S1_I13_R.jpg",
+        "subject": 441,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C441_S1_I13_R.jpg",
+        "photo_sha256": "c5f782f2a3d592db11a89f963f80cfac40b17ef0c6e69f52f2fc2e6c517200d1",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C441_S1_I13_R.npz",
+        "cache_sha256": "31c21edf0b48b85bcfa8adfb9a03e85b58c26b571da196a9ebe88c16d0822e89"
+      },
+      {
+        "image": "C59_S1_I5_L.jpg",
+        "subject": 59,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C59_S1_I5_L.jpg",
+        "photo_sha256": "880fbd0b1016d96c692cb593926ad2b84d463784f2745f8cf4e1423f61371d76",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C59_S1_I5_L.npz",
+        "cache_sha256": "e0ad8a5fe0f8d0d814d813934d58524bef47f9f5a8209572fc7df098ece46d24"
+      },
+      {
+        "image": "C39_S1_I11_L.jpg",
+        "subject": 39,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C39_S1_I11_L.jpg",
+        "photo_sha256": "eed70208ca71dd9bba610b9b4deba22a3a034d9256a62e15111a12d7db497d67",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C39_S1_I11_L.npz",
+        "cache_sha256": "6841da967ea086a9b29110b96a735e90fddcdf232fd021602c89a0201f14109b"
+      },
+      {
+        "image": "C399_S1_I2_L.jpg",
+        "subject": 399,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C399_S1_I2_L.jpg",
+        "photo_sha256": "1227d0f16955bb288348421bc1797ce4300345626d0b6eb69f45566d5a17679f",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C399_S1_I2_L.npz",
+        "cache_sha256": "343c477bfa65967c206ba43aa452bf67d170c2a510011502a75fdbc92a3d30e5"
+      },
+      {
+        "image": "C315_S1_I4_R.jpg",
+        "subject": 315,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C315_S1_I4_R.jpg",
+        "photo_sha256": "fa47b1a8bdc41a9eab3d95a386d3101bd5c2fa247d50d24c451a6f882b478881",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C315_S1_I4_R.npz",
+        "cache_sha256": "c14544a834042b66b8c3e7234847cd8dfc60bbca73ac859db9c02dffc7a86d1d"
+      },
+      {
+        "image": "C387_S1_I13_R.jpg",
+        "subject": 387,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C387_S1_I13_R.jpg",
+        "photo_sha256": "b222576d1d4836e453a7aa484e013d949cc6f672e386077b500309a295d2f5fe",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C387_S1_I13_R.npz",
+        "cache_sha256": "df3f658f27a1a425c5f714fe873bffc0e3ce6d3b99fbebbfc03b849094653830"
+      },
+      {
+        "image": "C69_S1_I8_L.jpg",
+        "subject": 69,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C69_S1_I8_L.jpg",
+        "photo_sha256": "1c3694687a551c26cccedb2da7fe43302acc3e57a89d083198c501c281e30289",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C69_S1_I8_L.npz",
+        "cache_sha256": "ebbd3e499333703ce3c7c336f63eceb3104416d62346a65bda6e73232039afff"
+      },
+      {
+        "image": "C517_S1_I12_L.jpg",
+        "subject": 517,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C517_S1_I12_L.jpg",
+        "photo_sha256": "6e8d22c997c888fd3cab650a52a2439d1e722f38477069cb400956a5d48dfebe",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C517_S1_I12_L.npz",
+        "cache_sha256": "393ceb0414a1264eba5ba7bd3a9aace4f1adc60b4d2d7f45ce641748e9aa3d36"
+      },
+      {
+        "image": "C505_S1_I7_R.jpg",
+        "subject": 505,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C505_S1_I7_R.jpg",
+        "photo_sha256": "4b3906e295a30d6bf4b3b2162ea235368ca5ff08bbc68ad15ebb6085647e61b2",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C505_S1_I7_R.npz",
+        "cache_sha256": "676018b4e67640025f1f71b8b4cc210d65cf0613f5a2e4c7a175207e9c65d7ce"
+      },
+      {
+        "image": "C469_S1_I5_R.jpg",
+        "subject": 469,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C469_S1_I5_R.jpg",
+        "photo_sha256": "461778f1d79f3844f418f3f02126f92d5428c2fedc27dd9dc54e6a315ffcb295",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C469_S1_I5_R.npz",
+        "cache_sha256": "b2b9555236586d2873708339b389bfc69dd78b6d0503f06d0535955861f26755"
+      },
+      {
+        "image": "C167_S1_I15_R.jpg",
+        "subject": 167,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C167_S1_I15_R.jpg",
+        "photo_sha256": "a957796b7e0aa12ab1a3d9bc0590681aab743afccb781a6e86593a088961b8b6",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C167_S1_I15_R.npz",
+        "cache_sha256": "419467b8842c4fdede28caad5c0892b33386d4bf9ab9bd76c014af68c6e82b6c"
+      },
+      {
+        "image": "C223_S1_I10_R.jpg",
+        "subject": 223,
+        "photo": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C223_S1_I10_R.jpg",
+        "photo_sha256": "f17732ea43942237d71ce10706ce59f8b5333cd4f50d240f0e44daf6b5c55cd2",
+        "cache_file": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103\\train\\bank0\\C223_S1_I10_R.npz",
+        "cache_sha256": "bda5f2b6dec40f1f2feda8515708c40cba15a19a7d4861ba91009529248fc161"
+      }
+    ],
+    "iris_checkpoint": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\sam31_iris_adaptacao_2026-11-03\\candidato_epoca_15.pt",
+    "iris_checkpoint_sha256": "cf8a718e0160c14408d1533445ff611b00a79c75d2c0fd07fb7540150e59db99",
+    "semantic_checkpoint": "C:\\Users\\lucaz\\pfc-hf-cache\\hub\\models--facebook--sam3.1\\snapshots\\daa63191845a41281374e725f4c9e51c7a824460\\sam3.1_multiplex.pt",
+    "semantic_checkpoint_sha256": "0567debeec80ba4ac6369540c6c248025283cb3ff2b92827509e57e2b3541cb6",
+    "sam_origin": {
+      "archive_info": {
+        "hash": "sha256=3e1c4119c0fc50e091dd8dd23a70a01f7ea5d6797772148d72206d10c74f8819",
+        "hashes": {
+          "sha256": "3e1c4119c0fc50e091dd8dd23a70a01f7ea5d6797772148d72206d10c74f8819"
+        }
+      },
+      "url": "https://github.com/facebookresearch/sam3/archive/f1647e8d0c1d280991f4d1b7d974c2704537fe66.zip"
+    },
+    "sam_code_revision": "f1647e8d0c1d280991f4d1b7d974c2704537fe66",
+    "versions": {
+      "torch": "2.14.1+cu130",
+      "torchvision": "0.29.1+cu130",
+      "sam3": "0.1.0",
+      "numpy": "1.26.4",
+      "pillow": "13.0.0"
+    },
+    "previous_identity_result_sha256": "fc583492fe8c61a7360c73e7d1b67921f68fba638b84b35483f7be203b052162"
+  },
+  "methods": [
+    "global",
+    "global_pupil",
+    "roi",
+    "roi_pupil"
+  ],
+  "guards": {
+    "minimum_score": 0.5,
+    "minimum_hull_area_fraction": 0.005,
+    "maximum_hull_area_fraction": 0.65,
+    "minimum_inside_fraction": 0.9,
+    "minimum_aspect": 0.2,
+    "maximum_aspect": 5.0,
+    "maximum_removed_iris_fraction": 0.5,
+    "roi_padding": 0.25,
+    "minimum_roi_support_pixels": 16,
+    "minimum_roi_overlap": 0.5,
+    "minimum_roi_area_ratio": 0.5,
+    "maximum_roi_area_ratio": 1.75
+  },
+  "text": "pupil of the eye",
+  "confidence_threshold": 0.5,
+  "selection": "Seed20261104, distinct TRAIN people, random image per person; no score or quality filtering",
+  "scope": "Training feasibility only; ground truth never enters prompts or geometry; no validation/clinical/test inference",
+  "precision": "SAM3 BF16, featureFP16roundtrip, decoderFP32",
+  "promotion_rule": "Train Dice+0.5pp, no increase catastrophic or empty-reference FP; then full validation required",
+  "official_sources_checked_2026_11_04": {
+    "code": "https://github.com/facebookresearch/sam3/commits/main/",
+    "release": "https://github.com/facebookresearch/sam3/blob/main/RELEASE_SAM3p1.md",
+    "checkpoint": "https://huggingface.co/api/models/facebook/sam3.1",
+    "hf_snapshot": "daa63191845a41281374e725f4c9e51c7a824460"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "completed_utc": "2026-11-05T18:49:29.164170+00:00",
+  "reason": "Training and registered identity/conditional-area pipeline completed",
+  "new_candidate_evaluated": true,
+  "test_inference": false,
+  "clinical_effect_established": false,
+  "production_replaced": false
+}

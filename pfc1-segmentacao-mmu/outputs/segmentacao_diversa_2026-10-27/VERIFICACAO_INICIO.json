@@ -1,0 +1,25 @@
+﻿{
+    "checked_utc":  "2026-10-27T21:53:32.2496139Z",
+    "state":  {
+                  "status":  "running",
+                  "pid":  23684,
+                  "epoch":  1,
+                  "best_epoch":  0,
+                  "utc":  "2026-10-27T21:51:57.925311+00:00"
+              },
+    "progress":  {
+                     "utc":  "2026-10-27T21:52:02.195552+00:00",
+                     "phase":  "training",
+                     "batch":  1,
+                     "batches":  483,
+                     "samples":  16,
+                     "loss":  2.474142551422119
+                 },
+    "process_alive":  true,
+    "train_stderr_bytes":  0,
+    "sam_audit":  "passed:128 records",
+    "augmentation_tests":  "3 passed",
+    "initial_model_preserved":  true,
+    "source_hash_verified":  true,
+    "recognition_gain_measured":  false
+}

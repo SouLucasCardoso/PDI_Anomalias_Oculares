@@ -4,7 +4,7 @@ Lucas Cardoso Rodrigues
 
 Rodrigo Ramos Silva
 
-**Resumo:** Este estudo investigou a menor fração nominal da região visível da íris que manteve critérios de identificação ocular sob oclusões digitais superiores e inferiores. Utilizou-se a versão segmentada de olhos individuais do UBIPr, com partições por pessoa, segmentação automática e fusão de representações de cor e textura polar. A avaliação entre sessões manteve uma fotografia por consulta, lado do olho informado e 16 candidatos do mesmo lado. O modelo, o cadastro e o limiar foram congelados antes das intervenções. Todas as 486 consultas de teste permaneceram nas métricas, incluindo falhas e seis referências sem área definida. O critério exigiu simultaneamente identificação Rank-1 e taxa de aceitação genuína de pelo menos 90%, com taxa empírica de falsa correspondência de até 1%. Sem oclusão adicional, obtiveram-se 91,36%, 92,39% e 0,88%, respectivamente. Na grade irregular estudada, o menor aproveitamento nominal aprovado foi 99,5% na orientação superior e 99% na inferior. A condição inferior com 98,5% preservados reprovou os três critérios. Para perda nominal de 10%, a diferença de Rank-1 entre as orientações foi 24,07 pontos percentuais, com intervalo pareado de 95% de 10,83 a 36,25. A análise de 5.000 reamostragens por participante mostrou incerteza ampla na fronteira. Os resultados delimitam a tolerância do processamento completo nas condições avaliadas, sem estabelecer mínimo anatômico universal ou equivalência entre oclusão simulada e extensão de doença ocular. A reutilização do teste no desenvolvimento impede interpretar a rodada como confirmação cega independente.
+**Resumo:** Este estudo investigou a menor fração nominal da região visível da íris que manteve critérios de identificação ocular sob oclusões digitais superiores e inferiores. Utilizou-se o UBIPr segmentado, com partições por pessoa, extração automática e fusão de representações RGB e polares. A avaliação entre sessões manteve uma fotografia por consulta, lateralidade informada e 16 candidatos do mesmo lado. Modelo, cadastro e limiar permaneceram congelados nas intervenções. Todas as 486 consultas de teste foram mantidas, incluindo falhas e seis referências sem área definida. Exigiram-se Rank-1 e aceitação genuína de pelo menos 90%, com falsa correspondência empírica de até 1%. Sem perda adicional, obtiveram-se 91,36%, 92,39% e 0,88%, respectivamente. Na grade irregular estudada, as menores áreas nominais aprovadas foram 99,5% na orientação superior e 99% na inferior. A perda de 10% produziu diferença de Rank-1 de 24,07 pontos percentuais entre orientações. Pilotos posteriores não superaram conjuntamente os critérios. Em extensão exploratória, nove imagens clínicas com alterações explícitas da íris foram examinadas; dois olhos permitiram quatro consultas. O sistema original não identificou corretamente nenhuma, enquanto um controle de escala recuperou uma consulta e prejudicou outro cadastro. A evidência delimita a tolerância do processamento completo e identifica falhas de transferência de captura, sem estabelecer mínimo anatômico universal ou efeito causal de doenças. A reutilização dos conjuntos e a pequena amostra clínica impedem confirmação independente.
 
 **Palavras-chave:** Biometria da íris. Identificação ocular. Oclusão controlada. Segmentação. Incerteza experimental.
 
@@ -18,7 +18,7 @@ As condições oculares reais acrescentam dificuldades que ultrapassam a obstru�
 
 Uma intervenção digital oferece uma maneira delimitada de estudar o problema. Ao substituir uma quantidade conhecida de pixels da região anotada, pode-se comparar o desempenho antes e depois da alteração, preservando as identidades e o cadastro. A manipulação não constitui uma simulação clínica completa, mas permite investigar quanto a remoção de suporte em uma região específica interfere em um sistema previamente definido. Sua interpretação exige explicitar que o resultado depende da imagem, da segmentação, da normalização, do reconhecedor e da população avaliados.
 
-A pergunta de pesquisa foi formulada da seguinte maneira: qual é a menor fração nominal preservada da região de íris definida pelo protocolo que mantém critérios biométricos estabelecidos, sob oclusões superiores e inferiores, em um sistema de identificação ocular entre sessões? O objetivo geral consistiu em estimar esse limite observado e quantificar sua incerteza. Os objetivos específicos compreenderam organizar partições por pessoa e lateralidade, reconstruir a segmentação automática, definir e congelar o reconhecedor, aplicar intervenções de área conhecida e comparar as respostas das duas orientações.
+A pergunta de pesquisa foi formulada da seguinte maneira: qual é a menor fração nominal preservada da região de íris definida pelo protocolo que mantém critérios biométricos estabelecidos, sob oclusões superiores e inferiores, em um sistema de identificação ocular entre sessões? O objetivo geral consistiu em estimar esse limite observado e quantificar sua incerteza. Os objetivos específicos compreenderam organizar partições por pessoa e lateralidade, reconstruir a segmentação automática, congelar o reconhecedor, aplicar intervenções de área conhecida, comparar as orientações e examinar a extração e a identificação em um pequeno conjunto clínico complementar.
 
 O UBIPr foi escolhido por disponibilizar imagens da região ocular e uma versão segmentada de olhos individuais. A descrição oficial caracteriza a base como apropriada a estudos perioculares e solicita a citação de Padole e Proença (2012). Neste trabalho, a máscara predita restringe a extração à região classificada como íris. Ainda assim, erros dessa máscara podem introduzir suporte não iridiano ou excluir textura relevante; por isso, o resultado é atribuído ao sistema de identificação ocular assistido por segmentação.
 
@@ -52,7 +52,7 @@ No teste biométrico, 480 consultas apresentaram máscara de referência de íri
 
 #### 2.1.2 Recursos computacionais e representações
 
-Os experimentos foram executados localmente em uma GPU NVIDIA RTX 3050 Laptop, com 6 GB de memória, utilizando Python 3.12 e PyTorch. Os roteiros registraram configurações, partições, históricos e hashes de arquivos. As matrizes de escores e os modelos selecionados foram preservados com verificação de integridade. Essas medidas de rastreabilidade permitem relacionar cada tabela ao experimento correspondente e recuperar resultados sem depender de registros informais de execução.
+Os experimentos foram executados localmente em uma GPU NVIDIA RTX 3050 Laptop, com 6 GB de memória, utilizando Python 3.12 e PyTorch. Os roteiros registraram configurações, partições, históricos e hashes de arquivos. O relato explicita partições, seleção de modelos, falhas e limitações de generalização, aspectos recomendados para transparência em estudos de inteligência artificial com imagens médicas (Tejani et al., 2024), sem declarar aderência integral ou validação clínica pelo checklist. As matrizes de escores e os modelos selecionados foram preservados com verificação de integridade. Essas medidas de rastreabilidade permitem relacionar cada tabela ao experimento correspondente e recuperar resultados sem depender de registros informais de execução.
 
 A segmentação empregou uma implementação compacta da família U-Net, com caminhos de contração e expansão, de acordo com o princípio descrito por Ronneberger, Fischer e Brox (2015). O reconhecimento combinou redes residuais, ConvNeXt e uma adaptação polar de DINOv3. As famílias ResNet e ConvNeXt são descritas por He et al. (2016) e Liu et al. (2022). DINOv3 fornece representações visuais pré-treinadas por aprendizagem autossupervisionada (Siméoni et al., 2025). A utilização dessas famílias não implica reproduzir integralmente seus experimentos originais.
 
@@ -72,6 +72,14 @@ Tabela 2 — Grupos da fusão congelada
 | ArcIris em duas vistas | Polar cinza e canal vermelho | Dois vetores globais | 1/8 total |
 
 Fonte: do autor (2026), a partir da configuração congelada. Cada vista ArcIris recebe peso efetivo de 1/16.
+
+#### 2.1.3 Bases complementares e fontes técnicas
+
+A preparação também contemplou o MMU e suas máscaras públicas, como etapa inicial de segmentação, sem diagnósticos por imagem no protocolo (Mohammad, s.d.; Kozlova, s.d.). Para dados clínicos, consultaram-se CatScreen, SLID, Nuclear Cataract e SLP-VLD, mantendo suas modalidades, licenças e identificadores separados (Khurshid et al., 2026; Xu et al., 2026; Cruz-Vega; Morales, 2023; Ignatowicz; Marciniak; Marciniak, 2025; Qian, 2026). A auditoria local encontrou 400 imagens na amostra CatScreen, 2.617 no SLID e 1.320 no Nuclear, das quais 335 tiveram rótulos recuperados da seleção secundária de 2025. As contagens são da cópia adquirida e não substituem as descrições dos depósitos. Nenhuma dessas fontes foi misturada ao UBIPr para fabricar controles saudáveis.
+
+O SLP-VLD v3 contém 2.228 registros de fotografias de lâmpada de fenda e diagnósticos; a auditoria encontrou uma duplicata exata, preservada no inventário e removida das divisões que exigiam deduplicação. Os diagnósticos vieram das planilhas do depósito, não de respostas geradas por modelos de linguagem. A triagem literal de termos relacionados à íris selecionou nove imagens distintas de oito olhos codificados. Seis olhos só possuíam uma captura disponível; dois tinham capturas repetidas elegíveis no manifesto clínico anterior. As imagens e descrições são dados públicos com licença CC BY 4.0 registrada pelos autores (Qian, 2026); não se realizou novo diagnóstico ou exame médico.
+
+Na triagem de ferramentas, foram consultados SAM, SAM 2, SAM 3 e OpenIRIS, além do Iris-SAM para segmentação especializada (Kirillov et al., 2023; Meta AI, s.d.a; Meta AI, s.d.b; Worldcoin, s.d.; Farmanifard; Ross, 2024). Esses recursos não substituíram a U-Net no sistema de referência. Seus testes locais de execução ou viabilidade não equivalem a validação biométrica clínica. Os repositórios foram tratados como fontes de implementação e pesos, e não como garantia de desempenho transferível ao UBIPr ou ao SLP-VLD.
 
 ### 2.2 MÉTODOS
 
@@ -136,6 +144,22 @@ As métricas de teste utilizaram 486 comparações genuínas e 7.290 impostoras.
 A incerteza foi estimada por 5.000 reamostragens de participantes com reposição, semente 20261001. Cada sorteio preservou as consultas dos participantes selecionados e foi compartilhado pelas condições comparadas. O cadastro e o limiar permaneceram fixos. Os intervalos de 95% foram calculados pelos percentis das distribuições reamostradas. Para aprovações nos limites de 90% e 1%, foram utilizadas comparações de contagens inteiras, evitando alterações por arredondamento numérico.
 
 As frequências de reamostras que passaram os três critérios descrevem estabilidade amostral; não são probabilidades posteriores de sucesso na população. Os intervalos são pontuais e não corrigem comparações múltiplas ou seleção de modelos. Uma segunda implementação reproduziu a análise agregada das condições anteriores a partir de 96 linhas de contagens por pessoa e condição. Os novos pontos receberam auditoria de componentes, decisões, área efetiva e preservação das entradas que deveriam permanecer inalteradas.
+
+#### 2.2.6 Pilotos posteriores e separação da calibração
+
+Os ajustes posteriores usaram 151 pessoas do treino para gradientes ou estimação de parâmetros, 16 para calibração interna e 16 do monitor antigo para avaliação após congelamento. Os encoders anteriores já haviam visto essas pessoas; a separação desta etapa não transforma o monitor reutilizado em teste independente. No reteste com oclusões diversas, mantiveram-se 6.067 fotografias e 3.222 intervenções superiores/inferiores sorteadas de 1% a 20%, com níveis de cinza fixados antes do treino. Dez vistas com falha de extração tiveram sua contribuição nas perdas de identidade zerada; o peso das demais e os denominadores de avaliação foram preservados. Executaram-se oito épocas, selecionadas pela perda de ajuste com preservação do limpo interno.
+
+O piloto estrutural aprendeu oito regressões regionais ridge, uma por setor angular do mapa polar intermediário, para aproximar o descritor global limpo da mesma foto de ajuste. A regularização de 0,01 e a fusão de 75% global e 25% regional foram fixadas previamente. Compararam-se seis das oito maiores concordâncias por par, com controle usando todos os setores. A comparação por regiões possui precedentes, mas este piloto não reproduz o método de saliência humana estudado em imagens pós-morte por Boyd et al. (2023). Os setores têm campos receptivos sobrepostos e não representam porcentagens isoladas da área física da íris.
+
+Cada método recebeu um único limiar a partir do grupo interno limpo, visando FMR empírica de 0,5%, aplicado sem alteração ao monitor. A barreira de avanço exigiu preservar a condição limpa e melhorar Rank-1 e TAR nas duas oclusões, mantendo FMR de até 1%. Os controles foram reportados sem escolher retrospectivamente o melhor resultado e sem calibrar sobre os casos ocluídos do monitor. Essas rodadas são desenvolvimento complementar e não entram na estimação da fronteira principal.
+
+#### 2.2.7 Estudo complementar de casos clínicos
+
+Dos oito olhos com diagnóstico explícito da íris, dois possuíam capturas repetidas no manifesto clínico previamente preparado: um olho com cisto de íris e alterações corneanas, e um com laceração da íris e acompanhamentos após tratamento. A primeira captura de cada olho foi cadastro e as quatro capturas posteriores foram consultas. Datas e identidade provêm dos códigos distribuídos; não foram confirmadas por prontuário independente. O cadastro de cada lado incluiu o olho alvo e os primeiros 15 outros olhos elegíveis, ordenados por código e nome de arquivo, sem seleção por qualidade ou escore. Ao todo, processaram-se 42 fotografias: 32 de cadastro, quatro consultas e seis casos adicionais sem cadastro elegível.
+
+A fusão principal e o limiar UBIPr foram transportados sem ajuste, mantendo as falhas no denominador. A avaliação clínica anterior já havia exposto esse domínio e as capturas; não se considera esta extensão um teste cego. Após inspecionar as falhas originais, registrou-se um controle posterior de escala: a foto clínica foi reduzida para 106 × 80 pixels dentro de uma entrada 320 × 240 preenchida com cinza 128. A máscara foi mapeada de volta ao original, de onde vieram os pixels do recorte. Não houve reconstrução de textura, treino ou busca entre escalas. O controle alterou somente a apresentação à U-Net e foi executado também sobre os cadastros.
+
+Registraram-se pixels previstos como íris, razão entre máscara e fotografia e fração de suporte da grade polar estimada. Nenhuma dessas medidas foi tratada como porcentagem anatômica preservada. Sem máscara clínica de referência, não se calculou Dice clínico. Duas imagens com rótulo exato Normal eye foram selecionadas por ordem de arquivo e pessoas distintas para ilustração, sem medir seu reconhecimento nessa prancha. A ausência de diagnóstico no UBIPr não foi interpretada como ausência de anomalias.
 
 ## 3 RESULTADOS E DISCUSSÃO
 
@@ -229,7 +253,38 @@ Um transporte residual de descritores polares foi ajustado em 200 fotografias al
 
 Essas tentativas documentam resultados negativos e limites de alterações específicas. Seus alvos geométricos não são anotações anatômicas independentes da pupila. Além disso, as pessoas do monitor do transporte já haviam sido vistas pelo encoder original, e as validações geométricas foram reutilizadas. Os resultados internos dessas etapas não devem ser misturados às estimativas de teste ou anunciados como aumento de generalização. A fronteira deste artigo permanece vinculada ao reconhecedor original congelado.
 
-### 3.6 LIMITAÇÕES E RELAÇÃO COM ANOMALIAS OCULARES
+Além dos controles geométricos, o reteste de oito épocas com vistas inválidas corrigidas preservou 479/480 identificações e aceitações no monitor limpo. Sob perda superior/inferior de 10%, o Rank-1 foi 82,71%/65,42%, o TAR foi 79,38%/57,92% e a FMR foi 1,3333%/1,2639%. A correção eliminou um alvo de treinamento inadequado, mas não produziu superioridade conjunta e não recebeu nova avaliação no teste principal.
+
+Na destilação regional, a fusão primária preservou os mesmos acertos limpos e reduziu a FMR ocluída para 0,9167%/0,8472%. O Rank-1 foi 82,71%/61,88%, porém o TAR caiu para 75,63%/51,46%, contra 76,88%/53,96% do componente global original nessa rodada. O controle com todos os setores teve Rank-1 idêntico, impedindo atribuir a redução de FMR exclusivamente ao descarte regional. Portanto, atingir FMR abaixo de 1% em um monitor não resolveu a meta de identificação e aceitação genuína. Nenhum desses pilotos foi promovido.
+
+### 3.6 CASOS CLÍNICOS E TRANSFERÊNCIA DE CAPTURA
+
+A Tab. 6 resume as quatro consultas de dois olhos, com 16 candidatos nominais por lado e o limiar da referência. O sistema original não produziu identificação correta ou aceitação genuína. Uma comparação genuína estava indisponível porque a máscara do cadastro do olho com cisto ficou vazia. No outro olho, o cadastro era computacionalmente disponível, mas as máscaras extraíam fragmentos pequenos. O resultado não mede exclusivamente discriminação da textura e não demonstra efeito causal da condição ocular.
+
+Tabela 6 — Extensão clínica com pesos e limiar congelados
+
+| Processamento | Identificações corretas | Aceitações genuínas | Falsas correspondências | Genuínos indisponíveis |
+|---|---:|---:|---:|---:|
+| Original | 0/4 | 0/4 | 1/60 (1,67%) | 1/4 |
+| Controle de escala 1/3 | 1/4 | 1/4 | 2/60 (3,33%) | 3/4 |
+
+Fonte: do autor (2026), dados SLP-VLD. Controle definido após a falha original; mesmas consultas, cadastros e limiar. As quatro consultas não são quatro pessoas independentes.
+
+O controle de escala recuperou o cadastro do olho com cisto e sua consulta foi identificada e aceita, com escore genuíno de 0,87538, superior ao limiar 0,85817. Entretanto, a máscara de cadastro do olho com laceração tornou-se vazia, indisponibilizando as outras três comparações genuínas. Não se escolheu a melhor escala por olho nem se excluíram falhas para reportar ganho. Uma falsa correspondência já representa 1,67% em 60 pares; a amostra não sustenta uma garantia populacional de FMR de até 1%.
+
+A Fig. 3 apresenta controles com rótulo Normal eye e casos com alterações da íris na mesma base. A U-Net original produz recortes fragmentados também nos exemplos normais. Isso evidencia um confundidor de domínio de captura, sem provar que a escala explique todas as falhas. A melhora visual de alguns recortes não foi convertida em Dice ou percentual anatômico, pois falta anotação independente. O cadastro com laceração ilustra a falha do controle, preservando resultados favoráveis e desfavoráveis.
+
+Figura 3 — Recortes de olhos rotulados como normais e com alterações da íris
+
+![Recortes clínicos](figuras/recortes_clinicos.png)
+
+Fonte: adaptação do autor (2026) de Qian (2026), SLP-VLD v3, CC BY 4.0. De cima para baixo: dois rótulos Normal eye, cisto de íris com comorbidades e laceração da íris. Colunas: fotografia, recorte original e controle de escala 1/3. Não se realizou novo diagnóstico médico.
+
+O estudo de patologias de Trokielewicz, Czajka e Maciejewicz (2015) destaca a importância da segmentação para a confiabilidade do reconhecimento. Os casos presentes são compatíveis com a necessidade de examinar essa etapa, mas não reproduzem a população, a modalidade ou os reconhecedores daquele trabalho. As condições clínicas coexistem com diferenças de dilatação, iluminação, enquadramento, tratamento e qualidade; não se atribui toda discrepância de reconhecimento à doença.
+
+Também se reaproveitaram as 482 consultas UBIPr de validação para descrever suporte polar natural, sem nova inferência de reconhecimento. Houve um acerto e aceitação em uma consulta com suporte de 47,36%; abaixo de 75%, porém, eram apenas cinco consultas, das quais três identificadas. Esses casos não estabelecem um mínimo global: suporte da grade polar, área nominal de intervenção e área anatômica são grandezas distintas. A seleção ilustrativa por suporte não substitui a análise de todas as consultas.
+
+### 3.7 LIMITAÇÕES E RELAÇÃO COM ANOMALIAS OCULARES
 
 A principal limitação estatística é a população de 16 participantes na avaliação biométrica de teste. As 486 consultas permitem observar repetição entre capturas, mas não representam 486 pessoas independentes. A reamostragem por participante considera parte dessa dependência e mantém fixos o cadastro e o limiar. Ela não incorpora novas sessões de cadastramento, diferentes sensores, sementes de treinamento, outras composições de galeria ou erros de anotação.
 
@@ -239,7 +294,7 @@ A tarefa é de identificação em conjunto fechado: os olhos consultados pertenc
 
 O suporte considerado foi a íris visível definida pela anotação original. Parte da superfície anatômica pode estar naturalmente encoberta antes da intervenção. Uma máscara predita pode omitir textura da íris ou incluir pixels de outras estruturas. A identificação pode explorar informação de cor, geometria e aparência do suporte disponível, não apenas uma textura iridiana isolada e anatomicamente perfeita. O limite encontrado descreve o sistema completo, sem provar que todos os pixels preservados sejam necessários ou igualmente informativos.
 
-A relação com anomalias oculares deve ser interpretada como motivação e hipótese de aplicação. Uma doença pode alterar geometria, transparência, textura, reflexão ou condições de aquisição. O cinza artificial remove a aparência de pixels selecionados, mas não reproduz todas essas mudanças. A evidência permite afirmar que perdas localizadas podem interferir de maneira distinta no processamento estudado; não permite estimar a extensão clínica de uma doença a partir das porcentagens da tabela, atribuir causalidade de diagnóstico ou recomendar decisões assistenciais.
+A relação com anomalias oculares permanece exploratória, apesar da extensão com casos rotulados. O número de olhos repetidos e as falhas de cadastro impedem uma estimativa clínica geral. Uma doença pode alterar geometria, transparência, textura, reflexão ou condições de aquisição. O cinza artificial remove a aparência de pixels selecionados, mas não reproduz todas essas mudanças. A evidência permite afirmar que perdas localizadas podem interferir de maneira distinta no processamento estudado; não permite estimar a extensão clínica de uma doença a partir das porcentagens da tabela, atribuir causalidade de diagnóstico ou recomendar decisões assistenciais.
 
 Também não é possível concluir que o desempenho de toda tecnologia de reconhecimento de íris esteja limitado a 91,36%. Esse número pertence à configuração, à amostra e às condições declaradas. Os mínimos elevados observados podem refletir a pequena margem do reconhecedor sobre o critério, além da qualidade dos dados e da instabilidade de extração. Um estudo de invariância da textura exigiria outro desenho, enquanto uma alegação clínica demandaria medidas anatômicas e diagnósticas independentes e controle das condições de aquisição.
 
@@ -251,9 +306,13 @@ A pergunta de pesquisa foi respondida dentro desse protocolo, sem estabelecer um
 
 Entre as frações avaliadas nas duas orientações, o prefixo comum continuou em 100%; não se avaliou perda inferior de 0,5%. As porcentagens por orientação não podem ser convertidas automaticamente em um limite comum ou em extensão de doença ocular. A manutenção das falhas e das referências vazias, a preservação dos escores e a verificação do processamento tornam explícitas essas condições de interpretação.
 
-Como continuidade, recomenda-se avaliar participantes e capturas novos, com referência anatômica independente, e separar a perda de informação da instabilidade geométrica. Estudos clínicos precisariam documentar a condição ocular e os fatores de aquisição, sem pressupor equivalência com a oclusão digital. A contribuição atual consiste em uma fronteira observada e auditável, acompanhada de seus limites e de evidência quantitativa da influência da posição da perda.
+A extensão clínica mostrou um cadastro recuperado por controle de escala e outro prejudicado, sem aprovação de uma variante geral. Assim, a máscara predita não pode servir como denominador de tecido preservado antes de sua validação clínica. Como continuidade, recomenda-se avaliar participantes e capturas novos, com referência anatômica independente, e separar a perda de informação da instabilidade geométrica. Estudos clínicos precisariam documentar a condição ocular e os fatores de aquisição, sem pressupor equivalência com a oclusão digital. A contribuição atual consiste em uma fronteira observada e auditável, acompanhada de seus limites e de evidência quantitativa da influência da posição da perda.
 
 ## REFERÊNCIAS
+
+BOYD, Aidan et al. Human Saliency-Driven Patch-Based Matching for Interpretable Post-Mortem Iris Recognition. In: IEEE/CVF Winter Conference on Applications of Computer Vision Workshops, 2023. p. 701–710. Disponível em: https://openaccess.thecvf.com/content/WACV2023W/XAI4B/html/Boyd_Human_Saliency-Driven_Patch-Based_Matching_for_Interpretable_Post-Mortem_Iris_Recognition_WACVW_2023_paper.html. Acesso em: 27 out. 2026.
+
+CRUZ-VEGA, Israel; MORALES, Hans Israel. Nuclear Cataract Database for Biomedical and Machine Learning Applications. Mendeley Data, versão 2, 2023. Conjunto de dados. DOI: 10.17632/6wv33nbcvv.2. Disponível em: https://data.mendeley.com/datasets/6wv33nbcvv/2. Acesso em: 27 out. 2026.
 
 CVRL. Notre Dame Open-Source Iris Recognition. University of Notre Dame, 2026. Disponível em: https://github.com/CVRL/OpenSourceIrisRecognition. Acesso em: 23 out. 2026.
 
@@ -261,14 +320,38 @@ DAUGMAN, John. How iris recognition works. IEEE Transactions on Circuits and Sys
 
 DENG, Jiankang; GUO, Jia; XUE, Niannan; ZAFEIRIOU, Stefanos. ArcFace: Additive Angular Margin Loss for Deep Face Recognition. In: IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2019. p. 4690–4699. Disponível em: https://arxiv.org/abs/1801.07698v1. Acesso em: 23 out. 2026.
 
+FARMANIFARD, Parisa; ROSS, Arun. Iris-SAM: Iris Segmentation Using a Foundation Model. arXiv:2402.06497, 2024. Código e pesos dos autores. Disponível em: https://arxiv.org/abs/2402.06497. Repositório: https://github.com/ParisaFarmanifard/Iris-SAM. Acesso em: 27 out. 2026.
+
 HE, Kaiming; ZHANG, Xiangyu; REN, Shaoqing; SUN, Jian. Deep Residual Learning for Image Recognition. In: IEEE Conference on Computer Vision and Pattern Recognition, 2016. Disponível em: https://arxiv.org/abs/1512.03385. Acesso em: 23 out. 2026.
+
+IGNATOWICZ, Alicja Anna; MARCINIAK, Tomasz; MARCINIAK, E. AI-Powered Mobile App for Nuclear Cataract Detection. Sensors, v. 25, n. 13, artigo 3954, 2025. DOI: 10.3390/s25133954. Disponível em: https://doi.org/10.3390/s25133954. Acesso em: 27 out. 2026.
+
+KHURSHID, Mahapara et al. CatScreen: A Large MultiModal Benchmark Dataset for Cataract Screening. Transactions on Machine Learning Research, 2026. Página e amostra dos autores. Disponível em: https://www.iab-rubric.org/resources/healthcare-datasets/catscreen. Acesso em: 27 out. 2026.
+
+KIRILLOV, Alexander et al. Segment Anything. In: IEEE/CVF International Conference on Computer Vision, 2023. Disponível em: https://arxiv.org/abs/2304.02643. Código: https://github.com/facebookresearch/segment-anything. Acesso em: 27 out. 2026.
+
+KOZLOVA, J. Masks for MMU Iris dataset. Repositório de máscaras, [s.d.]. Disponível em: https://github.com/jkozlova/Masks-for-MMU-Iris-dataset. Acesso em: 27 out. 2026.
 
 LIU, Zhuang et al. A ConvNet for the 2020s. In: IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2022. Disponível em: https://arxiv.org/abs/2201.03545. Acesso em: 23 out. 2026.
 
+META AI. SAM 2. Repositório oficial de código e modelos, [s.d.a]. Disponível em: https://github.com/facebookresearch/sam2. Acesso em: 27 out. 2026.
+
+META AI. SAM 3. Repositório oficial de código e modelos, [s.d.b]. Revisão local registrada: 7f473cfd983d5eb43040ff608f66bff0d7bdcb53. Disponível em: https://github.com/facebookresearch/sam3. Acesso em: 27 out. 2026.
+
+MOHAMMAD, Naureen. MMU Iris Dataset. Kaggle, [s.d.]. Cópia de aquisição utilizada no projeto. Disponível em: https://www.kaggle.com/datasets/naureenmohammad/mmu-iris-dataset. Acesso em: 20 out. 2026.
+
 PADOLE, Chandrashekhar; PROENÇA, Hugo. Periocular Recognition: Analysis of Performance Degradation Factors. In: Fifth IAPR/IEEE International Conference on Biometrics, New Delhi, 2012. Base UBIPr disponível em: https://iris.di.ubi.pt/ubipr.html. Acesso em: 23 out. 2026.
+
+QIAN, Hulei. SLP-VLD: An Anonymized Slit-Lamp Image Dataset with Expert Clinical Reports for Vision-Language Modeling of Anterior Segment Diseases. Figshare, versão 3, 2026. Conjunto de dados. DOI: 10.6084/m9.figshare.32576697.v3. Disponível em: https://doi.org/10.6084/m9.figshare.32576697.v3. Acesso em: 20 out. 2026.
 
 RONNEBERGER, Olaf; FISCHER, Philipp; BROX, Thomas. U-Net: Convolutional Networks for Biomedical Image Segmentation. In: Medical Image Computing and Computer-Assisted Intervention, 2015. Disponível em: https://arxiv.org/abs/1505.04597. Acesso em: 23 out. 2026.
 
 SIMÉONI, Oriane et al. DINOv3. arXiv:2508.10104, 2025. Disponível em: https://arxiv.org/abs/2508.10104. Acesso em: 23 out. 2026.
 
+TEJANI, Ali S. et al. Checklist for Artificial Intelligence in Medical Imaging (CLAIM): 2024 Update. Radiology: Artificial Intelligence, v. 6, n. 4, artigo e240300, 2024. DOI: 10.1148/ryai.240300. Disponível em: https://doi.org/10.1148/ryai.240300. Acesso em: 27 out. 2026.
+
 TROKIELEWICZ, Mateusz; CZAJKA, Adam; MACIEJEWICZ, Piotr. Assessment of iris recognition reliability for eyes affected by ocular pathologies. In: IEEE Seventh International Conference on Biometrics Theory, Applications and Systems, Arlington, 2015. p. 1–6. DOI: 10.1109/BTAS.2015.7358747. Disponível em: https://arxiv.org/abs/1809.00206. Acesso em: 23 out. 2026.
+
+WORLDCOIN. Open Iris Recognition Inference System. Repositório oficial OpenIRIS, [s.d.]. Disponível em: https://github.com/worldcoin/open-iris. Acesso em: 27 out. 2026.
+
+XU, Mingyu et al. SLID: a slit-lamp image dataset for deep learning-based anterior eye anatomical segmentation and multi-lesion detection. Frontiers in Digital Health, v. 7, artigo 1716501, 2026. DOI: 10.3389/fdgth.2025.1716501. Disponível em: https://doi.org/10.3389/fdgth.2025.1716501. Dados: https://github.com/xumingyu-hub/SLID. Acesso em: 27 out. 2026.

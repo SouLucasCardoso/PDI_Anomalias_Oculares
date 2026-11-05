@@ -1,0 +1,13 @@
+{
+  "checked_utc": "2026-11-03T19:27:14.590542+00:00",
+  "status": "passed_evidence_audit_not_quality_gate",
+  "all12_masks_and8_automatic_boxes_reproduced": true,
+  "all_sources_images_and_supports_match": true,
+  "semantic_tensors_loaded_strictly": 1130,
+  "active_experiment_sources_unchanged": true,
+  "code_revision": "f1647e8d0c1d280991f4d1b7d974c2704537fe66",
+  "cuda_peak_gib": 3.8982911109924316,
+  "clinical_reference_available": false,
+  "recognition_measured": false,
+  "no_clinical_minimum_assigned": true
+}

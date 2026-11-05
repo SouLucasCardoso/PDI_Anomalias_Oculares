@@ -1,0 +1,14 @@
+﻿{
+    "task_name":  "PFC_Iris_Segmentacao_Area_20261027",
+    "registered_utc":  "2026-10-28T02:07:57.8335694Z",
+    "run_root":  "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-segmentacao-area-20261027",
+    "runtime_directory":  "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-segmentacao-area-20261027\\training",
+    "mirror_directory":  "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\segmentacao_area_2026-10-27",
+    "stdout":  "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\segmentacao_area_2026-10-27\\execucao.log",
+    "stderr":  "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\segmentacao_area_2026-10-27\\execucao.log",
+    "execution_limit_hours":  24,
+    "recurring":  false,
+    "epochs":  30,
+    "batch_size":  16,
+    "script":  "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\avaliar_area_segmentador_diverso.py"
+}

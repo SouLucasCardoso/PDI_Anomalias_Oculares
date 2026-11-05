@@ -1,0 +1,384 @@
+{
+  "updated_utc": "2026-11-05T20:11:37.916788+00:00",
+  "groups": {
+    "all_queries": 482,
+    "defined_reference": 472,
+    "undefined_reference": 10
+  },
+  "primary_audit_sha256": "e3789898bf867956d7e2e0c4e349a86ee83e2e92e2a5a56ee51249ff1d7584a3",
+  "records": [
+    {
+      "key": "novo_oclusao_inferior_10",
+      "groups": {
+        "all_queries": {
+          "counts": {
+            "correct": 384,
+            "accepted": 373,
+            "joint": 364,
+            "false_accepts": 106,
+            "queries": 482,
+            "impostors": 7230,
+            "extraction_failures": 3
+          },
+          "rates": {
+            "rank1": 0.7966804979253111,
+            "tar": 0.7738589211618258,
+            "joint": 0.7551867219917012,
+            "fmr": 0.014661134163208852
+          },
+          "passed": false
+        },
+        "defined_reference": {
+          "counts": {
+            "correct": 380,
+            "accepted": 368,
+            "joint": 360,
+            "false_accepts": 104,
+            "queries": 472,
+            "impostors": 7080,
+            "extraction_failures": 0
+          },
+          "rates": {
+            "rank1": 0.8050847457627118,
+            "tar": 0.7796610169491526,
+            "joint": 0.7627118644067796,
+            "fmr": 0.014689265536723164
+          },
+          "passed": false
+        },
+        "undefined_reference": {
+          "counts": {
+            "correct": 4,
+            "accepted": 5,
+            "joint": 4,
+            "false_accepts": 2,
+            "queries": 10,
+            "impostors": 150,
+            "extraction_failures": 3
+          },
+          "rates": {
+            "rank1": 0.4,
+            "tar": 0.5,
+            "joint": 0.4,
+            "fmr": 0.013333333333333334
+          },
+          "passed": false
+        }
+      }
+    },
+    {
+      "key": "novo_oclusao_superior_10",
+      "groups": {
+        "all_queries": {
+          "counts": {
+            "correct": 397,
+            "accepted": 381,
+            "joint": 373,
+            "false_accepts": 82,
+            "queries": 482,
+            "impostors": 7230,
+            "extraction_failures": 3
+          },
+          "rates": {
+            "rank1": 0.8236514522821576,
+            "tar": 0.7904564315352697,
+            "joint": 0.7738589211618258,
+            "fmr": 0.011341632088520055
+          },
+          "passed": false
+        },
+        "defined_reference": {
+          "counts": {
+            "correct": 393,
+            "accepted": 376,
+            "joint": 369,
+            "false_accepts": 80,
+            "queries": 472,
+            "impostors": 7080,
+            "extraction_failures": 0
+          },
+          "rates": {
+            "rank1": 0.8326271186440678,
+            "tar": 0.7966101694915254,
+            "joint": 0.7817796610169492,
+            "fmr": 0.011299435028248588
+          },
+          "passed": false
+        },
+        "undefined_reference": {
+          "counts": {
+            "correct": 4,
+            "accepted": 5,
+            "joint": 4,
+            "false_accepts": 2,
+            "queries": 10,
+            "impostors": 150,
+            "extraction_failures": 3
+          },
+          "rates": {
+            "rank1": 0.4,
+            "tar": 0.5,
+            "joint": 0.4,
+            "fmr": 0.013333333333333334
+          },
+          "passed": false
+        }
+      }
+    },
+    {
+      "key": "novo_original_0",
+      "groups": {
+        "all_queries": {
+          "counts": {
+            "correct": 431,
+            "accepted": 432,
+            "joint": 419,
+            "false_accepts": 76,
+            "queries": 482,
+            "impostors": 7230,
+            "extraction_failures": 3
+          },
+          "rates": {
+            "rank1": 0.8941908713692946,
+            "tar": 0.8962655601659751,
+            "joint": 0.8692946058091287,
+            "fmr": 0.010511756569847857
+          },
+          "passed": false
+        },
+        "defined_reference": {
+          "counts": {
+            "correct": 427,
+            "accepted": 427,
+            "joint": 415,
+            "false_accepts": 74,
+            "queries": 472,
+            "impostors": 7080,
+            "extraction_failures": 0
+          },
+          "rates": {
+            "rank1": 0.9046610169491526,
+            "tar": 0.9046610169491526,
+            "joint": 0.8792372881355932,
+            "fmr": 0.010451977401129943
+          },
+          "passed": false
+        },
+        "undefined_reference": {
+          "counts": {
+            "correct": 4,
+            "accepted": 5,
+            "joint": 4,
+            "false_accepts": 2,
+            "queries": 10,
+            "impostors": 150,
+            "extraction_failures": 3
+          },
+          "rates": {
+            "rank1": 0.4,
+            "tar": 0.5,
+            "joint": 0.4,
+            "fmr": 0.013333333333333334
+          },
+          "passed": false
+        }
+      }
+    },
+    {
+      "key": "original_oclusao_inferior_10",
+      "groups": {
+        "all_queries": {
+          "counts": {
+            "correct": 289,
+            "accepted": 279,
+            "joint": 269,
+            "false_accepts": 176,
+            "queries": 482,
+            "impostors": 7230,
+            "extraction_failures": 7
+          },
+          "rates": {
+            "rank1": 0.5995850622406639,
+            "tar": 0.578838174273859,
+            "joint": 0.558091286307054,
+            "fmr": 0.02434301521438451
+          },
+          "passed": false
+        },
+        "defined_reference": {
+          "counts": {
+            "correct": 285,
+            "accepted": 274,
+            "joint": 265,
+            "false_accepts": 174,
+            "queries": 472,
+            "impostors": 7080,
+            "extraction_failures": 3
+          },
+          "rates": {
+            "rank1": 0.6038135593220338,
+            "tar": 0.5805084745762712,
+            "joint": 0.5614406779661016,
+            "fmr": 0.02457627118644068
+          },
+          "passed": false
+        },
+        "undefined_reference": {
+          "counts": {
+            "correct": 4,
+            "accepted": 5,
+            "joint": 4,
+            "false_accepts": 2,
+            "queries": 10,
+            "impostors": 150,
+            "extraction_failures": 4
+          },
+          "rates": {
+            "rank1": 0.4,
+            "tar": 0.5,
+            "joint": 0.4,
+            "fmr": 0.013333333333333334
+          },
+          "passed": false
+        }
+      }
+    },
+    {
+      "key": "original_oclusao_superior_10",
+      "groups": {
+        "all_queries": {
+          "counts": {
+            "correct": 390,
+            "accepted": 376,
+            "joint": 368,
+            "false_accepts": 93,
+            "queries": 482,
+            "impostors": 7230,
+            "extraction_failures": 4
+          },
+          "rates": {
+            "rank1": 0.8091286307053942,
+            "tar": 0.7800829875518672,
+            "joint": 0.7634854771784232,
+            "fmr": 0.012863070539419087
+          },
+          "passed": false
+        },
+        "defined_reference": {
+          "counts": {
+            "correct": 386,
+            "accepted": 371,
+            "joint": 364,
+            "false_accepts": 91,
+            "queries": 472,
+            "impostors": 7080,
+            "extraction_failures": 0
+          },
+          "rates": {
+            "rank1": 0.8177966101694916,
+            "tar": 0.7860169491525424,
+            "joint": 0.7711864406779662,
+            "fmr": 0.012853107344632768
+          },
+          "passed": false
+        },
+        "undefined_reference": {
+          "counts": {
+            "correct": 4,
+            "accepted": 5,
+            "joint": 4,
+            "false_accepts": 2,
+            "queries": 10,
+            "impostors": 150,
+            "extraction_failures": 4
+          },
+          "rates": {
+            "rank1": 0.4,
+            "tar": 0.5,
+            "joint": 0.4,
+            "fmr": 0.013333333333333334
+          },
+          "passed": false
+        }
+      }
+    },
+    {
+      "key": "original_original_0",
+      "groups": {
+        "all_queries": {
+          "counts": {
+            "correct": 434,
+            "accepted": 436,
+            "joint": 426,
+            "false_accepts": 72,
+            "queries": 482,
+            "impostors": 7230,
+            "extraction_failures": 4
+          },
+          "rates": {
+            "rank1": 0.9004149377593361,
+            "tar": 0.9045643153526971,
+            "joint": 0.8838174273858921,
+            "fmr": 0.00995850622406639
+          },
+          "passed": false
+        },
+        "defined_reference": {
+          "counts": {
+            "correct": 430,
+            "accepted": 431,
+            "joint": 422,
+            "false_accepts": 70,
+            "queries": 472,
+            "impostors": 7080,
+            "extraction_failures": 0
+          },
+          "rates": {
+            "rank1": 0.9110169491525424,
+            "tar": 0.913135593220339,
+            "joint": 0.8940677966101694,
+            "fmr": 0.009887005649717515
+          },
+          "passed": false
+        },
+        "undefined_reference": {
+          "counts": {
+            "correct": 4,
+            "accepted": 5,
+            "joint": 4,
+            "false_accepts": 2,
+            "queries": 10,
+            "impostors": 150,
+            "extraction_failures": 4
+          },
+          "rates": {
+            "rank1": 0.4,
+            "tar": 0.5,
+            "joint": 0.4,
+            "fmr": 0.013333333333333334
+          },
+          "passed": false
+        }
+      }
+    }
+  ],
+  "frontiers": {
+    "all_queries": {
+      "clean_gate_passed": false,
+      "grid_complete": false,
+      "minimum_assigned": false,
+      "orientations": {}
+    },
+    "defined_reference": {
+      "clean_gate_passed": false,
+      "grid_complete": false,
+      "minimum_assigned": false,
+      "orientations": {}
+    }
+  },
+  "conservative_interpretable_minimum_percent": null,
+  "undefined_reference_area_fraction": null,
+  "primary_experiment_modified": false,
+  "clinical_reviews_required": false,
+  "intervals_are_not_simultaneously_certifying_frontier": true
+}

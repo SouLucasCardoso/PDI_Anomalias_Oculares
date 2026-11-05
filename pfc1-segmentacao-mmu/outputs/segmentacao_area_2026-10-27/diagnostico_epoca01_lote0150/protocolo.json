@@ -1,0 +1,159 @@
+{
+  "registered_utc": "2026-10-28T02:17:49.374096+00:00",
+  "purpose": "Intermediate diagnostic only; not checkpoint selection, not full-validation result, not recognition or minimum area",
+  "selection": "All16people in existing SAM3.1 seed127 sample; no filtering or subsequent choice by score",
+  "snapshot": "outputs\\segmentacao_area_2026-10-27\\treino\\retomada_epoca_01_lote_0150.pt",
+  "snapshot_sha256": "f10eff344b2ed6d53c5af44bb15b5d319b0aa6d50f8322ce9e8d8d432add3538",
+  "epoch": 1,
+  "batches": 150,
+  "original_sha256": "2bcfc269ffc9562ca8cf0956998faf1e22641587cd60f7059b3cec3dd0f4093d",
+  "sample_protocol_sha256": "9b6556f3f0d912a0d9e2aa4737d8d9f6ceb7303680851f0adfa558a50dc7f677",
+  "script_sha256": "79fa401b2bd32254191095cc5375b0681b2702dc5493cec7061bd0073577913b",
+  "samples": [
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C35_S1_I10_L.jpg",
+      "mask": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C35_S1_I10_L.png",
+      "subject": 35,
+      "session": 1,
+      "index": 10,
+      "side": "L"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C79_S1_I10_L.jpg",
+      "mask": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C79_S1_I10_L.png",
+      "subject": 79,
+      "session": 1,
+      "index": 10,
+      "side": "L"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C117_S1_I10_L.jpg",
+      "mask": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C117_S1_I10_L.png",
+      "subject": 117,
+      "session": 1,
+      "index": 10,
+      "side": "L"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C149_S1_I10_L.jpg",
+      "mask": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C149_S1_I10_L.png",
+      "subject": 149,
+      "session": 1,
+      "index": 10,
+      "side": "L"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C151_S1_I10_L.jpg",
+      "mask": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C151_S1_I10_L.png",
+      "subject": 151,
+      "session": 1,
+      "index": 10,
+      "side": "L"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C173_S1_I10_L.jpg",
+      "mask": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C173_S1_I10_L.png",
+      "subject": 173,
+      "session": 1,
+      "index": 10,
+      "side": "L"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C175_S1_I10_L.jpg",
+      "mask": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C175_S1_I10_L.png",
+      "subject": 175,
+      "session": 1,
+      "index": 10,
+      "side": "L"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C183_S1_I10_L.jpg",
+      "mask": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C183_S1_I10_L.png",
+      "subject": 183,
+      "session": 1,
+      "index": 10,
+      "side": "L"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C275_S1_I10_L.jpg",
+      "mask": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C275_S1_I10_L.png",
+      "subject": 275,
+      "session": 1,
+      "index": 10,
+      "side": "L"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C295_S1_I10_L.jpg",
+      "mask": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C295_S1_I10_L.png",
+      "subject": 295,
+      "session": 1,
+      "index": 10,
+      "side": "L"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C361_S1_I10_L.jpg",
+      "mask": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C361_S1_I10_L.png",
+      "subject": 361,
+      "session": 1,
+      "index": 10,
+      "side": "L"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C373_S1_I10_L.jpg",
+      "mask": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C373_S1_I10_L.png",
+      "subject": 373,
+      "session": 1,
+      "index": 10,
+      "side": "L"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C391_S1_I10_L.jpg",
+      "mask": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C391_S1_I10_L.png",
+      "subject": 391,
+      "session": 1,
+      "index": 10,
+      "side": "L"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C409_S1_I10_L.jpg",
+      "mask": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C409_S1_I10_L.png",
+      "subject": 409,
+      "session": 1,
+      "index": 10,
+      "side": "L"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C485_S1_I10_L.jpg",
+      "mask": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C485_S1_I10_L.png",
+      "subject": 485,
+      "session": 1,
+      "index": 10,
+      "side": "L"
+    },
+    {
+      "image": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C493_S1_I10_L.jpg",
+      "mask": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C493_S1_I10_L.png",
+      "subject": 493,
+      "session": 1,
+      "index": 10,
+      "side": "L"
+    }
+  ],
+  "modes": [
+    "clean",
+    "zoom3",
+    "oblique",
+    "glasses"
+  ],
+  "input_original": [
+    320,
+    240
+  ],
+  "input_candidate": [
+    416,
+    320
+  ],
+  "precision": "CPU FP32 both; BILINEAR resize for both. Operational model input dimensions retained.",
+  "new_training_parameters_chosen_from_result": false,
+  "clinical_segmentation_reference_available": false
+}

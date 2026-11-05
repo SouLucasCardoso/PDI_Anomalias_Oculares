@@ -1,0 +1,8 @@
+﻿{
+    "archived_utc":  "2026-11-05T01:56:46.3725753Z",
+    "historical_error":  "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\sam31_negativos_internos_2026-11-04\\fluxo\\controle_resiliente\\historico_erros\\ERRO_20261105T000010Z.json",
+    "sha256":  "2CE290FB61C61A59E2CCFBD53FB20EE8C5E3C86B57306793693DD5C53E2731DC",
+    "error_utc":  "2026-11-05T00:00:10.5713590+00:00",
+    "current_worker_started_utc":  "2026-11-05T01:37:21.8517677Z",
+    "reason":  "Falha anterior ao processo atual preservada em historico apos confirmar retomada ativa; nenhuma mascara, peso ou fonte cientifica alterada"
+}

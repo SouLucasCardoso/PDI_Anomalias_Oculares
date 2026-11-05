@@ -1,0 +1,21 @@
+{
+  "template_sha256": "e8d9f33821f15443b4c27d3289a4d65cc110385dcbdca790a3766030257ac2eb",
+  "output_sha256": "75ca102a40afa8ccc2dea4caacb10cb023ee3cb2e098a6fb5929388654522820",
+  "preserved_parts": 17,
+  "changed_parts": [
+    "[Content_Types].xml",
+    "docProps/core.xml",
+    "word/_rels/document.xml.rels",
+    "word/document.xml",
+    "word/footnotes.xml",
+    "word/settings.xml"
+  ],
+  "new_parts": [
+    "word/media/image5.png",
+    "word/media/image6.png",
+    "word/media/image7.png"
+  ],
+  "words_markdown": 8006,
+  "author_notes_verified": true,
+  "no_new_experiments": true
+}

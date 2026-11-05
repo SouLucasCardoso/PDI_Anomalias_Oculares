@@ -1,6 +1,15 @@
 # Reconhecimento por íris e influência da área preservada
 
-**README provisório, atualizado em 27/10/2026.** Este é o ponto de entrada do projeto; será atualizado conforme os experimentos e o artigo forem consolidados.
+**README provisório, atualizado em 05/11/2026.** Este é o ponto de entrada do projeto; será atualizado conforme os experimentos e o artigo forem consolidados.
+
+## Atualização de novembro
+
+- [Relatórios diários da semana de 02/11](Relatórios-de-Avanço/SEMANA_2026-11-02.md): atividades documentadas em 03, 04 e 05/11, com evidências e limitações.
+- [Reconhecedor para S23 e apresentação por USB-C](reconhecedor-iris/README.md): aplicativo local com cadastro separado e processamento no PC. O código reutiliza os modelos da pesquisa; pesos e dados pessoais não acompanham o Git.
+- [Rodada SAM3.1 residual](pfc1-segmentacao-mmu/SAM3_RESIDUAL_2026-11-05.md): treino concluído, época 8 selecionada; os critérios de prontidão não foram atingidos e nenhum novo mínimo foi atribuído.
+- [Revisão bibliográfica com 26 referências](pfc1-segmentacao-mmu/artigo/revisao_bibliografica_2026-11-05/RELATORIO_PESQUISA.md) e [delimitação do encerramento experimental](pfc1-segmentacao-mmu/artigo/revisao_bibliografica_2026-11-05/ENCERRAMENTO_EXPERIMENTAL.md).
+
+Os números históricos de outubro apresentados abaixo permanecem vinculados ao protocolo e ao conjunto daquela rodada. Não são acurácia do aplicativo de celular nem confirmação de um percentual universal de área anatômica.
 
 Trabalho de conclusão de curso em Engenharia de Computação — UniSatc. Acadêmico: Lucas Cardoso Rodrigues. Orientador: Rodrigo Ramos Silva.
 

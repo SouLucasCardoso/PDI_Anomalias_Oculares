@@ -1,0 +1,52 @@
+{
+  "registered_utc": "2026-10-21T19:58:39.436469+00:00",
+  "scope": "Frozen development candidate evaluation; test previously examined under earlier strategies, NOT fresh blind confirmation. External ArcIris pretraining identities unknown.",
+  "split": "val",
+  "queries": 482,
+  "input_images": 962,
+  "query_images": 1,
+  "informed_side": true,
+  "candidates": 16,
+  "threshold": 0.8581747485460748,
+  "condition": "oclusao_inferior",
+  "occluded_percent": 10,
+  "fixed_geometry_diagnostic": false,
+  "geometry_scope": "Mask and geometry recalculated on altered photo",
+  "intervention": "Query annotated iris pixels only, exact row-major count, gray128, upper/lower; original enrollment unchanged. Rerun segmentation and geometry on altered images. Reference masks ONLY define intervention, never extraction. Empty references unchanged, all queries retained; anatomical/disease extent not measured.",
+  "calibration": "Frozen development component means/stds and threshold; no calibration or selection on current evaluation labels; no quality filtering",
+  "precision": "CNNs/Transformer BF16forward batch128; spatial FP32batch32; ArcIris FP32batch8; fixed before evaluation",
+  "checkpoint_sha256": {
+    "rgb": "7c03b4c7ef4c54e5f86e58eb550ffc124fa11384fe5c3f5b947d1041178e706d",
+    "polar": "db93dfcca33b8a77cd3bfbaa66f07d1efae2e976414d67748ccf5eff4a5ebe5c",
+    "r50": "699b8236211da2fd43b104f157b6cc3835bd5d89a01a74a5b75ce4261bf35e24",
+    "convnext": "a03400e62df6282e4532dce75fabd6e12d06678a8de7dc3e55a2a274c60f1529",
+    "native": "6530b1227f271789ca7ad8a7d9011d2a9e9ee6fe71a7ce4079d2ed8a75b3388f",
+    "transformer": "0ad83d9f9c78e434bda11e99e01c90cc197e7e5127c3aed75e5da6df38808b87"
+  },
+  "unet_sha256": "2bcfc269ffc9562ca8cf0956998faf1e22641587cd60f7059b3cec3dd0f4093d",
+  "new_segmenter_validation_only": false,
+  "frozen_sha256": "d933686f045eab5d6578cfe4701578d9ca1eeaaff4069bcff8427a602546dbda",
+  "script_sha256": "9f727ef17eb0e87c51ea2ee3d6527f950717ddd80e6ef9ec9c7a33611c947586",
+  "external_arciris": {
+    "weights_sha256": "466014be7723eb0b1a741dcff5a0c8ae51d1918818a6b021952f9c4ccd443f8f",
+    "source_sha256": "de7f0cb796ebf4be02818c704d7e3afa0047dc09719b131b37cb8c26c42dd327",
+    "pretraining_population": "unknown"
+  },
+  "dependencies_sha256": {
+    "textura_polar.py": "f977efb2101f2b23338041513908d4deb6eea51a2a730c8f71f0d20c19bcdadc",
+    "preparar_polar_vermelho.py": "8701d5925bf1b2ed35ace89ae0529be8160b1281be04250691387b793cd9de5b",
+    "normalizacao_eliptica.py": "370f61686ce7209b3e705b1dc9b2ffa55bb0eac0cf54911f1edc3d92d7aca72a",
+    "normalizar_consulta.py": "8e105dbdb11ba547420fdb171403bc4cebb07fd9358a1e59c22e37b0f0a8e3a6",
+    "validar_lateralidade_informada.py": "438c67e9f50e4a0bbcaf666e0ffaff59119f1b183b61442e698ede274bfb1247",
+    "comparador_hdbif_lote.py": "0c6c086a348a17d900e17b4031dc0a2f06ab3721f9f7a53df26c382585882464",
+    "avaliar_robustez_reconhecimento.py": "e6d0b8d8eb78dc2e86ed3f73084cd9fb5d83d1afee27f73ca0ffbee1a5947f95",
+    "avaliar_dinov3_ubipr.py": "781d5903f7bccd515cb0d450b05331709cf88460d497d61f2cf95083ea546ac8",
+    "treinar_identidade_iris.py": "a8f6dc53ace011c968774f9f3f494a085f0c14af2a9ab04853952553c580b0a5",
+    "treinar_segmentacao_ubipr.py": "a427b82c9879a2320a5d6544c89f96806ab74b12566cd3237650c62c54123431",
+    "reconhecedor_resnet50.py": "2416940a33a01b0d745a9bb6609f7f2e5ebbb16a77dfaab6635abab3eefe6b2f",
+    "reconhecedor_convnext.py": "7e121f99323b2c4c9d988621969fc4cd37d207a796a43994a949f95841554230",
+    "reconhecedor_transformer_polar.py": "967ca7a7a8b35fe267cd8aff7374e38d04727b00676f644b139e96dd36798e1c",
+    "validar_correspondencia_espacial.py": "4b15e6e6a2fb67b6b7116314d6ab6bbc5827f711e3ddfc9ce1bbabb30ef6ad49"
+  },
+  "next": "If original does not meet Rank1>=90%,TAR>=90%,FMR<=1%, do not claim minimum or retune using these scores."
+}

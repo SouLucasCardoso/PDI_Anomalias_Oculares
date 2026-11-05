@@ -1,0 +1,143 @@
+{
+  "status": "completed",
+  "summary": {
+    "clean": {
+      "unet": {
+        "dice": 0.953927839904015,
+        "iou": 0.9126797414383638
+      },
+      "sam31_strict": {
+        "dice": 0.8594478578726823,
+        "iou": 0.7943767446024923
+      }
+    },
+    "zoom3": {
+      "unet": {
+        "dice": 0.01800285092189252,
+        "iou": 0.009165468438356968
+      },
+      "sam31_strict": {
+        "dice": 0.8154852864425557,
+        "iou": 0.7518400866130877
+      }
+    },
+    "oblique": {
+      "unet": {
+        "dice": 0.9167225063676461,
+        "iou": 0.8514420392271844
+      },
+      "sam31_strict": {
+        "dice": 0.9236270344356043,
+        "iou": 0.8596450507662653
+      }
+    },
+    "glasses": {
+      "unet": {
+        "dice": 0.8880757969427668,
+        "iou": 0.8198641665906894
+      },
+      "sam31_strict": {
+        "dice": 0.8592032212017475,
+        "iou": 0.7938898762043952
+      }
+    }
+  },
+  "clinical_qualitative_only": [
+    {
+      "image": "P0005_OD20241206.JPG",
+      "diagnosis_raw": "Normal eye",
+      "sam_pixels": 216916,
+      "unet_pixels": 12880,
+      "no_reference_mask": true,
+      "image_sha256": "37a105b917c6bd5959f26db21aa054de1fc3f63d42b7a76dbb04fe15b77ecef4"
+    },
+    {
+      "image": "P0007_OS20250306.JPG",
+      "diagnosis_raw": "Normal eye",
+      "sam_pixels": 23100,
+      "unet_pixels": 15540,
+      "no_reference_mask": true,
+      "image_sha256": "b033515645f0700e80240c58e3e04417a8ab0e1a2713f6eda5401442dd68c52b"
+    },
+    {
+      "image": "P0114_OS20250417.JPG",
+      "diagnosis_raw": "Iris cyst, Corneal ulcer, Bullous keratopathy",
+      "sam_pixels": 218122,
+      "unet_pixels": 1096,
+      "no_reference_mask": true,
+      "image_sha256": "1f90538202e540ee5175ca5d370bdaf13dfcd7238a354af14d86784fe4ce570a"
+    },
+    {
+      "image": "P0803_OD20250112.JPG",
+      "diagnosis_raw": "Intraocular foreign body, Penetrating corneal injury, Corneal foreign body, Iris laceration, Traumatic cataract",
+      "sam_pixels": 41539,
+      "unet_pixels": 5111,
+      "no_reference_mask": true,
+      "image_sha256": "a5b11184dfad0a605e80c2bc38b19bc9c237f53e464a754328d0407a6ce58da0"
+    }
+  ],
+  "strict_load": {
+    "strict": true,
+    "missing": [],
+    "unexpected": [],
+    "semantic_tensors": 1130,
+    "excluded_video_branch_tensors": [
+      "backbone.vision_backbone.interactive_convs.0.conv_1x1.bias",
+      "backbone.vision_backbone.interactive_convs.0.conv_1x1.weight",
+      "backbone.vision_backbone.interactive_convs.0.conv_3x3.bias",
+      "backbone.vision_backbone.interactive_convs.0.conv_3x3.weight",
+      "backbone.vision_backbone.interactive_convs.0.dconv_2x2_0.bias",
+      "backbone.vision_backbone.interactive_convs.0.dconv_2x2_0.weight",
+      "backbone.vision_backbone.interactive_convs.0.dconv_2x2_1.bias",
+      "backbone.vision_backbone.interactive_convs.0.dconv_2x2_1.weight",
+      "backbone.vision_backbone.interactive_convs.1.conv_1x1.bias",
+      "backbone.vision_backbone.interactive_convs.1.conv_1x1.weight",
+      "backbone.vision_backbone.interactive_convs.1.conv_3x3.bias",
+      "backbone.vision_backbone.interactive_convs.1.conv_3x3.weight",
+      "backbone.vision_backbone.interactive_convs.1.dconv_2x2.bias",
+      "backbone.vision_backbone.interactive_convs.1.dconv_2x2.weight",
+      "backbone.vision_backbone.interactive_convs.2.conv_1x1.bias",
+      "backbone.vision_backbone.interactive_convs.2.conv_1x1.weight",
+      "backbone.vision_backbone.interactive_convs.2.conv_3x3.bias",
+      "backbone.vision_backbone.interactive_convs.2.conv_3x3.weight",
+      "backbone.vision_backbone.propagation_convs.0.conv_1x1.bias",
+      "backbone.vision_backbone.propagation_convs.0.conv_1x1.weight",
+      "backbone.vision_backbone.propagation_convs.0.conv_3x3.bias",
+      "backbone.vision_backbone.propagation_convs.0.conv_3x3.weight",
+      "backbone.vision_backbone.propagation_convs.0.dconv_2x2_0.bias",
+      "backbone.vision_backbone.propagation_convs.0.dconv_2x2_0.weight",
+      "backbone.vision_backbone.propagation_convs.0.dconv_2x2_1.bias",
+      "backbone.vision_backbone.propagation_convs.0.dconv_2x2_1.weight",
+      "backbone.vision_backbone.propagation_convs.1.conv_1x1.bias",
+      "backbone.vision_backbone.propagation_convs.1.conv_1x1.weight",
+      "backbone.vision_backbone.propagation_convs.1.conv_3x3.bias",
+      "backbone.vision_backbone.propagation_convs.1.conv_3x3.weight",
+      "backbone.vision_backbone.propagation_convs.1.dconv_2x2.bias",
+      "backbone.vision_backbone.propagation_convs.1.dconv_2x2.weight",
+      "backbone.vision_backbone.propagation_convs.2.conv_1x1.bias",
+      "backbone.vision_backbone.propagation_convs.2.conv_1x1.weight",
+      "backbone.vision_backbone.propagation_convs.2.conv_3x3.bias",
+      "backbone.vision_backbone.propagation_convs.2.conv_3x3.weight"
+    ],
+    "scales": [
+      4.0,
+      2.0,
+      1.0
+    ],
+    "random_missing_weights_used": false,
+    "sam3_origin": {
+      "url": "https://github.com/facebookresearch/sam3.git",
+      "vcs_info": {
+        "commit_id": "7f473cfd983d5eb43040ff608f66bff0d7bdcb53",
+        "vcs": "git"
+      }
+    },
+    "installed_builder_sha256": "dd316e4acdf3283eb9c8c160565b9ab9646a99c045797564eb709e699960873a"
+  },
+  "people": 16,
+  "paired_cases": 64,
+  "seconds": 141.46900000004098,
+  "peak_cuda_bytes": 4064393216,
+  "test_inference": false,
+  "recognition_improvement_measured": false
+}

@@ -1,0 +1,23 @@
+{
+  "updated_utc": "2026-11-05T11:46:52.751420+00:00",
+  "training_status": {
+    "stage": "completed",
+    "pid": 20096,
+    "best_epoch": 15
+  },
+  "progress": {
+    "stage": "validation",
+    "mode": "glasses",
+    "batch": 104,
+    "batches": 104
+  },
+  "identity_records_audited": 6,
+  "frontier": {
+    "clean_gate_passed": false,
+    "grid_complete": false,
+    "minimum_assigned": false,
+    "orientations": {}
+  },
+  "clinical_reviews_block_area": false,
+  "no_inference_or_model_change": true
+}

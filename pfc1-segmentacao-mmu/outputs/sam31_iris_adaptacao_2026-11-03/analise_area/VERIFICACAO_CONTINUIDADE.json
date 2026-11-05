@@ -1,0 +1,101 @@
+{
+  "verified_utc": "2026-11-03T22:35:33.207384+00:00",
+  "unit_tests_passed": 3,
+  "command": "python -m unittest test_analise_sam3_area -v",
+  "compile_and_powershell_parse_passed": true,
+  "legacy_replay_is_method_verification_not_new_sam3_result": true,
+  "legacy_real_record_replay": [
+    {
+      "key": "original_original_0",
+      "queries": 482,
+      "integer_counts_reproduced": true,
+      "interventions_verified": true,
+      "actual_area": null
+    },
+    {
+      "key": "original_oclusao_superior_10",
+      "queries": 482,
+      "integer_counts_reproduced": true,
+      "interventions_verified": true,
+      "actual_area": {
+        "nominal_retained_percent": 90,
+        "defined_queries": 472,
+        "undefined_queries_retained_in_identity": 10,
+        "actual_retained_percent_min_mean_max": [
+          89.91869918699187,
+          90.00166474964702,
+          90.4
+        ]
+      }
+    },
+    {
+      "key": "original_oclusao_inferior_10",
+      "queries": 482,
+      "integer_counts_reproduced": true,
+      "interventions_verified": true,
+      "actual_area": {
+        "nominal_retained_percent": 90,
+        "defined_queries": 472,
+        "undefined_queries_retained_in_identity": 10,
+        "actual_retained_percent_min_mean_max": [
+          89.91869918699187,
+          90.00166474964702,
+          90.4
+        ]
+      }
+    },
+    {
+      "key": "novo_original_0",
+      "queries": 482,
+      "integer_counts_reproduced": true,
+      "interventions_verified": true,
+      "actual_area": null
+    },
+    {
+      "key": "novo_oclusao_superior_10",
+      "queries": 482,
+      "integer_counts_reproduced": true,
+      "interventions_verified": true,
+      "actual_area": {
+        "nominal_retained_percent": 90,
+        "defined_queries": 472,
+        "undefined_queries_retained_in_identity": 10,
+        "actual_retained_percent_min_mean_max": [
+          89.91869918699187,
+          90.00166474964702,
+          90.4
+        ]
+      }
+    },
+    {
+      "key": "novo_oclusao_inferior_10",
+      "queries": 482,
+      "integer_counts_reproduced": true,
+      "interventions_verified": true,
+      "actual_area": {
+        "nominal_retained_percent": 90,
+        "defined_queries": 472,
+        "undefined_queries_retained_in_identity": 10,
+        "actual_retained_percent_min_mean_max": [
+          89.91869918699187,
+          90.00166474964702,
+          90.4
+        ]
+      }
+    }
+  ],
+  "protected_source_hashes_checked": true,
+  "progress": {
+    "stage": "sam3_cache",
+    "completed": 2625,
+    "total": 22040,
+    "utc": "2026-11-03T22:35:29.600821+00:00"
+  },
+  "cache_entries_observed": 2630,
+  "cache_samples_checked": 3,
+  "remaining_cache_and_10GiB_margin_bytes": 72632259160,
+  "disk_capacity_sufficient": true,
+  "clinical_reviews_block_area": false,
+  "no_new_identity_or_area_result_yet": true,
+  "no_test_inference": true
+}

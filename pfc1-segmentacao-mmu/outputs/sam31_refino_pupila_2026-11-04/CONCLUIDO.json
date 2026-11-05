@@ -1,0 +1,102 @@
+{
+  "completed_utc": "2026-11-04T23:04:32.398572+00:00",
+  "count": 32,
+  "methods": {
+    "global": {
+      "macro_dice": 0.9196282852014793,
+      "macro_iou": 0.8766446756233537,
+      "dice_below_0_5": 1,
+      "empty_reference_false_positives": 1
+    },
+    "global_pupil": {
+      "macro_dice": 0.9049989453143679,
+      "macro_iou": 0.8507330991231813,
+      "dice_below_0_5": 1,
+      "empty_reference_false_positives": 1
+    },
+    "roi": {
+      "macro_dice": 0.8943971252446006,
+      "macro_iou": 0.83300433252867,
+      "dice_below_0_5": 1,
+      "empty_reference_false_positives": 1
+    },
+    "roi_pupil": {
+      "macro_dice": 0.8814298142593577,
+      "macro_iou": 0.8107411363251656,
+      "dice_below_0_5": 1,
+      "empty_reference_false_positives": 1
+    }
+  },
+  "suggested_for_full_segmentation_validation": null,
+  "training_feasibility_only": true,
+  "development_smoke_only": false,
+  "validation_or_clinical_or_test_images_read": false,
+  "identity_evaluated": false,
+  "minimum_area_assigned": false,
+  "production_replaced": false,
+  "strict_load": {
+    "strict": true,
+    "missing": [],
+    "unexpected": [],
+    "semantic_tensors": 1130,
+    "excluded_video_branch_tensors": [
+      "backbone.vision_backbone.interactive_convs.0.conv_1x1.bias",
+      "backbone.vision_backbone.interactive_convs.0.conv_1x1.weight",
+      "backbone.vision_backbone.interactive_convs.0.conv_3x3.bias",
+      "backbone.vision_backbone.interactive_convs.0.conv_3x3.weight",
+      "backbone.vision_backbone.interactive_convs.0.dconv_2x2_0.bias",
+      "backbone.vision_backbone.interactive_convs.0.dconv_2x2_0.weight",
+      "backbone.vision_backbone.interactive_convs.0.dconv_2x2_1.bias",
+      "backbone.vision_backbone.interactive_convs.0.dconv_2x2_1.weight",
+      "backbone.vision_backbone.interactive_convs.1.conv_1x1.bias",
+      "backbone.vision_backbone.interactive_convs.1.conv_1x1.weight",
+      "backbone.vision_backbone.interactive_convs.1.conv_3x3.bias",
+      "backbone.vision_backbone.interactive_convs.1.conv_3x3.weight",
+      "backbone.vision_backbone.interactive_convs.1.dconv_2x2.bias",
+      "backbone.vision_backbone.interactive_convs.1.dconv_2x2.weight",
+      "backbone.vision_backbone.interactive_convs.2.conv_1x1.bias",
+      "backbone.vision_backbone.interactive_convs.2.conv_1x1.weight",
+      "backbone.vision_backbone.interactive_convs.2.conv_3x3.bias",
+      "backbone.vision_backbone.interactive_convs.2.conv_3x3.weight",
+      "backbone.vision_backbone.propagation_convs.0.conv_1x1.bias",
+      "backbone.vision_backbone.propagation_convs.0.conv_1x1.weight",
+      "backbone.vision_backbone.propagation_convs.0.conv_3x3.bias",
+      "backbone.vision_backbone.propagation_convs.0.conv_3x3.weight",
+      "backbone.vision_backbone.propagation_convs.0.dconv_2x2_0.bias",
+      "backbone.vision_backbone.propagation_convs.0.dconv_2x2_0.weight",
+      "backbone.vision_backbone.propagation_convs.0.dconv_2x2_1.bias",
+      "backbone.vision_backbone.propagation_convs.0.dconv_2x2_1.weight",
+      "backbone.vision_backbone.propagation_convs.1.conv_1x1.bias",
+      "backbone.vision_backbone.propagation_convs.1.conv_1x1.weight",
+      "backbone.vision_backbone.propagation_convs.1.conv_3x3.bias",
+      "backbone.vision_backbone.propagation_convs.1.conv_3x3.weight",
+      "backbone.vision_backbone.propagation_convs.1.dconv_2x2.bias",
+      "backbone.vision_backbone.propagation_convs.1.dconv_2x2.weight",
+      "backbone.vision_backbone.propagation_convs.2.conv_1x1.bias",
+      "backbone.vision_backbone.propagation_convs.2.conv_1x1.weight",
+      "backbone.vision_backbone.propagation_convs.2.conv_3x3.bias",
+      "backbone.vision_backbone.propagation_convs.2.conv_3x3.weight"
+    ],
+    "scales": [
+      4.0,
+      2.0,
+      1.0
+    ],
+    "random_missing_weights_used": false,
+    "sam3_origin": {
+      "archive_info": {
+        "hash": "sha256=3e1c4119c0fc50e091dd8dd23a70a01f7ea5d6797772148d72206d10c74f8819",
+        "hashes": {
+          "sha256": "3e1c4119c0fc50e091dd8dd23a70a01f7ea5d6797772148d72206d10c74f8819"
+        }
+      },
+      "url": "https://github.com/facebookresearch/sam3/archive/f1647e8d0c1d280991f4d1b7d974c2704537fe66.zip"
+    },
+    "installed_builder_sha256": "60cef72b1f7e4a2162d1c3f1ad2c0451bbbdc10e3484433a9aa2d016fed6b448"
+  },
+  "peak_cuda_bytes": 4070624256,
+  "pupil_candidates_selected_global": 13,
+  "pupil_candidates_selected_roi": 24,
+  "protocol_sha256": "f086bab094ec13b0c9b8fc59d8704df289aedce0834317c8156e2a4a9211072f",
+  "case_results_sha256": "3f2bc1315b9c23d273389391789982926fa84ee625e07525174a16fe4857715b"
+}

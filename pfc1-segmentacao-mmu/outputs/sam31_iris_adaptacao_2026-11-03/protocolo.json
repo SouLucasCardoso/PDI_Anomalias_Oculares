@@ -1,0 +1,52 @@
+{
+  "registered_utc": "2026-11-03T22:05:05.582974+00:00",
+  "frozen": {
+    "configuration": {
+      "run": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-adaptado-20261103",
+      "cache": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-sam3-iris-cache-20261103",
+      "mirror": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\sam31_iris_adaptacao_2026-11-03",
+      "wait_reference": true,
+      "limit": null,
+      "epochs": 20,
+      "seed": 20261103,
+      "batch_size": 16,
+      "init": null
+    },
+    "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+    "sources": {
+      "treinar_sam3_iris_adaptado.py": "8416afc55c96d5dab3e389cc2dfba37667b8720b12fc753637e62aaec6be8f2c",
+      "segmentador_sam3_iris.py": "e4091a076cd214d4a9dcb78452c8ec37bd65e4f201fbdc1f0dc46147eaaff596",
+      "treinar_segmentacao_diversa.py": "3d7c937e0e10d0c3f785070ac5386dfe953b7c86b96572a5791149dfd7156065",
+      "treinar_segmentacao_ubipr.py": "a427b82c9879a2320a5d6544c89f96806ab74b12566cd3237650c62c54123431",
+      "avaliar_sam31_diverso.py": "923de89594b41c0f3b68403c2b2177d8bf5ce544a4c690521634eba87f46640c"
+    },
+    "versions": {
+      "torch": "2.14.1+cu130",
+      "torchvision": "0.29.1+cu130",
+      "sam3": "0.1.0",
+      "numpy": "1.26.4",
+      "pillow": "13.0.0"
+    },
+    "sam_origin": {
+      "archive_info": {
+        "hash": "sha256=3e1c4119c0fc50e091dd8dd23a70a01f7ea5d6797772148d72206d10c74f8819",
+        "hashes": {
+          "sha256": "3e1c4119c0fc50e091dd8dd23a70a01f7ea5d6797772148d72206d10c74f8819"
+        }
+      },
+      "url": "https://github.com/facebookresearch/sam3/archive/f1647e8d0c1d280991f4d1b7d974c2704537fe66.zip"
+    },
+    "sam_checkpoint_sha256": "0567debeec80ba4ac6369540c6c248025283cb3ff2b92827509e57e2b3541cb6"
+  },
+  "architecture": "Frozen official SAM3.1 vision features256x72x72 (1008/patch14), supervised RGB+SAM3 decoder; not full SAM3 finetuning nor original text predictor",
+  "augmentation": "Two fixed train banks: native and diverse, chosen deterministically per image/epoch. Four fixed validation conditions. Float16 feature cache, uint8 RGB and targets; unknown255 ignored.",
+  "selection": "Epoch0 included. Maximize minimum macroDice across4conditions; clean >= epoch0clean-0.005; patience6. No identity/clinical labels select weights.",
+  "loss": "BoundaryCE+irisDice+0.25TverskyLoss, FPweight0.7,FN0.3. Native class0 includes pupil/background; NO invented pupil reference.",
+  "initialization": "Final checkpoint selected by segmentation in prior registered round, after its complete identity/area pipeline finishes; explicit init for smoke only",
+  "scope": "Train/validation only, ALLcases retained; no TEST inference or clinical masks used; recognition not measured by this trainer",
+  "engineering_target_not_clinical_standard": {
+    "all4_validation_macroDice": 0.9,
+    "clinical_review_still_required": true
+  },
+  "development_smoke_only": false
+}

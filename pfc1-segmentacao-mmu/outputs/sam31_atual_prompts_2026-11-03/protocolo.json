@@ -1,0 +1,63 @@
+{
+  "registered_utc": "2026-11-03T19:23:21.584702+00:00",
+  "sam_family": "SAM3.1",
+  "scope": "Qualitative ONLY, same4SLPVLDcases, no clinical reference masks, no Dice, identity, training, checkpoint selection or production replacement",
+  "sam_code_revision": "f1647e8d0c1d280991f4d1b7d974c2704537fe66",
+  "sam_origin": {
+    "archive_info": {
+      "hash": "sha256=3e1c4119c0fc50e091dd8dd23a70a01f7ea5d6797772148d72206d10c74f8819",
+      "hashes": {
+        "sha256": "3e1c4119c0fc50e091dd8dd23a70a01f7ea5d6797772148d72206d10c74f8819"
+      }
+    },
+    "url": "https://github.com/facebookresearch/sam3/archive/f1647e8d0c1d280991f4d1b7d974c2704537fe66.zip"
+  },
+  "checkpoint": "C:\\Users\\lucaz\\pfc-hf-cache\\hub\\models--facebook--sam3.1\\snapshots\\daa63191845a41281374e725f4c9e51c7a824460\\sam3.1_multiplex.pt",
+  "checkpoint_sha256": "0567debeec80ba4ac6369540c6c248025283cb3ff2b92827509e57e2b3541cb6",
+  "checkpoint_hf_revision": "daa63191845a41281374e725f4c9e51c7a824460",
+  "python": "C:\\Users\\lucaz\\pfc-sam3-20261103\\Scripts\\python.exe",
+  "versions": {
+    "torch": "2.14.1+cu130",
+    "torchvision": "0.29.1+cu130",
+    "sam3": "0.1.0",
+    "transformers": "5.22.1",
+    "huggingface-hub": "2.4.0",
+    "numpy": "1.26.4",
+    "pillow": "13.0.0"
+  },
+  "device": "cuda",
+  "precision": "BF16autocast, strictFP32checkpoint loading, processor1008",
+  "text": "iris of the eye",
+  "confidence_threshold": 0.5,
+  "methods": [
+    "text_only",
+    "text_box_original",
+    "text_box_diverse"
+  ],
+  "prompt_rule": "Text only versus text plus positive normalized bbox from cached original/diverseUNet masks,5%margin. All masks above fixed confidence unioned. No points, manual/reference prompts, mask-score selection or fallback. Missingbbox yields empty candidate.",
+  "support_rule": "Reuse only preserved UNet support masks, diverse epoch15, from previous4case diagnostic; no SAM2 model imported or run",
+  "supports_sha256": "ecdce791a7ef61a7c71f1442dcd534965d344783d43aa3a47c7b28e5101f9314",
+  "sources": {
+    "diagnosticar_sam3_prompts_clinicos.py": "f4f645619a643c1c8ebd9e464d3865234bc3cdf819645659353173e0cddbbf86",
+    "avaliar_sam31_diverso.py": "923de89594b41c0f3b68403c2b2177d8bf5ce544a4c690521634eba87f46640c",
+    "avaliar_sam3_1_ubipr.py": "f1adb8fc7167f7168e46a5e8fc56b281310ecb15f1e6295536a57e38b1a7a009"
+  },
+  "images": [
+    {
+      "path": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0005_OD20241206.JPG",
+      "sha256": "37a105b917c6bd5959f26db21aa054de1fc3f63d42b7a76dbb04fe15b77ecef4"
+    },
+    {
+      "path": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0007_OS20250306.JPG",
+      "sha256": "b033515645f0700e80240c58e3e04417a8ab0e1a2713f6eda5401442dd68c52b"
+    },
+    {
+      "path": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0114_OS20250417.JPG",
+      "sha256": "1f90538202e540ee5175ca5d370bdaf13dfcd7238a354af14d86784fe4ce570a"
+    },
+    {
+      "path": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\slpvld\\release\\SLP-VLD_anonymized_SD_dataset\\training_validation_dataset_zhaohui\\zhaohui_images\\P0803_OD20250112.JPG",
+      "sha256": "a5b11184dfad0a605e80c2bc38b19bc9c237f53e464a754328d0407a6ce58da0"
+    }
+  ]
+}

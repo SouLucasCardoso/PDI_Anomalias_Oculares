@@ -1,0 +1,15 @@
+[
+  {
+    "epoch": 0,
+    "train_loss": null,
+    "dice": {
+      "clean": 0.854869501354042,
+      "zoom3": 0.01964228879857682,
+      "oblique": 0.47133152883220236,
+      "glasses": 0.6733856131897712
+    },
+    "eligible": true,
+    "score": 0.01964228879857682,
+    "reused_baseline": true
+  }
+]

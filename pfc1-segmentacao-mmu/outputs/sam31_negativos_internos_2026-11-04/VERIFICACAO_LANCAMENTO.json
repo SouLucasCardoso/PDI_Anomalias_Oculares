@@ -1,0 +1,25 @@
+﻿{
+    "verified_utc":  "2026-11-04T23:34:57.2359924Z",
+    "task_name":  "PFC_SAM3_Negativos_Internos_20261104",
+    "task_state":  "Running",
+    "last_run":  "\/Date(1793835034000)\/",
+    "last_task_result":  267009,
+    "worker_alive":  true,
+    "worker_pid":  13620,
+    "worker_cpu_seconds":  185.96875,
+    "worker_working_set":  996061184,
+    "training_status":  {
+                            "stage":  "baseline_validation",
+                            "pid":  13620,
+                            "epoch":  0
+                        },
+    "progress":  {
+                     "stage":  "validation",
+                     "mode":  "zoom3",
+                     "batch":  50,
+                     "batches":  104
+                 },
+    "disk_free_bytes":  229966663680,
+    "report":  "analise_area/RELATORIO_ATUAL.md",
+    "wake_request_temporary":  true
+}

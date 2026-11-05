@@ -1,0 +1,4 @@
+/.runtime/
+/dados_app_celular/
+__pycache__/
+*.pyc

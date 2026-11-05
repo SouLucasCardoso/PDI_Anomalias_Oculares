@@ -1,0 +1,92 @@
+{
+  "created_utc": "2026-11-04T20:33:34.266180+00:00",
+  "source_sha256": "6a6a204356e6f013d4186f19877f961793949fe0f8bd26e22e90992eeb3c348f",
+  "checkpoint_sha256": "cf8a718e0160c14408d1533445ff611b00a79c75d2c0fd07fb7540150e59db99",
+  "cases": [
+    {
+      "id": "P0005_OD20241206",
+      "image_sha256": "37a105b917c6bd5959f26db21aa054de1fc3f63d42b7a76dbb04fe15b77ecef4",
+      "reference_sha256": "29664d317a3425ba79de10d8483b47d32adccb7ddeb0703babcfe7a1ad1f29f3",
+      "prediction_sha256": "26ccca08848afaac75e67d09703674c77aeb4eca01d884f3ffc8c0d3b73c4186",
+      "presentation_crop_xyxy": [
+        357,
+        184,
+        2087,
+        1940
+      ],
+      "metrics": {
+        "id": "P0005_OD20241206",
+        "subject": "P0005",
+        "dice": 0.8839537288625707,
+        "reference_iris_pixels": 1203192,
+        "pupil_pixels": 149255,
+        "pupil_leak": 0.6468996013533885,
+        "uncertain_fraction": 0.3848906620644593,
+        "mask_sha256": "29664d317a3425ba79de10d8483b47d32adccb7ddeb0703babcfe7a1ad1f29f3"
+      }
+    },
+    {
+      "id": "P0007_OS20250306",
+      "image_sha256": "b033515645f0700e80240c58e3e04417a8ab0e1a2713f6eda5401442dd68c52b",
+      "reference_sha256": "8609fa1c519d4c0a1e2abcac34668444ce4381287e10ccbce96d931414c7cc48",
+      "prediction_sha256": "9b3d627ed98be15a3fef71cd4d0a73f74dc90ea116ef4a9620e7e98eed92267a",
+      "presentation_crop_xyxy": [
+        790,
+        7,
+        2438,
+        1216
+      ],
+      "metrics": {
+        "id": "P0007_OS20250306",
+        "subject": "P0007",
+        "dice": 0.783397516208152,
+        "reference_iris_pixels": 991401,
+        "pupil_pixels": 132157,
+        "pupil_leak": 0.7188798171871335,
+        "uncertain_fraction": 0.1533111481110717,
+        "mask_sha256": "8609fa1c519d4c0a1e2abcac34668444ce4381287e10ccbce96d931414c7cc48"
+      }
+    }
+  ],
+  "metrics": {
+    "reviewed_images": 2,
+    "people": 2,
+    "evaluated_images": 2,
+    "visible_iris_references": 2,
+    "pupil_references": 2,
+    "macro_dice": 0.8336756225353614,
+    "p10_dice": 0.7934531374735939,
+    "catastrophic_cases": 0,
+    "macro_pupil_leak": 0.682889709270261,
+    "maximum_uncertain_fraction": 0.3848906620644593,
+    "records": [
+      {
+        "id": "P0005_OD20241206",
+        "subject": "P0005",
+        "dice": 0.8839537288625707,
+        "reference_iris_pixels": 1203192,
+        "pupil_pixels": 149255,
+        "pupil_leak": 0.6468996013533885,
+        "uncertain_fraction": 0.3848906620644593,
+        "mask_sha256": "29664d317a3425ba79de10d8483b47d32adccb7ddeb0703babcfe7a1ad1f29f3"
+      },
+      {
+        "id": "P0007_OS20250306",
+        "subject": "P0007",
+        "dice": 0.783397516208152,
+        "reference_iris_pixels": 991401,
+        "pupil_pixels": 132157,
+        "pupil_leak": 0.7188798171871335,
+        "uncertain_fraction": 0.1533111481110717,
+        "mask_sha256": "8609fa1c519d4c0a1e2abcac34668444ce4381287e10ccbce96d931414c7cc48"
+      }
+    ]
+  },
+  "case_selection": "All normal controls with completed initial user review and saved predictions; no score filtering",
+  "references_used_in_inference": false,
+  "no_new_inference": true,
+  "expert_confirmed": false,
+  "unknown_pixels_excluded_from_dice": true,
+  "sufficient_for_clinical_gate": false,
+  "figure_sha256": "d6d95abb0c3f784fbd44107be7ea3c9f0bc457d53eb836014108d10d9c0cf639"
+}

@@ -1,0 +1,66 @@
+﻿{
+    "verified_utc":  "2026-11-05T11:50:12.1497128Z",
+    "sam_code":  {
+                     "sha":  "f1647e8d0c1d280991f4d1b7d974c2704537fe66",
+                     "date":  "2026-10-23T19:49:10Z",
+                     "url":  "https://github.com/facebookresearch/sam3/commit/f1647e8d0c1d280991f4d1b7d974c2704537fe66"
+                 },
+    "sam_checkpoint":  {
+                           "model":  "facebook/sam3.1",
+                           "revision":  "daa63191845a41281374e725f4c9e51c7a824460",
+                           "url":  "https://huggingface.co/facebook/sam3.1"
+                       },
+    "pypi_latest":  {
+                        "torch":  "2.15.0",
+                        "torchvision":  "0.29.2"
+                    },
+    "torch_cuda_windows_cp312":  {
+                                     "cu131":  {
+                                                   "error":  "O servidor remoto retornou um erro: (403) Proibido."
+                                               },
+                                     "cu126":  {
+                                                   "latest_windows_cp312":  "2.14.1",
+                                                   "all_stable_versions":  [
+                                                                               "2.6.0",
+                                                                               "2.7.0",
+                                                                               "2.7.1",
+                                                                               "2.8.0",
+                                                                               "2.9.0",
+                                                                               "2.9.1",
+                                                                               "2.10.0",
+                                                                               "2.11.0",
+                                                                               "2.12.0",
+                                                                               "2.12.1",
+                                                                               "2.13.0",
+                                                                               "2.14.0",
+                                                                               "2.14.1"
+                                                                           ]
+                                               },
+                                     "cu128":  {
+                                                   "latest_windows_cp312":  "2.11.0",
+                                                   "all_stable_versions":  [
+                                                                               "2.7.0",
+                                                                               "2.7.1",
+                                                                               "2.8.0",
+                                                                               "2.9.0",
+                                                                               "2.9.1",
+                                                                               "2.10.0",
+                                                                               "2.11.0"
+                                                                           ]
+                                               },
+                                     "cu130":  {
+                                                   "latest_windows_cp312":  "2.14.1",
+                                                   "all_stable_versions":  [
+                                                                               "2.9.0",
+                                                                               "2.9.1",
+                                                                               "2.10.0",
+                                                                               "2.11.0",
+                                                                               "2.12.0",
+                                                                               "2.12.1",
+                                                                               "2.13.0",
+                                                                               "2.14.0",
+                                                                               "2.14.1"
+                                                                           ]
+                                               }
+                                 }
+}

@@ -1,0 +1,23 @@
+{
+  "checked_utc": "2026-11-04T22:05:19.218456+00:00",
+  "worker_state": {
+    "stage": "identity",
+    "condition": "novo_original_0",
+    "pid": 24440
+  },
+  "official_log_progress": {
+    "processed_last_log": 300,
+    "total": 962
+  },
+  "last_red_cache_row_written": 308,
+  "same_partial_attempt_preserved": true,
+  "evaluation_restarted": false,
+  "windows_last_resume_event_utc": "2026-11-04T21:57:18.3594446Z",
+  "event_source": "System, Microsoft-Windows-Power-Troubleshooter, event1; inspected read-only",
+  "reported_hibernate_event_utc": "2026-11-04T21:30:48.0461966Z",
+  "total_sleep_duration_not_inferred": true,
+  "gpu_utilization_at_diagnostic_percent": 98,
+  "canonical_checkpoint_hash_still_valid": true,
+  "all_registered_scientific_sources_unchanged": true,
+  "no_new_recognition_result_yet": true
+}

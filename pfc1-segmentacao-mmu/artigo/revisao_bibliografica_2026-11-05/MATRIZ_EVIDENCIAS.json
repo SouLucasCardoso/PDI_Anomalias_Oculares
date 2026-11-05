@@ -1,0 +1,2544 @@
+{
+  "accessed_date": "2026-11-05",
+  "review_type": "Targeted narrative review; not systematic and not a meta-analysis",
+  "source_count": 26,
+  "articles_and_conference_papers": 19,
+  "technical_reports": 4,
+  "standards": 3,
+  "records": [
+    {
+      "citation_key": "iso29794_6_2015",
+      "year": 2015,
+      "title": "Information technology - Biometric sample quality - Part 6: Iris image data",
+      "number": "ISO/IEC 29794-6:2015",
+      "authors_display": "ISO/IEC",
+      "bib_type": "manual",
+      "category": "Normas",
+      "access_checked": "Catálogo oficial e prévia pública; cláusula 6.2.1.4 conferida",
+      "finding": "Limiar de qualidade USABLE_IRIS_AREA >=70; não é garantia de reconhecimento individual.",
+      "limitation": "Prévia de 12 das 29 páginas; observações geométricas inatas não equivalem a validação clínica por diagnóstico.",
+      "doi_url": "https://www.iso.org/standard/54066.html",
+      "supports_universal_minimum": false
+    },
+    {
+      "citation_key": "iso19795_1_2021",
+      "year": 2021,
+      "title": "Information technology - Biometric performance testing and reporting - Part 1: Principles and framework",
+      "number": "ISO/IEC 19795-1:2021",
+      "authors_display": "ISO/IEC",
+      "bib_type": "manual",
+      "category": "Normas",
+      "access_checked": "Catálogo oficial e escopo; versão corrigida 2024-09",
+      "finding": "Fundamenta avaliação de desempenho e explicitação de protocolos.",
+      "limitation": "Não confundir conformidade de imagem com desempenho de verificação/identificação; revisão DIS não é edição publicada.",
+      "doi_url": "https://www.iso.org/standard/73515.html",
+      "supports_universal_minimum": false
+    },
+    {
+      "citation_key": "iso39794_6_2021",
+      "year": 2021,
+      "title": "Information technology - Extensible biometric data interchange formats - Part 6: Iris image data",
+      "number": "ISO/IEC 39794-6:2021",
+      "authors_display": "ISO/IEC",
+      "bib_type": "manual",
+      "category": "Normas",
+      "access_checked": "Catálogo oficial e escopo; confirmação 2026",
+      "finding": "Define formatos de intercâmbio, aquisição e testes de conformidade de dados de íris.",
+      "limitation": "Uma norma de formato de dados não é demonstração de mínimo biológico para reconhecer alguém.",
+      "doi_url": "https://www.iso.org/standard/78017.html",
+      "supports_universal_minimum": false
+    },
+    {
+      "key": "nist7820",
+      "source_api": "https://api.crossref.org/works/10.6028%2FNIST.IR.7820",
+      "DOI": "10.6028/nist.ir.7820",
+      "title": "IREX II - IQCE: Iris Quality Calibration and Evaluation - Performance of Iris Image Quality Assessment Algorithms",
+      "author": [
+        {
+          "given": "E",
+          "family": "Tabassi",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "P",
+          "family": "Grother",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "W",
+          "family": "Salamon",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2011
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2011
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2011
+          ]
+        ]
+      },
+      "container-title": [],
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "publisher": "National Institute of Standards and Technology",
+      "type": "report",
+      "link": null,
+      "URL": "https://doi.org/10.6028/nist.ir.7820",
+      "citation_key": "nist7820",
+      "year": 2011,
+      "authors_display": "Tabassi, E; Grother, P; Salamon, W",
+      "report_number": "7820",
+      "bib_type": "techreport",
+      "category": "Qualidade",
+      "access_checked": "Seções de área utilizável e síntese do relatório técnico",
+      "finding": "Relaciona qualidade e desempenho em múltiplos comparadores; ajuda a separar utilidade da imagem de decisão biométrica.",
+      "limitation": "Resultados dependem do corpus, sensor e comparador; não estabelece mínimo anatômico universal.",
+      "supports_universal_minimum": false,
+      "doi_url": "https://doi.org/10.6028/nist.ir.7820"
+    },
+    {
+      "key": "nist7853",
+      "source_api": "https://api.crossref.org/works/10.6028%2FNIST.IR.7853",
+      "DOI": "10.6028/nist.ir.7853",
+      "title": "IREX III Supplement 1: Failure Analysis",
+      "author": [
+        {
+          "given": "G W",
+          "family": "Quinn",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "P",
+          "family": "Grother",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2012
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2012
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2012
+          ]
+        ]
+      },
+      "container-title": [],
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "publisher": "National Institute of Standards and Technology",
+      "type": "report",
+      "link": null,
+      "URL": "https://doi.org/10.6028/nist.ir.7853",
+      "citation_key": "nist7853",
+      "year": 2012,
+      "authors_display": "Quinn, G W; Grother, P",
+      "report_number": "7853",
+      "bib_type": "techreport",
+      "category": "Qualidade",
+      "access_checked": "Resumo institucional e exemplos de falhas",
+      "finding": "Examina oclusão, desfoque, pose e outras causas de falha de reconhecimento.",
+      "limitation": "Falha operacional pode decorrer de localização ou captura, e não apenas de área insuficiente.",
+      "supports_universal_minimum": false,
+      "doi_url": "https://doi.org/10.6028/nist.ir.7853"
+    },
+    {
+      "key": "nist8013",
+      "source_api": "https://api.crossref.org/works/10.6028%2FNIST.IR.8013",
+      "DOI": "10.6028/nist.ir.8013",
+      "title": "IREX V: Guidance for Iris Image Collection",
+      "author": [
+        {
+          "given": "George W",
+          "family": "Quinn",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "James",
+          "family": "Matey",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Elham",
+          "family": "Tabassi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Patrick",
+          "family": "Grother",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2014
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2014
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2014
+          ]
+        ]
+      },
+      "container-title": [],
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "publisher": "National Institute of Standards and Technology",
+      "type": "report",
+      "link": null,
+      "URL": "https://doi.org/10.6028/nist.ir.8013",
+      "citation_key": "nist8013",
+      "year": 2014,
+      "authors_display": "Quinn, George W; Matey, James; Tabassi, Elham; Grother, Patrick",
+      "report_number": "8013",
+      "bib_type": "techreport",
+      "category": "Aquisição",
+      "access_checked": "Seções pertinentes e figuras do relatório técnico",
+      "finding": "Orienta captura de íris e mitigação de pálpebras, reflexos e aquisição inadequada.",
+      "limitation": "Guia de aquisição; não é ensaio clínico sobre percentual por patologia.",
+      "supports_universal_minimum": false,
+      "doi_url": "https://doi.org/10.6028/nist.ir.8013"
+    },
+    {
+      "key": "nist8207",
+      "source_api": "https://api.crossref.org/works/10.6028%2FNIST.IR.8207",
+      "DOI": "10.6028/nist.ir.8207",
+      "title": "IREX IX Part One: Performance of Iris Recognition Algorithms",
+      "author": [
+        {
+          "given": "George W",
+          "family": "Quinn",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Patrick",
+          "family": "Grother",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0508-785X",
+          "authenticated-orcid": false,
+          "given": "James",
+          "family": "Matey",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            4
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2018,
+            4
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            4
+          ]
+        ]
+      },
+      "container-title": [],
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "article-number": null,
+      "publisher": "National Institute of Standards and Technology",
+      "type": "report",
+      "link": null,
+      "URL": "https://doi.org/10.6028/nist.ir.8207",
+      "citation_key": "nist8207",
+      "year": 2018,
+      "authors_display": "Quinn, George W; Grother, Patrick; Matey, James",
+      "report_number": "8207",
+      "bib_type": "techreport",
+      "category": "Avaliação",
+      "access_checked": "Escopo e resumo institucional",
+      "finding": "Avalia algoritmos em verificação 1:1 e identificação 1:N sobre dados operacionais.",
+      "limitation": "Taxas de comparação e taxas por busca são medidas diferentes; a galeria importa.",
+      "supports_universal_minimum": false,
+      "doi_url": "https://doi.org/10.6028/nist.ir.8207"
+    },
+    {
+      "key": "du2005",
+      "source_api": "https://api.crossref.org/works/10.1109%2FICASSP.2005.1415566",
+      "DOI": "10.1109/icassp.2005.1415566",
+      "title": "Analysis of Partial Iris Recognition Using a 1-D Approach",
+      "author": [
+        {
+          "family": "Yingzi Du",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "B.",
+          "family": "Bonney",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "R.",
+          "family": "Ives",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "D.",
+          "family": "Etter",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "R.",
+          "family": "Schultz",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": null,
+      "published-print": null,
+      "published-online": null,
+      "issued": {
+        "date-parts": [
+          [
+            null
+          ]
+        ]
+      },
+      "container-title": [
+        "Proceedings. (ICASSP '05). IEEE International Conference on Acoustics, Speech, and Signal Processing, 2005."
+      ],
+      "volume": "2",
+      "issue": null,
+      "page": "961-964",
+      "article-number": null,
+      "publisher": "IEEE",
+      "type": "proceedings-article",
+      "link": [
+        {
+          "URL": "http://xplorestaging.ieee.org/ielx5/9711/30651/01415566.pdf?arnumber=1415566",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "URL": "https://doi.org/10.1109/icassp.2005.1415566",
+      "citation_key": "du2005",
+      "year": 2005,
+      "authors_display": "Yingzi Du; Bonney, B.; Ives, R.; Etter, D.; Schultz, R.",
+      "bib_type": "inproceedings",
+      "category": "Íris parcial",
+      "access_checked": "Texto integral do artigo de conferência",
+      "finding": "Compara recortes laterais e anéis internos/externos; o resultado depende da região e do rank considerado.",
+      "limitation": "Os exemplos de 40%/65% são rank-10; dois modelos usam proporção radial e a máscara recebe informação da imagem completa.",
+      "supports_universal_minimum": false,
+      "doi_url": "https://doi.org/10.1109/icassp.2005.1415566"
+    },
+    {
+      "key": "daugman2004",
+      "source_api": "https://api.crossref.org/works/10.1109%2FTCSVT.2003.818350",
+      "DOI": "10.1109/tcsvt.2003.818350",
+      "title": "How Iris Recognition Works",
+      "author": [
+        {
+          "given": "J.",
+          "family": "Daugman",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2004,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2004,
+            1
+          ]
+        ]
+      },
+      "published-online": null,
+      "issued": {
+        "date-parts": [
+          [
+            2004,
+            1
+          ]
+        ]
+      },
+      "container-title": [
+        "IEEE Transactions on Circuits and Systems for Video Technology"
+      ],
+      "volume": "14",
+      "issue": "1",
+      "page": "21-30",
+      "article-number": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "type": "journal-article",
+      "link": [
+        {
+          "URL": "http://xplorestaging.ieee.org/ielx5/76/28212/01262028.pdf?arnumber=1262028",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "URL": "https://doi.org/10.1109/tcsvt.2003.818350",
+      "citation_key": "daugman2004",
+      "year": 2004,
+      "authors_display": "Daugman, J.",
+      "bib_type": "article",
+      "category": "Fundamentos",
+      "access_checked": "Resumo e seções pertinentes do PDF público do autor",
+      "finding": "Expõe codificação, mascaramento e decisão estatística em reconhecimento de íris.",
+      "limitation": "Área em pixels não equivale diretamente a informação discriminante ou risco de falsa correspondência.",
+      "supports_universal_minimum": false,
+      "doi_url": "https://doi.org/10.1109/tcsvt.2003.818350"
+    },
+    {
+      "key": "daugman2007",
+      "source_api": "https://api.crossref.org/works/10.1109%2FTSMCB.2007.903540",
+      "DOI": "10.1109/tsmcb.2007.903540",
+      "title": "New Methods in Iris Recognition",
+      "author": [
+        {
+          "given": "John",
+          "family": "Daugman",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2007,
+            10
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2007,
+            10
+          ]
+        ]
+      },
+      "published-online": null,
+      "issued": {
+        "date-parts": [
+          [
+            2007,
+            10
+          ]
+        ]
+      },
+      "container-title": [
+        "IEEE Transactions on Systems, Man and Cybernetics, Part B (Cybernetics)"
+      ],
+      "volume": "37",
+      "issue": "5",
+      "page": "1167-1175",
+      "article-number": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "type": "journal-article",
+      "link": [
+        {
+          "URL": "http://xplorestaging.ieee.org/ielx5/3477/4305261/04305270.pdf?arnumber=4305270",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "URL": "https://doi.org/10.1109/tsmcb.2007.903540",
+      "citation_key": "daugman2007",
+      "year": 2007,
+      "authors_display": "Daugman, John",
+      "bib_type": "article",
+      "category": "Fundamentos",
+      "access_checked": "Resumo e seções pertinentes do PDF público do autor",
+      "finding": "Aborda contornos flexíveis, pose, exclusão de cílios e normalização de escores pela quantidade de dados e escala da busca.",
+      "limitation": "A decisão depende do algoritmo e da informação disponível, não de uma porcentagem isolada.",
+      "supports_universal_minimum": false,
+      "doi_url": "https://doi.org/10.1109/tsmcb.2007.903540"
+    },
+    {
+      "key": "hollingsworth2009bits",
+      "source_api": "https://api.crossref.org/works/10.1109%2FTPAMI.2008.185",
+      "DOI": "10.1109/tpami.2008.185",
+      "title": "The Best Bits in an Iris Code",
+      "author": [
+        {
+          "given": "K.P.",
+          "family": "Hollingsworth",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "K.W.",
+          "family": "Bowyer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "P.J.",
+          "family": "Flynn",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2009,
+            6
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2009,
+            6
+          ]
+        ]
+      },
+      "published-online": null,
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            6
+          ]
+        ]
+      },
+      "container-title": [
+        "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+      ],
+      "volume": "31",
+      "issue": "6",
+      "page": "964-973",
+      "article-number": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "type": "journal-article",
+      "link": [
+        {
+          "URL": "http://xplorestaging.ieee.org/ielx5/34/4816105/04586380.pdf?arnumber=4586380",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "URL": "https://doi.org/10.1109/tpami.2008.185",
+      "citation_key": "hollingsworth2009bits",
+      "year": 2009,
+      "authors_display": "Hollingsworth, K.P.; Bowyer, K.W.; Flynn, P.J.",
+      "bib_type": "article",
+      "category": "Informação regional",
+      "access_checked": "Resumo original e PDF público dos autores",
+      "finding": "Documenta bits mais e menos estáveis; as faixas médias podem ser mais consistentes que as internas.",
+      "limitation": "Não é apropriado assumir que toda região com a mesma área contém a mesma informação.",
+      "supports_universal_minimum": false,
+      "doi_url": "https://doi.org/10.1109/tpami.2008.185"
+    },
+    {
+      "key": "hollingsworth2009dilation",
+      "source_api": "https://api.crossref.org/works/10.1016%2Fj.cviu.2008.08.001",
+      "DOI": "10.1016/j.cviu.2008.08.001",
+      "title": "Pupil dilation degrades iris biometric performance",
+      "author": [
+        {
+          "given": "Karen",
+          "family": "Hollingsworth",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kevin W.",
+          "family": "Bowyer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Patrick J.",
+          "family": "Flynn",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2009,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2009,
+            1
+          ]
+        ]
+      },
+      "published-online": null,
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            1
+          ]
+        ]
+      },
+      "container-title": [
+        "Computer Vision and Image Understanding"
+      ],
+      "volume": "113",
+      "issue": "1",
+      "page": "150-157",
+      "article-number": null,
+      "publisher": "Elsevier BV",
+      "type": "journal-article",
+      "link": [
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S1077314208001173?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S1077314208001173?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "URL": "https://doi.org/10.1016/j.cviu.2008.08.001",
+      "citation_key": "hollingsworth2009dilation",
+      "year": 2009,
+      "authors_display": "Hollingsworth, Karen; Bowyer, Kevin W.; Flynn, Patrick J.",
+      "bib_type": "article",
+      "category": "Dilatação",
+      "access_checked": "Resumo e trechos do editor",
+      "finding": "Mostra efeito tanto do grau de dilatação quanto de sua diferença entre cadastro e consulta.",
+      "limitation": "Dilatação altera geometria e escores, mesmo quando não é uma oclusão por tecido externo.",
+      "supports_universal_minimum": false,
+      "doi_url": "https://doi.org/10.1016/j.cviu.2008.08.001"
+    },
+    {
+      "key": "hofbauer2016",
+      "source_api": "https://api.crossref.org/works/10.1049%2Fiet-bmt.2015.0069",
+      "DOI": "10.1049/iet-bmt.2015.0069",
+      "title": "Experimental analysis regarding the influence of iris segmentation on the recognition rate",
+      "author": [
+        {
+          "given": "Heinz",
+          "family": "Hofbauer",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Computer Sciences University of Salzburg Salzburg Austria"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Fernando",
+          "family": "Alonso‐Fernandez",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Halmstad University Intelligent Systems Lab Halmstad Sweden"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Josef",
+          "family": "Bigun",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Halmstad University Intelligent Systems Lab Halmstad Sweden"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Andreas",
+          "family": "Uhl",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Sciences University of Salzburg Salzburg Austria"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            9
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2016,
+            9
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2016,
+            9
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2016,
+            9
+          ]
+        ]
+      },
+      "container-title": [
+        "IET Biometrics"
+      ],
+      "volume": "5",
+      "issue": "3",
+      "page": "200-211",
+      "article-number": null,
+      "publisher": "Institution of Engineering and Technology (IET)",
+      "type": "journal-article",
+      "link": [
+        {
+          "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1049/iet-bmt.2015.0069",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1049/iet-bmt.2015.0069",
+          "content-type": "application/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://ietresearch.onlinelibrary.wiley.com/doi/pdf/10.1049/iet-bmt.2015.0069",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "URL": "https://doi.org/10.1049/iet-bmt.2015.0069",
+      "citation_key": "hofbauer2016",
+      "year": 2016,
+      "authors_display": "Hofbauer, Heinz; Alonso-Fernandez, Fernando; Bigun, Josef; Uhl, Andreas",
+      "bib_type": "article",
+      "category": "Segmentação e reconhecimento",
+      "access_checked": "Texto integral público, seções pertinentes",
+      "finding": "Mostra que acurácia de segmentação isolada não prevê confiavelmente o desempenho da cadeia biométrica.",
+      "limitation": "Extração parcial consistente pode funcionar sob centro de normalização estável; não fornece percentual universal.",
+      "supports_universal_minimum": false,
+      "doi_url": "https://doi.org/10.1049/iet-bmt.2015.0069"
+    },
+    {
+      "key": "hofbauer2019",
+      "source_api": "https://api.crossref.org/works/10.1016%2Fj.patrec.2018.12.021",
+      "DOI": "10.1016/j.patrec.2018.12.021",
+      "title": "Exploiting superior CNN-based iris segmentation for better recognition accuracy",
+      "author": [
+        {
+          "given": "Heinz",
+          "family": "Hofbauer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ehsaneddin",
+          "family": "Jalilian",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andreas",
+          "family": "Uhl",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            4
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2019,
+            4
+          ]
+        ]
+      },
+      "published-online": null,
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            4
+          ]
+        ]
+      },
+      "container-title": [
+        "Pattern Recognition Letters"
+      ],
+      "volume": "120",
+      "issue": null,
+      "page": "17-23",
+      "article-number": null,
+      "publisher": "Elsevier BV",
+      "type": "journal-article",
+      "link": [
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0167865518309395?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0167865518309395?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "URL": "https://doi.org/10.1016/j.patrec.2018.12.021",
+      "citation_key": "hofbauer2019",
+      "year": 2019,
+      "authors_display": "Hofbauer, Heinz; Jalilian, Ehsaneddin; Uhl, Andreas",
+      "bib_type": "article",
+      "category": "Segmentação e reconhecimento",
+      "access_checked": "Resumo e conclusão do editor; versão pública dos autores localizada",
+      "finding": "Integra máscaras CNN à parametrização e ao reconhecimento; o benefício varia com a qualidade da base.",
+      "limitation": "Máscara superior em métrica de pixels não garante ganho em todos os conjuntos ou parametrizações.",
+      "supports_universal_minimum": false,
+      "doi_url": "https://doi.org/10.1016/j.patrec.2018.12.021"
+    },
+    {
+      "key": "pessaud2026",
+      "source_api": "https://api.crossref.org/works/10.3390%2Fapp16147227",
+      "DOI": "10.3390/app16147227",
+      "title": "Probe Visible Iris Area as a Dominant Predictor of Iris Recognition Performance Under Dilation and Occlusion",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0004-4035-1865",
+          "authenticated-orcid": false,
+          "given": "Jack",
+          "family": "Pessaud",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Ophthalmology and Visual Sciences, West Virginia University School of Medicine, Morgantown, WV 26506, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Eric",
+          "family": "Moran",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Ophthalmology and Visual Sciences, West Virginia University School of Medicine, Morgantown, WV 26506, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9677-4876",
+          "authenticated-orcid": false,
+          "given": "John",
+          "family": "Nguyen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Ophthalmology and Visual Sciences, West Virginia University School of Medicine, Morgantown, WV 26506, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Joel",
+          "family": "Palko",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Ophthalmology and Visual Sciences, West Virginia University School of Medicine, Morgantown, WV 26506, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            19
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            19
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            19
+          ]
+        ]
+      },
+      "container-title": [
+        "Applied Sciences"
+      ],
+      "volume": "16",
+      "issue": "14",
+      "page": "7227",
+      "article-number": null,
+      "publisher": "MDPI AG",
+      "type": "journal-article",
+      "link": [
+        {
+          "URL": "https://www.mdpi.com/2076-3417/16/14/7227/pdf",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "URL": "https://doi.org/10.3390/app16147227",
+      "citation_key": "pessaud2026",
+      "year": 2026,
+      "authors_display": "Pessaud, Jack; Moran, Eric; Nguyen, John; Palko, Joel",
+      "bib_type": "article",
+      "category": "Área visível e qualidade",
+      "access_checked": "PDF publicado: métodos, resultados e limitações; inspeção visual das páginas 4, 5 e 14",
+      "finding": "Estuda área visível em pixels, dilatação e oclusão com OpenIRIS em NIR; é o antecedente mais próximo localizado.",
+      "limitation": "Sem limite percentual universal; ausência de alterações irianas/corneanas relevantes no grupo. Não duplicar com o preprint de 2025.",
+      "supports_universal_minimum": false,
+      "doi_url": "https://doi.org/10.3390/app16147227"
+    },
+    {
+      "key": "nguyen2024",
+      "source_api": "https://api.crossref.org/works/10.1145%2F3651306",
+      "DOI": "10.1145/3651306",
+      "title": "Deep Learning for Iris Recognition: A Survey",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3466-9218",
+          "authenticated-orcid": false,
+          "given": "Kien",
+          "family": "Nguyen",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Queensland University of Technology, Brisbane, Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2551-8570",
+          "authenticated-orcid": false,
+          "given": "Hugo",
+          "family": "Proença",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Beira Interior, IT: Instituto de Telecomunicações, Covilhã, Portugal"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1400-346X",
+          "authenticated-orcid": false,
+          "given": "Fernando",
+          "family": "Alonso-Fernandez",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Halmstad University, Halmstad, Sweden"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            24
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            31
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            24
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            24
+          ]
+        ]
+      },
+      "container-title": [
+        "ACM Computing Surveys"
+      ],
+      "volume": "56",
+      "issue": "9",
+      "page": "1-35",
+      "article-number": null,
+      "publisher": "Association for Computing Machinery (ACM)",
+      "type": "journal-article",
+      "link": [
+        {
+          "URL": "https://dl.acm.org/doi/10.1145/3651306",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://dl.acm.org/doi/pdf/10.1145/3651306",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "URL": "https://doi.org/10.1145/3651306",
+      "citation_key": "nguyen2024",
+      "year": 2024,
+      "authors_display": "Nguyen, Kien; Proença, Hugo; Alonso-Fernandez, Fernando",
+      "bib_type": "article",
+      "category": "Revisão",
+      "access_checked": "Resumo, seções e recursos da revisão publicada",
+      "finding": "Reúne mais de 200 trabalhos e recursos sobre segmentação, reconhecimento e robustez com aprendizado profundo.",
+      "limitation": "Revisão secundária; útil para contextualizar SAM/CNN, não como ensaio de mínimo de área.",
+      "supports_universal_minimum": false,
+      "doi_url": "https://doi.org/10.1145/3651306"
+    },
+    {
+      "key": "aslam2009",
+      "source_api": "https://api.crossref.org/works/10.1098%2Frsif.2008.0530",
+      "DOI": "10.1098/rsif.2008.0530",
+      "title": "Iris recognition in the presence of ocular disease",
+      "author": [
+        {
+          "given": "Tariq Mehmood",
+          "family": "Aslam",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Edinburgh Eye PavilionChalmers Street, Edinburgh EH3 9HA, UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shi Zhuan",
+          "family": "Tan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Edinburgh Eye PavilionChalmers Street, Edinburgh EH3 9HA, UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Baljean",
+          "family": "Dhillon",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Edinburgh Eye PavilionChalmers Street, Edinburgh EH3 9HA, UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2009,
+            3,
+            11
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2009,
+            5,
+            6
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2009,
+            3,
+            11
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            3,
+            11
+          ]
+        ]
+      },
+      "container-title": [
+        "Journal of The Royal Society Interface"
+      ],
+      "volume": "6",
+      "issue": "34",
+      "page": "489-493",
+      "article-number": null,
+      "publisher": "The Royal Society",
+      "type": "journal-article",
+      "link": [
+        {
+          "URL": "https://royalsocietypublishing.org/doi/pdf/10.1098/rsif.2008.0530",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://royalsocietypublishing.org/doi/full-xml/10.1098/rsif.2008.0530",
+          "content-type": "application/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://royalsocietypublishing.org/doi/pdf/10.1098/rsif.2008.0530",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "URL": "https://doi.org/10.1098/rsif.2008.0530",
+      "citation_key": "aslam2009",
+      "year": 2009,
+      "authors_display": "Aslam, Tariq Mehmood; Tan, Shi Zhuan; Dhillon, Baljean",
+      "bib_type": "article",
+      "category": "Patologias",
+      "access_checked": "Resumo original e PDF público da versão publicada",
+      "finding": "Coorte prospectiva antes/depois do tratamento; encontra resiliência em várias condições e falhas em uveíte anterior.",
+      "limitation": "54 pacientes; não demonstra o mesmo efeito para todas as doenças ou algoritmos.",
+      "supports_universal_minimum": false,
+      "doi_url": "https://doi.org/10.1098/rsif.2008.0530"
+    },
+    {
+      "key": "roizenblatt2004",
+      "source_api": "https://api.crossref.org/works/10.1186%2F1475-925X-3-2",
+      "DOI": "10.1186/1475-925x-3-2",
+      "title": "Iris recognition as a biometric method after cataract surgery",
+      "author": [
+        {
+          "given": "Roberto",
+          "family": "Roizenblatt",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Paulo",
+          "family": "Schor",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Fabio",
+          "family": "Dante",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jaime",
+          "family": "Roizenblatt",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "suffix": "Jr",
+          "given": "Rubens",
+          "family": "Belfort",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2004,
+            1,
+            28
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2004,
+            1,
+            28
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2004,
+            1,
+            28
+          ]
+        ]
+      },
+      "container-title": [
+        "BioMedical Engineering OnLine"
+      ],
+      "volume": "3",
+      "issue": "1",
+      "page": null,
+      "article-number": "2",
+      "publisher": "Springer Science and Business Media LLC",
+      "type": "journal-article",
+      "link": [
+        {
+          "URL": "https://link.springer.com/content/pdf/10.1186/1475-925X-3-2.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "URL": "https://doi.org/10.1186/1475-925x-3-2",
+      "citation_key": "roizenblatt2004",
+      "year": 2004,
+      "authors_display": "Roizenblatt, Roberto; Schor, Paulo; Dante, Fabio; Roizenblatt, Jaime; Belfort, Rubens",
+      "bib_type": "article",
+      "category": "Cirurgia",
+      "access_checked": "Texto integral público do editor, métodos e conclusão",
+      "finding": "Investiga alterações e falhas após cirurgia de catarata em 55 pacientes.",
+      "limitation": "Equipamento e prática cirúrgica específicos; não extrapolar a todas as cirurgias ou sistemas modernos.",
+      "supports_universal_minimum": false,
+      "doi_url": "https://doi.org/10.1186/1475-925x-3-2"
+    },
+    {
+      "key": "dhir2010",
+      "source_api": "https://api.crossref.org/works/10.1038%2Feye.2009.275",
+      "DOI": "10.1038/eye.2009.275",
+      "title": "Effect of cataract surgery and pupil dilation on iris pattern recognition for personal authentication",
+      "author": [
+        {
+          "given": "L",
+          "family": "Dhir",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "N E",
+          "family": "Habib",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "D M",
+          "family": "Monro",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "S",
+          "family": "Rakshit",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2009,
+            11,
+            13
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2010,
+            6
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2009,
+            11,
+            13
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            11,
+            13
+          ]
+        ]
+      },
+      "container-title": [
+        "Eye"
+      ],
+      "volume": "24",
+      "issue": "6",
+      "page": "1006-1010",
+      "article-number": null,
+      "publisher": "Springer Science and Business Media LLC",
+      "type": "journal-article",
+      "link": [
+        {
+          "URL": "http://www.nature.com/articles/eye2009275.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://www.nature.com/articles/eye2009275",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://www.nature.com/articles/eye2009275.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "URL": "https://doi.org/10.1038/eye.2009.275",
+      "citation_key": "dhir2010",
+      "year": 2010,
+      "authors_display": "Dhir, L; Habib, N E; Monro, D M; Rakshit, S",
+      "bib_type": "article",
+      "category": "Cirurgia e dilatação",
+      "access_checked": "Resumo original do editor",
+      "finding": "Em 15 participantes, diferencia o efeito da dilatação daquele da cirurgia no sistema estudado.",
+      "limitation": "Amostra pequena; o resultado favorável após cirurgia não é garantia populacional.",
+      "supports_universal_minimum": false,
+      "doi_url": "https://doi.org/10.1038/eye.2009.275"
+    },
+    {
+      "key": "trokielewicz2015database",
+      "source_api": "https://api.crossref.org/works/10.1109%2FCYBConf.2015.7175984",
+      "DOI": "10.1109/cybconf.2015.7175984",
+      "title": "Database of iris images acquired in the presence of ocular pathologies and assessment of iris recognition reliability for disease-affected eyes",
+      "author": [
+        {
+          "given": "Mateusz",
+          "family": "Trokielewicz",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Adam",
+          "family": "Czajka",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Piotr",
+          "family": "Maciejewicz",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            6
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2015,
+            6
+          ]
+        ]
+      },
+      "published-online": null,
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            6
+          ]
+        ]
+      },
+      "container-title": [
+        "2015 IEEE 2nd International Conference on Cybernetics (CYBCONF)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "495-500",
+      "article-number": null,
+      "publisher": "IEEE",
+      "type": "proceedings-article",
+      "link": [
+        {
+          "URL": "http://xplorestaging.ieee.org/ielx7/7166676/7175890/07175984.pdf?arnumber=7175984",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "URL": "https://doi.org/10.1109/cybconf.2015.7175984",
+      "citation_key": "trokielewicz2015database",
+      "year": 2015,
+      "authors_display": "Trokielewicz, Mateusz; Czajka, Adam; Maciejewicz, Piotr",
+      "bib_type": "inproceedings",
+      "category": "Base clínica",
+      "access_checked": "Resumo original dos autores e metadados do evento",
+      "finding": "Apresenta coleção de 91 olhos e comparação por tipo de comprometimento ocular.",
+      "limitation": "Antecede a expansão da mesma linha de pesquisa; não tratar como população totalmente independente das versões ampliadas.",
+      "supports_universal_minimum": false,
+      "doi_url": "https://doi.org/10.1109/cybconf.2015.7175984"
+    },
+    {
+      "key": "trokielewicz2015assessment",
+      "source_api": "https://api.crossref.org/works/10.1109%2FBTAS.2015.7358747",
+      "DOI": "10.1109/btas.2015.7358747",
+      "title": "Assessment of iris recognition reliability for eyes affected by ocular pathologies",
+      "author": [
+        {
+          "given": "Mateusz",
+          "family": "Trokielewicz",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Adam",
+          "family": "Czajka",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Piotr",
+          "family": "Maciejewicz",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            9
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2015,
+            9
+          ]
+        ]
+      },
+      "published-online": null,
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            9
+          ]
+        ]
+      },
+      "container-title": [
+        "2015 IEEE 7th International Conference on Biometrics Theory, Applications and Systems (BTAS)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1-6",
+      "article-number": null,
+      "publisher": "IEEE",
+      "type": "proceedings-article",
+      "link": [
+        {
+          "URL": "http://xplorestaging.ieee.org/ielx7/7348870/7358743/07358747.pdf?arnumber=7358747",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "URL": "https://doi.org/10.1109/btas.2015.7358747",
+      "citation_key": "trokielewicz2015assessment",
+      "year": 2015,
+      "authors_display": "Trokielewicz, Mateusz; Czajka, Adam; Maciejewicz, Piotr",
+      "bib_type": "inproceedings",
+      "category": "Patologias",
+      "access_checked": "Resumo original dos autores e metadados do evento",
+      "finding": "Avalia 2.996 imagens de 230 olhos, incluindo alterações geométricas, estruturais e obstruções.",
+      "limitation": "Corpus e autoria se sobrepõem à versão de periódico; não contar como replicação clínica independente.",
+      "supports_universal_minimum": false,
+      "doi_url": "https://doi.org/10.1109/btas.2015.7358747"
+    },
+    {
+      "key": "trokielewicz2016",
+      "source_api": "https://api.crossref.org/works/10.1016%2Fj.imavis.2016.08.001",
+      "DOI": "10.1016/j.imavis.2016.08.001",
+      "title": "Implications of ocular pathologies for iris recognition reliability",
+      "author": [
+        {
+          "given": "Mateusz",
+          "family": "Trokielewicz",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Adam",
+          "family": "Czajka",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Piotr",
+          "family": "Maciejewicz",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            2
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2017,
+            2
+          ]
+        ]
+      },
+      "published-online": null,
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            2
+          ]
+        ]
+      },
+      "container-title": [
+        "Image and Vision Computing"
+      ],
+      "volume": "58",
+      "issue": null,
+      "page": "158-167",
+      "article-number": null,
+      "publisher": "Elsevier BV",
+      "type": "journal-article",
+      "link": [
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0262885616301251?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0262885616301251?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "URL": "https://doi.org/10.1016/j.imavis.2016.08.001",
+      "citation_key": "trokielewicz2017",
+      "year": 2017,
+      "authors_display": "Trokielewicz, Mateusz; Czajka, Adam; Maciejewicz, Piotr",
+      "bib_type": "article",
+      "category": "Patologias",
+      "access_checked": "Resumo e trechos do editor; versão dos autores identificada pelo DOI",
+      "finding": "Com quatro reconhecedores, destaca falhas de segmentação e menor similaridade genuína em olhos doentes.",
+      "limitation": "230 olhos, 184 afetados por mais de 20 condições. Citar pelo ano do fascículo: 2017, não pelo depósito arXiv de 2018.",
+      "supports_universal_minimum": false,
+      "doi_url": "https://doi.org/10.1016/j.imavis.2016.08.001"
+    },
+    {
+      "key": "frasca2024",
+      "source_api": "https://api.crossref.org/works/10.1016%2Fj.eswa.2024.124160",
+      "DOI": "10.1016/j.eswa.2024.124160",
+      "title": "An extended Daugman's algorithm for iris with eye pathology recognition",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3164-1858",
+          "authenticated-orcid": false,
+          "given": "Maria",
+          "family": "Frasca",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Davide",
+          "family": "La Torre",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            10
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            10
+          ]
+        ]
+      },
+      "published-online": null,
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            10
+          ]
+        ]
+      },
+      "container-title": [
+        "Expert Systems with Applications"
+      ],
+      "volume": "252",
+      "issue": null,
+      "page": "124160",
+      "article-number": "124160",
+      "publisher": "Elsevier BV",
+      "type": "journal-article",
+      "link": [
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0957417424010261?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0957417424010261?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "URL": "https://doi.org/10.1016/j.eswa.2024.124160",
+      "citation_key": "frasca2024",
+      "year": 2024,
+      "authors_display": "Frasca, Maria; La Torre, Davide",
+      "bib_type": "article",
+      "category": "Coloboma",
+      "access_checked": "Resumo, introdução e conclusão disponibilizados pelo editor",
+      "finding": "Adapta a localização para pupilas deformadas, usando aproximação elíptica no caso de coloboma.",
+      "limitation": "A melhoria de 32% destacada é de erro médio de segmentação; não convertê-la em 32% de identificação.",
+      "supports_universal_minimum": false,
+      "doi_url": "https://doi.org/10.1016/j.eswa.2024.124160"
+    },
+    {
+      "key": "nigam2019",
+      "source_api": "https://api.crossref.org/works/10.1038%2Fs41598-019-47222-4",
+      "DOI": "10.1038/s41598-019-47222-4",
+      "title": "Phacoemulsification Cataract Surgery Affects the Discriminative Capacity of Iris Pattern Recognition",
+      "author": [
+        {
+          "given": "Ishan",
+          "family": "Nigam",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rohit",
+          "family": "Keshari",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5952-2274",
+          "authenticated-orcid": false,
+          "given": "Mayank",
+          "family": "Vatsa",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Richa",
+          "family": "Singh",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kevin",
+          "family": "Bowyer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            7,
+            31
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2019,
+            7,
+            31
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            7,
+            31
+          ]
+        ]
+      },
+      "container-title": [
+        "Scientific Reports"
+      ],
+      "volume": "9",
+      "issue": "1",
+      "page": null,
+      "article-number": "11139",
+      "publisher": "Springer Science and Business Media LLC",
+      "type": "journal-article",
+      "link": [
+        {
+          "URL": "https://www.nature.com/articles/s41598-019-47222-4.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://www.nature.com/articles/s41598-019-47222-4",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://www.nature.com/articles/s41598-019-47222-4.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "URL": "https://doi.org/10.1038/s41598-019-47222-4",
+      "citation_key": "nigam2019",
+      "year": 2019,
+      "authors_display": "Nigam, Ishan; Keshari, Rohit; Vatsa, Mayank; Singh, Richa; Bowyer, Kevin",
+      "bib_type": "article",
+      "category": "Cirurgia",
+      "access_checked": "PDF público: resumo, resultados e métodos pertinentes",
+      "finding": "Analisa captura, segmentação e reconhecimento antes/depois de cirurgia, com múltiplos sensores.",
+      "limitation": "Desempenho depende de momento pós-operatório, reflexos e captura; não sustenta porcentagem clínica universal.",
+      "supports_universal_minimum": false,
+      "doi_url": "https://doi.org/10.1038/s41598-019-47222-4"
+    },
+    {
+      "key": "seyeddain2014",
+      "source_api": "https://api.crossref.org/works/10.5301%2Fejo.5000343",
+      "DOI": "10.5301/ejo.5000343",
+      "title": "Reliability of Automatic Biometric Iris Recognition after Phacoemulsification or Drug-Induced Pupil Dilation",
+      "author": [
+        {
+          "given": "Orang",
+          "family": "Seyeddain",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Ophthalmology, Paracelsus Medical University, Salzburg - Austria"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hannes",
+          "family": "Kraker",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Ophthalmology, Paracelsus Medical University, Salzburg - Austria"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andreas",
+          "family": "Redlberger",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Ophthalmology, Paracelsus Medical University, Salzburg - Austria"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alois K.",
+          "family": "Dexl",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Ophthalmology, Paracelsus Medical University, Salzburg - Austria"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Günther",
+          "family": "Grabner",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Ophthalmology, Paracelsus Medical University, Salzburg - Austria"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Martin",
+          "family": "Emesz",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Ophthalmology, Paracelsus Medical University, Salzburg - Austria"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2013,
+            7,
+            17
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2014,
+            1
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2013,
+            7,
+            17
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2013,
+            7,
+            17
+          ]
+        ]
+      },
+      "container-title": [
+        "European Journal of Ophthalmology"
+      ],
+      "volume": "24",
+      "issue": "1",
+      "page": "58-62",
+      "article-number": null,
+      "publisher": "SAGE Publications",
+      "type": "journal-article",
+      "link": [
+        {
+          "URL": "https://journals.sagepub.com/doi/pdf/10.5301/ejo.5000343",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://journals.sagepub.com/doi/full-xml/10.5301/ejo.5000343",
+          "content-type": "application/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://journals.sagepub.com/doi/pdf/10.5301/ejo.5000343",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "URL": "https://doi.org/10.5301/ejo.5000343",
+      "citation_key": "seyeddain2014",
+      "year": 2014,
+      "authors_display": "Seyeddain, Orang; Kraker, Hannes; Redlberger, Andreas; Dexl, Alois K.; Grabner, Günther; Emesz, Martin",
+      "bib_type": "article",
+      "category": "Cirurgia e dilatação",
+      "access_checked": "Resumo original indexado no PubMed e metadados do editor",
+      "finding": "Relata falhas pós-operatórias e após dilatação, embora a maioria dos olhos continue reconhecível.",
+      "limitation": "173 olhos na cirurgia e 184 na dilatação; sem ponto mínimo de área estimado.",
+      "supports_universal_minimum": false,
+      "doi_url": "https://doi.org/10.5301/ejo.5000343"
+    },
+    {
+      "key": "kumar2025",
+      "source_api": "https://api.crossref.org/works/10.22336%2Frjo.2025.30",
+      "DOI": "10.22336/rjo.2025.30",
+      "title": "Does Cataract Surgery Influence Iris-Based Biometric Authentication?",
+      "author": [
+        {
+          "given": "Sonali Vinay",
+          "family": "Kumar"
+        },
+        {
+          "given": "Vinay",
+          "family": "Kumar"
+        },
+        {
+          "given": "Natasha Vinay",
+          "family": "Kumar"
+        },
+        {
+          "given": "Alok",
+          "family": "Sati"
+        },
+        {
+          "given": "Sanjay Kumar",
+          "family": "Mishra"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            15
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            15
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            30
+          ]
+        ]
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            15
+          ]
+        ]
+      },
+      "container-title": [
+        "Romanian Journal of Ophthalmology"
+      ],
+      "volume": "69",
+      "issue": "2",
+      "page": "184-189",
+      "article-number": null,
+      "publisher": "Societatea Romana de Oftalmologie",
+      "type": "journal-article",
+      "link": null,
+      "URL": "https://doi.org/10.22336/rjo.2025.30",
+      "citation_key": "kumar2025",
+      "year": 2025,
+      "metadata_correction_source": "https://pubmed.ncbi.nlm.nih.gov/40698095/",
+      "authors_display": "Kumar, Sonali Vinay; Kumar, Vinay; Kumar, Natasha Vinay; Sati, Alok; Mishra, Sanjay Kumar",
+      "bib_type": "article",
+      "category": "Cirurgia; leitura crítica",
+      "access_checked": "Texto integral público no PMC e resumo PubMed",
+      "finding": "Investiga cirurgia sem complicações em 100 participantes sob aquisição favorável.",
+      "limitation": "Relata 95/100 e também 99% no resumo, além de linguagem de erro zero. Exclui anormalidades e escolhe a melhor tentativa; não usar como estimativa única de acurácia.",
+      "supports_universal_minimum": false,
+      "doi_url": "https://doi.org/10.22336/rjo.2025.30"
+    }
+  ]
+}

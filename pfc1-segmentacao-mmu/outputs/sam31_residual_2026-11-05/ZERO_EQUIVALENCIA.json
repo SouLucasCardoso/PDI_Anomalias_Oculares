@@ -1,0 +1,10 @@
+{
+  "float32": {
+    "exact_logits": true,
+    "images": 8
+  },
+  "bfloat16": {
+    "exact_logits": true,
+    "images": 8
+  }
+}

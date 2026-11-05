@@ -1,0 +1,47 @@
+{
+  "registered_utc": "2026-10-27T21:41:32.825350+00:00",
+  "configuration": {
+    "output_dir": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-segmentacao-diversa-20261027",
+    "mirror_dir": "outputs\\segmentacao_diversa_2026-10-27",
+    "manifest": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\cnn\\ubipr_retreino_2026-10-20\\manifesto.json",
+    "init": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\cnn\\ubipr_retreino_2026-10-20\\melhor_modelo.pt",
+    "epochs": 30,
+    "batch_size": 16,
+    "learning_rate": 0.0001,
+    "patience": 8,
+    "workers": 0,
+    "width": 416,
+    "height": 320,
+    "seed": 127,
+    "limit": null,
+    "preview_only": false
+  },
+  "script_sha256": "53bc6e631b0f419497a178a9e6c4a11beea65860397f60f0f245b4b972149175",
+  "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+  "initial_checkpoint_sha256": "2bcfc269ffc9562ca8cf0956998faf1e22641587cd60f7059b3cec3dd0f4093d",
+  "counts": {
+    "train": {
+      "images": 7716,
+      "people": 183
+    },
+    "val": {
+      "images": 1652,
+      "people": 39
+    },
+    "test": {
+      "images": 1650,
+      "people": 39
+    }
+  },
+  "model": "MulticlassUNet8, ajuste dos pesos originais, resolucao416x320; nao e SAM",
+  "augmentation": "35% escala0.8..1.25;65% escala1.25..4;rotacao+-25;compressao horizontal0.60..1.10;translacao;espelho;35%armacao/reflexo sintetico;brilho/gamma/ruido/desfoque",
+  "labels": "UBIPr humano nativo85=iris;geometria identica;INTER_NEAREST;moldura255 ignorada;artefatos opacos classe0;nenhuma pseudoanotacao clinica",
+  "selection": "epoca0 incluida; maximizar minimo Dice macro de clean/zoom3/oblique/glasses na validacao completa; clean nao pode cair mais0.01 do baseline; sem selecao por teste/reconhecimento",
+  "limitations": "UBIPr nao fornece diagnosticos nem rotulos auditados de oculos/direcao;simulacao2D nao equivale a novas vistas3D ou oculos reais;validacao ja explorada;fotosSLPVLD sem mascaras nao entram no treino",
+  "test_inference": false,
+  "recognition_inference": false,
+  "frozen_model_replaced": false,
+  "development_limit": null,
+  "torch": "2.14.1+cu126",
+  "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU"
+}

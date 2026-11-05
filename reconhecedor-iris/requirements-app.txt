@@ -1,0 +1,2 @@
+# Dependencia adicional isolada; o motor usa o ambiente SAM3 existente.
+qrcode==8.2

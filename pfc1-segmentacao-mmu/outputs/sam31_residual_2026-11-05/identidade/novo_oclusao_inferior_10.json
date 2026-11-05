@@ -1,0 +1,27 @@
+{
+  "checkpoint_sha256": "fbe9a56276c115de41a5b7ba0c00cab2d4d99ff87930d802dad3a52d97fce5f6",
+  "counts": {
+    "correct": 391,
+    "accepted": 371,
+    "joint": 366,
+    "false_accepts": 98,
+    "queries": 482,
+    "impostors": 7230,
+    "extraction_failures": 3
+  },
+  "rates": {
+    "rank1": 0.8112033195020747,
+    "tar": 0.7697095435684648,
+    "joint": 0.7593360995850622,
+    "fmr": 0.01355463347164592
+  },
+  "passed_new_readiness_criterion": false,
+  "folder": "C:\\Users\\lucaz\\AppData\\Local\\Temp\\pfc-s3-residual-id-20261105\\pfc-s3id\\novo_oclusao_inferior_10\\a001\\r\\confirmacao_congelada_val_oclusao_inferior_10_segmentador_fbe9a56276c1_2026-10-21",
+  "condition": "oclusao_inferior",
+  "loss_percent": 10,
+  "model": "sam3_adapter",
+  "threshold": 0.8581747485460748,
+  "queries": 482,
+  "people": 16,
+  "test_inference": false
+}

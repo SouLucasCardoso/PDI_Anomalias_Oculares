@@ -1,0 +1,49 @@
+{
+  "status": "completed",
+  "best_epoch": 8,
+  "checkpoint_sha256": "fbe9a56276c115de41a5b7ba0c00cab2d4d99ff87930d802dad3a52d97fce5f6",
+  "best_score": 0.8665471667674832,
+  "validation": {
+    "clean": {
+      "macro_dice": 0.8865140276462252,
+      "macro_iou": 0.8389081595893286,
+      "p10_dice": 0.823018268367736,
+      "catastrophic_cases": 104,
+      "samples": 1652
+    },
+    "zoom3": {
+      "macro_dice": 0.8665471667674832,
+      "macro_iou": 0.8093934518067107,
+      "p10_dice": 0.7696888095050647,
+      "catastrophic_cases": 116,
+      "samples": 1652
+    },
+    "oblique": {
+      "macro_dice": 0.8763194418635093,
+      "macro_iou": 0.8232938520824126,
+      "p10_dice": 0.8002137424073145,
+      "catastrophic_cases": 110,
+      "samples": 1652
+    },
+    "glasses": {
+      "macro_dice": 0.8839735415282918,
+      "macro_iou": 0.8338967427674638,
+      "p10_dice": 0.8108123462760332,
+      "catastrophic_cases": 101,
+      "samples": 1652
+    }
+  },
+  "epochs_completed": 14,
+  "parent_checkpoint_sha256": "cf8a718e0160c14408d1533445ff611b00a79c75d2c0fd07fb7540150e59db99",
+  "base_weights_and_buffers_frozen_verified": true,
+  "improved_segmentation_selection": true,
+  "segmentation_engineering_target_passed": false,
+  "trainable_parameters": 1960196,
+  "frozen_parameters": 131540,
+  "peak_cuda_allocated_bytes": 1642460672,
+  "peak_cuda_reserved_bytes": 2363490304,
+  "clinical_masks_reviewed": false,
+  "recognition_measured": false,
+  "test_inference": false,
+  "development_smoke_only": false
+}

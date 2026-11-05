@@ -1,0 +1,42 @@
+[
+  {
+    "package": "torch",
+    "cuda": "cu130",
+    "source": "https://download.pytorch.org/whl/cu130/torch/",
+    "versions": [
+      "2.13.0+cu130",
+      "2.14.0+cu130",
+      "2.14.1+cu130"
+    ]
+  },
+  {
+    "package": "torchvision",
+    "cuda": "cu130",
+    "source": "https://download.pytorch.org/whl/cu130/torchvision/",
+    "versions": [
+      "0.28.0+cu130",
+      "0.29.0+cu130",
+      "0.29.1+cu130"
+    ]
+  },
+  {
+    "package": "torch",
+    "cuda": "cu128",
+    "source": "https://download.pytorch.org/whl/cu128/torch/",
+    "versions": [
+      "2.9.1+cu128",
+      "2.10.0+cu128",
+      "2.11.0+cu128"
+    ]
+  },
+  {
+    "package": "torchvision",
+    "cuda": "cu128",
+    "source": "https://download.pytorch.org/whl/cu128/torchvision/",
+    "versions": [
+      "0.24.1+cu128",
+      "0.25.0+cu128",
+      "0.26.0+cu128"
+    ]
+  }
+]

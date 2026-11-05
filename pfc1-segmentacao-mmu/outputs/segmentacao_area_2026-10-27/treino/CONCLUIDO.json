@@ -1,0 +1,9 @@
+{
+  "status": "completed",
+  "best_epoch": 30,
+  "epochs_trained": 30,
+  "best_score": 0.8317786100124331,
+  "checkpoint_sha256": "d4def289756b123bd58ea85363ed2829d0a6d011c508c30a06c306f6af768511",
+  "test_inference": false,
+  "recognition_gain_measured": false
+}

@@ -1,0 +1,126 @@
+{
+  "changed_python_files_compared": 30,
+  "all_ast_identical": true,
+  "files": [
+    {
+      "file": "sam3/agent/helpers/boxes.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/agent/helpers/masks.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/agent/helpers/visualizer.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/eval/postprocessors.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/model/decoder.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/model/edt.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/model/encoder.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/model/geometry_encoders.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/model/maskformer_segmentation.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/model/model_misc.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/model/multiplex_mask_decoder.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/model/multiplex_utils.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/model/sam1_task_predictor.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/model/sam3_multiplex_base.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/model/sam3_video_base.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/model/text_encoder_ve.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/model/utils/misc.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/model/video_tracking_multiplex.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/model/vitdet.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/perflib/triton/connected_components.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/sam/mask_decoder.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/sam/prompt_encoder.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/sam/rope.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/train/data/torch_dataset.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/train/optim/optimizer.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/train/trainer.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/train/transforms/filter_query_transforms.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/train/transforms/point_sampling.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/train/transforms/segmentation.py",
+      "ast_identical": true
+    },
+    {
+      "file": "sam3/train/utils/checkpoint_utils.py",
+      "ast_identical": true
+    }
+  ]
+}

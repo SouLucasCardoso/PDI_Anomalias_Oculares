@@ -1,0 +1,58 @@
+{
+  "strict": true,
+  "missing": [],
+  "unexpected": [],
+  "semantic_tensors": 1130,
+  "excluded_video_branch_tensors": [
+    "backbone.vision_backbone.interactive_convs.0.conv_1x1.bias",
+    "backbone.vision_backbone.interactive_convs.0.conv_1x1.weight",
+    "backbone.vision_backbone.interactive_convs.0.conv_3x3.bias",
+    "backbone.vision_backbone.interactive_convs.0.conv_3x3.weight",
+    "backbone.vision_backbone.interactive_convs.0.dconv_2x2_0.bias",
+    "backbone.vision_backbone.interactive_convs.0.dconv_2x2_0.weight",
+    "backbone.vision_backbone.interactive_convs.0.dconv_2x2_1.bias",
+    "backbone.vision_backbone.interactive_convs.0.dconv_2x2_1.weight",
+    "backbone.vision_backbone.interactive_convs.1.conv_1x1.bias",
+    "backbone.vision_backbone.interactive_convs.1.conv_1x1.weight",
+    "backbone.vision_backbone.interactive_convs.1.conv_3x3.bias",
+    "backbone.vision_backbone.interactive_convs.1.conv_3x3.weight",
+    "backbone.vision_backbone.interactive_convs.1.dconv_2x2.bias",
+    "backbone.vision_backbone.interactive_convs.1.dconv_2x2.weight",
+    "backbone.vision_backbone.interactive_convs.2.conv_1x1.bias",
+    "backbone.vision_backbone.interactive_convs.2.conv_1x1.weight",
+    "backbone.vision_backbone.interactive_convs.2.conv_3x3.bias",
+    "backbone.vision_backbone.interactive_convs.2.conv_3x3.weight",
+    "backbone.vision_backbone.propagation_convs.0.conv_1x1.bias",
+    "backbone.vision_backbone.propagation_convs.0.conv_1x1.weight",
+    "backbone.vision_backbone.propagation_convs.0.conv_3x3.bias",
+    "backbone.vision_backbone.propagation_convs.0.conv_3x3.weight",
+    "backbone.vision_backbone.propagation_convs.0.dconv_2x2_0.bias",
+    "backbone.vision_backbone.propagation_convs.0.dconv_2x2_0.weight",
+    "backbone.vision_backbone.propagation_convs.0.dconv_2x2_1.bias",
+    "backbone.vision_backbone.propagation_convs.0.dconv_2x2_1.weight",
+    "backbone.vision_backbone.propagation_convs.1.conv_1x1.bias",
+    "backbone.vision_backbone.propagation_convs.1.conv_1x1.weight",
+    "backbone.vision_backbone.propagation_convs.1.conv_3x3.bias",
+    "backbone.vision_backbone.propagation_convs.1.conv_3x3.weight",
+    "backbone.vision_backbone.propagation_convs.1.dconv_2x2.bias",
+    "backbone.vision_backbone.propagation_convs.1.dconv_2x2.weight",
+    "backbone.vision_backbone.propagation_convs.2.conv_1x1.bias",
+    "backbone.vision_backbone.propagation_convs.2.conv_1x1.weight",
+    "backbone.vision_backbone.propagation_convs.2.conv_3x3.bias",
+    "backbone.vision_backbone.propagation_convs.2.conv_3x3.weight"
+  ],
+  "scales": [
+    4.0,
+    2.0,
+    1.0
+  ],
+  "random_missing_weights_used": false,
+  "sam3_origin": {
+    "url": "https://github.com/facebookresearch/sam3.git",
+    "vcs_info": {
+      "commit_id": "7f473cfd983d5eb43040ff608f66bff0d7bdcb53",
+      "vcs": "git"
+    }
+  },
+  "installed_builder_sha256": "dd316e4acdf3283eb9c8c160565b9ab9646a99c045797564eb709e699960873a"
+}

@@ -1,0 +1,39 @@
+{
+  "accessed_utc": "2026-11-05T18:49:15.870123+00:00",
+  "files": [
+    {
+      "name": "iso_29794_6_2015_preview.pdf",
+      "url": "https://cdn.standards.iteh.ai/samples/54066/5bd98d11a8824ab29d5935edbfe997a9/ISO-IEC-29794-6-2015.pdf",
+      "path": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\tmp\\pdfs\\iris_literatura_20261105\\iso_29794_6_2015_preview.pdf",
+      "bytes": 557570,
+      "sha256": "10388b4ff6d336db0ad3820278839e0716c048fbcb2b67c72cef04dbed90b936",
+      "archived_path": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\artigo\\revisao_bibliografica_2026-11-05\\fontes_publicas\\iso_29794_6_2015_preview.pdf"
+    },
+    {
+      "name": "du_2005_partial_iris.pdf",
+      "url": "https://dihana.cps.unizar.es/proceedings/ICASSP/2005/pdfs/0200961.pdf",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'dihana.cps.unizar.es'. (_ssl.c:1010)>"
+    },
+    {
+      "name": "pessaud_2026_applsci.pdf",
+      "url": "https://mdpi-res.com/d_attachment/applsci/applsci-16-07227/article_deploy/applsci-16-07227.pdf",
+      "path": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\tmp\\pdfs\\iris_literatura_20261105\\pessaud_2026_applsci.pdf",
+      "bytes": 12676429,
+      "sha256": "9596aff3436ac5a87989b4c0c10cd537388a309c821abd0a3ac7df2fa8dd3e72",
+      "archived_path": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\artigo\\revisao_bibliografica_2026-11-05\\fontes_publicas\\pessaud_2026_applsci.pdf"
+    },
+    {
+      "name": "pessaud_2025_preprint.pdf",
+      "url": "https://arxiv.org/pdf/2510.19884",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+    },
+    {
+      "name": "aslam_2009.pdf",
+      "url": "https://www.pure.ed.ac.uk/ws/files/12418040/Iris_recognition_in_the_presence_of_ocular_disease.pdf",
+      "path": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\tmp\\pdfs\\iris_literatura_20261105\\aslam_2009.pdf",
+      "bytes": 340355,
+      "sha256": "322395efd598e8fb5781741dd615adacfe7329d7e801dc75cf1fb4c21a883f0a",
+      "archived_path": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\artigo\\revisao_bibliografica_2026-11-05\\fontes_publicas\\aslam_2009.pdf"
+    }
+  ]
+}
