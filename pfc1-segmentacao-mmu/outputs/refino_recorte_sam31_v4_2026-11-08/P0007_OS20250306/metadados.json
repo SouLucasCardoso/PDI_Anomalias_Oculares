@@ -1,0 +1,192 @@
+{
+  "filename": "P0007_OS20250306.JPG",
+  "diagnosis_dataset_only": "Normal eye",
+  "status": "refined",
+  "image_sha256": "b033515645f0700e80240c58e3e04417a8ab0e1a2713f6eda5401442dd68c52b",
+  "previous": {
+    "pixels": 881843,
+    "components": 1,
+    "components_ge_100px": 1
+  },
+  "localizer": {
+    "pixels": 881843,
+    "components": 1,
+    "components_ge_100px": 1
+  },
+  "new": {
+    "pixels": 1011409,
+    "components": 1,
+    "components_ge_100px": 1
+  },
+  "details": {
+    "roi_xyxy": [
+      294,
+      0,
+      2962,
+      1723
+    ],
+    "points_xy_in_roi": [
+      [
+        1726.0,
+        709.0
+      ],
+      [
+        1605.0,
+        860.0
+      ],
+      [
+        1455.0,
+        923.0
+      ],
+      [
+        911.0,
+        710.0
+      ],
+      [
+        907.0,
+        680.0
+      ],
+      [
+        1454.0,
+        419.0
+      ],
+      [
+        1650.0,
+        513.0
+      ],
+      [
+        1739.0,
+        617.0
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "automatic_pupil_seed": true,
+    "pupil_refinement": {
+      "status": "sam31_refined",
+      "seed_origin": "enclosed_coarse_hole",
+      "selected_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "model_quality_not_measured_iou": 1.859375,
+          "area_ratio_to_seed": 2.5344101434925888,
+          "inside_iris_fraction": 1.0,
+          "negative_iris_points_respected": true,
+          "eligible": true
+        },
+        {
+          "index": 1,
+          "model_quality_not_measured_iou": 0.7109375,
+          "area_ratio_to_seed": 6.149241159171852,
+          "inside_iris_fraction": 0.9999759680663666,
+          "negative_iris_points_respected": false,
+          "eligible": false
+        },
+        {
+          "index": 2,
+          "model_quality_not_measured_iou": 1.640625,
+          "area_ratio_to_seed": 5.854187294034196,
+          "inside_iris_fraction": 1.0,
+          "negative_iris_points_respected": false,
+          "eligible": false
+        }
+      ],
+      "points_xy_in_roi": [
+        [
+          1306.0,
+          631.0
+        ],
+        [
+          1726.0,
+          709.0
+        ],
+        [
+          1605.0,
+          860.0
+        ],
+        [
+          1455.0,
+          923.0
+        ],
+        [
+          911.0,
+          710.0
+        ],
+        [
+          907.0,
+          680.0
+        ],
+        [
+          1454.0,
+          419.0
+        ],
+        [
+          1650.0,
+          513.0
+        ],
+        [
+          1739.0,
+          617.0
+        ]
+      ],
+      "point_labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "candidates": [
+      {
+        "index": 0,
+        "model_quality_not_measured_iou": 0.94140625,
+        "seed_coverage": 0.8333127325385584,
+        "area_ratio_to_seed": 0.9385899757666614,
+        "prompt_match": 0.875,
+        "eligible": true,
+        "selection_score": 1.1122375232538557
+      },
+      {
+        "index": 1,
+        "model_quality_not_measured_iou": 1.09375,
+        "seed_coverage": 0.9996257837279425,
+        "area_ratio_to_seed": 1.9893779278170831,
+        "prompt_match": 1.0,
+        "eligible": true,
+        "selection_score": 1.2937125783727943
+      },
+      {
+        "index": 2,
+        "model_quality_not_measured_iou": 2.5625,
+        "seed_coverage": 0.992299082716538,
+        "area_ratio_to_seed": 1.3238683076239195,
+        "prompt_match": 1.0,
+        "eligible": true,
+        "selection_score": 2.7617299082716538
+      }
+    ],
+    "selected_index": 2,
+    "presence_logit": 33.75,
+    "manual_or_reference_prompts": false,
+    "morphological_hole_filling": false,
+    "forced_circle_or_ellipse": false,
+    "rgb_texture_modified": false,
+    "disconnected_objects_without_iris_points_removed": true
+  },
+  "native_mask_sha256": "f4f6969170296e13e5a8f0d8c536ee5002e097f70c721fdb78fdb5713b29e09a",
+  "crop_sha256": "8018670059a75b4f77f7f357ba7dcd0c62a5dd4503669327ca06679ad47d8af6"
+}

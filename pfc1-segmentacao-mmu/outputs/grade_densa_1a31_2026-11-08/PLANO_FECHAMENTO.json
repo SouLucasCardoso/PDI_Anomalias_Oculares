@@ -1,0 +1,13 @@
+{
+  "registered_utc": "2026-11-09T01:10:01.194496+00:00",
+  "sources_sha256": {
+    "fechar_grade_densa_entrega.py": "ccc70718ce34550f603f0b13116638e0c6898859b4b12dedd02ddc93d717bf02",
+    "analisar_grade_densa_entrega.py": "2333ace0a921d289148c6e4450fa16623cc58374ed28e3b471c15364c8cf0798"
+  },
+  "sequence": [
+    "waitreference63",
+    "waitcandidate63",
+    "independentrecountandfigures"
+  ],
+  "automatic_article_or_model_replacement": false
+}

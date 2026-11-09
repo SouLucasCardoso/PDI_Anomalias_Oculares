@@ -1,0 +1,93 @@
+{
+  "frozen_utc": "2026-11-08T17:46:35.374523+00:00",
+  "selected": "hybrid_polar",
+  "candidate": {
+    "validation": {
+      "original": {
+        "rank1": 0.9024896265560166,
+        "tar": 0.9045643153526971,
+        "fnmr": 0.0954356846473029,
+        "far": 0.009820193637621023,
+        "eer_descriptive": 0.04149377593360996,
+        "extraction_failures": 4,
+        "queries": 482,
+        "genuine_mean_valid": 0.9210229061314172,
+        "margin_mean_valid": 0.14090282500449974,
+        "joint_success": 0.8858921161825726
+      },
+      "oclusao_superior": {
+        "rank1": 0.8049792531120332,
+        "tar": 0.7842323651452282,
+        "fnmr": 0.2157676348547718,
+        "far": 0.01189488243430152,
+        "eer_descriptive": 0.0661134163208852,
+        "extraction_failures": 4,
+        "queries": 482,
+        "genuine_mean_valid": 0.8955899324833771,
+        "margin_mean_valid": 0.09785659502881072,
+        "joint_success": 0.7634854771784232
+      },
+      "oclusao_inferior": {
+        "rank1": 0.6016597510373444,
+        "tar": 0.5892116182572614,
+        "fnmr": 0.4107883817427386,
+        "far": 0.022821576763485476,
+        "eer_descriptive": 0.13706777316735824,
+        "extraction_failures": 7,
+        "queries": 482,
+        "genuine_mean_valid": 0.8434056713627565,
+        "margin_mean_valid": 0.02004033619009086,
+        "joint_success": 0.5643153526970954
+      }
+    },
+    "kind": "hybrid",
+    "group": "polar_only"
+  },
+  "rule": "Choose eligible validation candidate with greatest meanjoint,then worstjoint,then meanRank1; final tie lexicalname. No combination of candidates or test selection.",
+  "training_result_sha256": "5cae20e501a04f802edfe36b480d3490276bf793d9c0518522a1d003b6ea4b22",
+  "hybrid_result_sha256": "724888f996a7302692e9ab4245a666dc9638a4063c12ce561111ed4101dab916",
+  "available_candidates": {
+    "hybrid_polar": {
+      "validation": {
+        "original": {
+          "rank1": 0.9024896265560166,
+          "tar": 0.9045643153526971,
+          "fnmr": 0.0954356846473029,
+          "far": 0.009820193637621023,
+          "eer_descriptive": 0.04149377593360996,
+          "extraction_failures": 4,
+          "queries": 482,
+          "genuine_mean_valid": 0.9210229061314172,
+          "margin_mean_valid": 0.14090282500449974,
+          "joint_success": 0.8858921161825726
+        },
+        "oclusao_superior": {
+          "rank1": 0.8049792531120332,
+          "tar": 0.7842323651452282,
+          "fnmr": 0.2157676348547718,
+          "far": 0.01189488243430152,
+          "eer_descriptive": 0.0661134163208852,
+          "extraction_failures": 4,
+          "queries": 482,
+          "genuine_mean_valid": 0.8955899324833771,
+          "margin_mean_valid": 0.09785659502881072,
+          "joint_success": 0.7634854771784232
+        },
+        "oclusao_inferior": {
+          "rank1": 0.6016597510373444,
+          "tar": 0.5892116182572614,
+          "fnmr": 0.4107883817427386,
+          "far": 0.022821576763485476,
+          "eer_descriptive": 0.13706777316735824,
+          "extraction_failures": 7,
+          "queries": 482,
+          "genuine_mean_valid": 0.8434056713627565,
+          "margin_mean_valid": 0.02004033619009086,
+          "joint_success": 0.5643153526970954
+        }
+      },
+      "kind": "hybrid",
+      "group": "polar_only"
+    }
+  }
+}

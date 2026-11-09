@@ -1,0 +1,330 @@
+{
+  "registered_utc": "2026-11-09T01:00:52.024295+00:00",
+  "source_sha256": {
+    "confirmar_grade_densa_contorno.py": "a1880f2d074cd5dac815253086ae8ab0737e34267e9d46f6d3e60d4643251269",
+    "contorno_componentes_iris.py": "7314c9a6fda995955980248b3eab7c9c64b9ba7d91b3383b6d0c58f3f6a7cf5f",
+    "contorno_multiescala_iris.py": "cc0fc60aab271fd93a4bc3f4404a8d35e9020b044a39af57a0b571829060696a",
+    "misturar_contorno_componentes.py": "9dc297eb0fd2dda70b6f27b10fabe78673fa8c4a824cdc96d4f1e33e4b9f218e",
+    "avaliar_candidato_congelado.py": "6390747960dd339f39782cc2895999e6929d7a9e97111e70c143b6f4193db278",
+    "avaliar_robustez_reconhecimento.py": "e6d0b8d8eb78dc2e86ed3f73084cd9fb5d83d1afee27f73ca0ffbee1a5947f95",
+    "normalizar_consulta.py": "8e105dbdb11ba547420fdb171403bc4cebb07fd9358a1e59c22e37b0f0a8e3a6",
+    "textura_polar.py": "f977efb2101f2b23338041513908d4deb6eea51a2a730c8f71f0d20c19bcdadc"
+  },
+  "selection_sha256": "96343bf22870b64d17a14b357431e23658121c66d10f0d53a4f6bb26d747f6d6",
+  "selection": {
+    "frozen_utc": "2026-11-09T00:56:57.657938+00:00",
+    "group": "polar_only",
+    "components": [
+      "polar"
+    ],
+    "alpha": 0.5,
+    "spec": {
+      "relative_area": 0.005,
+      "opening_radius": 0
+    },
+    "threshold": 0.8581747485460748,
+    "validation": {
+      "original": {
+        "rank1": 0.9024896265560166,
+        "tar": 0.9066390041493776,
+        "fnmr": 0.09336099585062241,
+        "far": 0.009681881051175657,
+        "eer_descriptive": 0.04149377593360996,
+        "extraction_failures": 4,
+        "queries": 482,
+        "genuine_mean_valid": 0.9204818865450397,
+        "margin_mean_valid": 0.13914232190266843,
+        "joint_success": 0.8858921161825726
+      },
+      "oclusao_superior": {
+        "rank1": 0.8049792531120332,
+        "tar": 0.7842323651452282,
+        "fnmr": 0.2157676348547718,
+        "far": 0.012171507607192255,
+        "eer_descriptive": 0.07053941908713693,
+        "extraction_failures": 4,
+        "queries": 482,
+        "genuine_mean_valid": 0.8947837090387396,
+        "margin_mean_valid": 0.09591178142831815,
+        "joint_success": 0.7614107883817427
+      },
+      "oclusao_inferior": {
+        "rank1": 0.6058091286307054,
+        "tar": 0.5767634854771784,
+        "fnmr": 0.4232365145228216,
+        "far": 0.02392807745504841,
+        "eer_descriptive": 0.13900414937759337,
+        "extraction_failures": 7,
+        "queries": 482,
+        "genuine_mean_valid": 0.8424043629326,
+        "margin_mean_valid": 0.018903357102129124,
+        "joint_success": 0.5622406639004149
+      }
+    },
+    "validation_protocol_sha256": "8a37569d8dbd0b7a19aed367a5331589f9e143e47941e696742251beb0bc8373",
+    "input_validation_run": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\contorno_componentes_identidade_2026-11-08"
+  },
+  "checkpoint_sha256": "db93dfcca33b8a77cd3bfbaa66f07d1efae2e976414d67748ccf5eff4a5ebe5c",
+  "calibration_sha256": "d933686f045eab5d6578cfe4701578d9ca1eeaaff4069bcff8427a602546dbda",
+  "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+  "schedule": [
+    [
+      "original",
+      0
+    ],
+    [
+      "oclusao_superior",
+      1
+    ],
+    [
+      "oclusao_inferior",
+      1
+    ],
+    [
+      "oclusao_superior",
+      2
+    ],
+    [
+      "oclusao_inferior",
+      2
+    ],
+    [
+      "oclusao_superior",
+      3
+    ],
+    [
+      "oclusao_inferior",
+      3
+    ],
+    [
+      "oclusao_superior",
+      4
+    ],
+    [
+      "oclusao_inferior",
+      4
+    ],
+    [
+      "oclusao_superior",
+      5
+    ],
+    [
+      "oclusao_inferior",
+      5
+    ],
+    [
+      "oclusao_superior",
+      6
+    ],
+    [
+      "oclusao_inferior",
+      6
+    ],
+    [
+      "oclusao_superior",
+      7
+    ],
+    [
+      "oclusao_inferior",
+      7
+    ],
+    [
+      "oclusao_superior",
+      8
+    ],
+    [
+      "oclusao_inferior",
+      8
+    ],
+    [
+      "oclusao_superior",
+      9
+    ],
+    [
+      "oclusao_inferior",
+      9
+    ],
+    [
+      "oclusao_superior",
+      10
+    ],
+    [
+      "oclusao_inferior",
+      10
+    ],
+    [
+      "oclusao_superior",
+      11
+    ],
+    [
+      "oclusao_inferior",
+      11
+    ],
+    [
+      "oclusao_superior",
+      12
+    ],
+    [
+      "oclusao_inferior",
+      12
+    ],
+    [
+      "oclusao_superior",
+      13
+    ],
+    [
+      "oclusao_inferior",
+      13
+    ],
+    [
+      "oclusao_superior",
+      14
+    ],
+    [
+      "oclusao_inferior",
+      14
+    ],
+    [
+      "oclusao_superior",
+      15
+    ],
+    [
+      "oclusao_inferior",
+      15
+    ],
+    [
+      "oclusao_superior",
+      16
+    ],
+    [
+      "oclusao_inferior",
+      16
+    ],
+    [
+      "oclusao_superior",
+      17
+    ],
+    [
+      "oclusao_inferior",
+      17
+    ],
+    [
+      "oclusao_superior",
+      18
+    ],
+    [
+      "oclusao_inferior",
+      18
+    ],
+    [
+      "oclusao_superior",
+      19
+    ],
+    [
+      "oclusao_inferior",
+      19
+    ],
+    [
+      "oclusao_superior",
+      20
+    ],
+    [
+      "oclusao_inferior",
+      20
+    ],
+    [
+      "oclusao_superior",
+      21
+    ],
+    [
+      "oclusao_inferior",
+      21
+    ],
+    [
+      "oclusao_superior",
+      22
+    ],
+    [
+      "oclusao_inferior",
+      22
+    ],
+    [
+      "oclusao_superior",
+      23
+    ],
+    [
+      "oclusao_inferior",
+      23
+    ],
+    [
+      "oclusao_superior",
+      24
+    ],
+    [
+      "oclusao_inferior",
+      24
+    ],
+    [
+      "oclusao_superior",
+      25
+    ],
+    [
+      "oclusao_inferior",
+      25
+    ],
+    [
+      "oclusao_superior",
+      26
+    ],
+    [
+      "oclusao_inferior",
+      26
+    ],
+    [
+      "oclusao_superior",
+      27
+    ],
+    [
+      "oclusao_inferior",
+      27
+    ],
+    [
+      "oclusao_superior",
+      28
+    ],
+    [
+      "oclusao_inferior",
+      28
+    ],
+    [
+      "oclusao_superior",
+      29
+    ],
+    [
+      "oclusao_inferior",
+      29
+    ],
+    [
+      "oclusao_superior",
+      30
+    ],
+    [
+      "oclusao_inferior",
+      30
+    ],
+    [
+      "oclusao_superior",
+      31
+    ],
+    [
+      "oclusao_inferior",
+      31
+    ]
+  ],
+  "comparison": "Change only polar raw score, half original plus half cleaned-contour; other8 scores, weights, calibration and threshold unchanged. Original component availability and all failures retained.",
+  "gate": "CleanRank1/TAR no lower and cleanFMR<=1%; mean63joint higher; FMR no greater in every63condition. Report local gains separately. No model/app replacement.",
+  "bootstrap": "Paired query-person5000draws seed20261108 fixedgallery, descriptive, data already exposed",
+  "scope": "Repeated development, not blind test or clinical effect. No parameter selection using these63conditions.",
+  "preparation_stop_utc": "2026-11-09T02:25:00+00:00",
+  "inference_stop_utc": "2026-11-09T02:45:00+00:00"
+}

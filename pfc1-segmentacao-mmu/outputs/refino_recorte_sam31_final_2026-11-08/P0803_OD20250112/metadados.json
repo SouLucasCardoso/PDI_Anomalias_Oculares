@@ -1,0 +1,199 @@
+{
+  "filename": "P0803_OD20250112.JPG",
+  "diagnosis_dataset_only": "Intraocular foreign body, Penetrating corneal injury, Corneal foreign body, Iris laceration, Traumatic cataract",
+  "status": "review_required_empty_initial",
+  "image_sha256": "a5b11184dfad0a605e80c2bc38b19bc9c237f53e464a754328d0407a6ce58da0",
+  "previous": {
+    "pixels": 0,
+    "components": 0,
+    "components_ge_100px": 0
+  },
+  "localizer": {
+    "pixels": 31250,
+    "components": 2,
+    "components_ge_100px": 2
+  },
+  "new": {
+    "pixels": 0,
+    "components": 0,
+    "components_ge_100px": 0
+  },
+  "details": {
+    "roi_xyxy": [
+      297,
+      692,
+      968,
+      1192
+    ],
+    "points_xy_in_roi": [
+      [
+        391.0,
+        290.0
+      ],
+      [
+        340.0,
+        295.0
+      ],
+      [
+        331.0,
+        295.0
+      ],
+      [
+        307.0,
+        291.0
+      ],
+      [
+        261.0,
+        283.0
+      ],
+      [
+        338.0,
+        285.0
+      ],
+      [
+        339.0,
+        285.0
+      ],
+      [
+        409.0,
+        284.0
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "automatic_pupil_seed": true,
+    "pupil_refinement": {
+      "status": "sam31_refined",
+      "seed_origin": "native_intensity_and_coarse_background_localizer",
+      "selected_index": 2,
+      "candidates": [
+        {
+          "index": 0,
+          "model_quality_not_measured_iou": -1.75,
+          "area_ratio_to_seed": 0.82697839073678,
+          "inside_iris_fraction": 0.9996432712030678,
+          "negative_iris_points_respected": true,
+          "eligible": true
+        },
+        {
+          "index": 1,
+          "model_quality_not_measured_iou": -0.1728515625,
+          "area_ratio_to_seed": 6.016225385352902,
+          "inside_iris_fraction": 0.6297594821879521,
+          "negative_iris_points_respected": true,
+          "eligible": false
+        },
+        {
+          "index": 2,
+          "model_quality_not_measured_iou": -0.09326171875,
+          "area_ratio_to_seed": 3.177299210856258,
+          "inside_iris_fraction": 0.9669227733803765,
+          "negative_iris_points_respected": true,
+          "eligible": true
+        }
+      ],
+      "zoom_xyxy_in_roi": [
+        0,
+        0,
+        503,
+        408
+      ],
+      "points_xy_in_roi": [
+        [
+          214.0,
+          199.0
+        ],
+        [
+          391.0,
+          290.0
+        ],
+        [
+          350.0,
+          294.0
+        ],
+        [
+          332.0,
+          295.0
+        ],
+        [
+          307.0,
+          291.0
+        ],
+        [
+          261.0,
+          283.0
+        ],
+        [
+          340.0,
+          284.0
+        ],
+        [
+          341.0,
+          284.0
+        ],
+        [
+          409.0,
+          284.0
+        ]
+      ],
+      "point_labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "candidates": [
+      {
+        "index": 0,
+        "model_quality_not_measured_iou": 0.50390625,
+        "seed_coverage": 0.766848,
+        "area_ratio_to_seed": 1.461024,
+        "prompt_match": 1.0,
+        "eligible": true,
+        "selection_score": 0.68059105
+      },
+      {
+        "index": 1,
+        "model_quality_not_measured_iou": 1.2265625,
+        "seed_coverage": 0.999616,
+        "area_ratio_to_seed": 4.848736,
+        "prompt_match": 1.0,
+        "eligible": false,
+        "selection_score": -1000000.0
+      },
+      {
+        "index": 2,
+        "model_quality_not_measured_iou": 1.6640625,
+        "seed_coverage": 0.9976,
+        "area_ratio_to_seed": 2.771648,
+        "prompt_match": 1.0,
+        "eligible": true,
+        "selection_score": 1.8638225000000002
+      }
+    ],
+    "selected_index": 2,
+    "presence_logit": 30.0,
+    "manual_or_reference_prompts": false,
+    "morphological_hole_filling": false,
+    "forced_circle_or_ellipse": false,
+    "rgb_texture_modified": false,
+    "disconnected_objects_without_iris_points_removed": true,
+    "empty_initial_requires_manual_localization_review": true
+  },
+  "native_mask_sha256": "fd7f894e43da3ec0e36f642cde092efc194a5043762fb08a9cdcec7a55f5159c",
+  "crop_sha256": "b0c45ce90a15a5e345d0f76782f9bb98bb11182d1a3a68e43e5cfe58061c4f5d"
+}

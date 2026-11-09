@@ -1,0 +1,8 @@
+﻿{
+    "environment_updated":  false,
+    "checked_utc":  "2026-11-08T21:27:28.4314370+00:00",
+    "code_url":  "https://github.com/facebookresearch/sam3/commit/f1647e8d0c1d280991f4d1b7d974c2704537fe66",
+    "code_revision":  "f1647e8d0c1d280991f4d1b7d974c2704537fe66",
+    "checkpoint_revision":  "daa63191845a41281374e725f4c9e51c7a824460",
+    "checkpoint_url":  "https://huggingface.co/facebook/sam3.1"
+}

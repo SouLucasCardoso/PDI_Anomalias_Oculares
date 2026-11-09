@@ -1,0 +1,7 @@
+{
+  "stage": "falha",
+  "pid": 14020,
+  "utc": "2026-11-08T17:42:35.281573+00:00",
+  "confirmation_source_sha256": "25aff2077b45a3ca73a972f5bb2f3b1debfd79b7047352886a436bac7706e18a",
+  "error": "Treino ou auditoria falhou; nao ler teste"
+}

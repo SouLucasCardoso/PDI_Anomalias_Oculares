@@ -1,0 +1,40 @@
+{
+  "registered_utc": "2026-11-08T15:51:14.824401+00:00",
+  "levels_loss_percent": [
+    0,
+    1,
+    5,
+    10,
+    20,
+    30,
+    31
+  ],
+  "conditions": [
+    "original",
+    "oclusao_superior",
+    "oclusao_inferior"
+  ],
+  "complete_grid_even_after_failure": true,
+  "population": "UBIPr, particoes por pessoa, treino sem pessoas de validacao/teste. 482 consultas de validacao e 486 de teste; uma fotografia; lado informado; 16 candidatos; galeria sessao1 original.",
+  "intervention": "Somente pixels da iris anotada, cinza128, quantidade round(N*loss/100), ordem por linha superior/inferior. Exterior inalterado. Referencia nao entra na extracao. Segmentar e recalcular geometria a partir da foto alterada.",
+  "area": "Fracao do suporte visivel originalmente anotado, NAO anel anatomico completo, fracao clinica, nem conformidade ISO. Referencias vazias mantidas e area indefinida.",
+  "selection": "Fusao nao negativa no simplex, entropia cruzada com temperatura4 e regularizacao ao prior historico. 4dobras por pessoa da validacao, original/superior10/inferior10; lambda em [0.01,0.1,1,10]. Seleciona maior Rank1 medio OOF apenas se melhorar original e media; empate prefere maior lambda. Caso contrario prior. Reajusta pesos somente na validacao. Limiar de 1% FMR apenas na validacao original; congelar antes de ler teste.",
+  "criteria": "Rank1>=90%,TAR>=90%,FMR<=1%; conjunto relatado. Nao afrouxar criterio apos observar dados. Comparar fusao historica e nova em TODOS os niveis.",
+  "models": "Checkpoint U-Net historico como controle de identidade mais forte disponivel; nove descritores historicos. Nenhum treino/alteracao SAM ou atualizacao de ambiente durante comparacao.",
+  "uncertainty": "5000 reamostragens por pessoa de consulta, seed20261108, galeria fixa, intervalos descritivos ponto a ponto e perdas pareadas; sem correcao simultanea.",
+  "limitations": "Teste ja exposto no desenvolvimento historico e pretreino ArcIris com sobreposicao desconhecida. Nenhum minimo universal ou efeito causal de patologia.",
+  "source_sha256": {
+    "ensaio_entrega_oclusoes.py": "6795733474ef4c9f23314772df802f2f6afcdbcfa6ef3689d11fea2ac0a0befe",
+    "avaliar_candidato_congelado.py": "6390747960dd339f39782cc2895999e6929d7a9e97111e70c143b6f4193db278",
+    "avaliar_robustez_reconhecimento.py": "e6d0b8d8eb78dc2e86ed3f73084cd9fb5d83d1afee27f73ca0ffbee1a5947f95",
+    "normalizar_consulta.py": "8e105dbdb11ba547420fdb171403bc4cebb07fd9358a1e59c22e37b0f0a8e3a6"
+  },
+  "frozen_historical_sha256": "d933686f045eab5d6578cfe4701578d9ca1eeaaff4069bcff8427a602546dbda",
+  "versions": {
+    "python": "3.12.10",
+    "torch": "2.14.1+cu130",
+    "numpy": "1.26.4",
+    "scipy": "1.17.1"
+  },
+  "iso_source": "https://www.iso.org/standard/54066.html; consulta08/11/2026, qualidade de imagem, nao garantia de identificacao."
+}

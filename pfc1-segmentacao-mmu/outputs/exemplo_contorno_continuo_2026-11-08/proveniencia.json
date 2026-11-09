@@ -1,0 +1,12 @@
+{
+  "method": "continuous iris-vs-other-class logit margin interpolated before native threshold0",
+  "clinical_scale": true,
+  "photo_sha256": "37a105b917c6bd5959f26db21aa054de1fc3f63d42b7a76dbb04fe15b77ecef4",
+  "unet_sha256": "2bcfc269ffc9562ca8cf0956998faf1e22641587cd60f7059b3cec3dd0f4093d",
+  "script_sha256": "028d3aadda7427e13ec7904760fa2d82c29ee925cd03a4a578c5a3070894bfaf",
+  "mask_sha256": "b7f01059244eeca50e28d54808b7b54aed75706e6fdb7ee4e84966052b590393",
+  "native_rgb_unchanged": true,
+  "display_alpha_edge_only": true,
+  "recognition_recalibrated": false,
+  "manual_clinical_review_required": true
+}

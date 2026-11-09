@@ -1,0 +1,191 @@
+{
+  "filename": "P0005_OD20241206.JPG",
+  "diagnosis_dataset_only": "Normal eye",
+  "status": "refined",
+  "image_sha256": "37a105b917c6bd5959f26db21aa054de1fc3f63d42b7a76dbb04fe15b77ecef4",
+  "previous": {
+    "pixels": 1195270,
+    "components": 1,
+    "components_ge_100px": 1
+  },
+  "localizer": {
+    "pixels": 1195270,
+    "components": 1,
+    "components_ge_100px": 1
+  },
+  "new": {
+    "pixels": 1209389,
+    "components": 23,
+    "components_ge_100px": 2
+  },
+  "details": {
+    "roi_xyxy": [
+      0,
+      62,
+      2569,
+      1984
+    ],
+    "points_xy_in_roi": [
+      [
+        1648.0,
+        1184.0
+      ],
+      [
+        1496.0,
+        1399.0
+      ],
+      [
+        1017.0,
+        1424.0
+      ],
+      [
+        830.0,
+        1160.0
+      ],
+      [
+        848.0,
+        959.0
+      ],
+      [
+        977.0,
+        880.0
+      ],
+      [
+        1566.0,
+        848.0
+      ],
+      [
+        1656.0,
+        1036.0
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "automatic_pupil_seed": true,
+    "pupil_refinement": {
+      "status": "sam31_refined",
+      "selected_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "model_quality_not_measured_iou": 1.4296875,
+          "area_ratio_to_seed": 3.037072551455891,
+          "inside_iris_fraction": 0.999991106249194,
+          "negative_iris_points_respected": true,
+          "eligible": true
+        },
+        {
+          "index": 1,
+          "model_quality_not_measured_iou": 0.8515625,
+          "area_ratio_to_seed": 7.545391929123224,
+          "inside_iris_fraction": 0.9996885577179514,
+          "negative_iris_points_respected": false,
+          "eligible": false
+        },
+        {
+          "index": 2,
+          "model_quality_not_measured_iou": 1.3671875,
+          "area_ratio_to_seed": 6.4621441305169895,
+          "inside_iris_fraction": 0.9999937301847714,
+          "negative_iris_points_respected": false,
+          "eligible": false
+        }
+      ],
+      "points_xy_in_roi": [
+        [
+          1253.0,
+          1078.0
+        ],
+        [
+          1648.0,
+          1184.0
+        ],
+        [
+          1496.0,
+          1399.0
+        ],
+        [
+          1017.0,
+          1424.0
+        ],
+        [
+          830.0,
+          1160.0
+        ],
+        [
+          848.0,
+          959.0
+        ],
+        [
+          977.0,
+          880.0
+        ],
+        [
+          1566.0,
+          848.0
+        ],
+        [
+          1656.0,
+          1036.0
+        ]
+      ],
+      "point_labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "candidates": [
+      {
+        "index": 0,
+        "model_quality_not_measured_iou": 1.0859375,
+        "seed_coverage": 0.7357417152609871,
+        "area_ratio_to_seed": 0.779840538121094,
+        "prompt_match": 1.0,
+        "eligible": true,
+        "selection_score": 1.2595116715260988
+      },
+      {
+        "index": 1,
+        "model_quality_not_measured_iou": 1.453125,
+        "seed_coverage": 0.9992813339245527,
+        "area_ratio_to_seed": 1.9180837802337547,
+        "prompt_match": 1.0,
+        "eligible": true,
+        "selection_score": 1.6530531333924554
+      },
+      {
+        "index": 2,
+        "model_quality_not_measured_iou": 2.40625,
+        "seed_coverage": 0.9916537686045831,
+        "area_ratio_to_seed": 1.1964359517096557,
+        "prompt_match": 1.0,
+        "eligible": true,
+        "selection_score": 2.605415376860458
+      }
+    ],
+    "selected_index": 2,
+    "presence_logit": 32.25,
+    "manual_or_reference_prompts": false,
+    "morphological_hole_filling": false,
+    "forced_circle_or_ellipse": false,
+    "rgb_texture_modified": false,
+    "disconnected_objects_without_iris_points_removed": true
+  },
+  "native_mask_sha256": "c3662d3b70120c6c0ac01b300df48e419131e14bfc6447350e299e1d19d3442b",
+  "crop_sha256": "f8b08aaa4f21f136eb9c19bb4de016d637b06870ef5517955307a7e630d8552b"
+}

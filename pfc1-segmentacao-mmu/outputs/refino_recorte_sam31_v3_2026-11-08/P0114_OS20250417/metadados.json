@@ -1,0 +1,191 @@
+{
+  "filename": "P0114_OS20250417.JPG",
+  "diagnosis_dataset_only": "Iris cyst, Corneal ulcer, Bullous keratopathy",
+  "status": "refined",
+  "image_sha256": "1f90538202e540ee5175ca5d370bdaf13dfcd7238a354af14d86784fe4ce570a",
+  "previous": {
+    "pixels": 620862,
+    "components": 1,
+    "components_ge_100px": 1
+  },
+  "localizer": {
+    "pixels": 620862,
+    "components": 1,
+    "components_ge_100px": 1
+  },
+  "new": {
+    "pixels": 774675,
+    "components": 102,
+    "components_ge_100px": 8
+  },
+  "details": {
+    "roi_xyxy": [
+      640,
+      363,
+      2561,
+      1984
+    ],
+    "points_xy_in_roi": [
+      [
+        1216.0,
+        953.0
+      ],
+      [
+        1114.0,
+        1014.0
+      ],
+      [
+        801.0,
+        1068.0
+      ],
+      [
+        763.0,
+        1050.0
+      ],
+      [
+        635.0,
+        872.0
+      ],
+      [
+        715.0,
+        615.0
+      ],
+      [
+        1174.0,
+        682.0
+      ],
+      [
+        1221.0,
+        878.0
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "automatic_pupil_seed": true,
+    "pupil_refinement": {
+      "status": "sam31_refined",
+      "selected_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "model_quality_not_measured_iou": 0.6484375,
+          "area_ratio_to_seed": 3.218703427719821,
+          "inside_iris_fraction": 1.0,
+          "negative_iris_points_respected": true,
+          "eligible": true
+        },
+        {
+          "index": 1,
+          "model_quality_not_measured_iou": 1.40625,
+          "area_ratio_to_seed": 7.940147966787311,
+          "inside_iris_fraction": 0.9945803545393301,
+          "negative_iris_points_respected": false,
+          "eligible": false
+        },
+        {
+          "index": 2,
+          "model_quality_not_measured_iou": 1.734375,
+          "area_ratio_to_seed": 6.232568660847349,
+          "inside_iris_fraction": 1.0,
+          "negative_iris_points_respected": false,
+          "eligible": false
+        }
+      ],
+      "points_xy_in_roi": [
+        [
+          903.5,
+          799.0
+        ],
+        [
+          1216.0,
+          953.0
+        ],
+        [
+          1114.0,
+          1014.0
+        ],
+        [
+          801.0,
+          1068.0
+        ],
+        [
+          763.0,
+          1050.0
+        ],
+        [
+          635.0,
+          872.0
+        ],
+        [
+          715.0,
+          615.0
+        ],
+        [
+          1174.0,
+          682.0
+        ],
+        [
+          1221.0,
+          878.0
+        ]
+      ],
+      "point_labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "candidates": [
+      {
+        "index": 0,
+        "model_quality_not_measured_iou": 0.984375,
+        "seed_coverage": 0.6892932729012244,
+        "area_ratio_to_seed": 0.8284079231777755,
+        "prompt_match": 1.0,
+        "eligible": true,
+        "selection_score": 1.1533043272901224
+      },
+      {
+        "index": 1,
+        "model_quality_not_measured_iou": 0.98828125,
+        "seed_coverage": 0.999629547306809,
+        "area_ratio_to_seed": 2.191762420634537,
+        "prompt_match": 1.0,
+        "eligible": true,
+        "selection_score": 1.188244204730681
+      },
+      {
+        "index": 2,
+        "model_quality_not_measured_iou": 1.890625,
+        "seed_coverage": 0.9545889424703075,
+        "area_ratio_to_seed": 1.427041758071842,
+        "prompt_match": 1.0,
+        "eligible": true,
+        "selection_score": 2.0860838942470306
+      }
+    ],
+    "selected_index": 2,
+    "presence_logit": 31.5,
+    "manual_or_reference_prompts": false,
+    "morphological_hole_filling": false,
+    "forced_circle_or_ellipse": false,
+    "rgb_texture_modified": false,
+    "disconnected_objects_without_iris_points_removed": true
+  },
+  "native_mask_sha256": "1cc47ed47cf43769f10ca72c2165dd7f6f84697a42091b4e855d4dc5cd68bd59",
+  "crop_sha256": "01dd96d68e2218faf7a6ca7d29e72518d5d433409322ac090f647ff47963a3a8"
+}

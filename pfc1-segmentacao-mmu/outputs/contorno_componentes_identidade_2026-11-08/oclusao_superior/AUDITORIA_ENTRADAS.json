@@ -1,0 +1,2902 @@
+{
+  "fallback_counts": {
+    "native_fallback": 4,
+    "polar_fallback": 4
+  },
+  "validity": "Retain original component availability; original failures are not removed or repaired. Invalid new masks/geometry use original cached input.",
+  "interventions": [
+    {
+      "row": 30,
+      "reference_pixels": 4267,
+      "fraction_defined": true,
+      "affected_fraction": 0.10007030700726506
+    },
+    {
+      "row": 31,
+      "reference_pixels": 6289,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001590077913818
+    },
+    {
+      "row": 32,
+      "reference_pixels": 14627,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002051001572435
+    },
+    {
+      "row": 33,
+      "reference_pixels": 14456,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002767017155506
+    },
+    {
+      "row": 34,
+      "reference_pixels": 10800,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 35,
+      "reference_pixels": 5222,
+      "fraction_defined": true,
+      "affected_fraction": 0.09996170049789353
+    },
+    {
+      "row": 36,
+      "reference_pixels": 0,
+      "fraction_defined": false,
+      "affected_fraction": 0.0
+    },
+    {
+      "row": 37,
+      "reference_pixels": 0,
+      "fraction_defined": false,
+      "affected_fraction": 0.0
+    },
+    {
+      "row": 38,
+      "reference_pixels": 25323,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998815306243336
+    },
+    {
+      "row": 39,
+      "reference_pixels": 26352,
+      "fraction_defined": true,
+      "affected_fraction": 0.09999241044323011
+    },
+    {
+      "row": 40,
+      "reference_pixels": 12816,
+      "fraction_defined": true,
+      "affected_fraction": 0.10003121098626716
+    },
+    {
+      "row": 41,
+      "reference_pixels": 0,
+      "fraction_defined": false,
+      "affected_fraction": 0.0
+    },
+    {
+      "row": 42,
+      "reference_pixels": 20202,
+      "fraction_defined": true,
+      "affected_fraction": 0.09999009999009999
+    },
+    {
+      "row": 43,
+      "reference_pixels": 21186,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001888039271217
+    },
+    {
+      "row": 44,
+      "reference_pixels": 5810,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 45,
+      "reference_pixels": 5750,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 46,
+      "reference_pixels": 3174,
+      "fraction_defined": true,
+      "affected_fraction": 0.09987397605545054
+    },
+    {
+      "row": 47,
+      "reference_pixels": 4828,
+      "fraction_defined": true,
+      "affected_fraction": 0.1000414250207125
+    },
+    {
+      "row": 48,
+      "reference_pixels": 5166,
+      "fraction_defined": true,
+      "affected_fraction": 0.10007742934572203
+    },
+    {
+      "row": 49,
+      "reference_pixels": 5399,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001852194850898
+    },
+    {
+      "row": 50,
+      "reference_pixels": 5897,
+      "fraction_defined": true,
+      "affected_fraction": 0.1000508733254197
+    },
+    {
+      "row": 51,
+      "reference_pixels": 7038,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002841716396704
+    },
+    {
+      "row": 52,
+      "reference_pixels": 6330,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 53,
+      "reference_pixels": 5675,
+      "fraction_defined": true,
+      "affected_fraction": 0.10008810572687225
+    },
+    {
+      "row": 54,
+      "reference_pixels": 6623,
+      "fraction_defined": true,
+      "affected_fraction": 0.09995470330665861
+    },
+    {
+      "row": 55,
+      "reference_pixels": 6017,
+      "fraction_defined": true,
+      "affected_fraction": 0.10004985873358817
+    },
+    {
+      "row": 56,
+      "reference_pixels": 2835,
+      "fraction_defined": true,
+      "affected_fraction": 0.1001763668430335
+    },
+    {
+      "row": 57,
+      "reference_pixels": 4389,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002278423331055
+    },
+    {
+      "row": 58,
+      "reference_pixels": 10286,
+      "fraction_defined": true,
+      "affected_fraction": 0.10003888780867198
+    },
+    {
+      "row": 59,
+      "reference_pixels": 10653,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997183891861447
+    },
+    {
+      "row": 60,
+      "reference_pixels": 7878,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002538715410003
+    },
+    {
+      "row": 61,
+      "reference_pixels": 7007,
+      "fraction_defined": true,
+      "affected_fraction": 0.10004281432852861
+    },
+    {
+      "row": 92,
+      "reference_pixels": 10476,
+      "fraction_defined": true,
+      "affected_fraction": 0.10003818251240931
+    },
+    {
+      "row": 93,
+      "reference_pixels": 11335,
+      "fraction_defined": true,
+      "affected_fraction": 0.10004411116012352
+    },
+    {
+      "row": 94,
+      "reference_pixels": 10147,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002956538878487
+    },
+    {
+      "row": 95,
+      "reference_pixels": 8885,
+      "fraction_defined": true,
+      "affected_fraction": 0.09994372537985369
+    },
+    {
+      "row": 96,
+      "reference_pixels": 9501,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998947479212715
+    },
+    {
+      "row": 97,
+      "reference_pixels": 11242,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998220957125066
+    },
+    {
+      "row": 98,
+      "reference_pixels": 16948,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001180080245457
+    },
+    {
+      "row": 99,
+      "reference_pixels": 17652,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998866983911171
+    },
+    {
+      "row": 100,
+      "reference_pixels": 15557,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001928392363567
+    },
+    {
+      "row": 101,
+      "reference_pixels": 12522,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998402811052548
+    },
+    {
+      "row": 102,
+      "reference_pixels": 15305,
+      "fraction_defined": true,
+      "affected_fraction": 0.09996733093760209
+    },
+    {
+      "row": 103,
+      "reference_pixels": 17617,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001702900607368
+    },
+    {
+      "row": 104,
+      "reference_pixels": 2902,
+      "fraction_defined": true,
+      "affected_fraction": 0.09993108201240523
+    },
+    {
+      "row": 105,
+      "reference_pixels": 2233,
+      "fraction_defined": true,
+      "affected_fraction": 0.09986565158978952
+    },
+    {
+      "row": 106,
+      "reference_pixels": 3910,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 107,
+      "reference_pixels": 4139,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002416042522348
+    },
+    {
+      "row": 108,
+      "reference_pixels": 3672,
+      "fraction_defined": true,
+      "affected_fraction": 0.09994553376906318
+    },
+    {
+      "row": 109,
+      "reference_pixels": 4306,
+      "fraction_defined": true,
+      "affected_fraction": 0.10009289363678588
+    },
+    {
+      "row": 110,
+      "reference_pixels": 5386,
+      "fraction_defined": true,
+      "affected_fraction": 0.10007426661715559
+    },
+    {
+      "row": 111,
+      "reference_pixels": 5263,
+      "fraction_defined": true,
+      "affected_fraction": 0.0999429982899487
+    },
+    {
+      "row": 112,
+      "reference_pixels": 4944,
+      "fraction_defined": true,
+      "affected_fraction": 0.09991909385113269
+    },
+    {
+      "row": 113,
+      "reference_pixels": 4513,
+      "fraction_defined": true,
+      "affected_fraction": 0.09993352537115001
+    },
+    {
+      "row": 114,
+      "reference_pixels": 4864,
+      "fraction_defined": true,
+      "affected_fraction": 0.09991776315789473
+    },
+    {
+      "row": 115,
+      "reference_pixels": 5563,
+      "fraction_defined": true,
+      "affected_fraction": 0.09994607226316736
+    },
+    {
+      "row": 116,
+      "reference_pixels": 6496,
+      "fraction_defined": true,
+      "affected_fraction": 0.1000615763546798
+    },
+    {
+      "row": 117,
+      "reference_pixels": 6462,
+      "fraction_defined": true,
+      "affected_fraction": 0.09996904982977406
+    },
+    {
+      "row": 118,
+      "reference_pixels": 6441,
+      "fraction_defined": true,
+      "affected_fraction": 0.0999844744604875
+    },
+    {
+      "row": 119,
+      "reference_pixels": 5225,
+      "fraction_defined": true,
+      "affected_fraction": 0.09990430622009569
+    },
+    {
+      "row": 120,
+      "reference_pixels": 6396,
+      "fraction_defined": true,
+      "affected_fraction": 0.10006253908692933
+    },
+    {
+      "row": 121,
+      "reference_pixels": 6540,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 152,
+      "reference_pixels": 13321,
+      "fraction_defined": true,
+      "affected_fraction": 0.09999249305607687
+    },
+    {
+      "row": 153,
+      "reference_pixels": 13644,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997068308413955
+    },
+    {
+      "row": 154,
+      "reference_pixels": 12034,
+      "fraction_defined": true,
+      "affected_fraction": 0.09996676084427455
+    },
+    {
+      "row": 155,
+      "reference_pixels": 10696,
+      "fraction_defined": true,
+      "affected_fraction": 0.10003739715781601
+    },
+    {
+      "row": 156,
+      "reference_pixels": 10127,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002962377801916
+    },
+    {
+      "row": 157,
+      "reference_pixels": 11612,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998277643816741
+    },
+    {
+      "row": 158,
+      "reference_pixels": 20521,
+      "fraction_defined": true,
+      "affected_fraction": 0.09999512694313142
+    },
+    {
+      "row": 159,
+      "reference_pixels": 21297,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001408649105507
+    },
+    {
+      "row": 160,
+      "reference_pixels": 2253,
+      "fraction_defined": true,
+      "affected_fraction": 0.09986684420772303
+    },
+    {
+      "row": 161,
+      "reference_pixels": 17484,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997712194005948
+    },
+    {
+      "row": 162,
+      "reference_pixels": 18477,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001623640201332
+    },
+    {
+      "row": 163,
+      "reference_pixels": 20969,
+      "fraction_defined": true,
+      "affected_fraction": 0.10000476894463255
+    },
+    {
+      "row": 164,
+      "reference_pixels": 4431,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997743173098624
+    },
+    {
+      "row": 165,
+      "reference_pixels": 4293,
+      "fraction_defined": true,
+      "affected_fraction": 0.09993011879804332
+    },
+    {
+      "row": 166,
+      "reference_pixels": 4448,
+      "fraction_defined": true,
+      "affected_fraction": 0.10004496402877698
+    },
+    {
+      "row": 167,
+      "reference_pixels": 4030,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 168,
+      "reference_pixels": 4144,
+      "fraction_defined": true,
+      "affected_fraction": 0.0999034749034749
+    },
+    {
+      "row": 169,
+      "reference_pixels": 4964,
+      "fraction_defined": true,
+      "affected_fraction": 0.0999194198227236
+    },
+    {
+      "row": 170,
+      "reference_pixels": 5768,
+      "fraction_defined": true,
+      "affected_fraction": 0.10003467406380027
+    },
+    {
+      "row": 171,
+      "reference_pixels": 5485,
+      "fraction_defined": true,
+      "affected_fraction": 0.09990884229717412
+    },
+    {
+      "row": 172,
+      "reference_pixels": 5960,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 173,
+      "reference_pixels": 5285,
+      "fraction_defined": true,
+      "affected_fraction": 0.09990539262062441
+    },
+    {
+      "row": 174,
+      "reference_pixels": 4593,
+      "fraction_defined": true,
+      "affected_fraction": 0.0999346832135859
+    },
+    {
+      "row": 175,
+      "reference_pixels": 5809,
+      "fraction_defined": true,
+      "affected_fraction": 0.1000172146668962
+    },
+    {
+      "row": 176,
+      "reference_pixels": 8478,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002359046945034
+    },
+    {
+      "row": 177,
+      "reference_pixels": 8795,
+      "fraction_defined": true,
+      "affected_fraction": 0.10005685048322911
+    },
+    {
+      "row": 178,
+      "reference_pixels": 8532,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997655883731833
+    },
+    {
+      "row": 179,
+      "reference_pixels": 7518,
+      "fraction_defined": true,
+      "affected_fraction": 0.1000266028198989
+    },
+    {
+      "row": 180,
+      "reference_pixels": 6510,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 181,
+      "reference_pixels": 8752,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997714808043875
+    },
+    {
+      "row": 212,
+      "reference_pixels": 9619,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001039609106976
+    },
+    {
+      "row": 213,
+      "reference_pixels": 8877,
+      "fraction_defined": true,
+      "affected_fraction": 0.10003379520108145
+    },
+    {
+      "row": 214,
+      "reference_pixels": 9821,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998981773750128
+    },
+    {
+      "row": 215,
+      "reference_pixels": 7334,
+      "fraction_defined": true,
+      "affected_fraction": 0.09994545950368149
+    },
+    {
+      "row": 216,
+      "reference_pixels": 9145,
+      "fraction_defined": true,
+      "affected_fraction": 0.09994532531437944
+    },
+    {
+      "row": 217,
+      "reference_pixels": 0,
+      "fraction_defined": false,
+      "affected_fraction": 0.0
+    },
+    {
+      "row": 218,
+      "reference_pixels": 16616,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002407318247472
+    },
+    {
+      "row": 219,
+      "reference_pixels": 13188,
+      "fraction_defined": true,
+      "affected_fraction": 0.1000151653017895
+    },
+    {
+      "row": 220,
+      "reference_pixels": 13806,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002897291032885
+    },
+    {
+      "row": 221,
+      "reference_pixels": 12001,
+      "fraction_defined": true,
+      "affected_fraction": 0.09999166736105325
+    },
+    {
+      "row": 222,
+      "reference_pixels": 14417,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002080876742735
+    },
+    {
+      "row": 223,
+      "reference_pixels": 0,
+      "fraction_defined": false,
+      "affected_fraction": 0.0
+    },
+    {
+      "row": 224,
+      "reference_pixels": 4390,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 225,
+      "reference_pixels": 3913,
+      "fraction_defined": true,
+      "affected_fraction": 0.09992333248147202
+    },
+    {
+      "row": 226,
+      "reference_pixels": 3702,
+      "fraction_defined": true,
+      "affected_fraction": 0.09994597514856834
+    },
+    {
+      "row": 227,
+      "reference_pixels": 3509,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002849814762041
+    },
+    {
+      "row": 228,
+      "reference_pixels": 4938,
+      "fraction_defined": true,
+      "affected_fraction": 0.10004050222762252
+    },
+    {
+      "row": 229,
+      "reference_pixels": 2838,
+      "fraction_defined": true,
+      "affected_fraction": 0.10007047216349542
+    },
+    {
+      "row": 230,
+      "reference_pixels": 5598,
+      "fraction_defined": true,
+      "affected_fraction": 0.10003572704537335
+    },
+    {
+      "row": 231,
+      "reference_pixels": 5078,
+      "fraction_defined": true,
+      "affected_fraction": 0.10003938558487593
+    },
+    {
+      "row": 232,
+      "reference_pixels": 5944,
+      "fraction_defined": true,
+      "affected_fraction": 0.09993270524899057
+    },
+    {
+      "row": 233,
+      "reference_pixels": 4296,
+      "fraction_defined": true,
+      "affected_fraction": 0.10009310986964619
+    },
+    {
+      "row": 234,
+      "reference_pixels": 815,
+      "fraction_defined": true,
+      "affected_fraction": 0.10061349693251534
+    },
+    {
+      "row": 235,
+      "reference_pixels": 2615,
+      "fraction_defined": true,
+      "affected_fraction": 0.10019120458891013
+    },
+    {
+      "row": 236,
+      "reference_pixels": 9095,
+      "fraction_defined": true,
+      "affected_fraction": 0.1000549752611325
+    },
+    {
+      "row": 237,
+      "reference_pixels": 7705,
+      "fraction_defined": true,
+      "affected_fraction": 0.099935107073329
+    },
+    {
+      "row": 238,
+      "reference_pixels": 7965,
+      "fraction_defined": true,
+      "affected_fraction": 0.09993722536095417
+    },
+    {
+      "row": 239,
+      "reference_pixels": 4219,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002370229912301
+    },
+    {
+      "row": 240,
+      "reference_pixels": 7797,
+      "fraction_defined": true,
+      "affected_fraction": 0.1000384763370527
+    },
+    {
+      "row": 241,
+      "reference_pixels": 4721,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997881804702394
+    },
+    {
+      "row": 272,
+      "reference_pixels": 12769,
+      "fraction_defined": true,
+      "affected_fraction": 0.10000783146683374
+    },
+    {
+      "row": 273,
+      "reference_pixels": 12302,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998374248089742
+    },
+    {
+      "row": 274,
+      "reference_pixels": 11991,
+      "fraction_defined": true,
+      "affected_fraction": 0.09999166041197564
+    },
+    {
+      "row": 275,
+      "reference_pixels": 10576,
+      "fraction_defined": true,
+      "affected_fraction": 0.10003782148260212
+    },
+    {
+      "row": 276,
+      "reference_pixels": 13096,
+      "fraction_defined": true,
+      "affected_fraction": 0.10003054367745877
+    },
+    {
+      "row": 277,
+      "reference_pixels": 14218,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001406667604446
+    },
+    {
+      "row": 278,
+      "reference_pixels": 22833,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998686112206018
+    },
+    {
+      "row": 279,
+      "reference_pixels": 21805,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997706947947718
+    },
+    {
+      "row": 280,
+      "reference_pixels": 18398,
+      "fraction_defined": true,
+      "affected_fraction": 0.1000108707468203
+    },
+    {
+      "row": 281,
+      "reference_pixels": 16460,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 282,
+      "reference_pixels": 20811,
+      "fraction_defined": true,
+      "affected_fraction": 0.09999519484887799
+    },
+    {
+      "row": 283,
+      "reference_pixels": 21113,
+      "fraction_defined": true,
+      "affected_fraction": 0.0999857907450386
+    },
+    {
+      "row": 284,
+      "reference_pixels": 5366,
+      "fraction_defined": true,
+      "affected_fraction": 0.10007454342154305
+    },
+    {
+      "row": 285,
+      "reference_pixels": 4961,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997984277363435
+    },
+    {
+      "row": 286,
+      "reference_pixels": 4572,
+      "fraction_defined": true,
+      "affected_fraction": 0.0999562554680665
+    },
+    {
+      "row": 287,
+      "reference_pixels": 3936,
+      "fraction_defined": true,
+      "affected_fraction": 0.10010162601626016
+    },
+    {
+      "row": 288,
+      "reference_pixels": 4559,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002193463478833
+    },
+    {
+      "row": 289,
+      "reference_pixels": 4952,
+      "fraction_defined": true,
+      "affected_fraction": 0.09995961227786752
+    },
+    {
+      "row": 290,
+      "reference_pixels": 5429,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001841959845276
+    },
+    {
+      "row": 291,
+      "reference_pixels": 5421,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998155321896329
+    },
+    {
+      "row": 292,
+      "reference_pixels": 6172,
+      "fraction_defined": true,
+      "affected_fraction": 0.09996759559300065
+    },
+    {
+      "row": 293,
+      "reference_pixels": 5411,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998151912770283
+    },
+    {
+      "row": 294,
+      "reference_pixels": 6674,
+      "fraction_defined": true,
+      "affected_fraction": 0.09994006592747977
+    },
+    {
+      "row": 295,
+      "reference_pixels": 6562,
+      "fraction_defined": true,
+      "affected_fraction": 0.09996952148735141
+    },
+    {
+      "row": 296,
+      "reference_pixels": 7989,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001251721116536
+    },
+    {
+      "row": 297,
+      "reference_pixels": 7781,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998714818146767
+    },
+    {
+      "row": 298,
+      "reference_pixels": 8581,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998834634657966
+    },
+    {
+      "row": 299,
+      "reference_pixels": 7752,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997420020639834
+    },
+    {
+      "row": 300,
+      "reference_pixels": 9027,
+      "fraction_defined": true,
+      "affected_fraction": 0.10003323363243602
+    },
+    {
+      "row": 301,
+      "reference_pixels": 9008,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002220248667851
+    },
+    {
+      "row": 332,
+      "reference_pixels": 9873,
+      "fraction_defined": true,
+      "affected_fraction": 0.09996961409905804
+    },
+    {
+      "row": 333,
+      "reference_pixels": 10939,
+      "fraction_defined": true,
+      "affected_fraction": 0.10000914160343724
+    },
+    {
+      "row": 334,
+      "reference_pixels": 12815,
+      "fraction_defined": true,
+      "affected_fraction": 0.1000390167772142
+    },
+    {
+      "row": 335,
+      "reference_pixels": 7705,
+      "fraction_defined": true,
+      "affected_fraction": 0.099935107073329
+    },
+    {
+      "row": 336,
+      "reference_pixels": 9461,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998943029278089
+    },
+    {
+      "row": 337,
+      "reference_pixels": 10702,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998131190431694
+    },
+    {
+      "row": 338,
+      "reference_pixels": 15400,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 339,
+      "reference_pixels": 17664,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997735507246377
+    },
+    {
+      "row": 340,
+      "reference_pixels": 18972,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998945814885093
+    },
+    {
+      "row": 341,
+      "reference_pixels": 10178,
+      "fraction_defined": true,
+      "affected_fraction": 0.1000196502259776
+    },
+    {
+      "row": 342,
+      "reference_pixels": 10452,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998086490623805
+    },
+    {
+      "row": 343,
+      "reference_pixels": 12105,
+      "fraction_defined": true,
+      "affected_fraction": 0.09995869475423379
+    },
+    {
+      "row": 344,
+      "reference_pixels": 3399,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002942041776994
+    },
+    {
+      "row": 345,
+      "reference_pixels": 3774,
+      "fraction_defined": true,
+      "affected_fraction": 0.09989401165871754
+    },
+    {
+      "row": 346,
+      "reference_pixels": 3924,
+      "fraction_defined": true,
+      "affected_fraction": 0.0998980632008155
+    },
+    {
+      "row": 347,
+      "reference_pixels": 3846,
+      "fraction_defined": true,
+      "affected_fraction": 0.1001040041601664
+    },
+    {
+      "row": 348,
+      "reference_pixels": 3400,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 349,
+      "reference_pixels": 2653,
+      "fraction_defined": true,
+      "affected_fraction": 0.0998869204673954
+    },
+    {
+      "row": 350,
+      "reference_pixels": 5531,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998192008678358
+    },
+    {
+      "row": 351,
+      "reference_pixels": 5657,
+      "fraction_defined": true,
+      "affected_fraction": 0.10005303164221319
+    },
+    {
+      "row": 352,
+      "reference_pixels": 4984,
+      "fraction_defined": true,
+      "affected_fraction": 0.09991974317817015
+    },
+    {
+      "row": 353,
+      "reference_pixels": 2993,
+      "fraction_defined": true,
+      "affected_fraction": 0.09989976612094888
+    },
+    {
+      "row": 354,
+      "reference_pixels": 4393,
+      "fraction_defined": true,
+      "affected_fraction": 0.0999317095379012
+    },
+    {
+      "row": 355,
+      "reference_pixels": 5531,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998192008678358
+    },
+    {
+      "row": 356,
+      "reference_pixels": 7213,
+      "fraction_defined": true,
+      "affected_fraction": 0.09995840842922502
+    },
+    {
+      "row": 357,
+      "reference_pixels": 7151,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998601594182632
+    },
+    {
+      "row": 358,
+      "reference_pixels": 6218,
+      "fraction_defined": true,
+      "affected_fraction": 0.10003216468317787
+    },
+    {
+      "row": 359,
+      "reference_pixels": 4102,
+      "fraction_defined": true,
+      "affected_fraction": 0.09995124329595319
+    },
+    {
+      "row": 360,
+      "reference_pixels": 3093,
+      "fraction_defined": true,
+      "affected_fraction": 0.09990300678952474
+    },
+    {
+      "row": 361,
+      "reference_pixels": 6113,
+      "fraction_defined": true,
+      "affected_fraction": 0.09995092425977425
+    },
+    {
+      "row": 392,
+      "reference_pixels": 6998,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002857959416976
+    },
+    {
+      "row": 393,
+      "reference_pixels": 10062,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998012323593719
+    },
+    {
+      "row": 394,
+      "reference_pixels": 1330,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 395,
+      "reference_pixels": 6015,
+      "fraction_defined": true,
+      "affected_fraction": 0.1000831255195345
+    },
+    {
+      "row": 396,
+      "reference_pixels": 4874,
+      "fraction_defined": true,
+      "affected_fraction": 0.09991793188346328
+    },
+    {
+      "row": 397,
+      "reference_pixels": 10836,
+      "fraction_defined": true,
+      "affected_fraction": 0.10003691399040236
+    },
+    {
+      "row": 398,
+      "reference_pixels": 6442,
+      "fraction_defined": true,
+      "affected_fraction": 0.0999689537410742
+    },
+    {
+      "row": 399,
+      "reference_pixels": 18200,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 400,
+      "reference_pixels": 15561,
+      "fraction_defined": true,
+      "affected_fraction": 0.0999935736777842
+    },
+    {
+      "row": 401,
+      "reference_pixels": 9029,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001107542363495
+    },
+    {
+      "row": 402,
+      "reference_pixels": 5447,
+      "fraction_defined": true,
+      "affected_fraction": 0.10005507618872773
+    },
+    {
+      "row": 403,
+      "reference_pixels": 16341,
+      "fraction_defined": true,
+      "affected_fraction": 0.0999938804234747
+    },
+    {
+      "row": 404,
+      "reference_pixels": 1270,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 405,
+      "reference_pixels": 3539,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002825656965245
+    },
+    {
+      "row": 406,
+      "reference_pixels": 0,
+      "fraction_defined": false,
+      "affected_fraction": 0.0
+    },
+    {
+      "row": 407,
+      "reference_pixels": 1642,
+      "fraction_defined": true,
+      "affected_fraction": 0.09987819732034105
+    },
+    {
+      "row": 408,
+      "reference_pixels": 1542,
+      "fraction_defined": true,
+      "affected_fraction": 0.09987029831387809
+    },
+    {
+      "row": 409,
+      "reference_pixels": 2848,
+      "fraction_defined": true,
+      "affected_fraction": 0.10007022471910113
+    },
+    {
+      "row": 410,
+      "reference_pixels": 2631,
+      "fraction_defined": true,
+      "affected_fraction": 0.0999619916381604
+    },
+    {
+      "row": 411,
+      "reference_pixels": 5090,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 412,
+      "reference_pixels": 0,
+      "fraction_defined": false,
+      "affected_fraction": 0.0
+    },
+    {
+      "row": 413,
+      "reference_pixels": 2690,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 414,
+      "reference_pixels": 2006,
+      "fraction_defined": true,
+      "affected_fraction": 0.10019940179461616
+    },
+    {
+      "row": 415,
+      "reference_pixels": 3757,
+      "fraction_defined": true,
+      "affected_fraction": 0.10007985094490285
+    },
+    {
+      "row": 416,
+      "reference_pixels": 3293,
+      "fraction_defined": true,
+      "affected_fraction": 0.09990889766170664
+    },
+    {
+      "row": 417,
+      "reference_pixels": 6644,
+      "fraction_defined": true,
+      "affected_fraction": 0.09993979530403371
+    },
+    {
+      "row": 418,
+      "reference_pixels": 2234,
+      "fraction_defined": true,
+      "affected_fraction": 0.09982094897045658
+    },
+    {
+      "row": 419,
+      "reference_pixels": 4725,
+      "fraction_defined": true,
+      "affected_fraction": 0.0998941798941799
+    },
+    {
+      "row": 420,
+      "reference_pixels": 3296,
+      "fraction_defined": true,
+      "affected_fraction": 0.10012135922330097
+    },
+    {
+      "row": 421,
+      "reference_pixels": 5810,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 452,
+      "reference_pixels": 16351,
+      "fraction_defined": true,
+      "affected_fraction": 0.09999388416610605
+    },
+    {
+      "row": 453,
+      "reference_pixels": 17261,
+      "fraction_defined": true,
+      "affected_fraction": 0.09999420659289729
+    },
+    {
+      "row": 454,
+      "reference_pixels": 14478,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001381406271584
+    },
+    {
+      "row": 455,
+      "reference_pixels": 14359,
+      "fraction_defined": true,
+      "affected_fraction": 0.10000696427327808
+    },
+    {
+      "row": 456,
+      "reference_pixels": 11875,
+      "fraction_defined": true,
+      "affected_fraction": 0.10004210526315789
+    },
+    {
+      "row": 457,
+      "reference_pixels": 13334,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997000149992501
+    },
+    {
+      "row": 458,
+      "reference_pixels": 25036,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001597699312989
+    },
+    {
+      "row": 459,
+      "reference_pixels": 24923,
+      "fraction_defined": true,
+      "affected_fraction": 0.0999879629258115
+    },
+    {
+      "row": 460,
+      "reference_pixels": 21041,
+      "fraction_defined": true,
+      "affected_fraction": 0.09999524737417423
+    },
+    {
+      "row": 461,
+      "reference_pixels": 18002,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998889012331963
+    },
+    {
+      "row": 462,
+      "reference_pixels": 23707,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001265449023496
+    },
+    {
+      "row": 463,
+      "reference_pixels": 28952,
+      "fraction_defined": true,
+      "affected_fraction": 0.09999309201436861
+    },
+    {
+      "row": 464,
+      "reference_pixels": 6287,
+      "fraction_defined": true,
+      "affected_fraction": 0.10004771751232702
+    },
+    {
+      "row": 465,
+      "reference_pixels": 6114,
+      "fraction_defined": true,
+      "affected_fraction": 0.09993457638207393
+    },
+    {
+      "row": 466,
+      "reference_pixels": 5720,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 467,
+      "reference_pixels": 5777,
+      "fraction_defined": true,
+      "affected_fraction": 0.10005193006750909
+    },
+    {
+      "row": 468,
+      "reference_pixels": 4362,
+      "fraction_defined": true,
+      "affected_fraction": 0.09995414947271894
+    },
+    {
+      "row": 469,
+      "reference_pixels": 6210,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 470,
+      "reference_pixels": 7803,
+      "fraction_defined": true,
+      "affected_fraction": 0.09996155324875049
+    },
+    {
+      "row": 471,
+      "reference_pixels": 8528,
+      "fraction_defined": true,
+      "affected_fraction": 0.1000234521575985
+    },
+    {
+      "row": 472,
+      "reference_pixels": 8073,
+      "fraction_defined": true,
+      "affected_fraction": 0.09996283909327387
+    },
+    {
+      "row": 473,
+      "reference_pixels": 7202,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997222993612885
+    },
+    {
+      "row": 474,
+      "reference_pixels": 4853,
+      "fraction_defined": true,
+      "affected_fraction": 0.09993818256748403
+    },
+    {
+      "row": 475,
+      "reference_pixels": 5984,
+      "fraction_defined": true,
+      "affected_fraction": 0.0999331550802139
+    },
+    {
+      "row": 476,
+      "reference_pixels": 10624,
+      "fraction_defined": true,
+      "affected_fraction": 0.09996234939759036
+    },
+    {
+      "row": 477,
+      "reference_pixels": 11263,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997336411258102
+    },
+    {
+      "row": 478,
+      "reference_pixels": 10302,
+      "fraction_defined": true,
+      "affected_fraction": 0.0999805862939235
+    },
+    {
+      "row": 479,
+      "reference_pixels": 10338,
+      "fraction_defined": true,
+      "affected_fraction": 0.1000193461017605
+    },
+    {
+      "row": 480,
+      "reference_pixels": 7897,
+      "fraction_defined": true,
+      "affected_fraction": 0.10003798910978853
+    },
+    {
+      "row": 481,
+      "reference_pixels": 10888,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001836884643645
+    },
+    {
+      "row": 512,
+      "reference_pixels": 10759,
+      "fraction_defined": true,
+      "affected_fraction": 0.10000929454410261
+    },
+    {
+      "row": 513,
+      "reference_pixels": 10329,
+      "fraction_defined": true,
+      "affected_fraction": 0.10000968147933004
+    },
+    {
+      "row": 514,
+      "reference_pixels": 11110,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 515,
+      "reference_pixels": 7817,
+      "fraction_defined": true,
+      "affected_fraction": 0.10003837789433287
+    },
+    {
+      "row": 516,
+      "reference_pixels": 8711,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998852026173803
+    },
+    {
+      "row": 517,
+      "reference_pixels": 10317,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002907822041292
+    },
+    {
+      "row": 518,
+      "reference_pixels": 0,
+      "fraction_defined": false,
+      "affected_fraction": 0.0
+    },
+    {
+      "row": 519,
+      "reference_pixels": 0,
+      "fraction_defined": false,
+      "affected_fraction": 0.0
+    },
+    {
+      "row": 520,
+      "reference_pixels": 21470,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 521,
+      "reference_pixels": 23701,
+      "fraction_defined": true,
+      "affected_fraction": 0.09999578076874394
+    },
+    {
+      "row": 522,
+      "reference_pixels": 9340,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 523,
+      "reference_pixels": 9913,
+      "fraction_defined": true,
+      "affected_fraction": 0.09996973670937154
+    },
+    {
+      "row": 524,
+      "reference_pixels": 4334,
+      "fraction_defined": true,
+      "affected_fraction": 0.09990770650669129
+    },
+    {
+      "row": 525,
+      "reference_pixels": 4186,
+      "fraction_defined": true,
+      "affected_fraction": 0.10009555661729574
+    },
+    {
+      "row": 526,
+      "reference_pixels": 4337,
+      "fraction_defined": true,
+      "affected_fraction": 0.10006917223887479
+    },
+    {
+      "row": 527,
+      "reference_pixels": 4341,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997696383321815
+    },
+    {
+      "row": 528,
+      "reference_pixels": 3579,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002794076557697
+    },
+    {
+      "row": 529,
+      "reference_pixels": 4076,
+      "fraction_defined": true,
+      "affected_fraction": 0.10009813542688911
+    },
+    {
+      "row": 530,
+      "reference_pixels": 5188,
+      "fraction_defined": true,
+      "affected_fraction": 0.10003855050115651
+    },
+    {
+      "row": 531,
+      "reference_pixels": 5491,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998178838098706
+    },
+    {
+      "row": 532,
+      "reference_pixels": 5691,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998242839571253
+    },
+    {
+      "row": 533,
+      "reference_pixels": 5508,
+      "fraction_defined": true,
+      "affected_fraction": 0.10003631082062454
+    },
+    {
+      "row": 534,
+      "reference_pixels": 4747,
+      "fraction_defined": true,
+      "affected_fraction": 0.10006319780914262
+    },
+    {
+      "row": 535,
+      "reference_pixels": 5449,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001835199119104
+    },
+    {
+      "row": 536,
+      "reference_pixels": 7422,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997305308542172
+    },
+    {
+      "row": 537,
+      "reference_pixels": 7738,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002584647195657
+    },
+    {
+      "row": 538,
+      "reference_pixels": 7312,
+      "fraction_defined": true,
+      "affected_fraction": 0.099972647702407
+    },
+    {
+      "row": 539,
+      "reference_pixels": 6554,
+      "fraction_defined": true,
+      "affected_fraction": 0.09993896856881294
+    },
+    {
+      "row": 540,
+      "reference_pixels": 6345,
+      "fraction_defined": true,
+      "affected_fraction": 0.09992119779353822
+    },
+    {
+      "row": 541,
+      "reference_pixels": 7604,
+      "fraction_defined": true,
+      "affected_fraction": 0.09994739610731194
+    },
+    {
+      "row": 572,
+      "reference_pixels": 7630,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 573,
+      "reference_pixels": 14622,
+      "fraction_defined": true,
+      "affected_fraction": 0.0999863219805772
+    },
+    {
+      "row": 574,
+      "reference_pixels": 13203,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997727789138833
+    },
+    {
+      "row": 575,
+      "reference_pixels": 11335,
+      "fraction_defined": true,
+      "affected_fraction": 0.10004411116012352
+    },
+    {
+      "row": 576,
+      "reference_pixels": 10992,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998180494905386
+    },
+    {
+      "row": 577,
+      "reference_pixels": 13367,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002244333059027
+    },
+    {
+      "row": 578,
+      "reference_pixels": 20554,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998053906782135
+    },
+    {
+      "row": 579,
+      "reference_pixels": 22397,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001339465106934
+    },
+    {
+      "row": 580,
+      "reference_pixels": 19548,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001023122570084
+    },
+    {
+      "row": 581,
+      "reference_pixels": 17416,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002296738631143
+    },
+    {
+      "row": 582,
+      "reference_pixels": 17961,
+      "fraction_defined": true,
+      "affected_fraction": 0.09999443238127054
+    },
+    {
+      "row": 583,
+      "reference_pixels": 22341,
+      "fraction_defined": true,
+      "affected_fraction": 0.0999955239246229
+    },
+    {
+      "row": 584,
+      "reference_pixels": 0,
+      "fraction_defined": false,
+      "affected_fraction": 0.0
+    },
+    {
+      "row": 585,
+      "reference_pixels": 4588,
+      "fraction_defined": true,
+      "affected_fraction": 0.10004359197907585
+    },
+    {
+      "row": 586,
+      "reference_pixels": 4506,
+      "fraction_defined": true,
+      "affected_fraction": 0.10008877052818464
+    },
+    {
+      "row": 587,
+      "reference_pixels": 4179,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002392916965781
+    },
+    {
+      "row": 588,
+      "reference_pixels": 4378,
+      "fraction_defined": true,
+      "affected_fraction": 0.10004568296025583
+    },
+    {
+      "row": 589,
+      "reference_pixels": 4447,
+      "fraction_defined": true,
+      "affected_fraction": 0.10006746120980436
+    },
+    {
+      "row": 590,
+      "reference_pixels": 6297,
+      "fraction_defined": true,
+      "affected_fraction": 0.10004764173415913
+    },
+    {
+      "row": 591,
+      "reference_pixels": 6029,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001658649859015
+    },
+    {
+      "row": 592,
+      "reference_pixels": 6802,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997059688326963
+    },
+    {
+      "row": 593,
+      "reference_pixels": 6003,
+      "fraction_defined": true,
+      "affected_fraction": 0.09995002498750624
+    },
+    {
+      "row": 594,
+      "reference_pixels": 7118,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002809778027535
+    },
+    {
+      "row": 595,
+      "reference_pixels": 7182,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997215260373155
+    },
+    {
+      "row": 596,
+      "reference_pixels": 8687,
+      "fraction_defined": true,
+      "affected_fraction": 0.10003453436168988
+    },
+    {
+      "row": 597,
+      "reference_pixels": 9054,
+      "fraction_defined": true,
+      "affected_fraction": 0.09995582063176496
+    },
+    {
+      "row": 598,
+      "reference_pixels": 4359,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002294104152329
+    },
+    {
+      "row": 599,
+      "reference_pixels": 8014,
+      "fraction_defined": true,
+      "affected_fraction": 0.0999500873471425
+    },
+    {
+      "row": 600,
+      "reference_pixels": 7969,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001254862592546
+    },
+    {
+      "row": 601,
+      "reference_pixels": 8504,
+      "fraction_defined": true,
+      "affected_fraction": 0.09995296331138288
+    },
+    {
+      "row": 632,
+      "reference_pixels": 12722,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998427920138343
+    },
+    {
+      "row": 633,
+      "reference_pixels": 13429,
+      "fraction_defined": true,
+      "affected_fraction": 0.10000744657085413
+    },
+    {
+      "row": 634,
+      "reference_pixels": 11005,
+      "fraction_defined": true,
+      "affected_fraction": 0.09995456610631531
+    },
+    {
+      "row": 635,
+      "reference_pixels": 10478,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001908761213972
+    },
+    {
+      "row": 636,
+      "reference_pixels": 9809,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001019471913548
+    },
+    {
+      "row": 637,
+      "reference_pixels": 10436,
+      "fraction_defined": true,
+      "affected_fraction": 0.1000383288616328
+    },
+    {
+      "row": 638,
+      "reference_pixels": 20833,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998559976959631
+    },
+    {
+      "row": 639,
+      "reference_pixels": 22229,
+      "fraction_defined": true,
+      "affected_fraction": 0.10000449862791848
+    },
+    {
+      "row": 640,
+      "reference_pixels": 20762,
+      "fraction_defined": true,
+      "affected_fraction": 0.09999036701666505
+    },
+    {
+      "row": 641,
+      "reference_pixels": 19732,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998986418001217
+    },
+    {
+      "row": 642,
+      "reference_pixels": 13622,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998531786815446
+    },
+    {
+      "row": 643,
+      "reference_pixels": 17095,
+      "fraction_defined": true,
+      "affected_fraction": 0.1000292483182217
+    },
+    {
+      "row": 644,
+      "reference_pixels": 4430,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 645,
+      "reference_pixels": 4663,
+      "fraction_defined": true,
+      "affected_fraction": 0.09993566373579241
+    },
+    {
+      "row": 646,
+      "reference_pixels": 3441,
+      "fraction_defined": true,
+      "affected_fraction": 0.0999709386806161
+    },
+    {
+      "row": 647,
+      "reference_pixels": 3237,
+      "fraction_defined": true,
+      "affected_fraction": 0.10009267840593142
+    },
+    {
+      "row": 648,
+      "reference_pixels": 3358,
+      "fraction_defined": true,
+      "affected_fraction": 0.10005955926146516
+    },
+    {
+      "row": 649,
+      "reference_pixels": 3612,
+      "fraction_defined": true,
+      "affected_fraction": 0.09994462901439645
+    },
+    {
+      "row": 650,
+      "reference_pixels": 5097,
+      "fraction_defined": true,
+      "affected_fraction": 0.10005885815185403
+    },
+    {
+      "row": 651,
+      "reference_pixels": 5516,
+      "fraction_defined": true,
+      "affected_fraction": 0.10007251631617115
+    },
+    {
+      "row": 652,
+      "reference_pixels": 5655,
+      "fraction_defined": true,
+      "affected_fraction": 0.10008841732979663
+    },
+    {
+      "row": 653,
+      "reference_pixels": 5304,
+      "fraction_defined": true,
+      "affected_fraction": 0.09992458521870287
+    },
+    {
+      "row": 654,
+      "reference_pixels": 3702,
+      "fraction_defined": true,
+      "affected_fraction": 0.09994597514856834
+    },
+    {
+      "row": 655,
+      "reference_pixels": 4482,
+      "fraction_defined": true,
+      "affected_fraction": 0.0999553770638108
+    },
+    {
+      "row": 656,
+      "reference_pixels": 5998,
+      "fraction_defined": true,
+      "affected_fraction": 0.10003334444814939
+    },
+    {
+      "row": 657,
+      "reference_pixels": 6690,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 658,
+      "reference_pixels": 7176,
+      "fraction_defined": true,
+      "affected_fraction": 0.10005574136008918
+    },
+    {
+      "row": 659,
+      "reference_pixels": 1598,
+      "fraction_defined": true,
+      "affected_fraction": 0.10012515644555695
+    },
+    {
+      "row": 660,
+      "reference_pixels": 7456,
+      "fraction_defined": true,
+      "affected_fraction": 0.10005364806866952
+    },
+    {
+      "row": 661,
+      "reference_pixels": 8066,
+      "fraction_defined": true,
+      "affected_fraction": 0.10004959087527895
+    },
+    {
+      "row": 692,
+      "reference_pixels": 14844,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997305308542172
+    },
+    {
+      "row": 693,
+      "reference_pixels": 15110,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 694,
+      "reference_pixels": 15228,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001313370107696
+    },
+    {
+      "row": 695,
+      "reference_pixels": 14329,
+      "fraction_defined": true,
+      "affected_fraction": 0.10000697885407216
+    },
+    {
+      "row": 696,
+      "reference_pixels": 10227,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002933411557642
+    },
+    {
+      "row": 697,
+      "reference_pixels": 1652,
+      "fraction_defined": true,
+      "affected_fraction": 0.09987893462469734
+    },
+    {
+      "row": 698,
+      "reference_pixels": 26608,
+      "fraction_defined": true,
+      "affected_fraction": 0.10000751653638004
+    },
+    {
+      "row": 699,
+      "reference_pixels": 26891,
+      "fraction_defined": true,
+      "affected_fraction": 0.09999628128370086
+    },
+    {
+      "row": 700,
+      "reference_pixels": 21713,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998618339243771
+    },
+    {
+      "row": 701,
+      "reference_pixels": 5348,
+      "fraction_defined": true,
+      "affected_fraction": 0.10003739715781601
+    },
+    {
+      "row": 702,
+      "reference_pixels": 13001,
+      "fraction_defined": true,
+      "affected_fraction": 0.09999230828397816
+    },
+    {
+      "row": 703,
+      "reference_pixels": 20837,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001439746604597
+    },
+    {
+      "row": 704,
+      "reference_pixels": 5253,
+      "fraction_defined": true,
+      "affected_fraction": 0.09994288977727013
+    },
+    {
+      "row": 705,
+      "reference_pixels": 5682,
+      "fraction_defined": true,
+      "affected_fraction": 0.09996480112636395
+    },
+    {
+      "row": 706,
+      "reference_pixels": 5745,
+      "fraction_defined": true,
+      "affected_fraction": 0.0999129677980853
+    },
+    {
+      "row": 707,
+      "reference_pixels": 5330,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 708,
+      "reference_pixels": 4229,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002364625206905
+    },
+    {
+      "row": 709,
+      "reference_pixels": 5853,
+      "fraction_defined": true,
+      "affected_fraction": 0.0999487442337263
+    },
+    {
+      "row": 710,
+      "reference_pixels": 6686,
+      "fraction_defined": true,
+      "affected_fraction": 0.1000598265031409
+    },
+    {
+      "row": 711,
+      "reference_pixels": 7119,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001404691670178
+    },
+    {
+      "row": 712,
+      "reference_pixels": 7070,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 713,
+      "reference_pixels": 6774,
+      "fraction_defined": true,
+      "affected_fraction": 0.09994095069382934
+    },
+    {
+      "row": 714,
+      "reference_pixels": 6519,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001533977603927
+    },
+    {
+      "row": 715,
+      "reference_pixels": 7231,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998617065412806
+    },
+    {
+      "row": 716,
+      "reference_pixels": 9139,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001094211620527
+    },
+    {
+      "row": 717,
+      "reference_pixels": 9875,
+      "fraction_defined": true,
+      "affected_fraction": 0.1000506329113924
+    },
+    {
+      "row": 718,
+      "reference_pixels": 1881,
+      "fraction_defined": true,
+      "affected_fraction": 0.09994683678894205
+    },
+    {
+      "row": 719,
+      "reference_pixels": 9622,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997921430056121
+    },
+    {
+      "row": 720,
+      "reference_pixels": 7458,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002681684097613
+    },
+    {
+      "row": 721,
+      "reference_pixels": 8516,
+      "fraction_defined": true,
+      "affected_fraction": 0.10004697040864255
+    },
+    {
+      "row": 752,
+      "reference_pixels": 12276,
+      "fraction_defined": true,
+      "affected_fraction": 0.10003258390355164
+    },
+    {
+      "row": 753,
+      "reference_pixels": 11474,
+      "fraction_defined": true,
+      "affected_fraction": 0.09996513857416768
+    },
+    {
+      "row": 754,
+      "reference_pixels": 12893,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997673155976111
+    },
+    {
+      "row": 755,
+      "reference_pixels": 13984,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997139588100687
+    },
+    {
+      "row": 756,
+      "reference_pixels": 10543,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997154510101489
+    },
+    {
+      "row": 757,
+      "reference_pixels": 31,
+      "fraction_defined": true,
+      "affected_fraction": 0.0967741935483871
+    },
+    {
+      "row": 758,
+      "reference_pixels": 24257,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001236756400214
+    },
+    {
+      "row": 759,
+      "reference_pixels": 21983,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998635309102488
+    },
+    {
+      "row": 760,
+      "reference_pixels": 19956,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002004409701343
+    },
+    {
+      "row": 761,
+      "reference_pixels": 22245,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997752303888514
+    },
+    {
+      "row": 762,
+      "reference_pixels": 21943,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998632821400902
+    },
+    {
+      "row": 763,
+      "reference_pixels": 17046,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002346591575736
+    },
+    {
+      "row": 764,
+      "reference_pixels": 4931,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997972013790306
+    },
+    {
+      "row": 765,
+      "reference_pixels": 4505,
+      "fraction_defined": true,
+      "affected_fraction": 0.09988901220865705
+    },
+    {
+      "row": 766,
+      "reference_pixels": 4598,
+      "fraction_defined": true,
+      "affected_fraction": 0.10004349717268378
+    },
+    {
+      "row": 767,
+      "reference_pixels": 4648,
+      "fraction_defined": true,
+      "affected_fraction": 0.10004302925989673
+    },
+    {
+      "row": 768,
+      "reference_pixels": 3787,
+      "fraction_defined": true,
+      "affected_fraction": 0.10007921837866385
+    },
+    {
+      "row": 769,
+      "reference_pixels": 125,
+      "fraction_defined": true,
+      "affected_fraction": 0.096
+    },
+    {
+      "row": 770,
+      "reference_pixels": 5993,
+      "fraction_defined": true,
+      "affected_fraction": 0.09994994159853161
+    },
+    {
+      "row": 771,
+      "reference_pixels": 5792,
+      "fraction_defined": true,
+      "affected_fraction": 0.09996546961325967
+    },
+    {
+      "row": 772,
+      "reference_pixels": 6391,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998435299640118
+    },
+    {
+      "row": 773,
+      "reference_pixels": 6823,
+      "fraction_defined": true,
+      "affected_fraction": 0.09995603107137623
+    },
+    {
+      "row": 774,
+      "reference_pixels": 6096,
+      "fraction_defined": true,
+      "affected_fraction": 0.10006561679790026
+    },
+    {
+      "row": 775,
+      "reference_pixels": 4826,
+      "fraction_defined": true,
+      "affected_fraction": 0.10008288437629506
+    },
+    {
+      "row": 776,
+      "reference_pixels": 9069,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001102657404344
+    },
+    {
+      "row": 777,
+      "reference_pixels": 8379,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001193459840077
+    },
+    {
+      "row": 778,
+      "reference_pixels": 8659,
+      "fraction_defined": true,
+      "affected_fraction": 0.1000115486776764
+    },
+    {
+      "row": 779,
+      "reference_pixels": 9152,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997814685314685
+    },
+    {
+      "row": 780,
+      "reference_pixels": 8700,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 781,
+      "reference_pixels": 7360,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 812,
+      "reference_pixels": 9741,
+      "fraction_defined": true,
+      "affected_fraction": 0.0999897341135407
+    },
+    {
+      "row": 813,
+      "reference_pixels": 9622,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997921430056121
+    },
+    {
+      "row": 814,
+      "reference_pixels": 9458,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002114611968704
+    },
+    {
+      "row": 815,
+      "reference_pixels": 6143,
+      "fraction_defined": true,
+      "affected_fraction": 0.09995116392642031
+    },
+    {
+      "row": 816,
+      "reference_pixels": 9342,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997859130807107
+    },
+    {
+      "row": 817,
+      "reference_pixels": 9248,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002162629757785
+    },
+    {
+      "row": 818,
+      "reference_pixels": 20360,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 819,
+      "reference_pixels": 18810,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 820,
+      "reference_pixels": 18917,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001585875138765
+    },
+    {
+      "row": 821,
+      "reference_pixels": 13826,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002893099956603
+    },
+    {
+      "row": 822,
+      "reference_pixels": 16550,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 823,
+      "reference_pixels": 18533,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998381265850105
+    },
+    {
+      "row": 824,
+      "reference_pixels": 2838,
+      "fraction_defined": true,
+      "affected_fraction": 0.10007047216349542
+    },
+    {
+      "row": 825,
+      "reference_pixels": 2247,
+      "fraction_defined": true,
+      "affected_fraction": 0.10013351134846461
+    },
+    {
+      "row": 826,
+      "reference_pixels": 3487,
+      "fraction_defined": true,
+      "affected_fraction": 0.10008603383997705
+    },
+    {
+      "row": 827,
+      "reference_pixels": 2442,
+      "fraction_defined": true,
+      "affected_fraction": 0.09991809991809991
+    },
+    {
+      "row": 828,
+      "reference_pixels": 2552,
+      "fraction_defined": true,
+      "affected_fraction": 0.09992163009404388
+    },
+    {
+      "row": 829,
+      "reference_pixels": 2959,
+      "fraction_defined": true,
+      "affected_fraction": 0.10003379520108145
+    },
+    {
+      "row": 830,
+      "reference_pixels": 4015,
+      "fraction_defined": true,
+      "affected_fraction": 0.10012453300124532
+    },
+    {
+      "row": 831,
+      "reference_pixels": 3807,
+      "fraction_defined": true,
+      "affected_fraction": 0.10007880220646179
+    },
+    {
+      "row": 832,
+      "reference_pixels": 3389,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002950722927118
+    },
+    {
+      "row": 833,
+      "reference_pixels": 2825,
+      "fraction_defined": true,
+      "affected_fraction": 0.09982300884955753
+    },
+    {
+      "row": 834,
+      "reference_pixels": 3024,
+      "fraction_defined": true,
+      "affected_fraction": 0.09986772486772487
+    },
+    {
+      "row": 835,
+      "reference_pixels": 3670,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 836,
+      "reference_pixels": 6957,
+      "fraction_defined": true,
+      "affected_fraction": 0.10004312203536007
+    },
+    {
+      "row": 837,
+      "reference_pixels": 6749,
+      "fraction_defined": true,
+      "affected_fraction": 0.1000148170099274
+    },
+    {
+      "row": 838,
+      "reference_pixels": 5612,
+      "fraction_defined": true,
+      "affected_fraction": 0.09996436208125445
+    },
+    {
+      "row": 839,
+      "reference_pixels": 4993,
+      "fraction_defined": true,
+      "affected_fraction": 0.09993991588223512
+    },
+    {
+      "row": 840,
+      "reference_pixels": 5807,
+      "fraction_defined": true,
+      "affected_fraction": 0.10005166178749784
+    },
+    {
+      "row": 841,
+      "reference_pixels": 6938,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002882675122514
+    },
+    {
+      "row": 872,
+      "reference_pixels": 12964,
+      "fraction_defined": true,
+      "affected_fraction": 0.09996914532551682
+    },
+    {
+      "row": 873,
+      "reference_pixels": 12430,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 874,
+      "reference_pixels": 12145,
+      "fraction_defined": true,
+      "affected_fraction": 0.09995883079456566
+    },
+    {
+      "row": 875,
+      "reference_pixels": 11218,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001782848992691
+    },
+    {
+      "row": 876,
+      "reference_pixels": 1190,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 877,
+      "reference_pixels": 8912,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997755834829443
+    },
+    {
+      "row": 878,
+      "reference_pixels": 22125,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997740112994351
+    },
+    {
+      "row": 879,
+      "reference_pixels": 21626,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001849625450847
+    },
+    {
+      "row": 880,
+      "reference_pixels": 51,
+      "fraction_defined": true,
+      "affected_fraction": 0.09803921568627451
+    },
+    {
+      "row": 881,
+      "reference_pixels": 19444,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997942810121374
+    },
+    {
+      "row": 882,
+      "reference_pixels": 8207,
+      "fraction_defined": true,
+      "affected_fraction": 0.10003655416108201
+    },
+    {
+      "row": 883,
+      "reference_pixels": 20722,
+      "fraction_defined": true,
+      "affected_fraction": 0.099990348421967
+    },
+    {
+      "row": 884,
+      "reference_pixels": 2144,
+      "fraction_defined": true,
+      "affected_fraction": 0.09981343283582089
+    },
+    {
+      "row": 885,
+      "reference_pixels": 3094,
+      "fraction_defined": true,
+      "affected_fraction": 0.09987071751777635
+    },
+    {
+      "row": 886,
+      "reference_pixels": 4269,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002342468962286
+    },
+    {
+      "row": 887,
+      "reference_pixels": 4502,
+      "fraction_defined": true,
+      "affected_fraction": 0.09995557529986672
+    },
+    {
+      "row": 888,
+      "reference_pixels": 3659,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002732987154961
+    },
+    {
+      "row": 889,
+      "reference_pixels": 3963,
+      "fraction_defined": true,
+      "affected_fraction": 0.09992429977289932
+    },
+    {
+      "row": 890,
+      "reference_pixels": 5620,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 891,
+      "reference_pixels": 5369,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001862544235425
+    },
+    {
+      "row": 892,
+      "reference_pixels": 5954,
+      "fraction_defined": true,
+      "affected_fraction": 0.09993281827342963
+    },
+    {
+      "row": 893,
+      "reference_pixels": 5511,
+      "fraction_defined": true,
+      "affected_fraction": 0.09998185447287243
+    },
+    {
+      "row": 894,
+      "reference_pixels": 4550,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 895,
+      "reference_pixels": 4946,
+      "fraction_defined": true,
+      "affected_fraction": 0.10008087343307723
+    },
+    {
+      "row": 896,
+      "reference_pixels": 8530,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 897,
+      "reference_pixels": 8265,
+      "fraction_defined": true,
+      "affected_fraction": 0.0999395039322444
+    },
+    {
+      "row": 898,
+      "reference_pixels": 7698,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002598077422707
+    },
+    {
+      "row": 899,
+      "reference_pixels": 7484,
+      "fraction_defined": true,
+      "affected_fraction": 0.09994655264564405
+    },
+    {
+      "row": 900,
+      "reference_pixels": 5828,
+      "fraction_defined": true,
+      "affected_fraction": 0.10003431708991077
+    },
+    {
+      "row": 901,
+      "reference_pixels": 6418,
+      "fraction_defined": true,
+      "affected_fraction": 0.1000311623558741
+    },
+    {
+      "row": 932,
+      "reference_pixels": 13798,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001449485432672
+    },
+    {
+      "row": 933,
+      "reference_pixels": 13627,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002201511704704
+    },
+    {
+      "row": 934,
+      "reference_pixels": 14071,
+      "fraction_defined": true,
+      "affected_fraction": 0.099992893184564
+    },
+    {
+      "row": 935,
+      "reference_pixels": 11905,
+      "fraction_defined": true,
+      "affected_fraction": 0.0999580008399832
+    },
+    {
+      "row": 936,
+      "reference_pixels": 12014,
+      "fraction_defined": true,
+      "affected_fraction": 0.09996670551023805
+    },
+    {
+      "row": 937,
+      "reference_pixels": 13561,
+      "fraction_defined": true,
+      "affected_fraction": 0.09999262591254332
+    },
+    {
+      "row": 938,
+      "reference_pixels": 22850,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 939,
+      "reference_pixels": 2135,
+      "fraction_defined": true,
+      "affected_fraction": 0.10023419203747072
+    },
+    {
+      "row": 940,
+      "reference_pixels": 2538,
+      "fraction_defined": true,
+      "affected_fraction": 0.10007880220646179
+    },
+    {
+      "row": 941,
+      "reference_pixels": 3670,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 942,
+      "reference_pixels": 21177,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001416631250885
+    },
+    {
+      "row": 943,
+      "reference_pixels": 22762,
+      "fraction_defined": true,
+      "affected_fraction": 0.09999121342588525
+    },
+    {
+      "row": 944,
+      "reference_pixels": 4568,
+      "fraction_defined": true,
+      "affected_fraction": 0.10004378283712785
+    },
+    {
+      "row": 945,
+      "reference_pixels": 410,
+      "fraction_defined": true,
+      "affected_fraction": 0.1
+    },
+    {
+      "row": 946,
+      "reference_pixels": 5435,
+      "fraction_defined": true,
+      "affected_fraction": 0.10009199632014719
+    },
+    {
+      "row": 947,
+      "reference_pixels": 4403,
+      "fraction_defined": true,
+      "affected_fraction": 0.09993186463774699
+    },
+    {
+      "row": 948,
+      "reference_pixels": 4395,
+      "fraction_defined": true,
+      "affected_fraction": 0.10011376564277588
+    },
+    {
+      "row": 949,
+      "reference_pixels": 516,
+      "fraction_defined": true,
+      "affected_fraction": 0.10077519379844961
+    },
+    {
+      "row": 950,
+      "reference_pixels": 6818,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002933411557642
+    },
+    {
+      "row": 951,
+      "reference_pixels": 441,
+      "fraction_defined": true,
+      "affected_fraction": 0.09977324263038549
+    },
+    {
+      "row": 952,
+      "reference_pixels": 7248,
+      "fraction_defined": true,
+      "affected_fraction": 0.10002759381898454
+    },
+    {
+      "row": 953,
+      "reference_pixels": 5979,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001672520488376
+    },
+    {
+      "row": 954,
+      "reference_pixels": 6032,
+      "fraction_defined": true,
+      "affected_fraction": 0.09996684350132626
+    },
+    {
+      "row": 955,
+      "reference_pixels": 6592,
+      "fraction_defined": true,
+      "affected_fraction": 0.09996966019417476
+    },
+    {
+      "row": 956,
+      "reference_pixels": 8025,
+      "fraction_defined": true,
+      "affected_fraction": 0.09993769470404984
+    },
+    {
+      "row": 957,
+      "reference_pixels": 8752,
+      "fraction_defined": true,
+      "affected_fraction": 0.09997714808043875
+    },
+    {
+      "row": 958,
+      "reference_pixels": 9269,
+      "fraction_defined": true,
+      "affected_fraction": 0.10001078865033984
+    },
+    {
+      "row": 959,
+      "reference_pixels": 8336,
+      "fraction_defined": true,
+      "affected_fraction": 0.10004798464491363
+    },
+    {
+      "row": 960,
+      "reference_pixels": 8006,
+      "fraction_defined": true,
+      "affected_fraction": 0.10004996252810393
+    },
+    {
+      "row": 961,
+      "reference_pixels": 615,
+      "fraction_defined": true,
+      "affected_fraction": 0.1008130081300813
+    }
+  ],
+  "gallery_reused": true
+}

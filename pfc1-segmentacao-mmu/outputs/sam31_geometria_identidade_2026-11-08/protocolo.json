@@ -1,0 +1,44 @@
+{
+  "registered_utc": "2026-11-08T18:10:10.044818+00:00",
+  "scope": "Validation development only, after repeated prior development; no test or clinical inference",
+  "hypothesis": "SAM3.1 external contour may stabilize outer polar sampling under occlusion. Native RGB U-Net support and original inner geometry unchanged; no holefilling, inferred texture or oracle clean counterpart.",
+  "sources_sha256": {
+    "avaliar_geometria_sam31_identidade.py": "905e7711aa570c77d40a80726ed05bfbad9dd07841a6dc7d87d3bf190955dadd",
+    "geometria_polar_sam31.py": "658026ad450f3ec0a52752e6213a2411bc0675e6529287198e277b1aeb6ba824",
+    "recorte_iris_sam31_alta_res.py": "6cb58c5f7d0c3095181124d0935fdfbfa4337ff2128e6534b88aaa80dd33d20f",
+    "textura_polar.py": "f977efb2101f2b23338041513908d4deb6eea51a2a730c8f71f0d20c19bcdadc",
+    "preparar_polar_vermelho.py": "8701d5925bf1b2ed35ace89ae0529be8160b1281be04250691387b793cd9de5b",
+    "avaliar_candidato_congelado.py": "6390747960dd339f39782cc2895999e6929d7a9e97111e70c143b6f4193db278",
+    "avaliar_robustez_reconhecimento.py": "e6d0b8d8eb78dc2e86ed3f73084cd9fb5d83d1afee27f73ca0ffbee1a5947f95"
+  },
+  "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+  "conditions": [
+    [
+      "original",
+      0
+    ],
+    [
+      "oclusao_superior",
+      10
+    ],
+    [
+      "oclusao_inferior",
+      10
+    ]
+  ],
+  "input_images": 962,
+  "queries": 482,
+  "gallery_images": 480,
+  "selection": "One fixed method; original ninth-component fusion weights,calibration,threshold unchanged. Eligible only cleanRank1/TAR no lower,cleanFMR<=1%,occludedFMR each no greater,meanjoint3 higher. All failures retained. Absolute all-conditionFMR<=1% separately.",
+  "fallback": "Any inconsistent SAM ellipse uses original geometry; invalid original texture remains failure. No quality-based exclusion.",
+  "official_versions_verified_2026_11_08": {
+    "code": "f1647e8d0c1d280991f4d1b7d974c2704537fe66",
+    "checkpoint": "daa63191845a41281374e725f4c9e51c7a824460",
+    "github": "https://api.github.com/repos/facebookresearch/sam3/commits/main",
+    "huggingface": "https://huggingface.co/api/models/facebook/sam3.1"
+  },
+  "versions": {
+    "torch": "2.14.1+cu130",
+    "numpy": "1.26.4"
+  }
+}

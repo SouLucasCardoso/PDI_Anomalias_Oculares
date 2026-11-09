@@ -1,0 +1,56 @@
+{
+  "frozen_utc": "2026-11-09T00:50:01.266066+00:00",
+  "selected_method": "components_0.005",
+  "spec": {
+    "relative_area": 0.005,
+    "opening_radius": 0
+  },
+  "algorithm_module": "contorno_componentes_iris",
+  "segmentation_gain": true,
+  "baseline": {
+    "original": 0.8846222579599891,
+    "oclusao_superior": 0.8441587613577454,
+    "oclusao_inferior": 0.7859197436578989
+  },
+  "results": {
+    "continuous": {
+      "original": 0.8846222579599891,
+      "oclusao_superior": 0.8441587613577454,
+      "oclusao_inferior": 0.7859197436578989
+    },
+    "components_0.001": {
+      "original": 0.8846222579599891,
+      "oclusao_superior": 0.8441587613577454,
+      "oclusao_inferior": 0.7859197436578989
+    },
+    "components_0.005": {
+      "original": 0.8846369529998821,
+      "oclusao_superior": 0.8441752470419434,
+      "oclusao_inferior": 0.7859334571929795
+    },
+    "components_0.01": {
+      "original": 0.8846369529998821,
+      "oclusao_superior": 0.8441752470419434,
+      "oclusao_inferior": 0.7859334571929795
+    },
+    "components_0.02": {
+      "original": 0.8846369529998821,
+      "oclusao_superior": 0.8441752470419434,
+      "oclusao_inferior": 0.7859334571929795
+    },
+    "opening1": {
+      "original": 0.8846334867953498,
+      "oclusao_superior": 0.8441711019752353,
+      "oclusao_inferior": 0.785865670304917
+    },
+    "components005_opening1": {
+      "original": 0.8846334867953498,
+      "oclusao_superior": 0.8441711019752353,
+      "oclusao_inferior": 0.785865670304917
+    }
+  },
+  "checkpoint_sha256": "2bcfc269ffc9562ca8cf0956998faf1e22641587cd60f7059b3cec3dd0f4093d",
+  "method_sha256": "7314c9a6fda995955980248b3eab7c9c64b9ba7d91b3383b6d0c58f3f6a7cf5f",
+  "identity_selection_performed": false,
+  "test_inference": false
+}

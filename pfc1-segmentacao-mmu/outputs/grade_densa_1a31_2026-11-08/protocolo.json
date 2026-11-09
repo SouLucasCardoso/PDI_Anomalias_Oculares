@@ -1,0 +1,284 @@
+{
+  "registered_utc": "2026-11-09T00:40:33.797782+00:00",
+  "schedule": [
+    [
+      "original",
+      0
+    ],
+    [
+      "oclusao_superior",
+      1
+    ],
+    [
+      "oclusao_inferior",
+      1
+    ],
+    [
+      "oclusao_superior",
+      2
+    ],
+    [
+      "oclusao_inferior",
+      2
+    ],
+    [
+      "oclusao_superior",
+      3
+    ],
+    [
+      "oclusao_inferior",
+      3
+    ],
+    [
+      "oclusao_superior",
+      4
+    ],
+    [
+      "oclusao_inferior",
+      4
+    ],
+    [
+      "oclusao_superior",
+      5
+    ],
+    [
+      "oclusao_inferior",
+      5
+    ],
+    [
+      "oclusao_superior",
+      6
+    ],
+    [
+      "oclusao_inferior",
+      6
+    ],
+    [
+      "oclusao_superior",
+      7
+    ],
+    [
+      "oclusao_inferior",
+      7
+    ],
+    [
+      "oclusao_superior",
+      8
+    ],
+    [
+      "oclusao_inferior",
+      8
+    ],
+    [
+      "oclusao_superior",
+      9
+    ],
+    [
+      "oclusao_inferior",
+      9
+    ],
+    [
+      "oclusao_superior",
+      10
+    ],
+    [
+      "oclusao_inferior",
+      10
+    ],
+    [
+      "oclusao_superior",
+      11
+    ],
+    [
+      "oclusao_inferior",
+      11
+    ],
+    [
+      "oclusao_superior",
+      12
+    ],
+    [
+      "oclusao_inferior",
+      12
+    ],
+    [
+      "oclusao_superior",
+      13
+    ],
+    [
+      "oclusao_inferior",
+      13
+    ],
+    [
+      "oclusao_superior",
+      14
+    ],
+    [
+      "oclusao_inferior",
+      14
+    ],
+    [
+      "oclusao_superior",
+      15
+    ],
+    [
+      "oclusao_inferior",
+      15
+    ],
+    [
+      "oclusao_superior",
+      16
+    ],
+    [
+      "oclusao_inferior",
+      16
+    ],
+    [
+      "oclusao_superior",
+      17
+    ],
+    [
+      "oclusao_inferior",
+      17
+    ],
+    [
+      "oclusao_superior",
+      18
+    ],
+    [
+      "oclusao_inferior",
+      18
+    ],
+    [
+      "oclusao_superior",
+      19
+    ],
+    [
+      "oclusao_inferior",
+      19
+    ],
+    [
+      "oclusao_superior",
+      20
+    ],
+    [
+      "oclusao_inferior",
+      20
+    ],
+    [
+      "oclusao_superior",
+      21
+    ],
+    [
+      "oclusao_inferior",
+      21
+    ],
+    [
+      "oclusao_superior",
+      22
+    ],
+    [
+      "oclusao_inferior",
+      22
+    ],
+    [
+      "oclusao_superior",
+      23
+    ],
+    [
+      "oclusao_inferior",
+      23
+    ],
+    [
+      "oclusao_superior",
+      24
+    ],
+    [
+      "oclusao_inferior",
+      24
+    ],
+    [
+      "oclusao_superior",
+      25
+    ],
+    [
+      "oclusao_inferior",
+      25
+    ],
+    [
+      "oclusao_superior",
+      26
+    ],
+    [
+      "oclusao_inferior",
+      26
+    ],
+    [
+      "oclusao_superior",
+      27
+    ],
+    [
+      "oclusao_inferior",
+      27
+    ],
+    [
+      "oclusao_superior",
+      28
+    ],
+    [
+      "oclusao_inferior",
+      28
+    ],
+    [
+      "oclusao_superior",
+      29
+    ],
+    [
+      "oclusao_inferior",
+      29
+    ],
+    [
+      "oclusao_superior",
+      30
+    ],
+    [
+      "oclusao_inferior",
+      30
+    ],
+    [
+      "oclusao_superior",
+      31
+    ],
+    [
+      "oclusao_inferior",
+      31
+    ]
+  ],
+  "scope": "Complete exploratory dense grid; no new model, threshold or fusion selection",
+  "source_sha256": {
+    "rodada_grade_densa_1a31.py": "11188f4ad5c74cc761ed378ca234c8fa189dbbe2c94e7514233736e1afcd62b0",
+    "ensaio_entrega_oclusoes.py": "6795733474ef4c9f23314772df802f2f6afcdbcfa6ef3689d11fea2ac0a0befe",
+    "avaliar_candidato_congelado.py": "6390747960dd339f39782cc2895999e6929d7a9e97111e70c143b6f4193db278",
+    "avaliar_robustez_reconhecimento.py": "e6d0b8d8eb78dc2e86ed3f73084cd9fb5d83d1afee27f73ca0ffbee1a5947f95",
+    "normalizar_consulta.py": "8e105dbdb11ba547420fdb171403bc4cebb07fd9358a1e59c22e37b0f0a8e3a6",
+    "textura_polar.py": "f977efb2101f2b23338041513908d4deb6eea51a2a730c8f71f0d20c19bcdadc",
+    "preparar_polar_vermelho.py": "8701d5925bf1b2ed35ace89ae0529be8160b1281be04250691387b793cd9de5b",
+    "normalizacao_eliptica.py": "370f61686ce7209b3e705b1dc9b2ffa55bb0eac0cf54911f1edc3d92d7aca72a",
+    "treinar_segmentacao_ubipr.py": "a427b82c9879a2320a5d6544c89f96806ab74b12566cd3237650c62c54123431"
+  },
+  "frozen_sha256": "d933686f045eab5d6578cfe4701578d9ca1eeaaff4069bcff8427a602546dbda",
+  "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+  "old_results_sha256": "a91b45f234422677b5c633c21c051e329625809a3ca0a4c1162a7be530a591d6",
+  "reuse": "13 audited same-environment reference conditions; compute missing50 with unchanged official evaluator",
+  "intervention": "Reference iris pixels only; gray128; exact rounded integer count; recompute mask and geometry; enrollment unchanged",
+  "population": "All486queries incl6undefinedarea,16same-sidecandidates;7290impostorpairs;fixedgallery",
+  "criteria": "Marginal90/90/1, joint separately; do not stop after a failure; do not infer universal or clinical minimum",
+  "versions": {
+    "python": "3.12.10",
+    "torch": "2.14.1+cu130",
+    "numpy": "1.26.4"
+  },
+  "stop_utc": "2026-11-09T02:45:00+00:00",
+  "resume_supported": true,
+  "automatic_model_replacement": false
+}

@@ -1,0 +1,1 @@
+Consolidação interrompida antes de gerar resultados: o verificador apontou para scores_finais.npz, mas o hash da auditoria se refere à cópia scores_historico_<condição>.npz. Caminho corrigido no novo ensaio; fontes e resultados originais permaneceram intactos.

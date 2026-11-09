@@ -1,0 +1,63 @@
+{
+  "registered_utc": "2026-11-08T17:29:31.182118+00:00",
+  "scope": "Train and validation only; repeatedly used validation, no blind confirmation, no clinical inference",
+  "sources_sha256": {
+    "treinar_reconhecedor_entrega.py": "0086ca2ee9418936499ca69be54ddd156263da25e045326a8b66d5bf4077f8fd",
+    "avaliar_candidato_congelado.py": "6390747960dd339f39782cc2895999e6929d7a9e97111e70c143b6f4193db278",
+    "avaliar_robustez_reconhecimento.py": "e6d0b8d8eb78dc2e86ed3f73084cd9fb5d83d1afee27f73ca0ffbee1a5947f95",
+    "reconhecedor_resnet50.py": "2416940a33a01b0d745a9bb6609f7f2e5ebbb16a77dfaab6635abab3eefe6b2f",
+    "treinar_identidade_iris.py": "a8f6dc53ace011c968774f9f3f494a085f0c14af2a9ab04853952553c580b0a5",
+    "treinar_segmentacao_ubipr.py": "a427b82c9879a2320a5d6544c89f96806ab74b12566cd3237650c62c54123431",
+    "rodada_reconhecedor_entrega.py": "f44354bf210f77a786338ab7a7f46b9fc8f17f9a652c49162d51e43e234cb4eb",
+    "validar_lateralidade_informada.py": "438c67e9f50e4a0bbcaf666e0ffaff59119f1b183b61442e698ede274bfb1247"
+  },
+  "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+  "initial_checkpoint_sha256": "6530b1227f271789ca7ad8a7d9011d2a9e9ee6fe71a7ce4079d2ed8a75b3388f",
+  "unet_sha256": "2bcfc269ffc9562ca8cf0956998faf1e22641587cd60f7059b3cec3dd0f4093d",
+  "architecture": "resnet50_gem3_256",
+  "trainable": "Only layer4,projection,366-class angular head. All other parameters and all BatchNorm running statistics frozen.",
+  "augmentation": "Native photograph iris-reference-only exact upper/lower occlusion, one independently drawn level1,5,10,20,30,31 per direction per training image; rerun frozen segmentation+geometry on altered image. Sampling50%clean25%upper25%lower; rotation5deg,brightness/contrast5%. No reconstruction or reference mask in extraction.",
+  "teacher": "Initial frozen encoder clean automatic training crop; distillation only during training",
+  "loss": "Angular CE margin0.3 scale30 +0.2 SupCon temperature0.1 +1.0 mean(1-cosine(student,clean teacher))",
+  "optimizer": "AdamW layer4 lr3e-6 projection/head2e-5,wd1e-4,cosine18epochs,clip5; BF16 encoder,FP32 losses;16eyesx4captures,4rounds balanced sessions",
+  "selection": "Epoch0 included. Full nine-component fusion; other8 components fixed fresh same-environment validation scores. Historical calibration and threshold fixed. Eligible only cleanRank1/TAR nondecrease, cleanFMR<=1%, occludedFMR each no greater than baseline, mean3conditionjoint strictly improves. Max meanjoint,tie worstjoint,tie meanRank1. Patience5 after epoch4. Absolute all-conditionFMR<=1% reported separately.",
+  "counts": {
+    "train_images": 7716,
+    "train_people": 183,
+    "train_eyes": 366,
+    "val_queries": 482
+  },
+  "levels": [
+    1,
+    5,
+    10,
+    20,
+    30,
+    31
+  ],
+  "conditions": [
+    [
+      "original",
+      0
+    ],
+    [
+      "oclusao_superior",
+      10
+    ],
+    [
+      "oclusao_inferior",
+      10
+    ]
+  ],
+  "epochs": 18,
+  "patience": 5,
+  "seed": 20261108,
+  "deadline_utc": "2026-11-09T02:00:00+00:00",
+  "secondary_analysis": "After fixed-threshold model selection only: compare epoch0 and selected with same max-of-three-validation-condition 1%FMR calibration rule; thresholds fixed across conditions; not used to select weights or assert blind performance.",
+  "reference_root": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\reconhecedor_contorno_2026-11-08",
+  "versions": {
+    "torch": "2.14.1+cu130",
+    "numpy": "1.26.4"
+  },
+  "automatic_replacement": false
+}

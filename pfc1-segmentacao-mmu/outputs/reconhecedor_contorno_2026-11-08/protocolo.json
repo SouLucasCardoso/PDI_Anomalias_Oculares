@@ -1,0 +1,31 @@
+{
+  "registered_utc": "2026-11-08T17:20:00.251281+00:00",
+  "sources_sha256": {
+    "rodada_reconhecedor_entrega.py": "f44354bf210f77a786338ab7a7f46b9fc8f17f9a652c49162d51e43e234cb4eb",
+    "avaliar_contorno_integrado.py": "86af74e9588d29b62523ac63c0593fa2e4fa2880034182e4560039380d7c1ab6",
+    "avaliar_candidato_congelado.py": "6390747960dd339f39782cc2895999e6929d7a9e97111e70c143b6f4193db278",
+    "avaliar_robustez_reconhecimento.py": "e6d0b8d8eb78dc2e86ed3f73084cd9fb5d83d1afee27f73ca0ffbee1a5947f95"
+  },
+  "conditions": [
+    [
+      "original",
+      0
+    ],
+    [
+      "oclusao_superior",
+      10
+    ],
+    [
+      "oclusao_inferior",
+      10
+    ]
+  ],
+  "modes": [
+    "nearest",
+    "continuous"
+  ],
+  "selection": "Preserve clean Rank1 and TAR, cleanFMR<=1%; mean joint across3 strictly higher and each occludedFMR<=fresh control; absolute release additionally all-conditionFMR<=1%. No test or clinical selection.",
+  "deadline_local": "2026-11-08T23:15:00-03:00",
+  "models_and_threshold": "Historical frozen, unchanged",
+  "scope": "Validation development, not blind confirmation"
+}

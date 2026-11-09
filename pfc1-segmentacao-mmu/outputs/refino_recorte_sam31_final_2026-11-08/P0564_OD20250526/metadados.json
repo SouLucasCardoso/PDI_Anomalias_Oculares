@@ -1,0 +1,198 @@
+{
+  "filename": "P0564_OD20250526.JPG",
+  "diagnosis_dataset_only": "Iris synechiae, Intraocular lens capture, Posterior capsular opacification",
+  "status": "refined",
+  "image_sha256": "1a6e59dffcba96c6590c6e51fae93fe8e8711fa182e1d1e68dc4bb4681ecf2b3",
+  "previous": {
+    "pixels": 618292,
+    "components": 1,
+    "components_ge_100px": 1
+  },
+  "localizer": {
+    "pixels": 618292,
+    "components": 1,
+    "components_ge_100px": 1
+  },
+  "new": {
+    "pixels": 982507,
+    "components": 1,
+    "components_ge_100px": 1
+  },
+  "details": {
+    "roi_xyxy": [
+      524,
+      127,
+      2817,
+      1984
+    ],
+    "points_xy_in_roi": [
+      [
+        1484.0,
+        1048.0
+      ],
+      [
+        1439.0,
+        1125.0
+      ],
+      [
+        1377.0,
+        1169.0
+      ],
+      [
+        1216.0,
+        1209.0
+      ],
+      [
+        1376.0,
+        1048.0
+      ],
+      [
+        1376.0,
+        715.0
+      ],
+      [
+        1505.0,
+        858.0
+      ],
+      [
+        1506.0,
+        919.0
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "automatic_pupil_seed": true,
+    "pupil_refinement": {
+      "status": "sam31_refined",
+      "seed_origin": "native_intensity_and_coarse_background_localizer",
+      "selected_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "model_quality_not_measured_iou": 2.140625,
+          "area_ratio_to_seed": 1.4229015469824293,
+          "inside_iris_fraction": 1.0,
+          "negative_iris_points_respected": true,
+          "eligible": true
+        },
+        {
+          "index": 1,
+          "model_quality_not_measured_iou": 1.3203125,
+          "area_ratio_to_seed": 3.215061592818946,
+          "inside_iris_fraction": 0.9997252594256437,
+          "negative_iris_points_respected": true,
+          "eligible": true
+        },
+        {
+          "index": 2,
+          "model_quality_not_measured_iou": 1.8984375,
+          "area_ratio_to_seed": 2.222319041252865,
+          "inside_iris_fraction": 1.0,
+          "negative_iris_points_respected": true,
+          "eligible": true
+        }
+      ],
+      "zoom_xyxy_in_roi": [
+        551,
+        236,
+        1602,
+        1396
+      ],
+      "points_xy_in_roi": [
+        [
+          1114.0,
+          904.0
+        ],
+        [
+          1489.0,
+          1072.0
+        ],
+        [
+          1415.0,
+          1150.0
+        ],
+        [
+          1377.0,
+          1169.0
+        ],
+        [
+          1239.0,
+          1207.0
+        ],
+        [
+          1376.0,
+          1072.0
+        ],
+        [
+          1376.0,
+          715.0
+        ],
+        [
+          1584.0,
+          864.0
+        ],
+        [
+          1601.0,
+          879.0
+        ]
+      ],
+      "point_labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "candidates": [
+      {
+        "index": 0,
+        "model_quality_not_measured_iou": 1.0859375,
+        "seed_coverage": 0.7518033550490707,
+        "area_ratio_to_seed": 1.0840913354854989,
+        "prompt_match": 1.0,
+        "eligible": true,
+        "selection_score": 1.261117835504907
+      },
+      {
+        "index": 1,
+        "model_quality_not_measured_iou": 1.59375,
+        "seed_coverage": 1.0,
+        "area_ratio_to_seed": 2.3591571619881866,
+        "prompt_match": 1.0,
+        "eligible": true,
+        "selection_score": 1.7937500000000002
+      },
+      {
+        "index": 2,
+        "model_quality_not_measured_iou": 2.328125,
+        "seed_coverage": 0.9901260245967924,
+        "area_ratio_to_seed": 1.78427668480265,
+        "prompt_match": 1.0,
+        "eligible": true,
+        "selection_score": 2.527137602459679
+      }
+    ],
+    "selected_index": 2,
+    "presence_logit": 32.5,
+    "manual_or_reference_prompts": false,
+    "morphological_hole_filling": false,
+    "forced_circle_or_ellipse": false,
+    "rgb_texture_modified": false,
+    "disconnected_objects_without_iris_points_removed": true
+  },
+  "native_mask_sha256": "9342cbf44942d0292164f90693d6e27107fe5ef494b3d7139a2c55075c98a020",
+  "crop_sha256": "f60ce0247cbe06a467ee52a1bb96cccd4c3978f768a80771b10d8f2d58933a2c"
+}

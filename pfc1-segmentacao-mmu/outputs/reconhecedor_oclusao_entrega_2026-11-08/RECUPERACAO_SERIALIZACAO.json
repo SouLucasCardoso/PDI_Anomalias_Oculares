@@ -1,0 +1,12 @@
+{
+  "utc": "2026-11-08T17:44:11.401480+00:00",
+  "reason": "Local checkpoint configuration contained torch.torch_version.TorchVersion metadata; weights_only rejected this known str subclass.",
+  "action": "Allowlist only TorchVersion to read own checkpoint; convert configuration through JSON to builtin types; verify every model/head tensor bitwise; preserve original checkpoint backup; recompute selected validation scores.",
+  "original_checkpoint_sha256": "1ee4ce4ec9b6819665a2d9630272a9f2bc2542c2fdde0d78fbfc69b469499cb5",
+  "portable_checkpoint_sha256": "4da0f65217b57a2dbca22c01a2005c2e10900c2f47ab53dace730c3497d4a979",
+  "backup_sha256": "1ee4ce4ec9b6819665a2d9630272a9f2bc2542c2fdde0d78fbfc69b469499cb5",
+  "all_model_and_head_tensors_bitwise_equal": true,
+  "training_repeated": false,
+  "selection_changed": false,
+  "source_sha256": "12cd0fb0aae771b267a39e02c2d086ec72c120adcd939f951549e1ba3d9a5b02"
+}

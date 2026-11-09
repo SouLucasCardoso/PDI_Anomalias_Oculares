@@ -54,6 +54,24 @@
 # Arrays derivados e caches numericos; os relatorios CSV/JSON permanecem revisaveis.
 **/outputs/**/*.npz
 **/manifesto.json
+# Novos painéis clínicos e documentos com fotografias permanecem locais.
+**/artigo/figuras_*/recortes_*.png
+**/artigo/historico/*.docx
+# Geometria e planos individuais derivados das imagens ficam nos caches locais.
+**/outputs/**/cache_*/
+**/outputs/**/inferencia/
+**/outputs/**/geometrias.json
+**/outputs/**/GEOMETRIAS.json
+**/outputs/**/ENTRADAS_CONCLUIDAS.json
+# Conclusões com métricas por fotografia: publicar RESUMO_PUBLICO.json derivado.
+**/outputs/contorno_continuo_2026-11-08/CONCLUIDO.json
+**/outputs/contorno_fragmentos_entrega_2026-11-08/CONCLUIDO.json
+**/outputs/contorno_multiescala_entrega_2026-11-08/CONCLUIDO.json
+**/outputs/refino_guiado_entrega_2026-11-08/CONCLUIDO.json
+**/outputs/refino_recorte_validacao*_2026-11-08/CONCLUIDO.json
+**/outputs/sam31_geometria_piloto_2026-11-08/CONCLUIDO.json
+**/outputs/sam31_matte_subpixel_2026-11-08/CONCLUIDO.json
+**/outputs/sam31_prompts_exteriores_2026-11-08/CONCLUIDO.json
 
 # Treinamentos descartáveis
 **/outputs/**/teste_local_5ep/

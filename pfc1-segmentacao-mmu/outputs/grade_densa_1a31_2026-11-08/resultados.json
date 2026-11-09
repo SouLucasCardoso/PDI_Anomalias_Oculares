@@ -1,0 +1,3530 @@
+[
+  {
+    "rates": {
+      "rank1": 0.911522633744856,
+      "tar": 0.9238683127572016,
+      "fnmr": 0.0761316872427984,
+      "far": 0.008641975308641974,
+      "eer_descriptive": 0.03888888888888889,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.9265150296183859,
+      "margin_mean_valid": 0.15008846887704874,
+      "joint": 0.8950617283950617
+    },
+    "counts": {
+      "correct": 443,
+      "accepted": 449,
+      "joint": 435,
+      "false_accepts": 63,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        84.79166666666667,
+        95.83333333333333
+      ],
+      "tar": [
+        86.25,
+        96.7479674796748
+      ],
+      "joint": [
+        82.92168209876543,
+        94.44444444444444
+      ],
+      "fmr": [
+        0.5138888888888888,
+        1.2777777777777777
+      ]
+    },
+    "passed": true,
+    "condition": "original",
+    "loss_percent": 0,
+    "reused": true,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\ensaio_oclusoes_2026-11-08\\inferencia\\confirmacao_congelada_test_2026-10-21",
+    "source_protocol_sha256": "1bca7f7db069db7543e58286ecb35e8aea4219419aaa05fc461d3a18d8c76475",
+    "actual_retained_min_mean_max": [
+      100.0,
+      100.0,
+      100.0
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "ed4f83d68339e601c668695c0d2c16881c5d4eef174dbe39c33a9a6a5988dad6"
+  },
+  {
+    "rates": {
+      "rank1": 0.9094650205761317,
+      "tar": 0.911522633744856,
+      "fnmr": 0.08847736625514402,
+      "far": 0.008916323731138546,
+      "eer_descriptive": 0.047325102880658436,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.9187977246136588,
+      "margin_mean_valid": 0.13761754298420528,
+      "joint": 0.8888888888888888
+    },
+    "counts": {
+      "correct": 442,
+      "accepted": 443,
+      "joint": 432,
+      "false_accepts": 65,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        84.16666666666667,
+        95.625
+      ],
+      "tar": [
+        83.7448559670782,
+        96.29629629629629
+      ],
+      "joint": [
+        81.875,
+        94.03292181069959
+      ],
+      "fmr": [
+        0.5277777777777778,
+        1.283068783068783
+      ]
+    },
+    "passed": true,
+    "condition": "oclusao_inferior",
+    "loss_percent": 1,
+    "reused": true,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\ensaio_oclusoes_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_1_2026-10-21",
+    "source_protocol_sha256": "4a09602985875a01fd3f33d95c2d943fdc8acba0124bb69a9d83c459819bfec3",
+    "actual_retained_min_mean_max": [
+      98.30508474576271,
+      98.998398222916,
+      99.16317991631799
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "02433d84c56d9795e28922895a7db506ad5effd1fd67fb641452b108d4547e1f"
+  },
+  {
+    "rates": {
+      "rank1": 0.8991769547325102,
+      "tar": 0.9218106995884774,
+      "fnmr": 0.07818930041152261,
+      "far": 0.008779149519890261,
+      "eer_descriptive": 0.03909465020576132,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.9252272114053365,
+      "margin_mean_valid": 0.14298934082708517,
+      "joint": 0.8847736625514403
+    },
+    "counts": {
+      "correct": 437,
+      "accepted": 448,
+      "joint": 430,
+      "false_accepts": 64,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        84.375,
+        94.44444444444444
+      ],
+      "tar": [
+        86.0082304526749,
+        96.875
+      ],
+      "joint": [
+        81.66666666666667,
+        93.90383638211381
+      ],
+      "fmr": [
+        0.5138888888888888,
+        1.2483281893004108
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 1,
+    "reused": true,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\ensaio_oclusoes_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_1_2026-10-21",
+    "source_protocol_sha256": "d619bdbfc0a3b12ad051a110553657d947b5698d5d4ca3b515123e690c75d568",
+    "actual_retained_min_mean_max": [
+      98.30508474576271,
+      98.998398222916,
+      99.16317991631799
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "c2936b98080620f825a331f7ea9be87592e245f8e2e9ec3620414fac36cfa039"
+  },
+  {
+    "rates": {
+      "rank1": 0.8724279835390947,
+      "tar": 0.8786008230452675,
+      "fnmr": 0.12139917695473246,
+      "far": 0.012071330589849109,
+      "eer_descriptive": 0.059670781893004114,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.9090568320753594,
+      "margin_mean_valid": 0.11843955728701212,
+      "joint": 0.8539094650205762
+    },
+    "counts": {
+      "correct": 424,
+      "accepted": 427,
+      "joint": 415,
+      "false_accepts": 88,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        79.16666666666667,
+        93.62139917695474
+      ],
+      "tar": [
+        78.80658436213992,
+        94.84126984126983
+      ],
+      "joint": [
+        76.45833333333333,
+        92.570281124498
+      ],
+      "fmr": [
+        0.7777777777777778,
+        1.6666666666666667
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 2,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_2_2026-10-21",
+    "source_protocol_sha256": "95878d1158912efc92c00db263e914c87dc5deb9dae61618161e77c5d11b98b4",
+    "actual_retained_min_mean_max": [
+      97.90794979079497,
+      98.00039031484312,
+      98.30508474576271
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "90d6d943e5309c1796bdec20aaead173b45f5fb21cd6cc862cfcbfc3b0666e0e"
+  },
+  {
+    "rates": {
+      "rank1": 0.897119341563786,
+      "tar": 0.911522633744856,
+      "fnmr": 0.08847736625514402,
+      "far": 0.009876543209876543,
+      "eer_descriptive": 0.037037037037037035,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.9222925274271053,
+      "margin_mean_valid": 0.1371459863927422,
+      "joint": 0.8806584362139918
+    },
+    "counts": {
+      "correct": 436,
+      "accepted": 443,
+      "joint": 428,
+      "false_accepts": 72,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        84.34959349593495,
+        94.58333333333333
+      ],
+      "tar": [
+        84.79121656378601,
+        96.34146341463415
+      ],
+      "joint": [
+        81.48148148148148,
+        93.69918699186992
+      ],
+      "fmr": [
+        0.6035665294924554,
+        1.3717421124828533
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 2,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_2_2026-10-21",
+    "source_protocol_sha256": "04318d3157b3e1d5a7f8b1f1a0bcb3c7e230af8df751834144ce83135bfd7ab8",
+    "actual_retained_min_mean_max": [
+      97.90794979079497,
+      98.00039031484312,
+      98.30508474576271
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "f298b0a5198dbc429915470017056688c5f2e41b8bf6501bf39a777000346c73"
+  },
+  {
+    "rates": {
+      "rank1": 0.8374485596707819,
+      "tar": 0.8374485596707819,
+      "fnmr": 0.1625514403292181,
+      "far": 0.013991769547325103,
+      "eer_descriptive": 0.06954732510288066,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.900797879778031,
+      "margin_mean_valid": 0.10299327625934193,
+      "joint": 0.8065843621399177
+    },
+    "counts": {
+      "correct": 407,
+      "accepted": 407,
+      "joint": 392,
+      "false_accepts": 102,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        75.51195987654322,
+        90.53497942386831
+      ],
+      "tar": [
+        73.4537037037037,
+        92.18106995884774
+      ],
+      "joint": [
+        71.25,
+        88.68312757201646
+      ],
+      "fmr": [
+        0.9305555555555556,
+        1.908496732026144
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 3,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_3_2026-10-21",
+    "source_protocol_sha256": "5cc32e6014014faf232cc917fc56b17235c7d8c8f6f087a3bfefdb17517143d3",
+    "actual_retained_min_mean_max": [
+      96.61016949152543,
+      96.99922419691727,
+      97.0909090909091
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "71e236590400b378fc5a68792c0f3b3a0db2d2f5a8c4cc21b30b267923086621"
+  },
+  {
+    "rates": {
+      "rank1": 0.8950617283950617,
+      "tar": 0.9094650205761317,
+      "fnmr": 0.09053497942386834,
+      "far": 0.010150891632373114,
+      "eer_descriptive": 0.04087791495198903,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.9205802228782376,
+      "margin_mean_valid": 0.13235169345627695,
+      "joint": 0.8744855967078189
+    },
+    "counts": {
+      "correct": 435,
+      "accepted": 442,
+      "joint": 425,
+      "false_accepts": 74,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        84.55284552845528,
+        93.95833333333333
+      ],
+      "tar": [
+        85.39094650205762,
+        95.63602292768958
+      ],
+      "joint": [
+        81.70731707317073,
+        92.70833333333333
+      ],
+      "fmr": [
+        0.6111111111111112,
+        1.4363143631436315
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 3,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_3_2026-10-21",
+    "source_protocol_sha256": "71d612e861cc128b9ced227be3ab0f331737a813b328e2d693a79f0328e03b9d",
+    "actual_retained_min_mean_max": [
+      96.61016949152543,
+      96.99922419691727,
+      97.0909090909091
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "5a96c7e04c77737b825c382c01e371f83e4b58ada5044ae05adfcf617d51097c"
+  },
+  {
+    "rates": {
+      "rank1": 0.7983539094650206,
+      "tar": 0.7983539094650206,
+      "fnmr": 0.2016460905349794,
+      "far": 0.01728395061728395,
+      "eer_descriptive": 0.08641975308641975,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.8891362049673491,
+      "margin_mean_valid": 0.08451781483522453,
+      "joint": 0.757201646090535
+    },
+    "counts": {
+      "correct": 388,
+      "accepted": 388,
+      "joint": 368,
+      "false_accepts": 126,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        71.45685442386831,
+        87.24279835390946
+      ],
+      "tar": [
+        69.34156378600824,
+        88.75
+      ],
+      "joint": [
+        65.85340760815016,
+        84.55284552845528
+      ],
+      "fmr": [
+        1.1666495198902607,
+        2.4074074074074074
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 4,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_4_2026-10-21",
+    "source_protocol_sha256": "338492fe2012b65d306cf458043f27cd151f2769f6125c7f9356e983ed274dd3",
+    "actual_retained_min_mean_max": [
+      95.81589958158996,
+      96.0008866760123,
+      96.61016949152543
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "0a45ce17b19e824fec3567baf9ab56e0814c304559e1353f50591bd05f3c416e"
+  },
+  {
+    "rates": {
+      "rank1": 0.8806584362139918,
+      "tar": 0.897119341563786,
+      "fnmr": 0.10288065843621397,
+      "far": 0.011522633744855968,
+      "eer_descriptive": 0.047325102880658436,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.9171722408869677,
+      "margin_mean_valid": 0.12492265059540947,
+      "joint": 0.8600823045267489
+    },
+    "counts": {
+      "correct": 428,
+      "accepted": 436,
+      "joint": 418,
+      "false_accepts": 84,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        82.53012048192771,
+        93.00411522633745
+      ],
+      "tar": [
+        83.33333333333333,
+        95.1219512195122
+      ],
+      "joint": [
+        79.375,
+        91.96805741484457
+      ],
+      "fmr": [
+        0.75,
+        1.5662650602409638
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 4,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_4_2026-10-21",
+    "source_protocol_sha256": "33fda327e8f93fbd24063a4929a38930ada6e0db04014050a5c144116e94fd04",
+    "actual_retained_min_mean_max": [
+      95.81589958158996,
+      96.0008866760123,
+      96.61016949152543
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "d9df94ca824461b979007b6defd7cfacd509b00045718eda48e8d8ca973993ba"
+  },
+  {
+    "rates": {
+      "rank1": 0.7407407407407407,
+      "tar": 0.7777777777777778,
+      "fnmr": 0.2222222222222222,
+      "far": 0.01879286694101509,
+      "eer_descriptive": 0.10082304526748971,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.8783517140763302,
+      "margin_mean_valid": 0.06743290207780586,
+      "joint": 0.7139917695473251
+    },
+    "counts": {
+      "correct": 360,
+      "accepted": 378,
+      "joint": 347,
+      "false_accepts": 137,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        63.251971299833485,
+        83.33841463414626
+      ],
+      "tar": [
+        65.84362139917695,
+        87.86149691358024
+      ],
+      "joint": [
+        59.791666666666664,
+        81.48148148148148
+      ],
+      "fmr": [
+        1.2916666666666667,
+        2.5970548862115126
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 5,
+    "reused": true,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\ensaio_oclusoes_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_5_2026-10-21",
+    "source_protocol_sha256": "395c076d912d68332e5e72c08ce1bb44301428ba916f268f801966bec9302e5b",
+    "actual_retained_min_mean_max": [
+      94.9090909090909,
+      94.99989301078647,
+      95.0509461426492
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "47855eea2d9635b0da1d914eb1f17e5ec20c6a75d9e811ddbbfae8fd00e42c94"
+  },
+  {
+    "rates": {
+      "rank1": 0.8786008230452675,
+      "tar": 0.8888888888888888,
+      "fnmr": 0.11111111111111116,
+      "far": 0.013031550068587106,
+      "eer_descriptive": 0.051371742112482854,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.9156683204794921,
+      "margin_mean_valid": 0.12084876710878403,
+      "joint": 0.8559670781893004
+    },
+    "counts": {
+      "correct": 427,
+      "accepted": 432,
+      "joint": 416,
+      "false_accepts": 95,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        82.11382113821138,
+        93.00411522633745
+      ],
+      "tar": [
+        82.4954268292683,
+        94.5848214285714
+      ],
+      "joint": [
+        78.60082304526749,
+        91.77205660945495
+      ],
+      "fmr": [
+        0.8641975308641975,
+        1.7460801393728216
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 5,
+    "reused": true,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\ensaio_oclusoes_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_5_2026-10-21",
+    "source_protocol_sha256": "c8900a7a1020d0ed81bf62b167978bee0ace3f30435f1520356bf5aa556ed6b8",
+    "actual_retained_min_mean_max": [
+      94.9090909090909,
+      94.99989301078647,
+      95.0509461426492
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "6fc97189597d2d1ba79b20b5ac78cd02b8d01a646f341d4266f7a34a9f06d39d"
+  },
+  {
+    "rates": {
+      "rank1": 0.7057613168724279,
+      "tar": 0.7386831275720165,
+      "fnmr": 0.2613168724279835,
+      "far": 0.020164609053497942,
+      "eer_descriptive": 0.11316872427983539,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.8670768217844462,
+      "margin_mean_valid": 0.05261189504527964,
+      "joint": 0.6748971193415638
+    },
+    "counts": {
+      "correct": 343,
+      "accepted": 359,
+      "joint": 328,
+      "false_accepts": 147,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        59.465020576131685,
+        80.8641975308642
+      ],
+      "tar": [
+        61.31687242798354,
+        84.55322192110809
+      ],
+      "joint": [
+        56.04122740963855,
+        77.91666666666667
+      ],
+      "fmr": [
+        1.4166666666666667,
+        2.677376171352075
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 6,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_6_2026-10-21",
+    "source_protocol_sha256": "9c31737a1f477d1f81a54b78ae7a09e7919ce6e9cd86f1a5d63ba76b1a189be8",
+    "actual_retained_min_mean_max": [
+      93.22033898305084,
+      93.99845397548755,
+      94.14225941422593
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "ef30a4d06f7a0bbfc54001a37652df3acc7652de0501a9d4b65d7669ccb6d52d"
+  },
+  {
+    "rates": {
+      "rank1": 0.8641975308641975,
+      "tar": 0.8765432098765432,
+      "fnmr": 0.12345679012345678,
+      "far": 0.013717421124828532,
+      "eer_descriptive": 0.051920438957476,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.9129747563513712,
+      "margin_mean_valid": 0.11605600082281209,
+      "joint": 0.8415637860082305
+    },
+    "counts": {
+      "correct": 420,
+      "accepted": 426,
+      "joint": 409,
+      "false_accepts": 100,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        80.28361186389641,
+        92.18106995884774
+      ],
+      "tar": [
+        80.6910569105691,
+        93.69918699186992
+      ],
+      "joint": [
+        76.74897119341564,
+        90.946935891715
+      ],
+      "fmr": [
+        0.9164464769647697,
+        1.8333333333333333
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 6,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_6_2026-10-21",
+    "source_protocol_sha256": "a269b9a950889cb3b52d780a4ec7c0c8d34cb0b9160613b8468b9aebf1f08473",
+    "actual_retained_min_mean_max": [
+      93.22033898305084,
+      93.99845397548755,
+      94.14225941422593
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "defe8a1b14fc5f0849f161c93802368fd980ff4e0cd40f102f82319f7c061972"
+  },
+  {
+    "rates": {
+      "rank1": 0.6707818930041153,
+      "tar": 0.6975308641975309,
+      "fnmr": 0.30246913580246915,
+      "far": 0.022770919067215362,
+      "eer_descriptive": 0.12345679012345678,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.8566295009368172,
+      "margin_mean_valid": 0.037177897885386946,
+      "joint": 0.6378600823045267
+    },
+    "counts": {
+      "correct": 326,
+      "accepted": 339,
+      "joint": 310,
+      "false_accepts": 166,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        55.831532921810705,
+        77.91666666666667
+      ],
+      "tar": [
+        57.083333333333336,
+        80.8341049382716
+      ],
+      "joint": [
+        51.80669104991394,
+        75.10288065843622
+      ],
+      "fmr": [
+        1.6049382716049383,
+        2.9852744310575634
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 7,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_7_2026-10-21",
+    "source_protocol_sha256": "27e4503eb163cefbb76af9b2dd0da74783a0b788cc345c01f74cf98f9d9c1c43",
+    "actual_retained_min_mean_max": [
+      92.88702928870293,
+      93.00022240544584,
+      93.22033898305084
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "9909fbb152ffefde25af842bb27114d20c5c729333719c059600dc9653c90663"
+  },
+  {
+    "rates": {
+      "rank1": 0.8497942386831275,
+      "tar": 0.8641975308641975,
+      "fnmr": 0.13580246913580252,
+      "far": 0.013717421124828532,
+      "eer_descriptive": 0.05761316872427984,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.9096050613271173,
+      "margin_mean_valid": 0.11216444589852889,
+      "joint": 0.8353909465020576
+    },
+    "counts": {
+      "correct": 413,
+      "accepted": 420,
+      "joint": 406,
+      "false_accepts": 100,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        77.64051992371776,
+        91.47064226925333
+      ],
+      "tar": [
+        78.54166666666667,
+        93.00540123456788
+      ],
+      "joint": [
+        75.41666666666667,
+        90.74074074074075
+      ],
+      "fmr": [
+        0.8916323731138546,
+        1.875
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 7,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_7_2026-10-21",
+    "source_protocol_sha256": "1896267bba8c8a4b3552766ac80108ccfc6eda0ea43b8eb18f5f6955a9c8f51d",
+    "actual_retained_min_mean_max": [
+      92.88702928870293,
+      93.00022240544584,
+      93.22033898305084
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "2c51a01f6aba42c5c1e823fcbb55f60bd12f63992ccebf2dd5c196c2c2422a29"
+  },
+  {
+    "rates": {
+      "rank1": 0.6419753086419753,
+      "tar": 0.6707818930041153,
+      "fnmr": 0.3292181069958847,
+      "far": 0.02345679012345679,
+      "eer_descriptive": 0.14183813443072701,
+      "extraction_failures": 3,
+      "queries": 486,
+      "genuine_mean_valid": 0.8471772559476297,
+      "margin_mean_valid": 0.02285403142579865,
+      "joint": 0.602880658436214
+    },
+    "counts": {
+      "correct": 312,
+      "accepted": 326,
+      "joint": 293,
+      "false_accepts": 171,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 3
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        51.782223691945916,
+        75.83333333333333
+      ],
+      "tar": [
+        53.90946502057613,
+        78.60226588376993
+      ],
+      "joint": [
+        47.389558232931726,
+        72.63374485596708
+      ],
+      "fmr": [
+        1.6596322016460907,
+        3.0954316686023975
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 8,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_8_2026-10-21",
+    "source_protocol_sha256": "aabe38fc3365ffa47dcfde6e5790ddc3a8dbad6f2dd17255b45b7ca03fedcf73",
+    "actual_retained_min_mean_max": [
+      91.52542372881356,
+      91.99902306978888,
+      92.05020920502092
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "af154f3a49e66f41587567a7d5baea9f6d2eec8deba7e2513a8885aed60575ff"
+  },
+  {
+    "rates": {
+      "rank1": 0.8415637860082305,
+      "tar": 0.8703703703703703,
+      "fnmr": 0.12962962962962965,
+      "far": 0.0149519890260631,
+      "eer_descriptive": 0.0598079561042524,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.9081384066303096,
+      "margin_mean_valid": 0.10879464464367367,
+      "joint": 0.8292181069958847
+    },
+    "counts": {
+      "correct": 409,
+      "accepted": 423,
+      "joint": 403,
+      "false_accepts": 109,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        76.01626016260163,
+        91.35802469135803
+      ],
+      "tar": [
+        79.42386831275721,
+        93.57547473846
+      ],
+      "joint": [
+        74.2798353909465,
+        90.53497942386831
+      ],
+      "fmr": [
+        0.9722222222222222,
+        2.0349774096385516
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 8,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_8_2026-10-21",
+    "source_protocol_sha256": "7568f2c455ac8e4ea53dbc609f43cfef930be495a6107793b49045e71b4e1b8f",
+    "actual_retained_min_mean_max": [
+      91.52542372881356,
+      91.99902306978888,
+      92.05020920502092
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "47a5947481217533ea2328922a6143e5d69a9ba192cf17ab5b340abd80f43dd1"
+  },
+  {
+    "rates": {
+      "rank1": 0.6131687242798354,
+      "tar": 0.6193415637860082,
+      "fnmr": 0.38065843621399176,
+      "far": 0.0242798353909465,
+      "eer_descriptive": 0.1438957475994513,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.836051337536893,
+      "margin_mean_valid": 0.009781178203078458,
+      "joint": 0.5576131687242798
+    },
+    "counts": {
+      "correct": 298,
+      "accepted": 301,
+      "joint": 271,
+      "false_accepts": 177,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        49.1864837398374,
+        72.91666666666667
+      ],
+      "tar": [
+        47.325102880658434,
+        74.80397560258668
+      ],
+      "joint": [
+        42.291666666666664,
+        68.54166666666667
+      ],
+      "fmr": [
+        1.7777777777777777,
+        3.0923694779116464
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 9,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_9_2026-10-21",
+    "source_protocol_sha256": "4701f8731f3d542ea659967f0ad2eb144432bc0c6f4651723692137cf3cb203a",
+    "actual_retained_min_mean_max": [
+      90.7949790794979,
+      91.00037071657074,
+      91.52542372881356
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "b6748c01f05c6068cd2de13fdce4a45d40e851780a07df9f5dc1f6fc3cf79193"
+  },
+  {
+    "rates": {
+      "rank1": 0.8271604938271605,
+      "tar": 0.8580246913580247,
+      "fnmr": 0.14197530864197527,
+      "far": 0.015226337448559672,
+      "eer_descriptive": 0.06598079561042525,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.9046258377089285,
+      "margin_mean_valid": 0.10373004184088741,
+      "joint": 0.8065843621399177
+    },
+    "counts": {
+      "correct": 402,
+      "accepted": 417,
+      "joint": 392,
+      "false_accepts": 111,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        73.54166666666667,
+        90.625
+      ],
+      "tar": [
+        77.7066819105691,
+        92.70833333333333
+      ],
+      "joint": [
+        71.45833333333333,
+        88.88888888888889
+      ],
+      "fmr": [
+        0.9465020576131687,
+        2.0972222222222223
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 9,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_9_2026-10-21",
+    "source_protocol_sha256": "9e2e244dd30a94d5794b3295a60aaf27de8805580bb3f918baaf8bd6e661d77f",
+    "actual_retained_min_mean_max": [
+      90.7949790794979,
+      91.00037071657074,
+      91.52542372881356
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "ada5e4dff13a85ec253b038d0bdf9067f3d0083360a87f854ed5c6ff4ba3aaa5"
+  },
+  {
+    "rates": {
+      "rank1": 0.5823045267489712,
+      "tar": 0.6090534979423868,
+      "fnmr": 0.39094650205761317,
+      "far": 0.025651577503429356,
+      "eer_descriptive": 0.15020576131687244,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.8282567134480397,
+      "margin_mean_valid": -0.0008875393631362562,
+      "joint": 0.5555555555555556
+    },
+    "counts": {
+      "correct": 283,
+      "accepted": 296,
+      "joint": 270,
+      "false_accepts": 187,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        45.03968253968254,
+        70.73296195924921
+      ],
+      "tar": [
+        47.083333333333336,
+        73.66335713223263
+      ],
+      "joint": [
+        42.47735370872227,
+        68.125
+      ],
+      "fmr": [
+        1.9444444444444444,
+        3.2113821138211383
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 10,
+    "reused": true,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\ensaio_oclusoes_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_10_2026-10-21",
+    "source_protocol_sha256": "e574b17493149db1decf670605683928612c8cd7caa3c40ece8225866a68ed3a",
+    "actual_retained_min_mean_max": [
+      89.83050847457628,
+      89.99970972129354,
+      90.02579535683577
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "462c28bc45a80857a0efaf1f9296334bfb26ed1dd5300dc553f91b4e858e26c1"
+  },
+  {
+    "rates": {
+      "rank1": 0.823045267489712,
+      "tar": 0.845679012345679,
+      "fnmr": 0.154320987654321,
+      "far": 0.01673525377229081,
+      "eer_descriptive": 0.06570644718792867,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.9016583771862065,
+      "margin_mean_valid": 0.09664555861294401,
+      "joint": 0.8024691358024691
+    },
+    "counts": {
+      "correct": 400,
+      "accepted": 411,
+      "joint": 390,
+      "false_accepts": 122,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        72.5609756097561,
+        90.41666666666667
+      ],
+      "tar": [
+        75.30864197530865,
+        92.38915236374584
+      ],
+      "joint": [
+        69.79070216049384,
+        89.09465020576131
+      ],
+      "fmr": [
+        1.1111111111111112,
+        2.2633873456790123
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 10,
+    "reused": true,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\ensaio_oclusoes_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_10_2026-10-21",
+    "source_protocol_sha256": "f3a18cb4bfe0788e90a41c83070ec727f9f254f6433b257f72ee93d422c42c64",
+    "actual_retained_min_mean_max": [
+      89.83050847457628,
+      89.99970972129354,
+      90.02579535683577
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "014671821fde4b164dc515da1d1219426157616c79b541d28b7b0ce5a7d69b00"
+  },
+  {
+    "rates": {
+      "rank1": 0.5432098765432098,
+      "tar": 0.5576131687242798,
+      "fnmr": 0.4423868312757202,
+      "far": 0.025925925925925925,
+      "eer_descriptive": 0.16872427983539096,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.8173679939834068,
+      "margin_mean_valid": -0.013677729596711706,
+      "joint": 0.49382716049382713
+    },
+    "counts": {
+      "correct": 264,
+      "accepted": 271,
+      "joint": 240,
+      "false_accepts": 189,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        41.86991869918699,
+        66.2551440329218
+      ],
+      "tar": [
+        41.875,
+        68.72427983539094
+      ],
+      "joint": [
+        36.83020927431497,
+        61.58536585365854
+      ],
+      "fmr": [
+        1.9478737997256517,
+        3.241023035230348
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 11,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_11_2026-10-21",
+    "source_protocol_sha256": "12e57db750428e05096ffc1360f49a9c16b2df545274a130f6b507138f00dda8",
+    "actual_retained_min_mean_max": [
+      88.93740902474528,
+      89.00227944848348,
+      89.83050847457628
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "1bafa20ea11e7c954795b5434edd1e1576eb9a49caf925a02335074d1d66dc1e"
+  },
+  {
+    "rates": {
+      "rank1": 0.8004115226337448,
+      "tar": 0.8209876543209876,
+      "fnmr": 0.17901234567901236,
+      "far": 0.01783264746227709,
+      "eer_descriptive": 0.06790123456790123,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.8975159971756219,
+      "margin_mean_valid": 0.09050449523957318,
+      "joint": 0.7736625514403292
+    },
+    "counts": {
+      "correct": 389,
+      "accepted": 399,
+      "joint": 376,
+      "false_accepts": 130,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        70.20724022633745,
+        88.54166666666667
+      ],
+      "tar": [
+        71.66666666666667,
+        90.94650205761317
+      ],
+      "joint": [
+        66.66666666666667,
+        86.66666666666667
+      ],
+      "fmr": [
+        1.1796982167352539,
+        2.386882716049382
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 11,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_11_2026-10-21",
+    "source_protocol_sha256": "4c7841b21e8ba0a1c4bfdf7bdeac0050f3486b75e482af409c9a738dd8ac00ec",
+    "actual_retained_min_mean_max": [
+      88.93740902474528,
+      89.00227944848348,
+      89.83050847457628
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "4eeaa7a32c2edfea61def7ea5eea44ce1832a96c83e16b191bde6bdb89ccc20c"
+  },
+  {
+    "rates": {
+      "rank1": 0.522633744855967,
+      "tar": 0.5205761316872428,
+      "fnmr": 0.4794238683127572,
+      "far": 0.02729766803840878,
+      "eer_descriptive": 0.1733196159122085,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.8079720789641375,
+      "margin_mean_valid": -0.023948229293414596,
+      "joint": 0.4732510288065844
+    },
+    "counts": {
+      "correct": 254,
+      "accepted": 253,
+      "joint": 230,
+      "false_accepts": 199,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        39.83739837398374,
+        64.19828364950315
+      ],
+      "tar": [
+        38.21138211382114,
+        65.0
+      ],
+      "joint": [
+        34.71875,
+        59.465020576131685
+      ],
+      "fmr": [
+        2.0972222222222223,
+        3.319946452476573
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 12,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_12_2026-10-21",
+    "source_protocol_sha256": "ce536111bef36e2be38e836ab0206a432d6e16aacbd152eb19e1a1e03ad08a6d",
+    "actual_retained_min_mean_max": [
+      87.86610878661088,
+      88.0004459942996,
+      88.13559322033898
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "3303aca35e7795dfd3cd7f33b2dac26d8a9e3180a287e99bc477d49bab393a64"
+  },
+  {
+    "rates": {
+      "rank1": 0.7880658436213992,
+      "tar": 0.8065843621399177,
+      "fnmr": 0.1934156378600823,
+      "far": 0.01934156378600823,
+      "eer_descriptive": 0.0720164609053498,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.89335969205169,
+      "margin_mean_valid": 0.08386684898744963,
+      "joint": 0.7633744855967078
+    },
+    "counts": {
+      "correct": 383,
+      "accepted": 392,
+      "joint": 371,
+      "false_accepts": 141,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        68.72427983539094,
+        87.70833333333333
+      ],
+      "tar": [
+        70.41666666666667,
+        89.22946150757802
+      ],
+      "joint": [
+        65.41234756097562,
+        85.97642527351198
+      ],
+      "fmr": [
+        1.289437585733882,
+        2.6017308684991596
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 12,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_12_2026-10-21",
+    "source_protocol_sha256": "399ca83e317137a35c315e009a6c0de8952493636e03542e462e437dfed08e88",
+    "actual_retained_min_mean_max": [
+      87.86610878661088,
+      88.0004459942996,
+      88.13559322033898
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "5ac1f8b81a392c4832e080158f8778196f45de483b27c5a6c632622b4f0bf525"
+  },
+  {
+    "rates": {
+      "rank1": 0.5,
+      "tar": 0.5123456790123457,
+      "fnmr": 0.48765432098765427,
+      "far": 0.02757201646090535,
+      "eer_descriptive": 0.18106995884773663,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.8025991486921844,
+      "margin_mean_valid": -0.030087522417662212,
+      "joint": 0.46502057613168724
+    },
+    "counts": {
+      "correct": 243,
+      "accepted": 249,
+      "joint": 226,
+      "false_accepts": 201,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        37.60162601626016,
+        61.99186991869919
+      ],
+      "tar": [
+        37.44855967078189,
+        63.95916923868312
+      ],
+      "joint": [
+        34.15637860082305,
+        58.54417438271601
+      ],
+      "fmr": [
+        2.1666666666666665,
+        3.320436507936503
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 13,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_13_2026-10-21",
+    "source_protocol_sha256": "45bf8a83860d9cc9144201708d9309563ba7ecbc928259945a3ceab1905341e9",
+    "actual_retained_min_mean_max": [
+      86.4406779661017,
+      86.99896677152086,
+      87.04512372634643
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "f8e1916ddaed928b2fd3b8caa437f4e3a5b2af1658115ddcce8ebcd766ef638a"
+  },
+  {
+    "rates": {
+      "rank1": 0.7736625514403292,
+      "tar": 0.779835390946502,
+      "fnmr": 0.220164609053498,
+      "far": 0.019478737997256516,
+      "eer_descriptive": 0.07613168724279835,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.8892593822073899,
+      "margin_mean_valid": 0.07873662862389134,
+      "joint": 0.7448559670781894
+    },
+    "counts": {
+      "correct": 376,
+      "accepted": 379,
+      "joint": 362,
+      "false_accepts": 142,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        66.46084104938272,
+        86.66666666666667
+      ],
+      "tar": [
+        67.07304829072388,
+        87.39837398373983
+      ],
+      "joint": [
+        62.916666666666664,
+        84.58333333333333
+      ],
+      "fmr": [
+        1.3333333333333333,
+        2.551477072310405
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 13,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_13_2026-10-21",
+    "source_protocol_sha256": "d485cd79f10e49582d4fc447b9908dad9b2379bf7070eb3b26b8cd702798f794",
+    "actual_retained_min_mean_max": [
+      86.4406779661017,
+      86.99896677152086,
+      87.04512372634643
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "d654c7ec2719da6adef71f1623c37bbf1ba720a5bb76fc9683d64ff6de5366cc"
+  },
+  {
+    "rates": {
+      "rank1": 0.5,
+      "tar": 0.5102880658436214,
+      "fnmr": 0.4897119341563786,
+      "far": 0.027709190672153636,
+      "eer_descriptive": 0.1929355281207133,
+      "extraction_failures": 3,
+      "queries": 486,
+      "genuine_mean_valid": 0.7988812924943575,
+      "margin_mean_valid": -0.03529877768549189,
+      "joint": 0.4567901234567901
+    },
+    "counts": {
+      "correct": 243,
+      "accepted": 248,
+      "joint": 222,
+      "false_accepts": 202,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 3
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        38.006722009991186,
+        61.666666666666664
+      ],
+      "tar": [
+        38.20922256097561,
+        63.37448559670782
+      ],
+      "joint": [
+        33.54160236625514,
+        57.818930041152264
+      ],
+      "fmr": [
+        2.111111111111111,
+        3.425925925925926
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 14,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_14_2026-10-21",
+    "source_protocol_sha256": "bd68dd4a564d4d9ba2ff1c589c47917b5b9faea6877329f19163b3186ef2444e",
+    "actual_retained_min_mean_max": [
+      85.98347107438016,
+      86.00150075299173,
+      86.4406779661017
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "6255fc5bd4d576b4606cbfc70ec7ea0d3561d9baf9313579538e13f8ae915dea"
+  },
+  {
+    "rates": {
+      "rank1": 0.7654320987654321,
+      "tar": 0.7839506172839507,
+      "fnmr": 0.21604938271604934,
+      "far": 0.021262002743484224,
+      "eer_descriptive": 0.08024691358024691,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.8869617737354789,
+      "margin_mean_valid": 0.07356703880082176,
+      "joint": 0.7469135802469136
+    },
+    "counts": {
+      "correct": 372,
+      "accepted": 381,
+      "joint": 363,
+      "false_accepts": 155,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        65.24346331426278,
+        86.25
+      ],
+      "tar": [
+        67.5,
+        87.69866071428571
+      ],
+      "joint": [
+        62.96296296296296,
+        84.79166666666667
+      ],
+      "fmr": [
+        1.440329218106996,
+        2.824660783049895
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 14,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_14_2026-10-21",
+    "source_protocol_sha256": "3f0464849fc033587aac9596899bef00db76a04061479471ea1afe1180c20b11",
+    "actual_retained_min_mean_max": [
+      85.98347107438016,
+      86.00150075299173,
+      86.4406779661017
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "a3d04854784da6532cd77f0191584c6d88bae6f3ef169ab60afa055192c5576c"
+  },
+  {
+    "rates": {
+      "rank1": 0.4670781893004115,
+      "tar": 0.4897119341563786,
+      "fnmr": 0.5102880658436214,
+      "far": 0.02784636488340192,
+      "eer_descriptive": 0.19759945130315498,
+      "extraction_failures": 3,
+      "queries": 486,
+      "genuine_mean_valid": 0.7932235038882921,
+      "margin_mean_valid": -0.04512389064416611,
+      "joint": 0.42592592592592593
+    },
+    "counts": {
+      "correct": 227,
+      "accepted": 238,
+      "joint": 207,
+      "false_accepts": 203,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 3
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        34.5829475308642,
+        58.64467592592589
+      ],
+      "tar": [
+        35.56529471544716,
+        61.72990063233963
+      ],
+      "joint": [
+        29.834297839506174,
+        55.0
+      ],
+      "fmr": [
+        2.125,
+        3.4166666666666665
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 15,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_15_2026-10-21",
+    "source_protocol_sha256": "e3cc0cdf271359cc0f33c26a1dd25bbaeb8cafd4e2f38092b949885758237e7c",
+    "actual_retained_min_mean_max": [
+      84.7457627118644,
+      84.9996132701414,
+      85.0909090909091
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "37ef8c9f4251c36a41a56b747866aca6f23a601f573a179705c7ea8bb6d43dc3"
+  },
+  {
+    "rates": {
+      "rank1": 0.7448559670781894,
+      "tar": 0.7633744855967078,
+      "fnmr": 0.23662551440329216,
+      "far": 0.022085048010973937,
+      "eer_descriptive": 0.08847736625514403,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.8831540285597883,
+      "margin_mean_valid": 0.06926741295269934,
+      "joint": 0.7283950617283951
+    },
+    "counts": {
+      "correct": 362,
+      "accepted": 371,
+      "joint": 354,
+      "false_accepts": 161,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        62.39837398373984,
+        84.97993827160492
+      ],
+      "tar": [
+        64.40258487654322,
+        86.58536585365853
+      ],
+      "joint": [
+        59.957279433905455,
+        83.95833333333333
+      ],
+      "fmr": [
+        1.5138888888888888,
+        2.9081422692533794
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 15,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_15_2026-10-21",
+    "source_protocol_sha256": "c6273ff4d71ee3ea13f6713129dcb17cf5c8ed7e5b2f1840e430578f8aa5ea0d",
+    "actual_retained_min_mean_max": [
+      84.7457627118644,
+      84.9996132701414,
+      85.0909090909091
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "ec2d0a5cbb82a9f450c566542e27192459b7eb5c94e9789aeee9fe9633f3e754"
+  },
+  {
+    "rates": {
+      "rank1": 0.448559670781893,
+      "tar": 0.4567901234567901,
+      "fnmr": 0.5432098765432098,
+      "far": 0.029492455418381344,
+      "eer_descriptive": 0.19766803840877914,
+      "extraction_failures": 3,
+      "queries": 486,
+      "genuine_mean_valid": 0.7842072968740398,
+      "margin_mean_valid": -0.055863300381618367,
+      "joint": 0.4012345679012346
+    },
+    "counts": {
+      "correct": 218,
+      "accepted": 222,
+      "joint": 195,
+      "false_accepts": 215,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 3
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        31.68724279835391,
+        57.708714430894304
+      ],
+      "tar": [
+        32.916666666666664,
+        57.72596105590682
+      ],
+      "joint": [
+        27.57201646090535,
+        52.43977717554952
+      ],
+      "fmr": [
+        2.235939643347051,
+        3.645082639097995
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 16,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_16_2026-10-21",
+    "source_protocol_sha256": "cb2b5f8c5279a63794ea4b6a1e3ac7223ed2a060d0aa0cea655f44ec5233739b",
+    "actual_retained_min_mean_max": [
+      83.94698085419735,
+      84.00223472931454,
+      84.7457627118644
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "dd4529b9514f9b418fc5fa22e3f14eae912dcd0e08a63db8eeb51b3060a33608"
+  },
+  {
+    "rates": {
+      "rank1": 0.7448559670781894,
+      "tar": 0.7448559670781894,
+      "fnmr": 0.25514403292181065,
+      "far": 0.02030178326474623,
+      "eer_descriptive": 0.09053497942386832,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.8809305040270239,
+      "margin_mean_valid": 0.06853324329155407,
+      "joint": 0.7078189300411523
+    },
+    "counts": {
+      "correct": 362,
+      "accepted": 362,
+      "joint": 344,
+      "false_accepts": 148,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        62.75597993827161,
+        84.79166666666667
+      ],
+      "tar": [
+        61.934156378600825,
+        85.51653040734365
+      ],
+      "joint": [
+        58.43621399176955,
+        82.08333333333333
+      ],
+      "fmr": [
+        1.3888888888888888,
+        2.672031158142268
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 16,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_16_2026-10-21",
+    "source_protocol_sha256": "7910869f7f6a5e317681594573e920481cfd3bb9bb1427d937ef4ee428d3b8a7",
+    "actual_retained_min_mean_max": [
+      83.94698085419735,
+      84.00223472931454,
+      84.7457627118644
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "ab581bcb3bd1d23d719295b78c65a56adafba61466ed98bc5ef90981d76f1fed"
+  },
+  {
+    "rates": {
+      "rank1": 0.4444444444444444,
+      "tar": 0.45267489711934156,
+      "fnmr": 0.5473251028806585,
+      "far": 0.031275720164609055,
+      "eer_descriptive": 0.20987654320987653,
+      "extraction_failures": 4,
+      "queries": 486,
+      "genuine_mean_valid": 0.7777649677554255,
+      "margin_mean_valid": -0.06294440393538119,
+      "joint": 0.3950617283950617
+    },
+    "counts": {
+      "correct": 216,
+      "accepted": 220,
+      "joint": 192,
+      "false_accepts": 228,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 4
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        31.666666666666668,
+        57.5
+      ],
+      "tar": [
+        32.5,
+        57.916666666666664
+      ],
+      "joint": [
+        27.160493827160494,
+        52.083333333333336
+      ],
+      "fmr": [
+        2.4414223251028804,
+        3.847247628726287
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 17,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_17_2026-10-21",
+    "source_protocol_sha256": "4def9e7c1dd5350fcdb8c80436976405bb25a89991b8c2682bd1bf62b8806178",
+    "actual_retained_min_mean_max": [
+      82.84518828451883,
+      82.99920535480275,
+      83.06332842415316
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "8b8aa388e8bd6073ec5155797b87990df6fb5ba9dce0ed6b1c0de9a2821aaf4b"
+  },
+  {
+    "rates": {
+      "rank1": 0.7325102880658436,
+      "tar": 0.757201646090535,
+      "fnmr": 0.24279835390946503,
+      "far": 0.020850480109739368,
+      "eer_descriptive": 0.09430727023319616,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.8779718165666096,
+      "margin_mean_valid": 0.06406723375638149,
+      "joint": 0.7098765432098766
+    },
+    "counts": {
+      "correct": 356,
+      "accepted": 368,
+      "joint": 345,
+      "false_accepts": 152,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        61.522633744855966,
+        83.73506220001958
+      ],
+      "tar": [
+        63.21138211382114,
+        86.58536585365853
+      ],
+      "joint": [
+        58.541666666666664,
+        82.08333333333333
+      ],
+      "fmr": [
+        1.4227642276422765,
+        2.7500169376693764
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 17,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_17_2026-10-21",
+    "source_protocol_sha256": "d9f098a0781708042b8dc5bfedb4675ae571a0905b1dac0ce1a97f595f100f78",
+    "actual_retained_min_mean_max": [
+      82.84518828451883,
+      82.99920535480275,
+      83.06332842415316
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "b3fbb83a1e85d0935d7e97df37faec9f2adb879b4289d3740f7b52256e1be2d0"
+  },
+  {
+    "rates": {
+      "rank1": 0.4279835390946502,
+      "tar": 0.4279835390946502,
+      "fnmr": 0.5720164609053497,
+      "far": 0.031275720164609055,
+      "eer_descriptive": 0.2242798353909465,
+      "extraction_failures": 3,
+      "queries": 486,
+      "genuine_mean_valid": 0.7679857136706252,
+      "margin_mean_valid": -0.07206560014493135,
+      "joint": 0.38477366255144035
+    },
+    "counts": {
+      "correct": 208,
+      "accepted": 208,
+      "joint": 187,
+      "false_accepts": 228,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 3
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        29.791666666666668,
+        55.96707818930041
+      ],
+      "tar": [
+        29.83539094650206,
+        55.28455284552845
+      ],
+      "joint": [
+        26.218786295005806,
+        51.041666666666664
+      ],
+      "fmr": [
+        2.4166666666666665,
+        3.861804748999871
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 18,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_18_2026-10-21",
+    "source_protocol_sha256": "68d3bde421603a2bd65ae6718d6b85279d08fac2e4cb37c711cff102bc262df9",
+    "actual_retained_min_mean_max": [
+      81.35593220338984,
+      81.99861148081985,
+      82.03240058910161
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "6984d4047c7c20d2c06ad572d1a498bab9a776f3ac95adfa3d819d751a6838c9"
+  },
+  {
+    "rates": {
+      "rank1": 0.7098765432098766,
+      "tar": 0.7448559670781894,
+      "fnmr": 0.25514403292181065,
+      "far": 0.019890260631001373,
+      "eer_descriptive": 0.102880658436214,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.8722372541034228,
+      "margin_mean_valid": 0.059440172115939514,
+      "joint": 0.6872427983539094
+    },
+    "counts": {
+      "correct": 345,
+      "accepted": 362,
+      "joint": 334,
+      "false_accepts": 145,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        59.72093621399177,
+        81.45833333333333
+      ],
+      "tar": [
+        62.70566565040651,
+        85.16260162601625
+      ],
+      "joint": [
+        56.99588477366255,
+        79.42386831275721
+      ],
+      "fmr": [
+        1.3611111111111112,
+        2.592704149933064
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 18,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_18_2026-10-21",
+    "source_protocol_sha256": "e22bffef8f9deaddf60fcaea6c7c6542fd707f1436ada5647b7d074a95a88aea",
+    "actual_retained_min_mean_max": [
+      81.35593220338984,
+      81.99861148081985,
+      82.03240058910161
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "2365e9982b4d4d2c69304c41c9cd08129264e91fd7a8e2e5a509af840adbc5cd"
+  },
+  {
+    "rates": {
+      "rank1": 0.43621399176954734,
+      "tar": 0.4218106995884774,
+      "fnmr": 0.5781893004115226,
+      "far": 0.031001371742112482,
+      "eer_descriptive": 0.22839506172839505,
+      "extraction_failures": 4,
+      "queries": 486,
+      "genuine_mean_valid": 0.7638349771927708,
+      "margin_mean_valid": -0.0808854520933468,
+      "joint": 0.39300411522633744
+    },
+    "counts": {
+      "correct": 212,
+      "accepted": 205,
+      "joint": 191,
+      "false_accepts": 226,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 4
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        31.27507716049383,
+        55.96707818930041
+      ],
+      "tar": [
+        29.218106995884774,
+        54.87955435109904
+      ],
+      "joint": [
+        26.82817944250871,
+        52.05761316872428
+      ],
+      "fmr": [
+        2.400548696844993,
+        3.841036522633743
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 19,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_19_2026-10-21",
+    "source_protocol_sha256": "c69a8de9d55e287abfaf06c9a936507c6c72e714fa43c53e75414fa76c449c3d",
+    "actual_retained_min_mean_max": [
+      80.9315866084425,
+      81.00132432480058,
+      81.35593220338984
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "63fe11843063fcecc8040a01ae0b02bfa373cf1db885a0569b14f1b3b04a6f83"
+  },
+  {
+    "rates": {
+      "rank1": 0.7037037037037037,
+      "tar": 0.7345679012345679,
+      "fnmr": 0.26543209876543206,
+      "far": 0.022770919067215362,
+      "eer_descriptive": 0.10473251028806585,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.8689500281813293,
+      "margin_mean_valid": 0.05511416247970297,
+      "joint": 0.6831275720164609
+    },
+    "counts": {
+      "correct": 342,
+      "accepted": 357,
+      "joint": 332,
+      "false_accepts": 166,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        58.958333333333336,
+        80.45267489711934
+      ],
+      "tar": [
+        60.97560975609756,
+        84.58333333333333
+      ],
+      "joint": [
+        56.458333333333336,
+        78.95968364197529
+      ],
+      "fmr": [
+        1.6111111111111112,
+        2.9355281207133057
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 19,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_19_2026-10-21",
+    "source_protocol_sha256": "8747b1649fab4728208976b76dc728d311d5c489755fa6fbdfefa4411bddb30c",
+    "actual_retained_min_mean_max": [
+      80.9315866084425,
+      81.00132432480058,
+      81.35593220338984
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "51679c4da8c3cb48886accb53a686ae47861098d0022e57279a981bc5b8a5846"
+  },
+  {
+    "rates": {
+      "rank1": 0.4074074074074074,
+      "tar": 0.40329218106995884,
+      "fnmr": 0.5967078189300412,
+      "far": 0.03223593964334705,
+      "eer_descriptive": 0.23655692729766803,
+      "extraction_failures": 3,
+      "queries": 486,
+      "genuine_mean_valid": 0.7528862934941222,
+      "margin_mean_valid": -0.09200515972987537,
+      "joint": 0.3724279835390947
+    },
+    "counts": {
+      "correct": 198,
+      "accepted": 196,
+      "joint": 181,
+      "false_accepts": 235,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 3
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        29.26829268292683,
+        52.296103395061664
+      ],
+      "tar": [
+        28.75,
+        52.0582561728395
+      ],
+      "joint": [
+        25.720164609053498,
+        49.17695473251029
+      ],
+      "fmr": [
+        2.5925925925925926,
+        3.8545953360768177
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 20,
+    "reused": true,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\ensaio_oclusoes_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_20_2026-10-21",
+    "source_protocol_sha256": "577d290d7f35c547ab2ac1833283088e9a3c86f05b91e235efc2d1b8b64d5d89",
+    "actual_retained_min_mean_max": [
+      79.66101694915254,
+      79.99846584670874,
+      80.05822416302766
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "d980ba04333c43c1fecbcb31357dc4e6610e93d50b58f667271ebbf3d519ebc5"
+  },
+  {
+    "rates": {
+      "rank1": 0.6995884773662552,
+      "tar": 0.7263374485596708,
+      "fnmr": 0.27366255144032925,
+      "far": 0.021536351165980797,
+      "eer_descriptive": 0.10500685871056241,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.8661672664563417,
+      "margin_mean_valid": 0.04968987366934699,
+      "joint": 0.6790123456790124
+    },
+    "counts": {
+      "correct": 340,
+      "accepted": 353,
+      "joint": 330,
+      "false_accepts": 157,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        59.375,
+        79.58333333333333
+      ],
+      "tar": [
+        61.041666666666664,
+        83.33333333333333
+      ],
+      "joint": [
+        56.79012345679013,
+        78.2520325203252
+      ],
+      "fmr": [
+        1.5555555555555556,
+        2.7160493827160495
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 20,
+    "reused": true,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\ensaio_oclusoes_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_20_2026-10-21",
+    "source_protocol_sha256": "6072a62188733fe7e3ebca0f9dc9909e0c140c23e5bd6b4298764c5fe5514ca0",
+    "actual_retained_min_mean_max": [
+      79.66101694915254,
+      79.99846584670874,
+      80.05822416302766
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "f4325735c96ec223584fba921bb92d2331d0edf6647f6d41bc363f691b48538f"
+  },
+  {
+    "rates": {
+      "rank1": 0.41975308641975306,
+      "tar": 0.39300411522633744,
+      "fnmr": 0.6069958847736625,
+      "far": 0.03264746227709191,
+      "eer_descriptive": 0.2345679012345679,
+      "extraction_failures": 3,
+      "queries": 486,
+      "genuine_mean_valid": 0.7546945804816174,
+      "margin_mean_valid": -0.09062268190295668,
+      "joint": 0.36213991769547327
+    },
+    "counts": {
+      "correct": 204,
+      "accepted": 191,
+      "joint": 176,
+      "false_accepts": 238,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 3
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        30.206137048192772,
+        53.54571759259253
+      ],
+      "tar": [
+        27.509789156626507,
+        51.041666666666664
+      ],
+      "joint": [
+        24.897119341563787,
+        47.94301415236374
+      ],
+      "fmr": [
+        2.6527777777777777,
+        3.861788617886179
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 21,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_21_2026-10-21",
+    "source_protocol_sha256": "04ca3020bfa49cae94bff05c87d6cc01d544fbadfd4cd0408e19fe1924c1024a",
+    "actual_retained_min_mean_max": [
+      78.9090909090909,
+      79.00144198314486,
+      79.66101694915254
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "945e3dab96e6ed9f3bb592a4aea7c577b37f430d3dbcf44d522b7cc3c32977c1"
+  },
+  {
+    "rates": {
+      "rank1": 0.6975308641975309,
+      "tar": 0.720164609053498,
+      "fnmr": 0.279835390946502,
+      "far": 0.022496570644718793,
+      "eer_descriptive": 0.1107681755829904,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.8638802193520229,
+      "margin_mean_valid": 0.04622592459198953,
+      "joint": 0.676954732510288
+    },
+    "counts": {
+      "correct": 339,
+      "accepted": 350,
+      "joint": 329,
+      "false_accepts": 164,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        59.051118827160494,
+        79.79166666666667
+      ],
+      "tar": [
+        60.49382716049383,
+        82.52032520325203
+      ],
+      "joint": [
+        56.78703703703704,
+        77.98353909465021
+      ],
+      "fmr": [
+        1.5694444444444444,
+        2.9027777777777777
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 21,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_21_2026-10-21",
+    "source_protocol_sha256": "a5f175b790fc741034fd275f9a101653952593b470315dd31bf0fc6f9fdb0bd2",
+    "actual_retained_min_mean_max": [
+      78.9090909090909,
+      79.00144198314486,
+      79.66101694915254
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "78387c1706c335eebd79f7102247412585a2991a8594d3671c4ee3d36eb804d4"
+  },
+  {
+    "rates": {
+      "rank1": 0.4176954732510288,
+      "tar": 0.3868312757201646,
+      "fnmr": 0.6131687242798354,
+      "far": 0.031824417009602195,
+      "eer_descriptive": 0.24074074074074073,
+      "extraction_failures": 3,
+      "queries": 486,
+      "genuine_mean_valid": 0.751211910006469,
+      "margin_mean_valid": -0.09222099987296076,
+      "joint": 0.3662551440329218
+    },
+    "counts": {
+      "correct": 203,
+      "accepted": 188,
+      "joint": 178,
+      "false_accepts": 232,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 3
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        29.834297839506174,
+        53.90946502057613
+      ],
+      "tar": [
+        26.907630522088354,
+        50.833333333333336
+      ],
+      "joint": [
+        25.0,
+        48.75
+      ],
+      "fmr": [
+        2.674897119341564,
+        3.6992999096657617
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 22,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_22_2026-10-21",
+    "source_protocol_sha256": "26c078ec1fdcbb4090dcda0861566da8731284b0db2d9ec81e66c10da1fb5afc",
+    "actual_retained_min_mean_max": [
+      77.82426778242679,
+      77.99959918255578,
+      78.0559646539028
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "54a4e8efdd5a9ecb32efc68765f0a689f1812b22c4df931372464ff5d19c6ad6"
+  },
+  {
+    "rates": {
+      "rank1": 0.6831275720164609,
+      "tar": 0.6934156378600823,
+      "fnmr": 0.3065843621399177,
+      "far": 0.02400548696844993,
+      "eer_descriptive": 0.1111111111111111,
+      "extraction_failures": 3,
+      "queries": 486,
+      "genuine_mean_valid": 0.8604440858353704,
+      "margin_mean_valid": 0.04173311196088026,
+      "joint": 0.6563786008230452
+    },
+    "counts": {
+      "correct": 332,
+      "accepted": 337,
+      "joint": 319,
+      "false_accepts": 175,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 3
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        57.407407407407405,
+        78.12660751028804
+      ],
+      "tar": [
+        57.291666666666664,
+        80.24691358024691
+      ],
+      "joint": [
+        54.166666666666664,
+        76.25
+      ],
+      "fmr": [
+        1.7222222222222223,
+        3.045267489711934
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 22,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_22_2026-10-21",
+    "source_protocol_sha256": "5f198c08031d843a4591178199222c16061e9de4e33f9057c8e71919bc2ec210",
+    "actual_retained_min_mean_max": [
+      77.82426778242679,
+      77.99959918255578,
+      78.0559646539028
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "1f60483eadc9688bb5746ba7531d3c2ae33154ce7f06aaf8fa1f7f7f9a8e57f9"
+  },
+  {
+    "rates": {
+      "rank1": 0.39094650205761317,
+      "tar": 0.38477366255144035,
+      "fnmr": 0.6152263374485596,
+      "far": 0.03141289437585734,
+      "eer_descriptive": 0.24691358024691357,
+      "extraction_failures": 4,
+      "queries": 486,
+      "genuine_mean_valid": 0.7412393409249011,
+      "margin_mean_valid": -0.10474346557828515,
+      "joint": 0.3477366255144033
+    },
+    "counts": {
+      "correct": 190,
+      "accepted": 187,
+      "joint": 169,
+      "false_accepts": 229,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 4
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        27.083333333333332,
+        51.46252540650401
+      ],
+      "tar": [
+        26.54320987654321,
+        50.833333333333336
+      ],
+      "joint": [
+        23.091191928206655,
+        47.291666666666664
+      ],
+      "fmr": [
+        2.5833333333333335,
+        3.658536585365854
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 23,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_23_2026-10-21",
+    "source_protocol_sha256": "c1fb70346a561f69025f5ad29a96996d9ff74f7071c7f0acc87ee79ef0a4d728",
+    "actual_retained_min_mean_max": [
+      76.27118644067797,
+      76.99882204126116,
+      77.0909090909091
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "b8954b2a89248843136c88086a01a36405247b3732097eb18c8285c184d3613b"
+  },
+  {
+    "rates": {
+      "rank1": 0.6790123456790124,
+      "tar": 0.6975308641975309,
+      "fnmr": 0.30246913580246915,
+      "far": 0.02194787379972565,
+      "eer_descriptive": 0.11728395061728394,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.8577332967550123,
+      "margin_mean_valid": 0.040569911132284336,
+      "joint": 0.6522633744855967
+    },
+    "counts": {
+      "correct": 330,
+      "accepted": 339,
+      "joint": 317,
+      "false_accepts": 160,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        56.9945987654321,
+        78.18930041152264
+      ],
+      "tar": [
+        58.639467592592595,
+        80.12048192771084
+      ],
+      "joint": [
+        54.11522633744856,
+        76.04166666666667
+      ],
+      "fmr": [
+        1.646090534979424,
+        2.7160865684962068
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 23,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_23_2026-10-21",
+    "source_protocol_sha256": "09c4b381644660be0751724d3c107d3a26f597bb446ebcce28b9d739b112e5f0",
+    "actual_retained_min_mean_max": [
+      76.27118644067797,
+      76.99882204126116,
+      77.0909090909091
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "e78a84a945fd68a9a79b4582ad1ed8909c897b2e8de0b3f92abe19cf62dbad29"
+  },
+  {
+    "rates": {
+      "rank1": 0.39300411522633744,
+      "tar": 0.38271604938271603,
+      "fnmr": 0.617283950617284,
+      "far": 0.030727023319615913,
+      "eer_descriptive": 0.24478737997256517,
+      "extraction_failures": 4,
+      "queries": 486,
+      "genuine_mean_valid": 0.7417292104784164,
+      "margin_mean_valid": -0.10412567169349438,
+      "joint": 0.35390946502057613
+    },
+    "counts": {
+      "correct": 191,
+      "accepted": 186,
+      "joint": 172,
+      "false_accepts": 224,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 4
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        26.74897119341564,
+        52.708333333333336
+      ],
+      "tar": [
+        26.458333333333332,
+        51.02880658436214
+      ],
+      "joint": [
+        23.78048780487805,
+        47.94238683127572
+      ],
+      "fmr": [
+        2.375,
+        3.7399261194992888
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 24,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_24_2026-10-21",
+    "source_protocol_sha256": "8a3bbba8808387ead995172f82a99a02f45cadff8cc76ee706a6cb30e05da197",
+    "actual_retained_min_mean_max": [
+      75.97736625514403,
+      76.00073565435477,
+      76.27118644067797
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "1f64b661804ffb733946de6d83877ebec5095d7ce38f746716e0eeab1543d398"
+  },
+  {
+    "rates": {
+      "rank1": 0.6831275720164609,
+      "tar": 0.6995884773662552,
+      "fnmr": 0.3004115226337448,
+      "far": 0.022770919067215362,
+      "eer_descriptive": 0.11728395061728394,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.8583728523078381,
+      "margin_mean_valid": 0.03988435379862346,
+      "joint": 0.654320987654321
+    },
+    "counts": {
+      "correct": 332,
+      "accepted": 340,
+      "joint": 318,
+      "false_accepts": 166,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        57.316438008130085,
+        78.95833333333333
+      ],
+      "tar": [
+        58.64178937974118,
+        80.55729166666664
+      ],
+      "joint": [
+        54.11522633744856,
+        76.42365345528454
+      ],
+      "fmr": [
+        1.6111111111111112,
+        2.9166666666666665
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 24,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_24_2026-10-21",
+    "source_protocol_sha256": "efa88be6f752639dba06f67379d372110140d8c726a31995cf8b54f9d2e9f26f",
+    "actual_retained_min_mean_max": [
+      75.97736625514403,
+      76.00073565435477,
+      76.27118644067797
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "8538593c05736c66e991c3bdc44c5cd2ddd35eb00c79be97db02ac6f113df531"
+  },
+  {
+    "rates": {
+      "rank1": 0.3724279835390947,
+      "tar": 0.36213991769547327,
+      "fnmr": 0.6378600823045267,
+      "far": 0.03209876543209877,
+      "eer_descriptive": 0.24691358024691357,
+      "extraction_failures": 4,
+      "queries": 486,
+      "genuine_mean_valid": 0.7385468237322391,
+      "margin_mean_valid": -0.10937162219308383,
+      "joint": 0.3333333333333333
+    },
+    "counts": {
+      "correct": 181,
+      "accepted": 176,
+      "joint": 162,
+      "false_accepts": 234,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 4
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        24.8015873015873,
+        50.205761316872426
+      ],
+      "tar": [
+        24.164351851851855,
+        49.166666666666664
+      ],
+      "joint": [
+        21.39917695473251,
+        46.4594264403292
+      ],
+      "fmr": [
+        2.583221879286694,
+        3.813443072702332
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 25,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_25_2026-10-21",
+    "source_protocol_sha256": "b233f3326d4b281c3ca0dfdee1316386f637849f1ff8148952d603bc5e412f34",
+    "actual_retained_min_mean_max": [
+      74.57627118644068,
+      74.99878518524305,
+      75.03250975292588
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "564af838699b1a089b937c0013b3e949e199eada469a667eeeddbc74ec02b037"
+  },
+  {
+    "rates": {
+      "rank1": 0.676954732510288,
+      "tar": 0.7057613168724279,
+      "fnmr": 0.29423868312757206,
+      "far": 0.02373113854595336,
+      "eer_descriptive": 0.11550068587105625,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.8598012205261244,
+      "margin_mean_valid": 0.04026592902557708,
+      "joint": 0.6563786008230452
+    },
+    "counts": {
+      "correct": 329,
+      "accepted": 343,
+      "joint": 319,
+      "false_accepts": 173,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        56.79012345679013,
+        78.18930041152264
+      ],
+      "tar": [
+        59.66859567901235,
+        81.06995884773663
+      ],
+      "joint": [
+        54.6175953815261,
+        76.45833333333333
+      ],
+      "fmr": [
+        1.728395061728395,
+        2.962962962962963
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 25,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_25_2026-10-21",
+    "source_protocol_sha256": "bf9b235b026f91d227f957f4017b38082044a94531fdc08bdba6ec48abf8b154",
+    "actual_retained_min_mean_max": [
+      74.57627118644068,
+      74.99878518524305,
+      75.03250975292588
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "729b117c57173ca5362c878b2feed537d2ed77ced60c5cb5f20e8961854d1ffd"
+  },
+  {
+    "rates": {
+      "rank1": 0.3786008230452675,
+      "tar": 0.345679012345679,
+      "fnmr": 0.654320987654321,
+      "far": 0.03223593964334705,
+      "eer_descriptive": 0.24074074074074073,
+      "extraction_failures": 3,
+      "queries": 486,
+      "genuine_mean_valid": 0.734053702051524,
+      "margin_mean_valid": -0.11559306387044595,
+      "joint": 0.31275720164609055
+    },
+    "counts": {
+      "correct": 184,
+      "accepted": 168,
+      "joint": 152,
+      "false_accepts": 235,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 3
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        26.458333333333332,
+        49.58847736625514
+      ],
+      "tar": [
+        23.541666666666668,
+        46.458333333333336
+      ],
+      "joint": [
+        20.416666666666668,
+        43.333333333333336
+      ],
+      "fmr": [
+        2.647413286302175,
+        3.7777777777777777
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 26,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_26_2026-10-21",
+    "source_protocol_sha256": "4f625a525be0e8ee83ed1f210d969bc4c234fed341d219a875a184ee28b72f2c",
+    "actual_retained_min_mean_max": [
+      73.93225331369662,
+      74.00134039513723,
+      74.57627118644068
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "8da62e2cbb6f72807e7551f69bf535678b57d594396a6040b6d7e8422b691364"
+  },
+  {
+    "rates": {
+      "rank1": 0.6831275720164609,
+      "tar": 0.6872427983539094,
+      "fnmr": 0.31275720164609055,
+      "far": 0.024142661179698217,
+      "eer_descriptive": 0.11728395061728394,
+      "extraction_failures": 2,
+      "queries": 486,
+      "genuine_mean_valid": 0.8548699308502364,
+      "margin_mean_valid": 0.03537544210339624,
+      "joint": 0.6419753086419753
+    },
+    "counts": {
+      "correct": 332,
+      "accepted": 334,
+      "joint": 312,
+      "false_accepts": 176,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 2
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        57.926829268292686,
+        78.60082304526749
+      ],
+      "tar": [
+        58.43621399176955,
+        78.33487654320984
+      ],
+      "joint": [
+        53.858993902439025,
+        74.48559670781893
+      ],
+      "fmr": [
+        1.7361111111111112,
+        3.041756687242797
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 26,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_26_2026-10-21",
+    "source_protocol_sha256": "fe86b0f1381c0805a989c7fd563af6f25fe409a95930f882c3644ef1f761b031",
+    "actual_retained_min_mean_max": [
+      73.93225331369662,
+      74.00134039513723,
+      74.57627118644068
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "13e746ea36a15e8fc3494e495396e36c03795fc7b846416d5aa4dbf9ee490ad1"
+  },
+  {
+    "rates": {
+      "rank1": 0.37448559670781895,
+      "tar": 0.3559670781893004,
+      "fnmr": 0.6440329218106996,
+      "far": 0.03155006858710562,
+      "eer_descriptive": 0.2570644718792867,
+      "extraction_failures": 3,
+      "queries": 486,
+      "genuine_mean_valid": 0.728506494907591,
+      "margin_mean_valid": -0.11947997128069217,
+      "joint": 0.32098765432098764
+    },
+    "counts": {
+      "correct": 182,
+      "accepted": 173,
+      "joint": 156,
+      "false_accepts": 230,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 3
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        26.337448559670783,
+        48.97150707618187
+      ],
+      "tar": [
+        24.277514302920807,
+        47.53086419753087
+      ],
+      "joint": [
+        21.54324615535312,
+        43.415637860082306
+      ],
+      "fmr": [
+        2.579352831667647,
+        3.6991909772038896
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 27,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_27_2026-10-21",
+    "source_protocol_sha256": "52ab64880d7de3743401d7cf98a015fd3008de770d9c5c658e0e4610c4119106",
+    "actual_retained_min_mean_max": [
+      72.80334728033473,
+      72.99944573639847,
+      73.0909090909091
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "bc372045323c59592ce97bd29962216c303ef88023c3c83cdc4c329a6fc2da6a"
+  },
+  {
+    "rates": {
+      "rank1": 0.6831275720164609,
+      "tar": 0.6995884773662552,
+      "fnmr": 0.3004115226337448,
+      "far": 0.023319615912208505,
+      "eer_descriptive": 0.11906721536351166,
+      "extraction_failures": 4,
+      "queries": 486,
+      "genuine_mean_valid": 0.8540335922427675,
+      "margin_mean_valid": 0.03362996404468888,
+      "joint": 0.6481481481481481
+    },
+    "counts": {
+      "correct": 332,
+      "accepted": 340,
+      "joint": 315,
+      "false_accepts": 170,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 4
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        58.641975308641975,
+        77.70833333333333
+      ],
+      "tar": [
+        59.67078189300412,
+        79.47154471544715
+      ],
+      "joint": [
+        54.732510288065846,
+        74.58333333333333
+      ],
+      "fmr": [
+        1.6527777777777777,
+        2.9718875502008033
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 27,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_27_2026-10-21",
+    "source_protocol_sha256": "9f8ed2f47ec172883d88f8126cfbf944480048176c4e0880cc24c9071677d245",
+    "actual_retained_min_mean_max": [
+      72.80334728033473,
+      72.99944573639847,
+      73.0909090909091
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "9d87ea5a7ca356e734f9b35a235caa12353fa6effc08f6f924cf71c0617ea307"
+  },
+  {
+    "rates": {
+      "rank1": 0.36213991769547327,
+      "tar": 0.33539094650205764,
+      "fnmr": 0.6646090534979423,
+      "far": 0.031001371742112482,
+      "eer_descriptive": 0.26337448559670784,
+      "extraction_failures": 5,
+      "queries": 486,
+      "genuine_mean_valid": 0.7293000262639586,
+      "margin_mean_valid": -0.11800157214976452,
+      "joint": 0.31069958847736623
+    },
+    "counts": {
+      "correct": 176,
+      "accepted": 163,
+      "joint": 151,
+      "false_accepts": 226,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 5
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        25.203252032520325,
+        48.35390946502058
+      ],
+      "tar": [
+        22.764227642276424,
+        45.208333333333336
+      ],
+      "joint": [
+        20.624080882352942,
+        42.70990210843372
+      ],
+      "fmr": [
+        2.5925925925925926,
+        3.5694444444444446
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 28,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_28_2026-10-21",
+    "source_protocol_sha256": "10d927bf527ca918b932902c33671960ab96e36a430528983cbaf9fed925a2ba",
+    "actual_retained_min_mean_max": [
+      71.1864406779661,
+      71.99796669507502,
+      72.0524017467249
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "1aafd3fde73e99de775cb0f65ea13256345a7265a2ef66332d01c3abeb146882"
+  },
+  {
+    "rates": {
+      "rank1": 0.6893004115226338,
+      "tar": 0.7037037037037037,
+      "fnmr": 0.2962962962962963,
+      "far": 0.02318244170096022,
+      "eer_descriptive": 0.1215363511659808,
+      "extraction_failures": 4,
+      "queries": 486,
+      "genuine_mean_valid": 0.8534131559444689,
+      "margin_mean_valid": 0.03680523050678296,
+      "joint": 0.6646090534979424
+    },
+    "counts": {
+      "correct": 335,
+      "accepted": 342,
+      "joint": 323,
+      "false_accepts": 169,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 4
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        59.583333333333336,
+        78.125
+      ],
+      "tar": [
+        60.16260162601626,
+        79.62962962962963
+      ],
+      "joint": [
+        56.875,
+        75.7201646090535
+      ],
+      "fmr": [
+        1.6944444444444444,
+        2.915073529411764
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 28,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_28_2026-10-21",
+    "source_protocol_sha256": "99daefe7046310f69231f3e1effac08324fbb9cfcb4881ab87f15dbbffdf5ce8",
+    "actual_retained_min_mean_max": [
+      71.1864406779661,
+      71.99796669507502,
+      72.0524017467249
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "406c2d04db15148df48e0b67cde130f4186bb72c43f760efee51485ec74b33b1"
+  },
+  {
+    "rates": {
+      "rank1": 0.345679012345679,
+      "tar": 0.3292181069958848,
+      "fnmr": 0.6707818930041152,
+      "far": 0.03292181069958848,
+      "eer_descriptive": 0.257201646090535,
+      "extraction_failures": 5,
+      "queries": 486,
+      "genuine_mean_valid": 0.7270315399442685,
+      "margin_mean_valid": -0.12435410741034411,
+      "joint": 0.30246913580246915
+    },
+    "counts": {
+      "correct": 168,
+      "accepted": 160,
+      "joint": 147,
+      "false_accepts": 240,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 5
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        23.662551440329217,
+        46.2962962962963
+      ],
+      "tar": [
+        21.665123456790123,
+        44.8559670781893
+      ],
+      "joint": [
+        19.375,
+        42.083333333333336
+      ],
+      "fmr": [
+        2.702331961591221,
+        3.8472222222222223
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 29,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_29_2026-10-21",
+    "source_protocol_sha256": "40c03696d497c0b7d8c2e33ef96dc62b7882727430631722a15caea720f98c84",
+    "actual_retained_min_mean_max": [
+      70.9090909090909,
+      71.0004196967061,
+      71.1864406779661
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "8dcc8d9430e6bcdb8d4744e0e97d3bc5d37e475cbd46c311ae997786702f8869"
+  },
+  {
+    "rates": {
+      "rank1": 0.6954732510288066,
+      "tar": 0.6995884773662552,
+      "fnmr": 0.3004115226337448,
+      "far": 0.020713305898491085,
+      "eer_descriptive": 0.12551440329218108,
+      "extraction_failures": 4,
+      "queries": 486,
+      "genuine_mean_valid": 0.8552848612648214,
+      "margin_mean_valid": 0.03929885719199624,
+      "joint": 0.6563786008230452
+    },
+    "counts": {
+      "correct": 338,
+      "accepted": 340,
+      "joint": 319,
+      "false_accepts": 151,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 4
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        60.833333333333336,
+        78.04878048780488
+      ],
+      "tar": [
+        59.67078189300412,
+        79.72069528112448
+      ],
+      "joint": [
+        56.09756097560975,
+        75.10288065843622
+      ],
+      "fmr": [
+        1.5416666666666667,
+        2.5694444444444446
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 29,
+    "reused": false,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\grade_densa_1a31_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_29_2026-10-21",
+    "source_protocol_sha256": "b6d94c392dafdd5613312a26b0cada9734b76e0a5fc3a944a5ba37929c9893e5",
+    "actual_retained_min_mean_max": [
+      70.9090909090909,
+      71.0004196967061,
+      71.1864406779661
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "99162d7113a31dd84ba284f1882e3a4a37d7bc3b4fc4a1e952d96fdb49a90913"
+  },
+  {
+    "rates": {
+      "rank1": 0.33539094650205764,
+      "tar": 0.3230452674897119,
+      "fnmr": 0.676954732510288,
+      "far": 0.034705075445816184,
+      "eer_descriptive": 0.257201646090535,
+      "extraction_failures": 5,
+      "queries": 486,
+      "genuine_mean_valid": 0.7192380453015059,
+      "margin_mean_valid": -0.13407537411652284,
+      "joint": 0.2962962962962963
+    },
+    "counts": {
+      "correct": 163,
+      "accepted": 157,
+      "joint": 144,
+      "false_accepts": 253,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 5
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        22.016460905349795,
+        46.09053497942387
+      ],
+      "tar": [
+        20.781893004115226,
+        45.0
+      ],
+      "joint": [
+        18.292193162895483,
+        42.181069958847736
+      ],
+      "fmr": [
+        2.8194444444444446,
+        4.074186991869917
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 30,
+    "reused": true,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\ensaio_oclusoes_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_30_2026-10-21",
+    "source_protocol_sha256": "afe1dc3ea9b1d0c8656a320203f618fd0600d947dafdae4a4817d6acfbc9eb61",
+    "actual_retained_min_mean_max": [
+      69.4915254237288,
+      69.99863115319332,
+      70.0260078023407
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "70c0334b79c17405b7b8d06218068866bdf924aaaa15e2e9cdba257f10118f5a"
+  },
+  {
+    "rates": {
+      "rank1": 0.6995884773662552,
+      "tar": 0.6995884773662552,
+      "fnmr": 0.3004115226337448,
+      "far": 0.020987654320987655,
+      "eer_descriptive": 0.11529492455418382,
+      "extraction_failures": 4,
+      "queries": 486,
+      "genuine_mean_valid": 0.8574766151971382,
+      "margin_mean_valid": 0.039566232017393316,
+      "joint": 0.6646090534979424
+    },
+    "counts": {
+      "correct": 340,
+      "accepted": 340,
+      "joint": 323,
+      "false_accepts": 153,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 4
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        62.083333333333336,
+        77.91666666666667
+      ],
+      "tar": [
+        61.041666666666664,
+        78.45528455284553
+      ],
+      "joint": [
+        58.23045267489712,
+        74.791793699187
+      ],
+      "fmr": [
+        1.6527777777777777,
+        2.5277777777777777
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 30,
+    "reused": true,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\ensaio_oclusoes_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_30_2026-10-21",
+    "source_protocol_sha256": "7c119c82099ba8eca54fde34b34dc781e0d6318283c725fb5726b38f58c81828",
+    "actual_retained_min_mean_max": [
+      69.4915254237288,
+      69.99863115319332,
+      70.0260078023407
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "7825e525f038b79da1e742ade38c1384bba55a60eb14cda81c7e50951d81ff1d"
+  },
+  {
+    "rates": {
+      "rank1": 0.32510288065843623,
+      "tar": 0.294238683127572,
+      "fnmr": 0.7057613168724279,
+      "far": 0.03525377229080933,
+      "eer_descriptive": 0.25308641975308643,
+      "extraction_failures": 5,
+      "queries": 486,
+      "genuine_mean_valid": 0.7199020267504136,
+      "margin_mean_valid": -0.13469509532753096,
+      "joint": 0.2757201646090535
+    },
+    "counts": {
+      "correct": 158,
+      "accepted": 143,
+      "joint": 134,
+      "false_accepts": 257,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 5
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        20.57493977717555,
+        45.833333333333336
+      ],
+      "tar": [
+        17.708333333333332,
+        42.79835390946502
+      ],
+      "joint": [
+        16.056722372779284,
+        40.946502057613166
+      ],
+      "fmr": [
+        2.875,
+        4.132791327913279
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_inferior",
+    "loss_percent": 31,
+    "reused": true,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\ensaio_oclusoes_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_inferior_31_2026-10-21",
+    "source_protocol_sha256": "1dd99c2aca7722aad3b5657bc47ddef2e585cbbefc9b55dacd3631ce7a8f22b9",
+    "actual_retained_min_mean_max": [
+      68.95958727429064,
+      69.0009412288619,
+      69.4915254237288
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "4ad833bc5b3d00737f3e7e6b92a2663868201173b05fa9da7d7769174db2208a"
+  },
+  {
+    "rates": {
+      "rank1": 0.6934156378600823,
+      "tar": 0.7098765432098766,
+      "fnmr": 0.2901234567901234,
+      "far": 0.020164609053497942,
+      "eer_descriptive": 0.10905349794238683,
+      "extraction_failures": 5,
+      "queries": 486,
+      "genuine_mean_valid": 0.862022225254188,
+      "margin_mean_valid": 0.04509520751815828,
+      "joint": 0.6625514403292181
+    },
+    "counts": {
+      "correct": 337,
+      "accepted": 345,
+      "joint": 322,
+      "false_accepts": 147,
+      "queries": 486,
+      "impostors": 7290,
+      "extraction_failures": 5
+    },
+    "interval95_cluster_person_pp": {
+      "rank1": [
+        61.041666666666664,
+        77.57201646090535
+      ],
+      "tar": [
+        61.78861788617886,
+        79.83539094650206
+      ],
+      "joint": [
+        57.5,
+        75.10046358272596
+      ],
+      "fmr": [
+        1.5,
+        2.5203252032520327
+      ]
+    },
+    "passed": false,
+    "condition": "oclusao_superior",
+    "loss_percent": 31,
+    "reused": true,
+    "source_folder": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\ensaio_oclusoes_2026-11-08\\inferencia\\confirmacao_congelada_test_oclusao_superior_31_2026-10-21",
+    "source_protocol_sha256": "5847d55917168d52ef6b517f569f746216dca86f63283dc5366f6d91a9a1280b",
+    "actual_retained_min_mean_max": [
+      68.95958727429064,
+      69.0009412288619,
+      69.4915254237288
+    ],
+    "defined_area_queries": 480,
+    "undefined_area_queries_retained": 6,
+    "gallery_byte_identical": true,
+    "scores_sha256": "d9b12d9dd8947b3d420feaa978022ebb5c04238e386381df332434b87154243f"
+  }
+]

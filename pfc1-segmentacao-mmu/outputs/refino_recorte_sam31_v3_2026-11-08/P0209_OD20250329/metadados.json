@@ -1,0 +1,115 @@
+{
+  "filename": "P0209_OD20250329.JPG",
+  "diagnosis_dataset_only": "Traumatic cataract, Iridodialysis, Ocular contusion",
+  "status": "refined",
+  "image_sha256": "d9b1871c9f4266858063b626c4d2c609a381e35adebf23f2fa08ac823dda3949",
+  "previous": {
+    "pixels": 846509,
+    "components": 1,
+    "components_ge_100px": 1
+  },
+  "localizer": {
+    "pixels": 846509,
+    "components": 1,
+    "components_ge_100px": 1
+  },
+  "new": {
+    "pixels": 1265804,
+    "components": 1,
+    "components_ge_100px": 1
+  },
+  "details": {
+    "roi_xyxy": [
+      167,
+      0,
+      2781,
+      1984
+    ],
+    "points_xy_in_roi": [
+      [
+        1638.0,
+        1026.0
+      ],
+      [
+        1606.0,
+        1096.0
+      ],
+      [
+        1535.0,
+        1159.0
+      ],
+      [
+        1534.0,
+        1026.0
+      ],
+      [
+        1534.0,
+        1025.0
+      ],
+      [
+        1534.0,
+        1024.0
+      ],
+      [
+        1654.0,
+        905.0
+      ],
+      [
+        1654.0,
+        960.0
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "automatic_pupil_seed": false,
+    "pupil_refinement": {
+      "status": "no_enclosed_seed"
+    },
+    "candidates": [
+      {
+        "index": 0,
+        "model_quality_not_measured_iou": 0.57421875,
+        "seed_coverage": 0.320130087217029,
+        "area_ratio_to_seed": 0.5038257124259754,
+        "prompt_match": 1.0,
+        "eligible": false,
+        "selection_score": -1000000.0
+      },
+      {
+        "index": 1,
+        "model_quality_not_measured_iou": 1.375,
+        "seed_coverage": 0.9998771424757446,
+        "area_ratio_to_seed": 2.258532395993427,
+        "prompt_match": 1.0,
+        "eligible": true,
+        "selection_score": 1.5749877142475746
+      },
+      {
+        "index": 2,
+        "model_quality_not_measured_iou": 1.8359375,
+        "seed_coverage": 0.976146739136855,
+        "area_ratio_to_seed": 1.503201974225909,
+        "prompt_match": 1.0,
+        "eligible": true,
+        "selection_score": 2.0335521739136855
+      }
+    ],
+    "selected_index": 2,
+    "presence_logit": 30.5,
+    "manual_or_reference_prompts": false,
+    "morphological_hole_filling": false,
+    "forced_circle_or_ellipse": false,
+    "rgb_texture_modified": false,
+    "disconnected_objects_without_iris_points_removed": true
+  },
+  "native_mask_sha256": "7125915aa72388659d3db82dc9bf5ccd46458a7b9e45d54378c297ffae45d41e",
+  "crop_sha256": "808c57ef1aa654757e3df1ede8c991e7c7620297bb7430dee0b357c2bd0d4e28"
+}

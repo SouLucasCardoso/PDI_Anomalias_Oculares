@@ -270,8 +270,14 @@ class Handler(BaseHTTPRequestHandler):
                     capture = self.app.store.capture(str(data.get('capture', '')))
                     if json.loads(capture['result'])['mode'] != 'enroll':
                         raise ValueError('Use o modo cadastro para adicionar uma pessoa')
-                    person = self.app.store.enroll(capture['id'], data.get('name', ''), data.get('person_id'), self.app.engine.engine_id)
-                self.send({'person_id': person})
+                    # Capturas salvas mantem sua versao apos reiniciar; a comparacao filtra por esse identificador.
+                    engine_id = getattr(self.app.engine, 'engine_id', capture['engine'])
+                    person = self.app.store.enroll(capture['id'], data.get('name', ''), data.get('person_id'), engine_id)
+                self.send({'person_id': person, 'name': self.app.store.person_name(person)})
+            elif path == '/api/rename-person':
+                with self.app.mutations:
+                    name = self.app.store.rename_person(str(data.get('person_id', '')), data.get('name', ''))
+                self.send({'renamed': True, 'name': name})
             elif path == '/api/trials':
                 with self.app.mutations:
                     try:

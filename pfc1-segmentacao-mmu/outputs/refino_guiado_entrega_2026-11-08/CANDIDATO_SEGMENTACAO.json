@@ -1,0 +1,71 @@
+{
+  "frozen_utc": "2026-11-09T00:44:26.277138+00:00",
+  "selected_method": "continuous",
+  "spec": {
+    "flip": false,
+    "radius": 0,
+    "epsilon": 0.0
+  },
+  "segmentation_gain": false,
+  "baseline": {
+    "original": 0.8846222579599891,
+    "oclusao_superior": 0.8441587613577454,
+    "oclusao_inferior": 0.7859197436578989
+  },
+  "results": {
+    "continuous": {
+      "original": 0.8846222579599891,
+      "oclusao_superior": 0.8441587613577454,
+      "oclusao_inferior": 0.7859197436578989
+    },
+    "flip_mean": {
+      "original": 0.8839316277851886,
+      "oclusao_superior": 0.8490023033675991,
+      "oclusao_inferior": 0.7745376750733044
+    },
+    "guided_r2_e0.001": {
+      "original": 0.8841623343200777,
+      "oclusao_superior": 0.8440694910251338,
+      "oclusao_inferior": 0.7842001172496169
+    },
+    "guided_r2_e0.01": {
+      "original": 0.8845104845885708,
+      "oclusao_superior": 0.8430880257407497,
+      "oclusao_inferior": 0.7831643160281266
+    },
+    "guided_r4_e0.001": {
+      "original": 0.8836171092785949,
+      "oclusao_superior": 0.8414614768832757,
+      "oclusao_inferior": 0.7819378724499342
+    },
+    "guided_r4_e0.01": {
+      "original": 0.8841008647730976,
+      "oclusao_superior": 0.8403793078917596,
+      "oclusao_inferior": 0.7809203651812839
+    },
+    "flip_guided_r2_e0.001": {
+      "original": 0.8832210774739827,
+      "oclusao_superior": 0.8488298080106427,
+      "oclusao_inferior": 0.7715335699350511
+    },
+    "flip_guided_r2_e0.01": {
+      "original": 0.8834997550394869,
+      "oclusao_superior": 0.8477071185852127,
+      "oclusao_inferior": 0.7704232716109833
+    },
+    "flip_guided_r4_e0.001": {
+      "original": 0.8822955811295426,
+      "oclusao_superior": 0.846155551624311,
+      "oclusao_inferior": 0.7683175047961609
+    },
+    "flip_guided_r4_e0.01": {
+      "original": 0.8829292059089736,
+      "oclusao_superior": 0.8450297088514183,
+      "oclusao_inferior": 0.7673685828926187
+    }
+  },
+  "checkpoint_sha256": "2bcfc269ffc9562ca8cf0956998faf1e22641587cd60f7059b3cec3dd0f4093d",
+  "method_sha256": "d7876792cde2f60d55f230421460d824a8ef8401bf83f942e0e7b6b140e626b4",
+  "identity_selection_performed": false,
+  "test_inference": false
+}

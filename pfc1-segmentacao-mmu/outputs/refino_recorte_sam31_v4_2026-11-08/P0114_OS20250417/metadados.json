@@ -1,0 +1,192 @@
+{
+  "filename": "P0114_OS20250417.JPG",
+  "diagnosis_dataset_only": "Iris cyst, Corneal ulcer, Bullous keratopathy",
+  "status": "refined",
+  "image_sha256": "1f90538202e540ee5175ca5d370bdaf13dfcd7238a354af14d86784fe4ce570a",
+  "previous": {
+    "pixels": 620862,
+    "components": 1,
+    "components_ge_100px": 1
+  },
+  "localizer": {
+    "pixels": 620862,
+    "components": 1,
+    "components_ge_100px": 1
+  },
+  "new": {
+    "pixels": 762959,
+    "components": 1,
+    "components_ge_100px": 1
+  },
+  "details": {
+    "roi_xyxy": [
+      640,
+      363,
+      2561,
+      1984
+    ],
+    "points_xy_in_roi": [
+      [
+        1216.0,
+        953.0
+      ],
+      [
+        1114.0,
+        1014.0
+      ],
+      [
+        801.0,
+        1068.0
+      ],
+      [
+        763.0,
+        1050.0
+      ],
+      [
+        635.0,
+        872.0
+      ],
+      [
+        715.0,
+        615.0
+      ],
+      [
+        1174.0,
+        682.0
+      ],
+      [
+        1221.0,
+        878.0
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "automatic_pupil_seed": true,
+    "pupil_refinement": {
+      "status": "sam31_refined",
+      "seed_origin": "enclosed_coarse_hole",
+      "selected_index": 0,
+      "candidates": [
+        {
+          "index": 0,
+          "model_quality_not_measured_iou": 0.62890625,
+          "area_ratio_to_seed": 3.399270811156057,
+          "inside_iris_fraction": 1.0,
+          "negative_iris_points_respected": true,
+          "eligible": true
+        },
+        {
+          "index": 1,
+          "model_quality_not_measured_iou": 1.3828125,
+          "area_ratio_to_seed": 7.8773419203747075,
+          "inside_iris_fraction": 0.9965506640225136,
+          "negative_iris_points_respected": false,
+          "eligible": false
+        },
+        {
+          "index": 2,
+          "model_quality_not_measured_iou": 1.734375,
+          "area_ratio_to_seed": 6.214791356184799,
+          "inside_iris_fraction": 1.0,
+          "negative_iris_points_respected": false,
+          "eligible": false
+        }
+      ],
+      "points_xy_in_roi": [
+        [
+          881.0,
+          794.0
+        ],
+        [
+          1216.0,
+          953.0
+        ],
+        [
+          1114.0,
+          1014.0
+        ],
+        [
+          801.0,
+          1068.0
+        ],
+        [
+          763.0,
+          1050.0
+        ],
+        [
+          635.0,
+          872.0
+        ],
+        [
+          715.0,
+          615.0
+        ],
+        [
+          1174.0,
+          682.0
+        ],
+        [
+          1221.0,
+          878.0
+        ]
+      ],
+      "point_labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "candidates": [
+      {
+        "index": 0,
+        "model_quality_not_measured_iou": 0.984375,
+        "seed_coverage": 0.6907460917240869,
+        "area_ratio_to_seed": 0.8283467179502048,
+        "prompt_match": 1.0,
+        "eligible": true,
+        "selection_score": 1.1534496091724087
+      },
+      {
+        "index": 1,
+        "model_quality_not_measured_iou": 0.98828125,
+        "seed_coverage": 0.9997680644007847,
+        "area_ratio_to_seed": 2.187547313251576,
+        "prompt_match": 1.0,
+        "eligible": true,
+        "selection_score": 1.1882580564400786
+      },
+      {
+        "index": 2,
+        "model_quality_not_measured_iou": 1.890625,
+        "seed_coverage": 0.9543553962072087,
+        "area_ratio_to_seed": 1.4262911887021592,
+        "prompt_match": 1.0,
+        "eligible": true,
+        "selection_score": 2.086060539620721
+      }
+    ],
+    "selected_index": 2,
+    "presence_logit": 31.5,
+    "manual_or_reference_prompts": false,
+    "morphological_hole_filling": false,
+    "forced_circle_or_ellipse": false,
+    "rgb_texture_modified": false,
+    "disconnected_objects_without_iris_points_removed": true
+  },
+  "native_mask_sha256": "42bc86f89cb0fe82869d0156a6060d8b16ba4ca2e8e7af947fca381c567cf4cd",
+  "crop_sha256": "63e2ee6a2a164b316eba12f4332975952ba95ddee0d85c417727745621d2be6f"
+}

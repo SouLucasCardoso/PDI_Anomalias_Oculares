@@ -1,6 +1,6 @@
 # Segmentação e identificação — acompanhamento
 
-Atualizado em 2026-11-05T11:47:06.195931+00:00 (UTC).
+Atualizado em 2026-11-08T15:39:19.147836+00:00 (UTC).
 
 Última época concluída: **30**. A seleção do candidato usa somente segmentação.
 

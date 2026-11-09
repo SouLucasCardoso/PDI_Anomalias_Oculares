@@ -2,6 +2,8 @@
 
 Protótipo privado para Samsung Galaxy S23 base, Android 15, com inferência no Dell G15. Não instala APK nem publica serviço. Câmera RGB do aparelho; não presume capacidade de reconhecimento de um sensor dedicado de íris.
 
+**Documentação atualizada em 09/11/2026.** O cadastro permite dar um nome a cada novo olho e adicionar fotos a um registro escolhido explicitamente. Os [ensaios acadêmicos de oclusão](../pfc1-segmentacao-mmu/RESULTADO_GRADE_DENSA_2026-11-08.md) foram concluídos separadamente; suas taxas não representam desempenho das fotografias do S23. O motor deste demonstrador foi preservado.
+
 ## Organização e preparação
 
 Esta é a pasta própria do reconhecedor. `app_celular/web/` contém a interface, `servidor.py` o serviço local e `store.py` o cadastro. Os iniciadores ficam nesta pasta. `app_celular/motor.py` é uma ponte para o [núcleo de inferência congelado](../pfc1-segmentacao-mmu/app_celular/motor.py): o código científico e os pesos continuam em `../pfc1-segmentacao-mmu/`. Essa separação preserva o identificador do motor e os descritores já cadastrados.
@@ -46,12 +48,12 @@ Depois de uma configuração de rede autorizada, o iniciador descobre o IPv4 atu
 
 ## Primeiro experimento no telefone
 
-1. Em **Cadastrar pessoa**, escolha o olho **da pessoa fotografada** (direito ou esquerdo).
+1. Em **Cadastrar olho**, escolha o olho **da pessoa fotografada** (direito ou esquerdo).
 2. Use **Abrir câmera**. A captura abre o aplicativo de câmera do Android; não depende de transmissão de vídeo ao vivo. Também pode escolher uma foto existente.
 3. Arraste o quadro e ajuste o enquadramento para incluir um olho inteiro e as pálpebras. O recorte é feito na resolução original, antes de limitar o envio a 2560 px no maior lado. O restante da foto não é enviado.
 4. Toque em **Analisar recorte no PC**. A primeira análise também carrega os modelos; as seguintes usam os modelos em memória. A página mostra as etapas reais de processamento.
-5. Confira a região verde prevista. Se a segmentação estiver errada, descarte a captura e tente novamente. Se estiver adequada, informe o nome e confirme a revisão para salvar.
-6. Faça mais duas capturas independentes do mesmo olho, selecionando a pessoa já cadastrada. Cadastre outras pessoas que concordem com o teste.
+5. Confira a região verde prevista. Se a segmentação estiver errada, descarte a captura e tente novamente. Se estiver adequada, escolha **Novo registro**, digite um nome para aquele olho (por exemplo, “Ana — direito”) e confirme a revisão para salvar. Cada nova captura começa com o nome vazio; nomes iguais aos de outro registro são recusados para evitar confusão.
+6. Para mais fotos independentes do **mesmo olho**, escolha explicitamente **Adicionar foto** e selecione o registro que deve recebê-las. A lista mostra somente o mesmo lado do olho. Para outro registro, use **Novo registro** e escolha outro nome. Após salvar, **Fazer nova captura** limpa a foto e o formulário.
 7. Mude para **Reconhecer** e tire **uma nova foto**. O aplicativo compara apenas com o mesmo lado do olho e a mesma versão do motor.
 8. Confira a lista de candidatos e só então informe quem foi fotografado para registrar o teste. Inclua também pessoas não cadastradas para observar o comportamento; isso ainda não produz uma taxa de falsas aceitações, pois não há limiar para celular.
 
@@ -70,6 +72,7 @@ Foram reaproveitados, em leitura, o extrator visual oficial SAM3.1 com decodific
 - Cadastro, fotos recortadas, descritores e testes: `dados_app_celular/`, excluído do Git por `.gitignore` interno. A pasta fica dentro do workspace OneDrive: exclusão do Git **não** desativa eventual sincronização do OneDrive do usuário.
 - A foto original completa fica no celular; o aplicativo armazena no PC o recorte, a máscara, a visualização e os descritores. Capturas ficam guardadas até serem descartadas ou excluídas. Cadastros exigem revisão visual.
 - **Excluir pessoa e fotos** remove o cadastro dessa pessoa e limpa todos os testes e capturas avulsas para retirar referências a ela nos resultados. Não altera bancos de pesquisa, anotações clínicas ou pesos.
+- **Renomear registro**, na Galeria, permite corrigir nomes salvos anteriormente. Mantém os identificadores, fotos, descritores e testes; resultados históricos podem preservar o nome utilizado quando foram calculados. O programa não tenta adivinhar a quem pertence uma foto nem reatribui capturas automaticamente.
 - Suspender o PC interrompe temporariamente o processamento. Reinicie o aplicativo e restabeleça USB se necessário; os cadastros salvos persistem. Uma análise interrompida deve ser refeita.
 - Não é um autenticador de segurança, não possui teste de vivacidade e não diagnostica anomalias.
 

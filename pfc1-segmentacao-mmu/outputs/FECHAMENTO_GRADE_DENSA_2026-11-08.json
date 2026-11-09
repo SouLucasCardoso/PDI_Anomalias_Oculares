@@ -1,0 +1,24 @@
+{
+  "status": "concluido",
+  "utc": "2026-11-09T04:05:35.142776+00:00",
+  "reference_conditions": 63,
+  "candidate_conditions": 63,
+  "comparison_gate_passed": false,
+  "candidate_fmr_worse_conditions": 31,
+  "recognizer_replaced": false,
+  "article_docx_sha256": "24c0a0bef2f77f65f7af5f5b5a3478a25b62eea1e0308690acb7686005bf515e",
+  "report_sha256": "cd281c31120194dadc1cf5cd41582ecf15a9bd0f4c40ab3bff1c6a1eaca07a9f",
+  "inputs_sha256": {
+    "outputs/grade_densa_analise_2026-11-08/AUDITORIA_FINAL.json": "8c03dc34dee52e32e7bf9ea8989b92f15e344e0e8e1e765041be8f5bed932ba9",
+    "outputs/grade_densa_1a31_2026-11-08/CONCLUIDO.json": "ddbe370db64ee134cd5966cfdaa160ae49bac8a99f6131ab8598caa9ee054aa3",
+    "outputs/grade_densa_contorno_misto_2026-11-08/CONCLUIDO.json": "8f805f832ad0d127f2d4f4a3d812e484055eacb4794f8e8bdf815f0f8f794297",
+    "outputs/grade_densa_contorno_misto_2026-11-08/resultados.json": "383178c52a265190801fcfd3297e8e95c850c3dee0a302845355a2e9aa2e7560",
+    "outputs/contorno_componentes_misto_2026-11-08/CANDIDATO_IDENTIDADE.json": "96343bf22870b64d17a14b357431e23658121c66d10f0d53a4f6bb26d747f6d6",
+    "outputs/contorno_fragmentos_entrega_2026-11-08/CONCLUIDO.json": "9126fa547b0a2aab401fb16561b13a66db1653c84e22f2715ec40851d33b5bb8",
+    "outputs/sam31_prompts_exteriores_2026-11-08/CONCLUIDO.json": "a8e19e1b31d5e94dccb8cde0c1c1dca70e4cf253fb2e6495ba650660952a2176",
+    "outputs/sam31_matte_subpixel_2026-11-08/CONCLUIDO.json": "927532c2aa542eac60f70a0706332a27dac1b9edf8725b06e1556e50e1406afe",
+    "artigo/verificacao_2026-11-08/VERIFICACAO_FINAL.json": "610341ff0d75b65fbe5d2d21d352c3683df9268b9ac108cd7ea269cd88b91242",
+    "outputs/tecnologias_grade_densa_2026-11-08.json": "014e2c0cc7c1af8a69ecaf36420398a707175d46df695452afbce08b259d1692"
+  },
+  "compiler_sha256": "1fad37ec09c889c0d95d51f7bb9229a106e855b8218796ddb4602497b8e3504b"
+}

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\lucaz\OneDrive\Documentos\SATC\0 - Disciplinas\SEMESTRE 8\PFC I\PDI_Anomalias_Oculares\pfc1-segmentacao-mmu\executar_reconhecedor_entrega.py", line 31, in main
+    if result.returncode:raise RuntimeError('Treinamento falhou; ver execucao.log e ERRO.txt')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Treinamento falhou; ver execucao.log e ERRO.txt

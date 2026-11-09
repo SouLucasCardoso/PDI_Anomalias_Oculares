@@ -1,0 +1,21 @@
+{
+  "source_local_file": "CONCLUIDO.json",
+  "source_sha256": "a8e19e1b31d5e94dccb8cde0c1c1dca70e4cf253fb2e6495ba650660952a2176",
+  "scope": "Aggregate publication; original per-image records retained locally; no original artifact altered",
+  "record_count": 78,
+  "selected_clean": null,
+  "summary": {
+    "original": {
+      "baseline": 0.8846222579599891,
+      "16": 0.8338600975105667,
+      "24": 0.8419293851759568
+    }
+  },
+  "recognizer_replaced": false,
+  "clinical_accuracy_claimed": false,
+  "status": "concluido",
+  "segmentation_gate_passed": false,
+  "mean_continuous_dice_by_condition": {
+    "original": 0.8846222579599891
+  }
+}

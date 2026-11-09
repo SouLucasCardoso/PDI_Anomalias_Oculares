@@ -1,0 +1,9 @@
+{
+  "status": "concluido",
+  "conditions": 63,
+  "candidate_comparison_gate": false,
+  "audit_sha256": "8c03dc34dee52e32e7bf9ea8989b92f15e344e0e8e1e765041be8f5bed932ba9",
+  "figure_sha256": "d53474b5f58a962cfedfb8fb580b3b0f4ac5366106ac4c458fc09c56c704a6a2",
+  "report_sha256": "b06b2d0fadb367ce9db90df724e2ee9ce1b25581ac20946ba2a0ecbf1c896327",
+  "sources_unchanged": true
+}

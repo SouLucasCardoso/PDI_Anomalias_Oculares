@@ -1,0 +1,55 @@
+{
+  "frozen_utc": "2026-11-09T00:47:40.184175+00:00",
+  "selected_method": "continuous",
+  "spec": {
+    "320": 1.0
+  },
+  "algorithm_module": "contorno_multiescala_iris",
+  "segmentation_gain": false,
+  "baseline": {
+    "original": 0.8846222579599891,
+    "oclusao_superior": 0.8441587613577454,
+    "oclusao_inferior": 0.7859197436578989
+  },
+  "results": {
+    "continuous": {
+      "original": 0.8846222579599891,
+      "oclusao_superior": 0.8441587613577454,
+      "oclusao_inferior": 0.7859197436578989
+    },
+    "tenth640": {
+      "original": 0.8836535044471387,
+      "oclusao_superior": 0.8419856772550752,
+      "oclusao_inferior": 0.7798000967491007
+    },
+    "quarter640": {
+      "original": 0.8722026905230842,
+      "oclusao_superior": 0.8294464020810048,
+      "oclusao_inferior": 0.7556664780802037
+    },
+    "half640": {
+      "original": 0.57829273277948,
+      "oclusao_superior": 0.5140310375361684,
+      "oclusao_inferior": 0.49236188664575437
+    },
+    "native640": {
+      "original": 0.28908005082304417,
+      "oclusao_superior": 0.2874434751788735,
+      "oclusao_inferior": 0.28937206486534844
+    },
+    "pyramid": {
+      "original": 0.8820297359446457,
+      "oclusao_superior": 0.8388136016325194,
+      "oclusao_inferior": 0.7734191860529814
+    },
+    "mean384": {
+      "original": 0.8795150354650277,
+      "oclusao_superior": 0.8482876276555503,
+      "oclusao_inferior": 0.7724027982101327
+    }
+  },
+  "checkpoint_sha256": "2bcfc269ffc9562ca8cf0956998faf1e22641587cd60f7059b3cec3dd0f4093d",
+  "method_sha256": "cc0fc60aab271fd93a4bc3f4404a8d35e9020b044a39af57a0b571829060696a",
+  "identity_selection_performed": false,
+  "test_inference": false
+}

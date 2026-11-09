@@ -1,0 +1,465 @@
+{
+  "counts_recomputed": [
+    {
+      "condition": "original_0",
+      "scores_sha256": "ed4f83d68339e601c668695c0d2c16881c5d4eef174dbe39c33a9a6a5988dad6",
+      "all_counts_recomputed": true,
+      "historical_frozen_evaluator_scores_reproduced": true
+    },
+    {
+      "condition": "oclusao_superior_1",
+      "scores_sha256": "c2936b98080620f825a331f7ea9be87592e245f8e2e9ec3620414fac36cfa039",
+      "all_counts_recomputed": true,
+      "historical_frozen_evaluator_scores_reproduced": true
+    },
+    {
+      "condition": "oclusao_inferior_1",
+      "scores_sha256": "02433d84c56d9795e28922895a7db506ad5effd1fd67fb641452b108d4547e1f",
+      "all_counts_recomputed": true,
+      "historical_frozen_evaluator_scores_reproduced": true
+    },
+    {
+      "condition": "oclusao_superior_5",
+      "scores_sha256": "6fc97189597d2d1ba79b20b5ac78cd02b8d01a646f341d4266f7a34a9f06d39d",
+      "all_counts_recomputed": true,
+      "historical_frozen_evaluator_scores_reproduced": true
+    },
+    {
+      "condition": "oclusao_inferior_5",
+      "scores_sha256": "47855eea2d9635b0da1d914eb1f17e5ec20c6a75d9e811ddbbfae8fd00e42c94",
+      "all_counts_recomputed": true,
+      "historical_frozen_evaluator_scores_reproduced": true
+    },
+    {
+      "condition": "oclusao_superior_10",
+      "scores_sha256": "014671821fde4b164dc515da1d1219426157616c79b541d28b7b0ce5a7d69b00",
+      "all_counts_recomputed": true,
+      "historical_frozen_evaluator_scores_reproduced": true
+    },
+    {
+      "condition": "oclusao_inferior_10",
+      "scores_sha256": "462c28bc45a80857a0efaf1f9296334bfb26ed1dd5300dc553f91b4e858e26c1",
+      "all_counts_recomputed": true,
+      "historical_frozen_evaluator_scores_reproduced": true
+    },
+    {
+      "condition": "oclusao_superior_20",
+      "scores_sha256": "f4325735c96ec223584fba921bb92d2331d0edf6647f6d41bc363f691b48538f",
+      "all_counts_recomputed": true,
+      "historical_frozen_evaluator_scores_reproduced": true
+    },
+    {
+      "condition": "oclusao_inferior_20",
+      "scores_sha256": "d980ba04333c43c1fecbcb31357dc4e6610e93d50b58f667271ebbf3d519ebc5",
+      "all_counts_recomputed": true,
+      "historical_frozen_evaluator_scores_reproduced": true
+    },
+    {
+      "condition": "oclusao_superior_30",
+      "scores_sha256": "7825e525f038b79da1e742ade38c1384bba55a60eb14cda81c7e50951d81ff1d",
+      "all_counts_recomputed": true,
+      "historical_frozen_evaluator_scores_reproduced": true
+    },
+    {
+      "condition": "oclusao_inferior_30",
+      "scores_sha256": "70c0334b79c17405b7b8d06218068866bdf924aaaa15e2e9cdba257f10118f5a",
+      "all_counts_recomputed": true,
+      "historical_frozen_evaluator_scores_reproduced": true
+    },
+    {
+      "condition": "oclusao_superior_31",
+      "scores_sha256": "d9b12d9dd8947b3d420feaa978022ebb5c04238e386381df332434b87154243f",
+      "all_counts_recomputed": true,
+      "historical_frozen_evaluator_scores_reproduced": true
+    },
+    {
+      "condition": "oclusao_inferior_31",
+      "scores_sha256": "4ad833bc5b3d00737f3e7e6b92a2663868201173b05fa9da7d7769174db2208a",
+      "all_counts_recomputed": true,
+      "historical_frozen_evaluator_scores_reproduced": true
+    }
+  ],
+  "paired_drops": [
+    {
+      "condition": "oclusao_superior",
+      "loss_percent": 1,
+      "rank1_drop_pp": 1.2345679012345678,
+      "interval95_cluster_person_pp": [
+        -0.4066295292582555,
+        2.674897119341564
+      ]
+    },
+    {
+      "condition": "oclusao_superior",
+      "loss_percent": 5,
+      "rank1_drop_pp": 3.292181069958848,
+      "interval95_cluster_person_pp": [
+        0.0,
+        6.9105691056910565
+      ]
+    },
+    {
+      "condition": "oclusao_superior",
+      "loss_percent": 10,
+      "rank1_drop_pp": 8.847736625514404,
+      "interval95_cluster_person_pp": [
+        2.2916666666666665,
+        16.872427983539094
+      ]
+    },
+    {
+      "condition": "oclusao_superior",
+      "loss_percent": 20,
+      "rank1_drop_pp": 21.193415637860085,
+      "interval95_cluster_person_pp": [
+        13.333333333333334,
+        29.62962962962963
+      ]
+    },
+    {
+      "condition": "oclusao_superior",
+      "loss_percent": 30,
+      "rank1_drop_pp": 21.193415637860085,
+      "interval95_cluster_person_pp": [
+        15.22633744855967,
+        26.875
+      ]
+    },
+    {
+      "condition": "oclusao_superior",
+      "loss_percent": 31,
+      "rank1_drop_pp": 21.810699588477366,
+      "interval95_cluster_person_pp": [
+        15.24390243902439,
+        28.333333333333332
+      ]
+    },
+    {
+      "condition": "oclusao_inferior",
+      "loss_percent": 1,
+      "rank1_drop_pp": 0.205761316872428,
+      "interval95_cluster_person_pp": [
+        -1.016260162601626,
+        1.4583333333333333
+      ]
+    },
+    {
+      "condition": "oclusao_inferior",
+      "loss_percent": 5,
+      "rank1_drop_pp": 17.078189300411523,
+      "interval95_cluster_person_pp": [
+        10.416666666666666,
+        24.79925725183174
+      ]
+    },
+    {
+      "condition": "oclusao_inferior",
+      "loss_percent": 10,
+      "rank1_drop_pp": 32.92181069958848,
+      "interval95_cluster_person_pp": [
+        22.916666666666668,
+        43.49593495934959
+      ]
+    },
+    {
+      "condition": "oclusao_inferior",
+      "loss_percent": 20,
+      "rank1_drop_pp": 50.41152263374485,
+      "interval95_cluster_person_pp": [
+        40.625,
+        60.08230452674897
+      ]
+    },
+    {
+      "condition": "oclusao_inferior",
+      "loss_percent": 30,
+      "rank1_drop_pp": 57.61316872427984,
+      "interval95_cluster_person_pp": [
+        47.291666666666664,
+        67.29166666666667
+      ]
+    },
+    {
+      "condition": "oclusao_inferior",
+      "loss_percent": 31,
+      "rank1_drop_pp": 58.64197530864198,
+      "interval95_cluster_person_pp": [
+        47.5,
+        69.10569105691057
+      ]
+    }
+  ],
+  "contrast_30_to_31": [
+    {
+      "condition": "oclusao_superior",
+      "contrast": "30% para31% de oclusao (70% para69% do suporte anotado)",
+      "rank1_drop_pp": 0.6172839506172839,
+      "interval95_cluster_person_pp": [
+        -1.8072289156626506,
+        3.125
+      ],
+      "lost_correct": 20,
+      "gained_correct": 17
+    },
+    {
+      "condition": "oclusao_inferior",
+      "contrast": "30% para31% de oclusao (70% para69% do suporte anotado)",
+      "rank1_drop_pp": 1.02880658436214,
+      "interval95_cluster_person_pp": [
+        -2.880658436213992,
+        5.208333333333333
+      ],
+      "lost_correct": 34,
+      "gained_correct": 29
+    }
+  ],
+  "sensitivity_fixed_area_defined_480": [
+    {
+      "condition": "original_0",
+      "queries": 480,
+      "rates": {
+        "rank1": 0.9208333333333333,
+        "tar": 0.93125,
+        "fnmr": 0.06874999999999998,
+        "far": 0.008472222222222223,
+        "eer_descriptive": 0.033125,
+        "extraction_failures": 0,
+        "queries": 480,
+        "genuine_mean_valid": 0.9281007315035398,
+        "margin_mean_valid": 0.1525087296830979
+      },
+      "joint": 0.9041666666666667,
+      "scope": "Sensibilidade secundaria pos-hoc no subconjunto fixo com referencia original nao vazia. Nao substitui o resultado principal com486."
+    },
+    {
+      "condition": "oclusao_superior_1",
+      "queries": 480,
+      "rates": {
+        "rank1": 0.9083333333333333,
+        "tar": 0.9291666666666667,
+        "fnmr": 0.0708333333333333,
+        "far": 0.008611111111111111,
+        "eer_descriptive": 0.03333333333333333,
+        "extraction_failures": 0,
+        "queries": 480,
+        "genuine_mean_valid": 0.9268021814720483,
+        "margin_mean_valid": 0.14535044223271798
+      },
+      "joint": 0.89375,
+      "scope": "Sensibilidade secundaria pos-hoc no subconjunto fixo com referencia original nao vazia. Nao substitui o resultado principal com486."
+    },
+    {
+      "condition": "oclusao_inferior_1",
+      "queries": 480,
+      "rates": {
+        "rank1": 0.91875,
+        "tar": 0.91875,
+        "fnmr": 0.08125000000000004,
+        "far": 0.00875,
+        "eer_descriptive": 0.041666666666666664,
+        "extraction_failures": 0,
+        "queries": 480,
+        "genuine_mean_valid": 0.9203191156237732,
+        "margin_mean_valid": 0.1399338794078141
+      },
+      "joint": 0.8979166666666667,
+      "scope": "Sensibilidade secundaria pos-hoc no subconjunto fixo com referencia original nao vazia. Nao substitui o resultado principal com486."
+    },
+    {
+      "condition": "oclusao_superior_5",
+      "queries": 480,
+      "rates": {
+        "rank1": 0.8875,
+        "tar": 0.8958333333333334,
+        "fnmr": 0.10416666666666663,
+        "far": 0.012916666666666667,
+        "eer_descriptive": 0.04791666666666667,
+        "extraction_failures": 0,
+        "queries": 480,
+        "genuine_mean_valid": 0.9171636331218218,
+        "margin_mean_valid": 0.12302536373343094
+      },
+      "joint": 0.8645833333333334,
+      "scope": "Sensibilidade secundaria pos-hoc no subconjunto fixo com referencia original nao vazia. Nao substitui o resultado principal com486."
+    },
+    {
+      "condition": "oclusao_inferior_5",
+      "queries": 480,
+      "rates": {
+        "rank1": 0.7479166666666667,
+        "tar": 0.7833333333333333,
+        "fnmr": 0.21666666666666667,
+        "far": 0.01875,
+        "eer_descriptive": 0.09791666666666667,
+        "extraction_failures": 0,
+        "queries": 480,
+        "genuine_mean_valid": 0.8795360549986334,
+        "margin_mean_valid": 0.0691643664938613
+      },
+      "joint": 0.7208333333333333,
+      "scope": "Sensibilidade secundaria pos-hoc no subconjunto fixo com referencia original nao vazia. Nao substitui o resultado principal com486."
+    },
+    {
+      "condition": "oclusao_superior_10",
+      "queries": 480,
+      "rates": {
+        "rank1": 0.83125,
+        "tar": 0.8520833333333333,
+        "fnmr": 0.1479166666666667,
+        "far": 0.016666666666666666,
+        "eer_descriptive": 0.06041666666666667,
+        "extraction_failures": 0,
+        "queries": 480,
+        "genuine_mean_valid": 0.9030369403010922,
+        "margin_mean_valid": 0.09862046183345895
+      },
+      "joint": 0.8104166666666667,
+      "scope": "Sensibilidade secundaria pos-hoc no subconjunto fixo com referencia original nao vazia. Nao substitui o resultado principal com486."
+    },
+    {
+      "condition": "oclusao_inferior_10",
+      "queries": 480,
+      "rates": {
+        "rank1": 0.5875,
+        "tar": 0.6125,
+        "fnmr": 0.38749999999999996,
+        "far": 0.025694444444444443,
+        "eer_descriptive": 0.14583333333333334,
+        "extraction_failures": 0,
+        "queries": 480,
+        "genuine_mean_valid": 0.829023596031774,
+        "margin_mean_valid": 0.00027458804091135734
+      },
+      "joint": 0.5604166666666667,
+      "scope": "Sensibilidade secundaria pos-hoc no subconjunto fixo com referencia original nao vazia. Nao substitui o resultado principal com486."
+    },
+    {
+      "condition": "oclusao_superior_20",
+      "queries": 480,
+      "rates": {
+        "rank1": 0.70625,
+        "tar": 0.73125,
+        "fnmr": 0.26875000000000004,
+        "far": 0.021527777777777778,
+        "eer_descriptive": 0.10159722222222223,
+        "extraction_failures": 0,
+        "queries": 480,
+        "genuine_mean_valid": 0.8672500703151452,
+        "margin_mean_valid": 0.05127347951533195
+      },
+      "joint": 0.6854166666666667,
+      "scope": "Sensibilidade secundaria pos-hoc no subconjunto fixo com referencia original nao vazia. Nao substitui o resultado principal com486."
+    },
+    {
+      "condition": "oclusao_inferior_20",
+      "queries": 480,
+      "rates": {
+        "rank1": 0.41041666666666665,
+        "tar": 0.4041666666666667,
+        "fnmr": 0.5958333333333333,
+        "far": 0.03236111111111111,
+        "eer_descriptive": 0.23506944444444444,
+        "extraction_failures": 1,
+        "queries": 480,
+        "genuine_mean_valid": 0.7530253790063911,
+        "margin_mean_valid": -0.09160150488128271
+      },
+      "joint": 0.375,
+      "scope": "Sensibilidade secundaria pos-hoc no subconjunto fixo com referencia original nao vazia. Nao substitui o resultado principal com486."
+    },
+    {
+      "condition": "oclusao_superior_30",
+      "queries": 480,
+      "rates": {
+        "rank1": 0.70625,
+        "tar": 0.7041666666666667,
+        "fnmr": 0.2958333333333333,
+        "far": 0.020972222222222222,
+        "eer_descriptive": 0.1125,
+        "extraction_failures": 2,
+        "queries": 480,
+        "genuine_mean_valid": 0.8584912245008804,
+        "margin_mean_valid": 0.04107174716271751
+      },
+      "joint": 0.6708333333333333,
+      "scope": "Sensibilidade secundaria pos-hoc no subconjunto fixo com referencia original nao vazia. Nao substitui o resultado principal com486."
+    },
+    {
+      "condition": "oclusao_inferior_30",
+      "queries": 480,
+      "rates": {
+        "rank1": 0.3375,
+        "tar": 0.3229166666666667,
+        "fnmr": 0.6770833333333333,
+        "far": 0.034861111111111114,
+        "eer_descriptive": 0.2563888888888889,
+        "extraction_failures": 3,
+        "queries": 480,
+        "genuine_mean_valid": 0.7190955483782486,
+        "margin_mean_valid": -0.1340228168525201
+      },
+      "joint": 0.29791666666666666,
+      "scope": "Sensibilidade secundaria pos-hoc no subconjunto fixo com referencia original nao vazia. Nao substitui o resultado principal com486."
+    },
+    {
+      "condition": "oclusao_superior_31",
+      "queries": 480,
+      "rates": {
+        "rank1": 0.7,
+        "tar": 0.7145833333333333,
+        "fnmr": 0.28541666666666665,
+        "far": 0.02013888888888889,
+        "eer_descriptive": 0.10625,
+        "extraction_failures": 3,
+        "queries": 480,
+        "genuine_mean_valid": 0.8630770799447897,
+        "margin_mean_valid": 0.04665024345414994
+      },
+      "joint": 0.66875,
+      "scope": "Sensibilidade secundaria pos-hoc no subconjunto fixo com referencia original nao vazia. Nao substitui o resultado principal com486."
+    },
+    {
+      "condition": "oclusao_inferior_31",
+      "queries": 480,
+      "rates": {
+        "rank1": 0.32708333333333334,
+        "tar": 0.29375,
+        "fnmr": 0.70625,
+        "far": 0.035416666666666666,
+        "eer_descriptive": 0.25180555555555556,
+        "extraction_failures": 3,
+        "queries": 480,
+        "genuine_mean_valid": 0.7197650978057637,
+        "margin_mean_valid": -0.1346477348871006
+      },
+      "joint": 0.27708333333333335,
+      "scope": "Sensibilidade secundaria pos-hoc no subconjunto fixo com referencia original nao vazia. Nao substitui o resultado principal com486."
+    }
+  ],
+  "orientation_difference_at10": {
+    "upper_minus_lower_rank1_pp": 24.074074074074073,
+    "interval95_cluster_person_pp": [
+      11.456427845528456,
+      36.041666666666664
+    ]
+  },
+  "bootstrap_seed": 20261108,
+  "replicates": 5000,
+  "example": {
+    "filename": "C101_S2_I10_L.jpg",
+    "image_sha256": "2a93c54323231cd43655dbd547cb0a348ab17022353c49fb262702fca6d0731e",
+    "reference_sha256": "3136a17e4e8fb2bc240d1836b370f36095e98f991e1272cf0d5c674eafb1d481",
+    "selection": "Primeira consulta ordenada por nome com >10000 pixels anotados, sem selecao por acerto. Enquadramento identico apenas para exibicao.",
+    "dataset": "UBIPr Single Eyes Segmented; Padole e Proenca (2012)",
+    "source": "https://iris.di.ubi.pt/ubipr.html",
+    "license": "CC BY-NC-SA 4.0; figura derivada para pesquisa nao comercial",
+    "figure_sha256": "b11a68215d463dd334be21da9390e284116ef5d5b5b7cc74c0ccf12bcb11cee6"
+  },
+  "raw_completion_sha256": "4b6a9cb571bf214f870149cbd60de5084fc3fdc95571542b14ee1e12bb36635e",
+  "analysis_source_sha256": "4b03219049d737af0d24ecfa38bdd12dd5ea63ba390aa254722cc90496ce6ce9",
+  "figures_sha256": {
+    "comparacao_30_31.png": "e30610e0a172a61afc4b09c1237648e0a77ffc17af138080dc80d8ef9e9711b7",
+    "curva_area_identificacao.png": "09f292a360707593c1ecba735111c721eebebcb3e40ad8c7337207639bf457a1",
+    "exemplo_oclusoes.png": "b11a68215d463dd334be21da9390e284116ef5d5b5b7cc74c0ccf12bcb11cee6"
+  }
+}

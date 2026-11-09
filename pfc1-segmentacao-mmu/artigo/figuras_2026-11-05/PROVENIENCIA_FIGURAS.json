@@ -1,0 +1,74 @@
+{
+  "selection": "Visual documentary selection of well delimited available crops, plus explicit failure controls. Not a random sample, clinical Dice or recognition estimate.",
+  "method": "Historical frozen U-Net, fixed clinical scale 1/3; native photo pixels, nearest mask remapping, display-only resizing, no generative processing or manual contour correction.",
+  "unet_sha256": "2bcfc269ffc9562ca8cf0956998faf1e22641587cd60f7059b3cec3dd0f4093d",
+  "source": "Qian H. SLP-VLD v3, 2026, doi:10.6084/m9.figshare.32576697.v3",
+  "license": "CC BY 4.0",
+  "samples": [
+    {
+      "filename": "P0005_OD20241206.JPG",
+      "diagnosis_raw": "Normal eye",
+      "image_sha256": "37a105b917c6bd5959f26db21aa054de1fc3f63d42b7a76dbb04fe15b77ecef4",
+      "predicted_pixels": 1195270,
+      "historical_predicted_pixels": null,
+      "historical_pixel_count_matches": false,
+      "historical_pixel_delta": null,
+      "mask_sha256": "466672fed567eff06062a5b1b6e26b095500f8e9dd67bd43978d5a2ec6ece4fb"
+    },
+    {
+      "filename": "P0007_OS20250306.JPG",
+      "diagnosis_raw": "Normal eye",
+      "image_sha256": "b033515645f0700e80240c58e3e04417a8ab0e1a2713f6eda5401442dd68c52b",
+      "predicted_pixels": 881843,
+      "historical_predicted_pixels": null,
+      "historical_pixel_count_matches": false,
+      "historical_pixel_delta": null,
+      "mask_sha256": "d8dff8e489ac286817d5cc9c59a18208fbd133849884b379d63f78028f565251"
+    },
+    {
+      "filename": "P0209_OD20250329.JPG",
+      "diagnosis_raw": "Traumatic cataract, Iridodialysis, Ocular contusion",
+      "image_sha256": "d9b1871c9f4266858063b626c4d2c609a381e35adebf23f2fa08ac823dda3949",
+      "predicted_pixels": 846509,
+      "historical_predicted_pixels": 846509,
+      "historical_pixel_count_matches": true,
+      "historical_pixel_delta": 0,
+      "mask_sha256": "54d0267a93beabae806b3514d6d146f0141a28ffc1fe1a578f76e396b1c01e30"
+    },
+    {
+      "filename": "P0564_OD20250526.JPG",
+      "diagnosis_raw": "Iris synechiae, Intraocular lens capture, Posterior capsular opacification",
+      "image_sha256": "1a6e59dffcba96c6590c6e51fae93fe8e8711fa182e1d1e68dc4bb4681ecf2b3",
+      "predicted_pixels": 618292,
+      "historical_predicted_pixels": 618992,
+      "historical_pixel_count_matches": false,
+      "historical_pixel_delta": -700,
+      "mask_sha256": "476d201fe39b3128b0461d18203efdced4963492a238baa2e60bb5e7bfe7bf5d"
+    },
+    {
+      "filename": "P0114_OS20250417.JPG",
+      "diagnosis_raw": "Iris cyst, Corneal ulcer, Bullous keratopathy",
+      "image_sha256": "1f90538202e540ee5175ca5d370bdaf13dfcd7238a354af14d86784fe4ce570a",
+      "predicted_pixels": 620862,
+      "historical_predicted_pixels": 620862,
+      "historical_pixel_count_matches": true,
+      "historical_pixel_delta": 0,
+      "mask_sha256": "afa0ccd547ffb0a8cfef8ab4c42f56fdfe602d1de7b4e84e34ada19f88de011c"
+    },
+    {
+      "filename": "P0803_OD20250112.JPG",
+      "diagnosis_raw": "Intraocular foreign body, Penetrating corneal injury, Corneal foreign body, Iris laceration, Traumatic cataract",
+      "image_sha256": "a5b11184dfad0a605e80c2bc38b19bc9c237f53e464a754328d0407a6ce58da0",
+      "predicted_pixels": 0,
+      "historical_predicted_pixels": 0,
+      "historical_pixel_count_matches": true,
+      "historical_pixel_delta": 0,
+      "mask_sha256": "2a33d17b81be784846803cd54382db5fd3f0a3d66420b630b4bdef5af6b7474d"
+    }
+  ],
+  "files": {
+    "recortes_anomalias.png": "6d9c47a0e6ede188fd0525c06f6fa17a207d9dd60caa77116c155225eb0216f3",
+    "recortes_limites_clinicos.png": "1fc2588eba36c8681e06f93a70e468bd084e9ff3ab4fd89079e832e2142f6deb",
+    "recortes_normais.png": "81a52d5152a945f300e8bdf420d610746b02631224441011add77fddb38527f4"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "registered_utc": "2026-11-08T17:00:37.359886+00:00",
+  "images": [
+    "P0005_OD20241206.JPG",
+    "P0007_OS20250306.JPG",
+    "P0209_OD20250329.JPG",
+    "P0564_OD20250526.JPG",
+    "P0114_OS20250417.JPG",
+    "P0803_OD20250112.JPG"
+  ],
+  "method": "SAM3.1 official interactive neck/prompt/mask heads,1008encoder; automatic iris points from frozen U-Net coarse1/3, original RGB localizer fallback ifempty; separate zoomed pupil encoder from enclosedhole or conservative native-intensity locator, with nearby coarse-iris negative points; native bilinear logits and Gaussian sigma<=2 native pixels before threshold; discard disconnected objects lacking iris points before/after pupil subtraction; no holefilling or forcedellipse.",
+  "selection": "Automatic model confidence and seed/prompt consistency, no clinical reference or diagnosis in inference.",
+  "scope": "Clinical qualitative development only; segmentation/recognition metrics of frozen experiments unchanged. All six predetermined cases retained.",
+  "sources_sha256": {
+    "comparar_recortes_alta_res.py": "2ffd8e3d15c9a09c6947f83e4d224afd7487d61441ec7424fe579451ca20abbb",
+    "recorte_iris_sam31_alta_res.py": "6cb58c5f7d0c3095181124d0935fdfbfa4337ff2128e6534b88aaa80dd33d20f",
+    "segmentacao_clinica_escala.py": "6ec36553402ada0b05baee78eca2ae273854e554105503b68ab6dfc468a494ed"
+  },
+  "no_generative_editing": true,
+  "no_texture_inpainting": true,
+  "clinical_ground_truth_available": false
+}

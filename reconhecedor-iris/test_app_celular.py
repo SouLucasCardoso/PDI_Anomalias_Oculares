@@ -53,8 +53,8 @@ class MobileTests(unittest.TestCase):
     def pair(self):
         status,data=self.request('/api/pair',{'code':self.app.code})
         self.assertEqual(status,200);self.token=data['token']
-    def capture(self,side='R',mode='enroll'):
-        image=io.BytesIO();Image.new('RGB',(128,100),(70,90,110)).save(image,'JPEG')
+    def capture(self,side='R',mode='enroll',color=(70,90,110)):
+        image=io.BytesIO();Image.new('RGB',(128,100),color).save(image,'JPEG')
         status,result=self.request('/api/analyze',image.getvalue(),{'X-Eye-Side':side,'X-Mode':mode},raw=True)
         self.assertEqual(status,202)
         for _ in range(50):
@@ -96,6 +96,41 @@ class MobileTests(unittest.TestCase):
         self.assertEqual(self.request('/api/analyze',b'not an image',{'X-Eye-Side':'R','X-Mode':'enroll'},raw=True)[0],400)
         for _ in range(10):status,_=self.request('/api/pair',{'code':'wrong'})
         self.assertEqual(status,429)
+    def test_named_registrations_are_distinct_and_extra_photo_is_explicit(self):
+        self.pair();first,_=self.capture()
+        _,ana=self.request('/api/enroll',dict(capture=first,name='Ana',reviewed=True))
+        second,_=self.capture(color=(80,90,110))
+        for name in ('','  ','aNA'):
+            self.assertEqual(self.request('/api/enroll',dict(capture=second,name=name,reviewed=True))[0],400)
+        status,bruno=self.request('/api/enroll',dict(capture=second,name='Bruno',reviewed=True))
+        self.assertEqual(status,200);self.assertNotEqual(ana['person_id'],bruno['person_id'])
+        third,_=self.capture(color=(100,90,110))
+        status,extra=self.request('/api/enroll',dict(capture=third,person_id=ana['person_id'],name='',reviewed=True))
+        self.assertEqual(status,200);self.assertEqual(extra['name'],'Ana')
+        gallery=self.request('/api/gallery')[1]
+        self.assertEqual({x['name']:x['samples'] for x in gallery},{'Ana':2,'Bruno':1})
+    def test_rename_keeps_capture_identity_and_trials(self):
+        self.assertEqual(self.request('/api/rename-person',{'person_id':'missing','name':'A'})[0],401)
+        self.pair();capture,_=self.capture()
+        _,person=self.request('/api/enroll',dict(capture=capture,name='Ana',reviewed=True))
+        query,_=self.capture(mode='recognize',color=(130,90,110))
+        self.assertEqual(self.request('/api/trials',dict(capture=query,expected=person['person_id']))[0],200)
+        before=self.app.store.capture(capture)
+        status,_=self.request('/api/rename-person',dict(person_id=person['person_id'],name='Ana — direito'))
+        self.assertEqual(status,200)
+        self.assertEqual(self.app.store.capture(capture),before)
+        self.assertEqual(len(self.app.store.trials()),1)
+        self.assertEqual(self.request('/api/gallery')[1][0]['name'],'Ana — direito')
+        self.assertEqual(self.app.store.groups('R','test-engine')[0]['person_id'],person['person_id'])
+        self.assertEqual(self.request('/api/rename-person',dict(person_id=person['person_id'],name=' '))[0],400)
+    def test_saved_capture_can_be_named_before_models_reload(self):
+        from types import SimpleNamespace
+        self.pair();capture,_=self.capture()
+        self.app.engine=SimpleNamespace()  # Reinicio: modelo ainda nao carregado na memoria.
+        status,person=self.request('/api/enroll',dict(capture=capture,name='Captura pendente',reviewed=True))
+        self.assertEqual(status,200)
+        self.assertEqual(self.app.store.capture(capture)['person'],person['person_id'])
+        self.assertEqual(self.app.store.capture(capture)['engine'],'test-engine')
     def test_small_gallery_retains_information_without_accepting(self):
         query={k:np.array([1.,0.]) if k!='spatial' else np.array([[[1.]],[[0.]]]) for k in COMPONENTS}
         other={k:-v for k,v in query.items()}

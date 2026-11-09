@@ -1,0 +1,9 @@
+{
+  "fallback_counts": {
+    "native_fallback": 6,
+    "polar_fallback": 6
+  },
+  "validity": "Retain original component availability; original failures are not removed or repaired. Invalid new masks/geometry use original cached input.",
+  "interventions": [],
+  "gallery_reused": false
+}

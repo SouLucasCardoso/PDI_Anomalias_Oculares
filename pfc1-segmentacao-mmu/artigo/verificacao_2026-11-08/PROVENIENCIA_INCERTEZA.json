@@ -1,0 +1,10 @@
+{
+  "base_sha256": "f80eaa85d5e22d97898d7d6b641833e77ebc05eedb6e1dd58889f6809b01d2be",
+  "output_source_sha256": "d2594dd736b56be76411388c7b028f2d33d9918e9ac5626e1e4bb66c623d6773",
+  "evidence_sha256": "80adf6fde526ea8e0ebce5d42294418e8dd2ea9b08e25ac0f3ef9fe599682372",
+  "helper_sha256": "aa78c6c4faf2dd46fd76f90a47b62dae8f579a43032e6ebc22d9e79769f2054c",
+  "word_delta": 2,
+  "recognition_and_clinical_counts_unchanged": true,
+  "existing_intervals_made_explicit": true,
+  "new_threshold_or_model_selection": false
+}

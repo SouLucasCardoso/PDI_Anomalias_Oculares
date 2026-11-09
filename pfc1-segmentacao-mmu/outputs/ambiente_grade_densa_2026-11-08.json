@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-09T01:45:29.686183+00:00",
+  "python": "3.12.10",
+  "distributions": {
+    "torch": "2.14.1+cu130",
+    "torchvision": "0.29.1+cu130",
+    "numpy": "1.26.4",
+    "scipy": "1.17.1",
+    "Pillow": "13.0.0",
+    "opencv-python": "not-a-distribution-name",
+    "sam3": "0.1.0",
+    "timm": "1.0.30",
+    "transformers": "5.22.1",
+    "opencv-python-headless": "4.11.0.86"
+  },
+  "environment_updated": false,
+  "scope": "Snapshot of validated environment retained unchanged throughout active comparisons; exact official SAM revisions in tecnologias_grade_densa_2026-11-08.json",
+  "opencv_runtime_version": "4.11.0"
+}

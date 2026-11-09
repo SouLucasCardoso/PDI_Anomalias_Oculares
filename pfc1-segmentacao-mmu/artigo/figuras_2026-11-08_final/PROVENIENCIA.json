@@ -1,0 +1,15 @@
+{
+  "run": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\sam31_matte_subpixel_2026-11-08",
+  "run_protocol_sha256": "327f9309474fa73b7d57620bd3cd599f38c5f385a36b4f9c721ad23c80928887",
+  "completion_sha256": "927532c2aa542eac60f70a0706332a27dac1b9edf8725b06e1556e50e1406afe",
+  "helper_sha256": "f77018668d792043825cc2262a6796b6db8e14bbbb5975595b37aad44ba2953c",
+  "method": "Display-only subpixel alpha; original RGB and all six previous binary masks identical.",
+  "dataset_credit": "Qian (2026), SLP-VLD v3, CC BY4.0, same fixed cases as prior manuscript",
+  "clinical_reference_masks_available": false,
+  "recognition_reevaluated": false,
+  "figure_sha256": {
+    "recortes_anomalias.png": "7b41c4b79f5d1086897559d64ae8282e080fcf841ab698392c258d16498c032c",
+    "recortes_limites_clinicos.png": "1f41dc340888e62cb276c383caa4debdc39279b20f8527eedbd86631034dbe65",
+    "recortes_normais.png": "c5a083128861bbb3cf4a114e988ac79bcd0b9b9cf00c0461dee51773217a27de"
+  }
+}

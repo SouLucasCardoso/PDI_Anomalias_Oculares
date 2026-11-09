@@ -1,0 +1,9 @@
+{
+  "status": "concluido",
+  "conditions_verified": 13,
+  "source_sha256": "ad29e62a8f6eb94d337f6e52921dce17d60490a0f88ab50720ebbd5b680afd47",
+  "audit_sha256": "80adf6fde526ea8e0ebce5d42294418e8dd2ea9b08e25ac0f3ef9fe599682372",
+  "report_sha256": "8832b87f9d76f747d1e9b71fc99d5c234c9279aa0de9545605bc2017b239ee6b",
+  "figure_sha256": "7d85eeae22ba7a89a8d0081688b2eb06c0c009c45517c43f18832b1087986092",
+  "models_and_threshold_unchanged": true
+}

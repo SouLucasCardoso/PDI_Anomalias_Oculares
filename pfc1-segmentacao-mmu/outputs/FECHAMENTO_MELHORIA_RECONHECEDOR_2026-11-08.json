@@ -1,0 +1,25 @@
+{
+  "status": "concluido",
+  "utc": "2026-11-09T00:14:50.609842+00:00",
+  "recognizer_replaced": false,
+  "global_improvement_approved": false,
+  "local_improvement_upper1_rank1_pp": 1.2345679012345734,
+  "article_docx_sha256": "8af5a58ad279782681cb94ebef100779fd57af7e47afa876f772604f556606ed",
+  "inputs_sha256": {
+    "outputs/reconhecedor_confirmacao_2026-11-08/analise/AUDITORIA_FINAL.json": "01862071fd9aa952db394d81900dd1e27f2ad140151218be39290df5a16be0a6",
+    "outputs/sam31_geometria_identidade_2026-11-08/CONCLUIDO.json": "ded180b607724e08151d88ba8f6c96acfe746de3e645655fba586d1c163c3a76",
+    "outputs/reconhecedor_oclusao_entrega_2026-11-08/CONCLUIDO.json": "5cae20e501a04f802edfe36b480d3490276bf793d9c0518522a1d003b6ea4b22",
+    "outputs/reconhecedor_interpolacao_2026-11-08/CONCLUIDO.json": "df1eb47d5dbd6b28caf5b48b48cf96bb49e3e4761365e0a8eedb7870df037ca3",
+    "outputs/sam31_geometria_mista_2026-11-08/CONCLUIDO.json": "3bd1d5af4d89c2d210695923deca48081d0037074f83800fa26e672373e69c7c",
+    "outputs/sam31_geometria_grupos_2026-11-08/CONCLUIDO.json": "8f7a8be14f8e18b39b5efccddc58898320a735e6834d594923f3c7eb5ab727c7",
+    "outputs/sam31_geometria_componentes_2026-11-08/CONCLUIDO.json": "80d12f83d03b9bb8fb1957681482b16477276e6a75ca4260aa15714411766ab6",
+    "outputs/polar_sam31_adaptacao_entrega_2026-11-08/CONCLUIDO.json": "c0c19f6fe27eae49f1cfc62f14c0088367ed1129f43de90552852949f42e2584",
+    "outputs/polar_sam31_adaptacao_entrega_2026-11-08/analise/AUDITORIA_TREINO_FINAL.json": "01274e0fddc9063630c4cdac53533edc42ea10649487a8381b0aa986e8f091d9",
+    "outputs/rotacoes_polares_entrega_2026-11-08/CONCLUIDO.json": "4e9d1565446222c94be545a22e604c0dd4c823b097ada71fd0ed8984f11409c4",
+    "artigo/verificacao_2026-11-08/VERIFICACAO_FINAL.json": "f049bb06081fe8c92cf9f2ee7ac3ca8720ec3e8f97ef857d4c0cece5038683ba",
+    "outputs/tecnologias_geometria_2026-11-08_1830.json": "a1e092cff9195e08b062dd5492d24c4eb50dfd4d770bb1ff9a0362ac0c5ffc56",
+    "outputs/defesa_consolidada_final_2026-11-08/AUDITORIA_DEFESA.json": "80adf6fde526ea8e0ebce5d42294418e8dd2ea9b08e25ac0f3ef9fe599682372"
+  },
+  "report_sha256": "5e316ab6e38acad55cb77d5e5459edfd994271eacc0eee0d48bec9a39b69042a",
+  "compiler_sha256": "3239e8be684acda3a3ae3aeb4c56493d06372707c9120e4b1557c3c45fc9fb1d"
+}

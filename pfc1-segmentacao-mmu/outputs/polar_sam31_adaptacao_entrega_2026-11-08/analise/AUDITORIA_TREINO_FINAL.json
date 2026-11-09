@@ -1,0 +1,62 @@
+{
+  "status": "verified",
+  "utc": "2026-11-08T21:59:22.801375+00:00",
+  "selected_epoch": null,
+  "selection_recounted": [
+    {
+      "epoch": 0,
+      "eligible_recounted": false,
+      "selected_epoch_recounted": null
+    },
+    {
+      "epoch": 1,
+      "eligible_recounted": false,
+      "selected_epoch_recounted": null
+    },
+    {
+      "epoch": 2,
+      "eligible_recounted": false,
+      "selected_epoch_recounted": null
+    },
+    {
+      "epoch": 3,
+      "eligible_recounted": false,
+      "selected_epoch_recounted": null
+    },
+    {
+      "epoch": 4,
+      "eligible_recounted": false,
+      "selected_epoch_recounted": null
+    },
+    {
+      "epoch": 5,
+      "eligible_recounted": false,
+      "selected_epoch_recounted": null
+    },
+    {
+      "epoch": 6,
+      "eligible_recounted": false,
+      "selected_epoch_recounted": null
+    }
+  ],
+  "all_validation_queries_retained": 482,
+  "train_images": 1028,
+  "train_people": 183,
+  "train_validation_test_people_disjoint": true,
+  "checkpoints_verified": {
+    "last": {
+      "frozen_tensors_bitwise_equal": 108,
+      "frozen_sha256": "ec39336061a469ef290a28cd04b64f89f6c8454435c303b638118aebc09d9208"
+    }
+  },
+  "sources_unchanged": true,
+  "test_inference_performed_by_this_audit": false,
+  "recognizer_replaced": false,
+  "inputs_sha256": {
+    "protocolo.json": "c9265f0d9d5796b27ee6252a663681ed3ef81c5d4e2066888bd6d39893824e5b",
+    "CONCLUIDO.json": "c0c19f6fe27eae49f1cfc62f14c0088367ed1129f43de90552852949f42e2584",
+    "historico.json": "3fe96c2ba90bba4c4dfeacf2be666233f4b6956051520d48ae92d84c420943ef",
+    "ultima_epoca.pt": "ac6d70a6c2a09bf714b7aae608c2634b68f22623a49c4751d99e25f81c8566bd"
+  },
+  "auditor_sha256": "15c1b55655775a1a5d27e0045b67eb7841cae2f34b7b052eb58679c5ebe72143"
+}

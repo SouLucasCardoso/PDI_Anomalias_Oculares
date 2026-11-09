@@ -1,0 +1,14 @@
+{
+  "base_source_sha256": "bfe7168e62af945a1604eff77c72acc47331a1ad4641e823899711813d247983",
+  "output_source_sha256": "cdd6d5d27192ac0eee51dfa06fc40239d805bee79f658a5f1a650ba88abba06c",
+  "inputs_sha256": {
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\reconhecedor_confirmacao_2026-11-08\\analise\\AUDITORIA_FINAL.json": "01862071fd9aa952db394d81900dd1e27f2ad140151218be39290df5a16be0a6",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\sam31_geometria_identidade_2026-11-08\\CONCLUIDO.json": "ded180b607724e08151d88ba8f6c96acfe746de3e645655fba586d1c163c3a76"
+  },
+  "new_trials_complete_only": true,
+  "no_pending_training_result_inserted": true,
+  "no_prior_recognition_result_replaced": true,
+  "new_recognizer_promoted": false,
+  "approximate_word_delta": 122,
+  "conceptual_page_markers": 30
+}

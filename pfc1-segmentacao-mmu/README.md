@@ -1,4 +1,17 @@
 
+# Pesquisa de segmentação e reconhecimento da íris
+
+**Estado consolidado em 09/11/2026:** grade de todos os inteiros de 1% a 31% concluída e auditada, com 63 condições da referência e 63 do candidato. Cada condição mantém 486 consultas, inclusive falhas. O candidato melhorou o evento correto e aceito limpo de 89,51% para 90,12%, mas aumentou a FMR em 31 condições e não substituiu a referência. Os resultados são exploratórios; não demonstram mínimo anatômico universal ou desempenho clínico.
+
+- [Resultado final e limites](RESULTADO_GRADE_DENSA_2026-11-08.md).
+- [Tabela de todos os níveis](outputs/grade_densa_analise_2026-11-08/tabela_completa.csv) e [auditoria da grade](outputs/grade_densa_analise_2026-11-08/AUDITORIA_FINAL.json).
+- [Artigo em texto](artigo/ARTIGO_AREA_IRIS_EM_PRODUCAO.md) e [verificação da versão com 30 páginas de conteúdo e 4 de referências](artigo/verificacao_2026-11-08/VERIFICACAO_FINAL.json).
+- [README principal e preparação](../README.md), [relatórios diários](../Relatórios-de-Avanço/SEMANA_2026-11-02.md) e [demonstrador S23/USB](../reconhecedor-iris/README.md).
+
+O texto abaixo preserva as etapas históricas de MMU, UBIPr e outubro. Modelos, datasets, caches, registros individuais, fotografias clínicas e o DOCX local não acompanham o clone. As indicações antigas de treino em andamento não descrevem a grade já encerrada.
+
+## Histórico até outubro de 2026
+
 > Atualização posterior de 21/10: teste com configuração congelada =91,36% de Rank-1, 92,39% de TAR e 0,88% de FMR. A busca de área em passos nominais de 1% foi concluída:99% aprovados na oclusão inferior; na superior, apenas a condição original passou. Consulte [os resultados e limitações](RESULTADOS_CONGELADOS_E_OCLUSAO_2026-10-21.md).
 
 

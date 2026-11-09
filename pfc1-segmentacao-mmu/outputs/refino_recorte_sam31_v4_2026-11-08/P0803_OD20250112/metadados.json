@@ -1,0 +1,142 @@
+{
+  "filename": "P0803_OD20250112.JPG",
+  "diagnosis_dataset_only": "Intraocular foreign body, Penetrating corneal injury, Corneal foreign body, Iris laceration, Traumatic cataract",
+  "status": "refined",
+  "image_sha256": "a5b11184dfad0a605e80c2bc38b19bc9c237f53e464a754328d0407a6ce58da0",
+  "previous": {
+    "pixels": 0,
+    "components": 0,
+    "components_ge_100px": 0
+  },
+  "localizer": {
+    "pixels": 31250,
+    "components": 2,
+    "components_ge_100px": 2
+  },
+  "new": {
+    "pixels": 80414,
+    "components": 1,
+    "components_ge_100px": 1
+  },
+  "details": {
+    "roi_xyxy": [
+      297,
+      692,
+      968,
+      1192
+    ],
+    "points_xy_in_roi": [
+      [
+        391.0,
+        290.0
+      ],
+      [
+        340.0,
+        295.0
+      ],
+      [
+        331.0,
+        295.0
+      ],
+      [
+        307.0,
+        291.0
+      ],
+      [
+        261.0,
+        283.0
+      ],
+      [
+        338.0,
+        285.0
+      ],
+      [
+        339.0,
+        285.0
+      ],
+      [
+        409.0,
+        284.0
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "automatic_pupil_seed": true,
+    "pupil_refinement": {
+      "status": "no_eligible_sam_pupil",
+      "seed_origin": "native_intensity_localizer",
+      "candidates": [
+        {
+          "index": 0,
+          "model_quality_not_measured_iou": -3.15625,
+          "area_ratio_to_seed": 0.6719936778329016,
+          "inside_iris_fraction": 0.4595583431334117,
+          "negative_iris_points_respected": true,
+          "eligible": false
+        },
+        {
+          "index": 1,
+          "model_quality_not_measured_iou": -0.0927734375,
+          "area_ratio_to_seed": 8.452956930236642,
+          "inside_iris_fraction": 0.05427121584351773,
+          "negative_iris_points_respected": true,
+          "eligible": false
+        },
+        {
+          "index": 2,
+          "model_quality_not_measured_iou": -0.197265625,
+          "area_ratio_to_seed": 5.65970057514159,
+          "inside_iris_fraction": 0.002241856784913623,
+          "negative_iris_points_respected": true,
+          "eligible": false
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "index": 0,
+        "model_quality_not_measured_iou": 0.50390625,
+        "seed_coverage": 0.766848,
+        "area_ratio_to_seed": 1.461024,
+        "prompt_match": 1.0,
+        "eligible": true,
+        "selection_score": 0.68059105
+      },
+      {
+        "index": 1,
+        "model_quality_not_measured_iou": 1.2265625,
+        "seed_coverage": 0.999616,
+        "area_ratio_to_seed": 4.848736,
+        "prompt_match": 1.0,
+        "eligible": false,
+        "selection_score": -1000000.0
+      },
+      {
+        "index": 2,
+        "model_quality_not_measured_iou": 1.6640625,
+        "seed_coverage": 0.9976,
+        "area_ratio_to_seed": 2.771648,
+        "prompt_match": 1.0,
+        "eligible": true,
+        "selection_score": 1.8638225000000002
+      }
+    ],
+    "selected_index": 2,
+    "presence_logit": 30.0,
+    "manual_or_reference_prompts": false,
+    "morphological_hole_filling": false,
+    "forced_circle_or_ellipse": false,
+    "rgb_texture_modified": false,
+    "disconnected_objects_without_iris_points_removed": true
+  },
+  "native_mask_sha256": "0d9126de80bed7196286e4eb2c4de4156c1d1a56d35de3ec0c6c8508368bf4af",
+  "crop_sha256": "68db6ef987ade5ae6c104833e469e31a66c025c884d7049ef1f3f207bff687d2"
+}

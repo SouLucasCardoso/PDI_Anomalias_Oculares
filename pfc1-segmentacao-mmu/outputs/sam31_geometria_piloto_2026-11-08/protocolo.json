@@ -1,0 +1,40 @@
+{
+  "registered_utc": "2026-11-08T18:05:33.069717+00:00",
+  "scope": "Geometric feasibility pilot only, no identity metrics or clinical conclusions; keep all6preselected casesx3conditions",
+  "selection": "First sorted session2image of first6sorted eligible validation people, before predictions",
+  "rows": [
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C49_S2_I10_L.jpg",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C79_S2_I10_L.jpg",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C149_S2_I10_L.jpg",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C151_S2_I10_L.jpg",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C173_S2_I10_L.jpg",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\data\\ubipr\\single_eye\\C177_S2_I10_L.jpg"
+  ],
+  "conditions": [
+    [
+      "original",
+      0
+    ],
+    [
+      "oclusao_superior",
+      10
+    ],
+    [
+      "oclusao_inferior",
+      10
+    ]
+  ],
+  "sources_sha256": {
+    "piloto_geometria_sam31.py": "c2b007c921f5f77d1e37b4f2b03792add5925178ddeb5ba323987f0dc71fb5e1",
+    "geometria_polar_sam31.py": "658026ad450f3ec0a52752e6213a2411bc0675e6529287198e277b1aeb6ba824",
+    "recorte_iris_sam31_alta_res.py": "6cb58c5f7d0c3095181124d0935fdfbfa4337ff2128e6534b88aaa80dd33d20f"
+  },
+  "official_verification": {
+    "date": "2026-11-08",
+    "github_head": "f1647e8d0c1d280991f4d1b7d974c2704537fe66",
+    "hf_revision": "daa63191845a41281374e725f4c9e51c7a824460",
+    "github_api": "https://api.github.com/repos/facebookresearch/sam3/commits/main",
+    "hf_api": "https://huggingface.co/api/models/facebook/sam3.1"
+  },
+  "method": "Original nearest U-Net support and original pupil geometry unchanged. SAM3.1 interactive outer contour only defines limbus sampling ellipse. Native source pixels, no filling of mask or photograph. Failed geometry uses original; original empty support retained as failure."
+}

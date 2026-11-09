@@ -1,0 +1,12 @@
+{
+  "captured_utc": "2026-11-08T17:29:38.503978+00:00",
+  "scope": "Supplemental dependency snapshot before training epochs; no change to registered selection",
+  "sha256": {
+    "outputs/candidato_congelado_2026-10-21/CONGELADO.json": "d933686f045eab5d6578cfe4701578d9ca1eeaaff4069bcff8427a602546dbda",
+    "textura_polar.py": "f977efb2101f2b23338041513908d4deb6eea51a2a730c8f71f0d20c19bcdadc",
+    "normalizacao_eliptica.py": "370f61686ce7209b3e705b1dc9b2ffa55bb0eac0cf54911f1edc3d92d7aca72a",
+    "preparar_polar_vermelho.py": "8701d5925bf1b2ed35ace89ae0529be8160b1281be04250691387b793cd9de5b",
+    "avaliar_dinov3_ubipr.py": "781d5903f7bccd515cb0d450b05331709cf88460d497d61f2cf95083ea546ac8",
+    "normalizar_consulta.py": "8e105dbdb11ba547420fdb171403bc4cebb07fd9358a1e59c22e37b0f0a8e3a6"
+  }
+}

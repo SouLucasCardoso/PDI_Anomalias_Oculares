@@ -1,0 +1,17 @@
+{
+  "registered_utc": "2026-11-08T21:41:17.332135+00:00",
+  "sources_sha256": {
+    "executar_fechamento_polar_sam31.py": "5e380e37be431ba2c094def1e00d0df8aaa5e5a097d0c7b690d4c0b835f01895",
+    "confirmar_polar_sam31_entrega.py": "ba9bc0cb24f09348f5da01c3f86dec40b70a79c7cd2cf3308b232befdf85780c",
+    "auditar_polar_sam31_entrega.py": "9c10216d94257a4f88c991e261229b223f84020252aa7033a2a4b49f09e00e8d"
+  },
+  "sequence": [
+    "waittraining",
+    "ifeligible_freezecandidate",
+    "complete13conditions",
+    "independentrecountandbootstrap"
+  ],
+  "last_test_start_utc": "2026-11-09T00:30:00+00:00",
+  "test_stop_utc": "2026-11-09T02:10:00+00:00",
+  "no_automatic_model_or_article_replacement": true
+}

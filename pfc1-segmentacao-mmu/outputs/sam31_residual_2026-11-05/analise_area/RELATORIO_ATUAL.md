@@ -1,6 +1,6 @@
 # SAM3.1 — treino, reconhecimento e área
 
-Atualizado em 2026-11-05T18:49:31.768670+00:00 (UTC).
+Atualizado em 2026-11-08T15:39:00.777514+00:00 (UTC).
 
 **As revisões clínicas podem ser feitas depois; não são requisito para esta curva UBIPr.**
 

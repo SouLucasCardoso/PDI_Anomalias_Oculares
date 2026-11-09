@@ -1,0 +1,13 @@
+# Fontes novas mantêm LF. Evidências datadas conservam bytes para os SHA-256.
+/pfc1-segmentacao-mmu/*.py text eol=lf
+/pfc1-segmentacao-mmu/artigo/*.py text eol=lf
+/pfc1-segmentacao-mmu/outputs/*2026-11-08*/** -text
+/pfc1-segmentacao-mmu/outputs/*2026-11-08*.json -text
+/pfc1-segmentacao-mmu/outputs/*2026-11-09*.json -text
+/pfc1-segmentacao-mmu/*2026-11-08.md -text
+/pfc1-segmentacao-mmu/artigo/ARTIGO_CONSOLIDADO_2026-11-*.md -text
+/pfc1-segmentacao-mmu/artigo/ARTIGO_AREA_IRIS_EM_PRODUCAO.md -text
+/pfc1-segmentacao-mmu/artigo/verificacao_2026-11-05/** -text
+/pfc1-segmentacao-mmu/artigo/verificacao_2026-11-08/** -text
+/pfc1-segmentacao-mmu/artigo/historico/*2026-11-08.md -text
+/pfc1-segmentacao-mmu/artigo/figuras_2026-11-*/PROVENIENCIA*.json -text

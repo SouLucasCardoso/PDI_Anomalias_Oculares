@@ -1,0 +1,9 @@
+{
+  "source_local_file": "CONCLUIDO.json",
+  "source_sha256": "a1ac31a30b3d6c8296de53a1828f32825d51b4b85af34773c404aa109ac4b562",
+  "scope": "Aggregate publication; original per-image records retained locally; no original artifact altered",
+  "record_count": 78,
+  "n": 78,
+  "mean_dice_previous": 0.8820456448989142,
+  "mean_dice_continuous": 0.8846222579599891
+}

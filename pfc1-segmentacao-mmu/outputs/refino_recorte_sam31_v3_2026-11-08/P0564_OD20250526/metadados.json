@@ -1,0 +1,115 @@
+{
+  "filename": "P0564_OD20250526.JPG",
+  "diagnosis_dataset_only": "Iris synechiae, Intraocular lens capture, Posterior capsular opacification",
+  "status": "refined",
+  "image_sha256": "1a6e59dffcba96c6590c6e51fae93fe8e8711fa182e1d1e68dc4bb4681ecf2b3",
+  "previous": {
+    "pixels": 618292,
+    "components": 1,
+    "components_ge_100px": 1
+  },
+  "localizer": {
+    "pixels": 618292,
+    "components": 1,
+    "components_ge_100px": 1
+  },
+  "new": {
+    "pixels": 1099995,
+    "components": 1,
+    "components_ge_100px": 1
+  },
+  "details": {
+    "roi_xyxy": [
+      524,
+      127,
+      2817,
+      1984
+    ],
+    "points_xy_in_roi": [
+      [
+        1484.0,
+        1048.0
+      ],
+      [
+        1439.0,
+        1125.0
+      ],
+      [
+        1377.0,
+        1169.0
+      ],
+      [
+        1216.0,
+        1209.0
+      ],
+      [
+        1376.0,
+        1048.0
+      ],
+      [
+        1376.0,
+        715.0
+      ],
+      [
+        1505.0,
+        858.0
+      ],
+      [
+        1506.0,
+        919.0
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "automatic_pupil_seed": false,
+    "pupil_refinement": {
+      "status": "no_enclosed_seed"
+    },
+    "candidates": [
+      {
+        "index": 0,
+        "model_quality_not_measured_iou": 1.0859375,
+        "seed_coverage": 0.7483017732721756,
+        "area_ratio_to_seed": 1.081207584765774,
+        "prompt_match": 1.0,
+        "eligible": true,
+        "selection_score": 1.2607676773272176
+      },
+      {
+        "index": 1,
+        "model_quality_not_measured_iou": 1.59375,
+        "seed_coverage": 1.0,
+        "area_ratio_to_seed": 2.363486831464745,
+        "prompt_match": 1.0,
+        "eligible": true,
+        "selection_score": 1.7937500000000002
+      },
+      {
+        "index": 2,
+        "model_quality_not_measured_iou": 2.328125,
+        "seed_coverage": 0.9899012117252043,
+        "area_ratio_to_seed": 1.7849964094634898,
+        "prompt_match": 1.0,
+        "eligible": true,
+        "selection_score": 2.5271151211725207
+      }
+    ],
+    "selected_index": 2,
+    "presence_logit": 32.5,
+    "manual_or_reference_prompts": false,
+    "morphological_hole_filling": false,
+    "forced_circle_or_ellipse": false,
+    "rgb_texture_modified": false,
+    "disconnected_objects_without_iris_points_removed": true
+  },
+  "native_mask_sha256": "8b5b2e6c934c99c9857b0a6b1d325e833d1e7ccfc0012592e5178fe74c7899be",
+  "crop_sha256": "de4e69ea9b668d7fdca0a2a98a60a37b9db88e48421581aedae4cff1de6c9b53"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "concluido",
+  "conditions": 63,
+  "new_conditions": 50,
+  "reused_conditions": 13,
+  "queries_per_condition": 486,
+  "impostors_per_condition": 7290,
+  "sources_unchanged": true,
+  "model_replaced": false,
+  "universal_minimum": null,
+  "results_sha256": "1a01a7ede715a6da5a1fbb0bf6ffaf9c11b11f3bcaebdb34c6bc55b3a38b7f33",
+  "elapsed_seconds": 4899.25
+}

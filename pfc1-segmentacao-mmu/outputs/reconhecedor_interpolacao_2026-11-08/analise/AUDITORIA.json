@@ -1,0 +1,10 @@
+{
+  "kind": "Finite interpolation validation audit",
+  "source_sha256": "6f21b445ce75cae0dc0d18bd8f42431a15f0047b7bce83221f527e1c7b4396a6",
+  "protocol_sha256": "bf9a95d170189229de5d9057deb4a12e09f3a1e947aff4d787415128864a90e2",
+  "completed_sha256": "df1eb47d5dbd6b28caf5b48b48cf96bb49e3e4761365e0a8eedb7870df037ca3",
+  "three_trials": 3,
+  "only_validation": true,
+  "no_test_outcome_input": true,
+  "normalization_buffers_preserved_bitwise": true
+}

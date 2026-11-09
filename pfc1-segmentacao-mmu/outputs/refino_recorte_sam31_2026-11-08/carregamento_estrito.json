@@ -1,0 +1,26 @@
+{
+  "family": "SAM3.1",
+  "code_revision": "f1647e8d0c1d280991f4d1b7d974c2704537fe66",
+  "checkpoint_revision": "daa63191845a41281374e725f4c9e51c7a824460",
+  "checkpoint_sha256": "0567debeec80ba4ac6369540c6c248025283cb3ff2b92827509e57e2b3541cb6",
+  "strict_components": {
+    "backbone": {
+      "tensors": 474,
+      "missing": [],
+      "unexpected": []
+    },
+    "prompt": {
+      "tensors": 17,
+      "missing": [],
+      "unexpected": []
+    },
+    "decoder": {
+      "tensors": 131,
+      "missing": [],
+      "unexpected": []
+    }
+  },
+  "random_missing_weights_used": false,
+  "image_encoder_resolution": 1008,
+  "scope": "Official interactive image path only; no language, tracking, propagation or newly trained parameters."
+}

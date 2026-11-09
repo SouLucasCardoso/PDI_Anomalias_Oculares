@@ -1,0 +1,16 @@
+{
+  "registered_utc": "2026-11-08T17:28:01.861550+00:00",
+  "sources_sha256": {
+    "executar_reconhecedor_entrega.py": "54570a71fd4303ea84fd6cb752c22ba553bef272e249cbcf0ea3584effabe943",
+    "treinar_reconhecedor_entrega.py": "0086ca2ee9418936499ca69be54ddd156263da25e045326a8b66d5bf4077f8fd",
+    "analisar_reconhecedor_entrega.py": "c58a7de9ff392cfcade7902cdaf9382c1e8d629d6136e290a0a5845dcca86d03"
+  },
+  "reference_root": "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\reconhecedor_contorno_2026-11-08",
+  "sequence": [
+    "complete6paired_validation_conditions",
+    "train_max18epochs_earlystop5",
+    "audit_selected_vs_epoch0"
+  ],
+  "no_automatic_replacement_or_test": true,
+  "deadline_training_utc": "2026-11-09T02:00:00+00:00"
+}

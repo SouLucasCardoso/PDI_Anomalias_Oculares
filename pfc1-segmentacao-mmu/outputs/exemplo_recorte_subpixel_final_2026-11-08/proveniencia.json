@@ -1,0 +1,22 @@
+{
+  "segmentation": "continuous_native_margin_then_small_component_filter",
+  "spec": {
+    "relative_area": 0.005,
+    "opening_radius": 0
+  },
+  "photo_sha256": "4862d15f2bc43c94fce416a0a3291f69ccace104ade9418d41f74b188cc13ecb",
+  "script_sha256": "1d2f844ecae12a7cff1d4d5264f907dc352ba7366de6aab5246d2953c5a59c7c",
+  "unet_sha256": "2bcfc269ffc9562ca8cf0956998faf1e22641587cd60f7059b3cec3dd0f4093d",
+  "selection_sha256": "67a78c92800b66e6546d5d2dfe23617aa1abc8ac60134ede58ee33bd3a849c8d",
+  "bbox_xyxy": [
+    445,
+    362,
+    642,
+    500
+  ],
+  "native_rgb_exact": true,
+  "display_alpha_separate_from_binary_mask": true,
+  "review_required": true,
+  "clinical_accuracy_claimed": false,
+  "recognition_approval": false
+}

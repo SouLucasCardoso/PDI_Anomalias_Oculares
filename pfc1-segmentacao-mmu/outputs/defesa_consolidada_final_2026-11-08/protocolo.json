@@ -1,0 +1,13 @@
+{
+  "registered_utc": "2026-11-09T00:11:43.630706+00:00",
+  "scope": "Delivery interpretation of completed results; no new training, inference, threshold or model selection",
+  "input_sha256": {
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\ensaio_oclusoes_2026-11-08\\resultados.json": "a91b45f234422677b5c633c21c051e329625809a3ca0a4c1162a7be530a591d6",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\ensaio_oclusoes_2026-11-08\\analise_final\\AUDITORIA_FINAL.json": "a533e163739bdc1fa371bb51a5de80eba2a552ac8adbfb4d5eec98b6cae69a19",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\ensaio_oclusoes_2026-11-08\\protocolo.json": "fdfd16ac144b6295b86f4469fe483e3e45fb4a773047f076cadcfeade77ec977",
+    "C:\\Users\\lucaz\\OneDrive\\Documentos\\SATC\\0 - Disciplinas\\SEMESTRE 8\\PFC I\\PDI_Anomalias_Oculares\\pfc1-segmentacao-mmu\\outputs\\candidato_congelado_2026-10-21\\CONGELADO.json": "d933686f045eab5d6578cfe4701578d9ca1eeaaff4069bcff8427a602546dbda"
+  },
+  "source_sha256": "ad29e62a8f6eb94d337f6e52921dce17d60490a0f88ab50720ebbd5b680afd47",
+  "uncertainty": "Reuse the registered 5000-person-cluster bootstrap intervals, seed20261108, fixed gallery; descriptive pointwise intervals without simultaneous or selection correction",
+  "criteria": "Recount marginal targets 90/90/1 with integer counts; show joint90 separately. Interval containment is descriptive, not a new promotion criterion."
+}

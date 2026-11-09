@@ -1,0 +1,28 @@
+{
+  "registered_utc": "2026-11-09T00:58:18.181230+00:00",
+  "images": [
+    "P0005_OD20241206.JPG",
+    "P0007_OS20250306.JPG",
+    "P0209_OD20250329.JPG",
+    "P0564_OD20250526.JPG",
+    "P0114_OS20250417.JPG",
+    "P0803_OD20250112.JPG"
+  ],
+  "sources_sha256": {
+    "refinar_matte_sam31_entrega.py": "a6fe83e9a4dfb81d00a5577427afb67ceb667ca8222c42b0f4c8887b6642d067",
+    "matte_subpixel_iris.py": "8d3399646cf1938f0aeee227d3a63a71db81d9d7fbb7b208fd585dfe6312ecb7",
+    "recorte_iris_sam31_alta_res.py": "6cb58c5f7d0c3095181124d0935fdfbfa4337ff2128e6534b88aaa80dd33d20f"
+  },
+  "official_versions": {
+    "checked_utc": "2026-11-09T00:47:45.9713137Z",
+    "code_revision": "f1647e8d0c1d280991f4d1b7d974c2704537fe66",
+    "checkpoint_revision": "daa63191845a41281374e725f4c9e51c7a824460",
+    "code_url": "https://github.com/facebookresearch/sam3",
+    "checkpoint_url": "https://huggingface.co/facebook/sam3.1",
+    "environment_updated": false,
+    "scope": "Official SAM reference verification. Dense reference and contour trials retain their registered historical provenance; no active environment or weights updated."
+  },
+  "prior_protocol_sha256": "181c6eca2e6e55d59a77038b7bd68ac70bcb00af83f8a1c9199575e925e45d26",
+  "scope": "Display-only matte refinement of same six fixed clinical examples; binary masks must match previous SAM3.1 results exactly. No measured clinical or recognition improvement.",
+  "method": "Capture native iris/pupil logits, combine min(iris,-pupil), local gradient normalizes zero-crossing for one-native-pixel opacity coverage. Interior alpha255, support outside1pixel alpha0, original RGB exact. Previously empty case remains empty."
+}

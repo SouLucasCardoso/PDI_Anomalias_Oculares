@@ -1,0 +1,77 @@
+{
+  "registered_utc": "2026-11-08T17:46:35.380471+00:00",
+  "selection_sha256": "3b0e9fa83efcd863c94b51e5f3013ba01a35e3506e01ba994b9ee75ba83d1f33",
+  "schedule": [
+    [
+      "original",
+      0
+    ],
+    [
+      "oclusao_superior",
+      1
+    ],
+    [
+      "oclusao_inferior",
+      1
+    ],
+    [
+      "oclusao_superior",
+      5
+    ],
+    [
+      "oclusao_inferior",
+      5
+    ],
+    [
+      "oclusao_superior",
+      10
+    ],
+    [
+      "oclusao_inferior",
+      10
+    ],
+    [
+      "oclusao_superior",
+      20
+    ],
+    [
+      "oclusao_inferior",
+      20
+    ],
+    [
+      "oclusao_superior",
+      30
+    ],
+    [
+      "oclusao_inferior",
+      30
+    ],
+    [
+      "oclusao_superior",
+      31
+    ],
+    [
+      "oclusao_inferior",
+      31
+    ]
+  ],
+  "scope": "Exploratory repeated-test comparison, not independent confirmation. Never choose or retrain using this grid.",
+  "frozen_calibration_sha256": "d933686f045eab5d6578cfe4701578d9ca1eeaaff4069bcff8427a602546dbda",
+  "historical_threshold": 0.8581747485460748,
+  "original_run_protocol_sha256": "fdfd16ac144b6295b86f4469fe483e3e45fb4a773047f076cadcfeade77ec977",
+  "source_sha256": "25aff2077b45a3ca73a972f5bb2f3b1debfd79b7047352886a436bac7706e18a",
+  "dependencies_sha256": {
+    "avaliar_candidato_congelado.py": "6390747960dd339f39782cc2895999e6929d7a9e97111e70c143b6f4193db278",
+    "avaliar_contorno_integrado.py": "86af74e9588d29b62523ac63c0593fa2e4fa2880034182e4560039380d7c1ab6",
+    "avaliar_robustez_reconhecimento.py": "e6d0b8d8eb78dc2e86ed3f73084cd9fb5d83d1afee27f73ca0ffbee1a5947f95",
+    "treinar_reconhecedor_entrega.py": "0086ca2ee9418936499ca69be54ddd156263da25e045326a8b66d5bf4077f8fd"
+  },
+  "manifest_sha256": "4ddb37d918546a398313ee83dcdf352069a71b7bf0e12c9b601849557ad572de",
+  "reuse": "Unchanged original components and native input caches from same-environment Nov08 baseline. Recompute only modified descriptors; independently reproduce baselinefusion and decisions from cached9scores before each comparison.",
+  "comparison_gate": "CleanRank1/TAR no lower and cleanFMR<=1%; mean13joint improves; each13conditionFMR no higher than baseline. No automatic operational replacement.",
+  "versions": {
+    "torch": "2.14.1+cu130",
+    "numpy": "1.26.4"
+  },
+  "deadline_utc": "2026-11-09T02:35:00+00:00"
+}

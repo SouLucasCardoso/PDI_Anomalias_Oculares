@@ -1,0 +1,24 @@
+{
+  "registered_utc": "2026-11-08T21:23:45.192685+00:00",
+  "scope": "Posthoc development validation ablation after all5geometrycomponents and common-alpha variants were evaluated. No test metric input or parameter fitting.",
+  "groups": {
+    "arc_only": [
+      "arc_clahe",
+      "arc_red"
+    ],
+    "learned_polar": [
+      "polar",
+      "spatial",
+      "transformer"
+    ],
+    "spatial_only": [
+      "spatial"
+    ]
+  },
+  "alpha": 1.0,
+  "rule": "Same fixed-threshold clean-preservation/FMR guard; choose eligible group by meanjoint,worstjoint,meanRank1,lexicalname. All482queries retained.",
+  "source_sha256": "9a5f03866710169f852e5d6b9303a9ebb117c8e059fac77a346db43689be893f",
+  "blend_source_sha256": "e716f9b48a0359c80ef6289f8d2095932dacbb06d00cb122302ea99df494cd3e",
+  "sam_result_sha256": "ded180b607724e08151d88ba8f6c96acfe746de3e645655fba586d1c163c3a76",
+  "calibration_sha256": "d933686f045eab5d6578cfe4701578d9ca1eeaaff4069bcff8427a602546dbda"
+}

@@ -1,0 +1,359 @@
+{
+  "registered_selection_preserved": true,
+  "selected_epoch": 0,
+  "eligible_gain": false,
+  "absolute_fmr_target_all_conditions": false,
+  "n_queries": 482,
+  "people": 16,
+  "bootstrap": 5000,
+  "independent_confirmation": false,
+  "clinical_effect_measured": false,
+  "test_inference": false,
+  "records": [
+    {
+      "condition": "original",
+      "baseline": {
+        "rank1": 0.9004149377593361,
+        "tar": 0.9045643153526971,
+        "fnmr": 0.0954356846473029,
+        "far": 0.00995850622406639,
+        "eer_descriptive": 0.043360995850622405,
+        "extraction_failures": 4,
+        "queries": 482,
+        "genuine_mean_valid": 0.9199558850779516,
+        "margin_mean_valid": 0.13763325394477843,
+        "joint_success": 0.8838174273858921
+      },
+      "selected": {
+        "rank1": 0.9004149377593361,
+        "tar": 0.9045643153526971,
+        "fnmr": 0.0954356846473029,
+        "far": 0.00995850622406639,
+        "eer_descriptive": 0.043360995850622405,
+        "extraction_failures": 4,
+        "queries": 482,
+        "genuine_mean_valid": 0.9199558850779516,
+        "margin_mean_valid": 0.13763325394477843,
+        "joint_success": 0.8838174273858921
+      },
+      "counts_baseline": {
+        "queries": 482,
+        "correct": 434,
+        "accepted": 436,
+        "joint": 426,
+        "impostors": 7230,
+        "false_accepts": 72,
+        "failed": 4
+      },
+      "counts_selected": {
+        "queries": 482,
+        "correct": 434,
+        "accepted": 436,
+        "joint": 426,
+        "impostors": 7230,
+        "false_accepts": 72,
+        "failed": 4
+      },
+      "paired_gain_pp": {
+        "rank1": 0.0,
+        "tar": 0.0,
+        "joint": 0.0
+      },
+      "descriptive_interval95_pp": {
+        "rank1": [
+          0.0,
+          0.0
+        ],
+        "tar": [
+          0.0,
+          0.0
+        ],
+        "joint": [
+          0.0,
+          0.0
+        ]
+      },
+      "secondary_calibrated": {
+        "baseline": {
+          "threshold": 0.8937390850231384,
+          "metrics": {
+            "rank1": 0.9004149377593361,
+            "tar": 0.7759336099585062,
+            "fnmr": 0.22406639004149376,
+            "far": 0.0027662517289073307,
+            "eer_descriptive": 0.043360995850622405,
+            "extraction_failures": 4,
+            "queries": 482,
+            "genuine_mean_valid": 0.9199558850779516,
+            "margin_mean_valid": 0.13763325394477843,
+            "joint_success": 0.7759336099585062
+          },
+          "counts": {
+            "queries": 482,
+            "correct": 434,
+            "accepted": 374,
+            "joint": 374,
+            "impostors": 7230,
+            "false_accepts": 20,
+            "failed": 4
+          }
+        },
+        "selected": {
+          "threshold": 0.8937390850231384,
+          "metrics": {
+            "rank1": 0.9004149377593361,
+            "tar": 0.7759336099585062,
+            "fnmr": 0.22406639004149376,
+            "far": 0.0027662517289073307,
+            "eer_descriptive": 0.043360995850622405,
+            "extraction_failures": 4,
+            "queries": 482,
+            "genuine_mean_valid": 0.9199558850779516,
+            "margin_mean_valid": 0.13763325394477843,
+            "joint_success": 0.7759336099585062
+          },
+          "counts": {
+            "queries": 482,
+            "correct": 434,
+            "accepted": 374,
+            "joint": 374,
+            "impostors": 7230,
+            "false_accepts": 20,
+            "failed": 4
+          }
+        }
+      }
+    },
+    {
+      "condition": "oclusao_superior",
+      "baseline": {
+        "rank1": 0.8091286307053942,
+        "tar": 0.7800829875518672,
+        "fnmr": 0.21991701244813278,
+        "far": 0.012863070539419087,
+        "eer_descriptive": 0.07053941908713693,
+        "extraction_failures": 4,
+        "queries": 482,
+        "genuine_mean_valid": 0.8943905818370355,
+        "margin_mean_valid": 0.09479988039557512,
+        "joint_success": 0.7634854771784232
+      },
+      "selected": {
+        "rank1": 0.8091286307053942,
+        "tar": 0.7800829875518672,
+        "fnmr": 0.21991701244813278,
+        "far": 0.012863070539419087,
+        "eer_descriptive": 0.07053941908713693,
+        "extraction_failures": 4,
+        "queries": 482,
+        "genuine_mean_valid": 0.8943905818370355,
+        "margin_mean_valid": 0.09479988039557512,
+        "joint_success": 0.7634854771784232
+      },
+      "counts_baseline": {
+        "queries": 482,
+        "correct": 390,
+        "accepted": 376,
+        "joint": 368,
+        "impostors": 7230,
+        "false_accepts": 93,
+        "failed": 4
+      },
+      "counts_selected": {
+        "queries": 482,
+        "correct": 390,
+        "accepted": 376,
+        "joint": 368,
+        "impostors": 7230,
+        "false_accepts": 93,
+        "failed": 4
+      },
+      "paired_gain_pp": {
+        "rank1": 0.0,
+        "tar": 0.0,
+        "joint": 0.0
+      },
+      "descriptive_interval95_pp": {
+        "rank1": [
+          0.0,
+          0.0
+        ],
+        "tar": [
+          0.0,
+          0.0
+        ],
+        "joint": [
+          0.0,
+          0.0
+        ]
+      },
+      "secondary_calibrated": {
+        "baseline": {
+          "threshold": 0.8937390850231384,
+          "metrics": {
+            "rank1": 0.8091286307053942,
+            "tar": 0.6431535269709544,
+            "fnmr": 0.3568464730290456,
+            "far": 0.004426002766251729,
+            "eer_descriptive": 0.07053941908713693,
+            "extraction_failures": 4,
+            "queries": 482,
+            "genuine_mean_valid": 0.8943905818370355,
+            "margin_mean_valid": 0.09479988039557512,
+            "joint_success": 0.6410788381742739
+          },
+          "counts": {
+            "queries": 482,
+            "correct": 390,
+            "accepted": 310,
+            "joint": 309,
+            "impostors": 7230,
+            "false_accepts": 32,
+            "failed": 4
+          }
+        },
+        "selected": {
+          "threshold": 0.8937390850231384,
+          "metrics": {
+            "rank1": 0.8091286307053942,
+            "tar": 0.6431535269709544,
+            "fnmr": 0.3568464730290456,
+            "far": 0.004426002766251729,
+            "eer_descriptive": 0.07053941908713693,
+            "extraction_failures": 4,
+            "queries": 482,
+            "genuine_mean_valid": 0.8943905818370355,
+            "margin_mean_valid": 0.09479988039557512,
+            "joint_success": 0.6410788381742739
+          },
+          "counts": {
+            "queries": 482,
+            "correct": 390,
+            "accepted": 310,
+            "joint": 309,
+            "impostors": 7230,
+            "false_accepts": 32,
+            "failed": 4
+          }
+        }
+      }
+    },
+    {
+      "condition": "oclusao_inferior",
+      "baseline": {
+        "rank1": 0.5995850622406639,
+        "tar": 0.578838174273859,
+        "fnmr": 0.421161825726141,
+        "far": 0.02434301521438451,
+        "eer_descriptive": 0.1368603042876902,
+        "extraction_failures": 7,
+        "queries": 482,
+        "genuine_mean_valid": 0.841124859605171,
+        "margin_mean_valid": 0.017189036382269828,
+        "joint_success": 0.558091286307054
+      },
+      "selected": {
+        "rank1": 0.5995850622406639,
+        "tar": 0.578838174273859,
+        "fnmr": 0.421161825726141,
+        "far": 0.02434301521438451,
+        "eer_descriptive": 0.1368603042876902,
+        "extraction_failures": 7,
+        "queries": 482,
+        "genuine_mean_valid": 0.841124859605171,
+        "margin_mean_valid": 0.017189036382269828,
+        "joint_success": 0.558091286307054
+      },
+      "counts_baseline": {
+        "queries": 482,
+        "correct": 289,
+        "accepted": 279,
+        "joint": 269,
+        "impostors": 7230,
+        "false_accepts": 176,
+        "failed": 7
+      },
+      "counts_selected": {
+        "queries": 482,
+        "correct": 289,
+        "accepted": 279,
+        "joint": 269,
+        "impostors": 7230,
+        "false_accepts": 176,
+        "failed": 7
+      },
+      "paired_gain_pp": {
+        "rank1": 0.0,
+        "tar": 0.0,
+        "joint": 0.0
+      },
+      "descriptive_interval95_pp": {
+        "rank1": [
+          0.0,
+          0.0
+        ],
+        "tar": [
+          0.0,
+          0.0
+        ],
+        "joint": [
+          0.0,
+          0.0
+        ]
+      },
+      "secondary_calibrated": {
+        "baseline": {
+          "threshold": 0.8937390850231384,
+          "metrics": {
+            "rank1": 0.5995850622406639,
+            "tar": 0.45020746887966806,
+            "fnmr": 0.549792531120332,
+            "far": 0.00995850622406639,
+            "eer_descriptive": 0.1368603042876902,
+            "extraction_failures": 7,
+            "queries": 482,
+            "genuine_mean_valid": 0.841124859605171,
+            "margin_mean_valid": 0.017189036382269828,
+            "joint_success": 0.44813278008298757
+          },
+          "counts": {
+            "queries": 482,
+            "correct": 289,
+            "accepted": 217,
+            "joint": 216,
+            "impostors": 7230,
+            "false_accepts": 72,
+            "failed": 7
+          }
+        },
+        "selected": {
+          "threshold": 0.8937390850231384,
+          "metrics": {
+            "rank1": 0.5995850622406639,
+            "tar": 0.45020746887966806,
+            "fnmr": 0.549792531120332,
+            "far": 0.00995850622406639,
+            "eer_descriptive": 0.1368603042876902,
+            "extraction_failures": 7,
+            "queries": 482,
+            "genuine_mean_valid": 0.841124859605171,
+            "margin_mean_valid": 0.017189036382269828,
+            "joint_success": 0.44813278008298757
+          },
+          "counts": {
+            "queries": 482,
+            "correct": 289,
+            "accepted": 217,
+            "joint": 216,
+            "impostors": 7230,
+            "false_accepts": 72,
+            "failed": 7
+          }
+        }
+      }
+    }
+  ],
+  "completed_sha256": "5cae20e501a04f802edfe36b480d3490276bf793d9c0518522a1d003b6ea4b22",
+  "analyst_sha256": "c58a7de9ff392cfcade7902cdaf9382c1e8d629d6136e290a0a5845dcca86d03",
+  "protocol_sha256": "1a9cb950c7ec4d4f60a0403dd27e728d7eb94df841041e3960b31ee087c216b3"
+}

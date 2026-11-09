@@ -1,0 +1,1221 @@
+{
+  "records": [
+    {
+      "filename": "P0005_OD20241206.JPG",
+      "diagnosis_dataset_only": "Normal eye",
+      "status": "refined",
+      "image_sha256": "37a105b917c6bd5959f26db21aa054de1fc3f63d42b7a76dbb04fe15b77ecef4",
+      "previous": {
+        "pixels": 1195270,
+        "components": 1,
+        "components_ge_100px": 1
+      },
+      "localizer": {
+        "pixels": 1195270,
+        "components": 1,
+        "components_ge_100px": 1
+      },
+      "new": {
+        "pixels": 1249383,
+        "components": 1,
+        "components_ge_100px": 1
+      },
+      "details": {
+        "roi_xyxy": [
+          0,
+          62,
+          2569,
+          1984
+        ],
+        "points_xy_in_roi": [
+          [
+            1648.0,
+            1184.0
+          ],
+          [
+            1496.0,
+            1399.0
+          ],
+          [
+            1017.0,
+            1424.0
+          ],
+          [
+            830.0,
+            1160.0
+          ],
+          [
+            848.0,
+            959.0
+          ],
+          [
+            977.0,
+            880.0
+          ],
+          [
+            1566.0,
+            848.0
+          ],
+          [
+            1656.0,
+            1036.0
+          ]
+        ],
+        "point_labels": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "automatic_pupil_seed": true,
+        "pupil_refinement": {
+          "status": "sam31_refined",
+          "seed_origin": "enclosed_coarse_hole",
+          "selected_index": 2,
+          "candidates": [
+            {
+              "index": 0,
+              "model_quality_not_measured_iou": 0.96875,
+              "area_ratio_to_seed": 0.5135595051590945,
+              "inside_iris_fraction": 1.0,
+              "negative_iris_points_respected": true,
+              "eligible": true
+            },
+            {
+              "index": 1,
+              "model_quality_not_measured_iou": 2.515625,
+              "area_ratio_to_seed": 2.089082167359948,
+              "inside_iris_fraction": 1.0,
+              "negative_iris_points_respected": true,
+              "eligible": true
+            },
+            {
+              "index": 2,
+              "model_quality_not_measured_iou": 2.734375,
+              "area_ratio_to_seed": 2.073929015180163,
+              "inside_iris_fraction": 1.0,
+              "negative_iris_points_respected": true,
+              "eligible": true
+            }
+          ],
+          "zoom_xyxy_in_roi": [
+            817,
+            602,
+            1654,
+            1506
+          ],
+          "points_xy_in_roi": [
+            [
+              1239.0,
+              1108.0
+            ],
+            [
+              1653.0,
+              1505.0
+            ],
+            [
+              1583.0,
+              1505.0
+            ],
+            [
+              894.0,
+              1505.0
+            ],
+            [
+              817.0,
+              1505.0
+            ],
+            [
+              817.0,
+              970.0
+            ],
+            [
+              964.0,
+              886.0
+            ],
+            [
+              1555.0,
+              842.0
+            ],
+            [
+              1653.0,
+              917.0
+            ]
+          ],
+          "point_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "model_quality_not_measured_iou": 1.0859375,
+            "seed_coverage": 0.7385009244773147,
+            "area_ratio_to_seed": 0.7819103633488668,
+            "prompt_match": 1.0,
+            "eligible": true,
+            "selection_score": 1.2597875924477315
+          },
+          {
+            "index": 1,
+            "model_quality_not_measured_iou": 1.453125,
+            "seed_coverage": 0.9995273034544496,
+            "area_ratio_to_seed": 1.9179256569645353,
+            "prompt_match": 1.0,
+            "eligible": true,
+            "selection_score": 1.6530777303454451
+          },
+          {
+            "index": 2,
+            "model_quality_not_measured_iou": 2.40625,
+            "seed_coverage": 0.9918010156700996,
+            "area_ratio_to_seed": 1.1937127176286528,
+            "prompt_match": 1.0,
+            "eligible": true,
+            "selection_score": 2.60543010156701
+          }
+        ],
+        "selected_index": 2,
+        "presence_logit": 32.25,
+        "manual_or_reference_prompts": false,
+        "morphological_hole_filling": false,
+        "forced_circle_or_ellipse": false,
+        "rgb_texture_modified": false,
+        "disconnected_objects_without_iris_points_removed": true
+      },
+      "native_mask_sha256": "bb72fe6aa5f923ee4167ad12e846a6d4a773adc227f6789b4c80c2f828f5b8f9",
+      "crop_sha256": "114f275eb3473c85075b44f85c9042cda561eaf3909f16b1238d28487d2e62db"
+    },
+    {
+      "filename": "P0007_OS20250306.JPG",
+      "diagnosis_dataset_only": "Normal eye",
+      "status": "refined",
+      "image_sha256": "b033515645f0700e80240c58e3e04417a8ab0e1a2713f6eda5401442dd68c52b",
+      "previous": {
+        "pixels": 881843,
+        "components": 1,
+        "components_ge_100px": 1
+      },
+      "localizer": {
+        "pixels": 881843,
+        "components": 1,
+        "components_ge_100px": 1
+      },
+      "new": {
+        "pixels": 1041258,
+        "components": 1,
+        "components_ge_100px": 1
+      },
+      "details": {
+        "roi_xyxy": [
+          294,
+          0,
+          2962,
+          1723
+        ],
+        "points_xy_in_roi": [
+          [
+            1726.0,
+            709.0
+          ],
+          [
+            1605.0,
+            860.0
+          ],
+          [
+            1455.0,
+            923.0
+          ],
+          [
+            911.0,
+            710.0
+          ],
+          [
+            907.0,
+            680.0
+          ],
+          [
+            1454.0,
+            419.0
+          ],
+          [
+            1650.0,
+            513.0
+          ],
+          [
+            1739.0,
+            617.0
+          ]
+        ],
+        "point_labels": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "automatic_pupil_seed": true,
+        "pupil_refinement": {
+          "status": "sam31_refined",
+          "seed_origin": "enclosed_coarse_hole",
+          "selected_index": 2,
+          "candidates": [
+            {
+              "index": 0,
+              "model_quality_not_measured_iou": 0.8359375,
+              "area_ratio_to_seed": 0.9253276980596729,
+              "inside_iris_fraction": 1.0,
+              "negative_iris_points_respected": true,
+              "eligible": true
+            },
+            {
+              "index": 1,
+              "model_quality_not_measured_iou": 1.8671875,
+              "area_ratio_to_seed": 1.923450915485673,
+              "inside_iris_fraction": 1.0,
+              "negative_iris_points_respected": true,
+              "eligible": true
+            },
+            {
+              "index": 2,
+              "model_quality_not_measured_iou": 2.203125,
+              "area_ratio_to_seed": 1.7696877447575698,
+              "inside_iris_fraction": 1.0,
+              "negative_iris_points_respected": true,
+              "eligible": true
+            }
+          ],
+          "zoom_xyxy_in_roi": [
+            928,
+            233,
+            1685,
+            1007
+          ],
+          "points_xy_in_roi": [
+            [
+              1306.0,
+              631.0
+            ],
+            [
+              1684.0,
+              1006.0
+            ],
+            [
+              1571.0,
+              1006.0
+            ],
+            [
+              1126.0,
+              1006.0
+            ],
+            [
+              928.0,
+              1006.0
+            ],
+            [
+              928.0,
+              783.0
+            ],
+            [
+              1052.0,
+              487.0
+            ],
+            [
+              1632.0,
+              498.0
+            ],
+            [
+              1684.0,
+              782.0
+            ]
+          ],
+          "point_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "model_quality_not_measured_iou": 0.94140625,
+            "seed_coverage": 0.8333127325385584,
+            "area_ratio_to_seed": 0.9385899757666614,
+            "prompt_match": 0.875,
+            "eligible": true,
+            "selection_score": 1.1122375232538557
+          },
+          {
+            "index": 1,
+            "model_quality_not_measured_iou": 1.09375,
+            "seed_coverage": 0.9996257837279425,
+            "area_ratio_to_seed": 1.9893779278170831,
+            "prompt_match": 1.0,
+            "eligible": true,
+            "selection_score": 1.2937125783727943
+          },
+          {
+            "index": 2,
+            "model_quality_not_measured_iou": 2.5625,
+            "seed_coverage": 0.992299082716538,
+            "area_ratio_to_seed": 1.3238683076239195,
+            "prompt_match": 1.0,
+            "eligible": true,
+            "selection_score": 2.7617299082716538
+          }
+        ],
+        "selected_index": 2,
+        "presence_logit": 33.75,
+        "manual_or_reference_prompts": false,
+        "morphological_hole_filling": false,
+        "forced_circle_or_ellipse": false,
+        "rgb_texture_modified": false,
+        "disconnected_objects_without_iris_points_removed": true
+      },
+      "native_mask_sha256": "c8a776cd463f4a990b5be768a1329086fbbfe91ce2099140a6483de2a56f0e70",
+      "crop_sha256": "25fe9a753f0d576a79db2375a2005bfd26788eeb5a8e5ca773c89ad30f641d96"
+    },
+    {
+      "filename": "P0209_OD20250329.JPG",
+      "diagnosis_dataset_only": "Traumatic cataract, Iridodialysis, Ocular contusion",
+      "status": "refined",
+      "image_sha256": "d9b1871c9f4266858063b626c4d2c609a381e35adebf23f2fa08ac823dda3949",
+      "previous": {
+        "pixels": 846509,
+        "components": 1,
+        "components_ge_100px": 1
+      },
+      "localizer": {
+        "pixels": 846509,
+        "components": 1,
+        "components_ge_100px": 1
+      },
+      "new": {
+        "pixels": 1250987,
+        "components": 1,
+        "components_ge_100px": 1
+      },
+      "details": {
+        "roi_xyxy": [
+          167,
+          0,
+          2781,
+          1984
+        ],
+        "points_xy_in_roi": [
+          [
+            1638.0,
+            1026.0
+          ],
+          [
+            1606.0,
+            1096.0
+          ],
+          [
+            1535.0,
+            1159.0
+          ],
+          [
+            1534.0,
+            1026.0
+          ],
+          [
+            1534.0,
+            1025.0
+          ],
+          [
+            1534.0,
+            1024.0
+          ],
+          [
+            1654.0,
+            905.0
+          ],
+          [
+            1654.0,
+            960.0
+          ]
+        ],
+        "point_labels": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "automatic_pupil_seed": true,
+        "pupil_refinement": {
+          "status": "sam31_refined",
+          "seed_origin": "native_intensity_localizer",
+          "selected_index": 2,
+          "candidates": [
+            {
+              "index": 0,
+              "model_quality_not_measured_iou": -3.90625,
+              "area_ratio_to_seed": 0.2322921249450066,
+              "inside_iris_fraction": 1.0,
+              "negative_iris_points_respected": true,
+              "eligible": false
+            },
+            {
+              "index": 1,
+              "model_quality_not_measured_iou": -3.25,
+              "area_ratio_to_seed": 4.004106173925796,
+              "inside_iris_fraction": 0.999963375329622,
+              "negative_iris_points_respected": false,
+              "eligible": false
+            },
+            {
+              "index": 2,
+              "model_quality_not_measured_iou": -2.9375,
+              "area_ratio_to_seed": 3.0856430561665933,
+              "inside_iris_fraction": 1.0,
+              "negative_iris_points_respected": true,
+              "eligible": true
+            }
+          ],
+          "zoom_xyxy_in_roi": [
+            1026,
+            887,
+            1435,
+            1256
+          ],
+          "points_xy_in_roi": [
+            [
+              1206.0,
+              1059.0
+            ],
+            [
+              1434.0,
+              1255.0
+            ],
+            [
+              1413.0,
+              1255.0
+            ],
+            [
+              1312.0,
+              1255.0
+            ],
+            [
+              1220.0,
+              1246.0
+            ],
+            [
+              1311.0,
+              1154.0
+            ],
+            [
+              1311.0,
+              1153.0
+            ],
+            [
+              1434.0,
+              1031.0
+            ],
+            [
+              1434.0,
+              1153.0
+            ]
+          ],
+          "point_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "model_quality_not_measured_iou": 0.57421875,
+            "seed_coverage": 0.31658612017119725,
+            "area_ratio_to_seed": 0.49803959556248073,
+            "prompt_match": 1.0,
+            "eligible": false,
+            "selection_score": -1000000.0
+          },
+          {
+            "index": 1,
+            "model_quality_not_measured_iou": 1.375,
+            "seed_coverage": 0.9999621976848445,
+            "area_ratio_to_seed": 2.256524148000789,
+            "prompt_match": 1.0,
+            "eligible": true,
+            "selection_score": 1.5749962197684846
+          },
+          {
+            "index": 2,
+            "model_quality_not_measured_iou": 1.8359375,
+            "seed_coverage": 0.9787456483037983,
+            "area_ratio_to_seed": 1.5058694000890718,
+            "prompt_match": 1.0,
+            "eligible": true,
+            "selection_score": 2.03381206483038
+          }
+        ],
+        "selected_index": 2,
+        "presence_logit": 30.5,
+        "manual_or_reference_prompts": false,
+        "morphological_hole_filling": false,
+        "forced_circle_or_ellipse": false,
+        "rgb_texture_modified": false,
+        "disconnected_objects_without_iris_points_removed": true
+      },
+      "native_mask_sha256": "a502838e425873b2a3e79fa297197442565b19e196491ee8ccfcf018f2300a97",
+      "crop_sha256": "befab4872722ce6f3fe68d7461f67126e8edbfb95144fb76e756a0e4df2c9a8a"
+    },
+    {
+      "filename": "P0564_OD20250526.JPG",
+      "diagnosis_dataset_only": "Iris synechiae, Intraocular lens capture, Posterior capsular opacification",
+      "status": "refined",
+      "image_sha256": "1a6e59dffcba96c6590c6e51fae93fe8e8711fa182e1d1e68dc4bb4681ecf2b3",
+      "previous": {
+        "pixels": 618292,
+        "components": 1,
+        "components_ge_100px": 1
+      },
+      "localizer": {
+        "pixels": 618292,
+        "components": 1,
+        "components_ge_100px": 1
+      },
+      "new": {
+        "pixels": 985797,
+        "components": 1,
+        "components_ge_100px": 1
+      },
+      "details": {
+        "roi_xyxy": [
+          524,
+          127,
+          2817,
+          1984
+        ],
+        "points_xy_in_roi": [
+          [
+            1484.0,
+            1048.0
+          ],
+          [
+            1439.0,
+            1125.0
+          ],
+          [
+            1377.0,
+            1169.0
+          ],
+          [
+            1216.0,
+            1209.0
+          ],
+          [
+            1376.0,
+            1048.0
+          ],
+          [
+            1376.0,
+            715.0
+          ],
+          [
+            1505.0,
+            858.0
+          ],
+          [
+            1506.0,
+            919.0
+          ]
+        ],
+        "point_labels": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "automatic_pupil_seed": true,
+        "pupil_refinement": {
+          "status": "sam31_refined",
+          "seed_origin": "native_intensity_localizer",
+          "selected_index": 0,
+          "candidates": [
+            {
+              "index": 0,
+              "model_quality_not_measured_iou": 1.078125,
+              "area_ratio_to_seed": 0.7225297329643204,
+              "inside_iris_fraction": 1.0,
+              "negative_iris_points_respected": true,
+              "eligible": true
+            },
+            {
+              "index": 1,
+              "model_quality_not_measured_iou": 0.86328125,
+              "area_ratio_to_seed": 3.369597042197835,
+              "inside_iris_fraction": 0.9701684229887391,
+              "negative_iris_points_respected": false,
+              "eligible": false
+            },
+            {
+              "index": 2,
+              "model_quality_not_measured_iou": 1.3515625,
+              "area_ratio_to_seed": 2.7346312898710234,
+              "inside_iris_fraction": 0.9998319754606022,
+              "negative_iris_points_respected": false,
+              "eligible": false
+            }
+          ],
+          "zoom_xyxy_in_roi": [
+            228,
+            0,
+            1985,
+            1857
+          ],
+          "points_xy_in_roi": [
+            [
+              1104.0,
+              870.0
+            ],
+            [
+              1484.0,
+              1048.0
+            ],
+            [
+              1439.0,
+              1125.0
+            ],
+            [
+              1377.0,
+              1169.0
+            ],
+            [
+              1216.0,
+              1209.0
+            ],
+            [
+              1376.0,
+              1048.0
+            ],
+            [
+              1376.0,
+              715.0
+            ],
+            [
+              1505.0,
+              858.0
+            ],
+            [
+              1506.0,
+              919.0
+            ]
+          ],
+          "point_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "model_quality_not_measured_iou": 1.0859375,
+            "seed_coverage": 0.7518033550490707,
+            "area_ratio_to_seed": 1.0840913354854989,
+            "prompt_match": 1.0,
+            "eligible": true,
+            "selection_score": 1.261117835504907
+          },
+          {
+            "index": 1,
+            "model_quality_not_measured_iou": 1.59375,
+            "seed_coverage": 1.0,
+            "area_ratio_to_seed": 2.3591571619881866,
+            "prompt_match": 1.0,
+            "eligible": true,
+            "selection_score": 1.7937500000000002
+          },
+          {
+            "index": 2,
+            "model_quality_not_measured_iou": 2.328125,
+            "seed_coverage": 0.9901260245967924,
+            "area_ratio_to_seed": 1.78427668480265,
+            "prompt_match": 1.0,
+            "eligible": true,
+            "selection_score": 2.527137602459679
+          }
+        ],
+        "selected_index": 2,
+        "presence_logit": 32.5,
+        "manual_or_reference_prompts": false,
+        "morphological_hole_filling": false,
+        "forced_circle_or_ellipse": false,
+        "rgb_texture_modified": false,
+        "disconnected_objects_without_iris_points_removed": true
+      },
+      "native_mask_sha256": "1904c6c5a2497ab38e7ff30decdf2ca8ac5673c648113facb9182212ef3b8a6c",
+      "crop_sha256": "39430d5c56a91b31c398dc51c9b861259420ce365cc49c48fb843039def5fb31"
+    },
+    {
+      "filename": "P0114_OS20250417.JPG",
+      "diagnosis_dataset_only": "Iris cyst, Corneal ulcer, Bullous keratopathy",
+      "status": "refined",
+      "image_sha256": "1f90538202e540ee5175ca5d370bdaf13dfcd7238a354af14d86784fe4ce570a",
+      "previous": {
+        "pixels": 620862,
+        "components": 1,
+        "components_ge_100px": 1
+      },
+      "localizer": {
+        "pixels": 620862,
+        "components": 1,
+        "components_ge_100px": 1
+      },
+      "new": {
+        "pixels": 840805,
+        "components": 1,
+        "components_ge_100px": 1
+      },
+      "details": {
+        "roi_xyxy": [
+          640,
+          363,
+          2561,
+          1984
+        ],
+        "points_xy_in_roi": [
+          [
+            1216.0,
+            953.0
+          ],
+          [
+            1114.0,
+            1014.0
+          ],
+          [
+            801.0,
+            1068.0
+          ],
+          [
+            763.0,
+            1050.0
+          ],
+          [
+            635.0,
+            872.0
+          ],
+          [
+            715.0,
+            615.0
+          ],
+          [
+            1174.0,
+            682.0
+          ],
+          [
+            1221.0,
+            878.0
+          ]
+        ],
+        "point_labels": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "automatic_pupil_seed": true,
+        "pupil_refinement": {
+          "status": "sam31_refined",
+          "seed_origin": "enclosed_coarse_hole",
+          "selected_index": 2,
+          "candidates": [
+            {
+              "index": 0,
+              "model_quality_not_measured_iou": 0.3828125,
+              "area_ratio_to_seed": 0.14493293591654247,
+              "inside_iris_fraction": 1.0,
+              "negative_iris_points_respected": true,
+              "eligible": false
+            },
+            {
+              "index": 1,
+              "model_quality_not_measured_iou": 0.5625,
+              "area_ratio_to_seed": 2.5382424952097082,
+              "inside_iris_fraction": 1.0,
+              "negative_iris_points_respected": true,
+              "eligible": true
+            },
+            {
+              "index": 2,
+              "model_quality_not_measured_iou": 0.9140625,
+              "area_ratio_to_seed": 1.2773845007451565,
+              "inside_iris_fraction": 1.0,
+              "negative_iris_points_respected": true,
+              "eligible": true
+            }
+          ],
+          "zoom_xyxy_in_roi": [
+            613,
+            524,
+            1195,
+            1081
+          ],
+          "points_xy_in_roi": [
+            [
+              881.0,
+              794.0
+            ],
+            [
+              1194.0,
+              1080.0
+            ],
+            [
+              1177.0,
+              1080.0
+            ],
+            [
+              630.0,
+              1080.0
+            ],
+            [
+              613.0,
+              1080.0
+            ],
+            [
+              613.0,
+              524.0
+            ],
+            [
+              621.0,
+              524.0
+            ],
+            [
+              1184.0,
+              524.0
+            ],
+            [
+              1194.0,
+              524.0
+            ]
+          ],
+          "point_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "model_quality_not_measured_iou": 0.984375,
+            "seed_coverage": 0.6907460917240869,
+            "area_ratio_to_seed": 0.8283467179502048,
+            "prompt_match": 1.0,
+            "eligible": true,
+            "selection_score": 1.1534496091724087
+          },
+          {
+            "index": 1,
+            "model_quality_not_measured_iou": 0.98828125,
+            "seed_coverage": 0.9997680644007847,
+            "area_ratio_to_seed": 2.187547313251576,
+            "prompt_match": 1.0,
+            "eligible": true,
+            "selection_score": 1.1882580564400786
+          },
+          {
+            "index": 2,
+            "model_quality_not_measured_iou": 1.890625,
+            "seed_coverage": 0.9543553962072087,
+            "area_ratio_to_seed": 1.4262911887021592,
+            "prompt_match": 1.0,
+            "eligible": true,
+            "selection_score": 2.086060539620721
+          }
+        ],
+        "selected_index": 2,
+        "presence_logit": 31.5,
+        "manual_or_reference_prompts": false,
+        "morphological_hole_filling": false,
+        "forced_circle_or_ellipse": false,
+        "rgb_texture_modified": false,
+        "disconnected_objects_without_iris_points_removed": true
+      },
+      "native_mask_sha256": "c25c354df9a281dbf20679290d43fb8cbf9ab221626ddaab58ab7388457e6f66",
+      "crop_sha256": "a84a3b896a33960753c955a3a31c045d50d693410ed0d335308b9b6e411d2f57"
+    },
+    {
+      "filename": "P0803_OD20250112.JPG",
+      "diagnosis_dataset_only": "Intraocular foreign body, Penetrating corneal injury, Corneal foreign body, Iris laceration, Traumatic cataract",
+      "status": "refined",
+      "image_sha256": "a5b11184dfad0a605e80c2bc38b19bc9c237f53e464a754328d0407a6ce58da0",
+      "previous": {
+        "pixels": 0,
+        "components": 0,
+        "components_ge_100px": 0
+      },
+      "localizer": {
+        "pixels": 31250,
+        "components": 2,
+        "components_ge_100px": 2
+      },
+      "new": {
+        "pixels": 65163,
+        "components": 1,
+        "components_ge_100px": 1
+      },
+      "details": {
+        "roi_xyxy": [
+          297,
+          692,
+          968,
+          1192
+        ],
+        "points_xy_in_roi": [
+          [
+            391.0,
+            290.0
+          ],
+          [
+            340.0,
+            295.0
+          ],
+          [
+            331.0,
+            295.0
+          ],
+          [
+            307.0,
+            291.0
+          ],
+          [
+            261.0,
+            283.0
+          ],
+          [
+            338.0,
+            285.0
+          ],
+          [
+            339.0,
+            285.0
+          ],
+          [
+            409.0,
+            284.0
+          ]
+        ],
+        "point_labels": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "automatic_pupil_seed": true,
+        "pupil_refinement": {
+          "status": "sam31_refined",
+          "seed_origin": "native_intensity_localizer",
+          "selected_index": 0,
+          "candidates": [
+            {
+              "index": 0,
+              "model_quality_not_measured_iou": -2.859375,
+              "area_ratio_to_seed": 0.7526891162137244,
+              "inside_iris_fraction": 0.9502449836677554,
+              "negative_iris_points_respected": true,
+              "eligible": true
+            },
+            {
+              "index": 1,
+              "model_quality_not_measured_iou": -1.28125,
+              "area_ratio_to_seed": 4.25776002107389,
+              "inside_iris_fraction": 0.6493467657946566,
+              "negative_iris_points_respected": false,
+              "eligible": false
+            },
+            {
+              "index": 2,
+              "model_quality_not_measured_iou": -1.2734375,
+              "area_ratio_to_seed": 2.7919831408877376,
+              "inside_iris_fraction": 0.8650637648797823,
+              "negative_iris_points_respected": false,
+              "eligible": false
+            }
+          ],
+          "zoom_xyxy_in_roi": [
+            0,
+            0,
+            642,
+            500
+          ],
+          "points_xy_in_roi": [
+            [
+              218.0,
+              264.0
+            ],
+            [
+              391.0,
+              290.0
+            ],
+            [
+              340.0,
+              295.0
+            ],
+            [
+              331.0,
+              295.0
+            ],
+            [
+              307.0,
+              291.0
+            ],
+            [
+              261.0,
+              283.0
+            ],
+            [
+              338.0,
+              285.0
+            ],
+            [
+              339.0,
+              285.0
+            ],
+            [
+              409.0,
+              284.0
+            ]
+          ],
+          "point_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "model_quality_not_measured_iou": 0.50390625,
+            "seed_coverage": 0.766848,
+            "area_ratio_to_seed": 1.461024,
+            "prompt_match": 1.0,
+            "eligible": true,
+            "selection_score": 0.68059105
+          },
+          {
+            "index": 1,
+            "model_quality_not_measured_iou": 1.2265625,
+            "seed_coverage": 0.999616,
+            "area_ratio_to_seed": 4.848736,
+            "prompt_match": 1.0,
+            "eligible": false,
+            "selection_score": -1000000.0
+          },
+          {
+            "index": 2,
+            "model_quality_not_measured_iou": 1.6640625,
+            "seed_coverage": 0.9976,
+            "area_ratio_to_seed": 2.771648,
+            "prompt_match": 1.0,
+            "eligible": true,
+            "selection_score": 1.8638225000000002
+          }
+        ],
+        "selected_index": 2,
+        "presence_logit": 30.0,
+        "manual_or_reference_prompts": false,
+        "morphological_hole_filling": false,
+        "forced_circle_or_ellipse": false,
+        "rgb_texture_modified": false,
+        "disconnected_objects_without_iris_points_removed": true
+      },
+      "native_mask_sha256": "7a027e5dd116a86bdacf66296fffbee744525862ce1e4a64946a106bb038a523",
+      "crop_sha256": "736ffb110e6ac30235ae006af9bc59f4a4c0eff157a970e69d81ca329cc9b360"
+    }
+  ],
+  "clinical_dice": null,
+  "recognition_reevaluated": false,
+  "method_audit": {
+    "family": "SAM3.1",
+    "code_revision": "f1647e8d0c1d280991f4d1b7d974c2704537fe66",
+    "checkpoint_revision": "daa63191845a41281374e725f4c9e51c7a824460",
+    "checkpoint_sha256": "0567debeec80ba4ac6369540c6c248025283cb3ff2b92827509e57e2b3541cb6",
+    "strict_components": {
+      "backbone": {
+        "tensors": 474,
+        "missing": [],
+        "unexpected": []
+      },
+      "prompt": {
+        "tensors": 17,
+        "missing": [],
+        "unexpected": []
+      },
+      "decoder": {
+        "tensors": 131,
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    "random_missing_weights_used": false,
+    "image_encoder_resolution": 1008,
+    "scope": "Official interactive image path only; no language, tracking, propagation or newly trained parameters."
+  },
+  "figure_sha256": "a672af0b53827d62b6bc31eee5009622a3bc4b86864d8f498e87240a83022908"
+}

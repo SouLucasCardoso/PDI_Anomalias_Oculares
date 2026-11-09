@@ -2,6 +2,7 @@
 const $ = id => document.getElementById(id);
 let token = localStorage.getItem('iris-device') || '', mode = 'enroll', photo = null, crop = null;
 let current = null, busy = false, people = [], drag = null, pollTimer = null, started = 0, view = null;
+let enrollmentKind = 'new', savingEnrollment = false;
 const blobs = new Map();
 function show(id, yes=true) { $(id).hidden = !yes; }
 function toast(message) { $('toast').textContent = message; show('toast'); setTimeout(()=>show('toast',false),6500); }
@@ -21,6 +22,36 @@ async function asset(key, filename, element) {
   const url=URL.createObjectURL(await response.blob()); blobs.set(element,url); $(element).src=url;
 }
 function node(tag,text,className) { const e=document.createElement(tag); if(text!==undefined)e.textContent=text; if(className)e.className=className; return e; }
+function setEnrollmentKind(kind) {
+  enrollmentKind=kind;
+  const isNew=kind==='new',saved=Boolean(current&&current.already_enrolled);
+  for(const key of ['new','existing']) { $('enroll-'+key).classList.toggle('selected',key===kind);$('enroll-'+key).setAttribute('aria-pressed',String(key===kind)); }
+  show('new-name',isNew);show('existing-person',!isNew);
+  $('person-name').disabled=!isNew||saved;$('person-name').required=isNew&&!saved;
+  $('person-select').disabled=isNew||saved;$('person-select').required=!isNew&&!saved;$('reviewed').disabled=saved;
+  $('save-enrollment').textContent=isNew?'Salvar novo registro':'Adicionar foto ao registro';
+  $('save-enrollment').disabled=savingEnrollment||Boolean(current&&current.already_enrolled);
+  show('enroll-fields',!Boolean(current&&current.already_enrolled));show('next-enrollment',Boolean(current&&current.already_enrolled));
+  $('enroll-hint').textContent=isNew?'Dê um nome ao novo olho cadastrado. Para mais fotos do mesmo olho, escolha Adicionar foto.':'Selecione o registro ao qual esta foto pertence. Só aparecem cadastros do mesmo lado do olho.';
+}
+function resetEnrollment() {
+  $('person-name').value='';$('person-select').value='';$('reviewed').checked=false;$('enroll-message').textContent='';
+  setEnrollmentKind('new');
+}
+function refreshEnrollmentOptions() {
+  const previous=$('person-select').value;
+  const side=current ? current.side : $('eye-side').value;
+  const compatible=people.filter(x=>x.side===side);
+  $('person-select').replaceChildren(new Option('Escolha um registro existente',''),...compatible.map(x=>new Option(`${x.name} · ${x.side==='R'?'direito':'esquerdo'} · ${x.samples} foto(s)`,x.id)));
+  $('person-select').value=compatible.some(x=>x.id===previous)?previous:'';
+  setEnrollmentKind(enrollmentKind);
+}
+function startNewEnrollment() {
+  if(busy||savingEnrollment){toast('Aguarde a análise ou o salvamento atual.');return;}
+  setMode('enroll');current=null;localStorage.removeItem('iris-last-job');
+  if(photo&&photo.close)photo.close();photo=null;crop=null;view=null;
+  resetEnrollment();show('result-panel',false);show('crop-panel',false);show('analyze-button',false);show('empty-capture');navigate('capture');
+}
 function setMode(value) {
   mode=value;
   for(const key of ['enroll','recognize']) { $('mode-'+key).classList.toggle('selected',key===value); $('mode-'+key).setAttribute('aria-pressed',String(key===value)); }
@@ -43,7 +74,7 @@ async function activate() {
   const key=localStorage.getItem('iris-last-job'); if(key&&!current&&!busy) poll(key);
 }
 async function readPhoto(file) {
-  if(!file)return; if(busy){toast('Aguarde a análise atual.');return;}
+  if(!file)return; if(busy||savingEnrollment){toast('Aguarde a análise ou o salvamento atual.');return;}
   try {
     if(photo&&photo.close)photo.close();
     photo=await createImageBitmap(file,{imageOrientation:'from-image'});
@@ -51,7 +82,7 @@ async function readPhoto(file) {
     const cw=Math.min(w*.92,h*1.3*.92),ch=cw/1.3;
     crop={x:(w-cw)/2,y:(h-ch)/2,w:cw,h:ch,base:cw};
     $('zoom').value='1'; show('empty-capture',false); show('crop-panel');show('analyze-button');show('result-panel',false);
-    current=null;localStorage.removeItem('iris-last-job');drawCrop();
+    current=null;resetEnrollment();localStorage.removeItem('iris-last-job');drawCrop();
   } catch(e){toast('Não foi possível abrir a foto. Use JPEG ou PNG.');}
 }
 function drawCrop() {
@@ -78,7 +109,7 @@ function setBusy(value) {
   show('progress-panel',value);
 }
 async function analyze() {
-  if(!photo||busy)return;
+  if(!photo||busy||savingEnrollment)return;
   setBusy(true);show('result-panel',false);started=Date.now();$('progress-message').textContent='Enviando somente o recorte';
   try {
     const scale=Math.min(1,2560/Math.max(crop.w,crop.h)),canvas=document.createElement('canvas');
@@ -106,9 +137,9 @@ async function renderResult(result) {
   $('quality').replaceChildren();
   for(const [value,label] of [[result.quality.iris_width_px+' px','largura prevista da íris'],[Math.round(result.elapsed_seconds)+' s','processamento da foto']]) {const d=node('div');d.append(node('strong',value),node('span',label));$('quality').append(d);}
   $('warnings').replaceChildren(...result.warnings.map(t=>node('p',t,'warning')));
-  show('enroll-form',result.mode==='enroll');show('match-panel',result.mode==='recognize');$('reviewed').checked=false;$('enroll-message').textContent='';$('trial-message').textContent='';
-  $('enroll-form').querySelector('button').disabled=false;$('trial-form').querySelector('button').disabled=false;
-  if(result.already_enrolled){$('enroll-form').querySelector('button').disabled=true;$('enroll-message').textContent='Esta foto já está salva no cadastro.';}
+  show('enroll-form',result.mode==='enroll');show('match-panel',result.mode==='recognize');resetEnrollment();refreshEnrollmentOptions();$('trial-message').textContent='';
+  $('trial-form').querySelector('button').disabled=false;
+  if(result.already_enrolled){$('save-enrollment').disabled=true;$('enroll-message').textContent='Esta foto já está salva no cadastro.';}
   if(result.mode==='recognize') {
     const matching=result.matching;$('ranking').replaceChildren();
     $('match-explanation').textContent=matching.duplicate_image?'Esta é a mesma imagem já cadastrada. Faça outra foto para um teste independente.':!matching.candidate_count?'Ainda não há cadastro compatível para este lado do olho. Cadastre primeiro e use uma nova foto.':`${matching.candidate_count} pessoa(s) comparada(s) para o olho ${result.side==='R'?'direito':'esquerdo'}. A ordem abaixo indica semelhança, sem confirmar identidade.`;
@@ -121,12 +152,17 @@ async function renderResult(result) {
 async function refreshGallery() {
   people=await api('/api/gallery');
   const unique=[...new Map(people.map(x=>[x.id,x])).values()];
-  $('person-select').replaceChildren(new Option('Nova pessoa',''),...unique.map(x=>new Option(x.name,x.id)));
+  refreshEnrollmentOptions();
   $('gallery-list').replaceChildren();
   if(!unique.length)$('gallery-list').append(node('div','Seu cadastro está vazio. Comece com três fotos independentes de um olho.','empty-list'));
   for(const person of unique) {
     const card=node('div',undefined,'card person-card');card.append(node('div',person.name.slice(0,1).toUpperCase(),'initial'),node('h3',person.name));
     card.append(node('p',people.filter(x=>x.id===person.id).map(x=>`${x.side==='R'?'Direito':'Esquerdo'} · ${x.samples} foto(s)`).join(' / ')));
+    const rename=node('button','Renomear registro','text-button');rename.addEventListener('click',async()=>{
+      const name=prompt('Novo nome deste registro:',person.name);
+      if(name===null)return;
+      try{await api('/api/rename-person',{method:'POST',body:{person_id:person.id,name}});await refreshGallery();toast('Nome atualizado. Fotos e testes preservados.');}catch(e){toast(e.message);}
+    });card.append(rename);
     const remove=node('button','Excluir pessoa e fotos','text-button');remove.addEventListener('click',async()=>{
       if(!confirm('Excluir esta pessoa, as fotos dela e todos os registros de testes?'))return;
       try{await api('/api/delete-person',{method:'POST',body:{person_id:person.id}});current=null;localStorage.removeItem('iris-last-job');show('result-panel',false);await refreshGallery();toast('Pessoa e registros removidos.');}catch(e){toast(e.message);}
@@ -139,19 +175,31 @@ async function refreshTrials() {
   $('trial-list').replaceChildren();
   for(const trial of trials) {const row=node('div',undefined,'trial-entry');row.append(node('span',trial.top1_correct===null?'Pessoa não cadastrada · sem decisão binária':trial.top1_correct?'Primeiro candidato correspondeu':'Primeiro candidato não correspondeu'),node('small',new Date(trial.created*1000).toLocaleString('pt-BR')));$('trial-list').append(row);}
 }
-$('enroll-form').addEventListener('submit',async e=>{e.preventDefault();if(!current)return;try{
-  await api('/api/enroll',{method:'POST',body:{capture:current.id,name:$('person-name').value,person_id:$('person-select').value||null,reviewed:$('reviewed').checked}});
-  $('enroll-message').textContent='Foto cadastrada. Faça outra captura do mesmo olho para diversificar.';$('enroll-form').querySelector('button').disabled=true;await refreshGallery();
-}catch(error){toast(error.message);}});
+$('enroll-form').addEventListener('submit',async e=>{
+  e.preventDefault();if(!current||savingEnrollment||current.already_enrolled)return;
+  const isNew=enrollmentKind==='new',name=$('person-name').value.trim(),personId=isNew?null:$('person-select').value;
+  if(isNew&&!name){toast('Dê um nome a este novo registro.');$('person-name').focus();return;}
+  if(!isNew&&!personId){toast('Escolha o registro que receberá esta foto.');return;}
+  if(!$('reviewed').checked){toast('Confira a região verde antes de salvar.');return;}
+  savingEnrollment=true;$('save-enrollment').disabled=true;
+  try{
+    const saved=await api('/api/enroll',{method:'POST',body:{capture:current.id,name:isNew?name:'',person_id:personId,reviewed:true}});
+    current.already_enrolled=true;resetEnrollment();
+    $('enroll-message').textContent=`Foto salva em “${saved.name||name}”. Uma nova captura começará com nome vazio; para o mesmo olho, escolha Adicionar foto.`;
+    await refreshGallery();
+  }catch(error){toast(error.message);}
+  finally{savingEnrollment=false;setEnrollmentKind(enrollmentKind);}
+});
 $('trial-form').addEventListener('submit',async e=>{e.preventDefault();if(!current)return;try{await api('/api/trials',{method:'POST',body:{capture:current.id,expected:$('expected-person').value}});$('trial-message').textContent='Teste registrado.';$('trial-form').querySelector('button').disabled=true;}catch(error){toast(error.message);}});
-$('discard-button').addEventListener('click',async()=>{if(!current)return;try{await api('/api/discard',{method:'POST',body:{capture:current.id}});current=null;localStorage.removeItem('iris-last-job');show('result-panel',false);toast('Captura descartada.');}catch(e){toast(e.message);}});
-$('person-select').addEventListener('change',()=>show('new-name',!$('person-select').value));
+$('discard-button').addEventListener('click',async()=>{if(!current||savingEnrollment)return;try{await api('/api/discard',{method:'POST',body:{capture:current.id}});current=null;localStorage.removeItem('iris-last-job');show('result-panel',false);toast('Captura descartada.');}catch(e){toast(e.message);}});
+$('enroll-new').onclick=()=>setEnrollmentKind('new');$('enroll-existing').onclick=()=>setEnrollmentKind('existing');
 $('mode-enroll').onclick=()=>setMode('enroll');$('mode-recognize').onclick=()=>setMode('recognize');
 $('camera-button').onclick=()=>$('camera-file').click();$('file-button').onclick=()=>$('gallery-file').click();
 for(const id of ['camera-file','gallery-file'])$(id).addEventListener('change',e=>{readPhoto(e.target.files[0]);e.target.value='';});
 $('analyze-button').onclick=analyze;$('pair-button').onclick=connect;$('pair-code').addEventListener('keydown',e=>{if(e.key==='Enter')connect();});
 document.querySelectorAll('[data-page]').forEach(e=>e.onclick=()=>navigate(e.dataset.page));
-$('add-person').onclick=()=>{setMode('enroll');navigate('capture');};
+$('add-person').onclick=startNewEnrollment;
+$('next-enrollment').onclick=startNewEnrollment;
 $('show-connection').onclick=()=>{show('pair-panel');$('pair-panel').scrollIntoView({behavior:'smooth'});};
 async function init() {
   try {

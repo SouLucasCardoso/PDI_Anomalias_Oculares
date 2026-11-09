@@ -1,357 +1,599 @@
+<!-- pagina:01 -->
 # INFLUÊNCIA DA ÁREA PRESERVADA DA ÍRIS NA IDENTIFICAÇÃO OCULAR SOB OCLUSÕES CONTROLADAS
 
 Lucas Cardoso Rodrigues
 
 Rodrigo Ramos Silva
 
-**Resumo:** Este estudo investigou a menor fração nominal da região visível da íris que manteve critérios de identificação ocular sob oclusões digitais superiores e inferiores. Utilizou-se o UBIPr segmentado, com partições por pessoa, extração automática e fusão de representações RGB e polares. A avaliação entre sessões manteve uma fotografia por consulta, lateralidade informada e 16 candidatos do mesmo lado. Modelo, cadastro e limiar permaneceram congelados nas intervenções. Todas as 486 consultas de teste foram mantidas, incluindo falhas e seis referências sem área definida. Exigiram-se Rank-1 e aceitação genuína de pelo menos 90%, com falsa correspondência empírica de até 1%. Sem perda adicional, obtiveram-se 91,36%, 92,39% e 0,88%, respectivamente. Na grade irregular estudada, as menores áreas nominais aprovadas foram 99,5% na orientação superior e 99% na inferior. A perda de 10% produziu diferença de Rank-1 de 24,07 pontos percentuais entre orientações. Pilotos posteriores não superaram conjuntamente os critérios. Em extensão exploratória, nove imagens clínicas com alterações explícitas da íris foram examinadas; dois olhos permitiram quatro consultas. O sistema original não identificou corretamente nenhuma, enquanto um controle de escala recuperou uma consulta e prejudicou outro cadastro. A evidência delimita a tolerância do processamento completo e identifica falhas de transferência de captura, sem estabelecer mínimo anatômico universal ou efeito causal de doenças. A reutilização dos conjuntos e a pequena amostra clínica impedem confirmação independente.
+**Resumo:** Este estudo avaliou a influência da quantidade e da posição da área visível de íris na identificação ocular sob oclusões controladas. Utilizou-se o UBIPr segmentado, com partições por pessoa, extração automática e fusão de nove representações. O protocolo entre sessões manteve uma fotografia por consulta, lateralidade informada e dezesseis candidatos do mesmo lado. A grade completa incluiu o controle e perdas de 1% a 31%, em passos de um ponto percentual, nas orientações superior e inferior, com cadastro e limiar fixos. Nas 486 consultas da execução final, o controle sem oclusão obteve Rank-1 de 91,15%, aceitação genuína de 92,39% e falsa correspondência de 0,86%. Com 30% de oclusão, o Rank-1 foi de 69,96% na orientação superior e 33,54% na inferior; com 31%, foi de 69,34% e 32,51%, respectivamente. A tentativa de reajuste da fusão não superou o controle na validação fora das dobras e preservou os pesos históricos. Ensaios com SAM3.1 e imagens clínicas complementaram a investigação das falhas de transferência. A revisão da literatura distinguiu o requisito normativo de área utilizável de 70% de uma garantia universal de identificação. Concluiu-se que a área e a localização da perda influenciam o sistema avaliado, sem estabelecer mínimo anatômico universal ou equivalência entre oclusão e patologia. Os percentuais experimentais usam a região originalmente anotada como denominador. A reutilização dos conjuntos no desenvolvimento restringe a independência das conclusões.
 
-**Palavras-chave:** Biometria da íris. Identificação ocular. Oclusão controlada. Segmentação. Incerteza experimental.
+**Palavras-chave:** Biometria da íris. Segmentação. Área visível. Oclusão controlada. Anomalias oculares.
 
+<!-- pagina:02 -->
 ## 1 INTRODUÇÃO
 
-A identificação pela íris depende da obtenção de uma representação discriminativa da região ocular. A presença de pixels na imagem, contudo, não assegura que eles tenham sido corretamente localizados ou que preservem informação suficiente para separar identidades. O problema torna-se particularmente relevante quando parte da região visível está encoberta, apresenta reflexos ou sofre alterações de aparência. Para investigar essa relação, é necessário definir tanto a referência de área quanto o desempenho exigido do sistema.
+A identificação pela íris depende da capacidade de extrair informação que diferencie olhos a partir de imagens sujeitas a variações de captura. Uma fotografia pode apresentar grande parte da região ocular e, ainda assim, fornecer pouca textura aproveitável. Reflexos, desfocamento, movimento, pálpebras, cílios e erros de segmentação podem modificar a representação antes da comparação. Por isso, perguntar quanto da íris é necessário exige definir o que se considera área, quais imagens são comparadas e qual desempenho precisa ser mantido.
 
-A literatura de reconhecimento de íris estabelece a importância de localizar e normalizar a região antes da comparação. Daugman (2004) descreve um processamento que relaciona localização, representação da textura e decisão biométrica. Essa organização permite distinguir disponibilidade aparente de tecido, qualidade da representação e evidência para identificação. O presente trabalho adota essa distinção conceitual, sem reproduzir integralmente aquele reconhecedor ou transferir suas taxas de erro para imagens e modelos diferentes.
+A relação entre disponibilidade visual e identificação é especialmente relevante quando existem alterações oculares. Uma opacidade pode dificultar a observação sem remover tecido da íris; uma mudança pupilar pode alterar a geometria sem produzir uma perda proporcional de textura; uma lesão pode afetar regiões com importância discriminativa diferente. A medida de área, isoladamente, não descreve todos esses mecanismos. O estudo de oclusões digitais oferece uma intervenção controlável para examinar parte do problema, desde que seus limites sejam mantidos explícitos.
 
-As condições oculares reais acrescentam dificuldades que ultrapassam a obstrução de uma fração de pixels. Trokielewicz, Czajka e Maciejewicz (2015) analisaram 2.996 imagens de 230 olhos e observaram interferência de obstruções, distorções e erros de segmentação na confiabilidade do reconhecimento. O estudo motiva examinar o processamento completo. Ele não permite converter diretamente a extensão de uma doença em uma porcentagem mínima de íris reconhecível para qualquer base ou algoritmo.
+O problema investigado foi formulado da seguinte maneira: qual é a menor fração nominal preservada da região visível de íris definida pelo protocolo que mantém critérios biométricos estabelecidos em um sistema de identificação entre sessões, sob perdas superiores e inferiores? Essa formulação delimita uma grandeza observável. Uma resposta obtida em determinado sensor, população e algoritmo não é automaticamente válida para todos os reconhecedores ou para todas as patologias.
 
-Uma intervenção digital oferece uma maneira delimitada de estudar o problema. Ao substituir uma quantidade conhecida de pixels da região anotada, pode-se comparar o desempenho antes e depois da alteração, preservando as identidades e o cadastro. A manipulação não constitui uma simulação clínica completa, mas permite investigar quanto a remoção de suporte em uma região específica interfere em um sistema previamente definido. Sua interpretação exige explicitar que o resultado depende da imagem, da segmentação, da normalização, do reconhecedor e da população avaliados.
+O objetivo geral consistiu em estimar o limite observado desse sistema e examinar a dependência da posição da perda. Como objetivos específicos, organizaram-se partições por pessoa e lateralidade, reconstruíram-se a segmentação e os extratores de identidade, congelaram-se cadastro e limiar, aplicaram-se intervenções determinísticas e compararam-se as decisões com falhas preservadas nos denominadores. Acrescentaram-se uma avaliação de novos segmentadores e uma extensão clínica exploratória para identificar dificuldades de transferência.
 
-A pergunta de pesquisa foi formulada da seguinte maneira: qual é a menor fração nominal preservada da região de íris definida pelo protocolo que mantém critérios biométricos estabelecidos, sob oclusões superiores e inferiores, em um sistema de identificação ocular entre sessões? O objetivo geral consistiu em estimar esse limite observado e quantificar sua incerteza. Os objetivos específicos compreenderam organizar partições por pessoa e lateralidade, reconstruir a segmentação automática, congelar o reconhecedor, aplicar intervenções de área conhecida, comparar as orientações e examinar a extração e a identificação em um pequeno conjunto clínico complementar.
+A justificativa está na necessidade de distinguir tolerância real do processamento de uma interpretação simplificada do percentual visível. Sistemas biométricos precisam equilibrar reconhecimento genuíno e controle de falsas correspondências; aumentar somente a taxa de acertos, sem observar os erros entre identidades, pode gerar uma avaliação incompleta. O trabalho contribui ao apresentar resultados condicionados ao protocolo e ao registrar também hipóteses que não sustentaram melhoria conjunta.
 
-O UBIPr foi escolhido por disponibilizar imagens da região ocular e uma versão segmentada de olhos individuais. A descrição oficial caracteriza a base como apropriada a estudos perioculares e solicita a citação de Padole e Proença (2012). Neste trabalho, a máscara predita restringe a extração à região classificada como íris. Ainda assim, erros dessa máscara podem introduzir suporte não iridiano ou excluir textura relevante; por isso, o resultado é atribuído ao sistema de identificação ocular assistido por segmentação.
+<!-- pagina:03 -->
+O estudo adotou abordagem quantitativa, com dados públicos, intervenções digitais de quantidade conhecida e comparações pareadas. A avaliação principal utilizou a versão segmentada de olhos individuais do UBIPr, apropriada à investigação de imagens em luz visível. O cadastro reuniu fotografias da primeira sessão, enquanto as fotografias da segunda sessão foram utilizadas como consultas. A lateralidade informada restringiu cada busca a dezesseis olhos do mesmo lado, mantendo esse universo fixo nas comparações.
 
-A contribuição pretendida é experimental: apresentar uma fronteira de aprovação reproduzível, com denominadores, falhas e condições de captura explícitos, em vez de propor um número universal de área necessária. Também se examina se a posição da perda altera a resposta do sistema. O estudo possui abordagem quantitativa e utiliza dados públicos, intervenções digitais determinísticas e análise pareada. A discussão considera a aplicação do problema ao estudo de anomalias oculares, mas mantém separadas a evidência obtida com oclusões e as perguntas clínicas que exigiriam dados adicionais.
+Essa definição é relevante porque identificação e verificação respondem a perguntas diferentes. A identificação ordena candidatos e verifica se o olho correto aparece em primeiro lugar. A aceitação compara um escore a um limiar. O sistema pode aceitar o genuíno e, simultaneamente, atribuir escore ainda maior a outro candidato. A análise reuniu essas medidas e registrou o evento conjunto de identificar corretamente e aceitar, evitando tratar resultados distintos como uma única acurácia.
 
+A primeira etapa consolidou o reconhecedor e examinou o efeito de oclusões artificiais. Em seguida, foram investigadas mudanças de segmentação, geometria e representação. As rodadas com SAM3.1 ocorreram em ambiente separado e foram avaliadas com os componentes de identidade preservados. Essa sequência permitiu verificar se uma máscara visualmente mais atraente, ou um Dice maior em determinadas condições, se convertia em uma melhoria do comportamento biométrico completo.
+
+A extensão clínica utilizou imagens SLP-VLD com rótulos distribuídos pelos autores da base. A inclusão desses casos possibilitou discutir alterações anatômicas e diferenças de aquisição, mas não constituiu estudo causal sobre doenças. Não havia controles saudáveis do mesmo olho, nos mesmos momentos e com aquisição equivalente, suficientes para separar o efeito de uma patologia de outros fatores. A demonstração posterior por câmera de celular também permaneceu separada da avaliação acadêmica principal.
+
+<!-- pagina:04 -->
 ## 2 PROCEDIMENTOS EXPERIMENTAIS
-
 ### 2.1 MATERIAIS
+#### 2.1.1 Fundamentos da segmentação ocular
 
-#### 2.1.1 Base de imagens e partições
+A segmentação estabelece quais pixels serão apresentados aos extratores de identidade. Na íris, esse processamento deve distinguir a região iridiana das estruturas vizinhas e das partes que não fornecem textura comparável. A pupila é uma região central diferente da íris, enquanto pálpebras, cílios e reflexos podem interromper sua observação. Uma máscara extensa pode incorporar suporte indevido, e uma máscara pequena pode eliminar informação discriminativa. A qualidade precisa ser examinada em relação a uma referência e ao efeito na cadeia posterior.
 
-Utilizou-se a versão Single Eyes Segmented do UBIPr. Conforme a página oficial, sua distribuição é regida pela licença Creative Commons Atribuição Não Comercial Compartilha Igual 4.0, com obrigação de atribuição à base e às suas transformações (Padole; Proença, 2012). A unidade de identidade adotada foi o olho, definido pelo identificador da pessoa e pela lateralidade. Fotografias do olho esquerdo e do direito de uma mesma pessoa não foram tratadas como amostras genuínas entre si.
+O processamento clássico apresentado por Daugman (2004; 2007) relaciona localização, normalização, codificação e comparação. O reconhecimento não resulta apenas de recortar um círculo na imagem: a representação precisa manter correspondência entre regiões de capturas diferentes. Essa organização orientou a separação entre máscara, geometria e descritor neste projeto, embora o reconhecedor implementado não reproduza integralmente o algoritmo clássico nem herde suas taxas de desempenho.
 
-O manifesto local separou as pessoas entre treino, validação e teste, mantendo os dois olhos de cada participante na mesma partição. A etapa de segmentação considerou todos os pares de imagem e anotação dessas partições. Para o reconhecimento entre sessões, foram elegíveis os olhos com imagens tanto na sessão 1 quanto na sessão 2. Esse requisito de pareamento reduziu a população biométrica em relação à população utilizada para segmentação. A Tab. 1 apresenta os denominadores efetivamente empregados, sem identificá-los como a totalidade de todas as distribuições possíveis da base.
+A U-Net oferece uma arquitetura de codificação e decodificação com conexões entre níveis espaciais, permitindo recuperar detalhes da segmentação a partir de representações de diferentes escalas (Ronneberger; Fischer; Brox, 2015). A variante local utilizou base reduzida e treinamento supervisionado com as classes disponíveis no UBIPr. As anotações da base foram utilizadas no ajuste e na avaliação da segmentação; a região predita, e não a referência manual, restringiu a extração operacional de identidade.
 
-Tabela 1 — Partições e populações efetivamente avaliadas
+Modelos de fundação ampliam a possibilidade de produzir propostas de objetos a partir de diferentes tipos de entrada. O SAM introduziu uma segmentação orientada por prompts com ampla capacidade de transferência (Kirillov et al., 2023). Entretanto, localizar uma região visualmente coerente não resolve automaticamente a definição biométrica de íris utilizável. Uma proposta pode incluir a pupila ou confundir regiões com brilho e opacidade, exigindo avaliação específica no domínio.
 
-| Etapa | Pessoas | Imagens | Cadastro S1 | Consultas S2 |
+<!-- pagina:05 -->
+#### 2.1.2 Representação da textura e reconhecimento parcial
+
+Após a segmentação, a textura pode ser representada no domínio original ou em coordenadas normalizadas. O recorte RGB preserva características de cor e relações locais da imagem, enquanto uma faixa polar procura estabelecer correspondência entre posições radiais e angulares. Essas representações são complementares, mas ambas dependem da localização. Uma geometria inconsistente pode deslocar estruturas de textura e produzir diferenças artificiais entre fotografias do mesmo olho.
+
+Daugman (2007) discute métodos de normalização e comparação que consideram regiões utilizáveis do par. Hollingsworth, Bowyer e Flynn (2009) mostram que partes de um código de íris apresentam estabilidade desigual. Assim, a hipótese de que todos os pixels sejam intercambiáveis não é adequada: perder uma região pode produzir efeito diferente de perder a mesma quantidade em outra posição, mesmo antes de considerar falhas adicionais da segmentação.
+
+Du et al. (2005) investigaram reconhecimento parcial com um método unidimensional e diferentes regiões. Os percentuais frequentemente associados àquele estudo precisam ser interpretados com seu protocolo: os exemplos de 40% na parte interna e 65% na externa relacionam-se a 95% em rank-10, e as divisões em anéis usam fração radial, não necessariamente área anular. A geometria também utiliza informação da imagem completa. Esses resultados não equivalem a identificação rank-1 garantida a partir de uma fotografia parcialmente observada.
+
+Na abordagem adotada neste trabalho, diferentes redes produzem vetores comparáveis por similaridade. ResNet fornece conexões residuais para treinamento profundo (He et al., 2016), ConvNeXt revisita escolhas de arquitetura convolucional (Liu et al., 2022), e a margem angular empregada no aprendizado de identidade possui relação com a formulação ArcFace (Deng et al., 2019). A utilização dessas ideias não transfere automaticamente resultados de reconhecimento facial para reconhecimento de íris.
+
+A revisão de Nguyen et al. (2024) contextualiza a diversidade de bases, representações e condições de aquisição. Melhorias locais precisam ser acompanhadas de avaliação com cadastro, consultas, universo de candidatos e critério de erro definidos.
+
+<!-- pagina:06 -->
+#### 2.1.3 Área visível e qualidade normativa
+
+A ISO/IEC 29794-6:2015 estabelece métodos e requisitos relacionados à qualidade de imagens de íris. Na cláusula 6.2.1.4 consultada em material público, o indicador de área utilizável possui limiar de 70. Sua referência é um anel aproximado delimitado pela pupila e pelo limbo, e não a região de uma fotografia arbitrariamente escolhida como recorte. O requisito não constitui uma garantia de identificação para qualquer reconhecedor (ISO/IEC, 2015).
+
+Neste estudo, a fração nominal preservada utiliza outro denominador: os pixels que já pertenciam à região visível anotada na fotografia original. Se parte da anatomia estiver inicialmente coberta pelas pálpebras, essa parcela não entra no suporte anotado. Manter 100% desse suporte significa apenas não acrescentar perda artificial. A diferença impede comparar diretamente a fronteira experimental com um valor normativo de área do anel.
+
+Um exemplo hipotético esclarece a relação. Se uma fotografia expõe 80% de um anel e uma intervenção retém 70% dessa parte, a fração resultante é 56% do mesmo anel, desde que geometria e denominador permaneçam fixos. A operação não descreve um resultado biométrico do projeto. Ela mostra por que percentuais semelhantes podem representar grandezas diferentes e por que a base de cálculo precisa acompanhar qualquer conclusão.
+
+Tabela 1 - Definições de área empregadas na interpretação
+
+| Grandeza | Referência | Uso neste estudo |
+|---|---|---|
+| Área utilizável normativa | Anel estimado entre pupila e limbo | Contexto de qualidade da captura |
+| Fração nominal preservada | Suporte visível originalmente anotado | Intervenção digital controlada |
+| Suporte polar | Grade e máscara automáticas do extrator | Diagnóstico computacional |
+| Área comum ao par | Interseção após alinhamento | Conceito de informação comparável |
+
+Fonte: elaboração do autor (2026), com base em ISO/IEC (2015) e Daugman (2007).
+
+Os relatórios IREX tratam qualidade, falhas de aquisição e desempenho como dimensões relacionadas, mas dependentes da implementação e do protocolo (Tabassi; Grother; Salamon, 2011; Quinn et al., 2014). A norma de avaliação biométrica também exige situar a medição no cenário de teste (ISO/IEC, 2021). Neste artigo, os 70% são uma referência contextual; não foi implementado um ensaio de conformidade com todos os requisitos normativos.
+
+<!-- pagina:07 -->
+#### 2.1.4 Evidências sobre alterações oculares
+
+A literatura já investiga a confiabilidade da íris em condições oculares alteradas. Roizenblatt et al. (2004) estudaram reconhecimento após cirurgia de catarata. Aslam, Tan e Dhillon (2009) examinaram 54 pacientes com doenças oculares e relataram comportamentos diferentes entre condições. Dhir et al. (2010), em uma amostra menor, distinguiram efeitos associados à cirurgia e à dilatação. Esses trabalhos não sustentam a atribuição de um efeito único a toda alteração ocular.
+
+Trokielewicz, Czajka e Maciejewicz (2015; 2017) avaliaram olhos afetados por patologias, incluindo dificuldades de segmentação e diferenças entre reconhecedores. O estudo publicado em 2017 envolve 230 olhos, dos quais 184 afetados, e quatro métodos de reconhecimento. Sua contribuição mostra que a falha observada pode depender da interação entre anatomia, imagem e processamento, e não somente da quantidade de região visualmente disponível.
+
+Nigam et al. (2019) investigaram alterações antes e depois de cirurgia de catarata com diferentes sensores. Seyeddain et al. (2014) também examinaram reconhecimento após facoemulsificação e dilatação medicamentosa. A comparação desses estudos exige considerar momento da aquisição, tamanho pupilar e possibilidade de novo cadastro. Percentuais de êxito de diferentes populações e equipamentos não foram combinados como se estimassem a mesma medida.
+
+Frasca e La Torre (2024) propuseram adaptar a geometria para íris com patologia, incluindo coloboma. O ganho de 32% destacado naquele trabalho refere-se ao erro de segmentação, não a uma taxa de identificação do nosso sistema. Hofbauer et al. (2016) também mostram que a qualidade de uma máscara, expressa isoladamente, não determina de forma confiável o desempenho da cadeia inteira. A parametrização e a consistência entre capturas precisam ser consideradas.
+
+Como antecedente recente, Pessaud et al. (2026) analisaram área visível, dilatação e oclusão com OpenIRIS em infravermelho próximo, em 414 participantes e 827 íris. A área é expressa como contagem de pixels de máscara, com correções de segmentação e exclusões documentadas. A população não representa olhos com alterações relevantes que prejudiquem a imagem. A evidência é próxima ao tema, mas não estabelece um corte clínico universal transferível para captura RGB.
+
+A revisão aqui empregada é dirigida, não sistemática nem metanalítica. Incluiu normas, relatórios técnicos e artigos sobre área parcial, qualidade e patologias. Sua função foi delimitar conceitos e posicionar os resultados próprios. Versões preliminares e publicadas do mesmo estudo não foram tratadas como experimentos independentes, e conclusões acessíveis apenas em resumos não foram ampliadas para detalhes metodológicos indisponíveis.
+
+<!-- pagina:08 -->
+#### 2.1.5 Bases e populações avaliadas
+
+Utilizou-se a versão Single Eyes Segmented do UBIPr, que disponibiliza imagens em luz visível com a região ocular em enquadramentos variados. A descrição oficial caracteriza a base como apropriada a estudos perioculares e solicita a citação de Padole e Proença (2012). O projeto utiliza segmentação para restringir o suporte, mas admite que erros da máscara possam introduzir informação não iridiana. Por isso, os resultados são atribuídos ao sistema de identificação ocular assistido por segmentação.
+
+As pessoas foram separadas entre treino, validação e teste, mantendo os dois olhos de cada participante na mesma partição. A unidade de identidade foi definida pela combinação entre pessoa e lateralidade. Para a avaliação biométrica entre sessões, consideraram-se os olhos com fotografias tanto na primeira quanto na segunda sessão. Essa elegibilidade produz populações menores que aquelas utilizadas para segmentação, como mostra a Tab. 2.
+
+Tabela 2 - Populações do manifesto local
+
+| Etapa | Pessoas | Imagens | Cadastro | Consultas |
 |---|---:|---:|---:|---:|
-| Treino do manifesto | 183 | 7.716 | Não se aplica | Não se aplica |
+| Treino de segmentação | 183 | 7.716 | Não se aplica | Não se aplica |
 | Validação de segmentação | 39 | 1.652 | Não se aplica | Não se aplica |
 | Teste de segmentação | 39 | 1.650 | Não se aplica | Não se aplica |
 | Validação biométrica pareada | 16 | 962 | 480 | 482 |
 | Teste biométrico pareado | 16 | 960 | 474 | 486 |
 
-Fonte: do autor (2026), a partir do manifesto e dos protocolos preservados.
+Fonte: do autor (2026), a partir do manifesto e das auditorias preservadas.
 
-O cadastro utilizou as capturas elegíveis da sessão 1, e cada consulta correspondeu a uma única captura da sessão 2. Não foram combinadas várias fotografias para formar uma consulta. O protocolo operacional exigiu que o lado do olho fosse informado corretamente; cada consulta competiu com os 16 olhos cadastrados do mesmo lado. Essa restrição mantém 15 comparações impostoras por consulta. Ela integra a definição da tarefa e impede extrapolar os resultados para identificação sem lateralidade informada ou para galerias de tamanho arbitrário.
+As imagens clínicas vieram do SLP-VLD, versão 3, com rótulos e códigos fornecidos no depósito (Qian, 2026). A seleção de alterações explícitas da íris e o emparelhamento longitudinal são descritos nos métodos. As imagens com rótulo Normal eye foram usadas como controles ilustrativos da mesma base; esse rótulo não corresponde a uma nova avaliação médica realizada pelo projeto.
 
-No teste biométrico, 480 consultas apresentaram máscara de referência de íris não vazia e seis não possuíam área definida. As seis permaneceram na avaliação e foram mantidas inalteradas nas condições de oclusão. Não lhes foi atribuída uma porcentagem anatômica de aproveitamento. As duas falhas de extração da configuração final também foram mantidas no denominador. Assim, o subconjunto usado para calcular a perda efetiva de área não se confunde com o conjunto usado para medir o desempenho operacional.
+O UBIPr é disponibilizado sob CC BY-NC-SA 4.0; as composições derivadas mantêm atribuição e uso acadêmico não comercial. O SLP-VLD consultado utiliza CC BY 4.0. Foram preservados os créditos das imagens e das transformações. Fotografias pessoais capturadas no demonstrador de celular não foram incorporadas às figuras deste artigo nem utilizadas para ampliar os denominadores dos experimentos.
 
-#### 2.1.2 Recursos computacionais e representações
+<!-- pagina:09 -->
+#### 2.1.6 Recursos computacionais e componentes
 
-Os experimentos foram executados localmente em uma GPU NVIDIA RTX 3050 Laptop, com 6 GB de memória, utilizando Python 3.12 e PyTorch. Os roteiros registraram configurações, partições, históricos e hashes de arquivos. O relato explicita partições, seleção de modelos, falhas e limitações de generalização, aspectos recomendados para transparência em estudos de inteligência artificial com imagens médicas (Tejani et al., 2024), sem declarar aderência integral ou validação clínica pelo checklist. As matrizes de escores e os modelos selecionados foram preservados com verificação de integridade. Essas medidas de rastreabilidade permitem relacionar cada tabela ao experimento correspondente e recuperar resultados sem depender de registros informais de execução.
+Os experimentos foram executados em Windows, com Python 3.12 e uma GPU NVIDIA RTX 3050 Laptop de 6 GB. O conjunto de pesos, dados e dependências foi preservado com hashes. O ambiente histórico de reconhecimento e o ambiente preparado para SAM3.1 permaneceram separados, evitando atualizar uma rodada ativa durante sua execução. A compatibilidade foi verificada em relação às distribuições CUDA efetivamente disponíveis para a máquina.
 
-A segmentação empregou uma implementação compacta da família U-Net, com caminhos de contração e expansão, de acordo com o princípio descrito por Ronneberger, Fischer e Brox (2015). O reconhecimento combinou redes residuais, ConvNeXt e uma adaptação polar de DINOv3. As famílias ResNet e ConvNeXt são descritas por He et al. (2016) e Liu et al. (2022). DINOv3 fornece representações visuais pré-treinadas por aprendizagem autossupervisionada (Siméoni et al., 2025). A utilização dessas famílias não implica reproduzir integralmente seus experimentos originais.
+Tabela 3 - Componentes utilizados e papéis na avaliação
 
-A Tab. 2 resume os oito grupos da fusão final. O componente ArcIris provém do repositório público do Computer Vision Research Laboratory da University of Notre Dame, que descreve uma ResNet100 treinada com perda ArcFace para imagens polares (CVRL, 2026). A margem angular foi originalmente proposta no contexto de reconhecimento facial por Deng et al. (2019). Os pesos externos foram usados como fornecidos; não foi comprovada a ausência de sobreposição entre a população de pré-treinamento e a base avaliada.
+| Componente | Entrada | Papel |
+|---|---|---|
+| U-Net local | RGB | Máscara automática de referência operacional |
+| Extrator visual SAM3.1 | RGB e características visuais | Sinal congelado para decodificador adaptado |
+| Encoders RGB e ResNet50 | Recortes 128 ou 224 pixels | Representação de identidade |
+| Encoder polar e mapa espacial | Faixa 64 × 512 | Textura normalizada e correspondência local |
+| ConvNeXt e transformer polar | RGB ou faixa polar | Representações complementares |
+| ArcIris em duas vistas | Faixas CLAHE e canal vermelho | Descritores externos preservados |
 
-Tabela 2 — Grupos da fusão congelada
+Fonte: do autor (2026), conforme configurações dos treinamentos e da fusão.
 
-| Grupo | Representação de entrada | Comparação | Peso |
-|---|---|---|---:|
-| ResNet18 RGB | Recorte automático de 128 × 128 | Vetor global | 1/8 |
-| ResNet18 polar | Faixa de 64 × 512 | Vetor global | 1/8 |
-| Espacial polar | Mapas intermediários da ResNet18 polar | Correspondência local | 1/8 |
-| ResNet50 | Recorte RGB de 128 × 128 | Vetor global | 1/8 |
-| ConvNeXt com contraste | Recorte RGB de 128 × 128 | Vetor global | 1/8 |
-| ResNet50 nativa | Recorte direto de 224 × 224 | Vetor global | 1/8 |
-| Transformer polar | Faixa de 64 × 512 | Vetor global | 1/8 |
-| ArcIris em duas vistas | Polar cinza e canal vermelho | Dois vetores globais | 1/8 total |
+Na atualização consultada em novembro, o código oficial SAM 3 foi fixado na revisão f1647e8 e o checkpoint SAM3.1 na revisão daa6319 (Meta AI, 2026). A execução utilizou PyTorch 2.14.1+cu130 e torchvision 0.29.1+cu130. Foram consideradas as builds para Windows, o requisito NumPy menor que 2 do SAM e a inferência que funcionou no equipamento. O reconhecedor aberto da CVRL (2026) foi mantido como referência de implementação.
 
-Fonte: do autor (2026), a partir da configuração congelada. Cada vista ArcIris recebe peso efetivo de 1/16.
+O uso de checkpoints externos não assegura conhecimento completo da população de pré-treinamento. A separação local por pessoa é verificável nos manifestos, mas não permite auditar toda origem dos modelos de fundação e do ArcIris. Essa limitação foi mantida na interpretação, e os resultados não foram descritos como independência absoluta em relação a todo dado potencialmente visto por qualquer modelo utilizado.
 
-#### 2.1.3 Bases complementares e fontes técnicas
-
-A preparação também contemplou o MMU e suas máscaras públicas, como etapa inicial de segmentação, sem diagnósticos por imagem no protocolo (Mohammad, s.d.; Kozlova, s.d.). Para dados clínicos, consultaram-se CatScreen, SLID, Nuclear Cataract e SLP-VLD, mantendo suas modalidades, licenças e identificadores separados (Khurshid et al., 2026; Xu et al., 2026; Cruz-Vega; Morales, 2023; Ignatowicz; Marciniak; Marciniak, 2025; Qian, 2026). A auditoria local encontrou 400 imagens na amostra CatScreen, 2.617 no SLID e 1.320 no Nuclear, das quais 335 tiveram rótulos recuperados da seleção secundária de 2025. As contagens são da cópia adquirida e não substituem as descrições dos depósitos. Nenhuma dessas fontes foi misturada ao UBIPr para fabricar controles saudáveis.
-
-O SLP-VLD v3 contém 2.228 registros de fotografias de lâmpada de fenda e diagnósticos; a auditoria encontrou uma duplicata exata, preservada no inventário e removida das divisões que exigiam deduplicação. Os diagnósticos vieram das planilhas do depósito, não de respostas geradas por modelos de linguagem. A triagem literal de termos relacionados à íris selecionou nove imagens distintas de oito olhos codificados. Seis olhos só possuíam uma captura disponível; dois tinham capturas repetidas elegíveis no manifesto clínico anterior. As imagens e descrições são dados públicos com licença CC BY 4.0 registrada pelos autores (Qian, 2026); não se realizou novo diagnóstico ou exame médico.
-
-Na triagem de ferramentas, foram consultados SAM, SAM 2, SAM 3 e OpenIRIS, além do Iris-SAM para segmentação especializada (Kirillov et al., 2023; Meta AI, s.d.a; Meta AI, s.d.b; Worldcoin, s.d.; Farmanifard; Ross, 2024). Esses recursos não substituíram a U-Net no sistema de referência. Seus testes locais de execução ou viabilidade não equivalem a validação biométrica clínica. Os repositórios foram tratados como fontes de implementação e pesos, e não como garantia de desempenho transferível ao UBIPr ou ao SLP-VLD.
-
+<!-- pagina:10 -->
 ### 2.2 MÉTODOS
+#### 2.2.1 Desenvolvimento e congelamento do protocolo
 
-#### 2.2.1 Organização do desenvolvimento e congelamento
+O desenvolvimento separou ajuste de parâmetros, escolha de configuração e avaliação das condições de área. As identidades de treino forneceram gradientes aos extratores locais. A validação orientou checkpoints e decisões sobre lateralidade, representações e fusão. Após essa seleção, os pesos, o cadastro, as estatísticas de padronização e o limiar foram mantidos fixos durante as intervenções que definiram a fronteira principal.
 
-As identidades de treino foram utilizadas para ajustar os extratores. A validação orientou a seleção de checkpoints e de configurações, incluindo a exigência de lateralidade informada e a composição da fusão. Essa validação foi reutilizada em diversas tentativas e não representa confirmação independente. A configuração final, suas estatísticas de normalização e o limiar foram congelados antes das intervenções aqui analisadas.
+A composição final reuniu sete componentes compartilhados e duas vistas ArcIris. A configuração empregou similaridades de identidade e uma normalização por consulta, com limiar congelado em 0,8581747485460748. Esse valor pertence ao cenário acadêmico com universo de candidatos definido; ele não foi ajustado para fazer uma oclusão específica passar. As contagens e as falhas foram preservadas mesmo quando a condição produziu piora.
 
-O extrator RGB ResNet18 herdou o treinamento de identidade ocular com margem angular em recortes de referência. Uma adaptação para recortes automáticos incluiu a época zero como controle e não substituiu esse ponto inicial. O extrator polar selecionou a época 20; as ResNet50 de 128 e 224 pixels selecionaram as épocas 21 e 11; o ConvNeXt selecionou a época 18; e o transformer polar, a época 16. A seleção ocorreu na validação, por aceitação genuína no alvo empírico de falsa correspondência, com desempate por Rank-1, conforme os registros de cada treinamento.
+O modelo RGB de identidade herdou o treinamento com margem angular em recortes de referência. A adaptação posterior para recortes automáticos incluiu a época zero como controle e não substituiu esse ponto inicial. O encoder polar selecionou a época 20; as ResNet50 de 128 e 224 pixels selecionaram as épocas 21 e 11; ConvNeXt selecionou a época 18; e o transformer polar selecionou a época 16. Esses resultados são decisões de desenvolvimento documentadas, não ensaios independentes entre si.
 
-O transformer utilizado é uma adaptação dos seis primeiros blocos de um ViT-L/16 DINOv3, com projeção dos tokens da faixa polar para um vetor de 256 dimensões. O token de classificação e os quatro tokens de registro não participam da saída espacial. Esse extrator não equivale ao modelo DINOv3 completo. Nos encoders ajustados localmente, o classificador de treinamento representa as classes de treino e não funciona como a lista de identidades do teste; a identificação posterior é feita por comparação com os cadastros disponíveis.
+O conjunto de teste já havia sido examinado por estratégias anteriores na reconstrução do projeto. A separação por pessoa reduz a sobreposição direta de identidades no ajuste local, mas não elimina o viés de decisões tomadas após resultados previamente observados. A rodada principal é, portanto, exploratória. O congelamento preserva a comparação entre intervenções, sem transformar retroativamente o teste em confirmação cega.
 
-O conjunto de teste já havia sido examinado por estratégias anteriores durante a reconstrução do projeto. Portanto, a avaliação final e seu refinamento são exploratórios. A separação por pessoa evita ajustar os pesos locais com imagens das identidades de teste, mas não elimina o viés decorrente de decisões tomadas após observar resultados anteriores. Nenhum limiar foi recalibrado para obter aprovação de uma condição ocluída.
+Os ensaios posteriores de segmentação também adotaram critérios registrados antes de suas respectivas avaliações. A seleção dos candidatos utilizou segmentação; o reconhecimento foi medido depois com os componentes preservados. Quando um candidato reprovou sem oclusão, sua grade completa não foi aberta para buscar retrospectivamente um percentual favorável. Essa condição de avanço evitou atribuir mínimo de área a um sistema que já não sustentava o desempenho exigido na fotografia original.
 
-#### 2.2.2 Segmentação e extração da região
+As configurações e cópias de código acompanharam cada rodada. A integridade de um checkpoint foi distinguida da igualdade de seus tensores: serializações diferentes podem produzir hashes diferentes para o mesmo estado, sem representar melhoria científica.
 
-A U-Net recebeu imagens RGB de 320 × 240 pixels, com intensidades divididas por 255. Foram utilizadas oito características de base, quatro classes e uma função de perda que soma entropia cruzada e um termo de Dice para as classes de primeiro plano. As classes corresponderam a fundo ou pupila, íris, esclera e sobrancelha. A pupila não constituiu uma classe independente. O ajuste usou AdamW, taxa de aprendizado de 0,001, decaimento de pesos de 0,0001, lote 32, semente 42 e até 30 épocas, com seleção pelo Dice médio de primeiro plano na validação.
+<!-- pagina:11 -->
+#### 2.2.2 Segmentação e normalização operacional
 
-A classe predita como íris foi redimensionada para a resolução nativa por vizinho mais próximo. Nos ramos RGB, os pixels exteriores à máscara receberam zero, e a caixa envolvente foi ampliada por uma margem proporcional de 25%. Os ramos de 128 pixels foram redimensionados a partir desse recorte. O ramo nativo de 224 pixels partiu diretamente da imagem original, sem reconstruir detalhe a partir do cache de 128 pixels ou aplicar super-resolução. Assim, as duas resoluções representam entradas operacionais distintas.
+A U-Net de referência recebeu imagens RGB redimensionadas para 320 × 240 pixels. A máscara predita foi mapeada de volta à resolução original por interpolação de vizinho mais próximo, preservando rótulos discretos. O exterior foi removido antes do recorte, com uma margem de contexto em torno da caixa da região prevista. A fotografia original forneceu os pixels de textura; a máscara de referência não foi utilizada para corrigir manualmente a extração de uma consulta.
 
-Nos ramos polares, a região envolvente recebeu margem de 50%. O maior contorno externo da máscara foi aproximado por uma elipse. A borda interna foi estimada a partir do maior buraco fechado plausível; quando indisponível, utilizou-se um círculo concêntrico calculado da caixa da máscara, com raio igual a um oitavo de seu menor lado. Esse círculo é uma aproximação geométrica, não uma pupila anotada ou um regressor aprendido. As tentativas posteriores de substituir esse mecanismo não foram incorporadas ao reconhecedor congelado.
+Figura 1 - Etapas do experimento principal com parâmetros congelados
 
-Entre as bordas interna e externa foram amostradas 64 posições radiais e 512 angulares, produzindo uma faixa de textura. A vista cinza recebeu equalização adaptativa de histograma com limite de contraste, ou CLAHE, com limite 2 e grade de 8 × 8 regiões. Uma segunda vista utilizou o canal vermelho. As posições fora do suporte predito receberam intensidade neutra 127. O parâmetro geométrico utilizado na normalização é uma aproximação da máscara visível; não constitui medida da superfície anatômica total.
+![Fluxo do experimento principal](figuras/fluxo_experimental.png)
 
-Figura 1 — Fluxo do processamento e separação entre intervenção e reconhecimento
+Fonte: do autor (2026). A quantidade de 486 consultas refere-se ao teste histórico.
 
-![Fluxo do processamento](figuras/fluxo_experimental.png)
+A faixa polar foi construída a partir de uma geometria automática elíptica, com contraste local no canal de intensidade e uma segunda vista no canal vermelho. Posições sem suporte da máscara receberam intensidade neutra. O fallback geométrico utiliza o centro da caixa da máscara e uma escala proporcional à sua extensão; ele não é uma anotação anatômica independente da pupila. Sua estabilidade também faz parte do problema avaliado.
 
-Fonte: do autor (2026). A referência de área atua somente na intervenção digital.
+As transformações de recorte produziram entradas de 128 × 128 e 224 × 224 pixels para redes RGB, além de faixas de 64 × 512 pixels para os extratores polares. O redimensionamento procura padronizar a entrada computacional, mas não recupera detalhes ausentes na aquisição. Reflexos ou tecido encoberto continuam sem informação original correspondente, mesmo que a máscara forme uma região visualmente regular.
 
-A Fig. 1 destaca a separação entre a anotação usada para selecionar os pixels alterados e a máscara produzida automaticamente para extrair características. Após cada intervenção, o segmentador recebeu a fotografia alterada. Consequentemente, uma perda de suporte pode modificar também o recorte, o contorno interno e a parametrização polar. O experimento mede esse processamento completo; não isola exclusivamente a retirada de informação da textura mantendo a geometria original.
+Máscaras vazias ou faixas sem suporte não foram removidas silenciosamente das métricas. A extração inválida produziu uma falha registrada, mantida no denominador da consulta. Essa decisão evita que uma condição difícil aparente melhora apenas por excluir imagens nas quais o método deixou de funcionar. A disponibilidade do cadastro também foi verificada: sem representação genuína válida, a comparação correta pode ficar indisponível antes de qualquer limiar ser aplicado.
 
-#### 2.2.3 Comparação de identidades e fusão
+<!-- pagina:12 -->
+#### 2.2.3 Representações e fusão de identidade
 
-Para os descritores globais locais, foram calculadas similaridades entre cada consulta e as capturas válidas do cadastro. O escore por olho foi a média das três maiores similaridades disponíveis, com o cadastro original mantido em todas as condições. Essa agregação de cadastro não representa uma consulta composta por várias fotografias. O ramo espacial comparou mapas intermediários de textura com protótipos do cadastro, mantendo a regra registrada antes da avaliação.
+Os descritores globais foram normalizados e comparados por similaridade. Para cada olho cadastrado, a agregação considerou as três maiores similaridades por componente, ou todas quando havia menos de três fotos disponíveis. O componente espacial utilizou o protótipo médio dos mapas locais, normalizado por posição. As duas vistas ArcIris foram calculadas a partir das faixas CLAHE e vermelha, preservando os pesos externos registrados.
 
-Os escores ArcIris utilizaram uma transformação angular da similaridade cosseno. Cada componente foi padronizado pelas estatísticas de comparações impostoras válidas da validação. Os sete grupos compartilhados receberam peso de um oitavo cada, e as duas vistas ArcIris receberam um dezesseis avos cada. Logo, nove matrizes de componentes correspondem a oito grupos de peso igual; não se atribuiu ao ArcIris peso duplo por possuir duas vistas.
+Tabela 4 - Nove componentes da fusão congelada
 
-Para um escore de componente s, a padronização foi expressa por z = (s − μ)/σ, em que μ e σ são a média e o desvio de impostores da validação. A média ponderada passou por uma transformação logística. Em seguida, os escores disponíveis de cada consulta foram transformados de volta ao domínio logit, padronizados entre seus candidatos e novamente submetidos à logística. Essa normalização usa os escores daquela consulta, sem acessar sua identidade verdadeira. Entretanto, o resultado depende do conjunto de candidatos e de seu tamanho.
+| Grupo | Componentes | Informação de entrada |
+|---|---|---|
+| RGB | ResNet18 RGB, ResNet50 e ConvNeXt | Recorte automático de cor |
+| RGB nativo | ResNet50 nativo224 | Recorte com maior resolução de entrada |
+| Polar | ResNet18 polar e transformer polar | Faixa normalizada |
+| Espacial | Mapa local do encoder polar | Concordância por posição |
+| Externo | ArcIris CLAHE e ArcIris vermelho | Duas vistas da mesma geometria |
 
-O limiar final foi 0,8581747485460748, calibrado no desenvolvimento e preservado no teste. A disponibilidade de uma comparação exigiu os componentes necessários da fusão. Consultas com falha permaneceram como erros na identificação e rejeições na comparação genuína. Comparações indisponíveis foram rejeitadas e permaneceram no denominador previsto. Essa política penaliza falhas em Rank-1 e TAR e deve ser considerada ao interpretar a FMR, pois rejeitar comparações indisponíveis pode reduzi-la.
+Fonte: do autor (2026), a partir da ordem dos componentes no protocolo.
 
-#### 2.2.4 Intervenções e definição da fronteira
+As médias e os desvios de cada componente foram estimados no desenvolvimento e congelados. A fusão preservou os pesos relativos entre os sete componentes compartilhados e as duas vistas externas. A normalização por consulta foi aplicada ao universo fixo de candidatos do protocolo. Sua função é parte da definição do escore, e não uma garantia de que ele expresse probabilidade calibrada de identidade.
 
-A referência de área foi a máscara anotada da íris na fotografia original. Para uma referência não vazia com N pixels e uma perda nominal p em porcentagem, foram selecionados n = round(N × p/100) pixels. A fração efetivamente preservada foi calculada pela Eq. 1. O arredondamento é aplicado por imagem e pode produzir diferenças entre a porcentagem nominal e a efetiva.
+O transformer polar é uma adaptação de seis blocos de um ViT-L/16 DINOv3, com projeção para 256 dimensões. Os tokens de classificação e de registro não participam da saída espacial. A designação DINOv3 identifica a origem do modelo, mas a configuração local é mais restrita que o modelo completo (Siméoni et al., 2025). O classificador usado no treino representa as identidades de ajuste; as identidades de avaliação entram pela comparação com os cadastros, não por esse classificador.
 
-Eq. 1 — A = 100 × (N − n)/N, para N > 0.
+A lateralidade foi informada e mantida fixa. Um olho esquerdo não foi tratado como genuíno de um olho direito da mesma pessoa. Nas buscas principais, cada consulta comparou dezesseis olhos do mesmo lado. Alterar o tamanho ou a composição dessa galeria pode modificar a distribuição dos escores e a dificuldade de identificação. Por essa razão, o limiar acadêmico não foi transferido automaticamente para o demonstrador móvel com cadastro pequeno e variável.
 
-Na orientação superior, a ordem de seleção percorreu linhas de cima para baixo; na inferior, de baixo para cima. Empates dentro da linha seguiram a posição horizontal. Os pixels selecionados foram substituídos por cinza de intensidade 128, sem alterar o exterior da referência. A mesma referência original definiu todas as intervenções. Não se utilizou a máscara predita para escolher quantos pixels remover, evitando que a quantidade nominal variasse com a qualidade da segmentação automática.
+<!-- pagina:13 -->
+#### 2.2.4 Intervenções de área e localização da perda
 
-Para referências vazias, a área não foi definida e a fotografia permaneceu inalterada. O valor nominal de 100% significa ausência de perda adicional em relação à região anotada visível, que pode já excluir partes encobertas pelas pálpebras. Não corresponde necessariamente a toda a íris anatômica. Também não demonstra que cada pixel preservado contenha informação útil ao reconhecedor.
+As oclusões foram definidas pela máscara de referência da fotografia original, exclusivamente para determinar a quantidade e a posição dos pixels substituídos. Para uma referência com N pixels, a quantidade removida foi obtida por arredondamento da perda nominal multiplicada por N. A fração efetivamente preservada foi calculada pela Eq. 1. Quando N era zero, não se definiu fração de área e a fotografia permaneceu inalterada.
 
-A busca inicial avaliou perda de 10% nas duas orientações e interrompeu a descida de área na primeira falha. O refinamento seguinte considerou perdas inteiras até a primeira reprovação. Por fim, uma rodada limitada previamente a dois pontos acrescentou perda superior de 0,5% e inferior de 1,5%, executando ambas independentemente do resultado da primeira. Os pesos, o cadastro e o limiar permaneceram fixos.
+Eq. 1 - A = 100 × (N − n)/N, para N > 0.
 
-As grades finais de perda foram 0; 0,5; 1; 10% na superior e 0; 1; 1,5; 2; 10% na inferior. A fronteira corresponde à menor área do prefixo em que todas as áreas maiores testadas passaram os critérios. Trata-se de grades irregulares explícitas, sem interpolação ou garantia de monotonicidade entre níveis. Não se avaliou perda inferior de 0,5%; portanto, não se pode anunciar uma fração comum de 99,5% aprovada nas duas orientações.
+Na orientação superior, a seleção percorreu as linhas de cima para baixo; na inferior, de baixo para cima. Empates na mesma linha seguiram a posição horizontal. Os pixels selecionados receberam cinza de intensidade 128, enquanto o restante da fotografia permaneceu igual. A referência original foi mantida em todos os níveis, evitando que uma máscara automática pior sob oclusão mudasse a quantidade nominal da própria intervenção.
 
-#### 2.2.5 Métricas e tratamento da incerteza
+Tabela 5 - Grade histórica de perda adicional investigada
 
-O Rank-1 foi definido como a proporção de consultas para as quais o olho correto obteve o maior escore. A taxa de aceitação genuína, ou TAR, foi a proporção de consultas cujo escore do olho verdadeiro alcançou o limiar. A taxa de falsa correspondência, ou FMR, foi a proporção de comparações impostoras aceitas. Essas medidas não são equivalentes: um genuíno pode superar o limiar e ainda perder para um candidato errado.
+| Orientação | Perdas nominais avaliadas | Áreas nominais correspondentes |
+|---|---|---|
+| Superior | 0%; 0,5%; 1%; 10% | 100%; 99,5%; 99%; 90% |
+| Inferior | 0%; 1%; 1,5%; 2%; 10% | 100%; 99%; 98,5%; 98%; 90% |
 
-As métricas de teste utilizaram 486 comparações genuínas e 7.290 impostoras. O critério operacional foi definido como Rank-1 e TAR de pelo menos 90%, simultaneamente à FMR de até 1%. Ele expressa uma escolha deste experimento e não uma norma clínica ou um requisito universal de implantação. Também foi registrada a proporção conjunta de consultas identificadas corretamente e aceitas, sem substituí-la por nenhuma das outras métricas.
+Fonte: do autor (2026). Grade irregular; não houve interpolação entre níveis.
 
-A incerteza foi estimada por 5.000 reamostragens de participantes com reposição, semente 20261001. Cada sorteio preservou as consultas dos participantes selecionados e foi compartilhado pelas condições comparadas. O cadastro e o limiar permaneceram fixos. Os intervalos de 95% foram calculados pelos percentis das distribuições reamostradas. Para aprovações nos limites de 90% e 1%, foram utilizadas comparações de contagens inteiras, evitando alterações por arredondamento numérico.
+A primeira busca examinou perda de 10% e interrompeu a redução de área na primeira reprovação. Um refinamento posterior considerou perdas inteiras e, por fim, dois pontos adicionais previamente limitados: 0,5% na parte superior e 1,5% na inferior. As condições desses dois pontos foram executadas independentemente do êxito da primeira, com cadastro, pesos e limiar preservados.
 
-As frequências de reamostras que passaram os três critérios descrevem estabilidade amostral; não são probabilidades posteriores de sucesso na população. Os intervalos são pontuais e não corrigem comparações múltiplas ou seleção de modelos. Uma segunda implementação reproduziu a análise agregada das condições anteriores a partir de 96 linhas de contagens por pessoa e condição. Os novos pontos receberam auditoria de componentes, decisões, área efetiva e preservação das entradas que deveriam permanecer inalteradas.
+A fronteira observada foi definida pelo prefixo de áreas testadas que permaneceram aprovadas, partindo da condição original. Não se supôs monotonicidade entre pontos não avaliados. A ausência do nível inferior de perda de 0,5% impede afirmar que 99,5% tenha sido aprovado nas duas orientações. O arredondamento por fotografia também produz pequenas diferenças entre quantidade nominal e efetiva, sem alterar a definição do denominador.
 
-#### 2.2.6 Pilotos posteriores e separação da calibração
+A intervenção cria uma perda digital mensurável para comparação pareada. Não reproduz inflamação, opacidade, deformação pupilar ou tratamento. Sua relação com alterações reais permanece dependente de dados e referências clínicas apropriados.
 
-Os ajustes posteriores usaram 151 pessoas do treino para gradientes ou estimação de parâmetros, 16 para calibração interna e 16 do monitor antigo para avaliação após congelamento. Os encoders anteriores já haviam visto essas pessoas; a separação desta etapa não transforma o monitor reutilizado em teste independente. No reteste com oclusões diversas, mantiveram-se 6.067 fotografias e 3.222 intervenções superiores/inferiores sorteadas de 1% a 20%, com níveis de cinza fixados antes do treino. Dez vistas com falha de extração tiveram sua contribuição nas perdas de identidade zerada; o peso das demais e os denominadores de avaliação foram preservados. Executaram-se oito épocas, selecionadas pela perda de ajuste com preservação do limpo interno.
+<!-- pagina:14 -->
+#### 2.2.5 Métricas e análise de incerteza
 
-O piloto estrutural aprendeu oito regressões regionais ridge, uma por setor angular do mapa polar intermediário, para aproximar o descritor global limpo da mesma foto de ajuste. A regularização de 0,01 e a fusão de 75% global e 25% regional foram fixadas previamente. Compararam-se seis das oito maiores concordâncias por par, com controle usando todos os setores. A comparação por regiões possui precedentes, mas este piloto não reproduz o método de saliência humana estudado em imagens pós-morte por Boyd et al. (2023). Os setores têm campos receptivos sobrepostos e não representam porcentagens isoladas da área física da íris.
+O Rank-1 corresponde à proporção de consultas em que o olho genuíno ocupa a primeira posição. A taxa de aceitação genuína, ou TAR, corresponde à proporção de consultas cujo escore genuíno atinge o limiar. A falsa correspondência, ou FMR, é a proporção de comparações entre olhos diferentes que ultrapassam esse mesmo limiar. As Eq. 2 a 4 apresentam as definições operacionais com seus denominadores.
 
-Cada método recebeu um único limiar a partir do grupo interno limpo, visando FMR empírica de 0,5%, aplicado sem alteração ao monitor. A barreira de avanço exigiu preservar a condição limpa e melhorar Rank-1 e TAR nas duas oclusões, mantendo FMR de até 1%. Os controles foram reportados sem escolher retrospectivamente o melhor resultado e sem calibrar sobre os casos ocluídos do monitor. Essas rodadas são desenvolvimento complementar e não entram na estimação da fronteira principal.
+Eq. 2 - Rank-1 = identificações corretas / total de consultas.
 
-#### 2.2.7 Estudo complementar de casos clínicos
+Eq. 3 - TAR = comparações genuínas aceitas / total de consultas.
 
-Dos oito olhos com diagnóstico explícito da íris, dois possuíam capturas repetidas no manifesto clínico previamente preparado: um olho com cisto de íris e alterações corneanas, e um com laceração da íris e acompanhamentos após tratamento. A primeira captura de cada olho foi cadastro e as quatro capturas posteriores foram consultas. Datas e identidade provêm dos códigos distribuídos; não foram confirmadas por prontuário independente. O cadastro de cada lado incluiu o olho alvo e os primeiros 15 outros olhos elegíveis, ordenados por código e nome de arquivo, sem seleção por qualidade ou escore. Ao todo, processaram-se 42 fotografias: 32 de cadastro, quatro consultas e seis casos adicionais sem cadastro elegível.
+Eq. 4 - FMR = comparações impostoras aceitas / total de comparações impostoras.
 
-A fusão principal e o limiar UBIPr foram transportados sem ajuste, mantendo as falhas no denominador. A avaliação clínica anterior já havia exposto esse domínio e as capturas; não se considera esta extensão um teste cego. Após inspecionar as falhas originais, registrou-se um controle posterior de escala: a foto clínica foi reduzida para 106 × 80 pixels dentro de uma entrada 320 × 240 preenchida com cinza 128. A máscara foi mapeada de volta ao original, de onde vieram os pixels do recorte. Não houve reconstrução de textura, treino ou busca entre escalas. O controle alterou somente a apresentação à U-Net e foi executado também sobre os cadastros.
+O teste histórico manteve 486 consultas e 7.290 comparações impostoras. Na validação pareada, os denominadores foram 482 e 7.230, respectivamente. Falhas de extração permaneceram no total de consultas e não foram transformadas em fração válida de área. A proporção conjunta de identificar corretamente e aceitar foi registrada separadamente, pois os eventos isolados podem ocorrer em consultas diferentes.
 
-Registraram-se pixels previstos como íris, razão entre máscara e fotografia e fração de suporte da grade polar estimada. Nenhuma dessas medidas foi tratada como porcentagem anatômica preservada. Sem máscara clínica de referência, não se calculou Dice clínico. Duas imagens com rótulo exato Normal eye foram selecionadas por ordem de arquivo e pessoas distintas para ilustração, sem medir seu reconhecimento nessa prancha. A ausência de diagnóstico no UBIPr não foi interpretada como ausência de anomalias.
+O critério principal exigiu Rank-1 e TAR de pelo menos 90%, com FMR de até 1%. Trata-se de uma escolha operacional do estudo, não de um requisito clínico universal. Nas rodadas de prontidão mais recentes, acrescentou-se a exigência de pelo menos 90% para o acerto aceito simultâneo. A mudança foi registrada por rodada e não foi aplicada retroativamente para alterar a classificação do teste histórico.
 
+A incerteza foi estimada por 5.000 reamostragens de participantes com reposição. Cada sorteio manteve as consultas da pessoa selecionada e foi compartilhado pelas condições comparadas. O cadastro e o limiar ficaram fixos. Os percentis das distribuições reamostradas produziram intervalos descritivos de 95%. A aprovação nos limites foi decidida por contagens inteiras, evitando que arredondamentos de porcentagens alterassem o resultado.
+
+Esses intervalos não corrigem todo viés de seleção ou comparações múltiplas. A frequência de reamostras aprovadas não é uma probabilidade posterior de sucesso populacional. Tampouco um intervalo pontual valida simultaneamente a fronteira de todos os níveis. A análise foi utilizada para contextualizar a fragilidade de decisões próximas ao limite, sem substituir a confirmação que exigiria pessoas e capturas reservadas para uma avaliação independente.
+
+A FMR por comparação difere do risco em uma busca 1:N, influenciado pelo número de candidatos e pelas dependências entre comparações. A unidade medida e o cenário permanecem explícitos (ISO/IEC, 2021; Quinn; Grother; Matey, 2018).
+
+<!-- pagina:15 -->
+#### 2.2.6 Ensaios posteriores e extensão clínica
+
+Os novos segmentadores foram selecionados por desempenho de segmentação nas condições original, zoom, vista oblíqua e óculos sintéticos. No SAM3.1 supervisionado, o extrator visual permaneceu congelado e o decodificador recebeu ajuste com dados de treino. A continuação com negativos internos aumentou o peso de regiões já anotadas como não íris dentro de contornos; não criou uma referência anatômica de pupila. O modelo residual posterior manteve o anterior congelado e limitou a correção adicionada à saída.
+
+As avaliações de identidade utilizaram os nove componentes, pesos e limiar preservados. A grade de área das rodadas recentes foi condicionada à aprovação sem perda adicional. Todas as consultas foram mantidas, com análise separada das referências de área definidas e indefinidas. Essa regra impediu usar resultados de identidade ou anotações clínicas para escolher um checkpoint de segmentação e depois apresentá-lo como se tivesse passado por confirmação independente.
+
+Na extensão clínica, incluíram-se todas as nove imagens com menção explícita a íris ou iridodiálise no manifesto SLP-VLD. Elas representam oito olhos codificados. Dois tinham capturas repetidas elegíveis: P0114 OS e P0803 OD. A primeira captura de cada olho foi cadastro; as posteriores forneceram quatro consultas. Cada galeria incluiu o alvo e os primeiros quinze outros olhos elegíveis do mesmo lado, sem seleção por qualidade ou escore.
+
+O conjunto processado reuniu 42 fotografias: 32 de cadastro, quatro consultas e seis casos adicionais sem cadastro elegível. A fusão e o limiar UBIPr foram transportados sem calibração clínica. Após observar as falhas, registrou-se um controle posterior de escala fixa de um terço para a entrada da U-Net, mantendo os pixels originais na extração e sem buscar a melhor escala por olho. Essa intervenção foi aplicada também ao cadastro.
+
+As seis fotografias ilustrativas foram mantidas no refino posterior com a cabeça interativa oficial SAM3.1. A U-Net forneceu pontos iniciais, sem diagnóstico ou referência manual. Íris e pupila foram previstas separadamente, com encoder de 1.008 pixels e segunda janela para a pupila. A confiança contínua foi interpolada antes do rótulo na resolução nativa. Componentes sem pontos de íris foram descartados; não se impôs círculo nem se preencheram lacunas. A cobertura alfa subpixel de até um pixel afeta apenas a apresentação, preservando RGB e máscara binária. O cadastro inicialmente vazio permaneceu pendente de revisão. As métricas clínicas históricas foram preservadas.
+
+O contorno foi comparado por grupos. Os ajustes supervisionados não produziram época elegível. Uma mistura fixa de 50% do escore polar novo foi selecionada na validação antes da grade densa.
+
+A rodada final de 08/11/2026 registrou, antes da nova inferência de teste, o controle e todos os níveis inteiros de perda de 1% a 31%, executados nas duas orientações. Foram preservados os checkpoints e o ambiente; nenhum parâmetro foi escolhido pelos resultados dessas novas oclusões. Tentou-se ajustar uma fusão não negativa dos nove componentes, regularizada em direção aos pesos históricos. Quatro dobras por pessoa da validação, nas condições original e perdas superior e inferior de 10%, compararam quatro intensidades de regularização. A regra exigia ganho fora das dobras na condição original e na média das três condições. Como nenhum ajuste cumpriu a regra, conservaram-se os pesos históricos. O limiar histórico foi mantido na curva principal. Treze condições auditadas foram reutilizadas e cinquenta acrescentadas, mantendo pesos, ambiente e execução após reprovações.
+
+<!-- pagina:16 -->
 ## 3 RESULTADOS E DISCUSSÃO
+### 3.1 REFERÊNCIA SEM OCLUSÃO ADICIONAL
 
-### 3.1 SEGMENTAÇÃO E DESEMPENHO ORIGINAL
+A U-Net de referência completou trinta épocas, com seleção da época 26 pela validação. No teste de segmentação, o Dice da íris foi 0,9342 e o Dice médio das classes de primeiro plano foi 0,8944. Essas medidas utilizam as 1.650 imagens do teste de segmentação, e não apenas as 960 fotografias elegíveis para reconhecimento entre sessões. A diferença de população impede interpretar o Dice como uma previsão direta da taxa de identificação.
 
-A segmentação completou 30 épocas, selecionando a época 26 pela validação. O Dice médio de primeiro plano na validação foi 0,8887. No teste completo de segmentação, o Dice da íris foi 0,9342 e o Dice médio das classes de primeiro plano foi 0,8944. Esses valores se referem às 1.650 imagens de teste de segmentação, e não somente às 960 imagens pareadas da avaliação biométrica. A distinção impede associar diretamente o Dice global às taxas de identificação da população entre sessões.
-
-A Tab. 3 apresenta o desempenho original da fusão congelada. A validação biométrica manteve quatro falhas entre 482 consultas; o teste manteve duas entre 486. A diferença entre Rank-1, TAR e sucesso conjunto confirma que aceitar o genuíno não equivale a classificá-lo como primeiro candidato. O resultado de teste passou os critérios pontuais, fornecendo a condição de referência necessária à investigação da área.
-
-Tabela 3 — Desempenho sem oclusão adicional
+Tabela 6 - Desempenho histórico da fusão congelada
 
 | Medida | Validação | Teste |
 |---|---:|---:|
-| Rank-1 | 90,04% (434/482) | 91,36% (444/486) |
-| TAR | 90,66% (437/482) | 92,39% (449/486) |
-| FMR | 0,9820% (71/7.230) | 0,8779% (64/7.290) |
-| Identificação correta e aceitação | 88,38% (426/482) | 89,71% (436/486) |
-| Consultas com falha | 4 | 2 |
+| Rank-1 | 434/482 - 90,04% | 444/486 - 91,36% |
+| TAR | 437/482 - 90,66% | 449/486 - 92,39% |
+| FMR | 71/7.230 - 0,9820% | 64/7.290 - 0,8779% |
+| Correto e aceito | 426/482 - 88,38% | 436/486 - 89,71% |
+| Falhas de extração | 4 | 2 |
 
-Fonte: do autor (2026), a partir das matrizes finais preservadas.
+Fonte: do autor (2026), a partir dos escores e das decisões históricas preservadas.
 
-O desempenho original fornece uma margem limitada em relação ao alvo de 90%. No teste, a aprovação de Rank-1 exige pelo menos 438 acertos; a condição original apresentou 444. Dessa maneira, alterações de poucas consultas podem mudar a classificação de aprovação sem representar uma transição anatômica abrupta. A interpretação da fronteira deve considerar essa discretização da métrica, além da discretização da área em pixels.
+O teste passou os três critérios separados do protocolo principal. Entretanto, o evento conjunto de acertar e aceitar ficou em 89,71%. Essa diferença não invalida o critério originalmente registrado, mas delimita seu significado: obter pelo menos 90% em duas medidas marginais não implica obter 90% no evento simultâneo. A exigência conjunta adotada em rodadas posteriores é mais restritiva e não deve ser confundida com uma mudança retrospectiva do resultado.
 
-### 3.2 FRONTEIRA OBSERVADA POR ORIENTAÇÃO
+A margem de aprovação do Rank-1 também é limitada. Entre 486 consultas, atingir 90% exige pelo menos 438 acertos; o original apresentou 444. A alteração de poucas decisões pode mudar a aprovação. Essa discretização demonstra que a fronteira não representa necessariamente uma transição anatômica abrupta: ela resulta da relação entre um critério pontual, uma população finita e o comportamento do processamento.
 
-A Tab. 4 reúne todas as condições efetivamente avaliadas com o reconhecedor congelado. Com perda superior de 0,5%, obtiveram-se 443 identificações corretas, 449 genuínos aceitos e 65 impostores aceitos. Os três critérios foram atendidos. Com perda superior de 1%, o número de identificações corretas caiu para 437, um abaixo do mínimo inteiro exigido, embora TAR e FMR permanecessem aprovadas.
+A condição original fornece o controle pareado para as intervenções. Como validação e teste foram consultados no desenvolvimento, suas diferenças não constituem uma estimativa sem viés da generalização.
 
-Tabela 4 — Área nominal preservada e desempenho nas condições avaliadas
+<!-- pagina:17 -->
+### 3.2 GRADE COMPLETA DE OCLUSÃO
 
-| Condição | Área (%) | Rank-1 (%) | TAR (%) | FMR (%) | Aprova |
-|---|---:|---:|---:|---:|---|
-| Original | 100 | 91,36 | 92,39 | 0,8779 | Sim |
-| Superior 0,5% | 99,5 | 91,15 | 92,39 | 0,8916 | Sim |
-| Superior 1% | 99 | 89,92 | 92,39 | 0,8779 | Não |
-| Inferior 1% | 99 | 90,95 | 91,36 | 0,9328 | Sim |
-| Inferior 1,5% | 98,5 | 89,09 | 88,89 | 1,0151 | Não |
-| Inferior 2% | 98 | 87,45 | 87,86 | 1,2346 | Não |
-| Superior 10% | 90 | 82,30 | 84,98 | 1,6872 | Não |
-| Inferior 10% | 90 | 58,23 | 60,29 | 2,6063 | Não |
+A execução final avaliou todos os níveis solicitados, incluindo 30% e 31% de perda do suporte originalmente anotado. O cadastro permaneceu intacto e cada consulta foi processada novamente após a alteração. A Tab. 7 apresenta a identificação e a FMR; o suporte de 70% e 69% corresponde ao denominador experimental, sem medição normativa do anel anatômico.
 
-Fonte: do autor (2026). As áreas são nominais e as grades de perda são irregulares.
+Tabela 7 - Resumo da grade de 1% a 31% na execução de 08/11/2026
 
-Na orientação inferior, a perda de 1% passou os critérios, com 442 identificações corretas e 444 aceitações genuínas. A condição nova de 1,5% apresentou 433 acertos, 432 aceitações genuínas e 74 impostores aceitos, reprovando as três medidas. A FMR correspondente foi 1,0151%; arredondá-la para 1% mudaria indevidamente a decisão. Em 7.290 comparações, o máximo inteiro de impostores aceitos compatível com o limite é 72.
+| Perda | Área | Rank-1 superior | Rank-1 inferior | FMR superior | FMR inferior |
+|---|---|---|---|---|---|
+| 0% | 100% | 91,15% | 91,15% | 0,86% | 0,86% |
+| 1% | 99% | 89,92% | 90,95% | 0,88% | 0,89% |
+| 5% | 95% | 87,86% | 74,07% | 1,30% | 1,88% |
+| 10% | 90% | 82,30% | 58,23% | 1,67% | 2,57% |
+| 20% | 80% | 69,96% | 40,74% | 2,15% | 3,22% |
+| 30% | 70% | 69,96% | 33,54% | 2,10% | 3,47% |
+| 31% | 69% | 69,34% | 32,51% | 2,02% | 3,53% |
 
-O menor aproveitamento nominal aprovado no prefixo da grade foi, portanto, 99,5% na superior e 99% na inferior. A próxima área testada reprovada foi 99% na superior e 98,5% na inferior. Esses pares delimitam os níveis observados de aprovação e reprovação; não comprovam a posição de uma transição contínua entre eles nem que todos os níveis menores necessariamente falhem.
+Fonte: do autor (2026). 486 consultas e 7.290 pares impostores por condição.
 
-Entre as frações testadas nas duas orientações, o prefixo comum permaneceu restrito à condição original de 100%. A ausência do ponto inferior de 0,5% impede confirmar 99,5% para as duas regiões, mesmo que 99% tenha passado na inferior. Inferir esse resultado exigiria pressupor uma monotonicidade que não foi estabelecida. A distinção entre limites por orientação e limite comum evita apresentar uma porcentagem global sem apoio na grade efetivamente executada.
+A condição sem oclusão apresentou Rank-1 de 91,15%, TAR de 92,39% e FMR de 0,86%, passando os três critérios separados. O sucesso conjunto foi de 89,51%, informado sem ser confundido com as medidas marginais. O Rank-1 difere do controle histórico de 91,36%; a análise pareada utiliza exclusivamente o controle recalculado desta mesma rodada, com seu ambiente registrado.
 
-### 3.3 INFLUÊNCIA DA REGIÃO E INCERTEZA AMOSTRAL
+Com 30% de oclusão, a TAR foi de 69,96% na orientação superior e 32,30% na inferior. Com 31%, foi de 70,99% e 29,42%. As falsas correspondências também foram medidas com o mesmo limiar, sem recalibração favorável em cada nível. Assim, a curva descreve a resposta de uma configuração fixa, e não uma sucessão de sistemas escolhidos para cada quantidade de perda.
 
-Com a mesma perda nominal de 10%, o Rank-1 foi 82,30% na superior e 58,23% na inferior. A diferença pareada foi 24,07 pontos percentuais, com IC95% de 10,83 a 36,25. Em relação ao original, as perdas de Rank-1 foram 9,05 pontos na superior e 33,13 na inferior. Seus intervalos pareados foram, respectivamente, 2,50 a 17,68 e 23,13 a 43,62 pontos. Esses resultados indicam que a posição da intervenção importa no processamento avaliado, além de sua quantidade nominal.
+Os intervalos descritivos de 95% do controle foram 84,79% a 95,83% para Rank-1, 86,25% a 96,75% para TAR e 0,514% a 1,278% para FMR. A aprovação pontual não constitui garantia populacional. Na grade inteira, o prefixo aprovado preservou 100% na posição superior e 99% na inferior. Referências vazias permaneceram nos denominadores, com área indefinida.
 
-Esse comportamento não significa que a região inferior contenha universalmente mais informação biométrica. A substituição de pixels pode alterar o maior contorno, a presença do buraco interno ou a geometria polar. A resposta inclui a informação removida e a instabilidade introduzida nas etapas seguintes. Sem uma intervenção adicional que fixe geometricamente a extração, não se separa a contribuição causal de cada mecanismo; mesmo tal diagnóstico exigiria uma imagem original disponível e não representaria uma melhoria operacional de consulta única.
+<!-- pagina:18 -->
+### 3.3 POSIÇÃO DA PERDA E COMPARAÇÃO ENTRE 30% E 31%
 
-Figura 2 — Estimativas e intervalos de 95% por condição
+A Figura 2 reúne as curvas completas de identificação e falsas correspondências. Na perda de 10%, a diferença de Rank-1 entre as orientações superior e inferior foi de 24,07 pontos percentuais, com intervalo descritivo de 95% de 11,46 a 36,04 pontos. A mesma quantidade nominal removida produziu respostas diferentes no sistema.
 
-![Intervalos das métricas](figuras/intervalos_condicoes.png)
+Figura 2 - Influência da área ocluída na identificação e nas falsas correspondências
 
-Fonte: do autor (2026). Intervalos pontuais por participante, com cadastro e limiar fixos; pontos não representam uma curva contínua de área.
+![Curva completa com cadastro e limiar fixos](../outputs/grade_densa_analise_2026-11-08/curva_area_identificacao.png)
 
-A Fig. 2 apresenta a incerteza das oito condições, sem interpolar níveis ausentes. Para a condição original, o IC95% de Rank-1 foi 85,19 a 95,73%; para TAR, 86,25 a 96,71%; e para FMR, 0,53 a 1,28%. Logo, passar o critério pontual não equivale a demonstrar que limites populacionais de desempenho foram garantidos. O número de consultas não substitui o número de participantes independentes, pois várias imagens provêm da mesma pessoa.
+Fonte: do autor (2026). 63 condições; faixas de 95% por pessoa, galeria fixa e linha vertical em 30%.
 
-No ponto superior de 0,5%, os intervalos de Rank-1, TAR e FMR foram 85,00–95,63%, 86,04–96,88% e 0,54–1,26%. Na inferior de 1,5%, foram 81,07–94,72%, 80,66–94,84% e 0,65–1,38%. As duas condições passaram conjuntamente os critérios em 62,00% e 26,32% das reamostras, respectivamente. Essas frequências descrevem sensibilidade à composição da amostra e não autorizam interpretar o mínimo como uma constante clínica conhecida com essas probabilidades.
+Na orientação superior, aumentar a oclusão de 30% para 31% modificou o Rank-1 em -0,62 pontos percentuais. O intervalo de 95% da perda foi de -1,81 a 3,12 pontos. Houve 20 consultas que perderam acerto e 17 que ganharam acerto.
 
-Na grade inferior anterior de 0, 1 e 2% de perda, 34,58% das reamostras reprovaram já na condição original, ficando sem prefixo aprovado; 15,56% ficaram restritas a 100% preservados; 42,22% chegaram a 99%; e 7,64% chegaram a 98%. A distribuição caracteriza somente aquela grade disponível. Ela foi mantida como análise de estabilidade e não usada para recalibrar o limiar, excluir participantes ou selecionar uma porcentagem favorável.
+Na orientação inferior, aumentar a oclusão de 30% para 31% modificou o Rank-1 em -1,03 pontos percentuais. O intervalo de 95% da perda foi de -2,88 a 5,21 pontos. Houve 34 consultas que perderam acerto e 29 que ganharam acerto.
 
-### 3.4 DISCRETIZAÇÃO DA ÁREA E FALHAS
+A comparação mede diretamente os dois níveis, mas não demonstra um limiar universal em 70%. Os intervalos são descritivos, com 5.000 reamostragens por pessoa e semente 20261108, condicionadas à galeria fixa. Não corrigem a seleção histórica nem certificam toda a curva simultaneamente. A resposta inclui perda de pixels, segmentação e geometria recalculadas, sem separar causalmente esses mecanismos.
 
-A Tab. 5 mostra que as perdas nominais não produzem a mesma fração efetiva em todas as referências. Com perda superior nominal de 0,5%, uma das 480 referências definidas recebeu zero pixels selecionados devido ao arredondamento. Esse caso é diferente das seis referências vazias, para as quais não se definiu área. Todos permaneceram nas métricas. A aparente precisão de meio ponto percentual não elimina a discretização da imagem nem a incerteza amostral.
+<!-- pagina:19 -->
+### 3.4 GEOMETRIA E ESTABILIDADE DO PROCESSAMENTO
 
-Tabela 5 — Perda efetiva de pixels nos dois pontos adicionados
+Os diagnósticos posteriores procuraram explicar por que perdas pequenas podiam modificar o reconhecimento. A segmentação restringe a entrada, mas também fornece elementos para a estimação da geometria polar. Ao mudar o suporte previsto, a intervenção pode deslocar a parametrização e fazer uma estrutura aparecer em posições diferentes da faixa normalizada. A dificuldade deixa de ser apenas a ausência dos pixels substituídos e passa a incluir inconsistência no alinhamento da informação restante.
 
-| Perda nominal (%) | Média efetiva (%) | Mínimo a máximo (%) | Referências definidas com zero pixels |
-|---|---:|---|---:|
-| Superior 0,5 | 0,4986 | 0 a 0,5455 | 1 |
-| Inferior 1,5 | 1,5001 | 1,4545 a 1,6949 | 0 |
+Um diagnóstico utilizou a geometria obtida da fotografia limpa para processar sua versão alterada. Houve recuperação de desempenho sob oclusão em condições examinadas. Entretanto, essa configuração depende da disponibilidade da captura original não ocluída, informação que não está presente no cenário operacional de uma única fotografia alterada. O resultado foi tratado como evidência sobre o mecanismo de falha, sem promover essa geometria assistida como solução de produção.
 
-Fonte: do autor (2026), em 480 referências não vazias. As seis referências vazias não integram essas médias.
+Ajustes de normalização e representação polar também foram avaliados. Um limiar conservador manteve Rank-1 de 90,46% na validação, mas reduziu a TAR a 64,32%, com FMR de 0,2075%. A troca da representação polar, preservando a fusão anterior, produziu Rank-1 de 89,83%, TAR de 90,25% e FMR de 1,0235%. Ambos os pilotos reprovaram os critérios e não alteraram a fronteira histórica.
 
-A retenção das referências vazias no denominador operacional influencia a classificação pontual da fronteira. Na análise secundária das 480 referências definidas, a condição superior de 1% apresentou 90,83% de Rank-1, 93,13% de TAR e 0,85% de FMR, enquanto a avaliação principal de 486 consultas reprovou em Rank-1. Esse resultado foi preservado como sensibilidade de denominador, sem substituir a análise principal para recuperar uma aprovação.
+As análises mostram que uma máscara mais extensa ou uma imagem polar visualmente mais contínua não garantem correspondência consistente. O suporte pode ser ampliado com pixels de pupila, reflexo ou estrutura vizinha. A interpretação precisa acompanhar o escore genuíno, os impostores e a disponibilidade do cadastro. Essa conclusão é coerente com a separação entre desempenho de segmentação e reconhecimento discutida por Hofbauer et al. (2016; 2019).
 
-As falhas também mostram por que uma taxa de falsa correspondência baixa não pode ser interpretada isoladamente. Quando um extrator não fornece uma comparação utilizável, a rejeição evita uma falsa aceitação, mas impede a aceitação genuína. Relatar apenas comparações bem-sucedidas ocultaria parte desse comportamento. Neste protocolo, a disponibilidade, a aceitação e a posição do candidato correto foram registradas separadamente e mantidas nos resultados.
+<!-- pagina:20 -->
+### 3.5 SEGMENTAÇÃO DIVERSA E TRANSFERÊNCIA DE CAPTURA
 
-### 3.5 DESENVOLVIMENTO POSTERIOR E CONTROLES
+A rodada de segmentação diversa procurou ampliar a tolerância a olhos em escalas e aparências diferentes, incluindo aumento sintético de escala, transformação oblíqua e óculos. O candidato final, selecionado na época 30, foi examinado com o reconhecedor preservado. Embora apresentasse melhorias em situações difíceis, não manteve o desempenho limpo necessário para substituir a referência operacional.
 
-Foram investigadas alternativas de localização da pupila e de adaptação de descritores após a configuração de referência, sem substituí-la nas curvas apresentadas. Um localizador circular supervisionado por buracos nas anotações reduziu sua perda geométrica interna, mas a validação com calibração fixa apresentou FMR de 1,0235%. A recalibração limpa apresentou TAR de 89,8340%. Nenhuma das duas variantes cumpriu simultaneamente os critérios naquela rodada.
+Tabela 8 - Validação biométrica da U-Net diversa
 
-Uma saída elíptica com 8.194 parâmetros foi então ajustada mantendo centro e raio equivalente do localizador circular congelados. Na validação, o Rank-1 permaneceu em 90,0415%. A variante recalibrada apenas na condição limpa teve TAR de 90,0415% e FMR de 0,9820%, passando os critérios limpos, mas sem superar a referência, cujo TAR foi 90,6639%. As condições com oclusão de 10% continuaram abaixo da meta. A redução de erro de um alvo geométrico aproximado não demonstrou, portanto, melhora global de identificação.
-
-Um transporte residual de descritores polares foi ajustado em 200 fotografias alteradas das pessoas de treino e monitorado em outras 55 fotografias alteradas. A similaridade média com o descritor original melhorou de 0,6842 para 0,8506 no ajuste, mas caiu de 0,7401 para 0,6613 no monitor, acompanhada de redução da TAR interna. A barreira de desenvolvimento previamente registrada falhou, e essa adaptação não foi avaliada na validação principal ou no teste.
-
-Essas tentativas documentam resultados negativos e limites de alterações específicas. Seus alvos geométricos não são anotações anatômicas independentes da pupila. Além disso, as pessoas do monitor do transporte já haviam sido vistas pelo encoder original, e as validações geométricas foram reutilizadas. Os resultados internos dessas etapas não devem ser misturados às estimativas de teste ou anunciados como aumento de generalização. A fronteira deste artigo permanece vinculada ao reconhecedor original congelado.
-
-Além dos controles geométricos, o reteste de oito épocas com vistas inválidas corrigidas preservou 479/480 identificações e aceitações no monitor limpo. Sob perda superior/inferior de 10%, o Rank-1 foi 82,71%/65,42%, o TAR foi 79,38%/57,92% e a FMR foi 1,3333%/1,2639%. A correção eliminou um alvo de treinamento inadequado, mas não produziu superioridade conjunta e não recebeu nova avaliação no teste principal.
-
-Na destilação regional, a fusão primária preservou os mesmos acertos limpos e reduziu a FMR ocluída para 0,9167%/0,8472%. O Rank-1 foi 82,71%/61,88%, porém o TAR caiu para 75,63%/51,46%, contra 76,88%/53,96% do componente global original nessa rodada. O controle com todos os setores teve Rank-1 idêntico, impedindo atribuir a redução de FMR exclusivamente ao descarte regional. Portanto, atingir FMR abaixo de 1% em um monitor não resolveu a meta de identificação e aceitação genuína. Nenhum desses pilotos foi promovido.
-
-### 3.6 CASOS CLÍNICOS E TRANSFERÊNCIA DE CAPTURA
-
-A Tab. 6 resume as quatro consultas de dois olhos, com 16 candidatos nominais por lado e o limiar da referência. O sistema original não produziu identificação correta ou aceitação genuína. Uma comparação genuína estava indisponível porque a máscara do cadastro do olho com cisto ficou vazia. No outro olho, o cadastro era computacionalmente disponível, mas as máscaras extraíam fragmentos pequenos. O resultado não mede exclusivamente discriminação da textura e não demonstra efeito causal da condição ocular.
-
-Tabela 6 — Extensão clínica com pesos e limiar congelados
-
-| Processamento | Identificações corretas | Aceitações genuínas | Falsas correspondências | Genuínos indisponíveis |
+| Condição | Controle Rank-1 | Candidato Rank-1 | Candidato TAR | Candidato FMR |
 |---|---:|---:|---:|---:|
-| Original | 0/4 | 0/4 | 1/60 (1,67%) | 1/4 |
-| Controle de escala 1/3 | 1/4 | 1/4 | 2/60 (3,33%) | 3/4 |
+| Original | 90,04% | 86,10% | 85,68% | 1,203% |
+| Perda superior de 10% | 80,71% | 80,08% | 76,56% | 1,203% |
+| Perda inferior de 10% | 59,96% | 70,33% | 70,95% | 2,254% |
 
-Fonte: do autor (2026), dados SLP-VLD. Controle definido após a falha original; mesmas consultas, cadastros e limiar. As quatro consultas não são quatro pessoas independentes.
+Fonte: do autor (2026), rodada diversa; 482 consultas de validação em cada condição.
 
-O controle de escala recuperou o cadastro do olho com cisto e sua consulta foi identificada e aceita, com escore genuíno de 0,87538, superior ao limiar 0,85817. Entretanto, a máscara de cadastro do olho com laceração tornou-se vazia, indisponibilizando as outras três comparações genuínas. Não se escolheu a melhor escala por olho nem se excluíram falhas para reportar ganho. Uma falsa correspondência já representa 1,67% em 60 pares; a amostra não sustenta uma garantia populacional de FMR de até 1%.
+O ganho observado na perda inferior foi de 10,37 pontos percentuais de Rank-1 em relação ao controle dessa rodada. Entretanto, na condição original, ocorreu redução de 3,94 pontos. Melhorar uma condição e prejudicar outra não satisfaz um critério de preservação do funcionamento limpo. Como o candidato também reprovou a FMR na condição original, não foi atribuído um novo mínimo de área.
 
-A Fig. 3 apresenta controles com rótulo Normal eye e casos com alterações da íris na mesma base. A U-Net original produz recortes fragmentados também nos exemplos normais. Isso evidencia um confundidor de domínio de captura, sem provar que a escala explique todas as falhas. A melhora visual de alguns recortes não foi convertida em Dice ou percentual anatômico, pois falta anotação independente. O cadastro com laceração ilustra a falha do controle, preservando resultados favoráveis e desfavoráveis.
+Esses resultados pertencem à validação da rodada diversa. A comparação pareada preservou população e preparação, sem combinar métricas favoráveis obtidas por configurações distintas.
 
-Figura 3 — Recortes de olhos rotulados como normais e com alterações da íris
+A experiência também mostrou que diversidade de transformação não equivale à diversidade clínica. Óculos sintéticos e mudanças de enquadramento podem ampliar situações do treinamento, mas não acrescentam por si só as relações entre alterações da íris, córnea, pupila e tratamento presentes em imagens reais. O uso dessas transformações é uma estratégia de robustez de captura, cuja eficácia precisa ser medida, sem substituir dados clínicos anotados.
 
-![Recortes clínicos](figuras/recortes_clinicos.png)
+<!-- pagina:21 -->
+### 3.6 ADAPTAÇÃO VISUAL DO SAM3.1
 
-Fonte: adaptação do autor (2026) de Qian (2026), SLP-VLD v3, CC BY 4.0. De cima para baixo: dois rótulos Normal eye, cisto de íris com comorbidades e laceração da íris. Colunas: fotografia, recorte original e controle de escala 1/3. Não se realizou novo diagnóstico médico.
+O primeiro treino supervisionado com características visuais SAM3.1 concluiu vinte épocas. A seleção registrada escolheu a época 15, maximizando o desempenho de segmentação sob as condições avaliadas e preservando o controle original. A Tab. 9 apresenta o Dice médio, calculado nas mesmas 1.652 imagens de validação em cada condição. O extrator visual permaneceu congelado; a adaptação foi realizada no decodificador supervisionado.
 
-O estudo de patologias de Trokielewicz, Czajka e Maciejewicz (2015) destaca a importância da segmentação para a confiabilidade do reconhecimento. Os casos presentes são compatíveis com a necessidade de examinar essa etapa, mas não reproduzem a população, a modalidade ou os reconhecedores daquele trabalho. As condições clínicas coexistem com diferenças de dilatação, iluminação, enquadramento, tratamento e qualidade; não se atribui toda discrepância de reconhecimento à doença.
+Tabela 9 - Segmentação no adaptador SAM3.1
 
-Também se reaproveitaram as 482 consultas UBIPr de validação para descrever suporte polar natural, sem nova inferência de reconhecimento. Houve um acerto e aceitação em uma consulta com suporte de 47,36%; abaixo de 75%, porém, eram apenas cinco consultas, das quais três identificadas. Esses casos não estabelecem um mínimo global: suporte da grade polar, área nominal de intervenção e área anatômica são grandezas distintas. A seleção ilustrativa por suporte não substitui a análise de todas as consultas.
+| Condição | Época zero | Época 15 | Diferença em pontos percentuais |
+|---|---:|---:|---:|
+| Original | 86,09% | 88,62% | +2,53 |
+| Zoom 3× | 83,18% | 86,51% | +3,34 |
+| Oblíqua | 85,54% | 87,61% | +2,07 |
+| Óculos sintéticos | 85,18% | 88,21% | +3,03 |
 
-### 3.7 LIMITAÇÕES E RELAÇÃO COM ANOMALIAS OCULARES
+Fonte: do autor (2026), auditoria do treinamento concluído em 04/11/2026.
 
-A principal limitação estatística é a população de 16 participantes na avaliação biométrica de teste. As 486 consultas permitem observar repetição entre capturas, mas não representam 486 pessoas independentes. A reamostragem por participante considera parte dessa dependência e mantém fixos o cadastro e o limiar. Ela não incorpora novas sessões de cadastramento, diferentes sensores, sementes de treinamento, outras composições de galeria ou erros de anotação.
+Houve melhora nas quatro condições em relação à época zero, mas nenhuma atingiu a meta de engenharia de 90%. O resultado não isola a contribuição causal das características SAM3.1: o ramo RGB também foi ajustado e a perda supervisionada participou do treinamento. Seria necessário um controle com o mesmo orçamento de épocas e a mesma perda, sem características de fundação, para atribuir a diferença somente ao SAM.
 
-O teste foi examinado durante o desenvolvimento de estratégias anteriores. As inferências de área e os dois novos pontos de refinamento são, por isso, exploratórios. A separação por pessoa no ajuste local não elimina o efeito de escolhas informadas pela experiência acumulada no mesmo conjunto. Também não foi possível comprovar a independência das identidades do UBIPr em relação a toda a população de pré-treinamento externo do ArcIris e dos modelos de representação visual.
+A auditoria recalculou as métricas por contagens de pixels e reproduziu a seleção. Uma divergência entre arquivos serializados foi reconciliada após confirmar a igualdade dos 258 tensores e dos demais estados.
 
-A tarefa é de identificação em conjunto fechado: os olhos consultados pertencem ao cadastro e o lado é informado. Não foi avaliado um fluxo de pessoas desconhecidas, cadastramento incremental ou detecção de ataques de apresentação. A normalização entre os 16 candidatos torna o escore dependente da galeria. O limiar e as taxas não devem ser transportados diretamente para outra quantidade de pessoas, para consulta sem lateralidade ou para fotografias de celular obtidas sem protocolo compatível.
+Os prompts semânticos diretos continuaram apresentando problemas em exemplos clínicos, incluindo escolha da pupila ou de fragmentos inadequados. A adaptação visual, portanto, não deve ser descrita como simples aplicação textual do SAM a uma fotografia. Trata-se de um sistema supervisionado local que reutiliza um extrator de fundação e exige sua própria avaliação de segmentação, geometria e reconhecimento.
 
-O suporte considerado foi a íris visível definida pela anotação original. Parte da superfície anatômica pode estar naturalmente encoberta antes da intervenção. Uma máscara predita pode omitir textura da íris ou incluir pixels de outras estruturas. A identificação pode explorar informação de cor, geometria e aparência do suporte disponível, não apenas uma textura iridiana isolada e anatomicamente perfeita. O limite encontrado descreve o sistema completo, sem provar que todos os pixels preservados sejam necessários ou igualmente informativos.
+A melhoria de sobreposição precisou ser confrontada com identidade e impostores. A etapa seguinte manteve os reconhecedores congelados para medir o efeito da nova máscara na decisão biométrica.
 
-A relação com anomalias oculares permanece exploratória, apesar da extensão com casos rotulados. O número de olhos repetidos e as falhas de cadastro impedem uma estimativa clínica geral. Uma doença pode alterar geometria, transparência, textura, reflexão ou condições de aquisição. O cinza artificial remove a aparência de pixels selecionados, mas não reproduz todas essas mudanças. A evidência permite afirmar que perdas localizadas podem interferir de maneira distinta no processamento estudado; não permite estimar a extensão clínica de uma doença a partir das porcentagens da tabela, atribuir causalidade de diagnóstico ou recomendar decisões assistenciais.
+<!-- pagina:22 -->
+### 3.7 NEGATIVOS INTERNOS E CORREÇÃO RESIDUAL
 
-Também não é possível concluir que o desempenho de toda tecnologia de reconhecimento de íris esteja limitado a 91,36%. Esse número pertence à configuração, à amostra e às condições declaradas. Os mínimos elevados observados podem refletir a pequena margem do reconhecedor sobre o critério, além da qualidade dos dados e da instabilidade de extração. Um estudo de invariância da textura exigiria outro desenho, enquanto uma alegação clínica demandaria medidas anatômicas e diagnósticas independentes e controle das condições de aquisição.
+A continuação com negativos internos partiu da época 15 e enfatizou pixels já anotados como não íris em regiões internas dos contornos. A hipótese era reduzir inclusão indevida sem criar rótulos de pupila que não existiam de forma independente na base. Após quatro épocas sem ganho elegível, a seleção manteve a época zero. A comparação dos estados confirmou que os pesos selecionados continuaram iguais aos anteriores.
 
+A continuação com negativos internos não produziu um novo modelo elegível: os pesos selecionados permaneceram iguais aos do controle.
+
+Na etapa seguinte, implementou-se uma correção residual limitada, mantendo o modelo anterior congelado. A saída inicial foi conferida como equivalente ao controle, e a correção aprendida foi limitada antes de ser adicionada aos logits. O treinamento terminou após catorze épocas, com seleção da época 8. Essa organização procurou ajustar erros remanescentes sem permitir uma mudança irrestrita do modelo de base.
+
+Tabela 10 - Validação da correção residual SAM3.1
+
+| Condição | Dice médio | Meta de 90% |
+|---|---:|---|
+| Original | 88,65% | Não atingida |
+| Zoom 3× | 86,65% | Não atingida |
+| Oblíqua | 87,63% | Não atingida |
+| Óculos sintéticos | 88,40% | Não atingida |
+
+Fonte: do autor (2026), treinamento residual encerrado em 05/11/2026.
+
+As diferenças em relação ao adaptador anterior foram pequenas e não mudaram o estado de prontidão. Mesmo a melhor condição ficou abaixo do alvo registrado. O resultado mostra que uma arquitetura mais complexa não resolveu automaticamente o problema de transferência, e que a seleção por uma média ou condição isolada poderia ocultar limitações presentes nas demais vistas.
+
+O checkpoint selecionado foi preservado com SHA-256. Os testes de equivalência inicial, congelamento e carregamento estrito verificam a implementação, sem substituir o desempenho biométrico medido posteriormente.
+
+<!-- pagina:23 -->
+### 3.8 IDENTIDADE COM OS CANDIDATOS SAM3.1
+
+A avaliação de identidade mostrou que os candidatos SAM3.1 não atingiram os critérios completos na condição original. A Tab. 11 reúne a validação limpa com os denominadores preservados. O controle utiliza o ambiente atualizado dessa comparação, e seus valores não devem ser trocados pelos números históricos de outra execução para construir uma vantagem artificial.
+
+Tabela 11 - Reconhecimento limpo na comparação SAM3.1
+
+| Segmentador | Rank-1 | TAR | Correto e aceito | FMR |
+|---|---:|---:|---:|---:|
+| U-Net original no controle | 90,04% | 90,46% | 88,38% | 0,996% |
+| Adaptador, época 15 | 89,42% | 89,63% | 86,93% | 1,051% |
+| Residual, época 8 | 89,42% | 89,63% | 87,34% | 0,927% |
+
+Fonte: do autor (2026). Cada linha mantém 482 consultas e 7.230 comparações impostoras.
+
+No residual, ocorreram 431 identificações corretas, 432 aceitações genuínas e 421 sucessos conjuntos. As falsas correspondências foram 67 entre 7.230 pares. A FMR ficou abaixo de 1%, mas Rank-1, TAR e sucesso conjunto não alcançaram 90%. As três falhas de extração continuaram nas consultas. A fronteira permaneceu vazia e nenhum novo mínimo foi atribuído a esse candidato.
+
+Nas perdas de 10%, o residual apresentou Rank-1 de 84,02% na orientação superior e 81,12% na inferior, com FMR de 1,093% e 1,355%, respectivamente. São resultados da validação dessa rodada. A melhora relativa em uma oclusão não autoriza ignorar a reprovação sem oclusão, nem extrapolar um percentual de área clínica ou transferir o desempenho para uma câmera diferente.
+
+O controle também reprovou o requisito conjunto mais restritivo, apesar de ultrapassar 90% nas duas medidas marginais. Isso reforça que uma decisão de prontidão depende da regra explicitamente escolhida, e não de um rótulo genérico de bom desempenho. Os critérios históricos e recentes foram mantidos separados para permitir interpretação honesta da evolução do projeto.
+
+Esses resultados não aprovaram o avanço automático ao ensaio clínico de área mínima. O ganho visual em casos selecionados não substituiu os critérios quantitativos.
+
+<!-- pagina:24 -->
+### 3.9 RECORTES DE CONTROLES NORMAIS
+
+A Figura 3 apresenta os mesmos dois controles do SLP-VLD rotulados como Normal eye, agora com o refino interativo SAM3.1. Os contornos eliminam os grandes degraus da ampliação binária de uma entrada clínica de apenas 106 × 80 pixels. Os pontos foram obtidos automaticamente; nenhuma textura foi gerada e nenhuma borda foi corrigida manualmente.
+
+Figura 3 - Recortes selecionados de olhos com rótulo normal na base
+
+![Controles normais com original, máscara e recorte](figuras_2026-11-08_final/recortes_normais.png)
+
+Fonte: Qian (2026), SLP-VLD v3, CC BY 4.0. Refino SAM3.1 experimental e composição do autor.
+
+A sobreposição verde representa uma previsão experimental, sem referência anatômica especializada. A pupila recebeu uma previsão local separada. Reflexos e bordas ainda exigem revisão: um contorno visualmente contínuo não demonstra que todos os pixels internos sejam íris utilizável, nem que o reconhecimento tenha melhorado.
+
+O rótulo normal é o informado no depósito, sem nova avaliação médica. A seleção ilustra recortes disponíveis; o reconhecimento desses controles não foi medido nesta composição.
+
+<!-- pagina:25 -->
+### 3.10 RECORTES DE OLHOS COM ALTERAÇÕES
+
+A Figura 4 reúne dois casos com alterações explicitamente registradas no SLP-VLD. O primeiro possui iridodiálise, catarata traumática e contusão ocular. O segundo possui sinéquias da íris, captura de lente intraocular e opacificação capsular posterior. Os rótulos são da base e podem incluir comorbidades; a composição não atribui um diagnóstico novo a partir da aparência.
+
+Figura 4 - Recortes selecionados de íris em casos com alterações oculares
+
+![Casos com iridodiálise e sinéquias, máscaras e recortes](figuras_2026-11-08_final/recortes_anomalias.png)
+
+Fonte: Qian (2026), SLP-VLD v3, CC BY 4.0. Refino SAM3.1 experimental e composição do autor.
+
+O refino recupera um contorno externo mais contínuo e reduz a aparência em blocos. Persistem regiões que podem incluir pupila, reflexos ou ausência de tecido, especialmente na iridodiálise. Sem referência especializada, a apresentação não comprova Dice clínico, área anatômica preservada ou adequação biométrica. Essas falhas não foram escondidas com preenchimento ou ajuste elíptico.
+
+Esses olhos não forneceram cadastro longitudinal elegível no estudo de quatro consultas. Sua inclusão é documental e não acrescenta sucessos ao reconhecimento clínico. Os casos com falha permanecem apresentados na Figura 5.
+
+<!-- pagina:26 -->
+### 3.11 RECONHECIMENTO CLÍNICO LONGITUDINAL
+
+O sistema original não identificou corretamente nenhuma das quatro consultas clínicas e não aceitou nenhum genuíno. Houve uma falsa correspondência entre sessenta pares impostores. Uma consulta tinha o cadastro genuíno indisponível por máscara vazia; as demais apresentavam representação computável, mas não produziram identificação e aceitação corretas. A Tab. 12 mantém as quatro consultas no denominador.
+
+Tabela 12 - Resultados clínicos exploratórios com parâmetros congelados
+
+| Execução | Rank-1 correto | Genuínos aceitos | Falsos pares | Indisponível |
+|---|---:|---:|---:|---:|
+| Original | 0/4 | 0/4 | 1/60 | 1/4 |
+| Escala fixa de um terço | 1/4 | 1/4 | 2/60 | 3/4 |
+
+Fonte: do autor (2026). Quatro consultas de dois olhos; não é estimativa populacional.
+
+O controle de escala recuperou a consulta P0114, que passou a ser identificada e aceita com escore genuíno de 0,8753819683, acima do limiar congelado. Entretanto, a máscara do cadastro P0803 tornou-se vazia, indisponibilizando as três comparações genuínas daquele olho. O ganho local, portanto, coexistiu com prejuízo em outro cadastro e não justificou a promoção da escala como configuração clínica geral.
+
+O sucesso em uma de quatro consultas (25%) não estima com precisão uma população clínica. As consultas pertencem a apenas dois olhos e não são quatro pessoas independentes. Entre sessenta pares impostores, uma única falsa correspondência equivale a 1,67%, acima do alvo empírico de 1% de outro cenário. A pequena amostra e as aquisições distintas impedem atribuir os resultados somente às alterações oculares.
+
+Não havia comparação saudável e doente do mesmo olho com aquisição equivalente. Mudaram iluminação, proximidade, opacidades, geometria e possíveis efeitos do tratamento. Consequentemente, o ensaio revela dificuldade de transferência da cadeia, sem isolar a contribuição causal de uma patologia. O código de identificação do depósito fornece o vínculo utilizado, mas não substitui confirmação independente por prontuário ou documentação clínica longitudinal completa.
+
+Os resultados sustentam um requisito para a continuidade: validar a segmentação clínica e a elegibilidade dos pares antes de usar a máscara para medir anatomia. Caso contrário, uma redução do suporte previsto pode ser erroneamente interpretada como perda de tecido, quando o que ocorreu foi uma falha de localização ou indisponibilidade do cadastro.
+
+<!-- pagina:27 -->
+### 3.12 LIMITES VISUAIS E ÁREA ANATÔMICA
+
+A Figura 5 mantém os dois casos difíceis: P0114, com cisto de íris e alterações corneanas, e P0803, com laceração e outras lesões. No segundo, a tentativa de localizar uma região a partir da entrada RGB produziu um fragmento inadequado junto à pupila. O candidato foi preservado para auditoria e o recorte final permaneceu vazio, exigindo revisão.
+
+Figura 5 - Limites do refino e falha de localização mantida
+
+![Caso com cisto e caso de máscara vazia](figuras_2026-11-08_final/recortes_limites_clinicos.png)
+
+Fonte: Qian (2026), SLP-VLD v3, CC BY 4.0. Transformações do autor.
+
+A borda externa mais contínua do caso P0114 ainda não resolve a separação entre textura iridiana, reflexos e opacidade. No P0803, a indisponibilidade histórica não foi convertida em sucesso pelo simples aparecimento de pixels em um candidato. As figuras refinadas não foram usadas para recalcular a Tab. 12.
+
+O suporte polar de 94,10% registrado na consulta recuperada não significa 94,10% da anatomia preservada. Ele mede posições válidas na grade estimada pelo próprio algoritmo. Uma geometria incorreta pode produzir suporte alto em uma região inadequada. Antes de utilizar qualquer percentual como extensão de anomalia, seria necessária uma referência clínica independente e uma definição anatômica verificável do denominador.
+
+Em 78 imagens de validação, uma por lado de cada uma das 39 pessoas, o Dice médio da U-Net passou de 88,20% para 88,46% com a margem contínua interpolada, melhorando em 67 imagens. O refino interativo SAM3.1 obteve 76,70%. Contudo, aplicar o contorno contínuo aos nove descritores reduziu o Rank-1 limpo de 90,04% para 89,00%. O ganho de segmentação, portanto, não implicou ganho na cadeia biométrica. A referência só entrou no cálculo posterior do Dice; nenhum resultado clínico foi recalculado.
+
+A aplicação seletiva aos descritores polares trouxe ganho localizado no teste reutilizado. Com 1% de oclusão superior, o Rank-1 passou de 89,92% para 91,15%, com TAR de 92,59% e FMR de 0,796%. A diferença descritiva de 1,23 ponto percentual teve intervalo de 95% de 0,42 a 2,03 pontos. Entretanto, com 31% de perda inferior, o Rank-1 caiu de 32,51% para 30,25% e a FMR aumentou. O candidato não aprovou a regra completa e não substituiu a referência.
+
+O SAM3.1 com até 24 pontos positivos e negativos exteriores alcançou Dice de 84,19%, com retorno à máscara inicial em 40 de 78 imagens. Esse resultado híbrido ficou abaixo dos 88,46% do controle contínuo. O filtro de pequenos fragmentos mudou o Dice em menos de 0,01 ponto percentual. Na grade densa, a mistura polar elevou o acerto aceito limpo de 89,51% para 90,12%, com FMR de 0,823%. A FMR aumentou em 31 condições e a regra completa não foi aprovada.
+
+<!-- pagina:28 -->
+### 3.13 DEMONSTRADOR EM CÂMERA DE CELULAR
+
+Foi implementado um demonstrador privado para Samsung Galaxy S23 base, Android 15, com processamento no Dell G15. O navegador recebe a fotografia e o PC executa a cadeia biométrica. O encaminhamento local por USB permite comunicação sem internet após a preparação dos recursos.
+
+O cadastro é independente dos bancos acadêmicos. Cada registro recebe nome e lado do olho, e fotos adicionais são vinculadas explicitamente. A máscara é apresentada antes de salvar. O nome pode ser corrigido preservando imagens e descritores. Uma imagem idêntica à cadastrada é recusada como teste independente; essa proteção não constitui detecção de vivacidade.
+
+O motor utiliza o segmento visual SAM3.1 residual e nove componentes de identidade. Mantém pesos relativos e padronização histórica, mas não transfere a etapa dependente de candidatos fixos à galeria móvel variável. A saída é uma ordenação experimental, sem limiar validado. Os testes funcionais verificaram nove descritores finitos e uma ordenação esperada entre dois candidatos, sem estimar acurácia do S23. Capturas do telefone não foram incorporadas às métricas deste artigo.
+
+<!-- pagina:29 -->
+### 3.14 LIMITAÇÕES E CONTRIBUIÇÕES DO ESTUDO
+
+A principal limitação é a reutilização de validação e teste durante o desenvolvimento. A separação de pessoas evita sobreposição direta no ajuste local, mas não elimina escolhas orientadas por resultados observados. O congelamento conserva a comparabilidade, sem produzir confirmação independente. Uma avaliação posterior precisa reservar identidades e capturas ausentes das decisões sobre representação, fusão e critérios.
+
+As métricas refletem dezesseis candidatos do mesmo lado e determinadas sessões de aquisição. Em galerias maiores ou abertas, a distribuição dos escores e os riscos de busca podem mudar. A FMR por comparação não representa uma taxa de segurança de acesso ou identificação populacional.
+
+A medida de área depende do denominador. Fração anotada retida, anel estimado, suporte polar e interseção do par respondem a perguntas diferentes. O limite observado no projeto não confirma nem refuta diretamente o requisito normativo de qualidade. Pessaud et al. (2026) também mostram a necessidade de explicitar a unidade de área e a população, enquanto a literatura clínica evidencia influência de alterações de geometria e captura além da simples quantidade visível.
+
+A extensão clínica reuniu poucos olhos, sem referência anatômica especializada completa. Os controles normais não constituem pares saudáveis dos casos alterados, e as figuras são ilustrativas. A revisão inicial de duas máscaras normais foi insuficiente para validação clínica. Especialistas e aquisição longitudinal comparável continuam necessários para separar falha algorítmica de mudanças atribuíveis à condição ocular.
+
+Como contribuição, o trabalho entrega uma cadeia auditável de processamento, uma fronteira nominal condicionada ao protocolo, evidência de sensibilidade à posição da perda e um diagnóstico da transferência para imagens clínicas. Acrescenta a comparação controlada de segmentadores recentes e um demonstrador móvel separado. Esses resultados delimitam o que foi medido e fornecem requisitos concretos para um novo estudo, sem prometer um percentual universal ou uma aplicação clínica já validada.
+
+<!-- pagina:30 -->
 ## 4 CONSIDERAÇÕES FINAIS
 
-O trabalho investigou a relação entre área preservada e identificação ocular por meio de intervenções controladas em dados públicos, mantendo modelo, cadastro e limiar congelados. A condição original apresentou 91,36% de Rank-1, 92,39% de TAR e 0,88% de FMR, atendendo ao critério pontual definido. Na grade irregular executada, o menor aproveitamento nominal aprovado foi 99,5% para oclusão superior e 99% para inferior. As próximas áreas testadas, 99% na superior e 98,5% na inferior, reprovaram.
+O estudo quantificou a influência da extensão e da posição da oclusão em uma cadeia de identificação ocular entre sessões. Na execução final, o controle sem perda apresentou Rank-1 de 91,15%, TAR de 92,39% e FMR de 0,86%. A grade completa manteve cadastro, limiar e população fixos até 31% de oclusão, permitindo comparar o efeito das intervenções sem recalibração por nível.
 
-A pergunta de pesquisa foi respondida dentro desse protocolo, sem estabelecer um mínimo universal de íris anatômica. A aprovação dependeu da região afetada e apresentou incerteza amostral ampla. Com perda nominal de 10%, a oclusão inferior teve Rank-1 24,07 pontos percentuais abaixo da superior. O processamento inclui os efeitos da intervenção sobre segmentação e normalização, o que impede atribuir toda a queda exclusivamente à quantidade de textura removida.
+Com 30% de perda, o Rank-1 foi de 69,96% na orientação superior e 33,54% na inferior. Com 31%, foi de 69,34% e 32,51%. A diferença entre essas duas perdas foi pequena diante dos intervalos descritivos e não demonstrou uma ruptura justamente em 70% de suporte nominal. O requisito normativo de qualidade utiliza outro denominador e não foi diretamente testado.
 
-Entre as frações avaliadas nas duas orientações, o prefixo comum continuou em 100%; não se avaliou perda inferior de 0,5%. As porcentagens por orientação não podem ser convertidas automaticamente em um limite comum ou em extensão de doença ocular. A manutenção das falhas e das referências vazias, a preservação dos escores e a verificação do processamento tornam explícitas essas condições de interpretação.
+O refinamento histórico encontrou fronteiras nominais de 99,5% na orientação superior e 99% na inferior, condicionadas à grade e ao sistema daquela etapa. A grade completa acrescentou evidência da degradação além desses pontos. Como segmentação e geometria foram recalculadas, as diferenças reúnem perda de textura e instabilidade de processamento, sem isolar a contribuição anatômica de cada região.
 
-A extensão clínica mostrou um cadastro recuperado por controle de escala e outro prejudicado, sem aprovação de uma variante geral. Assim, a máscara predita não pode servir como denominador de tecido preservado antes de sua validação clínica. Como continuidade, recomenda-se avaliar participantes e capturas novos, com referência anatômica independente, e separar a perda de informação da instabilidade geométrica. Estudos clínicos precisariam documentar a condição ocular e os fatores de aquisição, sem pressupor equivalência com a oclusão digital. A contribuição atual consiste em uma fronteira observada e auditável, acompanhada de seus limites e de evidência quantitativa da influência da posição da perda.
+Os ensaios de segmentação diversa, adaptação SAM3.1 e reajuste da fusão não produziram melhora conjunta suficiente para substituir o controle. A extensão clínica recuperou uma consulta com mudança de escala, mas prejudicou outro cadastro. Os poucos olhos disponíveis e as figuras selecionadas não permitem estimar efeito causal de patologias.
+
+A contribuição é uma avaliação rastreável da sensibilidade à área, com falsas correspondências e falhas preservadas. A reutilização dos conjuntos limita a independência das conclusões. A continuidade exige pessoas e capturas independentes, referências clínicas revisadas e pares longitudinais comparáveis antes de relacionar percentuais de área a doença ou autenticação móvel.
 
 ## REFERÊNCIAS
 
-BOYD, Aidan et al. Human Saliency-Driven Patch-Based Matching for Interpretable Post-Mortem Iris Recognition. In: IEEE/CVF Winter Conference on Applications of Computer Vision Workshops, 2023. p. 701–710. Disponível em: https://openaccess.thecvf.com/content/WACV2023W/XAI4B/html/Boyd_Human_Saliency-Driven_Patch-Based_Matching_for_Interpretable_Post-Mortem_Iris_Recognition_WACVW_2023_paper.html. Acesso em: 27 out. 2026.
-
-CRUZ-VEGA, Israel; MORALES, Hans Israel. Nuclear Cataract Database for Biomedical and Machine Learning Applications. Mendeley Data, versão 2, 2023. Conjunto de dados. DOI: 10.17632/6wv33nbcvv.2. Disponível em: https://data.mendeley.com/datasets/6wv33nbcvv/2. Acesso em: 27 out. 2026.
+ASLAM, Tariq Mehmood; TAN, Shi Zhuan; DHILLON, Baljean. Iris recognition in the presence of ocular disease. Journal of The Royal Society Interface, v. 6, n. 34, p. 489-493, 2009. Disponível em: https://doi.org/10.1098/rsif.2008.0530. Acesso em: 5 nov. 2026.
 
 CVRL. Notre Dame Open-Source Iris Recognition. University of Notre Dame, 2026. Disponível em: https://github.com/CVRL/OpenSourceIrisRecognition. Acesso em: 23 out. 2026.
 
-DAUGMAN, John. How iris recognition works. IEEE Transactions on Circuits and Systems for Video Technology, v. 14, n. 1, p. 21–30, 2004. DOI: 10.1109/TCSVT.2003.818350. Disponível em: https://www.robots.ox.ac.uk/~az/lectures/est/iris.pdf. Acesso em: 23 out. 2026.
+DAUGMAN, J. How Iris Recognition Works. IEEE Transactions on Circuits and Systems for Video Technology, v. 14, n. 1, p. 21-30, 2004. Disponível em: https://doi.org/10.1109/tcsvt.2003.818350. Acesso em: 5 nov. 2026.
+
+DAUGMAN, John. New Methods in Iris Recognition. IEEE Transactions on Systems, Man and Cybernetics, Part B (Cybernetics), v. 37, n. 5, p. 1167-1175, 2007. Disponível em: https://doi.org/10.1109/tsmcb.2007.903540. Acesso em: 5 nov. 2026.
 
 DENG, Jiankang; GUO, Jia; XUE, Niannan; ZAFEIRIOU, Stefanos. ArcFace: Additive Angular Margin Loss for Deep Face Recognition. In: IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2019. p. 4690–4699. Disponível em: https://arxiv.org/abs/1801.07698v1. Acesso em: 23 out. 2026.
 
-FARMANIFARD, Parisa; ROSS, Arun. Iris-SAM: Iris Segmentation Using a Foundation Model. arXiv:2402.06497, 2024. Código e pesos dos autores. Disponível em: https://arxiv.org/abs/2402.06497. Repositório: https://github.com/ParisaFarmanifard/Iris-SAM. Acesso em: 27 out. 2026.
+DHIR, L et al. Effect of cataract surgery and pupil dilation on iris pattern recognition for personal authentication. Eye, v. 24, n. 6, p. 1006-1010, 2010. Disponível em: https://doi.org/10.1038/eye.2009.275. Acesso em: 5 nov. 2026.
+
+DU, Yingzi et al. Analysis of Partial Iris Recognition Using a 1-D Approach. Proceedings. (ICASSP '05). IEEE International Conference on Acoustics, Speech, and Signal Processing, 2005., v. 2, p. 961-964, 2005. Disponível em: https://doi.org/10.1109/icassp.2005.1415566. Acesso em: 5 nov. 2026.
+
+FRASCA, Maria; LA TORRE, Davide. An extended Daugman's algorithm for iris with eye pathology recognition. Expert Systems with Applications, v. 252, p. 124160, 2024. Disponível em: https://doi.org/10.1016/j.eswa.2024.124160. Acesso em: 5 nov. 2026.
 
 HE, Kaiming; ZHANG, Xiangyu; REN, Shaoqing; SUN, Jian. Deep Residual Learning for Image Recognition. In: IEEE Conference on Computer Vision and Pattern Recognition, 2016. Disponível em: https://arxiv.org/abs/1512.03385. Acesso em: 23 out. 2026.
 
-IGNATOWICZ, Alicja Anna; MARCINIAK, Tomasz; MARCINIAK, E. AI-Powered Mobile App for Nuclear Cataract Detection. Sensors, v. 25, n. 13, artigo 3954, 2025. DOI: 10.3390/s25133954. Disponível em: https://doi.org/10.3390/s25133954. Acesso em: 27 out. 2026.
+HOFBAUER, Heinz et al. Experimental analysis regarding the influence of iris segmentation on the recognition rate. IET Biometrics, v. 5, n. 3, p. 200-211, 2016. Disponível em: https://doi.org/10.1049/iet-bmt.2015.0069. Acesso em: 5 nov. 2026.
 
-KHURSHID, Mahapara et al. CatScreen: A Large MultiModal Benchmark Dataset for Cataract Screening. Transactions on Machine Learning Research, 2026. Página e amostra dos autores. Disponível em: https://www.iab-rubric.org/resources/healthcare-datasets/catscreen. Acesso em: 27 out. 2026.
+HOFBAUER, Heinz; JALILIAN, Ehsaneddin; UHL, Andreas. Exploiting superior CNN-based iris segmentation for better recognition accuracy. Pattern Recognition Letters, v. 120, p. 17-23, 2019. Disponível em: https://doi.org/10.1016/j.patrec.2018.12.021. Acesso em: 5 nov. 2026.
+
+HOLLINGSWORTH, K.P.; BOWYER, K.W.; FLYNN, P.J. The Best Bits in an Iris Code. IEEE Transactions on Pattern Analysis and Machine Intelligence, v. 31, n. 6, p. 964-973, 2009. Disponível em: https://doi.org/10.1109/tpami.2008.185. Acesso em: 5 nov. 2026.
+
+ISO/IEC. Information technology - Biometric performance testing and reporting - Part 1: Principles and framework. International Organization for Standardization, n. ISO/IEC 19795-1:2021, 2021. Disponível em: https://www.iso.org/standard/73515.html. Acesso em: 5 nov. 2026.
+
+ISO/IEC. Information technology - Biometric sample quality - Part 6: Iris image data. International Organization for Standardization, n. ISO/IEC 29794-6:2015, 2015. Disponível em: https://www.iso.org/standard/54066.html. Acesso em: 5 nov. 2026.
 
 KIRILLOV, Alexander et al. Segment Anything. In: IEEE/CVF International Conference on Computer Vision, 2023. Disponível em: https://arxiv.org/abs/2304.02643. Código: https://github.com/facebookresearch/segment-anything. Acesso em: 27 out. 2026.
 
-KOZLOVA, J. Masks for MMU Iris dataset. Repositório de máscaras, [s.d.]. Disponível em: https://github.com/jkozlova/Masks-for-MMU-Iris-dataset. Acesso em: 27 out. 2026.
-
 LIU, Zhuang et al. A ConvNet for the 2020s. In: IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2022. Disponível em: https://arxiv.org/abs/2201.03545. Acesso em: 23 out. 2026.
 
-META AI. SAM 2. Repositório oficial de código e modelos, [s.d.a]. Disponível em: https://github.com/facebookresearch/sam2. Acesso em: 27 out. 2026.
+META AI. SAM 3. Código oficial, revisão f1647e8d0c1d280991f4d1b7d974c2704537fe66; checkpoint SAM3.1, revisão daa63191845a41281374e725f4c9e51c7a824460. 2026. Disponível em: https://github.com/facebookresearch/sam3. Acesso em: 5 nov. 2026.
 
-META AI. SAM 3. Repositório oficial de código e modelos, [s.d.b]. Revisão local registrada: 7f473cfd983d5eb43040ff608f66bff0d7bdcb53. Disponível em: https://github.com/facebookresearch/sam3. Acesso em: 27 out. 2026.
+NGUYEN, Kien; PROENÇA, Hugo; ALONSO-FERNANDEZ, Fernando. Deep Learning for Iris Recognition: A Survey. ACM Computing Surveys, v. 56, n. 9, p. 1-35, 2024. Disponível em: https://doi.org/10.1145/3651306. Acesso em: 5 nov. 2026.
 
-MOHAMMAD, Naureen. MMU Iris Dataset. Kaggle, [s.d.]. Cópia de aquisição utilizada no projeto. Disponível em: https://www.kaggle.com/datasets/naureenmohammad/mmu-iris-dataset. Acesso em: 20 out. 2026.
+NIGAM, Ishan et al. Phacoemulsification Cataract Surgery Affects the Discriminative Capacity of Iris Pattern Recognition. Scientific Reports, v. 9, n. 1, 2019. Disponível em: https://doi.org/10.1038/s41598-019-47222-4. Acesso em: 5 nov. 2026.
 
 PADOLE, Chandrashekhar; PROENÇA, Hugo. Periocular Recognition: Analysis of Performance Degradation Factors. In: Fifth IAPR/IEEE International Conference on Biometrics, New Delhi, 2012. Base UBIPr disponível em: https://iris.di.ubi.pt/ubipr.html. Acesso em: 23 out. 2026.
 
+PESSAUD, Jack et al. Probe Visible Iris Area as a Dominant Predictor of Iris Recognition Performance Under Dilation and Occlusion. Applied Sciences, v. 16, n. 14, p. 7227, 2026. Disponível em: https://doi.org/10.3390/app16147227. Acesso em: 5 nov. 2026.
+
 QIAN, Hulei. SLP-VLD: An Anonymized Slit-Lamp Image Dataset with Expert Clinical Reports for Vision-Language Modeling of Anterior Segment Diseases. Figshare, versão 3, 2026. Conjunto de dados. DOI: 10.6084/m9.figshare.32576697.v3. Disponível em: https://doi.org/10.6084/m9.figshare.32576697.v3. Acesso em: 20 out. 2026.
+
+QUINN, George W et al. IREX V: Guidance for Iris Image Collection. National Institute of Standards and Technology, n. NISTIR 8013, 2014. Disponível em: https://doi.org/10.6028/nist.ir.8013. Acesso em: 5 nov. 2026.
+
+QUINN, George W; GROTHER, Patrick; MATEY, James. IREX IX Part One: Performance of Iris Recognition Algorithms. National Institute of Standards and Technology, n. NISTIR 8207, 2018. Disponível em: https://doi.org/10.6028/nist.ir.8207. Acesso em: 5 nov. 2026.
+
+ROIZENBLATT, Roberto et al. Iris recognition as a biometric method after cataract surgery. BioMedical Engineering OnLine, v. 3, n. 1, 2004. Disponível em: https://doi.org/10.1186/1475-925x-3-2. Acesso em: 5 nov. 2026.
 
 RONNEBERGER, Olaf; FISCHER, Philipp; BROX, Thomas. U-Net: Convolutional Networks for Biomedical Image Segmentation. In: Medical Image Computing and Computer-Assisted Intervention, 2015. Disponível em: https://arxiv.org/abs/1505.04597. Acesso em: 23 out. 2026.
 
+SEYEDDAIN, Orang et al. Reliability of Automatic Biometric Iris Recognition after Phacoemulsification or Drug-Induced Pupil Dilation. European Journal of Ophthalmology, v. 24, n. 1, p. 58-62, 2014. Disponível em: https://doi.org/10.5301/ejo.5000343. Acesso em: 5 nov. 2026.
+
 SIMÉONI, Oriane et al. DINOv3. arXiv:2508.10104, 2025. Disponível em: https://arxiv.org/abs/2508.10104. Acesso em: 23 out. 2026.
 
-TEJANI, Ali S. et al. Checklist for Artificial Intelligence in Medical Imaging (CLAIM): 2024 Update. Radiology: Artificial Intelligence, v. 6, n. 4, artigo e240300, 2024. DOI: 10.1148/ryai.240300. Disponível em: https://doi.org/10.1148/ryai.240300. Acesso em: 27 out. 2026.
+TABASSI, E; GROTHER, P; SALAMON, W. IREX II - IQCE: Iris Quality Calibration and Evaluation - Performance of Iris Image Quality Assessment Algorithms. National Institute of Standards and Technology, n. NISTIR 7820, 2011. Disponível em: https://doi.org/10.6028/nist.ir.7820. Acesso em: 5 nov. 2026.
 
-TROKIELEWICZ, Mateusz; CZAJKA, Adam; MACIEJEWICZ, Piotr. Assessment of iris recognition reliability for eyes affected by ocular pathologies. In: IEEE Seventh International Conference on Biometrics Theory, Applications and Systems, Arlington, 2015. p. 1–6. DOI: 10.1109/BTAS.2015.7358747. Disponível em: https://arxiv.org/abs/1809.00206. Acesso em: 23 out. 2026.
+TROKIELEWICZ, Mateusz; CZAJKA, Adam; MACIEJEWICZ, Piotr. Assessment of iris recognition reliability for eyes affected by ocular pathologies. 2015 IEEE 7th International Conference on Biometrics Theory, Applications and Systems (BTAS), p. 1-6, 2015. Disponível em: https://doi.org/10.1109/btas.2015.7358747. Acesso em: 5 nov. 2026.
 
-WORLDCOIN. Open Iris Recognition Inference System. Repositório oficial OpenIRIS, [s.d.]. Disponível em: https://github.com/worldcoin/open-iris. Acesso em: 27 out. 2026.
-
-XU, Mingyu et al. SLID: a slit-lamp image dataset for deep learning-based anterior eye anatomical segmentation and multi-lesion detection. Frontiers in Digital Health, v. 7, artigo 1716501, 2026. DOI: 10.3389/fdgth.2025.1716501. Disponível em: https://doi.org/10.3389/fdgth.2025.1716501. Dados: https://github.com/xumingyu-hub/SLID. Acesso em: 27 out. 2026.
+TROKIELEWICZ, Mateusz; CZAJKA, Adam; MACIEJEWICZ, Piotr. Implications of ocular pathologies for iris recognition reliability. Image and Vision Computing, v. 58, p. 158-167, 2017. Disponível em: https://doi.org/10.1016/j.imavis.2016.08.001. Acesso em: 5 nov. 2026.

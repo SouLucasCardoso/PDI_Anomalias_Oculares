@@ -55,6 +55,12 @@ O aplicativo passou a ocupar [reconhecedor-iris/](../reconhecedor-iris/README.md
 
 O controle de versão foi ajustado para excluir ambientes, ferramentas baixadas, pesos, caches, bancos privados, fotografias e arquivos integrais de fontes bibliográficas. Código, relatórios e evidências textuais selecionadas compõem a atualização da branch de pesquisa; os registros detalhados por imagem permanecem locais.
 
+## Complemento das alterações após a publicação inicial
+
+Complemento registrado em 09/11/2026 a partir das fontes e dos horários locais preservados. Após o envio inicial deste dia, foram corrigidos o formulário e o serviço de cadastro: cada novo registro passa a exigir nome próprio e começa com o campo vazio; fotos extras do mesmo olho exigem selecionar explicitamente o registro. A interface permite renomear sem trocar identificadores, fotos, descritores ou testes. Foram adicionados testes de regressão do HTTP e do formulário com DOM simulado, incluindo prevenção de salvamento duplicado. A inferência científica permaneceu inalterada.
+
+Também foram preparados o texto consolidado inicial do artigo e o gerador das composições de olhos normais e com alterações, com créditos e limites de interpretação. A paginação final em 30 páginas de conteúdo e a grade densa não foram concluídas em 05/11; pertencem aos relatórios de [08/11](RELATORIO_AVANCO_2026-11-08.md) e [09/11](RELATORIO_AVANCO_2026-11-09.md).
+
 ## Próximos passos e limites
 
 Antes da apresentação, ensaiar o fluxo completo no S23 com cabo de dados, nova captura, variação de foco e pessoa não cadastrada, incluindo execução sem Wi-Fi/dados móveis. Uma demonstração favorável não comprova mínimo de área ou desempenho clínico. A alternativa hotspot existe no iniciador, mas a alteração persistente do firewall não foi autorizada/aplicada; USB é o modo preparado.

@@ -1,0 +1,198 @@
+{
+  "filename": "P0005_OD20241206.JPG",
+  "diagnosis_dataset_only": "Normal eye",
+  "status": "refined",
+  "image_sha256": "37a105b917c6bd5959f26db21aa054de1fc3f63d42b7a76dbb04fe15b77ecef4",
+  "previous": {
+    "pixels": 1195270,
+    "components": 1,
+    "components_ge_100px": 1
+  },
+  "localizer": {
+    "pixels": 1195270,
+    "components": 1,
+    "components_ge_100px": 1
+  },
+  "new": {
+    "pixels": 1249383,
+    "components": 1,
+    "components_ge_100px": 1
+  },
+  "details": {
+    "roi_xyxy": [
+      0,
+      62,
+      2569,
+      1984
+    ],
+    "points_xy_in_roi": [
+      [
+        1648.0,
+        1184.0
+      ],
+      [
+        1496.0,
+        1399.0
+      ],
+      [
+        1017.0,
+        1424.0
+      ],
+      [
+        830.0,
+        1160.0
+      ],
+      [
+        848.0,
+        959.0
+      ],
+      [
+        977.0,
+        880.0
+      ],
+      [
+        1566.0,
+        848.0
+      ],
+      [
+        1656.0,
+        1036.0
+      ]
+    ],
+    "point_labels": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "automatic_pupil_seed": true,
+    "pupil_refinement": {
+      "status": "sam31_refined",
+      "seed_origin": "enclosed_coarse_hole",
+      "selected_index": 2,
+      "candidates": [
+        {
+          "index": 0,
+          "model_quality_not_measured_iou": 0.96875,
+          "area_ratio_to_seed": 0.5135595051590945,
+          "inside_iris_fraction": 1.0,
+          "negative_iris_points_respected": true,
+          "eligible": true
+        },
+        {
+          "index": 1,
+          "model_quality_not_measured_iou": 2.515625,
+          "area_ratio_to_seed": 2.089082167359948,
+          "inside_iris_fraction": 1.0,
+          "negative_iris_points_respected": true,
+          "eligible": true
+        },
+        {
+          "index": 2,
+          "model_quality_not_measured_iou": 2.734375,
+          "area_ratio_to_seed": 2.073929015180163,
+          "inside_iris_fraction": 1.0,
+          "negative_iris_points_respected": true,
+          "eligible": true
+        }
+      ],
+      "zoom_xyxy_in_roi": [
+        817,
+        602,
+        1654,
+        1506
+      ],
+      "points_xy_in_roi": [
+        [
+          1239.0,
+          1108.0
+        ],
+        [
+          1653.0,
+          1505.0
+        ],
+        [
+          1583.0,
+          1505.0
+        ],
+        [
+          894.0,
+          1505.0
+        ],
+        [
+          817.0,
+          1505.0
+        ],
+        [
+          817.0,
+          970.0
+        ],
+        [
+          964.0,
+          886.0
+        ],
+        [
+          1555.0,
+          842.0
+        ],
+        [
+          1653.0,
+          917.0
+        ]
+      ],
+      "point_labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "candidates": [
+      {
+        "index": 0,
+        "model_quality_not_measured_iou": 1.0859375,
+        "seed_coverage": 0.7385009244773147,
+        "area_ratio_to_seed": 0.7819103633488668,
+        "prompt_match": 1.0,
+        "eligible": true,
+        "selection_score": 1.2597875924477315
+      },
+      {
+        "index": 1,
+        "model_quality_not_measured_iou": 1.453125,
+        "seed_coverage": 0.9995273034544496,
+        "area_ratio_to_seed": 1.9179256569645353,
+        "prompt_match": 1.0,
+        "eligible": true,
+        "selection_score": 1.6530777303454451
+      },
+      {
+        "index": 2,
+        "model_quality_not_measured_iou": 2.40625,
+        "seed_coverage": 0.9918010156700996,
+        "area_ratio_to_seed": 1.1937127176286528,
+        "prompt_match": 1.0,
+        "eligible": true,
+        "selection_score": 2.60543010156701
+      }
+    ],
+    "selected_index": 2,
+    "presence_logit": 32.25,
+    "manual_or_reference_prompts": false,
+    "morphological_hole_filling": false,
+    "forced_circle_or_ellipse": false,
+    "rgb_texture_modified": false,
+    "disconnected_objects_without_iris_points_removed": true
+  },
+  "native_mask_sha256": "bb72fe6aa5f923ee4167ad12e846a6d4a773adc227f6789b4c80c2f828f5b8f9",
+  "crop_sha256": "114f275eb3473c85075b44f85c9042cda561eaf3909f16b1238d28487d2e62db"
+}

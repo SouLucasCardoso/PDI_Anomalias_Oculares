@@ -1,0 +1,11 @@
+{
+    "stage":  "concluido",
+    "utc":  "2026-11-08T21:56:00.6865513Z",
+    "pid":  18260,
+    "process_exited":  true,
+    "actual_state":  "reconhecedor_confirmacao_2026-11-08/estado.json",
+    "conditions_completed":  13,
+    "comparison_gate_passed":  false,
+    "audit":  "reconhecedor_confirmacao_2026-11-08/analise/AUDITORIA_FINAL.json",
+    "recovered_after_serialization_audit":  true
+}

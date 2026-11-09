@@ -1,0 +1,9 @@
+﻿{
+    "checked_utc":  "2026-11-09T00:47:45.9713137Z",
+    "code_revision":  "f1647e8d0c1d280991f4d1b7d974c2704537fe66",
+    "checkpoint_revision":  "daa63191845a41281374e725f4c9e51c7a824460",
+    "code_url":  "https://github.com/facebookresearch/sam3",
+    "checkpoint_url":  "https://huggingface.co/facebook/sam3.1",
+    "environment_updated":  false,
+    "scope":  "Official SAM reference verification. Dense reference and contour trials retain their registered historical provenance; no active environment or weights updated."
+}

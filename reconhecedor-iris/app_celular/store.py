@@ -92,14 +92,12 @@ class Store:
         capture = self.capture(key)
         if capture['person'] or capture['engine'] != engine:
             raise ValueError('Captura já cadastrada ou produzida por outra versão do motor')
-        name = str(name).strip()
-        if not person_id and not 1 <= len(name) <= 60:
-            raise ValueError('Informe um nome de até 60 caracteres')
         with self.connect() as db:
             if person_id:
                 if not db.execute('SELECT 1 FROM people WHERE id=?', (person_id,)).fetchone():
                     raise ValueError('Pessoa não encontrada')
             else:
+                name = self.validate_name(db, name)
                 person_id = uid()
                 db.execute('INSERT INTO people VALUES (?,?)', (person_id, name))
             try:
@@ -107,6 +105,32 @@ class Store:
             except sqlite3.IntegrityError as error:
                 raise ValueError('Essa mesma imagem já está no cadastro. Use outra foto.') from error
         return person_id
+
+    @staticmethod
+    def validate_name(db, name, excluding=None):
+        if not isinstance(name, str) or not 1 <= len(name.strip()) <= 60:
+            raise ValueError('Informe um nome de 1 a 60 caracteres para este registro')
+        name = name.strip()
+        comparison = ' '.join(name.split()).casefold()
+        for row in db.execute('SELECT id,name FROM people'):
+            if row['id'] != excluding and ' '.join(row['name'].split()).casefold() == comparison:
+                raise ValueError('Já existe um registro com esse nome. Escolha outro nome ou use Adicionar foto no registro existente.')
+        return name
+
+    def rename_person(self, person_id, name):
+        with self.connect() as db:
+            if not db.execute('SELECT 1 FROM people WHERE id=?', (person_id,)).fetchone():
+                raise ValueError('Registro não encontrado')
+            name = self.validate_name(db, name, excluding=person_id)
+            db.execute('UPDATE people SET name=? WHERE id=?', (name, person_id))
+        return name
+
+    def person_name(self, person_id):
+        with self.connect() as db:
+            row = db.execute('SELECT name FROM people WHERE id=?', (person_id,)).fetchone()
+        if not row:
+            raise ValueError('Registro não encontrado')
+        return row['name']
 
     def groups(self, side, engine):
         with self.connect() as db:

@@ -1,0 +1,11 @@
+{
+  "source_local_file": "CONCLUIDO.json",
+  "source_sha256": "927532c2aa542eac60f70a0706332a27dac1b9edf8725b06e1556e50e1406afe",
+  "scope": "Aggregate publication; original per-image records retained locally; no original artifact altered",
+  "record_count": 6,
+  "recognition_mask_changed": false,
+  "clinical_accuracy_claimed": false,
+  "status": "concluido",
+  "all_binary_masks_equal_previous": true,
+  "all_native_rgb_exact": true
+}

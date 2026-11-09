@@ -1,0 +1,16 @@
+{
+  "registered_utc": "2026-11-08T21:25:42.506243+00:00",
+  "scope": "Exploratory individual-component validation ablation after threegroup and commonalphatrials; no test input or coefficient fitting",
+  "components": [
+    "polar",
+    "spatial",
+    "transformer",
+    "arc_clahe",
+    "arc_red"
+  ],
+  "alpha": 1.0,
+  "source_sha256": "5ed8da3e609b8b6b2175bd6d15f5279d5e23a946cec1565c8232dcd7bfec3d71",
+  "sam_result_sha256": "ded180b607724e08151d88ba8f6c96acfe746de3e645655fba586d1c163c3a76",
+  "calibration_sha256": "d933686f045eab5d6578cfe4701578d9ca1eeaaff4069bcff8427a602546dbda",
+  "rule": "For each component separately replace its oldgeometry score with SAMgeometry score; keep other8 unchanged. Same clean-preservation and FMR guard. Choose greatest meanjoint,worstjoint,meanRank1,lexicalname; keep control if none."
+}

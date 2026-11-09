@@ -1,0 +1,6 @@
+{
+  "registered_utc": "2026-11-08T18:02:40.979448+00:00",
+  "source_sha256": "07bd24e6ceb26339f700293196b0d3442d6d1f2284c96b6588824b2a97a13e3b",
+  "purpose": "Recount all13conditions, report primary all486 and same fixed480area-defined cohort as prior experiment; no candidate/threshold selection; no favorable-case filtering",
+  "uncertainty": "Stored descriptive paired person bootstrap,5000draws,seed20261108,fixedgallery; repeated development/test exposure and multiple comparisons limit inference"
+}
